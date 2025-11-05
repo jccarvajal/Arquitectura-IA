@@ -4,7 +4,7 @@
 
 **(Subtítulo: De "Arquitecto de la Fábrica" a "Vigilante Estratégico")**
 
-#### **1\. Propósito en esta Obra**
+#### **Introducción: De "Arquitecto de la Fábrica" a "Vigilante Estratégico"**
 
 Hemos llegado al final de nuestro mapa. Construimos los cimientos (Bloque 1), ensamblamos la maquinaria (Bloque 2), tomamos la sala de control (Bloque 3\) y definimos el impacto y la estrategia de nuestra fábrica (Bloque 4). Con la **Guía 12 (Estrategia y Valor)**, le dimos un propósito claro a nuestra operación.
 
@@ -12,10 +12,14 @@ Este epílogo es el "telescopio" de la fábrica. Su propósito es abordar la ún
 
 Esta guía final cambia nuestro enfoque de la operación (gestionar lo conocido) a la prospección (anticipar lo desconocido).
 
-#### **2\. La Paradoja de la Maestría**
+---
 
-El título de esta colección es "Inteligencia Artificial Aplicada". Pero, ¿qué significa "maestría" si la tecnología (modelos, arquitecturas, APIs) cambia cada seis meses?  
-La paradoja es que la maestría no reside en conocer las herramientas actuales —como **RAG** (el sistema para recuperar conocimiento externo) o los **Agentes ReAct** (el motor de razonamiento y acción)—. Esas son solo las primeras herramientas que aprendimos a usar.  
+#### **1\. La Paradoja de la Maestría**
+
+El título de esta colección es "Inteligencia Artificial Aplicada". Pero, ¿qué significa "maestría" si la tecnología (modelos, arquitecturas, APIs) cambia cada seis meses? 
+
+La paradoja es que la maestría no reside en conocer las herramientas actuales —como **RAG** (el sistema para recuperar conocimiento externo) o los **Agentes ReAct** (el motor de razonamiento y acción)—. Esas son solo las primeras herramientas que aprendimos a usar. 
+
 La verdadera maestría, el objetivo de esta obra, fue desarrollar un marco de pensamiento y un criterio duradero.
 
 * La **Gobernanza** (Guía 07\) no es solo para LLMs; es un marco para gestionar cualquier tecnología impredecible.  
@@ -24,13 +28,19 @@ La verdadera maestría, el objetivo de esta obra, fue desarrollar un marco de pe
 
 Esta obra no te enseñó a operar *esta* fábrica; te enseñó a ser un Arquitecto de Fábricas Cognitivas.
 
-#### **3\. El Nuevo Rol Permanente: El "Vigilante Estratégico"**
+---
 
-Con la fábrica actual operando y siendo gobernada, el profesional que ha completado esta obra asume un nuevo rol permanente: el "Vigilante del Horizonte".  
+#### **2\. El Nuevo Rol Permanente: El "Vigilante Estratégico"**
+
+Con la fábrica actual operando y siendo gobernada, el profesional que ha completado esta obra asume un nuevo rol permanente: el "Vigilante del Horizonte". 
+
 Este rol consiste en escanear el futuro, no por curiosidad, sino como una función de negocio crítica. El "Vigilante" debe ser la persona en la organización (especialmente en un servicio público) que proporciona respuestas informadas a la pregunta más difícil: "¿Qué viene después, y cómo nos preparamos?"  
+
 Tu tarea ya no es solo optimizar la línea de ensamblaje; es detectar la invención que hará que toda tu línea de ensamblaje sea irrelevante.
 
-#### **4\. Perspectivas y Tendencias (El "Qué Vigilar")**
+---
+
+#### **3\. Perspectivas y Tendencias (El "Qué Vigilar")**
 
 Como "Vigilante" no solo miras las "actualizaciones". Miras las "disrupciones" que cambian el paradigma. Esto es lo que está en el mapa actual (fines de 2025\) y futuro (más allá de 2026):
 
@@ -73,8 +83,11 @@ El desafío más aterrizado es el costo de la inteligencia. Los LLM actuales (ba
 
 #### **5\. Conclusión: El Cierre de la Obra**
 
-La obra termina aquí, pero la "Maestría" es un ciclo.  
+La obra termina aquí, pero la "Maestría" es un ciclo. 
+
 Has pasado de ser un Usuario (preguntando "¿qué hace esto?") a un Arquitecto (decidiendo "qué debe hacer") y un Gobernador (asegurando "qué no debe hacer").  
-Ahora, asumes el rol de Vigilante, mirando hacia el futuro.  
-Guardas estas guías no como un registro de la tecnología de fines de 2025, sino como el marco de pensamiento que usarás para diseñar, construir y gobernar la próxima fábrica.  
+Ahora, asumes el rol de Vigilante, mirando hacia el futuro. 
+
+Guardas estas guías no como un registro de la tecnología de fines de 2025, sino como el marco de pensamiento que usarás para diseñar, construir y gobernar la próxima fábrica. 
+
 Y la siguiente.

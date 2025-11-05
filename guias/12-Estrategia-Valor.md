@@ -12,6 +12,8 @@ Informes de la industria de 2025 señalan una **"Brecha GenAI" (The GenAI Divide
 
 Esta guía es el manual para el Director de Estrategia (Chief Strategy Officer). Nuestro trabajo ya no es gestionar la IA, es apalancarla para cruzar esa brecha y crear valor real.
 
+---
+
 #### **El Dilema Central: Eficiencia (Canibalización) vs. Innovación (Oportunidad)**
 
 Una vez que la "fábrica" funciona, el "Jefe de Operaciones" tiene dos caminos:
@@ -48,9 +50,9 @@ Este es el primer modelo de negocio que habilita la IA.
   * *Un banco (antes):* Daba un asesor de inversiones personal solo a clientes con \>$1M.  
   * *Un banco (ahora):* Da un "Agente-Asesor-Financiero" a cada cliente. El agente *recuerda* las metas de ahorro del cliente, *analiza* (usando su ventana de contexto) sus gastos en tiempo real y *proactivamente* (actuando como agente) le envía consejos personalizados (ej. "Noté que gastaste menos en restaurantes este mes. ¿Quieres mover esos $50 extra a tu fondo de vacaciones?").
 
-#### ---
+---
 
-**Parte 3: Estrategia de Innovación N°2 (El Producto-como-Agente)**
+#### **Parte 3: Estrategia de Innovación N°2 (El Producto-como-Agente)**
 
 Este es el segundo modelo de negocio: convertir tu "fábrica" interna en un producto externo.
 
@@ -84,9 +86,9 @@ El "Director de Estrategia" debe saber dónde construir su "foso" (moat) para de
 * **El Activo Estratégico:** El "log" de cómo tus **"Validadores"** humanos corrigen las respuestas de tus agentes (el "feedback de Sistema 2") es el set de entrenamiento más valioso del mundo.  
 * **Tu Foso:** Usas estos "datos de juicio humano" para hacer **"Ajuste Fino" (Fine-Tuning)** —el proceso de especializar el "cerebro" del modelo— y crear un agente que nadie en el mundo puede replicar, porque nadie más tiene a tus expertos entrenándolo.
 
-#### ---
+---
 
-**Conclusión: De la Eficiencia a la Dominancia**
+#### **Conclusión: De la Eficiencia a la Dominancia**
 
 El viaje de la maestría en IA culmina aquí. El viaje nos llevó de optimizar tareas a optimizar la fábrica, para finalmente darnos cuenta de que el verdadero premio es invalidar el modelo de negocio antiguo.
 

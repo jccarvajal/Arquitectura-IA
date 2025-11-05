@@ -29,7 +29,8 @@ La **Ingeniería de Prompts** (Guía 01\) nos dio la técnica, pero esta guía n
 
 #### **2\. El Criterio es el Nuevo "Conocimiento"**
 
-En la economía pre-IA, el valor de un profesional residía en su "conocimiento" (lo que sabía). Ahora, la IA tiene acceso a casi todo el conocimiento explícito.  
+En la economía pre-IA, el valor de un profesional residía en su "conocimiento" (lo que sabía). Ahora, la IA tiene acceso a casi todo el conocimiento explícito. 
+
 El nuevo valor del humano es el **Criterio**:
 
 * La habilidad de hacer las preguntas correctas.  
@@ -60,7 +61,9 @@ Este profesional no está "usando" IA; está diseñando un flujo de trabajo cogn
 
 #### **4\. Tácticas Aplicadas por Rol (El "Criterio" en Acción)**
 
-A continuación, se traduce la estrategia de alto nivel en acciones diarias para los roles clave que están siendo transformados por la IA. Ya no hablamos de "construir" el agente, hablamos de "colaborar" con él.
+A continuación, se traduce la estrategia de alto nivel en acciones diarias para los roles clave que están siendo transformados por la IA, específicamente para **el Analista**, **el Gerente** y **el Programador**. Ya no hablamos de "construir" el agente, hablamos de "colaborar" con él.
+
+---
 
 **Manual de Campo para: El Analista (El "Validador" o "Prosumer")**
 
@@ -139,6 +142,8 @@ A continuación, se traduce la estrategia de alto nivel en acciones diarias para
 
 #### **Conclusión**
 
-La **Sinergia Humano-IA** no es automática. Requiere que el humano desarrolle nuevas habilidades.  
-La "alfabetización cognitiva" (esta Guía 11\) es el conjunto de habilidades que permite al humano "elevarse". Dejamos que la IA maneje la táctica y la velocidad, mientras nosotros nos enfocamos en el criterio, la validación, la ética y la intención estratégica.  
+La **Sinergia Humano-IA** no es automática. Requiere que el humano desarrolle nuevas habilidades. 
+
+La "alfabetización cognitiva" (esta Guía 11\) es el conjunto de habilidades que permite al humano "elevarse". Dejamos que la IA maneje la táctica y la velocidad, mientras nosotros nos enfocamos en el criterio, la validación, la ética y la intención estratégica. 
+
 Sin esta guía, los profesionales se convierten en "usuarios pasivos" y la IA se convierte en una máquina de "basura elocuente". Con esta guía, se convierten en "Co-Pilotos Estratégicos" y "Prosumers", y la IA se convierte en un multiplicador de su juicio y valor.
