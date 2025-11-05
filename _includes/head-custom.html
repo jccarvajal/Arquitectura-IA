@@ -1,23 +1,30 @@
 <style>
   .wrapper {
     max-width: 960px; 
-    padding: 20px;    /* Padding en Computador */
+    padding: 30px;    /* Padding en Computador */
     margin: 0 auto;
   }
   section {
     width: 100%; 
     float: none;
     padding: 0;
-    font-size: 1.0rem; /* <-- Tamaño de fuente en COMPUTADOR */
+    font-size: 1.1rem; /* <-- Tamaño de fuente en COMPUTADOR */
   }
 
   /* --- Reglas para MÓVIL --- */
   @media screen and (max-width: 768px) {
     .wrapper {
-      padding: 10px;    /* Padding más chico en Móvil */
+      padding: 15px;    /* Padding más chico en Móvil */
     }
     section {
       font-size: 1.0rem;  /* <-- Fuente normal en MÓVIL */
     }
+  }
+
+  /* --- ARREGLO PARA TABLAS EN MÓVIL --- */
+  section table {
+    display: block;
+    width: 100%;
+    overflow-x: auto; /* <-- Habilita el scroll horizontal SÓLO para la tabla */
   }
 </style>
