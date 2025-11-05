@@ -10,6 +10,8 @@ En las guías anteriores, dominamos el arte de la construcción: diseñamos el p
 
 Ahora, comienza el trabajo real: operarla. Esta guía aborda la siguiente capa de maestría: la Gobernanza. Ya no se trata solo de qué podemos construir, sino de cómo operamos, mantenemos y protegemos lo que hemos construido. Nuestro rol evoluciona de "Director" a "Jefe de Operaciones y Seguridad".
 
+---
+
 #### **Parte 1: La Filosofía de Uso (El Manual de Operaciones)**
 
 Saber que una herramienta es poderosa no te dice cómo usarla. Esta es la política que el "Jefe de Operaciones" debe implementar con su equipo.
@@ -107,7 +109,10 @@ Es el panel de control en tiempo real de tu "fábrica" de IA. Es la única forma
    * **Tasa de "Ciclos Excesivos":** ¿Cuántos agentes necesitaron más de 10 ciclos? (Indicador de prompt ineficiente).  
    * **Latencia (Velocidad):** ¿Cuánto se demora en promedio el agente?
 
+---
+
 #### **Conclusión: De Director a Gobernador**
 
 Hemos recorrido el camino de la Instrucción, a la Memoria y a la Acción. Esta guía cierra el círculo con la Gobernanza. Nuestro rol final no es solo dirigir la orquesta, sino ser el "Gobernador" de esta nueva fuerza de trabajo digital: el que define las políticas, opera la maquinaria, monitorea su rendimiento y la protege de amenazas externas e internas.  
+
 Al dominar la gobernanza, dejas de orquestar resultados para empezar a garantizar operaciones seguras, eficientes y sostenibles.

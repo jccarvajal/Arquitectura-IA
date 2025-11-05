@@ -10,6 +10,8 @@ Pero un prototipo que funciona en la laptop de un ingeniero no es una "fábrica"
 
 Esta guía es el manual para la industrialización. Es el plan para pasar de construir un agente a desplegar y gestionar mil agentes de forma fiable. Nuestro rol evoluciona del "Ingeniero de Prototipos" (que construye el primer auto) al "Director de Operaciones" (que diseña, opera y mantiene la línea de ensamblaje 24/7).
 
+---
+
 #### **El Dilema Central: Agilidad vs. Robustez**
 
 * **El Mundo del Prototipo:** El objetivo es la agilidad. Puedes cambiar un **prompt** (la instrucción del agente) 20 veces al día. Si el agente falla, reinicias el script. El costo es irrelevante.  
@@ -89,6 +91,8 @@ El "Dashboard de Gobernanza" del prototipo era una hoja de cálculo. En producci
 * **El Dashboard:** Un panel de seguridad (SIEM) para IA.  
 * **Alertas:** "ALERTA: Detectados 50 intentos de **Inyección de Prompt** (ataques de instrucción oculta) desde la IP 1.2.3.4 en la última hora. El 'Agente Lector Tonto' los bloqueó."  
 * **Auditoría:** Registros de cada **"Ciclo ReAct"** (el rastro de pensamiento del agente) para la "Auditabilidad de Caja Negra", que permite revisar cómo un agente tomó una decisión.
+
+---
 
 #### **Conclusión: De Ingeniero a Director de Ecosistema**
 

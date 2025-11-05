@@ -4,9 +4,12 @@
 
 #### **Introducción: El Desafío de la "Basura Elocuente"**
 
-En la guía anterior, definimos la nueva relación laboral: el humano como "Co-Piloto" y "Validador". Pero, ¿qué habilidades se necesitan para ser un buen "Validador" o un "Co-Piloto" eficaz?  
+En la guía anterior, definimos la nueva relación laboral: el humano como "Co-Piloto" y "Validador". Pero, ¿qué habilidades se necesitan para ser un buen "Validador" o un "Co-Piloto" eficaz? 
+
 Esta guía es el manual de alfabetización cognitiva. Es el manual de entrenamiento para el cerebro humano.  
+
 La IA es una "calculadora para el lenguaje y el razonamiento". Si introduces "basura cognitiva" (preguntas vagas, falta de criterio, supuestos erróneos), obtendrás **"basura elocuente"**: respuestas fluidas, seguras de sí mismas, pero inútiles o peligrosas a una velocidad aterradora.  
+
 El mayor riesgo de la IA no es que mienta, es que **"alucina"** (inventa datos) con una confianza absoluta. El profesional novato ("Usuario Pasivo") es víctima de esto porque su mentalidad es la de "pedir" y "aceptar". El "Co-Piloto Estratégico", o **"Prosumer"** (un productor y consumidor experto de IA), sabe que su trabajo no es pedir, sino instruir y validar.
 
 ---
@@ -21,6 +24,8 @@ Este es el primer salto de habilidad. El "Usuario" trata a la IA como un orácul
   * *(Resultado: Un análisis dirigido, contextualizado y listo para ser validado).*
 
 La **Ingeniería de Prompts** (Guía 01\) nos dio la técnica, pero esta guía nos da la intención estratégica detrás de ella.
+
+---
 
 #### **2\. El Criterio es el Nuevo "Conocimiento"**
 
@@ -83,6 +88,8 @@ A continuación, se traduce la estrategia de alto nivel en acciones diarias para
    * **Tu Tarea:** Informar al "Director de Transformación": "El agente está confundiendo 'BCP' con 'DRP'. Necesitamos actualizar la base de RAG con definiciones claras."  
    * **Por Qué Funciona:** Dejas de ser un usuario y te conviertes en un entrenador, mejorando la "fábrica" para todos.
 
+---
+
 **Manual de Campo para: El Gerente (El "Co-Piloto Estratégico")**
 
 * **Tu Nuevo Rol:** Tu valor ya no es gestionar tareas (micro-gestión). Un **"Agente Director"** (un agente que coordina a otros agentes) puede asignar y rastrear el trabajo de "Sistema 1". Tu nuevo valor es definir la **intención** (el "por qué") y gestionar el riesgo humano y ético.  
@@ -105,6 +112,8 @@ A continuación, se traduce la estrategia de alto nivel en acciones diarias para
    * **Acción:** Cuando un agente toma una decisión clave, tu trabajo es auditar el *proceso*, no solo el resultado.  
    * **Preguntas de Auditoría:** "Muéstrame el log de 'rastro de pensamiento' de esta decisión. ¿En qué ciclo 'ReAct' (Razonar-Actuar) se basó? ¿Qué datos de RAG usó? ¿Qué sesgos podrían estar en esos datos?"  
    * **Por Qué Funciona:** Cumples tu rol de "Gobernador", gestionando la responsabilidad en un sistema híbrido humano-IA.
+
+---
 
 **Manual de Campo para: El Programador (El "Gobernador de Código")**
 

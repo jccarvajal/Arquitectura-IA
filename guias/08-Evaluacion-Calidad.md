@@ -2,13 +2,15 @@
 
 **(Subtítulo: El Laboratorio de Control de Calidad: De la "Sensación" a la Métrica)**
 
-#### **Propósito**
+#### **Introducción: Del "Control de Seguridad" al "Control de Calidad"**
 
 En el prototipado, construimos una máquina que "funciona". En la **Gobernanza**, definimos las reglas de seguridad para evitar que explote.
 
 Ahora, en la Guía 08, debemos probar científicamente que esa máquina produce un producto de calidad y lo hace de forma consistente.
 
 Esta guía es el "Laboratorio de Control de Calidad" (QA) de nuestra fábrica. Es el puente indispensable entre la Gobernanza y la **Industrialización** (el escalado a producción). No podemos industrializar un sistema cuya calidad no podemos medir. Esta guía nos lleva de la "sensación" subjetiva ("creo que funciona bien") a la "métrica" objetiva ("puedo probar que tiene un 92% de precisión factual").
+
+---
 
 #### **1\. El Desafío: Medir lo "Blando"**
 
@@ -21,6 +23,8 @@ En el software tradicional, la QA es binaria: el botón funciona o no (Pasa / Fa
 
 Para gestionar la fábrica, debemos tomar estas cualidades "blandas" y convertirlas en números "duros" que podamos rastrear en un dashboard.
 
+---
+
 #### **2\. El "Golden Set": La Pista de Pruebas Estándar**
 
 No puedes probar tu sistema "al azar". Necesitas una "pista de pruebas" estandarizada. En IA, esto se llama un "Golden Set" (Set Dorado) o Benchmark.
@@ -29,6 +33,8 @@ No puedes probar tu sistema "al azar". Necesitas una "pista de pruebas" estandar
 * **¿Qué incluye?** No solo incluye las preguntas, sino también las respuestas ideales (o "ground truth") validadas por humanos.  
 * **¿Para qué sirve?** Cada vez que haces un cambio en tu fábrica (un nuevo prompt, un nuevo modelo de motor), corres el sistema completo contra este "Golden Set".  
 * **Metáfora:** Es la "pista de pruebas" oficial de la fábrica. No puedes decir que el nuevo motor es "mejor" si no lo has probado en la misma pista y bajo las mismas condiciones que el motor antiguo.
+
+---
 
 #### **3\. El "Dashboard de Calidad": Qué Medimos**
 
@@ -50,6 +56,8 @@ La Gobernanza nos exige un "Dashboard de Observabilidad". Esta guía define las 
 * **Robustez:** ¿Falla si el usuario intenta una "Inyección de Prompt" (un ataque de instrucción oculta)?  
 * **Contención:** ¿"Fuga" datos confidenciales o PII (Información Personal Identificable)?
 
+---
+
 #### **4\. Métodos de Evaluación: ¿Quién Mide?**
 
 Una vez que tienes tu "Golden Set" y tus "Métricas", ¿quién hace el trabajo de calificar? Tienes dos opciones, y ambas se basan en la "Rúbrica de Evaluación de Calidad" (disponible en los Anexos).
@@ -68,6 +76,8 @@ Una vez que tienes tu "Golden Set" y tus "Métricas", ¿quién hace el trabajo d
 * **Ventaja:** Rápido, barato y masivamente escalable.  
 * **Desventaja:** El "Juez" también puede cometer errores. Requiere una calibración cuidadosa.
 
+---
+
 #### **5\. De la Evaluación a la Producción: "Humano-en-el-Bucle" (HitL)**
 
 La evaluación no es solo algo que haces *antes* de la Industrialización. Es algo que continúa *durante* ella.
@@ -75,6 +85,8 @@ La evaluación no es solo algo que haces *antes* de la Industrialización. Es al
 El concepto de **"Humano-en-el-Bucle" (HitL)**, que es un pilar de la gobernanza y la colaboración humana, es simplemente evaluación en tiempo real.
 
 El Humano-en-el-Bucle no es un usuario pasivo. Es un "Auditor de Calidad" que aplica la Rúbrica de Evaluación (de esta guía) a las salidas del agente antes de que estas lleguen al cliente final o activen un proceso crítico. Es la implementación del patrón "Reflexion" (el agente que se autocorrige), pero con un humano en el bucle de auditoría.
+
+---
 
 #### **Conclusión**
 

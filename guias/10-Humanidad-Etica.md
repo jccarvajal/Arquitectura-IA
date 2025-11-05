@@ -14,6 +14,8 @@ Esta guía rompe esa barrera. El objetivo ya no es cómo delegamos tareas, sino 
 
 Ahora, comienza el verdadero desafío: escalar. Escalar la tecnología es un problema técnico. Escalar a las personas es un desafío de liderazgo, cultura y confianza. Esta guía es el manual para la "Gestión del Cambio" y para definir el pilar de la confianza humana. Nuestro rol evoluciona para convertirnos en "Directores de Transformación y Talento".
 
+---
+
 #### **El Dilema Central: ¿Aumento o Abdicación?**
 
 A medida que los agentes de IA se vuelven más competentes, la tentación es la **Abdicación**: confiar ciegamente, convirtiéndose en un mero "pulsador de botones". Cuando el prototipo tiene éxito, el "Jefe de Operaciones" ve eficiencia. El equipo humano ve reemplazo.
@@ -139,6 +141,8 @@ Cuando los "Agentes PM" se vuelven parte del equipo, surgen preguntas legales qu
 
 * **La Pregunta:** Un "Agente Director" optimiza la logística y causa una pérdida de $1M. ¿Cómo "interrogamos" al agente?  
 * **La Política de Gobernanza:** La **Observabilidad** (de la Guía 09\) no es solo técnica, es un requisito legal. El "Dashboard de Gobernanza" debe registrar obligatoriamente el "rastro de pensamiento" (el log del Ciclo ReAct) de cada agente. Debemos ser capaces de reconstruir la cadena de razonamiento.
+
+---
 
 #### **Conclusión: De Gobernar Máquinas a Liderar Humanos**
 
