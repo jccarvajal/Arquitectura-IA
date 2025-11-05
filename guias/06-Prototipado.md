@@ -19,8 +19,6 @@ El "Ingeniero Jefe de Prototipos" busca lo opuesto: el "Quick Win" (Victoria Rá
 * **El Objetivo:** Encontrar un caso de uso que tenga el **Máximo Valor de Negocio** con el **Mínimo Riesgo Técnico y de Seguridad**.  
 * **El Enfoque:** No buscamos perfección, buscamos demostrar valor.
 
----
-
 #### **Parte 1: Identificar el Caso de Uso (La Elección del Piloto)**
 
 Antes de escribir una línea de código, debes encontrar la "playa" correcta para desembarcar.
