@@ -1,5 +1,3 @@
----
-
 ### **Guía 06: Prototipado y Experimentación**
 
 **(Subtítulo: Del "Arquitecto de Portafolio" al "Ingeniero Jefe de Prototipos")**
@@ -43,7 +41,8 @@ Tu prototipo debe pasar este filtro de 3 preguntas:
 
 #### **Parte 2: Definir el "Stack" Mínimo Viable (MVP)**
 
-Ya tenemos el "qué" (el caso de uso). Ahora definimos el "cómo" mínimo. No construyas un Ferrari. Construye un Go-Kart funcional.  
+Ya tenemos el "qué" (el caso de uso). Ahora definimos el "cómo" mínimo. No construyas un Ferrari. Construye un Go-Kart funcional.
+
 **1\. El "Motor" (LLM):**
 
 * **Decisión:** No necesitas el "motor" más potente y caro del mercado.  
@@ -63,7 +62,8 @@ Ya tenemos el "qué" (el caso de uso). Ahora definimos el "cómo" mínimo. No co
 
 #### **Parte 3: Construir el Agente v1 (Aplicando las Guías)**
 
-Es hora de ensamblar.  
+Es hora de ensamblar.
+
 **1\. Elaborar el "Plano" (Prompts):**
 
 * **Define el Rol:** "Eres un 'Agente PM' experto en clasificar emails..."  
@@ -81,7 +81,8 @@ Es hora de ensamblar.
 
 #### **Parte 4: Aplicar la Gobernanza Mínima Viable (MVP)**
 
-Tu prototipo debe ser seguro. Si se salta la Gobernanza, no es un prototipo; es un pasivo. Aplica estos 3 controles de seguridad obligatorios desde el Día 1:  
+Tu prototipo debe ser seguro. Si se salta la Gobernanza, no es un prototipo; es un pasivo. Aplica estos 3 controles de seguridad obligatorios desde el Día 1:
+
 **1\. Control de Inyección (Aislamiento):**
 
 * La "Inyección de Prompt" es el riesgo de que un atacante esconda una orden maliciosa en los datos que el agente lee.  
@@ -109,7 +110,8 @@ Tu prototipo debe ser seguro. Si se salta la Gobernanza, no es un prototipo; es 
 
 #### **Parte 5: Medir y Escalar (El Ciclo de "Gobernanza")**
 
-Ya tienes tu prototipo seguro (v1). Ahora debes probar su valor.  
+Ya tienes tu prototipo seguro (v1). Ahora debes probar su valor.
+
 **1\. Medir (El "Dashboard" v1):**
 
 * **Métrica de Costo:** "¿Cuánto costó (en tokens de API) generar el reporte de esta noche?" (Ej: $0.05 USD).  
@@ -122,9 +124,12 @@ Ya tienes tu prototipo seguro (v1). Ahora debes probar su valor.
 * Cuando la "Métrica de Calidad" muestra que el agente acierta el 99% de las veces, puedes escalar.  
 * **Escalado (v2):** Mueves al humano de "En-el-Bucle" (Validación) a **"Sobre-el-Bucle" (Human-on-the-Loop)** (Supervisión). El agente ahora envía el reporte automáticamente (preparando para la Industrialización), y el humano solo recibe una alerta si algo falla.
 
+---
+
 #### **Conclusión: De la Teoría al Valor**
 
-El viaje de la maestría en IA no termina en la teoría. Culmina aquí: en la ejecución disciplinada.  
+El viaje de la maestría en IA no termina en la teoría. Culmina aquí: en la ejecución disciplinada. 
+
 Esta guía cierra el círculo. El "Ingeniero Jefe de Prototipos" no solo sabe de Prompts, Contexto, Agentes, Gobernanza y Sinergia; es quien los sintetiza en un solo producto funcional.
 
 Has construido tu primera línea de ensamblaje. Has demostrado el ROI. Ahora, y solo ahora, estás listo para escalar la fábrica.
