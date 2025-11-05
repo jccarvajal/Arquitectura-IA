@@ -19,7 +19,9 @@ Su objetivo es trasladar a los equipos desde la curiosidad dispersa hacia un cri
 
 Para una lectura secuencial o para conservar la obra completa, puedes descargar la versión oficial en PDF:
 
-* **[Descargar "IA-Aplicada-v1.0.pdf"](./IA-Aplicada-v1.0.pdf)** ---
+* **[Descargar "IA-Aplicada-v1.0.pdf"](./IA-Aplicada-v1.0.pdf)**
+
+---
 
 ### Tabla de Contenidos
 
