@@ -156,4 +156,4 @@ A continuación, una comparativa de las cuatro estrategias que hemos revisado:
 
 ---
 
-[**&laquo; Ingeniería de Prompts**](./01-Ingenieria-Prompts.md) | [**Volver al Índice**](../) | [**Estrategia de Datos &raquo;**](./03-Estrategia-Datos.md)
+[**&laquo; Guía Anterior: Ingeniería de Prompts**](./01-Ingenieria-Prompts.md) | [**Volver al Índice**](../) | [**Siguiente Guía: Estrategia de Datos &raquo;**](./03-Estrategia-Datos.md)
