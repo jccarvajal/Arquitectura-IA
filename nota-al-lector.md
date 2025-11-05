@@ -1,5 +1,3 @@
----
-
 ### **Nota al Lector: Cómo Recorrer esta Obra**
 
 Antes de comenzar el viaje, es fundamental alinear nuestras expectativas sobre lo que esta obra es y lo que no es. Este es un mapa para orientarse en un territorio aún en formación.
@@ -21,7 +19,7 @@ Esta obra está escrita principalmente para quienes deben **Decidir, Diseñar y 
 Si su rol es "usar" la IA en el día a día (el "Profesional" dentro de la fábrica), encontrará sus herramientas más directas en los **Anexos** (especialmente el Anexo 03: Tácticas Aplicadas).  
 Ambas miradas, la del Arquitecto que diseña y la del Profesional que ejecuta, son complementarias. Esta obra busca que dialoguen con mayor comprensión mutua.
 
-**3\. Sobre la Estructura: "Viaje" y "Manual"**
+#### **3\. Sobre la Estructura: "Viaje" y "Manual"**
 
 La obra está diseñada para un doble propósito:
 
