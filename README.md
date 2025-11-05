@@ -59,7 +59,7 @@ La obra está diseñada como un viaje de aprendizaje secuencial.
 ### Anexos (Biblioteca del Arquitecto)
 
 * [Anexo 01: Ajuste Fino y Adaptación de Modelos](./anexos/01-Ajuste-Fino.md)
-* [Anexo 02: Lecciones de Implementación (Blueprints)](./anexos/02-Blueprints.md)
+* [Anexo 02: Lecciones de Implementación](./anexos/02-Blueprints.md)
 * [Anexo 03: Plantillas y Recursos](./anexos/03-Plantillas-Recursos.md)
 * [Anexo 04: Política Institucional de IA](./anexos/04-Politica-Institucional.md)
 * [Anexo 05: Modelos y Mercado LLM](./anexos/05-Modelos-Mercado.md)
