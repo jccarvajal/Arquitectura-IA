@@ -74,7 +74,7 @@ La Ingeniería de Contexto es el arte de balancear estas tres variables.
 
 #### **Arquitecturas Fundamentales (La Solución)**
 
-Estas son las estrategias y arquitecturas para construir sistemas de IA que no olviden y que gestionen el "Dilema Central", resolviendo la "Brecha de Aprendizaje".
+Estas son las estrategias y arquitecturas para construir sistemas de IA que no olviden y que gestionen el "Dilema Central", resolviendo la "Brecha de Aprendizaje". Abordaremos cuatro soluciones esenciales: la **Compactación**, la **Generación Aumentada por Recuperación (RAG)**, la **Gestión de Memoria Explícita** y las **Arquitecturas de Agentes (Sub-Agentes)**.
 
 ---
 
