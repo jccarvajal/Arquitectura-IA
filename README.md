@@ -29,7 +29,7 @@ La obra está diseñada como un viaje de aprendizaje secuencial.
 
 #### Introducción
 * [Nota al Lector](./nota-al-lector.md)
-* [Anclajes Conceptuales (Resumen de Guías)](./anclajes-conceptuales.md)
+* [Anclajes Conceptuales de las Guias](./anclajes-conceptuales.md)
 
 #### Bloque 1: Los Fundamentos (Cómo funciona)
 * [Guía 01: Ingeniería de Prompts](./guias/01-Ingenieria-Prompts.md)
