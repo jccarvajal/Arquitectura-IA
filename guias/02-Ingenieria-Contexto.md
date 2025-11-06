@@ -78,7 +78,7 @@ Estas son las estrategias y arquitecturas para construir sistemas de IA que no o
 
 ---
 
-### **1\. Compactación (Gestión Eficiente de la "Pizarra")**
+#### **1\. Compactación (Gestión Eficiente de la "Pizarra")**
 
 Esta es la estrategia principal para gestionar el historial de la conversación y evitar que el 'ruido' de tokens degrade el contexto.
 
@@ -88,7 +88,7 @@ Esta es la estrategia principal para gestionar el historial de la conversación 
 
 ---
 
-### **2\. Generación Aumentada por Recuperación (RAG) (La "Biblioteca Externa")**  
+#### **2\. Generación Aumentada por Recuperación (RAG) (La "Biblioteca Externa")**  
 
 Esta es, quizás, la arquitectura más transformadora en la IA aplicada.
 
@@ -109,7 +109,7 @@ Esta es, quizás, la arquitectura más transformadora en la IA aplicada.
 
 ---
 
-### **3\. Gestión de Memoria Explícita (El "Bloc de Notas" del Agente)**
+#### **3\. Gestión de Memoria Explícita (El "Bloc de Notas" del Agente)**
 
 Si RAG es la "biblioteca" (conocimiento estático externo), la Memoria Explícita es el "bloc de notas personal" del agente (memoria dinámica interna).
 
@@ -152,7 +152,7 @@ El agente usa su bucle de pensamiento de Razonar-Actuar (ReAct) para gestionar s
 
 ---
 
-### **4\. Arquitecturas de Agentes (Los "Sub-Agentes")**
+#### **4\. Arquitecturas de Agentes (Los "Sub-Agentes")**
 
 Esta es la estrategia de contexto más avanzada. En lugar de un solo "cerebro" tratando de manejar todo en una "pizarra", creas un equipo de "cerebros especialistas".
 
