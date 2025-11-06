@@ -1,6 +1,7 @@
 <style>
+  /* --- 1. ESTILO GENERAL --- */
   .wrapper {
-    max-width: 960px; 
+    max-width: 960px; /* Ancho de página en computador */
     padding: 20px;    /* Padding en Computador */
     margin: 0 auto;
   }
@@ -8,54 +9,52 @@
     width: 100%; 
     float: none;
     padding: 0;
-    font-size: 1.1rem; /* <-- Tamaño de fuente en COMPUTADOR */
+    font-size: 1.0rem; /* Tamaño de fuente en COMPUTADOR */
   }
 
-  /* --- Reglas para MÓVIL --- */
-  @media screen and (max-width: 768px) {
-    .wrapper {
-      padding: 10px;    /* Padding más chico en Móvil */
-    }
-    section {
-      font-size: 1.0rem;  /* <-- Fuente normal en MÓVIL */
-    }
+  /* --- 2. NAVEGACIÓN SUPERIOR (VOLVER) --- */
+  .nav-header {
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
   }
 
-  /* --- ARREGLO PARA TABLAS EN MÓVIL --- */
-  section table {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-  }
-
-  /* --- NUEVO: ESTILOS PARA NAVEGACIÓN INFERIOR (CON FLEXBOX) --- */
-  
-  /* 1. Convierte el párrafo en un contenedor Flexbox */
+  /* --- 3. NAVEGACIÓN INFERIOR (ANTERIOR/ÍNDICE/SIGUIENTE) --- */
   section hr + p {
-    display: flex;            /* Activa Flexbox */
-    justify-content: space-between; /* Reparte el espacio */
+    display: flex;
+    justify-content: space-between;
     margin-top: 2rem;
-    font-size: 0;             /* <-- TRUCO: Oculta el texto (los '|') */
+    font-size: 0; /* Oculta los separadores '|' */
   }
-
-  /* 2. Estiliza los enlaces hijos */
   section hr + p a {
-    font-size: 0.9rem;  /* <-- Devuelve el tamaño de fuente a los enlaces */
-    flex: 1;            /* Dales a todos el mismo espacio (1/3 c/u) */
-    text-align: center; /* Alinea al centro el segundo enlace */
+    font-size: 0.9rem;  /* Estilo de los enlaces (igual al superior) */
+    flex: 1;
+    text-align: center;
   }
-
-  /* 3. Sobrescribe la alineación del primero y el último */
   section hr + p a:first-child {
     text-align: left;     /* Alinea el primero a la izquierda */
   }
   section hr + p a:last-child {
     text-align: right;    /* Alinea el último a la derecha */
   }
-
-  /* 4. Anula la negrita (**) */
   section hr + p a strong {
-    font-weight: normal; 
+    font-weight: normal; /* Quita la negrita */
     color: inherit;
+  }
+
+  /* --- 4. ARREGLO TABLAS EN MÓVIL --- */
+  section table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  /* --- 5. REGLAS PARA MÓVIL --- */
+  @media screen and (max-width: 768px) {
+    .wrapper {
+      padding: 10px;    /* Padding más chico en Móvil */
+    }
+    section {
+      font-size: 1.0rem;  /* Fuente normal en MÓVIL */
+    }
   }
 </style>
