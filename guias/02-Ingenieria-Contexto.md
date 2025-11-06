@@ -212,13 +212,7 @@ A continuación, una comparativa de las cuatro estrategias que hemos revisado:
 | **Uso Típico** | Chatbots de larga duración | "Chat con tus Documentos" | Asistentes personales | Sistemas complejos multi-paso |
 
 ---
-
-[« Guía Anterior: Ingeniería de Prompts](./01-Ingenieria-Prompts.md) | [Volver al Índice](../) | [Siguiente Guía: Estrategia de Datos »](./03-Estrategia-Datos.md)
-
-[« Guía Anterior](./01-Ingenieria-Prompts.md) | [Volver al Índice](../) | [Siguiente Guía »](./03-Estrategia-Datos.md)
-
----
-<div style="display: flex; justify-content: space-between; font-size: 0.8em; padding-top: 10px;">
+<div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
     <a href="./01-Ingenieria-Prompts.md">« Guía Anterior</a>
   </div>
