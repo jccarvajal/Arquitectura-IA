@@ -214,12 +214,12 @@ A continuación, una comparativa de las cuatro estrategias que hemos revisado:
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
-    <a href="./01-Ingenieria-Prompts.md">« Guía Anterior</a>
+    <a href="./01-Ingenieria-Prompts.html">« Guía Anterior</a>
   </div>
   <div>
     <a href="../">Volver al Índice</a>
   </div>
   <div>
-    <a href="./03-Estrategia-Datos.md">Siguiente Guía »</a>
+    <a href="./03-Estrategia-Datos.html">Siguiente Guía »</a>
   </div>
 </div>
