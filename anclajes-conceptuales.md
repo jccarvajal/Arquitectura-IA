@@ -25,3 +25,16 @@
 * **Guía 12 (Estrategia y Valor en la Era de la IA):** "Una 'fábrica' sin un 'propósito' es solo un costo. La maestría consiste en definir el 'para qué' estratégico de la IA: ¿para eficiencia (hacer lo mismo más barato) o para innovación (hacer cosas nuevas)?"  
 
 * **Guía 13 (Perspectivas y Futuro de la IA):** "Esta fábrica de IA se volverá obsoleta; el 'criterio' que usaste para construirla, no. La maestría no es un destino, es un ciclo. El arquitecto se convierte en el 'vigilante' de la próxima ola."
+
+---
+<div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
+  <div>
+    <a href="./nota-al-lector.html">« Nota al Lector</a>
+  </div>
+  <div>
+    <a href="../">Volver al Índice</a>
+  </div>
+  <div>
+    <a href="./guias/01-Ingenieria-Prompts.html">Siguiente Guía »</a>
+  </div>
+</div>

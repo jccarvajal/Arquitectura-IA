@@ -91,3 +91,13 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 * **Tendencia 5: Más Allá de la "Fuerza Bruta" (Eficiencia)**  
   * **Dao, T., et al. (2025). "Mamba-2 and State Space Models: Production-Scale Efficiency".**  
     * **Por qué leerlo:** Detalla las arquitecturas **no-Transformers** que resuelven el problema del costo y la energía de la "fuerza bruta" actual.
+
+---
+  <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
+    <div>
+      <a href="./06-Glosario.html">« Anexo Anterior</a>
+    </div>
+    <div>
+      <a href="../">Volver al Índice</a>
+    </div>
+  </div>
