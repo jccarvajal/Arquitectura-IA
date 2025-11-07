@@ -117,7 +117,7 @@ Estas técnicas se integran en el método para resolver problemas más complejos
 * **¿Por qué funciona?** Fuerza al modelo a seguir un proceso lógico en lugar de saltar a una conclusión, lo que aumenta drásticamente la precisión en problemas matemáticos, lógicos y de razonamiento complejo.  
 * **Ejemplo:** 
   ```text
-  Resuelve este acertijo lógico: \[acertijo\]. Muestra tu cadena de pensamiento, deduciendo cada conclusión paso a paso antes de presentar la solución final.
+  Resuelve este acertijo lógico: [acertijo]. Muestra tu cadena de pensamiento, deduciendo cada conclusión paso a paso antes de presentar la solución final.
   ``` 
 * **Ideal para:** Modelos de frontera muy capaces (como los modelos más potentes del mercado) en tareas de lógica, matemáticas y planificación.  
 * **Menos efectivo en:** Modelos más pequeños, que pueden imitar el formato del razonamiento sin una lógica real. Para ellos, es mejor usar Prompt Chaining.
