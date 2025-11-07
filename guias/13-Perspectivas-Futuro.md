@@ -1,10 +1,10 @@
-## **Bloque 5: La Expansión (Cómo proyectamos)**
+## Bloque 5: La Expansión (Cómo proyectamos)
 
-### **Guía 13: Perspectivas y Futuro de la IA**
+### Guía 13: Perspectivas y Futuro de la IA
 
-**(Subtítulo: De "Arquitecto de la Fábrica" a "Vigilante Estratégico")**
+Subtítulo: De "Arquitecto de la Fábrica" a "Vigilante Estratégico"
 
-#### **Introducción: De "Arquitecto de la Fábrica" a "Vigilante Estratégico"**
+#### Introducción: De "Arquitecto de la Fábrica" a "Vigilante Estratégico"
 
 Hemos llegado al final de nuestro mapa. Construimos los cimientos (Bloque 1), ensamblamos la maquinaria (Bloque 2), tomamos la sala de control (Bloque 3\) y definimos el impacto y la estrategia de nuestra fábrica (Bloque 4). Con la **Guía 12 (Estrategia y Valor)**, le dimos un propósito claro a nuestra operación.
 
@@ -14,7 +14,7 @@ Esta guía final cambia nuestro enfoque de la operación (gestionar lo conocido)
 
 ---
 
-#### **Parte 1\. La Paradoja de la Maestría**
+#### Parte 1. La Paradoja de la Maestría
 
 El título de esta colección es "Inteligencia Artificial Aplicada". Pero, ¿qué significa "maestría" si la tecnología (modelos, arquitecturas, APIs) cambia cada seis meses? 
 
@@ -30,7 +30,7 @@ Esta obra no te enseñó a operar *esta* fábrica; te enseñó a ser un Arquitec
 
 ---
 
-#### **Parte 2\. El Nuevo Rol Permanente: El "Vigilante Estratégico"**
+#### Parte 2. El Nuevo Rol Permanente: El "Vigilante Estratégico"
 
 Con la fábrica actual operando y siendo gobernada, el profesional que ha completado esta obra asume un nuevo rol permanente: el "Vigilante del Horizonte". 
 
@@ -40,7 +40,7 @@ Tu tarea ya no es solo optimizar la línea de ensamblaje; es detectar la invenci
 
 ---
 
-#### **Parte 3\. Perspectivas y Tendencias (El "Qué Vigilar")**
+#### Parte 3. Perspectivas y Tendencias (El "Qué Vigilar")
 
 Como "Vigilante" no solo miras las "actualizaciones". Miras las "disrupciones" que cambian el paradigma. Esto es lo que está en el mapa actual (fines de 2025\) y futuro (más allá de 2026):
 
@@ -81,7 +81,7 @@ El desafío más aterrizado es el costo de la inteligencia. Los LLM actuales (ba
 
 ---
 
-#### **Conclusión: El Cierre de la Obra**
+#### Conclusión: El Cierre de la Obra
 
 La obra termina aquí, pero la "Maestría" es un ciclo. 
 
