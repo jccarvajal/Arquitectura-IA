@@ -1,8 +1,8 @@
-### **Guía 12: Estrategia y Valor en la Era de la IA**
+### Guía 12: Estrategia y Valor en la Era de la IA
 
-**(Subtítulo: Del "Director de Transformación" al "Director de Estrategia")**
+Subtítulo: Del "Director de Transformación" al "Director de Estrategia"
 
-#### **Introducción: De Optimizar la Fábrica a Ganar el Mercado**
+#### Introducción: De Optimizar la Fábrica a Ganar el Mercado
 
 En las guías anteriores, completamos el viaje desde la idea hasta la operación. Diseñamos **Prompts** (las instrucciones de la IA), gestionamos el **Contexto** (su memoria) y los **Datos** (su combustible). Desplegamos **Agentes** (los sistemas que razonan y actúan) y diseñamos sus **Sistemas Cognitivos** (sus "mentes"). Aseguramos la **Gobernanza** (la seguridad operativa) y la **Industrialización** (el escalado técnico), y rediseñamos la **Colaboración Humana** (la sinergia con el equipo).
 
@@ -14,7 +14,7 @@ Esta guía es el manual para el Director de Estrategia (Chief Strategy Officer).
 
 ---
 
-#### **El Dilema Central: Eficiencia (Canibalización) vs. Innovación (Oportunidad)**
+#### El Dilema Central: Eficiencia (Canibalización) vs. Innovación (Oportunidad)
 
 Una vez que la "fábrica" funciona, el "Jefe de Operaciones" tiene dos caminos:
 
@@ -27,7 +27,7 @@ Mientras que la Eficiencia es un objetivo crucial (especialmente en el sector p�
 
 ---
 
-#### **Parte 1: El Fundamento Económico (El "Costo Cero" de la Cognición)**
+#### Parte 1: El Fundamento Económico (El "Costo Cero" de la Cognición)
 
 El "Director de Estrategia" debe entender que la economía ha cambiado.
 
@@ -40,7 +40,7 @@ El costo marginal del "trabajo de Sistema 1" (tareas tácticas y repetitivas) se
 
 ---
 
-#### **Parte 2: Estrategia de Innovación N°1 (La Hiper-Personalización a Escala)**
+#### Parte 2: Estrategia de Innovación N°1 (La Hiper-Personalización a Escala)
 
 Este es el primer modelo de negocio que habilita la IA.
 
@@ -52,7 +52,7 @@ Este es el primer modelo de negocio que habilita la IA.
 
 ---
 
-#### **Parte 3: Estrategia de Innovación N°2 (El Producto-como-Agente)**
+#### Parte 3: Estrategia de Innovación N°2 (El Producto-como-Agente)
 
 Este es el segundo modelo de negocio: convertir tu "fábrica" interna en un producto externo.
 
@@ -63,7 +63,7 @@ Este es el segundo modelo de negocio: convertir tu "fábrica" interna en un prod
 
 ---
 
-#### **Parte 4: El "Foso" Competitivo (Dónde Reside la Verdadera Ventaja)**
+#### Parte 4: El "Foso" Competitivo (Dónde Reside la Verdadera Ventaja)
 
 El "Director de Estrategia" debe saber dónde construir su "foso" (moat) para defender su negocio.
 
@@ -88,7 +88,7 @@ El "Director de Estrategia" debe saber dónde construir su "foso" (moat) para de
 
 ---
 
-#### **Conclusión: De la Eficiencia a la Dominancia**
+#### Conclusión: De la Eficiencia a la Dominancia
 
 El viaje de la maestría en IA culmina aquí. El viaje nos llevó de optimizar tareas a optimizar la fábrica, para finalmente darnos cuenta de que el verdadero premio es invalidar el modelo de negocio antiguo.
 
