@@ -120,7 +120,7 @@ No "pruebes cosas al azar". Ajusta tu prompt para cerrar la brecha entre el resu
 
 Las siguientes técnicas se integran en el método para resolver problemas más complejos: Chain-of-Thought, Self-Consistency, Prompt Chaining y Meta-Prompting.
 
-**1/. Chain-of-Thought (CoT, Cadena de Pensamiento)**
+**1\. Chain-of-Thought (CoT, Cadena de Pensamiento)**
 
 * **¿Qué es?** Pedirle explícitamente al modelo que "piense paso a paso" o que explique su razonamiento antes de llegar a la conclusión. Este es un concepto fundamental en el diseño de cómo "piensan" los sistemas de IA.  
 * **¿Por qué funciona?** Fuerza al modelo a seguir un proceso lógico en lugar de saltar a una conclusión, lo que aumenta drásticamente la precisión en problemas matemáticos, lógicos y de razonamiento complejo.  
@@ -131,7 +131,7 @@ Las siguientes técnicas se integran en el método para resolver problemas más 
 * **Ideal para:** Modelos de frontera muy capaces (como los modelos más potentes del mercado) en tareas de lógica, matemáticas y planificación.  
 * **Menos efectivo en:** Modelos más pequeños, que pueden imitar el formato del razonamiento sin una lógica real. Para ellos, es mejor usar Prompt Chaining.
 
-**Self-Consistency (Autoconsistencia)**
+**2\. Self-Consistency (Autoconsistencia)**
 
 * **¿Qué es?** En lugar de pedir una sola respuesta, se le pide al modelo que genere varias respuestas diferentes para el mismo prompt y luego, a menudo, se le pide que elija la mejor o se elige manualmente. Aumenta la fiabilidad y la creatividad.  
 * **¿Por qué funciona?** Reduce la probabilidad de obtener una respuesta incorrecta o sesgada al explorar múltiples "caminos de razonamiento". Es útil para la creatividad y la resolución de problemas ambiguos.  
@@ -144,7 +144,7 @@ Las siguientes técnicas se integran en el método para resolver problemas más 
   Genera 3 titulares distintos para un artículo sobre el teletrabajo. Luego, indica cuál es el más persuasivo y justifica tu elección.
   ```
 
-**Prompt Chaining (Encadenamiento de Prompts)**
+**3\. Prompt Chaining (Encadenamiento de Prompts)**
 
 * **¿Qué es?** Dividir una tarea grande y compleja en una secuencia de prompts más pequeños y manejables. La salida de un prompt se convierte en la entrada (o parte del contexto) del siguiente. Es la base conceptual de cómo funcionan los agentes de IA.  
 * **¿Por qué funciona?** Es ideal para proyectos grandes (escribir un informe, desarrollar una aplicación simple). Mantiene el contexto (un desafío clave en tareas largas), reduce errores y permite un mayor control sobre el proceso.  
@@ -162,7 +162,7 @@ Las siguientes técnicas se integran en el método para resolver problemas más 
     Ahora, desarrolla el punto 2 del esquema...
     ```
 
-**Meta-Prompting**
+**4\. Meta-Prompting**
 
 * **¿Qué es?** Usar al LLM para que te ayude a crear o mejorar tus propios prompts. Es como tener un consultor de ingeniería de prompts integrado.  
 * **¿Por qué funciona?** El modelo ha sido entrenado con inmensos volúmenes de texto y entiende las estructuras que funcionan mejor para él. Puede ayudarte a refinar tus ideas.  
