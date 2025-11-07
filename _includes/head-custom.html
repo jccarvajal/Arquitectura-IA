@@ -68,4 +68,13 @@
     font-size: 0.8em; /* 90% del tamaño de fuente normal */
   }
   
+
+  /* Solución para el problema de Scroll Horizontal en Bloques de Código Largos */
+  pre {
+    white-space: pre-wrap !important; /* Permite que el texto se envuelva automáticamente (wrapping) */
+    word-wrap: break-word !important; /* Asegura que las palabras muy largas se rompan si es necesario */
+    overflow-x: auto; /* Mantiene la barra de scroll horizontal para la seguridad */
+  }
+
+  
 </style>
