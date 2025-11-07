@@ -140,7 +140,7 @@ A continuación, se traduce la estrategia de alto nivel en acciones diarias para
 
 ---
 
-#### Conclusión
+#### Conclusión: De Usuario Pasivo a Co-Piloto de Criterio
 
 La **Sinergia Humano-IA** no es automática. Requiere que el humano desarrolle nuevas habilidades. 
 
