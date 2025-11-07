@@ -169,7 +169,7 @@ Estas técnicas se integran en el método para resolver problemas más complejos
 * **Uso Estratégico (La Sabiduría Práctica):**  
   * *¿Cuándo usarlo?:* Para tareas complejas, ambiguas o cuando necesitas crear una plantilla de prompt robusta y reutilizable.  
   * *¿Cuándo evitarlo?:* Es redundante e ineficiente para tareas simples y directas. No necesitas un meta-prompt para preguntar la capital de un país.  
-* Ejemplo:
+* **Ejemplo:**
   ```text
   Estoy tratando de obtener una explicación de la física cuántica para principiantes. Crea un prompt óptimo que le darías a un LLM como tú para generar una explicación clara, precisa y con analogías fáciles de entender.
   ```

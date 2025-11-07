@@ -1,6 +1,6 @@
-### **Guía 02: La Guía Definitiva de la Ingeniería de Contexto y Memoria**
+### Guía 02: La Guía Definitiva de la Ingeniería de Contexto y Memoria
 
-**(Subtítulo: Resolviendo la "Brecha de Aprendizaje" de la IA)**
+Subtítulo: Resolviendo la "Brecha de Aprendizaje" de la IA
 
 #### **Introducción: Del Prompt Perfecto a la Coherencia Sostenida**
 
