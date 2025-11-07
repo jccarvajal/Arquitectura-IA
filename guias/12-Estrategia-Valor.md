@@ -93,3 +93,16 @@ El "Director de Estrategia" debe saber dónde construir su "foso" (moat) para de
 El viaje de la maestría en IA culmina aquí. El viaje nos llevó de optimizar tareas a optimizar la fábrica, para finalmente darnos cuenta de que el verdadero premio es invalidar el modelo de negocio antiguo.
 
 Como "Director de Estrategia", tu rol es usar la eficiencia operativa de la IA (un costo marginal de cognición cercano a cero) para construir nuevos modelos de negocio (Hiper-Personalización, Agentes-como-Servicio) protegidos por fosos competitivos (Gobernanza y Datos) que te permitan "cruzar la Brecha GenAI" y dominar el mercado.
+
+---
+<div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
+  <div>
+    <a href="./11-Aprender-A-Pensar.html">« Guía Anterior</a>
+  </div>
+  <div>
+    <a href="../">Volver al Índice</a>
+  </div>
+  <div>
+    <a href="./13-Perspectivas-Futuro.html">Siguiente Guía »</a>
+  </div>
+</div>

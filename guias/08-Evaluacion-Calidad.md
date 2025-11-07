@@ -93,3 +93,16 @@ El Humano-en-el-Bucle no es un usuario pasivo. Es un "Auditor de Calidad" que ap
 Sin un Laboratorio de Control de Calidad (Guía 08), la Gobernanza (Guía 07\) es ciega, porque no sabe qué medir ni cómo. Y la Industrialización (Guía 09\) es imprudente, porque no puede garantizar la consistencia del producto.
 
 Esta guía proporciona las herramientas y métodos para medir objetivamente la calidad, permitiéndonos tomar decisiones basadas en datos y escalar nuestra fábrica de IA con confianza.
+
+---
+<div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
+  <div>
+    <a href="./07-Gobernanza.html">« Guía Anterior</a>
+  </div>
+  <div>
+    <a href="../">Volver al Índice</a>
+  </div>
+  <div>
+    <a href="./09-Industrializacion.html">Siguiente Guía »</a>
+  </div>
+</div>

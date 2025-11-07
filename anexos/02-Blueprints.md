@@ -236,3 +236,16 @@ La obra de guías (01-13) y anexos fue diseñada para los "Arquitectos" y "Direc
 * **La Sinergia (Colaboración):**  
   * **Rol del Agente:** El agente ahora genera valor directo.  
   * **Rol del Humano (Estratega):** La organización ha completado el viaje. La IA ya no es solo una herramienta de eficiencia interna; se ha convertido en un producto de innovación externa, creando un nuevo "Foso Competitivo".
+
+  ---
+  <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
+    <div>
+      <a href="./01-Ajuste-Fino.html">« Anexo Anterior</a>
+    </div>
+    <div>
+      <a href="../">Volver al Índice</a>
+    </div>
+    <div>
+      <a href="./03-Plantillas-Recursos.html">Siguiente Anexo »</a>
+    </div>
+  </div>

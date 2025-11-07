@@ -60,3 +60,16 @@ La finalidad principal de la IA es automatizar o asistir en tareas de **"Sistema
 #### **6\. Cumplimiento y Sanciones**
 
 El incumplimiento de esta política podrá constituir una falta a la probidad administrativa (Ley N° 18.575). Adicionalmente, la **"Abdicación"** del criterio profesional —es decir, el uso de "respuestas crudas" de IA sin la validación humana obligatoria en decisiones de impacto— será considerada una falta al deber de diligencia.
+
+---
+  <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
+    <div>
+      <a href="./03-Plantillas-Recursos.html">« Anexo Anterior</a>
+    </div>
+    <div>
+      <a href="../">Volver al Índice</a>
+    </div>
+    <div>
+      <a href="./05-Modelos-Mercado.html">Siguiente Anexo »</a>
+    </div>
+  </div>

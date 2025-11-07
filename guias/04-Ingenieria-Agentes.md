@@ -139,3 +139,16 @@ La evolución de nuestra maestría en IA ha sido un viaje de abstracción:
 3. **Ingeniería de Agentes:** Ahora, eres un Director de Orquesta (o Director de Programa). Tu trabajo ya no es tocar los instrumentos (escribir el prompt) ni gestionar el escenario (el contexto). Tu trabajo es definir la partitura (el objetivo final) y coordinar a tus músicos (los agentes y sus herramientas) para que ejecuten la sinfonía de forma autónoma.
 
 Al dominar la dirección de agentes, dejas de construir soluciones para empezar a orquestar resultados.
+
+---
+<div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
+  <div>
+    <a href="./03-Estrategia-Datos.html">« Guía Anterior</a>
+  </div>
+  <div>
+    <a href="../">Volver al Índice</a>
+  </div>
+  <div>
+    <a href="./05-Sistemas-Cognitivos.html">Siguiente Guía »</a>
+  </div>
+</div>

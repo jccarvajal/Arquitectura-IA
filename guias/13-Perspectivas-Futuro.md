@@ -92,3 +92,16 @@ Ahora, asumes el rol de Vigilante, mirando hacia el futuro.
 Guardas estas guías no como un registro de la tecnología de fines de 2025, sino como el marco de pensamiento que usarás para diseñar, construir y gobernar la próxima fábrica. 
 
 Y la siguiente.
+
+---
+<div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
+  <div>
+    <a href="./12-Estrategia-Valor.html">« Guía Anterior</a>
+  </div>
+  <div>
+    <a href="../">Volver al Índice</a>
+  </div>
+  <div>
+    <a href="../anexos/01-Ajuste-Fino.html">Siguiente Anexo »</a>
+  </div>
+</div>

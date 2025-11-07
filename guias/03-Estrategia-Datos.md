@@ -93,3 +93,16 @@ La maestría en IA demuestra que el director de estrategia y el director de oper
 * El gobernador de IA es inútil si la fuente de los datos está corrupta.
 
 Sin una Estrategia de Datos robusta, la fábrica de IA más avanzada del mundo solo producirá errores (o "alucinaciones" basadas en mala información) más rápidos, más baratos y a mayor escala.
+
+---
+<div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
+  <div>
+    <a href="./02-Ingenieria-Contexto.html">« Guía Anterior</a>
+  </div>
+  <div>
+    <a href="../">Volver al Índice</a>
+  </div>
+  <div>
+    <a href="./04-Ingenieria-Agentes.html">Siguiente Guía »</a>
+  </div>
+</div>

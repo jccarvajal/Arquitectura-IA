@@ -197,3 +197,16 @@ Este anexo es el léxico centralizado de "Inteligencia Artificial Aplicada". La 
 
 * **Definición:** El rol permanente del arquitecto de IA después de construir la fábrica. Es la función de escanear el horizonte en busca de la próxima disrupción tecnológica, no por curiosidad, sino como una función de negocio para anticipar la obsolescencia de la fábrica actual.  
 * **Referencia Principal:** Guía 13 (Perspectivas y Futuro de la IA).
+
+---
+  <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
+    <div>
+      <a href="./05-Modelos-Mercado.html">« Anexo Anterior</a>
+    </div>
+    <div>
+      <a href="../">Volver al Índice</a>
+    </div>
+    <div>
+      <a href="./07-Bibliografia.html">Siguiente Anexo »</a>
+    </div>
+  </div>

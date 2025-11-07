@@ -109,3 +109,15 @@ Un framework de 2x2 para decidir para qué usar la IA en un nuevo proyecto.
 | **EFICIENCIA ALTA (Hacerlo más barato/rápido)** | **Cuadrante 1: Optimización de Procesos.** Descripción: Usar IA para automatizar tareas repetitivas y reducir costos. Ejemplos: Clasificación de emails, resúmenes automáticos, transcripción de reuniones. Proyecto Actual: \[Colocar proyecto aquí\] |
 | **EFICIENCIA BAJA (Hacerlo al mismo costo/velocidad)** | **Cuadrante 3: Experimentación (PoC).** Descripción: Proyectos de bajo impacto para desarrollar habilidades internas sin un ROI claro. Ejemplos: Un bot de Slack interno para diversión, pruebas de concepto desechables. Proyecto Actual: \[Colocar proyecto aquí\] |
 
+ ---
+  <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
+    <div>
+      <a href="./02-Blueprints.html">« Anexo Anterior</a>
+    </div>
+    <div>
+      <a href="../">Volver al Índice</a>
+    </div>
+    <div>
+      <a href="./04-Politica-Institucional.html">Siguiente Anexo »</a>
+    </div>
+  </div>

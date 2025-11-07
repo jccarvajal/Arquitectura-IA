@@ -116,3 +116,16 @@ Es el panel de control en tiempo real de tu "fábrica" de IA. Es la única forma
 Hemos recorrido el camino de la Instrucción, a la Memoria y a la Acción. Esta guía cierra el círculo con la Gobernanza. Nuestro rol final no es solo dirigir la orquesta, sino ser el "Gobernador" de esta nueva fuerza de trabajo digital: el que define las políticas, opera la maquinaria, monitorea su rendimiento y la protege de amenazas externas e internas.  
 
 Al dominar la gobernanza, dejas de orquestar resultados para empezar a garantizar operaciones seguras, eficientes y sostenibles.
+
+---
+<div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
+  <div>
+    <a href="./06-Prototipado.html">« Guía Anterior</a>
+  </div>
+  <div>
+    <a href="../">Volver al Índice</a>
+  </div>
+  <div>
+    <a href="./08-Evaluación-Calidad.html">Siguiente Guía »</a>
+  </div>
+</div>

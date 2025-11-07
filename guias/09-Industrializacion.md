@@ -97,3 +97,16 @@ El "Dashboard de Gobernanza" del prototipo era una hoja de cálculo. En producci
 #### **Conclusión: De Ingeniero a Director de Ecosistema**
 
 Hemos pasado del "Prototipo" a la Producción. Nuestro rol como "Director de Operaciones" ya no es "construir" un agente. Es gestionar un ecosistema vivo de cientos de agentes. Tu trabajo es ser el "ingeniero de confiabilidad" (SRE) de la fábrica. Te aseguras de que los planos (Prompts) estén versionados, que las máquinas (LLMs) estén monitoreadas y que los "Agentes PM" (la línea de ensamblaje) nunca se detengan, preparando el terreno para gestionar el impacto humano.
+
+---
+<div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
+  <div>
+    <a href="./08-Evaluación-Calidad.html">« Guía Anterior</a>
+  </div>
+  <div>
+    <a href="../">Volver al Índice</a>
+  </div>
+  <div>
+    <a href="./10-Humanidad-Etica.html">Siguiente Guía »</a>
+  </div>
+</div>

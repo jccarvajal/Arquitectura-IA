@@ -153,3 +153,16 @@ La IA no es un reemplazo para los humanos. Es un filtro que elimina el trabajo d
 El futuro de la maestría en IA no es Humano vs. Máquina. Es Humano (Sistema 2: Estrategia y Juicio) \+ Máquina (Sistema 1: Tácticas y Ejecución).
 
 Dejamos de ser "Directores de Orquesta" y nos convertimos en "Socios Cognitivos". Nuestro trabajo principal ya no es hacer o gestionar; es tener buen juicio. Como "Director de Transformación y Talento", tu rol es el más crítico de todos. No se trata de instalar software, se trata de instalar confianza. Tu trabajo es asegurar que, a medida que la fábrica se vuelve más inteligente (Agentes) y más segura (Gobernanza), el equipo humano se vuelva más sabio (Sistema 2\) y más valioso.
+
+---
+<div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
+  <div>
+    <a href="./09-Industrializacion.html">« Guía Anterior</a>
+  </div>
+  <div>
+    <a href="../">Volver al Índice</a>
+  </div>
+  <div>
+    <a href="./11-Aprender-A-Pensar.html">Siguiente Guía »</a>
+  </div>
+</div>

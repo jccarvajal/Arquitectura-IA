@@ -147,3 +147,16 @@ La **Sinergia Humano-IA** no es automática. Requiere que el humano desarrolle n
 La "alfabetización cognitiva" (esta Guía 11\) es el conjunto de habilidades que permite al humano "elevarse". Dejamos que la IA maneje la táctica y la velocidad, mientras nosotros nos enfocamos en el criterio, la validación, la ética y la intención estratégica. 
 
 Sin esta guía, los profesionales se convierten en "usuarios pasivos" y la IA se convierte en una máquina de "basura elocuente". Con esta guía, se convierten en "Co-Pilotos Estratégicos" y "Prosumers", y la IA se convierte en un multiplicador de su juicio y valor.
+
+---
+<div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
+  <div>
+    <a href="./10-Humanidad-Etica.html">« Guía Anterior</a>
+  </div>
+  <div>
+    <a href="../">Volver al Índice</a>
+  </div>
+  <div>
+    <a href="./12-Estrategia-Valor.html">Siguiente Guía »</a>
+  </div>
+</div>
