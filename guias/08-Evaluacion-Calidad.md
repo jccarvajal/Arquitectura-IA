@@ -88,7 +88,7 @@ El Humano-en-el-Bucle no es un usuario pasivo. Es un "Auditor de Calidad" que ap
 
 ---
 
-#### Conclusión
+#### Conclusión: De la Percepción a la Ingeniería de la Fiabilidad
 
 Sin un Laboratorio de Control de Calidad (Guía 08), la Gobernanza (Guía 07\) es ciega, porque no sabe qué medir ni cómo. Y la Industrialización (Guía 09\) es imprudente, porque no puede garantizar la consistencia del producto.
 
