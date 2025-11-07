@@ -35,7 +35,7 @@ Como "Jefes de Adquisiciones" de nuestra fábrica de IA, el mercado de "motores"
 
 ---
 
-#### Parte 2: El "Triángulo de Adquisición" (Revisado)
+#### Parte 2: El "Triángulo de Adquisición"
 
 Como "Jefe de Adquisiciones", no puedes tenerlo todo. Cada decisión equilibra tres fuerzas. Hemos reemplazado "Capacidad" por "Control", un término más robusto y estratégico.
 
