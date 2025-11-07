@@ -172,7 +172,7 @@ Estas técnicas se integran en el método para resolver problemas más complejos
 * Ejemplo:
   ```text
   Estoy tratando de obtener una explicación de la física cuántica para principiantes. Crea un prompt óptimo que le darías a un LLM como tú para generar una explicación clara, precisa y con analogías fáciles de entender.
-  ```text
+  ```
 
 ---
 
