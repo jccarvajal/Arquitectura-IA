@@ -1,10 +1,10 @@
-## **Bloque 2: La Construcción (Cómo se hace)**
+## Bloque 2: La Construcción (Cómo se hace)
 
-### **Guía 04: La Guía Definitiva de la Ingeniería de Agentes de IA**
+### Guía 04: La Guía Definitiva de la Ingeniería de Agentes de IA
 
-**(Subtítulo: Del "Arquitecto de Instrucciones" al "Director de Programa")**
+Subtítulo: Del "Arquitecto de Instrucciones" al "Director de Programa"
 
-#### **Introducción: De la Respuesta a la Acción**
+#### Introducción: De la Respuesta a la Acción
 
 En las guías anteriores, definimos la *instrucción* (Guía 01: Prompts) y la *memoria* (Guía 02: Contexto). Esas guías resuelven la parte de la **"Brecha de Aprendizaje" (Learning Gap)** de la IA relacionada con su incapacidad para recordar.
 
@@ -16,7 +16,7 @@ No buscamos una "respuesta". Buscamos acción autónoma. Queremos que la IA deje
 
 ---
 
-#### **Conceptos Fundamentales**
+#### Conceptos Fundamentales
 
 **¿Qué es un Agente de IA?**
 
@@ -83,7 +83,7 @@ Las herramientas son la conexión del cerebro de la IA con el mundo digital. Sin
 
 ---
 
-#### **El Dilema Central: La "Correa" del Agente (Autonomía vs. Control)**
+#### El Dilema Central: La "Correa" del Agente (Autonomía vs. Control)
 
 Aquí es donde reside el verdadero "arte" de la ingeniería de agentes. El *trade-off* ya no es solo costo vs. latencia, sino **Autonomía vs. Seguridad**.
 
@@ -96,7 +96,7 @@ El Buen Enfoque: El juicio de ingeniería está en diseñar un sistema que sepa 
 
 ---
 
-#### **Estrategias Fundamentales de Ingeniería de Agentes**
+#### Estrategias Fundamentales de Ingeniería de Agentes
 
 Estas son las técnicas para dirigir a nuestros nuevos "trabajadores digitales" sin causar un desastre.
 
@@ -130,7 +130,7 @@ Este es uno de los puntos de partida más simples y poderosos, que se conecta di
 
 ---
 
-#### **Conclusión: De Arquitecto de Sistemas a Director de Orquesta**
+#### Conclusión: De Arquitecto de Sistemas a Director de Orquesta
 
 La evolución de nuestra maestría en IA ha sido un viaje de abstracción:
 
