@@ -118,9 +118,9 @@ No "pruebes cosas al azar". Ajusta tu prompt para cerrar la brecha entre el resu
 
 #### Parte 2: Técnicas Avanzadas de Prompting (Herramientas de Precisión)
 
-Estas técnicas se integran en el método para resolver problemas más complejos.
+Las siguientes técnicas se integran en el método para resolver problemas más complejos: Chain-of-Thought, Self-Consistency, Prompt Chaining y Meta-Prompting.
 
-**Chain-of-Thought (CoT, Cadena de Pensamiento)**
+** Chain-of-Thought (CoT, Cadena de Pensamiento)**
 
 * **¿Qué es?** Pedirle explícitamente al modelo que "piense paso a paso" o que explique su razonamiento antes de llegar a la conclusión. Este es un concepto fundamental en el diseño de cómo "piensan" los sistemas de IA.  
 * **¿Por qué funciona?** Fuerza al modelo a seguir un proceso lógico en lugar de saltar a una conclusión, lo que aumenta drásticamente la precisión en problemas matemáticos, lógicos y de razonamiento complejo.  
