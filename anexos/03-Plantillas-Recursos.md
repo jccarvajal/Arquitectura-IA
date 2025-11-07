@@ -1,8 +1,8 @@
-### **Anexo 03: Plantillas y Recursos**
+### Anexo 03: Plantillas y Recursos
 
-**(Subtítulo: El "Cinturón de Herramientas" del Arquitecto)**
+Subtítulo: El "Cinturón de Herramientas" del Arquitecto
 
-#### **Introducción: El "Cinturón de Herramientas"**
+#### Introducción: El "Cinturón de Herramientas"
 
 Este anexo no es una guía narrativa; es el "cinturón de herramientas" práctico de toda la obra. Es un repositorio centralizado de checklists, plantillas y matrices mencionadas a lo largo de las guías. 
 
@@ -10,7 +10,7 @@ No está diseñado para "leerse" de principio a fin, sino para "usarse" como ref
 
 ---
 
-#### **Sección 1: Diseño de Prompts y Agentes**
+#### Sección 1: Diseño de Prompts y Agentes
 
 **Plantilla 1.1: El "Prompt Maestro" (CRF-R)**  
 Esta plantilla es un bloque de texto estructurado, diseñado para ser copiado y pegado directamente en tu editor de código o herramienta de prompting. Es la implementación de la Guía 01\.
@@ -56,7 +56,7 @@ Esta ficha sirve como el "plano" de diseño de un agente (Guía 05\) antes de co
 
 ---
 
-#### **Sección 2: Gobernanza y Calidad**
+#### Sección 2: Gobernanza y Calidad
 
 **Checklist 2.1: Control de Riesgos de Seguridad (Pre-Lanzamiento)**  
 Esta tabla debe ser completada por el equipo de desarrollo y gobernanza (Guía 07\) antes de pasar a producción.
@@ -87,7 +87,7 @@ Esta rúbrica (de Guía 08\) se usa para calificar las respuestas del "Golden Se
 
 ---
 
-#### **Sección 3: Estrategia y Operaciones**
+#### Sección 3: Estrategia y Operaciones
 
 **Matriz 3.1: Decisión de Mercado de LLM**  
 Esta matriz (de Anexo 05\) se usa para comparar y seleccionar el modelo de IA (motor) adecuado para un caso de uso específico.
