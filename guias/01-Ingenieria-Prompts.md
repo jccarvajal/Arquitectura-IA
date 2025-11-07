@@ -140,9 +140,18 @@ Estas técnicas se integran en el método para resolver problemas más complejos
 * **¿Qué es?** Dividir una tarea grande y compleja en una secuencia de prompts más pequeños y manejables. La salida de un prompt se convierte en la entrada (o parte del contexto) del siguiente. Es la base conceptual de cómo funcionan los agentes de IA.  
 * **¿Por qué funciona?** Es ideal para proyectos grandes (escribir un informe, desarrollar una aplicación simple). Mantiene el contexto (un desafío clave en tareas largas), reduce errores y permite un mayor control sobre el proceso.  
 * **Ejemplo Secuencial:**  
-  * *Prompt 1:* "Crea un esquema detallado para un artículo de blog titulado 'Los 5 beneficios de la inteligencia artificial en el marketing'."  
-  * *Prompt 2:* "Usando el punto 1 del esquema anterior, escribe la introducción del artículo (aproximadamente 150 palabras)."  
-  * *Prompt 3:* "Ahora, desarrolla el punto 2 del esquema..." (y así sucesivamente).
+  * *Prompt 1:* 
+    ```text
+    Crea un esquema detallado para un artículo de blog titulado 'Los 5 beneficios de la inteligencia artificial en el marketing'.
+    ```
+  * *Prompt 2:*
+    ```text
+    Usando el punto 1 del esquema anterior, escribe la introducción del artículo (aproximadamente 150 palabras).
+    ``` 
+  * *Prompt 3:* 
+    ```text
+    Ahora, desarrolla el punto 2 del esquema...
+    ```
 
 **Meta-Prompting**
 
@@ -151,7 +160,10 @@ Estas técnicas se integran en el método para resolver problemas más complejos
 * **Uso Estratégico (La Sabiduría Práctica):**  
   * *¿Cuándo usarlo?:* Para tareas complejas, ambiguas o cuando necesitas crear una plantilla de prompt robusta y reutilizable.  
   * *¿Cuándo evitarlo?:* Es redundante e ineficiente para tareas simples y directas. No necesitas un meta-prompt para preguntar la capital de un país.  
-* **Ejemplo:** "Estoy tratando de obtener una explicación de la física cuántica para principiantes. Crea un prompt óptimo que le darías a un LLM como tú para generar una explicación clara, precisa y con analogías fáciles de entender."
+* Ejemplo:
+  ```text
+  Estoy tratando de obtener una explicación de la física cuántica para principiantes. Crea un prompt óptimo que le darías a un LLM como tú para generar una explicación clara, precisa y con analogías fáciles de entender.
+  ```text
 
 ---
 
