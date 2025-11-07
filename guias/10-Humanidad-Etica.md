@@ -1,10 +1,10 @@
-## **Bloque 4: El Impacto (Cómo nos afecta)**
+## Bloque 4: El Impacto (Cómo nos afecta)
 
-### **Guía 10: Humanidad, Ética y Confianza**
+### Guía 10: Humanidad, Ética y Confianza
 
-**(Subtítulo: Del "Co-Piloto" a la "Dirección de Transformación Humana")**
+Subtítulo: Del "Co-Piloto" a la "Dirección de Transformación Humana"
 
-#### **Introducción: De Escalar la Fábrica a Escalar a las Personas**
+#### Introducción: De Escalar la Fábrica a Escalar a las Personas
 
 En las guías anteriores, completamos el viaje de construir y operar nuestra fábrica de IA. Diseñamos el **Prompt** (la instrucción), gestionamos el **Contexto** (la memoria), dirigimos a los **Agentes** (los trabajadores autónomos) y aseguramos la **Gobernanza** (la seguridad) y la **Industrialización** (el escalado técnico).
 
@@ -16,7 +16,7 @@ Ahora, comienza el verdadero desafío: escalar. Escalar la tecnología es un pro
 
 ---
 
-#### **El Dilema Central: ¿Aumento o Abdicación?**
+#### El Dilema Central: ¿Aumento o Abdicación?
 
 A medida que los agentes de IA se vuelven más competentes, la tentación es la **Abdicación**: confiar ciegamente, convirtiéndose en un mero "pulsador de botones". Cuando el prototipo tiene éxito, el "Jefe de Operaciones" ve eficiencia. El equipo humano ve reemplazo.
 
@@ -27,7 +27,7 @@ Esta guía es el manual para diseñar flujos de "Aumento Cognitivo", gestionando
 
 ---
 
-#### **Parte 1: El Principio de Sinergia (Sistema 1 vs. Sistema 2\)**
+#### Parte 1: El Principio de Sinergia (Sistema 1 vs. Sistema 2)
 
 Para diseñar la sinergia, primero debemos dividir el trabajo. El pensamiento humano se divide en dos "sistemas":
 
@@ -47,7 +47,7 @@ La **Sinergia Humano-IA** es una arquitectura de trabajo donde el Agente de IA e
 
 ---
 
-#### **Parte 2: Los 3 Niveles de Sinergia (El Manual de Colaboración)**
+#### Parte 2: Los 3 Niveles de Sinergia (El Manual de Colaboración)
 
 La "Gobernanza" también consiste en diseñar el nivel correcto de colaboración. Como "Co-Pilotos", podemos elegir tres modos:
 
@@ -76,7 +76,7 @@ La "Gobernanza" también consiste en diseñar el nivel correcto de colaboración
 
 ---
 
-#### **Parte 3: La Gestión del Cambio (La Nueva Ruta de Carrera)**
+#### Parte 3: La Gestión del Cambio (La Nueva Ruta de Carrera)
 
 El "Agente PM" ha automatizado las tareas del "Analista Junior" (el trabajo de "Sistema 1"). ¿Qué le pasa a esa persona?  
 Respuesta: Su valor ha cambiado. Su trabajo ya no es hacer tareas de Sistema 1, es gestionar a los agentes que las hacen. Como "Directores de Talento", debemos crear la ruta de carrera.
@@ -103,7 +103,7 @@ Respuesta: Su valor ha cambiado. Su trabajo ya no es hacer tareas de Sistema 1, 
 
 ---
 
-#### **Parte 4: La Brújula Ética (Las "Líneas Rojas" de la Automatización)**
+#### Parte 4: La Brújula Ética (Las "Líneas Rojas" de la Automatización)
 
 La Gobernanza (Guía 07\) fue sobre seguridad (lo que no podemos hacer porque es riesgoso). Esta parte es sobre ética (lo que no deberíamos hacer, aunque sea técnicamente posible y seguro).
 
@@ -128,7 +128,7 @@ La Licencia Social es la aceptación y confianza que la ciudadanía deposita en 
 
 ---
 
-#### **Parte 5: El Nuevo Contrato Social (Responsabilidad y Propiedad)**
+#### Parte 5: El Nuevo Contrato Social (Responsabilidad y Propiedad)
 
 Cuando los "Agentes PM" se vuelven parte del equipo, surgen preguntas legales que el "Director de Transformación" debe responder.
 
@@ -144,7 +144,7 @@ Cuando los "Agentes PM" se vuelven parte del equipo, surgen preguntas legales qu
 
 ---
 
-#### **Conclusión: De Gobernar Máquinas a Liderar Humanos**
+#### Conclusión: De Gobernar Máquinas a Liderar Humanos
 
 Las guías anteriores nos enseñaron a construir y gobernar las máquinas. Esta guía define el rol del nuevo trabajador humano operando en esa fábrica.
 
