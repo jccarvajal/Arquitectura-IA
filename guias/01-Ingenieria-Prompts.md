@@ -4,13 +4,13 @@
 
 Subtítulo: El Plano del "Arquitecto de Instrucciones"
 
-#### **Introducción: De la Instrucción a la Ingeniería**
+#### Introducción: De la Instrucción a la Ingeniería
 
 La ingeniería de prompts es la disciplina que convierte la conversación con una IA en un proceso de desarrollo controlado y predecible. No buscamos "charlar", buscamos obtener resultados. Esta guía presenta un método completo que combina una estructura robusta con el juicio práctico necesario para aplicarla eficazmente en el mundo real.
 
 ---
 
-#### **Conceptos Fundamentales**
+#### Conceptos Fundamentales
 
 **¿Qué es un LLM (Large Language Model)?**  
 Un LLM es un modelo de inteligencia artificial entrenado con un volumen masivo de texto y datos. Su función principal no es "pensar" o "entender" en el sentido humano, sino predecir la siguiente palabra más probable en una secuencia, basándose en el contexto que le hemos proporcionado. No "piensa", sino que calcula probabilidades basadas en el contexto proporcionado. Ejemplos incluyen los modelos de OpenAI, Google y Anthropic.
@@ -41,7 +41,7 @@ La diferencia en la calidad y especificidad de la respuesta entre ambos ejemplos
 
 ---
 
-#### **El Método de Prompting en 7 Pasos**
+#### El Método de Prompting en 7 Pasos
 
 Este es un marco de trabajo que te guiará desde la idea inicial hasta un resultado pulido y de alta calidad.
 
@@ -116,7 +116,7 @@ No "pruebes cosas al azar". Ajusta tu prompt para cerrar la brecha entre el resu
 
 ---
 
-#### **Técnicas Avanzadas de Prompting (Herramientas de Precisión)**
+#### Técnicas Avanzadas de Prompting (Herramientas de Precisión)
 
 Estas técnicas se integran en el método para resolver problemas más complejos.
 
@@ -176,7 +176,7 @@ Estas técnicas se integran en el método para resolver problemas más complejos
 
 ---
 
-#### **Maximizando el Valor: Qué Técnicas Usar en Cada Paso**
+#### Maximizando el Valor: Qué Técnicas Usar en Cada Paso
 
 Aquí conectamos las técnicas avanzadas con el método de 7 pasos para ver dónde aportan más valor.
 
@@ -198,7 +198,7 @@ Aquí conectamos las técnicas avanzadas con el método de 7 pasos para ver dón
 
 ---
 
-#### **Conclusión: De Usuario a Arquitecto de Resultados**
+#### Conclusión: De Usuario a Arquitecto de Resultados
 
 La ingeniería de prompts te transforma: dejas de ser un usuario que simplemente conversa con una IA, para convertirte en un arquitecto que la dirige con propósito. La maestría en esta disciplina no reside en memorizar trucos, sino en dominar una doble habilidad fundamental:
 
@@ -206,7 +206,6 @@ La ingeniería de prompts te transforma: dejas de ser un usuario que simplemente
 2. **El Arte (El Juicio):** Saber qué herramienta usar, en qué contexto y, crucialmente, cuándo aplicar el escepticismo crítico para validar la información y refinar el enfoque.
 
 Este juicio es la habilidad central que desarrollaremos en este marco. Esta guía te entrega el mapa para dominar ambas facetas. Al hacerlo, dejas de buscar respuestas para empezar a construir soluciones. Recuerda: el verdadero poder no reside en la IA, sino en la habilidad humana para guiarla con maestría.
-
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
