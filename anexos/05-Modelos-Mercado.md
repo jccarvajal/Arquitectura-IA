@@ -1,14 +1,14 @@
-### **Anexo 05: Modelos y Mercado LLM**
+### Anexo 05: Modelos y Mercado LLM
 
-**(Subtítulo: Del "Jefe de Adquisiciones" al "Arquitecto de Portafolio")**
+Subtítulo: Del "Jefe de Adquisiciones" al "Arquitecto de Portafolio"
 
-#### **Introducción: Del Gobierno al Portafolio**
+#### Introducción: Del Gobierno al Portafolio
 
 En guías anteriores aprendimos a diseñar y **gobernar** —es decir, controlar de forma segura— los sistemas de IA. Este anexo es el manual de adquisiciones. Su objetivo no es señalar al "mejor" modelo, sino entregar una metodología para construir un ecosistema de portafolio. El rol estratégico no es elegir un solo motor, sino diseñar un portafolio flexible que combine modelos de manera inteligente.
 
 ---
 
-#### **1\. El Panorama 2025-2026: Los Tres Ecosistemas**
+#### 1. El Panorama 2025-2026: Los Tres Ecosistemas
 
 Como "Jefes de Adquisiciones" de nuestra fábrica de IA, el mercado de "motores" (LLMs) se ha consolidado en tres ecosistemas claros. Ya no elegimos un modelo; elegimos una estrategia de suministro.
 
@@ -35,7 +35,7 @@ Como "Jefes de Adquisiciones" de nuestra fábrica de IA, el mercado de "motores"
 
 ---
 
-#### **2\. El "Triángulo de Adquisición" (Revisado)**
+#### 2. El "Triángulo de Adquisición" (Revisado)
 
 Como "Jefe de Adquisiciones", no puedes tenerlo todo. Cada decisión equilibra tres fuerzas. Hemos reemplazado "Capacidad" por "Control", un término más robusto y estratégico.
 
@@ -49,7 +49,7 @@ Como "Jefe de Adquisiciones", no puedes tenerlo todo. Cada decisión equilibra t
 
 ---
 
-#### **3\. La Solución Estratégica: El "Agente Enrutador"**
+#### 3. La Solución Estratégica: El "Agente Enrutador"
 
 El panorama 2025-2026 demuestra que la estrategia ganadora no es elegir un motor, sino construir un portafolio y usar el motor adecuado para cada tarea.
 
@@ -68,7 +68,7 @@ El "Agente Enrutador" (que puede ser un "Agente Director") es un "cerebro" metac
 
 ---
 
-#### **4\. Metodología Práctica de Selección (Checklist)**
+#### 4. Metodología Práctica de Selección (Checklist)
 
 Para diseñar tu portafolio, usa este proceso:
 
@@ -98,7 +98,7 @@ Para diseñar tu portafolio, usa este proceso:
 
 ---
 
-#### **5\. Enfoque Especial: Sector Público y Entornos Regulados**
+#### 5. Enfoque Especial: Sector Público y Entornos Regulados
 
 Para instituciones públicas o reguladas (finanzas, salud), el factor **Control** (Soberanía de Datos, Auditoría) debe superar casi siempre al Rendimiento.
 
@@ -106,7 +106,7 @@ Para instituciones públicas o reguladas (finanzas, salud), el factor **Control*
 2. **Exigir Transparencia y Auditoría:** Exigir documentación técnica clara y la capacidad de auditar los procesos y los logs.  
 3. **Contratar con Cláusulas de Gobernanza:** Al usar APIs (Ecosistema A) o AaaS (Ecosistema C), incluir cláusulas contractuales específicas sobre residencia de datos, trazabilidad y retención de logs.
 
-#### **Conclusión: De Gobernador a Arquitecto de Portafolio**
+#### Conclusión: De Gobernador a Arquitecto de Portafolio
 
 La maestría no reside en saber qué LLM es "mejor", sino en tener el juicio de ingeniería para diseñar un ecosistema flexible: rendimiento donde importa, Control donde hay riesgo, y Costo donde la escala lo exige. El rol final no es solo gobernar una fábrica; es ser el "Arquitecto del Portafolio de IA".
 
