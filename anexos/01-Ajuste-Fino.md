@@ -1,5 +1,3 @@
-### Anexos (Biblioteca del Arquitecto)
-
 ### Anexo 01: Ajuste Fino y Adaptación de Modelos
 
 Subtítulo: El Manual del "Especialista de Motores"
