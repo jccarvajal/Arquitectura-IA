@@ -16,7 +16,8 @@ Le pedimos que aborde esta lectura no como un manual de instrucciones, sino como
 
 Esta obra está escrita principalmente para quienes deben **Decidir, Diseñar y Gobernar** la IA (los "Arquitectos" de la fábrica).
 
-Si su rol es "usar" la IA en el día a día (el "Profesional" dentro de la fábrica), encontrará sus herramientas más directas en los **Anexos** (especialmente el Anexo 03: Tácticas Aplicadas).  
+Si su rol es "usar" la IA en el día a día (el "Profesional" dentro de la fábrica), encontrará sus herramientas más directas en los **Anexos** (especialmente el Anexo 03: Plantillas y Recursos).
+
 Ambas miradas, la del Arquitecto que diseña y la del Profesional que ejecuta, son complementarias. Esta obra busca que dialoguen con mayor comprensión mutua.
 
 #### 3. Sobre la Estructura: "Viaje" y "Manual"
