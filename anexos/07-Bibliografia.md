@@ -54,7 +54,9 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 *(Humanidad, Ética, Estrategia y Valor)*
 
 * **Challapally, A., et al. (Julio 2025). "The GenAI Divide: State of AI in Business 2025". MIT / Project NANDA.**  
-  * **Por qué leerlo:** Es el informe de mercado clave de 2025\. Proporciona los datos estadísticos que validan la tesis de esta obra: la **"Brecha GenAI"** (el 95% de las empresas con ROI cero). Define los conceptos de **"Shadow AI"** (IA en la sombra), **"Prosumers"** (usuarios expertos) y la superioridad de la estrategia "Comprar" vs. "Construir", que son fundamentales para la Gobernanza (Guía 07), la Sinergia (Guía 11\) y la Estrategia (Guía 12).  
+  * **Por qué leerlo:** Es el informe de mercado clave de 2025\. Proporciona los datos estadísticos que validan la tesis de esta obra: la **"Brecha GenAI"** (el 95% de las empresas con ROI cero). Define los conceptos de **"Shadow AI"** (IA en la sombra), **"Prosumers"** (usuarios expertos) y la superioridad de la estrategia "Comprar" vs. "Construir", que son fundamentales para la Gobernanza (Guía 07), la Sinergia (Guía 11\) y la Estrategia (Guía 12). 
+* **Singla, A., Sukharevsky, A., Yee, L., & Chui, M. (Noviembre 2025). "The state of AI in 2025: Agents, innovation, and transformation". QuantumBlack, AI by McKinsey.**
+  * **Por qué leerlo:** Valida estadísticamente la "Brecha de Escalamiento", demostrando que la mayoría de las empresas están atascadas en pilotaje y no logran impacto en el EBIT . Identifica la "validación humana" y el enfoque en la "innovación" como los diferenciadores clave de los "high performers".
 * **Kahneman, D. (2011). "Thinking, Fast and Slow".**  
   * **Por qué leerlo:** Es la fuente del marco **"Sistema 1 / Sistema 2"**, el pilar conceptual de la **Guía 10 (Sinergia Humano-IA)** para la división del trabajo cognitivo.  
 * **Heath, C., & Heath, D. (2010). "Switch: How to Change Things When Change Is Hard".**  

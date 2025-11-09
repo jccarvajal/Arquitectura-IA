@@ -8,7 +8,9 @@ En las guías anteriores, completamos el viaje desde la idea hasta la operación
 
 Nuestra "fábrica" de IA es ahora una máquina segura y eficiente. Ahora, enfrentamos la pregunta final y más importante: ¿Para qué?
 
-Informes de la industria de 2025 señalan una **"Brecha GenAI" (The GenAI Divide)**: la enorme diferencia entre la alta experimentación (casi el 95% de las empresas que invierten) y el bajo retorno de inversión (el 5% que realmente logra un impacto en el negocio).
+Informes de la industria de 2025 (MIT Report) señalan una **"Brecha GenAI" (The GenAI Divide)**: la enorme diferencia entre la alta experimentación (casi el 95% de las empresas que invierten) y el bajo retorno de inversión (el 5% que realmente logra un impacto en el negocio). Un sondeo global de fines de 2025 (McKinsey) confirmó esta realidad: aunque el 88% de las empresas usa IA, casi dos tercios (62%) están atascados en fases de 'Experimentación' o 'Pilotaje', y solo el 39% reporta un impacto real en el EBIT (beneficios) a nivel empresarial.
+
+Informes clave de la industria de 2025, como el reporte **"The GenAI Divide" del MIT**, señalan una **"Brecha GenAI"**: la enorme diferencia entre la alta experimentación (casi el 95% de las empresas que invierten) y el bajo retorno de inversión (el 5% que realmente logra un impacto en el negocio). **Un sondeo global de QuantumBlack, la división de IA de McKinsey**, confirmó esta realidad a fines de 2025: aunque el 88% de las empresas usa IA, casi dos tercios (62%) están atascados en fases de 'Experimentación' o 'Pilotaje', y solo el 39% reporta un impacto real en el EBIT (beneficios) a nivel empresarial .
 
 Esta guía es el manual para el Director de Estrategia (Chief Strategy Officer). Nuestro trabajo ya no es gestionar la IA, es apalancarla para cruzar esa brecha y crear valor real.
 
@@ -16,7 +18,7 @@ Esta guía es el manual para el Director de Estrategia (Chief Strategy Officer).
 
 #### El Dilema Central: Eficiencia (Canibalización) vs. Innovación (Oportunidad)
 
-Una vez que la "fábrica" funciona, el "Jefe de Operaciones" tiene dos caminos:
+Una vez que la "fábrica" funciona, el "Jefe de Operaciones" tiene dos caminos. Esta distinción es el diferenciador clave del éxito. El mismo sondeo global de 2025 reveló que, si bien el 80% de las empresas establece la "eficiencia" (reducción de costos) como objetivo, las compañías de "alto rendimiento" son aquellas que también establecen objetivos explícitos de "crecimiento e innovación", siendo 3.6 veces más propensas a buscar una transformación fundamental de su negocio.
 
 1. **El Camino de la Eficiencia:** Usas tus **Agentes PM** (los "trabajadores digitales" que gestionan proyectos) para hacer tu trabajo actual (ej. 1.000 auditorías) 100 veces más barato, reemplazando el trabajo de **"Sistema 1"** (las tareas cognitivas de "piloto automático" que la IA hace bien).  
    * *Resultado:* Ahorras costos. Aunque a veces se ve como una "carrera hacia el fondo", los datos de 2025 muestran que el ROI más claro y rápido proviene de aquí, principalmente de la automatización del "back-office" (operaciones, finanzas) y la sustitución de costosos contratos de externalización de procesos (BPO).  

@@ -10,9 +10,11 @@ En las guías anteriores, definimos la *instrucción* (Guía 01: Prompts) y la *
 
 Ahora, abordamos la segunda mitad de esa brecha: la incapacidad de la IA genérica para *actuar* e integrarse en los flujos de trabajo del mundo real.
 
-Hemos pasado de usar la IA como un "Oráculo" (un sabelotodo que responde) a usarla como un "Asistente" (un ejecutor que actúa).
+Sin embargo, la industria está en gran medida atascada en la fase de "hype" con esta tecnología. Un sondeo de 2025 encontró que, si bien existe una "alta curiosidad" por los agentes de IA (con un 62% de las empresas al menos "experimentando" con ellos), su escalado real sigue siendo bajo y confinado a pilotos.
 
-No buscamos una "respuesta". Buscamos acción autónoma. Queremos que la IA deje de ser un cerebro en un frasco al que le hacemos preguntas, y se convierta en un trabajador digital con "manos y pies" para interactuar con el mundo real por nosotros. Esta guía presenta los conceptos para dirigir a ese trabajador.
+El problema es que la mayoría sigue buscando una "respuesta" (un Oráculo) en lugar de **acción autónoma** (un Asistente). Siguen tratando a la IA como un "cerebro en un frasco" al que le hacen preguntas.
+
+Esta guía proporciona el marco de diseño para superar esa experimentación. Presenta los conceptos para darle a la IA "manos y pies" y convertirla en un trabajador digital que podamos dirigir.
 
 ---
 

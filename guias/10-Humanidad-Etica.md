@@ -58,12 +58,18 @@ La "Gobernanza" también consiste en diseñar el nivel correcto de colaboración
 * **Interacción:** El Agente pregunta al humano: "¿Aprueba usted \[Enviar\]?"  
 * **Cuándo Usar:** Es el control de seguridad \#1 de la Gobernanza. Se usa para cualquier acción de alto riesgo o irreversible (gastar dinero, comunicarse con clientes, modificar datos).
 
+Este principio de validación no es solo una sugerencia ética; es una de las prácticas más correlacionadas con el éxito financiero. El informe de fines de 2025 identificó que las organizaciones de "alto rendimiento" en IA son significativamente más propensas que sus pares a tener "procesos definidos para determinar cómo y cuándo los resultados del modelo necesitan validación humana para asegurar la precisión" . Es la prueba de la "inteligencia híbrida": la combinación de IA con el juicio humano.
+
 **Nivel 2: Humano-sobre-el-Bucle (Human-on-the-Loop) \- El Supervisor**
 
 * **Metáfora:** El Agente es un "Jefe de Turno" autónomo.  
 * **Flujo:** El Agente ejecuta tareas 100% de forma autónoma. El humano no es un cuello de botella.  
 * **Interacción:** El humano supervisa pasivamente el "Dashboard de Gobernanza". Solo interviene si recibe una alerta.  
 * **Cuándo Usar:** Tareas de riesgo medio que necesitan escalar (ej. clasificar 10.000 tickets, monitorear redes sociales).
+
+Aunque este nivel es ideal para escalar tareas de riesgo medio, su implementación es compleja. Los informes de la industria se centran en el éxito del Nivel 1 (validación activa)  porque el Nivel 2 introduce un riesgo operacional significativo conocido como la "complacencia de la automatización".
+
+Este fenómeno ocurre cuando el supervisor humano, al ver que el agente opera de forma autónoma con éxito, reduce su atención y confía ciegamente en el sistema. Esto anula el propósito del control, ya que el humano pierde la capacidad de detectar errores sutiles. El modelo de "alerta" también depende peligrosamente de que el propio agente sea capaz de identificar su propio fallo, lo cual es una suposición arriesgada, dado que el principal riesgo de la IA es la "Inexactitud" (o alucinación) , que ocurre precisamente porque el agente no sabe que está equivocado.
 
 **Nivel 3: Humano-al-Mando (Human-in-Command) \- El Estratega**
 
@@ -74,6 +80,7 @@ La "Gobernanza" también consiste en diseñar el nivel correcto de colaboración
   * *Agente Director:* "Entendido." (Activa autónomamente a otros agentes para analizar, diseñar y ejecutar la campaña).  
 * **Cuándo Usar:** Tareas estratégicas complejas donde el "cómo" es menos importante que el "qué".
 
+Este nivel de sinergia, donde el humano define la "intención estratégica" y el agente la ejecuta, es precisamente lo que el sondeo global de 2025 identifica como la mentalidad de las empresas de "alto rendimiento". Estas organizaciones son 3.6 veces más propensas que sus pares a usar la IA para una "transformación fundamental" de su negocio, en lugar de solo mejoras incrementales . Su éxito se correlaciona directamente con líderes senior que demuestran un fuerte "compromiso y propiedad" de las iniciativas de IA , definiendo objetivos de "crecimiento e innovación"  que los agentes autónomos deben perseguir.
 ---
 
 #### Parte 3: La Gestión del Cambio (La Nueva Ruta de Carrera)
