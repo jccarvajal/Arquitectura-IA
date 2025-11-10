@@ -87,6 +87,7 @@ Este nivel de sinergia, donde el humano define la "intención estratégica" y el
 #### Parte 3: La Gestión del Cambio (La Nueva Ruta de Carrera)
 
 El "Agente PM" ha automatizado las tareas del "Analista Junior" (el trabajo de "Sistema 1"). ¿Qué le pasa a esa persona?  
+
 Respuesta: Su valor ha cambiado. Su trabajo ya no es hacer tareas de Sistema 1, es gestionar a los agentes que las hacen. Como "Directores de Talento", debemos crear la ruta de carrera.
 
 **La Nueva Ruta de Carrera (De Ejecutor a Gobernador):**
