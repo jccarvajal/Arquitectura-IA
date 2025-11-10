@@ -20,7 +20,7 @@ Esta guía proporciona el marco de diseño para superar esa experimentación. Pr
 
 #### Conceptos Fundamentales
 
-**¿Qué es un Agente de IA?**
+**1\. ¿Qué es un Agente de IA?**
 
 La diferencia es simple pero profunda:
 
@@ -34,7 +34,7 @@ Un Agente es un sistema que utiliza un LLM como "cerebro" para tomar decisiones,
 
 Herramientas como Copilot (diseñado para leer archivos y buscar en Bing) o las "Acciones GPT" están construidas para ser agentes desde el principio.
 
-**El "Motor" del Agente: El Ciclo ReAct (Razonar \+ Actuar)**
+**2\. El "Motor" del Agente: El Ciclo ReAct (Razonar \+ Actuar)**
 
 Esto es lo más importante. Un agente no solo da una respuesta y se detiene. Opera en un bucle (loop) hasta que cumple el objetivo. Este ciclo se conoce comúnmente como ReAct, un patrón que combina el Razonamiento (Reason) con la Acción (Act).
 
@@ -71,7 +71,7 @@ El agente ahora debe "razonar" y "actuar" en un bucle:
 
 **Respuesta Final al Usuario:** "Listo. El clima en Valparaíso es de 18C, parcialmente nublado. Te he enviado el resumen." 
 
-**Las Herramientas (Tools): Las "Manos" del Agente**
+**3\. Las Herramientas (Tools): Las "Manos" del Agente**
 
 Las herramientas son la conexión del cerebro de la IA con el mundo digital. Sin herramientas, es solo un "conversador". Con herramientas, es un "actor".  
 
