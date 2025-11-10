@@ -99,7 +99,7 @@ Investigaciones recientes (Sun, et al., 2025) demuestran que el éxito de un age
 
 **1\. Productividad (El Control de Calidad)**
 * **Definición:** ¿El agente completó la tarea central con éxito?
-* **Métrica de Gobernanza:** Debemos medir la "tasa de éxito de la tarea" (ej. Tasa de Éxito en el "Golden Set"). Un agente mal gobernado es aquel que, aunque interactúe bien, falla en completar la tarea central. Un agente bien gobernado asegura la eficacia (Productividad) como baseline antes de optimizar la interacción (Proactividad y Personalización).
+* **Métrica de Gobernanza:** Debemos medir la **"tasa de éxito de la tarea"** (ej. Tasa de Éxito en el "Golden Set"). Un agente mal gobernado es aquel que, aunque interactúe bien, falla en completar la tarea central. Un agente bien gobernado asegura la eficacia (Productividad) como baseline antes de optimizar la interacción (Proactividad y Personalización).
 
 **2\. Proactividad (El Control de Ambigüedad)**
 * **Definición:** La habilidad del agente para identificar instrucciones vagas y hacer preguntas aclaratorias estratégicas y de "bajo esfuerzo".
