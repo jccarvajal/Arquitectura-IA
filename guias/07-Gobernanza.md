@@ -6,7 +6,7 @@ Subtítulo: Del "Director de Orquesta" al "Jefe de Operaciones"
 
 #### Introducción: De Orquestar Resultados a Gobernar Sistemas
 
-En las guías anteriores, dominamos el arte de la construcción: diseñamos el plano (la **Ingeniería de Prompts**), gestionamos los recursos (la **Ingeniería de Contexto**), entendimos el combustible (la **Estrategia de Datos**) y dirigimos a los **agentes** —los trabajadores autónomos capaces de razonar y actuar—. Hemos construido con éxito nuestra primera "máquina".
+En las guías anteriores, dominamos el arte de la construcción: diseñamos el plano (la **Ingeniería de Prompts**), gestionamos los recursos (la **Ingeniería de Contexto**), entendimos el combustible (la **Estrategia de Datos**) y dirigimos a los **agentes**, los trabajadores autónomos capaces de razonar y actuar. Hemos construido con éxito nuestra primera "máquina".
 
 Ahora, comienza el trabajo real: operarla. Esta guía aborda la siguiente capa de maestría: la Gobernanza. Ya no se trata solo de qué podemos construir, sino de cómo operamos, mantenemos y protegemos lo que hemos construido. Nuestro rol evoluciona de "Director" a "Jefe de Operaciones y Seguridad".
 
