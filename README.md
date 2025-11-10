@@ -5,6 +5,8 @@ Un "tratado de criterio" para profesionales que comienzan su integración con IA
 
 **Autor:** [Juan Carlos Carvajal](https://www.jccarvajal.com/)
 
+! [Portada de IA Aplicada](./IMG_1596.jpeg)
+
 ---
 
 ### Propósito de esta Obra
