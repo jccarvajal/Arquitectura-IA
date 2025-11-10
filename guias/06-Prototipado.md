@@ -29,7 +29,7 @@ Antes de escribir una línea de código, debes encontrar la "playa" correcta par
 
 * **Mal Caso de Uso:** "Un agente que reemplace a todo el departamento de servicio al cliente."  
   * *(Riesgo altísimo, complejo, "hervir el océano").*  
-* **Buen Caso de Uso:** "Un **agente** —un sistema que razona y actúa— que lea los 1.000 emails de 'contacto@empresa.com' cada noche y genere un reporte de 10 bullets para el gerente a las 8 AM."  
+* **Buen Caso de Uso:** "Un **agente**, un sistema que razona y actúa, que lea los 1.000 emails de 'contacto@empresa.com' cada noche y genere un reporte de 10 bullets para el gerente a las 8 AM."  
   * *(Definido, bajo riesgo, alto valor de ahorro de tiempo).*
 
 **El Filtro del "Quick Win":**  
