@@ -12,7 +12,7 @@ Esta guía es el manual para el "Arquitecto de la Información". Es la guía fun
 
 #### El Dilema Central: "Basura Entra, Basura Sale" (Garbage In, Garbage Out)
 
-Este es el principio de hierro de la IA. Un agente con un "cerebro" de nivel genio es inútil si su "biblioteca" de memoria —el sistema **RAG (Generación Aumentada por Recuperación)** que le da conocimiento externo— está llena de documentos desactualizados, contradictorios, irrelevantes o incorrectos.
+Este es el principio de hierro de la IA. Un agente con un "cerebro" de nivel genio es inútil si su "biblioteca" de memoria, el sistema **RAG (Generación Aumentada por Recuperación)** que le da conocimiento externo, está llena de documentos desactualizados, contradictorios, irrelevantes o incorrectos.
 
 * **El Riesgo (Fábrica Contaminada):** Tu agente RAG "lee" un manual de producto de 2019 (sin que tú lo sepas) y le da al cliente información obsoleta. El agente no "alucinó"; citó perfectamente la fuente incorrecta.  
 * **El Objetivo (Fábrica Limpia):** El agente tiene acceso únicamente a datos "curados": verificados, actualizados y relevantes.
