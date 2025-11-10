@@ -116,20 +116,21 @@ Respuesta: Su valor ha cambiado. Su trabajo ya no es hacer tareas de Sistema 1, 
 
 La Gobernanza (Guía 07\) fue sobre seguridad (lo que no podemos hacer porque es riesgoso). Esta parte es sobre ética (lo que no deberíamos hacer, aunque sea técnicamente posible y seguro).
 
-**Riesgo 0: Pérdida de la "Licencia Social"**  
+**Riesgo 1: Pérdida de la "Licencia Social"**  
+
 La Licencia Social es la aceptación y confianza que la ciudadanía deposita en la implementación de una tecnología. No se gana solo cumpliendo la ley; se gana con transparencia y demostrando valor público. Si la percepción es que un sistema es opaco, sesgado o engañoso, esa licencia se pierde y el proyecto fracasa, independientemente de su éxito técnico.
 
-**1\. El Riesgo: Sesgo (Bias) Algorítmico**
+**Riesgo 2: Sesgo (Bias) Algorítmico**
 
 * **El Problema:** El motor RAG es una "biblioteca". Si los documentos de la biblioteca (ej. revisiones de desempeño de los últimos 20 años) están llenos de sesgos humanos, el "Agente PM de Contratación" aprenderá esos sesgos y los amplificará.  
 * **El Control Ético:** Auditoría de Datos de Origen. Antes de conectar un agente a una base de datos (RAG), se debe realizar una auditoría ética sobre esos datos (un principio clave de la Estrategia de Datos). El agente debe ser instruido para ignorar datos demográficos en la toma de decisiones.
 
-**2\. El Riesgo: Engaño (Deception)**
+**Riesgo 3: Engaño (Deception)**
 
 * **El Problema:** Un "Agente PM" de servicio al cliente es tan bueno que el cliente cree que está hablando con un humano empático.  
 * **El Control Ético:** Transparencia Obligatoria. Para mantener la Licencia Social, todos los agentes que interactúan con el exterior deben identificarse explícitamente como una IA. La confianza se basa en la transparencia.
 
-**3\. El Riesgo: Decisiones Irreversibles (Human-out-of-the-Loop)**
+**Riesgo 4: Decisiones Irreversibles (Human-out-of-the-Loop)**
 
 * **El Problema:** Un "Agente Director" analiza los datos de rendimiento y decide, basado en métricas, que un empleado debe ser despedido.  
 * **El Control Ético:** "Líneas Rojas" Infranqueables. Ciertas decisiones nunca pueden ser delegadas a un agente, ni siquiera a Nivel 2 ("Supervisión"). Requieren siempre Nivel 1 ("Validación") o Nivel 0 (El humano hace el 100% de la decisión).  
