@@ -113,7 +113,7 @@ Esta es, quizás, la arquitectura más transformadora en la IA aplicada.
 
 Si RAG es la "biblioteca" (conocimiento estático externo), la Memoria Explícita es el "bloc de notas personal" del agente (memoria dinámica interna).
 
-* **¿Qué es?** Es darle al **agente** —el sistema de IA que puede razonar y usar herramientas (como veremos en la Guía 04)— un "bloc de notas" externo y la habilidad de escribir y leer de él. Es una memoria a largo plazo persistente.
+* **¿Qué es?** Es darle al **agente**, el sistema de IA que puede razonar y usar herramientas (como veremos en la Guía 04), un "bloc de notas" externo y la habilidad de escribir y leer de él. Es una memoria a largo plazo persistente.
 * **¿Por qué funciona?** Permite al agente recordar hechos clave ("El proyecto Alfa vence el 15/11") a través de múltiples sesiones, incluso después de que la "pizarra" se haya borrado. Resuelve la parte de "aprender del feedback" de la "Brecha de Aprendizaje".
 * **Ideal para:** Proyectos largos, recordar preferencias del usuario.
 
