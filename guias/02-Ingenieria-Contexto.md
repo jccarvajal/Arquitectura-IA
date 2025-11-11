@@ -125,7 +125,7 @@ El agente usa su bucle de pensamiento de Razonar-Actuar (ReAct) para gestionar s
     * *Usuario:* "Mi proyecto clave se llama 'Alfa' y la fecha límite es el 15 de noviembre."
     * *Agente (Razona):* "Dato fáctico importante para el futuro. Debo usar mi herramienta `escribir_nota`."
     * *Agente (Actúa):*
-        ```json
+        ```yaml
         acción: escribir_nota
         argumentos:
           llave: proyecto_alfa
