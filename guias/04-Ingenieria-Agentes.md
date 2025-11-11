@@ -136,19 +136,32 @@ Esta es la solución más práctica y segura al dilema de la "correa".
 
 ---
 
-#### Estrategia 2: La Orquesta de Agentes (La Analogía del Director de Programa) 
+#### Estrategia 2: La Orquesta de Agentes (La Analogía del Director de Programa)
 Esta es la estrategia de escalabilidad más importante. Ya no pensamos en un solo agente que lo hace todo. Pensamos en un equipo de especialistas, usando la analogía del mundo corporativo:
 
-* **Un Agente Individual es un Project Manager (PM):** Se enfoca en un proyecto único y bien definido. Recibe un objetivo (ej: "Escribir el informe del mercado europeo"), aplica el ciclo ReAct para planificar sus pasos, usa sus herramientas (buscar, analizar) para ejecutar y entrega un resultado final.  
-* **Un Agente de Agentes es un Director de Programa (PM de PMs):** Este es el "Agente Jefe" o "Director". No ejecuta las tareas del día a día, sino que coordina a los "Agentes PM" especializados para alcanzar un objetivo estratégico más grande.  
-* **¿Cómo funciona?**  
-  1. **Objetivo Estratégico:** El Agente Director recibe la meta: "Lanzar campaña de nuevo producto".  
-  2. **Descomposición (Coordina a sus PMs):**  
-     * (Asigna a) **Agente Investigador (PM 1):** "Analiza el público objetivo y la competencia".  
-     * (Asigna a) **Agente Creativo (PM 2):** "Genera los eslóganes y el contenido visual".  
-     * (Asigna a) **Agente de Redes (PM 3):** "Prepara el calendario de publicaciones".  
-  3. **Síntesis:** El Director recibe los entregables de cada "PM" y los integra en el resultado final (la campaña completa).  
+* **Un Agente Individual es un Project Manager (PM):** Se enfoca en un proyecto único y bien definido. Recibe un objetivo (ej: "Escribir el informe del mercado europeo"), aplica el ciclo ReAct para planificar sus pasos, usa sus herramientas (buscar, analizar) para ejecutar y entrega un resultado final.
+* **Un Agente de Agentes es un Director de Programa (PM de PMs):** Este es el "Agente Jefe" o "Director". No ejecuta las tareas del día a día, sino que coordina a los "Agentes PM" especializados para alcanzar un objetivo estratégico más grande.
+* **¿Cómo funciona?**
+  1. **Objetivo Estratégico:** El Agente Director recibe la meta:
+     ```text
+     Lanzar campaña de nuevo producto
+     ```
+  2. **Descomposición (Coordina a sus PMs):**
+     * (Asigna a) **Agente Investigador (PM 1):**
+       ```text
+       Analiza el público objetivo y la competencia
+       ```
+     * (Asigna a) **Agente Creativo (PM 2):**
+       ```text
+       Genera los eslóganes y el contenido visual
+       ```
+     * (Asigna a) **Agente de Redes (PM 3):**
+       ```text
+       Prepara el calendario de publicaciones
+       ```
+  3. **Síntesis:** El Director recibe los entregables de cada "PM" y los integra en el resultado final (la campaña completa).
 * **Beneficio:** El Director se encarga de la estrategia de alto nivel. Además, cada "Agente PM" trabaja con su propia "pizarra limpia" (su propio **contexto**, o memoria de trabajo), volviéndose más rápido, barato y preciso en su tarea especializada.
+
 
 ---
 
