@@ -59,8 +59,14 @@ Este es el problema central que la ingeniería de contexto resuelve. Es lo que o
 
 En la ingeniería de contexto, no hay soluciones mágicas, solo *trade-offs* ("compensaciones") que debemos gestionar como arquitectos.
 
-* **Mal Enfoque:** "Metamos todo en el contexto. Si el modelo tiene 1 millón de tokens, ¡usémoslos todos\!"  
-* **Buen Enfoque:** "Cada token en el contexto tiene un costo. ¿Cuál es la cantidad mínima de información de máxima calidad que necesitamos en la pizarra para que la IA complete el objetivo?"
+* **Mal Enfoque:**
+  ```text
+  Metamos todo en el contexto. Si el modelo tiene 1 millón de tokens, ¡usémoslos todos!
+  ```
+* **Buen Enfoque:**
+  ```text
+  Cada token en el contexto tiene un costo. ¿Cuál es la cantidad mínima de información de máxima calidad que necesitamos en la pizarra para que la IA complete el objetivo?
+  ```
 
 **Las Métricas de Decisión (El "Trade-off"):**
 
