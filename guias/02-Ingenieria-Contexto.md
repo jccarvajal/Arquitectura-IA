@@ -136,13 +136,10 @@ El agente usa su bucle de pensamiento de Razonar-Actuar (ReAct) para gestionar s
     * *Usuario:* "¿Cuánto falta para la entrega del proyecto 'Alfa'?"
     * *Agente (Razona):* "No sé qué es 'Alfa' en mi contexto actual. Antes de responder, debo revisar mi bloc de notas."
     * *Agente (Actúa):*
-        ```json
-        {
-          "acción": "leer_nota",
-          "argumentos": {
-            "llave": "proyecto_alfa"
-          }
-        }
+        ```yaml
+        acción: leer_nota
+        argumentos:
+          llave: proyecto_alfa
         ```
     * *Agente (Observa):* (Resultado: `{"deadline": "2025-11-15"}`)
     * *Agente (Responde):* "Según mis notas, faltan 22 días para el proyecto 'Alfa'."
@@ -162,28 +159,22 @@ Esta es la estrategia de contexto más avanzada. En lugar de un solo "cerebro" t
 1.  *Usuario:* "Planifica un viaje a París de 5 días con un presupuesto de $2000."
 2.  *Agente Director (Pizarra A):* (Razona) "Tarea compleja. Necesito un 'Agente de Vuelos' y un 'Agente de Itinerarios'."
     * *Agente (Actúa):*
-        ```json
-        {
-          "acción": "llamar_agente",
-          "agente": "Agente_Vuelos",
-          "argumentos": {
-            "destino": "París",
-            "presupuesto_vuelo": "$800"
-          }
-        }
+        ```yaml
+        acción: llamar_agente
+        agente: Agente_Vuelos
+        argumentos:
+          destino: París
+          presupuesto_vuelo: "$800"
         ```
 3.  *Agente Vuelos (Pizarra B - Limpia):* (Opera en su propio contexto, busca vuelos, etc.) (Responde al Director) "Vuelos encontrados: $750."
 4.  *Agente Director (Pizarra A):* (Observa) "OK, $750 gastados. Quedan $1250."
     * *Agente (Actúa):*
-        ```json
-        {
-          "acción": "llamar_agente",
-          "agente": "Agente_Itinerario",
-          "argumentos": {
-            "destino": "Paris",
-            "presupuesto_hoteles": "$1250"
-          }
-        }
+        ```yaml
+        acción: llamar_agente
+        agente: Agente_Itinerario
+        argumentos:
+          destino: Paris
+          presupuesto_hoteles: "$1250"
         ```
 5.  *Agente Itinerario (Pizarra C - Limpia):* (Opera en su propio contexto, busca hoteles, museos, etc.) (Responde al Director) "Itinerario listo: [ver adjunto]."
 6.  *Agente Director (Pizarra A):* (Sintetiza la información de los dos sub-agentes y responde al Usuario).
