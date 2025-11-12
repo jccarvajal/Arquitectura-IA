@@ -62,21 +62,29 @@ La Gobernanza nos exige un "Dashboard de Observabilidad". Esta guía define las 
 
 #### Parte 4: Métodos de Evaluación: ¿Quién Mide?
 
-Una vez que tienes tu "Golden Set" y tus "Métricas", ¿quién hace el trabajo de calificar? Tienes dos opciones, y ambas se basan en la "Rúbrica de Evaluación de Calidad" (disponible en los Anexos).
+Una vez que tienes tu "Golden Set" y tus "Métricas", ¿quién hace el trabajo de calificar? Tienes tres opciones, y todas se basan en la "Rúbrica de Evaluación de Calidad" (disponible en los Anexos).
 
 **A. Evaluación Humana (El "Estándar de Oro")**
 
-* **Metáfora:** El "Maestro Artesano" que revisa cada pieza a mano.  
-* **Proceso:** Expertos humanos toman las respuestas del agente al "Golden Set" y las califican manualmente usando la Rúbrica.  
-* **Ventaja:** Es la medición más precisa y matizada. Captura el "sentido común".  
+* **Metáfora:** El "Maestro Artesano" que revisa cada pieza a mano.
+* **Proceso:** Expertos humanos toman las respuestas del agente al "Golden Set" y las califican manualmente usando la Rúbrica.
+* **Ventaja:** Es la medición más precisa y matizada. Captura el "sentido común".
 * **Desventaja:** Extremadamente lento, caro y no escala.
 
 **B. Evaluación Asistida por IA (El "Supervisor Escalable")**
 
-* **Metáfora:** Usar un "robot de QA" (un LLM Juez) para revisar el trabajo de los "robots de producción" (tu agente).  
-* **Proceso:** Se utiliza un LLM de máxima potencia (ej: GPT-4o o Claude 3 Opus) como "Juez". Se le entrega la Rúbrica de Evaluación como parte de su prompt y se le pide que califique la respuesta de tu agente.  
-* **Ventaja:** Rápido, barato y masivamente escalable.  
+* **Metáfora:** Usar un "robot de QA" (un LLM Juez) para revisar el trabajo de los "robots de producción" (tu agente).
+* **Proceso:** Se utiliza un LLM de máxima potencia (ej: GPT-4o o Claude 3 Opus) como "Juez". Se le entrega la Rúbrica de Evaluación como parte de su prompt y se le pide que califique la respuesta de tu agente.
+* **Ventaja:** Rápido, barato y masivamente escalable.
 * **Desventaja:** El "Juez" también puede cometer errores. Requiere una calibración cuidadosa.
+
+**C. Táctica Avanzada: Revisión "IA-revisa-IA" (El Auditor Cruzado)**
+
+* **Metáfora:** Usar un "auditor" de un competidor para revisar el trabajo de tu fábrica.
+* **Proceso:** Se utiliza una IA (Modelo B) para auditar el resultado de otra IA (Modelo A). Este mismo libro fue auditado usando esta técnica (usando ChatGPT para revisar los borradores generados con asistencia de Gemini).
+* **La Lógica (Validación Cruzada):** Como se ha documentado en flujos de trabajo de startups, usar una IA (ej. Coderabbit) para revisar el código generado por otra IA (ej. Claude) "suena redundante, pero aparentemente detecta diferentes tipos de problemas".
+* **Por qué Funciona (Puntos Ciegos):** Cada modelo de IA tiene "puntos ciegos" diferentes. Usar un "Modelo B" para revisar al "Modelo A" es una forma eficaz y de bajo costo para detectar errores lógicos, de seguridad o de estilo que el modelo original pasó por alto.
+* **Aplicación (Gobernanza):** Integramos un "Revisor de IA" como un paso de **Evaluación (Guía 08)** automatizado en nuestro *pipeline* de **Industrialización (Guía 09)**.
 
 ---
 
