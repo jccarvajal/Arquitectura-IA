@@ -94,7 +94,10 @@ El "Arquitecto de la Información" debe decidir qué combustible usar.
 
 * **Qué es:** Usar una IA (ej. un modelo potente) para generar los datos que necesitas.  
 * **El Caso de Uso:** Es la fuente de datos para el **Ajuste Fino (Fine-Tuning)**, el proceso de re-entrenar el "cerebro" del modelo para que adquiera una habilidad o estilo específico.  
-* **Ejemplo:** No tienes 1.000 emails de "Voz de Marca". Le pides a un modelo potente: "Actúa como el agente de soporte perfecto. Ahora, genera 1.000 ejemplos de cómo responderías a estas 1.000 quejas de clientes."  
+* **Ejemplo:** No tienes 1.000 emails de "Voz de Marca". Le pides a un modelo potente:
+  ```text
+  Actúa como el agente de soporte perfecto. Ahora, genera 1.000 ejemplos de cómo responderías a estas 1.000 quejas de clientes.
+  ```
 * **Ventaja:** Puedes crear "combustible" perfectamente limpio y formateado para tareas donde no tienes datos del mundo real.  
 * **Desventaja:** Riesgo de "endogamia". Si usas una IA para entrenar a otra IA, corres el riesgo de que ambas aprendan y amplifiquen los mismos errores o sesgos.
 
