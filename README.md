@@ -66,7 +66,7 @@ La obra está diseñada como un viaje de aprendizaje secuencial.
 
 ### Mejora Continua
 
-Si encuentras una errata o tienes una sugerencia de mejora, puedes reportarla directamente en el [**Repositorio de GitHub**](https://github.com/jccarvajal/IA-Aplicada)
+Si encuentras una errata o tienes una sugerencia de mejora, puedes reportarla directamente en el [Repositorio de GitHub](https://github.com/jccarvajal/IA-Aplicada)
 
 ---
 
