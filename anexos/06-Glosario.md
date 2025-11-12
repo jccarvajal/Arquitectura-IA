@@ -153,6 +153,21 @@ Este anexo es el léxico centralizado de "Inteligencia Artificial Aplicada". La 
 * **Definición:** Una habilidad cognitiva humana clave (Guía 11). Es la capacidad de descomponer un problema complejo del mundo real en una secuencia de pasos lógicos (un algoritmo) que pueden ser ejecutados por un Co-Piloto de IA.  
 * **Referencia Principal:** Guía 11 (Aprender a Pensar con IA).
 
+**Personalización (Personalization)**
+
+**Definición:** Una métrica de gobernanza y calidad de la interacción. Es la habilidad de un agente de IA para adaptar su estilo de interacción (tono, formato, lenguaje) a las preferencias explícitas o implícitas del usuario, reduciendo la fricción y mejorando la adopción.
+**Referencia Principal:** Guía 07 (Gobernanza de IA).
+
+**Proactividad (Proactivity)**
+
+**Definición:** Una métrica de gobernanza y calidad de la interacción. Es la habilidad de un agente de IA para identificar instrucciones vagas o ambiguas y solicitar aclaraciones estratégicas ("preguntas de bajo esfuerzo"), en lugar de fallar o frustrar al usuario con preguntas irrelevantes ("alto esfuerzo").
+**Referencia Principal:** Guía 07 (Gobernanza de IA).
+
+**Productividad (Productivity)**
+
+* **Definición:** Una métrica de gobernanza y el pilar de la evaluación. Mide la capacidad del agente para completar la tarea asignada con éxito (ej. su Tasa de Éxito en el "Golden Set"). Es el *baseline* de rendimiento antes de optimizar la Proactividad y la Personalización.
+* **Referencia Principal:** Guía 08 (Evaluación, Calidad y Validación de IA), Guía 07 (Gobernanza de IA).
+
 **Prosumer**
 
 * **Definición:** Término de la industria (2025) para un "productor" y "consumidor" experto de IA. Es el "power user" (usuario avanzado) que, a menudo usando "Shadow AI", desarrolla un alto nivel de alfabetización cognitiva y se convierte en un "Co-Piloto Estratégico", impulsando la adopción y los casos de uso prácticos.  
