@@ -51,7 +51,7 @@ Las Políticas del "Arquitecto de la Información":
 3. **Gestión del Ciclo de Vida (Archivado):** Los datos obsoletos son peligrosos; son el combustible de las alucinaciones factuales.  
    * *Política:*
      ```text
-     Cualquier documento con más de X tiempo (ej. 2 años) de antigüedad o que sea reemplazado por una v\_nueva debe ser automáticamente archivado (retirado de la biblioteca RAG).
+     Cualquier documento con más de X tiempo (ej. 2 años) de antigüedad o que sea reemplazado por una versión nueva debe ser automáticamente archivado (retirado de la biblioteca RAG).
      ```
 
 ---
