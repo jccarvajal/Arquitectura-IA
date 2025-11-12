@@ -118,6 +118,11 @@ Este anexo es el léxico centralizado de "Inteligencia Artificial Aplicada". La 
 * **Definición:** Una métrica de rendimiento (eficiencia). Es el tiempo total que tarda el sistema de IA en procesar una solicitud y entregar la respuesta final al usuario.  
 * **Referencia Principal:** Guía 08 (Evaluación, Calidad y Validación de IA).
 
+**Licencia Social (Social License)**
+
+* **Definición:** La aceptación, aprobación y confianza continua que la sociedad (usuarios, clientes, ciudadanos) otorga a un proyecto de IA. Es un "permiso" ético e informal, distinto del legal, que se gana demostrando justicia, transparencia y operación responsable.
+* **Referencia Principal:** Guía 10 (Humanidad, Ética y Confianza).
+
 **LLM-Ops (Large Language Model Operations)**
 
 * **Definición:** Una especialización de DevOps. Es el conjunto de prácticas de ingeniería para gestionar el ciclo de vida completo de las aplicaciones de LLM, incluyendo la gestión de datos, el versionado de prompts, la evaluación (QA) y el monitoreo de costos y rendimiento en producción.  
