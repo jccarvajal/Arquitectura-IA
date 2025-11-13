@@ -91,6 +91,8 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 * **Tendencia 3: De Agentes-Herramienta a Agentes Autónomos**  
   * **Cognition Labs / Adept (2025). "Frameworks for Reliable Autonomous Agents in Production".**  
     * **Por qué leerlo:** El *paper* "Generative Agents" (2023) fue una simulación académica. Los *white papers* de 2025 (de las startups que lideran esta área) describen las arquitecturas de **Gobernanza** (Guía 07\) necesarias para desplegar agentes autónomos *en el mundo real*.  
+  * **Riedl, M. O., & Desai, D. R. (Agosto 2025). "AI Agents and the Law". arXiv.**
+    * **Por qué leerlo:** Un análisis crítico que conecta la ingeniería de software con la "Ley de Agencia". Identifica dos nuevos riesgos para los Agentes Autónomos (Tendencia 3): el "Problema de la Lealtad" (¿el agente trabaja para ti o para su creador?) y el "Problema de la Divulgación" ante terceros. Propone expandir la alineación de IA para incluir deberes fiduciarios.
 * **Tendencia 4: IA Corpórea (Embodied AI)**  
   * **Figure AI / Boston Dynamics / Tesla (2025). "Fleet Learning: Bridging Vision-Language-Action Models with Humanoid Hardware".**  
     * **Por qué leerlo:** Demuestra la fusión de la multimodalidad (visión) con la acción física (robótica).  
