@@ -65,7 +65,7 @@ Hemos pasado de los "Agentes ReAct" (que usan herramientas) a un enfoque en agen
 
 * **Impacto Práctico:** El enfoque de la industria está en construir agentes que puedan tomar un objetivo de alto nivel (ej. "planifica mis vacaciones y resérvalas") y ejecutar todo el proceso (investigar, comparar, reservar, pagar) de forma autónoma.
 
-**El Riesgo de la "Agencia":** Con la autonomía surge el riesgo legal de la "Lealtad" (Riedl & Desai, 2025). El Vigilante debe preguntar: ¿El agente está optimizando para el usuario o para la plataforma que lo creó? Y, ¿se está identificando transparentemente (Divulgación) ante terceros al negociar?
+* **El Riesgo de la "Agencia":** Con la autonomía surge el riesgo legal de la "Lealtad" (Riedl & Desai, 2025). El Vigilante debe preguntar: ¿El agente está optimizando para el usuario o para la plataforma que lo creó? Y, ¿se está identificando transparentemente (Divulgación) ante terceros al negociar?
 
 
 **Tendencia 4: IA Corpórea (Embodied AI)**  
