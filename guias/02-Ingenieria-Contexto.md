@@ -22,6 +22,32 @@ No buscamos una "charla" brillante que se degrada; buscamos construir sistemas d
 
 ---
 
+#### El Pilar Técnico: La Arquitectura Transformer y sus Límites
+
+Para dominar la ingeniería de contexto y memoria, es crucial entender la arquitectura que define la era actual de la IA: el Transformer.
+
+Presentada en 2017, esta arquitectura es el motor técnico detrás de casi todos los modelos de IA generativa (GPT, Gemini, Llama, Claude). Su innovación, la "auto-atención" (self-attention), permite al modelo sopesar la importancia de cada token (palabra o parte de ella) en relación con todos los demás tokens en una secuencia, dándole una comprensión profunda del contexto.
+
+Sin embargo, para un Arquitecto de IA, el valor no está en cómo funciona, sino en cómo sus limitaciones de diseño impactan la estrategia. El Transformer tiene dos límites fundamentales que definen todo el campo de la ingeniería de contexto y memoria:
+
+1. El Límite del Contexto: El Costo Cuadrático
+
+La "auto-atención" debe calcular la relación de cada token con todos los demás. Esto tiene una implicación de costo no lineal:
+• Si duplicas la longitud del contexto (de 100 a 200 tokens), el costo computacional no se duplica, sino que se cuadruplica.
+• Esto se conoce como escalado cuadrático (o O(n^2)).
+• Implicación Estratégica: Esta es la razón por la cual las ventanas de contexto más grandes (como 1 millón de tokens) son tan costosas y lentas. La ingeniería de contexto (como RAG) existe fundamentalmente para evitar tener que procesar todo con la "fuerza bruta" del Transformer.
+
+2. El Límite de la Memoria: La "Amnesia Estática"
+
+El Transformer posee una "memoria" poderosa, pero solo a corto plazo:
+• Memoria de Corto Plazo: La ventana de contexto. El modelo puede "recordar" y conectar ideas perfectamente dentro de ese contexto.
+• Ausencia de Memoria a Largo Plazo: Una vez que la ventana de contexto se cierra (termina la conversación), el modelo olvida todo. No puede consolidar lo aprendido en esa sesión en sus pesos (su "cerebro" permanente).
+• Implicación Estratégica: Los Transformers son estáticos; están "congelados" en el tiempo después de su entrenamiento. Esta "Amnesia Estática" es su mayor limitación funcional y la causa raíz de la "Brecha de Aprendizaje". Es el principal motor de investigación para futuras arquitecturas (como exploramos en la Guía 13: Perspectivas).
+
+Toda la disciplina de "Ingeniería de Contexto y Memoria" opera dentro de estas dos restricciones fundamentales impuestas por la arquitectura Transformer.
+
+---
+
 #### Conceptos Fundamentales (El Problema)
 
 **1\. ¿Qué es la "Ventana de Contexto"?**  
