@@ -75,6 +75,19 @@ El desafío más aterrizado es el costo de la inteligencia. Los LLM actuales (ba
 
 * **Impacto Práctico:** El "Vigilante" debe monitorear arquitecturas no-Transformers (como Mamba o State Space Models) y hardware nuevo (chips neuromórficos) que prometen un rendimiento similar con una fracción del costo energético.
 
+**Tendencia 5: Más Allá del Transformer, La Era del "Aprendizaje Continuo"**
+Como establecimos en la Guía 02 (Ingeniería de Contexto y Memoria), la arquitectura Transformer define la generación actual de IA, pero su naturaleza es fundamentalmente estática. Allí definimos su limitación clave como la "Amnesia Estática": los modelos se "congelan" y no pueden consolidar nuevo conocimiento en su memoria a largo plazo.
+
+Investigaciones recientes (Google Research, NeurIPS 2025) buscan resolver precisamente esta amnesia. El "Nested Learning" (Aprendizaje Anidado) es un nuevo paradigma que reemplaza las "capas de cómputo" estáticas por "capas de cognición" que operan y se actualizan a múltiples frecuencias (escalas de tiempo), similar a las ondas cerebrales. Prototipos como "Hope" implementan esta idea, introduciendo modelos "auto-modificables" con "memoria continua".
+
+* **Impacto Práctico:** El "Vigilante Estratégico" debe entender que esto no es una simple mejora, sino un cambio de arquitectura que resuelve las dos limitaciones clave de la Guía 02:
+  * **Resuelve el Costo Cuadrático:** Arquitecturas alternativas (como Mamba, referenciada en el Anexo 07) habilitan el procesamiento de contexto largo a un costo lineal, haciendo viables los análisis masivos.
+  * **Resuelve la Amnesia Estática:** Los modelos de "Aprendizaje Anidado" podrán aprender de la retroalimentación del usuario y consolidar ese conocimiento, cerrando la "Brecha de Aprendizaje" (Guía 02) y permitiendo una personalización real.
+  * **Revoluciona la Gobernanza:** Como se discute en la Guía 07, el desafío de auditoría cambia radicalmente: de supervisar un "artefacto" estático a gobernar un "sistema" dinámico que aprende y evoluciona por sí mismo.
+
+
+
+
 **Nota sobre la AGI:** Escucharás sobre la "Inteligencia Artificial General" (AGI), un sistema de IA hipotético con la capacidad de comprender, aprender y aplicar inteligencia para realizar cualquier tarea intelectual que un humano puede hacer. Para los propósitos de esta guía, orientada al criterio operativo, tratamos eso como una especulación teórica. Nuestro trabajo de Gobernanza y Ética se enfoca en gestionar el impacto real, actual y concreto de las potentes herramientas que sí tenemos.
 
 ---
