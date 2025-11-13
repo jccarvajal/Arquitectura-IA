@@ -30,9 +30,9 @@ Sin embargo, esta arquitectura tiene dos implicaciones estratégicas que impacta
 
 #### Parte 2: El Panorama 2025-2026: Los Tres Ecosistemas
 
-Como “Jefes de Adquisiciones” de nuestra fábrica de IA, el mercado de “motores” (LLMs) se ha consolidado en tres ecosistemas claros. Como establecimos en la Guía 02, la arquitectura Transformer es el motor técnico fundamental que impulsa a la gran mayoría de los modelos en estos ecosistemas (GPT, Llama, Claude, etc.).
+Como “Jefes de Adquisiciones” de nuestra fábrica de IA, el mercado de “motores” (LLMs) se ha consolidado en tres ecosistemas claros. Como establecimos en la **Guía 02**, la arquitectura **Transformer** es el motor técnico fundamental que impulsa a la gran mayoría de los modelos en estos ecosistemas (GPT, Llama, Claude, etc.).
 
-Este anexo se enfoca en cómo los proveedores "empaquetan" esa arquitectura —con sus límites de costo cuadrático y memoria estática— en distintas estrategias de suministro:
+Este anexo se enfoca en cómo los proveedores "empaquetan" esa arquitectura, con sus límites de costo cuadrático y memoria estática, en distintas estrategias de suministro:
 
 **A. Modelos Propietarios (APIs) \- "Arrendar el Cerebro"**
 
