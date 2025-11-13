@@ -79,7 +79,7 @@ Investigaciones recientes (Google Research, NeurIPS 2025) buscan resolver precis
 * **Impacto Práctico:** El "Vigilante Estratégico" debe entender que esto no es una simple mejora, sino un cambio de arquitectura que resuelve las dos limitaciones clave de la Guía 02:
   * **Resuelve el Costo Cuadrático:** Arquitecturas alternativas (como Mamba, referenciada en el Anexo 07) habilitan el procesamiento de contexto largo a un costo lineal, haciendo viables los análisis masivos.
   * **Resuelve la Amnesia Estática:** Los modelos de "Aprendizaje Anidado" podrán aprender de la retroalimentación del usuario y consolidar ese conocimiento, cerrando la "Brecha de Aprendizaje" (Guía 02) y permitiendo una personalización real.
-  * **Revoluciona la Gobernanza:** Como se discute en la Guía 07, el desafío de auditoría cambia radicalmente: de supervisar un "artefacto" estático a gobernar un "sistema" dinámico que aprende y evoluciona por sí mismo.
+  * **Revoluciona la Gobernanza:** El desafío de auditoría cambia radicalmente. Como "Vigilante Estratégico", debes anticipar la transición de supervisar un "artefacto" de IA estático (un Transformer congelado) a gobernar un "sistema" de IA dinámico que aprende, evoluciona por sí mismo y podría desarrollar sesgos en tiempo real.
 
 **Nota sobre la AGI:** Escucharás sobre la "Inteligencia Artificial General" (AGI), un sistema de IA hipotético con la capacidad de comprender, aprender y aplicar inteligencia para realizar cualquier tarea intelectual que un humano puede hacer. Para los propósitos de esta guía, orientada al criterio operativo, tratamos eso como una especulación teórica. Nuestro trabajo de Gobernanza y Ética se enfoca en gestionar el impacto real, actual y concreto de las potentes herramientas que sí tenemos.
 
