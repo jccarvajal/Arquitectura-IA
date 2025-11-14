@@ -6,7 +6,7 @@ Subtítulo: De "Arquitecto de la Fábrica" a "Vigilante Estratégico"
 
 #### Introducción: Anticipando las Próximas Revoluciones
 
-Hemos llegado al final de nuestro mapa. Construimos los cimientos (Bloque 1), ensamblamos la maquinaria (Bloque 2), tomamos la sala de control (Bloque 3\) y definimos el impacto y la estrategia de nuestra fábrica (Bloque 4). Con la **Guía 12 (Estrategia y Valor)**, le dimos un propósito claro a nuestra operación.
+Hemos llegado al final de nuestro mapa. Construimos los cimientos (Bloque 1), ensamblamos la maquinaria (Bloque 2), tomamos la sala de control (Bloque 3\) y definimos el impacto y la estrategia de nuestra fábrica (Bloque 4). Con la Guía 12 (Estrategia y Valor), le dimos un propósito claro a nuestra operación.
 
 Este epílogo es el "telescopio" de la fábrica. Su propósito es abordar la única certeza de esta industria: esta fábrica (basada en LLMs y Transformers) es solo la primera de muchas. Se volverá obsoleta.
 
@@ -32,7 +32,7 @@ Esta obra no te enseñó a operar *esta* fábrica; te enseñó a ser un Arquitec
 
 #### Parte 2: El Nuevo Rol Permanente: El "Vigilante Estratégico"
 
-Con la fábrica actual operando y siendo gobernada, el profesional que ha completado esta obra asume un nuevo rol permanente: el "Vigilante del Horizonte". 
+Con la fábrica actual operando y siendo gobernada, el profesional que ha completado esta obra asume un nuevo rol permanente: el "Vigilante Estratégico". 
 
 Este rol consiste en escanear el futuro, no por curiosidad, sino como una función de negocio crítica. El "Vigilante" debe ser la persona en la organización (especialmente en un servicio público) que proporciona respuestas informadas a la pregunta más difícil: "¿Qué viene después, y cómo nos preparamos?"  
 
@@ -64,7 +64,7 @@ Como contraparte a los modelos gigantes ("fuerza bruta"), ha surgido una tendenc
 Hemos pasado de los "Agentes ReAct" (que usan herramientas) a un enfoque en agentes autónomos. La meta ya no es un "asistente" que ayuda, sino un "trabajador" que completa tareas complejas de múltiples pasos (la promesa de la Guía 04 y Guía 05).
 
 * **Impacto Práctico:** El enfoque de la industria está en construir agentes que puedan tomar un objetivo de alto nivel (ej. "planifica mis vacaciones y resérvalas") y ejecutar todo el proceso (investigar, comparar, reservar, pagar) de forma autónoma.
-* **El Riesgo de la "Agencia":** Con la autonomía surge el riesgo legal de la "Lealtad" (Riedl & Desai, 2025). El Vigilante debe preguntar: ¿El agente está optimizando para el usuario o para la plataforma que lo creó? Y, ¿se está identificando transparentemente (Divulgación) ante terceros al negociar?
+* **El Riesgo de la "Agencia":** Con la autonomía surge el riesgo legal de la "Lealtad" (Riedl & Desai, 2025). El Vigilante debe preguntar: "¿El agente está optimizando para el usuario o para la plataforma que lo creó? Y, ¿se está identificando transparentemente (Divulgación) ante terceros al negociar?"
 
 **Tendencia 4: IA Corpórea (Embodied AI)**  
 La IA sale de la pantalla. Nuestra "fábrica" ha sido puramente digital. La próxima fábrica tendrá brazos y piernas. La IA se fusionará con la robótica para operar en el mundo físico.
