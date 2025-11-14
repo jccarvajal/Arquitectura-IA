@@ -1,6 +1,6 @@
 ### Guía 06: Prototipado y Experimentación
 
-Subtítulo: Del "Arquitecto de Portafolio" al "Ingeniero Jefe de Prototipos")
+Subtítulo: Del "Arquitecto de Portafolio" al "Ingeniero Jefe de Prototipos"
 
 #### Introducción: De la Estrategia a la Ejecución (El Día 1)
 
