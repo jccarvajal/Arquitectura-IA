@@ -4,7 +4,7 @@ Subtítulo: Del "Ingeniero de Prototipos" al "Director de Operaciones"
 
 #### Introducción: Del Prototipo (1) a la Producción (1000)
 
-En el prototipado, construimos con éxito nuestro primer "Agente PM" (un **agente** de IA enfocado en un proyecto único). Demostramos el valor, validamos la seguridad básica y probamos el concepto.
+En el prototipado, construimos con éxito nuestro primer "Agente PM" (un agente de IA enfocado en un proyecto único). Demostramos el valor, validamos la seguridad básica y probamos el concepto.
 
 Pero un prototipo que funciona en la laptop de un ingeniero no es una "fábrica". Es un Go-Kart.
 
@@ -14,7 +14,7 @@ Esta guía es el manual para la industrialización. Es el plan para pasar de con
 
 #### El Dilema Central: Agilidad vs. Robustez
 
-* **El Mundo del Prototipo:** El objetivo es la agilidad. Puedes cambiar un **prompt** (la instrucción del agente) 20 veces al día. Si el agente falla, reinicias el script. El costo es irrelevante.  
+* **El Mundo del Prototipo:** El objetivo es la agilidad. Puedes cambiar un prompt (la instrucción del agente) 20 veces al día. Si el agente falla, reinicias el script. El costo es irrelevante.  
 * **El Mundo de la Producción:** El objetivo es la robustez. El sistema debe ser:  
   1. **Confiable:** No puede "alucinar" (inventar datos) cuando 10.000 clientes lo están usando.  
   2. **Escalable:** Debe manejar 100 solicitudes por segundo, no una por minuto.  
