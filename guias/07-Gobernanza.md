@@ -43,7 +43,6 @@ En el prototipado, le dimos "manos y pies" (Herramientas) a nuestros agentes par
   ```
 * **Controles de Seguridad (Aislamiento y Sanitización):**  
   1. **Aislamiento de Instrucción (Delimitadores):** Se crea un "cortafuegos" en el **prompt** (la instrucción del agente) para separar tus instrucciones (confiables) de los datos (no confiables). 
-
      ```text
      ### INSTRUCCIONES DE SISTEMA (CONFIABLES) ###
      Tu tarea es resumir el texto que te entregaré en la sección <DATOS>.
@@ -55,7 +54,6 @@ En el prototipado, le dimos "manos y pies" (Herramientas) a nuestros agentes par
      [Aquí pegas el email del atacante...]
      </DATOS>
      ```
-
   2. **Arquitectura de Agentes "Firewall":** Separa las tareas. Un "Agente Lector Tonto" lee datos no confiables y pasa un resumen limpio. Un "Agente Ejecutor Ciego" recibe el resumen limpio y usa las herramientas peligrosas, sin ver nunca el dato original.
 
 **2\. Riesgo: Fuga de Datos y Contexto**
@@ -100,7 +98,10 @@ En el prototipado, le dimos "manos y pies" (Herramientas) a nuestros agentes par
 * **El Ataque (Interno):** Un agente "PM" se atasca intentando leer un archivo corrupto, reintentando el Ciclo 1: leer\_archivo 50.000 veces en una hora.  
 * **Controles de Seguridad (Gobernanza Financiera):**  
   1. **"Circuit Breakers" (Interruptores Automáticos):** Es el "interruptor de emergencia" técnico.  
-     * *Control:* "Si un solo agente ('PM') ejecuta más de X ciclos (ej. 20 ciclos) en una sola tarea, o falla X veces seguidas, detenerlo ('matar' el proceso) y escalarlo a un humano."  
+     * *Control:*
+     ```text
+     Si un solo agente ('PM') ejecuta más de X ciclos (ej. 20 ciclos) en una sola tarea, o falla X veces seguidas, detenerlo ('matar' el proceso) y escalarlo a un humano.
+     ```text
   2. **Presupuestos de Agente (Agent Budgeting):** Asignar un presupuesto por tarea.  
      * *Control:* "El 'Agente Director' (PM de PMs) no solo asigna la tarea, asigna un presupuesto. (Ej: 'Agente Investigador, tienes $1.00 para completar esta investigación'). El agente debe optimizar sus acciones (ej. usar un modelo más barato) para cumplir la misión dentro del costo."
 
