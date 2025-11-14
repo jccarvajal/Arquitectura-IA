@@ -10,7 +10,7 @@ Ahora debemos probar científicamente que esa máquina produce un producto de ca
 
 Esta guía es el "Laboratorio de Control de Calidad" (QA) de nuestra fábrica. Es el puente indispensable entre la Gobernanza y la **Industrialización** (el escalado a producción). No podemos industrializar un sistema cuya calidad no podemos medir. Esta guía nos lleva de la "sensación" subjetiva ("creo que funciona bien") a la "métrica" objetiva ("puedo probar que tiene un 92% de precisión factual").
 
-Resolver esto es el principal desafío de la industria. El riesgo de "Inexactitud" (o Alucinaciones) es el problema N°1 que las organizaciones están enfrentando en 2025. Un 30% de las empresas reporta haber experimentado consecuencias negativas por la inexactitud de la IA, y es el riesgo que más están trabajando en mitigar (54%) .
+Resolver esto es el principal desafío de la industria. El riesgo de "Inexactitud" (o Alucinaciones) es el problema N°1 que las organizaciones están enfrentando en 2025. Un 30% de las empresas reporta haber experimentado consecuencias negativas por la inexactitud de la IA, y es el riesgo que más están trabajando en mitigar.
 
 ---
 
