@@ -92,17 +92,17 @@ Es sostener un marco.
 Un estándar.
 Una vigilancia.
 
-Lo que has leído no es un instructivo técnico,
-sino una **Fundación**: una estructura conceptual para pensar en un mundo donde las herramientas cambian más rápido que las instituciones.
+Lo que has leído no es un instructivo técnico, sino una **Fundación**: una estructura conceptual para pensar en un mundo donde las herramientas cambian más rápido que las instituciones.
 
-Y es también una invitación a la **Expansión**:
-a abrir rutas, construir acceso y habilitar capacidades que antes no estaban disponibles.
+Y es también una invitación a la **Expansión**: a abrir rutas, construir acceso y habilitar capacidades que antes no estaban disponibles.
 
 La tecnología no define el rumbo.
 El rumbo lo define quien la gobierna.
 
 Tu responsabilidad, y tu oportunidad, es mantener abiertas esas rutas.
+
 Para esta fábrica.
+
 Y para todas las que vendrán.
 
 ---
