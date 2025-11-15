@@ -113,12 +113,12 @@ Para adaptar esta política:
 
 1. **Propósito y Alcance:** Reemplazar "interés público" y "confianza ciudadana" por "valor de negocio", "eficiencia operativa" y "confianza del cliente/marca". El concepto de "IA en la Sombra" se traduce directamente como "Shadow IT".
 2. **Principios Rectores:** El anclaje debe cambiar.
-  * "Legalidad": Cambiar de leyes públicas (20.285, 20.609) a un marco de Riesgo Corporativo más amplio (Riesgo Legal/Reputacional, Protección de Propiedad Intelectual, Ley del Consumidor y GDPR si aplica).
-  * "Licencia Social": Traducir a "Valor de Marca" y "Confianza del Cliente". Una política ética se convierte en una ventaja competitiva.
-  * "Gobernanza Financiera": Cambiar de "prevención de Bucles de Costo" (gasto fiscal) a "Gobernanza FinOps y Rentabilidad (P&L)".
+  * **"Legalidad":** Cambiar de leyes públicas (20.285, 20.609) a un marco de Riesgo Corporativo más amplio (Riesgo Legal/Reputacional, Protección de Propiedad Intelectual, Ley del Consumidor y GDPR si aplica).
+  * **"Licencia Social":** Traducir a "Valor de Marca" y "Confianza del Cliente". Una política ética se convierte en una ventaja competitiva.
+  * **"Gobernanza Financiera":** Cambiar de "prevención de Bucles de Costo" (gasto fiscal) a "Gobernanza FinOps y Rentabilidad (P&L)".
 3. **Gobernanza y Roles:** Los roles son conceptualmente idénticos, pero cambian de nombre.
-  * "Jefe de Servicio" (Dueño de la Política) se convierte en un "C-Level Sponsor" (ej. CIO, CTO, o Gerente General).
-  * "Monitor de Cumplimiento" se alinea con las funciones de Gestión de Riesgos (ERM), Auditoría Interna o el CISO.
+  * **"Jefe de Servicio"** (Dueño de la Política) se convierte en un "C-Level Sponsor" (ej. CIO, CTO, o Gerente General).
+  * **"Monitor de Cumplimiento"** se alinea con las funciones de Gestión de Riesgos (ERM), Auditoría Interna o el CISO.
 4. **Cumplimiento y Sanciones (Sección 6):** Este es el cambio más importante.
   * Reemplazar las faltas a la "probidad administrativa" (Ley 18.575) por infracciones al Reglamento Interno de Orden, Higiene y Seguridad de la empresa y a las obligaciones del Código del Trabajo.
   * La "Abdicación" del criterio profesional se considera una negligencia profesional con impacto directo en el desempeño.
