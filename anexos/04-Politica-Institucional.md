@@ -123,7 +123,7 @@ Para adaptar esta política:
   * **"Monitor de Cumplimiento"** se alinea con las funciones de Gestión de Riesgos (ERM), Auditoría Interna o el CISO.
 
 4. **Cumplimiento y Sanciones (Sección 6):** Este es el cambio más importante.
-  * Reemplazar las faltas a la "probidad administrativa" (Ley 18.575) por infracciones al Reglamento Interno de Orden, Higiene y Seguridad de la empresa y a las obligaciones del Código del Trabajo.
+  * Reemplazar las faltas a la "probidad administrativa" (Ley 18.575) por infracciones al Reglamento Interno de Orden, Higiene y Seguridad (RIOHS) de la empresa y a las obligaciones del Código del Trabajo.
   * La "Abdicación" del criterio profesional se considera una negligencia profesional con impacto directo en el desempeño.
 
 ---
