@@ -47,6 +47,6 @@ Las ideas, estructura y visión final son plenamente autorales; las herramientas
     <a href="../">Volver al Índice</a>
   </div>
   <div>
-    <a href="./anclajes-conceptuales.html">Ideas Centrales »</a>
+    <a href="./ideas-centrales.html">Ideas Centrales »</a>
   </div>
 </div>
