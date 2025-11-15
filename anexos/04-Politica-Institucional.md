@@ -1,7 +1,7 @@
 
 ### Anexo 04: Política Institucional de IA (Propuesta Marco)
 
-Subtítulo: Plantilla de Gobernanza para el Sector Público)
+Subtítulo: Plantilla de Gobernanza para el Sector Público
 
 #### Introducción: De la Guía a la Política
 
