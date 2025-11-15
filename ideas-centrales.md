@@ -29,7 +29,7 @@
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
-    <a href="./nota-al-lector.html">« Nota al Lector</a>
+    <a href="./prologo.html">« Prólogo</a>
   </div>
   <div>
     <a href="../">Volver al Índice</a>
