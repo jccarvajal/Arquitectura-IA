@@ -6,13 +6,12 @@ Esta obra no termina: cambia de fase.
 La “Maestría” en Inteligencia Artificial no es un punto de llegada, sino un movimiento continuo, una destreza cíclica que se afina cada vez que interactuamos con una herramienta cuya naturaleza evoluciona más rápido que nuestras instituciones.
 
 A lo largo del camino, pasaste por cuatro roles:
+* **Usuario**, pregunta “¿qué hace esto?”
+* **Arquitecto**, define “qué debe hacer”
+* **Gobernador**, resguarda “qué no debe hacer”
+* **Vigilante**, sostiene el criterio y mira hacia adelante
 
-* **Usuario** — pregunta “¿qué hace esto?”
-* **Arquitecto** — define “qué debe hacer”
-* **Gobernador** — resguarda “qué no debe hacer”
-* **Vigilante** — sostiene el criterio y mira hacia adelante
-
-Este trayecto no es decorativo: es la estructura profesional que evita convertirnos en Protogen, esa organización ficticia —y demasiado real como metáfora— que activó una herramienta poderosa sin comprenderla y desató un caos industrial que nunca fue su intención.
+Este trayecto no es decorativo: es la estructura profesional que evita convertirnos en Protogen, esa organización ficticia, y demasiado real como metáfora, que activó una herramienta poderosa sin comprenderla y desató un caos industrial que nunca fue su intención.
 
 Gobernar la IA es evitar ese destino.
 
@@ -36,12 +35,11 @@ Gobernar IA no es delegar juicio: es protegerlo.
 
 ## 3. Gobernar la Protomolécula: Herramientas Poderosas, Consecuencias Reales
 
-En *The Expanse*, la saga de **James S. A. Corey**, la Protomolécula es una herramienta antigua, opaca y poderosa.
-En manos irresponsables —Protogen— genera destrucción.
+En *The Expanse*, la saga de James S. A. Corey, la Protomolécula es una herramienta antigua, opaca y poderosa.
+En manos irresponsables, Protogen genera destrucción.
 En su función original, permite **construcción y expansión**, abriendo rutas y habilitando acceso a nuevos espacios.
 
 La IA actual funciona bajo esa misma lógica:
-
 * no es una mente,
 * es una herramienta,
 * cuyo impacto depende por completo del criterio con que se gobierna.
@@ -49,7 +47,7 @@ La IA actual funciona bajo esa misma lógica:
 Usada sin cuidado, genera fragilidad: basura elocuente, errores opacos, decisiones sin responsabilidad.
 Gobernada con rigor, abre caminos: automatización segura, análisis estructurado, expansión de capacidades humanas.
 
-Esta obra es un manual para gobernar esa herramienta —nuestro equivalente contemporáneo de la Protomolécula— con criterio profesional.
+Esta obra es un manual para gobernar esa herramienta, nuestro equivalente contemporáneo de la Protomolécula, con criterio profesional.
 
 ---
 
@@ -57,7 +55,6 @@ Esta obra es un manual para gobernar esa herramienta —nuestro equivalente cont
 
 Las herramientas cambiarán. Los modelos también.
 Pero esta obra no intenta capturar la tecnología de un momento, sino establecer:
-
 * un **criterio duradero**,
 * una **estructura conceptual estable**,
 * un **marco de responsabilidad profesional**,
@@ -73,7 +70,7 @@ criterio, diseño, contexto, control, responsabilidad, auditoría, evaluación c
 ## 5. Hacia la Expansión: Lo que la Tecnología Abre, lo que la Humanidad Decide
 
 El riesgo nunca fue una AGI mítica.
-El riesgo era —y sigue siendo— más humano:
+El riesgo era, y sigue siendo, más humano:
 procesos lentos supervisando herramientas rápidas.
 
 La solución no es acelerar sin control, ni frenar por temor.
@@ -81,7 +78,6 @@ La solución es **estructurar la expansión**.
 
 La Protomolécula podía destruir o abrir rutas, según quién la gobernara.
 La IA actual funciona igual:
-
 * puede amplificar errores,
 * o puede abrir miles de caminos productivos,
 
@@ -109,7 +105,7 @@ a abrir rutas, construir acceso y habilitar capacidades que antes no estaban dis
 La tecnología no define el rumbo.
 El rumbo lo define quien la gobierna.
 
-Tu responsabilidad —y tu oportunidad— es mantener abiertas esas rutas.
+Tu responsabilidad, y tu oportunidad, es mantener abiertas esas rutas.
 Para esta fábrica.
 Y para todas las que vendrán.
 
