@@ -96,13 +96,10 @@ Lo que has leído no es un instructivo técnico, sino una **Fundación**: una es
 
 Y es también una invitación a la **Expansión**: a abrir rutas, construir acceso y habilitar capacidades que antes no estaban disponibles.
 
-La tecnología no define el rumbo.
-El rumbo lo define quien la gobierna.
+**La tecnología no define el rumbo. El rumbo lo define quien la gobierna.**
 
 Tu responsabilidad, y tu oportunidad, es mantener abiertas esas rutas.
-
-Para esta fábrica.
-
+Para esta fábrica. 
 Y para todas las que vendrán.
 
 ---
