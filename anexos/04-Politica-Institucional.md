@@ -105,7 +105,7 @@ El proceso de revisión será liderado por el **Comité de Gobernanza de Datos e
 
 ---
 
-#### Guía de Adaptación para el Sector Privado
+### Guía de Adaptación para el Sector Privado
 
 Si bien esta plantilla está diseñada con un enfoque de servicio público, su estructura de gobernanza (Triage, Roles, Registro) es universal. Puede adaptarse fácilmente al sector privado reemplazando las justificaciones legales y de interés público por sus equivalentes de negocio, riesgo y marca.
 
