@@ -112,7 +112,7 @@ Y para todas las que vendrán.
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
-    <a href="./13-Perspectivas-Futuro.html">« Guía Anterior</a>
+    <a href="../guias/13-Perspectivas-Futuro.html">« Guía Anterior</a>
   </div>
   <div>
     <a href="../">Volver al Índice</a>
