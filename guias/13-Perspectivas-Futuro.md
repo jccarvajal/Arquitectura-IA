@@ -114,6 +114,6 @@ Y la siguiente...
     <a href="../">Volver al Índice</a>
   </div>
   <div>
-    <a href="../anexos/conclusion.html">Conclusión »</a>
+    <a href="../conclusion.html">Conclusión »</a>
   </div>
 </div>
