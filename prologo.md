@@ -46,7 +46,7 @@ Por eso puede producir lenguaje perfecto sin entenderlo: tiene **sintaxis sin se
 
 * La IA generativa es **frágil**: funciona bien en condiciones conocidas, pero falla ante escenarios inesperados.
 * No es **antifrágil**, porque no mejora mediante estrés real: aprende de datos pasados, no de consecuencias.
-* Y carece de **skin in the game**: no asume pérdidas por sus errores.
+* Y carece de **skin in the game (jugarse la piel)**: no asume pérdidas por sus errores.
 
 Puede generar *basura elocuente*, respuestas fluidas pero incorrectas, sin experimentar costo alguno.
 
@@ -60,7 +60,7 @@ Esta evaluación no proviene de un pesimismo externo, sino de una convergencia e
 
 ### Críticos técnicos
 
-Lingüistas y científicos cognitivos subrayan que estos modelos **imitan sin comprender**.
+Lingüistas y científicos cognitivos subrayan que estos modelos *imitan sin comprender*.
 
 * **Emily Bender**, lingüista especializada en modelos de lenguaje, y
 * **Gary Marcus**, científico cognitivo y crítico del deep learning,
@@ -74,8 +74,8 @@ los describen como *“loros estocásticos”*: máquinas de imitación, no de e
 
 ### Líderes institucionales
 
-* **Dario Amodei, CEO de Anthropic**, sostiene que la gobernanza es “el problema central”.
-* **Mustafa Suleyman, cofundador de DeepMind y líder de Microsoft AI**, denomina el *Problema de la Contención* a la tensión entre capacidad tecnológica y capacidad humana de control.
+* **Dario Amodei**, CEO de Anthropic, sostiene que la gobernanza es “el problema central”.
+* **Mustafa Suleyman**, cofundador de DeepMind y líder de Microsoft AI, denomina el *Problema de la Contención* a la tensión entre capacidad tecnológica y capacidad humana de control.
 
 Este no es un discurso pesimista. Es realismo técnico.
 
