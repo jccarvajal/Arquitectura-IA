@@ -103,7 +103,25 @@ Adicionalmente, una **revisión extraordinaria (ad-hoc)** será gatillada por un
 
 El proceso de revisión será liderado por el **Comité de Gobernanza de Datos e IA**.
 
+---
 
+#### Guía de Adaptación para el Sector Privado
+
+Si bien esta plantilla está diseñada con un enfoque de servicio público, su estructura de gobernanza (Triage, Roles, Registro) es universal. Puede adaptarse fácilmente al sector privado reemplazando las justificaciones legales y de interés público por sus equivalentes de negocio, riesgo y marca.
+
+Para adaptar esta política:
+
+1. **Propósito y Alcance:** Reemplazar "interés público" y "confianza ciudadana" por "valor de negocio", "eficiencia operativa" y "confianza del cliente/marca". El concepto de "IA en la Sombra" se traduce directamente como "Shadow IT".
+2. **Principios Rectores:** El anclaje debe cambiar.
+  * "Legalidad": Cambiar de leyes públicas (20.285, 20.609) a un marco de Riesgo Corporativo más amplio (Riesgo Legal/Reputacional, Protección de Propiedad Intelectual, Ley del Consumidor y GDPR si aplica).
+  * "Licencia Social": Traducir a "Valor de Marca" y "Confianza del Cliente". Una política ética se convierte en una ventaja competitiva.
+  * "Gobernanza Financiera": Cambiar de "prevención de Bucles de Costo" (gasto fiscal) a "Gobernanza FinOps y Rentabilidad (P&L)".
+3. **Gobernanza y Roles:** Los roles son conceptualmente idénticos, pero cambian de nombre.
+  * "Jefe de Servicio" (Dueño de la Política) se convierte en un "C-Level Sponsor" (ej. CIO, CTO, o Gerente General).
+  * "Monitor de Cumplimiento" se alinea con las funciones de Gestión de Riesgos (ERM), Auditoría Interna o el CISO.
+4. **Cumplimiento y Sanciones (Sección 6):** Este es el cambio más importante.
+  * Reemplazar las faltas a la "probidad administrativa" (Ley 18.575) por infracciones al Reglamento Interno de Orden, Higiene y Seguridad de la empresa y a las obligaciones del Código del Trabajo.
+  * La "Abdicación" del criterio profesional se considera una negligencia profesional con impacto directo en el desempeño.
 
 ---
   <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">

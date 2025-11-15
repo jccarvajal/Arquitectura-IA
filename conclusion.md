@@ -99,7 +99,9 @@ Y es también una invitación a la **Expansión**: a abrir rutas, construir acce
 **La tecnología no define el rumbo. El rumbo lo define quien la gobierna.**
 
 Tu responsabilidad, y tu oportunidad, es mantener abiertas esas rutas.
+
 Para esta fábrica. 
+
 Y para todas las que vendrán.
 
 ---
