@@ -91,19 +91,17 @@ Investigaciones recientes (Google Research, NeurIPS 2025) buscan resolver precis
 
 ---
 
-#### Conclusión: El Cierre de la Obra
+#### Conclusión: El Criterio como Única Constante
 
-La obra termina aquí, pero la "Maestría" es un ciclo. 
+Las cinco tendencias descritas en esta guía (Multimodalidad, SLMs, Agentes Autónomos, Robótica y Aprendizaje Continuo) son el panorama actual. En 18 meses, esta lista será diferente.
 
-Has pasado de ser un Usuario (preguntando "¿qué hace esto?") a un Arquitecto (decidiendo "qué debe hacer") y a un Gobernador (asegurando "qué no debe hacer").  
+El "Aprendizaje Anidado" puede que resuelva la "Amnesia Estática" de la Guía 02, pero introducirá nuevos desafíos de gobernanza para la Guía 07. Los Agentes Autónomos pueden cumplir la promesa de la Guía 04, pero traen los riesgos de "Lealtad" que acabamos de analizar.
 
-Ahora, asumes el rol de Vigilante, mirando hacia el futuro. 
+Esto confirma la "Paradoja de la Maestría" con la que abrimos. La maestría no es conocer esta lista de tendencias. Es tener el marco para evaluarlas.
 
-Guardas estas guías no como un registro de la tecnología de fines de 2025, sino como el marco de pensamiento que usarás para diseñar, construir y gobernar la próxima fábrica. 
+El trabajo del "Vigilante Estratégico" no es adivinar, es auditar. Es aplicar los principios de gobernanza, diseño y estrategia de este libro a cualquier nueva tecnología que surja. 
 
-Y la siguiente.
-
-Y la siguiente...
+**El criterio es la única constante.**
 
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
