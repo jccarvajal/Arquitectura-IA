@@ -103,7 +103,7 @@ Un agente que tiene acceso a los libros correctos (RAG) y que además se graduó
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
-    <a href="../guias/13-Perspectivas-Futuro.html">« Guía Anterior</a>
+    <a href="./conclusion.html">« Conclusión</a>
   </div>
   <div>
     <a href="../">Volver al Índice</a>
