@@ -51,6 +51,9 @@ La obra está diseñada como un viaje de aprendizaje secuencial.
 #### Bloque 5: La Expansión (Cómo proyectamos)
 * [Guía 13: Perspectivas y Futuro de la IA](./guias/13-Perspectivas-Futuro.md)
 
+#### Conclusión
+* [De la Fundación a la Expansión](./conclusion.md)
+
 ---
 
 #### Anexos (Biblioteca del Arquitecto)
