@@ -44,8 +44,8 @@ La IA actual funciona bajo esa misma lógica:
 * es una herramienta,
 * cuyo impacto depende por completo del criterio con que se gobierna.
 
-Usada sin cuidado, genera fragilidad: basura elocuente, errores opacos, decisiones sin responsabilidad.
-Gobernada con rigor, abre caminos: automatización segura, análisis estructurado, expansión de capacidades humanas.
+Usada sin cuidado, la IA genera fragilidad: basura elocuente, errores opacos y decisiones sin responsabilidad.
+Gobernada con rigor, en cambio, se convierte en una herramienta que fortalece procesos, mejora la calidad decisional y amplía la capacidad humana para diseñar, analizar y ejecutar.
 
 Esta obra es un manual para gobernar esa herramienta, nuestro equivalente contemporáneo de la Protomolécula, con criterio profesional.
 
@@ -77,11 +77,7 @@ La solución no es acelerar sin control, ni frenar por temor.
 La solución es **estructurar la expansión**.
 
 La Protomolécula podía destruir o abrir rutas, según quién la gobernara.
-La IA actual funciona igual:
-* puede amplificar errores,
-* o puede abrir miles de caminos productivos,
-
-dependiendo del S2 humano que la dirige.
+La IA actual funciona igual: puede amplificar errores, o puede abrir miles de caminos productivos, dependiendo del S2 humano que la dirige.
 
 Esa es la verdadera Expansión:
 no un futuro de máquinas que razonan,
