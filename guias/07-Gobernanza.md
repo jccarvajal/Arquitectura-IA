@@ -107,7 +107,20 @@ En el prototipado, le dimos "manos y pies" (Herramientas) a nuestros agentes par
 
 ---
 
-### Parte 3: El Framework PPP: Gobernanza de la Calidad de Interacción
+### Parte 3: La Arquitectura de la Confianza (LOSA)
+
+Si la Gobernanza es el "qué" estratégico, la **LOSA (Layer of Safety & Alignment)** es el "cómo" técnico. Es una arquitectura de ingeniería (descrita en el Agents Companion v2) que actúa como una capa de seguridad desacoplada del "cerebro" del agente (el LLM).
+
+En lugar de esperar que el agente decida ser seguro, la LOSA impone la seguridad desde fuera. Los "guardrails" (barandillas), "interruptores" (circuit breakers) y los puntos de "Validación Humana" (Human-in-the-Loop) que discutimos en la Parte 2 no son opcionales; son componentes de software implementados dentro de esta capa LOSA.
+
+Esta arquitectura nos permite, por ejemplo:
+* **Filtrar Inyecciones:** Bloquear un prompt injection (Riesgo 1) antes de que llegue al LLM.
+* **Validar Herramientas:** Interceptar la intención del agente de usar una herramienta (ej. enviar_email) y someterla a aprobación (Riesgo 4: Alucinaciones Operacionales).
+* **Auditar Salidas:** Revisar la respuesta del agente en busca de alucinaciones o filtración de datos (Riesgo 2) antes de que se la muestre al usuario.
+
+---
+
+### Parte 4: El Framework PPP: Gobernanza de la Calidad de Interacción
 
 La Gobernanza (la "Sala de Control") no solo debe mitigar los riesgos obvios (costos, seguridad, alucinaciones). Debe ir más allá y gobernar activamente la **calidad de la interacción con el usuario**.
 
@@ -127,7 +140,7 @@ Investigaciones recientes (Sun, et al., 2025) demuestran que el éxito de un age
 
 ---
 
-#### Parte 4: El Pilar de la Gobernanza (Observabilidad)
+#### Parte 5: El Pilar de la Gobernanza (Observabilidad)
 
 No puedes "gobernar" lo que no puedes "ver". Muchos sistemas de IA son percibidos como "cajas negras", un problema conocido como **opacidad**: la incapacidad de entender cómo un sistema llega a un resultado. Para combatir la opacidad, la **Observabilidad** (la capacidad técnica de monitorear el sistema a través de métricas y registros de eventos (logs)) es el pilar central de la gobernanza.
 
