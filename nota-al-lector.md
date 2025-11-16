@@ -2,7 +2,7 @@
 
 Antes de comenzar el viaje, es fundamental alinear nuestras expectativas sobre lo que esta obra es y lo que no es. Este es un mapa para orientarse en un territorio aún en formación.
 
-## 1. Sobre el Tono: "Criterio" antes que "Técnica"
+### 1. Sobre el Tono: "Criterio" antes que "Técnica"
 
 El subtítulo promete una guía "práctica". Es crucial definir qué entendemos por "práctica".
 
@@ -12,7 +12,7 @@ Es un **"tratado de criterio**". La tesis central es que la aplicación práctic
 
 Le pedimos que aborde esta lectura no como un manual de instrucciones, sino como un diálogo reflexivo para construir ese criterio.
 
-## 2. Sobre la Audiencia: "Arquitectos" y "Profesionales"
+### 2. Sobre la Audiencia: "Arquitectos" y "Profesionales"
 
 Esta obra está escrita principalmente para quienes deben **Decidir, Diseñar y Gobernar** la IA (los "Arquitectos" de la fábrica).
 
@@ -20,7 +20,7 @@ Si su rol es "usar" la IA en el día a día (el "Profesional" dentro de la fábr
 
 Ambas miradas, la del Arquitecto que diseña y la del Profesional que ejecuta, son complementarias. Esta obra busca que dialoguen con mayor comprensión mutua.
 
-## 3. Sobre la Estructura: El Orden de Lectura (El "Por Qué", "Qué" y "Cómo")
+### 3. Sobre la Estructura: El Orden de Lectura (El "Por Qué", "Qué" y "Cómo")
 
 La obra está diseñada para ser un "viaje de aprendizaje" y un "manual de consulta", pero su estructura preliminar es intencional para construir el criterio antes que la técnica.
 * **El "Por Qué" (Prólogo: Fundación):** Inmediatamente después de esta nota, encontrarás el Prólogo. Te pedimos que no te lo saltes. Es el manifiesto filosófico y la "Fundación" conceptual que da sentido a todas las guías. Establece el marco de pensamiento (Kahneman, Taleb, Dreyfus, Asimov) que justifica el enfoque de gobernanza de todo el libro.
@@ -29,14 +29,13 @@ La obra está diseñada para ser un "viaje de aprendizaje" y un "manual de consu
 
 Este flujo (Por Qué -> Qué -> Cómo) está diseñado para asegurar que, cuando llegues a la primera guía técnica, ya compartamos un lenguaje común y un criterio estratégico.
 
-
-## 4. Sobre la Obsolescencia: Es un "Marco" de fines de 2025
+### 4. Sobre la Obsolescencia: Es un "Marco" de fines de 2025
 
 Esta es la **Versión 1.0 (de Noviembre 2025\)**. La tecnología de IA es volátil y evoluciona en ciclos de meses, no de años.
 
 Considere esta obra como un **"marco de pensamiento"** y una **"fotografía"** del panorama actual, no como un manual estático. El objetivo no es entregar reglas fijas, sino un criterio duradero para gestionar la evolución tecnológica.
 
-## 5. Sobre la autoría y el uso de IA
+### 5. Sobre la autoría y el uso de IA
 
 Este documento fue desarrollado por Juan Carlos Carvajal, quien es el autor principal y responsable de su contenido, estructura y visión final. Para más información sobre el autor, sus proyectos o para contacto profesional, puede visitar [www.jccarvajal.com](https://www.jccarvajal.com/).
 
