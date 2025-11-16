@@ -88,20 +88,15 @@ Entre la utopía de *La Cultura* y la advertencia de *Dune* existe un camino raz
 Ese camino lo anticipó Isaac Asimov en *Fundación*: crear estructuras conceptuales que permitan **gobernar la incertidumbre durante transiciones profundas**.
 Este libro aspira a cumplir esa función: ofrecer criterio, método y gobernanza para la IA que realmente tenemos.
 
-Nuestro momento histórico también recuerda a *The Expanse*, la saga escrita por James S. A. Corey. En ella, el riesgo no es la aparición de una inteligencia alienígena, sino cómo ciertas organizaciones manipulan herramientas poderosas sin comprenderlas, como *Protogen* manipulando la Protomolécula.
+Este libro aspira a cumplir esa función. Propone que la única forma de gestionar la IA es con un marco robusto de **Gobernanza, Riesgo y Cumplimiento (GRC)**. Esta es la "Fundación" que debemos construir.
 
-La Protomolécula, en manos irresponsables, generó caos. 
-Pero su función original (no intención, porque no tenía agencia) era permitir *construcción y expansión*, **abriendo rutas** y habilitando acceso a nuevos espacios. 
-Es una metáfora útil: una herramienta poderosa puede destruir o abrir miles de caminos, dependiendo del criterio con que se use.
+Nuestro momento histórico también recuerda a *The Expanse*, la saga escrita por James S. A. Corey. En ella, la *Protomolécula* es la metáfora perfecta de la IA: una herramienta alienígena, opaca, poderosa y sin agencia propia.
 
-La IA actual, un S1 estadístico, opaco y no humano, funciona igual.
-No es una mente alienigena.
-Es una herramienta poderosa cuyo impacto depende del marco que la gobierna.
+La saga nos muestra los dos únicos destinos que esta herramienta habilita, dependiendo del GRC que la rodea:
+1. **El Caos (El Riesgo):** En manos de *Protogen*, una organización que opera sin GRC, la herramienta desata un caos industrial. Esto representa el nuevo desafío de **ciberseguridad**: un desastre causado no por un ataque externo, sino por un **fallo catastrófico de gobernanza** sobre una tecnología que no se comprende.
+2. **La Expansión (La Oportunidad):** Sin embargo, la función original de la *Protomolécula* era permitir la construcción y expansión, **abriendo nuevas rutas**. La IA actual (nuestra "Protomolécula") funciona igual.
 
-Estas guías no describen una tecnología pasajera, sino un modo de pensar para enfrentar herramientas que evolucionan más rápido que nuestras instituciones.
-
-Si la usamos sin criterio, generará fragilidad.
-Si la gobernamos con rigor, ampliará nuestras capacidades.
+Este libro es un manual para evitar el destino de *Protogen* mediante la implementación de una *Fundación* de GRC. Argumentamos que la verdadera **Expansión**, la ampliación de la capacidad humana, solo se alcanza cuando el criterio (GRC) y el juicio humano (S2) dirigen la herramienta.
 
 **La expansión real no vendrá de la máquina, sino del juicio humano que la dirige.**
 
