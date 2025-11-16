@@ -15,15 +15,17 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 * **Vaswani, A., et al. (2017). "Attention Is All You Need".**  
   * **Por qué leerlo:** Es el *paper* seminal que introdujo la arquitectura "Transformer", el motor fundamental de todos los LLM modernos que se discuten en esta obra.  
 * **Lewis, P., et al. (2020). "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks".**  
-  * **Por qué leerlo:** Es el *paper* que introduce formalmente la arquitectura **RAG**, la solución técnica clave para el problema de la "Ventana de Contexto" discutido en la Guía 02\.  
-* **Gobierno de Chile. (1999). "Ley N° 19.628 sobre protección de la vida privada".**  
-  * **Por qué leerlo:** Es el pilar legal de la **Gobernanza de Datos** (Guía 03\) en Chile. Define "dato personal" y "dato sensible", estableciendo la base legal de la "Estrategia de Datos".  
-* **Cavoukian, A. (2009). "Privacy by Design: The 7 Foundational Principles".**  
-  * **Por qué leerlo:** Establece el marco internacional para la "Privacidad desde el Diseño" y "por Defecto", un concepto central de la "Guía Ética" (BID/UAI) para la formulación de proyectos.
+  * **Por qué leerlo:** Es el *paper* que introduce formalmente la arquitectura **RAG**, la solución técnica clave para el problema de la "Ventana de Contexto" discutido en la Guía 02.  
+* **Hu, E., et al. (2021). "LoRA: Low-Rank Adaptation of Large Language Models".**
+  **Por qué leerlo:** Es el paper técnico seminal que introduce LoRA (Low-Rank Adaptation), la técnica de ingeniería clave definida en el Anexo 06 (Glosario). Proporciona el fundamento de ingeniería esencial para el Anexo 01: Ajuste Fino y Adaptación de Modelos.
 * **Boonstra, L. (Febrero 2025). "Prompt Engineering".**
   * **Por qué leerlo:** Es el whitepaper técnico que define la disciplina de la Ingeniería de Prompts (Guía 01). Detalla las técnicas fundamentales como zero-shot , few-shot , role prompting y los patrones de razonamiento como Chain-of-Thought y ReAct  que son la base del "Método de 7 Pasos".
-* **Milam, K., & Gulli, A. (Noviembre 2025). "Context Engineering: Sessions, Memory". privada".**  
+* **Milam, K., & Gulli, A. (Noviembre 2025). "Context Engineering: Sessions, Memory".**  
   * **Por qué leerlo:** El *whitepaper* fundacional de Google que define la "Ingeniería de Contexto" (la evolución de la Ingeniería de Prompts). Proporciona el "criterio de arquitecto" clave para diferenciar **RAG** (el "bibliotecario" experto en hechos) de la **Memoria** (el "asistente personal" experto en el usuario).
+* **Gobierno de Chile. (1999). "Ley N° 19.628 sobre protección de la vida privada".**  
+  * **Por qué leerlo:** Es el pilar legal de la **Gobernanza de Datos** (Guía 03) en Chile. Define "dato personal" y "dato sensible", estableciendo la base legal de la "Estrategia de Datos".  
+* **Cavoukian, A. (2009). "Privacy by Design: The 7 Foundational Principles".**  
+  * **Por qué leerlo:** Establece el marco internacional para la "Privacidad desde el Diseño" y "por Defecto", un concepto central de la "Guía Ética" (BID/UAI) para la formulación de proyectos.
 
 ---
 
@@ -37,6 +39,8 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
   * **Por qué leerlo:** Introduce el **Ciclo ReAct (Reason \+ Act)**, el "motor" fundamental de los **Agentes** (Guía 04\) que les permite usar "Herramientas".  
 * **Yao, S., et al. (2023). "Tree of Thoughts: Deliberate Problem Solving with Large Language Models".**  
   * **Por qué leerlo:** Define el patrón de razonamiento avanzado **Tree of Thoughts (ToT)** (Guía 05), que permite a los agentes explorar múltiples caminos de solución.
+* **Wiesinger, J., Marlow, P., & Vuskovic, V. (Septiembre 2024). "Agents".**
+  * **Por qué leerlo:** Es el whitepaper conceptual que introduce la arquitectura de un Agente (Guía 04) como la composición de un Modelo (el cerebro), Herramientas (las manos) y una Capa de Orquestación (el ciclo de razonamiento). Distingue formalmente entre "Modelos" (solo predicen) y "Agentes" (toman acciones).
 * **Gulli, A., et al. (Febrero 2025). "Agents Companion".**
   * **Por qué leerlo:** Es el "102" de las guías de construcción. Define formalmente la arquitectura de un Agente (Guía 04) como la combinación de Modelo, Herramientas y Orquestación. Explora los Sistemas Cognitivos (Guía 05) a través de patrones de "múltiples agentes" (jerárquicos, colaborativos) y detalla la Evaluación de Agentes (Guía 08), incluyendo la evaluación de trayectoria y el Human-in-the-Loop.
 
@@ -52,6 +56,8 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
   * **Por qué leerlo:** Define los tres tipos de **Opacidad** (intrínseca, intencional, analfabeta), que justifican la necesidad de la **Observabilidad** (Guía 07 y Guía 09).  
 * **Zheng, L., et al. (2023). "Judging LLM-as-a-judge with MT-Bench and Chatbot Arena".**  
   * **Por qué leerlo:** Proporciona el fundamento técnico y las métricas para la "Evaluación Asistida por IA" (el **"LLM Juez"**), un concepto central de la **Guía 08: Evaluación**.
+* **Google. (2023-2024). "Secure AI Framework (SAIF)".**
+  **Por qué leerlo:** Es el marco de seguridad fundamental de Google (referenciado en el whitepaper "Prototype to Production") que aborda la seguridad de la IA en la infraestructura y el producto. Proporciona un respaldo conceptual clave para la Gobernanza (Guía 07) y la Industrialización (Guía 09).
 * **Huyen, Chip (2024). "AI Engineering".** 
   * **Por qué leerlo:** Es el complemento técnico directo de esta obra. Si este libro es el "tratado de criterio" (qué y por qué), "AI Engineering" es el manual de "industrialización" (el cómo). Detalla la implementación de ingeniería para Agentes, RAG, Evaluación y "Guardrails" (Gobernanza) en producción.
 * **Kartakis, S., et al. (Noviembre 2025). "Prototype to Production".**
@@ -64,7 +70,7 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 *(Humanidad, Ética, Estrategia y Valor)*
 
 * **Challapally, A., et al. (Julio 2025). "The GenAI Divide: State of AI in Business 2025". MIT / Project NANDA.**  
-  * **Por qué leerlo:** Es el informe de mercado clave de 2025\. Proporciona los datos estadísticos que validan la tesis de esta obra: la **"Brecha GenAI"** (el 95% de las empresas con ROI cero). Define los conceptos de **"Shadow AI"** (IA en la sombra), **"Prosumers"** (usuarios expertos) y la superioridad de la estrategia "Comprar" vs. "Construir", que son fundamentales para la Gobernanza (Guía 07), la Sinergia (Guía 11\) y la Estrategia (Guía 12). 
+  * **Por qué leerlo:** Es el informe de mercado clave de 2025. Proporciona los datos estadísticos que validan la tesis de esta obra: la **"Brecha GenAI"** (el 95% de las empresas con ROI cero). Define los conceptos de **"Shadow AI"** (IA en la sombra), **"Prosumers"** (usuarios expertos) y la superioridad de la estrategia "Comprar" vs. "Construir", que son fundamentales para la Gobernanza (Guía 07), la Sinergia (Guía 11) y la Estrategia (Guía 12). 
 * **Singla, A., Sukharevsky, A., Yee, L., & Chui, M. (Noviembre 2025). "The state of AI in 2025: Agents, innovation, and transformation". QuantumBlack, AI by McKinsey.**
   * **Por qué leerlo:** Valida estadísticamente la "Brecha de Escalamiento", demostrando que la mayoría de las empresas están atascadas en pilotaje y no logran impacto en el EBIT . Identifica la "validación humana" y el enfoque en la "innovación" como los diferenciadores clave de los "high performers".
 * **Kahneman, D. (2011). "Thinking, Fast and Slow".**  
