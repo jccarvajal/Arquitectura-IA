@@ -1,6 +1,6 @@
 # Prólogo: Fundación
 
-## 1. El espectro de la imaginación: de la utopía a la distopía
+### 1. El espectro de la imaginación: de la utopía a la distopía
 
 La forma en que imaginamos la Inteligencia Artificial condiciona la manera en que la adoptamos, la gobernamos y la tememos. Mucho antes de la actual explosión de modelos generativos, la IA ya existía como narrativa cultural: como promesa, advertencia y espejo de nuestras aspiraciones. Ese imaginario no es accesorio: traza los límites de lo posible y revela los riesgos de nuestra relación con la tecnología.
 
@@ -12,11 +12,11 @@ Este libro rechaza ambas ilusiones y propone un marco profesional para evitar la
 
 ---
 
-## 2. Tres lentes para entender la IA que realmente tenemos
+### 2. Tres lentes para entender la IA que realmente tenemos
 
 Tres pensadores contemporáneos, desde la psicología, la filosofía y la teoría del riesgo, ofrecen un marco indispensable para comprender qué es, y qué no es, la IA actual.
 
-### Daniel Kahneman — El mapa cognitivo
+#### Daniel Kahneman — El mapa cognitivo
 
 En *Pensar, rápido y despacio*, **Daniel Kahneman**, psicólogo y premio en Ciencias Económicas en memoria de Alfred Nobel, distingue dos modos fundamentales de pensamiento:
 
