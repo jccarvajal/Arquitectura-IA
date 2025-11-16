@@ -24,7 +24,7 @@ Si su rol es "usar" la IA en el día a día (el "Profesional" dentro de la fábr
 
 Ambas miradas, la del Arquitecto que diseña y la del Profesional que ejecuta, son complementarias. Esta obra busca que dialoguen con mayor comprensión mutua.
 
----
+--- 
 
 ### 3. Sobre el uso de metáforas y referencias culturales
 
