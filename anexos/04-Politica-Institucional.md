@@ -70,34 +70,27 @@ Todo uso de IA se regirá por los siguientes principios:
   Toda decisión de impacto requiere supervisión humana significativa.
   La responsabilidad recae siempre en personas.
 
-* **Gobernanza de la Fuente (Combustible Limpio)**
-
+* **Gobernanza de la Fuente (Combustible Limpio):**
   Un sistema de IA depende de la calidad, integridad y actualización de sus datos.
   La organización se compromete a mantener estándares de gobernanza de datos robustos.
 
-* **Transparencia y Licencia Social**
-
+* **Transparencia y Licencia Social:**
   La ciudadanía, clientes o usuarios deben saber cuándo se usa IA, con qué finalidad y bajo qué controles.
 
-* **Equidad y No Discriminación**
-
+* **Equidad y No Discriminación:**
   Los sistemas deben minimizar sesgos y evitar decisiones discriminatorias.
 
-* **Privacidad desde el Diseño**
-
+* **Privacidad desde el Diseño:**
   Principios de minimización, proporcionalidad y resguardo de datos personales.
 
-* **Seguridad y Resiliencia**
-
+* **Seguridad y Resiliencia:**
   Los sistemas deben ser robustos frente a errores, fallas técnicas o ataques (como inyección de prompts).
 
-* **Antifragilidad y Gestión del Riesgo**
-
+* **Antifragilidad y Gestión del Riesgo:**
   La IA no debe introducir fragilidad sistémica.
   Se evaluarán riesgos de errores catastróficos, acumulativos o de difícil detección (“Cisnes Negros”).
 
-* **Trazabilidad y Auditabilidad**
-
+* **Trazabilidad y Auditabilidad:**
   Todos los procesos que incluyan IA deben permitir reconstruir decisiones, verificar fuentes y auditar resultados.
   Sin trazabilidad, no hay responsabilidad.
 
@@ -111,48 +104,38 @@ La IA se utiliza principalmente para tareas operativas o repetitivas (S1), permi
 
 #### Principios Específicos
 
-* **Validación obligatoria** 
-
+* **Validación obligatoria:** 
   Ningún contenido de IA se utiliza sin verificación humana en decisiones de impacto.
 
-* **Basura Elocuente** 
-
+* **Basura Elocuente:** 
   Se asume que la IA generativa puede producir resultados persuasivos pero incorrectos; se verifica todo.
 
-* **Prohibición de datos sensibles** 
-
+* **Prohibición de datos sensibles:** 
   No se permite ingresar datos personales sensibles o confidenciales en herramientas no aprobadas.
 
-* **Transparencia** 
-
+* **Transparencia:** 
   Todo chatbot o asistente debe identificarse como IA.
 
-* **Agentes Autónomos** 
-
+* **Agentes Autónomos:** 
   Solo pueden operar con límites claros, registro de actividades y supervisión activa.
 
 ---
 
 ### 5. Gobernanza, Roles y Responsabilidades
 
-* **Dueño de la Política**
-
+* **Dueño de la Política:**
   Máxima autoridad responsable de la vigencia, actualización y patrocinio institucional de esta política.
 
-* **Comité de Gobernanza de IA**
-
+* **Comité de Gobernanza de IA:**
   Revisa proyectos de alto impacto, gestiona riesgos y aprueba excepciones justificadas.
 
-* **Dueño del Sistema de IA**
-
+* **Dueño del Sistema de IA:**
   Responsable del ciclo de vida del sistema de IA, documentación, trazabilidad y cumplimiento de esta política.
 
-* **Monitor de Cumplimiento**
-
+* **Monitor de Cumplimiento:**
   Audita el cumplimiento de la política, verifica que los sistemas estén registrados y que existan evidencias de supervisión.
 
-* **Usuarios Finales**
-
+* **Usuarios Finales:**
   Actúan como validadores y responsables de revisar, corregir y reportar resultados generados por IA. Deben reportar incidentes y cumplir esta política.
 
 ---
