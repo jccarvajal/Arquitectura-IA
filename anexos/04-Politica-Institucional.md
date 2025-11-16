@@ -1,17 +1,17 @@
 
-# Anexo 04: Política Institucional de Uso Responsable de Inteligencia Artificial
+### Anexo 04: Política Institucional de Uso Responsable de Inteligencia Artificial
 
 *Plantilla Marco para Organizaciones Públicas y Privadas*
 
 ---
 
-### Introducción: De la Guía a la Política
+#### Introducción: De la Guía a la Política
 
 Esta plantilla marco establece los principios y obligaciones para el uso responsable de Inteligencia Artificial (IA) en organizaciones públicas y privadas. Su propósito es servir como base adaptable, integrando conceptos de gobernanza, ética y seguridad derivados de la obra *Inteligencia Artificial Aplicada*, especialmente de las Guías 07, 10 y 12, junto con los marcos legales y de transparencia aplicables.
 
 ---
 
-## 1. Propósito
+#### 1. Propósito
 
 Esta política establece los principios, criterios y responsabilidades que regulan el uso seguro, responsable y ético de la IA en la organización.
 
