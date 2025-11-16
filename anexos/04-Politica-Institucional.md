@@ -123,6 +123,8 @@ La IA se utiliza principalmente para tareas operativas o repetitivas (S1), permi
 
 ### 5. Gobernanza, Roles y Responsabilidades
 
+Para asegurar la gobernanza efectiva y la implementación de esta política, se establecen los siguientes roles y responsabilidades clave:
+
 * **Dueño de la Política:**
   Máxima autoridad responsable de la vigencia, actualización y patrocinio institucional de esta política.
 
