@@ -7,7 +7,7 @@
 
 ### Introducción: De la Guía a la Política
 
-Esta plantilla marco establece los principios y obligaciones para el uso responsable de Inteligencia Artificial (IA) en organizaciones públicas y privadas. Su propósito es servir como base adaptable, integrando conceptos de gobernanza, ética y seguridad derivados de la obra *Inteligencia Artificial Aplicada*, especialmente de las Guías 07, 10 y 12, junto con los marcos legales y de transparencia aplicables.
+Esta plantilla marco establece los principios y obligaciones para el uso responsable de Inteligencia Artificial (IA) en organizaciones públicas y privadas. Su propósito es servir como la base de **Gobernanza, Riesgo y Cumplimiento (GRC)**, integrando conceptos de gobernanza, ética y seguridad derivados de la obra *Inteligencia Artificial Aplicada*, especialmente de las Guías 07, 10 y 12, junto con los marcos legales y de transparencia aplicables.
 
 ---
 
