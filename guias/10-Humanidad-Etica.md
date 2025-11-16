@@ -45,6 +45,16 @@ Para diseñar la sinergia, primero debemos dividir el trabajo. El pensamiento hu
 
 La **Sinergia Humano-IA** es una arquitectura de trabajo donde el Agente de IA ejecuta el 90% del trabajo de "Sistema 1", liberando al humano para que se concentre el 90% de su tiempo en el "Sistema 2".
 
+Esta **Sinergia Humano-IA** no es un concepto nuevo. Es la actualización de un principio fundacional establecido ya en 1951 por la **Lista de Fitts**.
+
+La lista original de Fitts fue profética al proponer una división del trabajo: las máquinas se encargarían del cómputo preciso y repetitivo, mientras los humanos manejarían el juicio y la reacción a eventos inesperados.
+
+Sin embargo, esa lista es un producto de su tiempo y hoy es **obsoleta en sus detalles**. Irónicamente, los LLM modernos han *invertido* la lista de Fitts:
+* Fitts dijo que las máquinas eran buenas en el **"razonamiento deductivo"** y malas en "percibir patrones".
+* La IA actual es exactamente lo opuesto: es un motor de **S1** que sobresale en "percibir patrones" pero es frágil en el "razonamiento deductivo" (nuestra "Basura Elocuente").
+
+Por lo tanto, el principio de Fitts (la división del trabajo) sigue siendo válido, pero su *implementación* ha cambiado. El marco S1/S2 de este libro es la Lista de Fitts actualizada para el siglo XXI: la IA ejecuta el S1 y el humano retiene el S2.
+
 ---
 
 #### Parte 2: Los 3 Niveles de Sinergia (El Manual de Colaboración)

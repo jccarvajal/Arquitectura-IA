@@ -87,7 +87,25 @@ Investigaciones recientes (Google Research, NeurIPS 2025) buscan resolver precis
   * **Resuelve la Amnesia Estática:** Los modelos de "Aprendizaje Anidado" podrán aprender de la retroalimentación del usuario y consolidar ese conocimiento, cerrando la "Brecha de Aprendizaje" (Guía 02) y permitiendo una personalización real.
   * **Revoluciona la Gobernanza:** El desafío de auditoría cambia radicalmente. Como "Vigilante Estratégico", debes anticipar la transición de supervisar un "artefacto" de IA estático (un Transformer congelado) a gobernar un "sistema" de IA dinámico que aprende, evoluciona por sí mismo y podría desarrollar sesgos en tiempo real.
 
-**Nota sobre la AGI:** Escucharás sobre la "Inteligencia Artificial General" (AGI), un sistema de IA hipotético con la capacidad de comprender, aprender y aplicar inteligencia para realizar cualquier tarea intelectual que un humano puede hacer. Para los propósitos de esta guía, orientada al criterio operativo, tratamos eso como una especulación teórica. Nuestro trabajo de Gobernanza y Ética se enfoca en gestionar el impacto real, actual y concreto de las potentes herramientas que sí tenemos.
+---
+
+#### La Ambigüedad de la "Inteligencia" (El Espejismo)
+
+El "Vigilante Estratégico" debe entender por qué tratamos la "Inteligencia Artificial General" como una especulación. El problema es la palabra "Inteligencia".
+
+La industria (como DeepMind) define la AGI operacionalmente: "superar al percentil 99 en tareas no físicas".
+
+Comparemos eso con la visión humana. La teoría de las **Inteligencias Múltiples** de Howard Gardner (popularizada en la educación) argumenta que la cognición es un espectro (Lingüística, Lógico-Matemática, Corporal, Interpersonal, Intrapersonal, etc.). La definición de la industria ignora deliberadamente la mayoría de ellas.
+
+Pero aquí está el punto clave: la teoría de Gardner, aunque popular, **es fuertemente criticada por la neurociencia y la psicología** por su falta de evidencia empírica.
+
+Este es el núcleo del problema: **Ni siquiera podemos ponernos de acuerdo en qué es la inteligencia humana.**
+
+La definición de la industria es un "espejismo" no porque sea errónea, sino porque es *incompleta*. Está construida sobre una base conceptual (la "inteligencia") que es filosófica y científicamente inestable.
+
+**Nota sobre la AGI:** 
+
+Con esta aclaración, nuestra postura operativa se vuelve clara. Escucharás sobre la "Inteligencia Artificial General" (AGI), un sistema de IA hipotético con la capacidad de comprender, aprender y aplicar inteligencia para realizar cualquier tarea intelectual que un humano puede hacer. Para los propósitos de esta guía, orientada al criterio operativo, tratamos eso como una especulación teórica. Nuestro trabajo de Gobernanza y Ética se enfoca en gestionar el impacto real, actual y concreto de las potentes herramientas que sí tenemos.
 
 ---
 
