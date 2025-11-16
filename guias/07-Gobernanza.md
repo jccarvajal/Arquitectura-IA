@@ -2,7 +2,7 @@ l## Bloque 3: La Operación (Cómo se gestiona)
 
 ### Guía 07: La Guía Definitiva de la Gobernanza de IA
 
-Subtítulo: Del "Director de Orquesta" al "Jefe de Operaciones"
+Subtítulo: Del "Director de Orquesta" al "Director de Riesgo y Ciberseguridad"
 
 #### Introducción: De Orquestar Resultados a Gobernar Sistemas
 
