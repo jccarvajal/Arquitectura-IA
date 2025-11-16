@@ -26,7 +26,13 @@ Ambas miradas, la del Arquitecto que diseña y la del Profesional que ejecuta, s
 
 ---
 
-### 3. Sobre la Estructura: El Orden de Lectura (El "Por Qué", "Qué" y "Cómo")
+### 3. Sobre el uso de metáforas y referencias culturales
+
+A lo largo de esta obra se emplean metáforas tomadas de la ciencia ficción, como *La Cultura*, *Dune*, *Fundación* o *The Expanse*, y de pensadores contemporáneos como Taleb, Kahneman o Dreyfus. Estas referencias no son adornos: funcionan como herramientas cognitivas para iluminar conceptos complejos de gobernanza, riesgo y criterio humano. La IA es un fenómeno técnico, pero también sistémico y humano; por eso recurrimos a narrativas que permiten comprender sus implicancias de manera más clara, recordable y estratégica. Las metáforas no reemplazan el rigor: lo hacen más accesible, más visual y más útil para quienes deben decidir, diseñar y gobernar.
+
+---
+
+### 4. Sobre la Estructura: El Orden de Lectura (El "Por Qué", "Qué" y "Cómo")
 
 La obra está diseñada para ser un "viaje de aprendizaje" y un "manual de consulta", pero su estructura preliminar es intencional para construir el criterio antes que la técnica.
 * **El "Por Qué" (Prólogo: Fundación):** Inmediatamente después de esta nota, encontrarás el Prólogo. Te pedimos que no te lo saltes. Es el manifiesto filosófico y la "Fundación" conceptual que da sentido a todas las guías. Establece el marco de pensamiento (Kahneman, Taleb, Dreyfus, Asimov) que justifica el enfoque de gobernanza de todo el libro.
@@ -37,7 +43,7 @@ Este flujo (Por Qué -> Qué -> Cómo) está diseñado para asegurar que, cuando
 
 ---
 
-### 4. Sobre la Obsolescencia: Es un "Marco" de fines de 2025
+### 5. Sobre la Obsolescencia: Es un "Marco" de fines de 2025
 
 Esta es la **Versión 1.0 (de Noviembre 2025\)**. La tecnología de IA es volátil y evoluciona en ciclos de meses, no de años.
 
@@ -45,7 +51,7 @@ Considere esta obra como un **"marco de pensamiento"** y una **"fotografía"** d
 
 ---
 
-### 5. Sobre la autoría y el uso de IA
+### 6. Sobre la autoría y el uso de IA
 
 Este documento fue desarrollado por Juan Carlos Carvajal, quien es el autor principal y responsable de su contenido, estructura y visión final. Para más información sobre el autor, sus proyectos o para contacto profesional, puede visitar [www.jccarvajal.com](https://www.jccarvajal.com/).
 
