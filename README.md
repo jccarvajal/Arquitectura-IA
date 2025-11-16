@@ -9,7 +9,7 @@ Un "tratado de criterio" para profesionales que comienzan su integración con IA
 
 ---
 
-### Propósito de esta Obra
+## Propósito de esta Obra
 
 El propósito de *Inteligencia Artificial Aplicada* es dotar a la organización de un marco de pensamiento estructurado, ético y operativo para la adopción responsable de la Inteligencia Artificial.
 
@@ -19,44 +19,44 @@ Su objetivo es trasladar a los equipos desde la curiosidad dispersa hacia un cri
 
 ---
 
-### Tabla de Contenidos
+## Tabla de Contenidos
 
 La obra está diseñada como un viaje de aprendizaje secuencial.
 
-#### Introducción
+### Introducción
 * [Nota al Lector](./nota-al-lector.md)
 * [Prólogo: Fundación](./prologo.md)
 * [Ideas Centrales de las Guias](./ideas-centrales.md)
 
-#### Bloque 1: Los Fundamentos (Cómo funciona)
+### Bloque 1: Los Fundamentos (Cómo funciona)
 * [Guía 01: Ingeniería de Prompts](./guias/01-Ingenieria-Prompts.md)
 * [Guía 02: Ingeniería de Contexto y Memoria](./guias/02-Ingenieria-Contexto.md)
 * [Guía 03: Estrategia de Datos](./guias/03-Estrategia-Datos.md)
 
-#### Bloque 2: La Construcción (Cómo se hace)
+### Bloque 2: La Construcción (Cómo se hace)
 * [Guía 04: Ingeniería de Agentes de IA](./guias/04-Ingenieria-Agentes.md)
 * [Guía 05: Diseño de Sistemas Cognitivos](./guias/05-Sistemas-Cognitivos.md)
 * [Guía 06: Prototipado y Experimentación](./guias/06-Prototipado.md)
 
-#### Bloque 3: La Operación (Cómo se gestiona)
+### Bloque 3: La Operación (Cómo se gestiona)
 * [Guía 07: Gobernanza de IA](./guias/07-Gobernanza.md)
 * [Guía 08: Evaluación, Calidad y Validación de IA](./guias/08-Evaluacion-Calidad.md)
 * [Guía 09: Industrialización de IA](./guias/09-Industrializacion.md)
 
-#### Bloque 4: El Impacto (Cómo nos afecta)
+### Bloque 4: El Impacto (Cómo nos afecta)
 * [Guía 10: Humanidad, Ética y Confianza](./guias/10-Humanidad-Etica.md)
 * [Guía 11: Aprender a Pensar con IA](./guias/11-Aprender-A-Pensar.md)
 * [Guía 12: Estrategia y Valor en la Era de la IA](./guias/12-Estrategia-Valor.md)
 
-#### Bloque 5: La Expansión (Cómo proyectamos)
+### Bloque 5: La Expansión (Cómo proyectamos)
 * [Guía 13: Perspectivas y Futuro de la IA](./guias/13-Perspectivas-Futuro.md)
 
-#### Conclusión
+### Conclusión
 * [De la Fundación a la Expansión](./conclusion.md)
 
 ---
 
-#### Anexos (Biblioteca del Arquitecto)
+### Anexos (Biblioteca del Arquitecto)
 
 * [Anexo 01: Ajuste Fino y Adaptación de Modelos](./anexos/01-Ajuste-Fino.md)
 * [Anexo 02: Lecciones de Implementación](./anexos/02-Blueprints.md)
@@ -68,12 +68,12 @@ La obra está diseñada como un viaje de aprendizaje secuencial.
 
 ---
 
-### Sugerencias y Mejoras
+## Sugerencias y Mejoras
 
 Este es un documento vivo. Si encuentras una errata o tienes una sugerencia de mejora, puedes reportarla directamente en el [Repositorio de GitHub](https://github.com/jccarvajal/IA-Aplicada).
 
 ---
 
-### Licencia
+## Licencia
 
 Esta obra se distribuye bajo la Licencia **Creative Commons Atribución-NoComercial-SinObrasDerivadas 4.0 Internacional (CC BY-NC-ND 4.0)**.

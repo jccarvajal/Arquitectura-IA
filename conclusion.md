@@ -60,7 +60,7 @@ Pero esta obra no intenta capturar la tecnología de un momento, sino establecer
 * un **marco de responsabilidad profesional**,
 * y un **modo de pensar**.
 
-Las organizaciones que prosperan en entornos tecnológicos acelerados no son las que adoptan más rápido, sino las que construyen **gobernanza capaz de absorber variación** sin perder coherencia.
+Las organizaciones que prosperan en entornos tecnológicos acelerados no son las que adoptan más rápido, sino las que construyen **gobernanza capaz de absorber variación sin perder coherencia**.
 
 Por eso este libro propone principios que perduran más allá de cualquier modelo:
 criterio, diseño, contexto, control, responsabilidad, auditoría, evaluación continua y vigilancia.
@@ -96,13 +96,11 @@ Lo que has leído no es un instructivo técnico, sino una **Fundación**: una es
 
 Y es también una invitación a la **Expansión**: a abrir rutas, construir acceso y habilitar capacidades que antes no estaban disponibles.
 
-*La tecnología no define el rumbo. El rumbo lo define quien la gobierna.*
+**La tecnología no define el rumbo. El rumbo lo define quien la gobierna.**
 
 Tu responsabilidad, y tu oportunidad, es mantener abiertas esas rutas.
 
-Para esta fábrica. 
-
-Y para todas las que vendrán.
+Para esta fábrica.  Y para todas las que vendrán.
 
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
