@@ -11,7 +11,7 @@ A lo largo del camino, pasaste por cuatro roles:
 * **Gobernador**, resguarda “qué no debe hacer”
 * **Vigilante**, sostiene el criterio y mira hacia adelante
 
-Este trayecto no es decorativo: es la estructura profesional que evita convertirnos en Protogen, esa organización ficticia, y demasiado real como metáfora, que activó una herramienta poderosa sin comprenderla y desató un caos industrial que nunca fue su intención.
+Este trayecto no es decorativo: es la estructura profesional que evita convertirnos en *Protogen*, esa organización ficticia, y demasiado real como metáfora, que activó una herramienta poderosa sin comprenderla y desató un caos industrial que nunca fue su intención.
 
 Gobernar la IA es evitar ese destino.
 
@@ -76,7 +76,7 @@ procesos lentos supervisando herramientas rápidas.
 La solución no es acelerar sin control, ni frenar por temor.
 La solución es **estructurar la expansión**.
 
-La Protomolécula podía destruir o abrir rutas, según quién la gobernara.
+La Protomolécula podía destruir o abrir rutas según quién la gobernara.
 La IA actual funciona igual: puede amplificar errores, o puede abrir miles de caminos productivos, dependiendo del S2 humano que la dirige.
 
 Esa es la verdadera Expansión:
