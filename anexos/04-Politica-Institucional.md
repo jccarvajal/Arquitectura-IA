@@ -113,11 +113,25 @@ La IA se utiliza principalmente para tareas operativas o repetitivas (S1), permi
 
 #### Principios Específicos
 
-* **Validación obligatoria:** Ningún contenido de IA se utiliza sin verificación humana en decisiones de impacto.
-* **Basura Elocuente:** Se asume que la IA generativa puede producir resultados persuasivos pero incorrectos; se verifica todo.
-* **Prohibición de datos sensibles:** No se permite ingresar datos personales sensibles o confidenciales en herramientas no aprobadas.
-* **Transparencia:** Todo chatbot o asistente debe identificarse como IA.
-* **Agentes Autónomos:** Solo pueden operar con límites claros, registro de actividades y supervisión activa.
+* **Validación obligatoria** 
+
+  Ningún contenido de IA se utiliza sin verificación humana en decisiones de impacto.
+
+* **Basura Elocuente** 
+
+  Se asume que la IA generativa puede producir resultados persuasivos pero incorrectos; se verifica todo.
+
+* **Prohibición de datos sensibles** 
+
+  No se permite ingresar datos personales sensibles o confidenciales en herramientas no aprobadas.
+
+* **Transparencia** 
+
+  Todo chatbot o asistente debe identificarse como IA.
+
+* **Agentes Autónomos** 
+
+  Solo pueden operar con límites claros, registro de actividades y supervisión activa.
 
 ---
 
@@ -125,23 +139,23 @@ La IA se utiliza principalmente para tareas operativas o repetitivas (S1), permi
 
 * **Dueño de la Política**
 
-Máxima autoridad responsable de la vigencia, actualización y patrocinio institucional de esta política.
+  Máxima autoridad responsable de la vigencia, actualización y patrocinio institucional de esta política.
 
 * **Comité de Gobernanza de IA**
 
-Revisa proyectos de alto impacto, gestiona riesgos y aprueba excepciones justificadas.
+  Revisa proyectos de alto impacto, gestiona riesgos y aprueba excepciones justificadas.
 
 * **Dueño del Sistema de IA**
 
-Responsable del ciclo de vida del sistema de IA, documentación, trazabilidad y cumplimiento de esta política.
+  Responsable del ciclo de vida del sistema de IA, documentación, trazabilidad y cumplimiento de esta política.
 
 * **Monitor de Cumplimiento**
 
-Audita el cumplimiento de la política, verifica que los sistemas estén registrados y que existan evidencias de supervisión.
+  Audita el cumplimiento de la política, verifica que los sistemas estén registrados y que existan evidencias de supervisión.
 
 * **Usuarios Finales**
 
-Actúan como validadores y responsables de revisar, corregir y reportar resultados generados por IA. Deben reportar incidentes y cumplir esta política.
+  Actúan como validadores y responsables de revisar, corregir y reportar resultados generados por IA. Deben reportar incidentes y cumplir esta política.
 
 ---
 
