@@ -1,17 +1,17 @@
 
-### Anexo 04: Política Institucional de Uso Responsable de Inteligencia Artificial
+## Anexo 04: Política Institucional de Uso Responsable de Inteligencia Artificial
 
 *Plantilla Marco para Organizaciones Públicas y Privadas*
 
 ---
 
-#### Introducción: De la Guía a la Política
+### Introducción: De la Guía a la Política
 
 Esta plantilla marco establece los principios y obligaciones para el uso responsable de Inteligencia Artificial (IA) en organizaciones públicas y privadas. Su propósito es servir como base adaptable, integrando conceptos de gobernanza, ética y seguridad derivados de la obra *Inteligencia Artificial Aplicada*, especialmente de las Guías 07, 10 y 12, junto con los marcos legales y de transparencia aplicables.
 
 ---
 
-#### 1. Propósito
+### 1. Propósito
 
 Esta política establece los principios, criterios y responsabilidades que regulan el uso seguro, responsable y ético de la IA en la organización.
 
@@ -21,11 +21,11 @@ Su objetivo es garantizar que la IA:
 * aumente la eficiencia institucional,
 * proteja derechos y seguridad,
 * mantenga la confianza ciudadana o del cliente,
-* y complemente —sin reemplazar— el criterio, el juicio y la responsabilidad exclusivamente humanos.
+* y complemente, sin reemplazar, el criterio, el juicio y la responsabilidad exclusivamente humanos.
 
 ---
 
-# 2. Alcance
+### 2. Alcance
 
 Esta política aplica a:
 
@@ -35,7 +35,7 @@ Esta política aplica a:
 
 ---
 
-# **Definición de “Sistema de IA”**
+#### Definición de “Sistema de IA”
 
 Para efectos de esta política, un **Sistema de IA** es:
 
@@ -49,7 +49,8 @@ fórmulas de hojas de cálculo, automatizaciones basadas en reglas fijas, dashbo
 
 ---
 
-# **Supervisión Humana Significativa**
+#### Supervisión Humana Significativa
+
 
 **Supervisión Humana Significativa** es la intervención responsable de una persona con competencia y autoridad suficiente para revisar, validar, corregir o detener el resultado de un sistema de IA antes de que genere un impacto material.
 
@@ -57,60 +58,60 @@ La responsabilidad final es siempre humana.
 
 ---
 
-# **3. Principios Rectores**
+### 3. Principios Rectores
 
 Todo uso de IA se regirá por los siguientes principios:
 
-### **Legalidad y Proporcionalidad**
+* **Legalidad y Proporcionalidad**
 
-Cumplimiento normativo y uso proporcional a la necesidad. La IA no es siempre la opción adecuada.
+  Cumplimiento normativo y uso proporcional a la necesidad. La IA no es siempre la opción adecuada.
 
-### **Criterio Humano (Delegar, No Abdicar)**
+* **Criterio Humano (Delegar, No Abdicar)**
 
-La IA automatiza tareas de **Sistema 1**; la organización gobierna desde **Sistema 2**.
-Toda decisión de impacto requiere supervisión humana significativa.
-La responsabilidad recae siempre en personas.
+  La IA automatiza tareas de **Sistema 1**; la organización gobierna desde **Sistema 2**.
+  Toda decisión de impacto requiere supervisión humana significativa.
+  La responsabilidad recae siempre en personas.
 
-### **Gobernanza de la Fuente (Combustible Limpio)**
+* **Gobernanza de la Fuente (Combustible Limpio)**
 
-Un sistema de IA depende de la calidad, integridad y actualización de sus datos.
-La organización se compromete a mantener estándares de gobernanza de datos robustos.
+  Un sistema de IA depende de la calidad, integridad y actualización de sus datos.
+  La organización se compromete a mantener estándares de gobernanza de datos robustos.
 
-### **Transparencia y Licencia Social**
+* **Transparencia y Licencia Social**
 
-La ciudadanía, clientes o usuarios deben saber cuándo se usa IA, con qué finalidad y bajo qué controles.
+  La ciudadanía, clientes o usuarios deben saber cuándo se usa IA, con qué finalidad y bajo qué controles.
 
-### **Equidad y No Discriminación**
+* **Equidad y No Discriminación**
 
-Los sistemas deben minimizar sesgos y evitar decisiones discriminatorias.
+  Los sistemas deben minimizar sesgos y evitar decisiones discriminatorias.
 
-### **Privacidad desde el Diseño**
+* **Privacidad desde el Diseño**
 
-Principios de minimización, proporcionalidad y resguardo de datos personales.
+  Principios de minimización, proporcionalidad y resguardo de datos personales.
 
-### **Seguridad y Resiliencia**
+* **Seguridad y Resiliencia**
 
-Los sistemas deben ser robustos frente a errores, fallas técnicas o ataques (como inyección de prompts).
+  Los sistemas deben ser robustos frente a errores, fallas técnicas o ataques (como inyección de prompts).
 
-### **Antifragilidad y Gestión del Riesgo**
+* **Antifragilidad y Gestión del Riesgo**
 
-La IA no debe introducir fragilidad sistémica.
-Se evaluarán riesgos de errores catastróficos, acumulativos o de difícil detección (“Cisnes Negros”).
+  La IA no debe introducir fragilidad sistémica.
+  Se evaluarán riesgos de errores catastróficos, acumulativos o de difícil detección (“Cisnes Negros”).
 
-### **Trazabilidad y Auditabilidad**
+* **Trazabilidad y Auditabilidad**
 
-Todos los procesos que incluyan IA deben permitir reconstruir decisiones, verificar fuentes y auditar resultados.
-Sin trazabilidad, no hay responsabilidad.
+  Todos los procesos que incluyan IA deben permitir reconstruir decisiones, verificar fuentes y auditar resultados.
+  Sin trazabilidad, no hay responsabilidad.
 
 ---
 
-# **4. Directriz Central: IA Generativa y Agentes Autónomos**
+### 4. Directriz Central: IA Generativa y Agentes Autónomos
 
-### **Finalidad Permitida**
+#### Finalidad Permitida
 
 La IA se utiliza principalmente para tareas operativas o repetitivas (S1), permitiendo que el personal se concentre en tareas de criterio, análisis, diseño y supervisión (S2).
 
-### **Principios Específicos**
+#### Principios Específicos
 
 * **Validación obligatoria:** Ningún contenido de IA se utiliza sin verificación humana en decisiones de impacto.
 * **Basura Elocuente:** Se asume que la IA generativa puede producir resultados persuasivos pero incorrectos; se verifica todo.
@@ -120,31 +121,31 @@ La IA se utiliza principalmente para tareas operativas o repetitivas (S1), permi
 
 ---
 
-# **5. Gobernanza, Roles y Responsabilidades**
+### 5. Gobernanza, Roles y Responsabilidades
 
-### **Dueño de la Política**
+* **Dueño de la Política**
 
 Máxima autoridad responsable de la vigencia, actualización y patrocinio institucional de esta política.
 
-### **Comité de Gobernanza de IA**
+* **Comité de Gobernanza de IA**
 
 Revisa proyectos de alto impacto, gestiona riesgos y aprueba excepciones justificadas.
 
-### **Dueño del Sistema de IA**
+* **Dueño del Sistema de IA**
 
 Responsable del ciclo de vida del sistema de IA, documentación, trazabilidad y cumplimiento de esta política.
 
-### **Monitor de Cumplimiento**
+* **Monitor de Cumplimiento**
 
 Audita el cumplimiento de la política, verifica que los sistemas estén registrados y que existan evidencias de supervisión.
 
-### **Usuarios Finales**
+* **Usuarios Finales**
 
 Actúan como validadores y responsables de revisar, corregir y reportar resultados generados por IA. Deben reportar incidentes y cumplir esta política.
 
 ---
 
-# **6. Cumplimiento y Sanciones**
+### 6. Cumplimiento y Sanciones
 
 El incumplimiento de esta política constituye una falta al deber profesional o a la probidad (según corresponda al tipo de organización).
 
@@ -160,7 +161,7 @@ La responsabilidad por decisiones asistidas con IA recae siempre en la persona q
 
 ---
 
-# **7. Revisión y Vigencia**
+### 7. Revisión y Vigencia
 
 Esta política será revisada:
 
@@ -171,7 +172,7 @@ Su vigencia comienza desde la fecha de aprobación formal.
 
 ---
 
-# **Guía de Adaptación para el Sector Privado**
+### Guía de Adaptación para el Sector Privado
 
 Para adopción en empresas privadas, se recomienda:
 
@@ -182,7 +183,7 @@ Para adopción en empresas privadas, se recomienda:
 
 ---
 
-**Fin del Documento**
+### Fin del Documento
 
 Versión 1.0 – 2025
 
