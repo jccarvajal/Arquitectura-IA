@@ -38,7 +38,8 @@ De acuerdo con Dreyfus, la IA actual carece de:
 * contexto situado,
 * y consecuencias por actuar.
 
-Por eso puede producir lenguaje perfecto sin entenderlo: tiene **sintaxis sin semántica**. Imitación sin comprensión. S1 sin S2.
+Por eso puede producir lenguaje perfecto sin entenderlo: 
+Tiene **sintaxis sin semántica**. Imitación sin comprensión. S1 sin S2.
 
 ### Nassim Taleb — Fragilidad, antifragilidad y riesgo sin consecuencias
 
@@ -84,7 +85,7 @@ Este no es un discurso pesimista. Es realismo técnico.
 ## 4. De la Fundación a la Expansión
 
 Entre la utopía de *La Cultura* y la advertencia de *Dune* existe un camino razonable.
-Ese camino lo anticipó Isaac Asimov en *Fundación*: crear estructuras conceptuales que permitan gobernar la incertidumbre durante transiciones profundas.
+Ese camino lo anticipó Isaac Asimov en *Fundación*: crear estructuras conceptuales que permitan **gobernar la incertidumbre durante transiciones profundas**.
 Este libro aspira a cumplir esa función: ofrecer criterio, método y gobernanza para la IA que realmente tenemos.
 
 Nuestro momento histórico también recuerda a *The Expanse*, la saga escrita por James S. A. Corey. En ella, el riesgo no es la aparición de una inteligencia alienígena, sino cómo ciertas organizaciones manipulan herramientas poderosas sin comprenderlas, como Protogen manipulando la Protomolécula.
@@ -94,14 +95,15 @@ Pero su función original, no intención, porque no tenía agencia, era permitir
 Es una metáfora útil: una herramienta poderosa puede destruir o abrir miles de caminos, dependiendo del criterio con que se use.
 
 La IA actual, un S1 estadístico, opaco y no humano, funciona igual.
-No es una mente extranjera.
+No es una mente alienigena.
 Es una herramienta poderosa cuyo impacto depende del marco que la gobierna.
 
 Estas guías no describen una tecnología pasajera, sino un modo de pensar para enfrentar herramientas que evolucionan más rápido que nuestras instituciones.
 
 Si la usamos sin criterio, generará fragilidad.
 Si la gobernamos con rigor, ampliará nuestras capacidades.
-La expansión real no vendrá de la máquina, sino del juicio humano que la dirige.
+
+**La expansión real no vendrá de la máquina, sino del juicio humano que la dirige.**
 
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
