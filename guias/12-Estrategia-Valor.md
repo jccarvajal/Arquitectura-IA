@@ -70,10 +70,10 @@ El "Director de Estrategia" debe saber dónde construir su "foso" (moat) para de
 * **El Espejismo:** La ventaja es el "motor" LLM.  
 * **La Realidad:** Falso. Tu competencia puede arrendar el mismo "motor" mañana. La ventaja competitiva real y defendible no es el motor; es la fábrica que construiste y los datos que la alimentan.
 
-**El Foso 1: La Gobernanza Operativa**
+**El Foso 1: Tu Framework GRC (Gobernanza, Riesgo y Cumplimiento)**
 
-* **La Ventaja:** Tu competencia también puede construir un agente, pero el de ellos es caro, inseguro e ineficiente.  
-* **Tu Foso:** Tu **"Agente Enrutador"** (el "cerebro" metacognitivo que elige el mejor motor para cada tarea) y tu **"Dashboard de Gobernanza"** te permiten operar 10.000 agentes a un costo 50% menor y con 99% menos de alucinaciones. Tu fábrica es más eficiente. Ganas por operaciones.
+* **La Ventaja:** Tu competencia también puede construir un agente, pero el de ellos es inseguro, ineficiente y frágil.
+* **Tu Foso:** Tu marco de **GRC** (implementado vía Guía 07, 08 y 09) te permite operar a escala con costos controlados, seguridad robusta y calidad medible. Tu fábrica es más eficiente y confiable. Ganas por operaciones, confianza y **ciberseguridad**.
 
 **El Foso 2: Los Datos de RAG**
 

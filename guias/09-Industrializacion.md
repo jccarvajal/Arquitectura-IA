@@ -10,6 +10,8 @@ Pero un prototipo que funciona en la laptop de un ingeniero no es una "fábrica"
 
 Esta guía es el manual para la industrialización. Es el plan para pasar de construir un agente a desplegar y gestionar mil agentes de forma fiable. Nuestro rol evoluciona del "Ingeniero de Prototipos" (que construye el primer auto) al "Director de Operaciones" (que diseña, opera y mantiene la línea de ensamblaje 24/7).
 
+En resumen, la Industrialización es la disciplina que implementa el marco de **GRC** a escala. Transforma la **Gobernanza** (Guía 07) y la **Evaluación** (Guía 08) de procesos manuales a un sistema automatizado, confiable y monitoreado."
+
 ---
 
 #### El Dilema Central: Agilidad vs. Robustez
@@ -72,6 +74,8 @@ Este es el núcleo de las Operaciones de IA. En el prototipo, un prompt es un te
 ---
 
 #### Parte 3: La Observabilidad (La Gobernanza a Escala Industrial)
+
+No puedes 'gobernar' lo que no puedes 'ver'. La Observabilidad es la implementación técnica del **Riesgo** y **Cumplimiento** (el R y C de GRC). Es el "Dashboard de Gobernanza" que nos permite auditar la fábrica y monitorear nuestro perímetro de **ciberseguridad** en tiempo real.
 
 El "Dashboard de Gobernanza" del prototipo era una hoja de cálculo. En producción, es un sistema de monitoreo en tiempo real (como Datadog o Prometheus, pero para LLMs). No puedes gobernar lo que no puedes ver.
 

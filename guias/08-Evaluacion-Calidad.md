@@ -12,6 +12,8 @@ Esta guía es el "Laboratorio de Control de Calidad" (QA) de nuestra fábrica. E
 
 Resolver esto es el principal desafío de la industria. El riesgo de "Inexactitud" (o Alucinaciones) es el problema N°1 que las organizaciones están enfrentando en 2025. Un 30% de las empresas reporta haber experimentado consecuencias negativas por la inexactitud de la IA, y es el riesgo que más están trabajando en mitigar.
 
+Esta guía es el componente de **Cumplimiento (Compliance)** de nuestro marco GRC. No podemos 'industrializar' (Guía 09) un sistema cuya calidad no podemos medir. Esta guía nos lleva de la 'sensación' subjetiva a la 'métrica' objetiva que nos permite probar el cumplimiento de nuestra Gobernanza (Guía 07).
+
 ---
 
 #### Parte 1: El Desafío: Medir lo "Blando"
