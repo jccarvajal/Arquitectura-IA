@@ -19,7 +19,7 @@
 "El 'prototipo' es la herramienta para matar malas ideas rápidamente. La maestría no consiste en construir un sistema perfecto, sino en validar una hipótesis (y aprender del fracaso) con el mínimo costo."  
 
 * **Guía 07 (Gobernanza de IA):** 
-"La 'gobernanza' es la 'sala de control' de la fábrica. La maestría se resume en el principio: 'Delegar, no abdicar'. Es el acto de retener la responsabilidad, el criterio y el control."  
+"La 'gobernanza' es el pilar de un marco de GRC (Gobernanza, Riesgo y Cumplimiento). Es la 'sala de control' que gestiona el nuevo perímetro de ciberseguridad de IA y aplica el principio: 'Delegar, no abdicar'."
 
 * **Guía 08 (Evaluación, Calidad y Validación de IA):** 
 "Si no puedes medirlo, no puedes gobernarlo. La maestría consiste en mover la calidad de una 'sensación' subjetiva a una 'métrica' objetiva. Es el laboratorio de control de calidad."  
