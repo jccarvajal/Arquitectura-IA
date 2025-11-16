@@ -158,10 +158,7 @@ La responsabilidad por decisiones asistidas con IA recae siempre en la persona q
 
 ### 7. Revisión y Vigencia
 
-Esta política será revisada:
-
-* **una vez al año**, y
-* de manera **extraordinaria** ante incidentes relevantes, cambios regulatorios o tecnologías emergentes que modifiquen el riesgo institucional.
+Esta política será revisada **una vez al año** y, de manera **extraordinaria**, ante incidentes relevantes, cambios regulatorios o tecnologías emergentes que modifiquen el riesgo institucional.
 
 Su vigencia comienza desde la fecha de aprobación formal.
 
@@ -175,12 +172,6 @@ Para adopción en empresas privadas, se recomienda:
 * ajustar la legalidad a marcos corporativos, PI y protección del consumidor,
 * reemplazar “probidad administrativa” por responsabilidad laboral contractual,
 * mantener idénticos los principios de transparencia, seguridad y trazabilidad.
-
----
-
-### Fin del Documento
-
-Versión 1.0 – 2025
 
 ---
   <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
