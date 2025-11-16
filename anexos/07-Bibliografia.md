@@ -17,7 +17,7 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 * **Lewis, P., et al. (2020). "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks".**  
   * **Por qué leerlo:** Es el *paper* que introduce formalmente la arquitectura **RAG**, la solución técnica clave para el problema de la "Ventana de Contexto" discutido en la Guía 02.  
 * **Hu, E., et al. (2021). "LoRA: Low-Rank Adaptation of Large Language Models".**
-  **Por qué leerlo:** Es el paper técnico seminal que introduce LoRA (Low-Rank Adaptation), la técnica de ingeniería clave definida en el Anexo 06 (Glosario). Proporciona el fundamento de ingeniería esencial para el Anexo 01: Ajuste Fino y Adaptación de Modelos.
+  * **Por qué leerlo:** Es el paper técnico seminal que introduce LoRA (Low-Rank Adaptation), la técnica de ingeniería clave definida en el Anexo 06 (Glosario). Proporciona el fundamento de ingeniería esencial para el Anexo 01: Ajuste Fino y Adaptación de Modelos.
 * **Boonstra, L. (Febrero 2025). "Prompt Engineering".**
   * **Por qué leerlo:** Es el whitepaper técnico que define la disciplina de la Ingeniería de Prompts (Guía 01). Detalla las técnicas fundamentales como zero-shot , few-shot , role prompting y los patrones de razonamiento como Chain-of-Thought y ReAct  que son la base del "Método de 7 Pasos".
 * **Milam, K., & Gulli, A. (Noviembre 2025). "Context Engineering: Sessions, Memory".**  
@@ -57,7 +57,7 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 * **Zheng, L., et al. (2023). "Judging LLM-as-a-judge with MT-Bench and Chatbot Arena".**  
   * **Por qué leerlo:** Proporciona el fundamento técnico y las métricas para la "Evaluación Asistida por IA" (el **"LLM Juez"**), un concepto central de la **Guía 08: Evaluación**.
 * **Google. (2023-2024). "Secure AI Framework (SAIF)".**
-  **Por qué leerlo:** Es el marco de seguridad fundamental de Google (referenciado en el whitepaper "Prototype to Production") que aborda la seguridad de la IA en la infraestructura y el producto. Proporciona un respaldo conceptual clave para la Gobernanza (Guía 07) y la Industrialización (Guía 09).
+  * **Por qué leerlo:** Es el marco de seguridad fundamental de Google (referenciado en el whitepaper "Prototype to Production") que aborda la seguridad de la IA en la infraestructura y el producto. Proporciona un respaldo conceptual clave para la Gobernanza (Guía 07) y la Industrialización (Guía 09).
 * **Huyen, Chip (2024). "AI Engineering".** 
   * **Por qué leerlo:** Es el complemento técnico directo de esta obra. Si este libro es el "tratado de criterio" (qué y por qué), "AI Engineering" es el manual de "industrialización" (el cómo). Detalla la implementación de ingeniería para Agentes, RAG, Evaluación y "Guardrails" (Gobernanza) en producción.
 * **Kartakis, S., et al. (Noviembre 2025). "Prototype to Production".**
@@ -117,7 +117,6 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
     * **Por qué leerlo:** Es el paper de referencia para las arquitecturas **no-Transformers** (Modelos de Espacio de Estado) que resuelven el primer límite del Transformer (Guía 02): el **Costo Cuadrático**. Permiten eficiencia a escala y costo lineal.
   * **Behrouz, A., et al. (2025). "Nested Learning: The Illusion of Deep Learning Architectures".**
     * **Por qué leerlo:** Es el paper de investigación (Google Research, NeurIPS 2025) que aborda el segundo límite del Transformer (Guía 02): la **Amnesia Estática**. Introduce el paradigma del "Aprendizaje Anidado" y prototipos capaces de **Aprendizaje Continuo** y auto-modificación. Es la fuente clave para el "Vigilante Estratégico".
-
 
 ---
   <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
