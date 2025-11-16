@@ -28,7 +28,7 @@ Ambas miradas, la del Arquitecto que diseña y la del Profesional que ejecuta, s
 
 ### 3. Sobre el uso de metáforas y referencias culturales
 
-A lo largo de esta obra se emplean metáforas tomadas de la ciencia ficción, como *La Cultura*, *Dune*, *Fundación* o *The Expanse*, y de pensadores contemporáneos como Taleb, Kahneman o Dreyfus. Estas referencias no son adornos: funcionan como herramientas cognitivas para iluminar conceptos complejos de gobernanza, riesgo y criterio humano. La IA es un fenómeno técnico, pero también sistémico y humano; por eso recurrimos a narrativas que permiten comprender sus implicancias de manera más clara, recordable y estratégica. Las metáforas no reemplazan el rigor: lo hacen más accesible, más visual y más útil para quienes deben decidir, diseñar y gobernar.
+Las referencias a ciencia ficción y a pensadores contemporáneos se usan aquí como herramientas cognitivas: ayudan a traducir ideas complejas de IA y gobernanza en imágenes claras y recordables. No reemplazan el rigor técnico; lo hacen más accesible y útil para decidir.
 
 ---
 
