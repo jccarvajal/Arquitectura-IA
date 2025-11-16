@@ -11,7 +11,7 @@ Un "tratado de criterio" para profesionales que comienzan su integración con IA
 
 ### Propósito de esta Obra
 
-El propósito de *Inteligencia Artificial Aplicada* es dotar a la organización de un marco de pensamiento estructurado, ético y operativo para la adopción responsable de la Inteligencia Artificial.
+El propósito de *Inteligencia Artificial Aplicada* es dotar a la organización de un marco de pensamiento estructurado  para la adopción responsable de la Inteligencia Artificial, centrado explícitamente en la **Gobernanza, Riesgo y Cumplimiento (GRC)** y los nuevos desafíos de **Ciberseguridad** que esta tecnología impone.
 
 No busca enseñar a programar, sino enseñar a **decidir, diseñar y gobernar**.
 
