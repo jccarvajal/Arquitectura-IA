@@ -12,7 +12,7 @@ Hasta ahora, nuestra metáfora ha sido la de un "Director" o "Gobernador": un hu
 
 Esta guía rompe esa barrera. El objetivo ya no es cómo delegamos tareas, sino cómo nos fusionamos con la IA. Dejamos de ser "Directores de Orquesta" y nos convertimos en "Socios Cognitivos" o "Co-Pilotos Estratégicos".
 
-Ahora, comienza el verdadero desafío: escalar. Escalar la tecnología es un problema técnico. Escalar a las personas es un desafío de liderazgo, cultura y confianza. Esta guía es el manual para la "Gestión del Cambio" y para definir el pilar de la confianza humana. Nuestro rol evoluciona para convertirnos en "Directores de Transformación y Talento".
+Ahora, comienza el verdadero desafío: escalar. Escalar la tecnología es un problema técnico. Escalar a las personas es un desafío de liderazgo, cultura y **Riesgo**. Esta guía es el manual para la 'Gestión del Cambio' y para definir el pilar del **Cumplimiento** ético de nuestro marco GRC.
 
 ---
 

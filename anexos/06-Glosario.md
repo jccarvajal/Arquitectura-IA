@@ -148,6 +148,11 @@ Este anexo es el léxico centralizado de "Inteligencia Artificial Aplicada". La 
 * **Definición:** El marco de políticas, procesos y controles técnicos para gestionar la IA de forma segura, ética y eficiente. Su objetivo es maximizar el valor mientras se mitigan los riesgos clave (alucinaciones, fugas de datos, inyección de prompts, costos).  
 * **Referencia Principal:** Guía 07 (Gobernanza de IA).
 
+**GRC (Gobernanza, Riesgo y Cumplimiento)**
+
+* **Definición:** El término industrial para el marco estratégico que una organización utiliza para gestionar su Gobernanza (el "cómo" se opera), su Riesgo (el "por qué" se controla) y su Cumplimiento (la "prueba" de que se hace bien). En esta obra, es la tesis central: la "Fundación" que una organización debe construir para gestionar el Riesgo de la IA y asegurar el Cumplimiento ético y de calidad.
+* **Referencia Principal:** Prólogo (Fundación), Guía 07 (Gobernanza de IA), Guía 10 (Humanidad, Ética y Confianza).
+ 
 **Hiper-Personalización**
 
 * **Definición:** Un modelo de negocio habilitado por la IA. Es la capacidad de usar agentes para ofrecer un servicio de "conserje" personalizado a millones de clientes simultáneamente, un servicio que antes era económicamente inviable y se reservaba solo para clientes "premium".  

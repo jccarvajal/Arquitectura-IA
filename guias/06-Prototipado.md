@@ -82,9 +82,9 @@ Es hora de ensamblar.
 
 ---
 
-#### Parte 4: Aplicar la Gobernanza Mínima Viable (MVP)
+#### Parte 4: GRC desde el Día Cero (La Gobernanza Mínima Viable)
 
-Tu prototipo debe ser seguro. Si se salta la Gobernanza, no es un prototipo; es un pasivo. Aplica estos 3 controles de seguridad obligatorios desde el Día 1.
+Tu prototipo debe ser seguro. Si se salta la Gobernanza, no es un prototipo; es un pasivo. Un marco GRC no es algo que se añade al final; comienza aquí. Aplica estos 3 controles de **Riesgo y Cumplimiento** obligatorios desde el Día 1.
 
 Esta "Gobernanza Mínima Viable" es, en la práctica, la versión 1.0 de lo que se conoce como una **LOSA (Layer of Safety & Alignment)**, la arquitectura técnica de la confianza que exploraremos en detalle en la Guía 07.
 
