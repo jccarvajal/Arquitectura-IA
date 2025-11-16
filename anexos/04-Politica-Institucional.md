@@ -62,12 +62,10 @@ La responsabilidad final es siempre humana.
 
 Todo uso de IA se regirá por los siguientes principios:
 
-* **Legalidad y Proporcionalidad**
-
+* **Legalidad y Proporcionalidad:**
   Cumplimiento normativo y uso proporcional a la necesidad. La IA no es siempre la opción adecuada.
 
-* **Criterio Humano (Delegar, No Abdicar)**
-
+* **Criterio Humano (Delegar, No Abdicar):**
   La IA automatiza tareas de **Sistema 1**; la organización gobierna desde **Sistema 2**.
   Toda decisión de impacto requiere supervisión humana significativa.
   La responsabilidad recae siempre en personas.
