@@ -23,7 +23,7 @@ En el prólogo establecimos que la IA generativa actual es un **Sistema 1 amplia
 
 * **Kahneman** nos recuerda la diferencia esencial entre S1 (intuitivo, rápido, estadístico) y S2 (deliberado, analítico, estable).
 * **Dreyfus** mostró que la comprensión humana surge de *estar-en-el-mundo*: cuerpo, experiencia, contexto, consecuencias.
-* **Taleb** advirtió que los sistemas sin antifragilidad, sin consecuencias por fallar (*skin in the game*), generan condiciones para **Cisnes Negros**.
+* **Taleb** advirtió que los sistemas sin antifragilidad, sin consecuencias por fallar (*skin in the game*), generan condiciones para *Cisnes Negros*.
 
 Juntas, estas perspectivas nos llevan a una conclusión simple:
 
