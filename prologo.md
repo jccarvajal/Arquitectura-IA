@@ -25,7 +25,7 @@ En *Pensar, rápido y despacio*, **Daniel Kahneman**, psicólogo y premio en Cie
 
 Los modelos generativos actuales se comportan como **S1 ampliado**, no como S2 emergente.
 
-### Hubert Dreyfus — La comprensión no es cálculo
+#### Hubert Dreyfus — La comprensión no es cálculo
 
 **Hubert Dreyfus**, filósofo y uno de los críticos más influyentes de la IA desde la fenomenología, sostuvo que la inteligencia humana no opera como una máquina simbólica ni estadística.
 Para él, comprender no es manipular datos: es *habitar* el mundo.
@@ -41,7 +41,7 @@ De acuerdo con Dreyfus, la IA actual carece de:
 Por eso puede producir lenguaje perfecto sin entenderlo: 
 Tiene **sintaxis sin semántica**. Imitación sin comprensión. S1 sin S2.
 
-### Nassim Taleb — Fragilidad, antifragilidad y riesgo sin consecuencias
+#### Nassim Taleb — Fragilidad, antifragilidad y riesgo sin consecuencias
 
 **Nassim Nicholas Taleb**, teórico del riesgo, aporta tres ideas clave.
 
@@ -51,15 +51,15 @@ Tiene **sintaxis sin semántica**. Imitación sin comprensión. S1 sin S2.
 
 Puede generar *basura elocuente*, respuestas fluidas pero incorrectas, sin experimentar costo alguno.
 
-Esa combinación de fragilidad, ausencia de antifragilidad y falta de responsabilidad crea condiciones ideales para **Cisnes Negros**: fallos raros pero de impacto desproporcionado, amplificados por la falsa sensación de certeza que el propio sistema produce.
+Esa combinación de fragilidad, ausencia de antifragilidad y falta de responsabilidad crea condiciones ideales para **cisnes negros**: fallos raros pero de impacto desproporcionado, amplificados por la falsa sensación de certeza que el propio sistema produce.
 
 ---
 
-## 3. El veredicto de quienes la estudian, la critican y la construyen
+### 3. El veredicto de quienes la estudian, la critican y la construyen
 
 Esta evaluación no proviene de un pesimismo externo, sino de una convergencia entre quienes analizan, cuestionan y desarrollan esta tecnología.
 
-### Críticos técnicos
+#### Críticos técnicos
 
 Lingüistas y científicos cognitivos subrayan que estos modelos *imitan sin comprender*.
 
@@ -68,30 +68,30 @@ Lingüistas y científicos cognitivos subrayan que estos modelos *imitan sin com
 
 los describen como *“loros estocásticos”*: máquinas de imitación, no de entendimiento.
 
-### Constructores escépticos
+#### Constructores escépticos
 
 * **Yann LeCun**, Premio Turing y pionero del aprendizaje profundo, subraya que los modelos actuales carecen de razonamiento, planificación y modelos del mundo.
 * **Geoffrey Hinton**, también Premio Turing y figura central del deep learning, dejó su posición industrial para advertir sobre riesgos profundos que aún no comprendemos del todo.
 
-### Líderes institucionales
+#### Líderes institucionales
 
-* **Dario Amodei**, CEO de Anthropic, sostiene que la gobernanza es “el problema central”.
+* **Dario Amodei**, CEO de Anthropic, sostiene que la gobernanza es *“el problema central”*.
 * **Mustafa Suleyman**, cofundador de DeepMind y líder de Microsoft AI, denomina el *Problema de la Contención* a la tensión entre capacidad tecnológica y capacidad humana de control.
 
 Este no es un discurso pesimista. Es realismo técnico.
 
 ---
 
-## 4. De la Fundación a la Expansión
+### 4. De la Fundación a la Expansión
 
 Entre la utopía de *La Cultura* y la advertencia de *Dune* existe un camino razonable.
 Ese camino lo anticipó Isaac Asimov en *Fundación*: crear estructuras conceptuales que permitan **gobernar la incertidumbre durante transiciones profundas**.
 Este libro aspira a cumplir esa función: ofrecer criterio, método y gobernanza para la IA que realmente tenemos.
 
-Nuestro momento histórico también recuerda a *The Expanse*, la saga escrita por James S. A. Corey. En ella, el riesgo no es la aparición de una inteligencia alienígena, sino cómo ciertas organizaciones manipulan herramientas poderosas sin comprenderlas, como Protogen manipulando la Protomolécula.
+Nuestro momento histórico también recuerda a *The Expanse*, la saga escrita por James S. A. Corey. En ella, el riesgo no es la aparición de una inteligencia alienígena, sino cómo ciertas organizaciones manipulan herramientas poderosas sin comprenderlas, como *Protogen* manipulando la Protomolécula.
 
 La Protomolécula, en manos irresponsables, generó caos. 
-Pero su función original, no intención, porque no tenía agencia, era permitir *construcción y expansión*, **abriendo rutas** y habilitando acceso a nuevos espacios. 
+Pero su función original (no intención, porque no tenía agencia) era permitir *construcción y expansión*, **abriendo rutas** y habilitando acceso a nuevos espacios. 
 Es una metáfora útil: una herramienta poderosa puede destruir o abrir miles de caminos, dependiendo del criterio con que se use.
 
 La IA actual, un S1 estadístico, opaco y no humano, funciona igual.

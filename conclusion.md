@@ -1,6 +1,6 @@
 # Conclusión de la Obra: De la Fundación a la Expansión
 
-## 1. Cierre de Ciclo: De Usuario a Vigilante
+### 1. Cierre de Ciclo: De Usuario a Vigilante
 
 Esta obra no termina: cambia de fase.
 La “Maestría” en Inteligencia Artificial no es un punto de llegada, sino un movimiento continuo, una destreza cíclica que se afina cada vez que interactuamos con una herramienta cuya naturaleza evoluciona más rápido que nuestras instituciones.
@@ -17,7 +17,7 @@ Gobernar la IA es evitar ese destino.
 
 ---
 
-## 2. La Inteligencia que Tenemos: Un S1 Amplificado
+### 2. La Inteligencia que Tenemos: Un S1 Amplificado
 
 En el prólogo establecimos que la IA generativa actual es un **Sistema 1 ampliado**, brillante para producir patrones y frágil para razonar.
 
@@ -33,7 +33,7 @@ Gobernar IA no es delegar juicio: es protegerlo.
 
 ---
 
-## 3. Gobernar la Protomolécula: Herramientas Poderosas, Consecuencias Reales
+### 3. Gobernar la Protomolécula: Herramientas Poderosas, Consecuencias Reales
 
 En *The Expanse*, la saga de James S. A. Corey, la Protomolécula es una herramienta antigua, opaca y poderosa.
 En manos irresponsables, Protogen genera destrucción.
@@ -51,7 +51,7 @@ Esta obra es un manual para gobernar esa herramienta, nuestro equivalente contem
 
 ---
 
-## 4. El Marco de Pensamiento que Permanece
+### 4. El Marco de Pensamiento que Permanece
 
 Las herramientas cambiarán. Los modelos también.
 Pero esta obra no intenta capturar la tecnología de un momento, sino establecer:
@@ -67,7 +67,7 @@ criterio, diseño, contexto, control, responsabilidad, auditoría, evaluación c
 
 ---
 
-## 5. Hacia la Expansión: Lo que la Tecnología Abre, lo que la Humanidad Decide
+### 5. Hacia la Expansión: Lo que la Tecnología Abre, lo que la Humanidad Decide
 
 El riesgo nunca fue una AGI mítica.
 El riesgo era, y sigue siendo, más humano:
@@ -85,7 +85,7 @@ sino un presente donde comunidades profesionales con criterio, responsabilidad y
 
 ---
 
-## 6. Epílogo: Rutas que se Mantienen Abiertas
+### 6. Epílogo: Rutas que se Mantienen Abiertas
 
 Tu trabajo, desde ahora, no es solo usar IA.
 Es sostener un marco.
