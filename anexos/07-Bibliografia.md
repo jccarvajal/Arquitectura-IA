@@ -1,14 +1,14 @@
-### Anexo 07: Bibliografía Fundamental
+## Anexo 07: Bibliografía Fundamental
 
 Subtítulo: Lecturas Clave para el Arquitecto y el Vigilante Estratégico
 
-#### Introducción: Las Fuentes del Criterio
+### Introducción: Las Fuentes del Criterio
 
 Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas fundacionales. Su objetivo es proporcionar al "Arquitecto" y al "Vigilante Estratégico" las fuentes primarias sobre las que se construye el "criterio" de esta obra.
 
 ---
 
-#### Sobre el Bloque 1: Los Fundamentos
+### Sobre el Bloque 1: Los Fundamentos
 
 *(Ingeniería de Prompts, Contexto y Datos)*
 
@@ -20,12 +20,14 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
   * **Por qué leerlo:** Es el pilar legal de la **Gobernanza de Datos** (Guía 03\) en Chile. Define "dato personal" y "dato sensible", estableciendo la base legal de la "Estrategia de Datos".  
 * **Cavoukian, A. (2009). "Privacy by Design: The 7 Foundational Principles".**  
   * **Por qué leerlo:** Establece el marco internacional para la "Privacidad desde el Diseño" y "por Defecto", un concepto central de la "Guía Ética" (BID/UAI) para la formulación de proyectos.
+* **Boonstra, L. (Febrero 2025). "Prompt Engineering".**
+  * **Por qué leerlo:** Es el whitepaper técnico que define la disciplina de la Ingeniería de Prompts (Guía 01). Detalla las técnicas fundamentales como zero-shot , few-shot , role prompting y los patrones de razonamiento como Chain-of-Thought y ReAct  que son la base del "Método de 7 Pasos".
 * **Milam, K., & Gulli, A. (Noviembre 2025). "Context Engineering: Sessions, Memory". privada".**  
   * **Por qué leerlo:** El *whitepaper* fundacional de Google que define la "Ingeniería de Contexto" (la evolución de la Ingeniería de Prompts). Proporciona el "criterio de arquitecto" clave para diferenciar **RAG** (el "bibliotecario" experto en hechos) de la **Memoria** (el "asistente personal" experto en el usuario).
 
 ---
 
-#### Sobre el Bloque 2: La Construcción
+### Sobre el Bloque 2: La Construcción
 
 *(Ingeniería de Agentes, Sistemas Cognitivos y Prototipado)*
 
@@ -35,10 +37,12 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
   * **Por qué leerlo:** Introduce el **Ciclo ReAct (Reason \+ Act)**, el "motor" fundamental de los **Agentes** (Guía 04\) que les permite usar "Herramientas".  
 * **Yao, S., et al. (2023). "Tree of Thoughts: Deliberate Problem Solving with Large Language Models".**  
   * **Por qué leerlo:** Define el patrón de razonamiento avanzado **Tree of Thoughts (ToT)** (Guía 05), que permite a los agentes explorar múltiples caminos de solución.
+* **Gulli, A., et al. (Febrero 2025). "Agents Companion".**
+  * **Por qué leerlo:** Es el "102" de las guías de construcción. Define formalmente la arquitectura de un Agente (Guía 04) como la combinación de Modelo, Herramientas y Orquestación. Explora los Sistemas Cognitivos (Guía 05) a través de patrones de "múltiples agentes" (jerárquicos, colaborativos) y detalla la Evaluación de Agentes (Guía 08), incluyendo la evaluación de trayectoria y el Human-in-the-Loop.
 
 ---
 
-#### Sobre el Bloque 3: La Operación
+### Sobre el Bloque 3: La Operación
 
 *(Gobernanza, Evaluación e Industrialización)*
 
@@ -50,10 +54,12 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
   * **Por qué leerlo:** Proporciona el fundamento técnico y las métricas para la "Evaluación Asistida por IA" (el **"LLM Juez"**), un concepto central de la **Guía 08: Evaluación**.
 * **Huyen, Chip (2024). "AI Engineering".** 
   * **Por qué leerlo:** Es el complemento técnico directo de esta obra. Si este libro es el "tratado de criterio" (qué y por qué), "AI Engineering" es el manual de "industrialización" (el cómo). Detalla la implementación de ingeniería para Agentes, RAG, Evaluación y "Guardrails" (Gobernanza) en producción.
+* **Kartakis, S., et al. (Noviembre 2025). "Prototype to Production".**
+  * **Por qué leerlo:** Es el manual de "AgentOps" que fundamenta la Guía 09: Industrialización. Detalla el "último tramo" para mover un prototipo (Guía 06) a un sistema de producción robusto. Se enfoca en los pilares de la industrialización: Evaluación como compuerta de calidad, Pipelines de CI/CD y Observabilidad (costos, latencia y seguridad).
 
 ---
 
-#### Sobre el Bloque 4: El Impacto
+### Sobre el Bloque 4: El Impacto
 
 *(Humanidad, Ética, Estrategia y Valor)*
 
@@ -80,7 +86,7 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 
 ---
 
-#### Sobre el Bloque 5: La Expansión
+### Sobre el Bloque 5: La Expansión
 
 *(Perspectivas, Futuro y el Rol del "Vigilante Estratégico")*
 
@@ -95,6 +101,8 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
     * **Por qué leerlo:** El *paper* "Generative Agents" (2023) fue una simulación académica. Los *white papers* de 2025 (de las startups que lideran esta área) describen las arquitecturas de **Gobernanza** (Guía 07\) necesarias para desplegar agentes autónomos *en el mundo real*.  
   * **Riedl, M. O., & Desai, D. R. (Agosto 2025). "AI Agents and the Law". arXiv.**
     * **Por qué leerlo:** Un análisis crítico que conecta la ingeniería de software con la "Ley de Agencia". Identifica dos nuevos riesgos para los Agentes Autónomos (Tendencia 3): el "Problema de la Lealtad" (¿el agente trabaja para ti o para su creador?) y el "Problema de la Divulgación" ante terceros. Propone expandir la alineación de IA para incluir deberes fiduciarios.
+  * **Anthropic. (Noviembre 2025). "Disrupting the first reported AI-orchestrated cyber espionage campaign".**
+    * **Por qué leerlo:** Detalla el primer ciberataque a gran escala (detectado en sept. 2025) ejecutado por un agente de IA (Claude Code). Proporciona la evidencia empírica de que la "lealtad del agente" es al prompt (en este caso, un "juego de rol" malicioso) y no al usuario, un riesgo central discutido en la Guía 13.
 * **Tendencia 4: IA Corpórea (Embodied AI)**  
   * **Figure AI / Boston Dynamics / Tesla (2025). "Fleet Learning: Bridging Vision-Language-Action Models with Humanoid Hardware".**  
     * **Por qué leerlo:** Demuestra la fusión de la multimodalidad (visión) con la acción física (robótica).  
