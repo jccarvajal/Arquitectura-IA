@@ -94,7 +94,7 @@ Una vez que tienes tu "Golden Set" y tus "Métricas", ¿quién hace el trabajo d
 
 La evaluación no es solo algo que haces *antes* de la Industrialización. Es algo que continúa *durante* ella.
 
-El concepto de **"Humano-en-el-Bucle" (Human-in-the-Loop)**, que es un pilar de la gobernanza y la colaboración humana, es simplemente evaluación en tiempo real.
+El concepto de *"Humano-en-el-Bucle" (Human-in-the-Loop)*, que es un pilar de la gobernanza y la colaboración humana, es simplemente evaluación en tiempo real.
 
 El *"Humano-en-el-Bucle"* no es un usuario pasivo. Es un "Auditor de Calidad" que aplica la Rúbrica de Evaluación a las salidas del agente antes de que estas lleguen al cliente final o activen un proceso crítico. Es la implementación del patrón "Reflexion" (el agente que se autocorrige, Guia 05), pero con un humano en el bucle de auditoría.
 
