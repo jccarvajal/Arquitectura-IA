@@ -29,7 +29,7 @@ Pensemos en la "Ventana de Contexto" como la memoria a corto plazo de la IA, o m
 
 **2\. El "Token": El Átomo del Contexto**
 
-Un "token" es la unidad de texto fundamental que un LLM procesa. Es el "ladrillo" o "átomo" con el que la IA lee el mundo y construye sus respuestas. Un token NO es una palabra; una palabra compleja como "contextualizando" puede dividirse en 3 o 4 tokens.
+Un "token" es la unidad de texto fundamental que un LLM procesa. Es el "ladrillo" o "átomo" con el que la IA lee el mundo y construye sus respuestas. Un token NO es una palabra. Es un error común pensarlo así. A veces una palabra simple como "hola" es 1 token. Pero una palabra compleja como "contextualizando" puede dividirse en 3 o 4 tokens (ej: "con" + "textua" + "lizando")."
 
 Es el concepto más importante porque mide tres cosas:
 

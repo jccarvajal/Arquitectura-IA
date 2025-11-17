@@ -30,13 +30,13 @@ La diferencia es simple pero profunda:
 Un Agente es un sistema que utiliza un LLM como "cerebro" para tomar decisiones, pero que además posee **herramientas** y un **ciclo de ejecución** para actuar de forma autónoma. Aquí está la distinción clave:
 
 * **Chatbot (Modo Básico):** Cuando le pides a ChatGPT o Gemini una idea, te responde con una idea. Es una conversación.  
-* **Agente (Modo Extendido):** Cuando le pides a Gemini que busque en tu Gmail o revise Google Flights, deja de ser un simple chatbot. En ese momento se convierte en un agente, porque usó una herramienta (buscar\_en\_gmail) para actuar fuera de su propio cerebro.
+* **Agente (Modo Extendido):** Cuando le pides a Gemini que busque en tu Gmail o revise Google Flights, deja de ser un simple chatbot. En ese momento se convierte en un agente, porque usó una herramienta ('buscar\_en\_gmail') para actuar fuera de su propio cerebro.
 
 Herramientas como Copilot (diseñado para leer archivos y buscar en Bing) o las "Acciones GPT" están construidas para ser agentes desde el principio.
 
 **2\. El "Motor" del Agente: El Ciclo ReAct (Razonar \+ Actuar)**
 
-Esto es lo más importante. Un agente no solo da una respuesta y se detiene. Opera en un bucle (loop) hasta que cumple el objetivo. Este ciclo se conoce comúnmente como ReAct, un patrón que combina el Razonamiento (Reason) con la Acción (Act).
+Esto es lo más importante. Un agente no solo da una respuesta y se detiene. Opera en un bucle (loop) hasta que cumple el objetivo. Este ciclo se conoce comúnmente como **ReAct**, un patrón que combina el Razonamiento (Reason) con la Acción (Act).
 
 Así es como "piensa" un agente en la práctica:
 

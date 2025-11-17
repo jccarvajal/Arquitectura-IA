@@ -114,7 +114,7 @@ Si tienes un formato o estilo muy específico en mente, muéstrale al modelo un 
   ```
 * **Ejemplo 2:**
   ```text
-  Quiero respuestas en el estilo 'Pregunta-Respuesta Invertida'. Ejemplo: 'Fue la penicilina el descubrimiento que revolucionó la medicina moderna. ¿Cuál fue el descubrimiento de Alexander Fleming?'. Ahora, usa ese estilo para el concepto de la relatividad de Einstein.
+  Quiero respuestas en el estilo 'Pregunta-Respuesta Invertida'. Ejemplo: 'Fue la penicilina el descubrimiento que revolucionó la medicina moderna. ¿Cuál fue el descubrimiento de Alexander Fleming?' Ahora, usa ese estilo para el concepto de la relatividad de Einstein.
   ```
 
 **Paso 5: Incorpora Técnicas Avanzadas (Estratégicamente)**  
@@ -126,7 +126,7 @@ Aquí es donde potencias tu prompt para tareas complejas que requieren razonamie
   ```
 
 **Paso 6: Evalúa y Valida (En Dos Niveles)**  
-Una vez que recibes la respuesta, revísala críticamente. La confianza ciega en un LLM es un error de principiante. ¿Cumple con el objetivo del Paso 1? ¿Respetó el rol, las restricciones y el formato? ¿La información es factualmente correcta?. Los LLM pueden "alucinar" (inventar datos). Siempre verifica la información importante. La validación es un proceso dual.
+Una vez que recibes la respuesta, revísala críticamente. La confianza ciega en un LLM es un error de principiante. ¿Cumple con el objetivo del Paso 1? ¿Respetó el rol, las restricciones y el formato? ¿La información es factualmente correcta? Los LLM pueden "alucinar" (inventar datos). Siempre verifica la información importante. La validación es un proceso dual.
 
 1. **Validación Interna (Calidad y Coherencia):** Usa el propio LLM como un primer filtro. Utiliza autocrítica y self-consistency para mejorar la coherencia, claridad y lógica interna de la respuesta.  
    * *Prompt de Ejemplo 1:* 

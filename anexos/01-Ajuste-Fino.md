@@ -4,7 +4,7 @@ Subtítulo: El Manual del "Especialista de Motores"
 
 #### Introducción: De "Leer Libros" a "Ir a la Universidad"
 
-En las guías principales, hemos establecido que la Ingeniería de Contexto (Guía 02\) es clave. La herramienta principal que exploramos fue **RAG (Generación Aumentada por Recuperación)**, nuestra arquitectura del "Bibliotecario Asistente". 
+En las guías principales, hemos establecido que la Ingeniería de Contexto (Guía 02\) es clave. La herramienta principal que exploramos fue **RAG (Generación Aumentada por Recuperación)**, nuestra arquitectura del "Bibliotecario de Investigación". 
 
 RAG es la forma de darle "libros" (conocimiento externo) al "cerebro" (LLM) para que los lea en tiempo real.  
 
