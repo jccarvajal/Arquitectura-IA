@@ -13,7 +13,7 @@
 "Un 'agente' es la IA que pasa de ser una 'herramienta' a ser un 'trabajador'. La maestría consiste en aprender a delegar tareas, no solo a ejecutar comandos."  
 
 * **Guía 05 (Diseño de Sistemas Cognitivos):** 
-"Un agente sin un 'plano cognitivo' es un riesgo. La maestría no consiste en 'contratar' al trabajador (Guía 04), sino en diseñar su 'manual de procedimientos' (el cómo debe pensar)."  
+"Un agente sin un 'plano cognitivo' es un riesgo. La maestría no consiste en 'contratar' al trabajador, sino en diseñar su 'manual de procedimientos' (el cómo debe pensar)."  
 
 * **Guía 06 (Prototipado y Experimentación):** 
 "El 'prototipo' es la herramienta para matar malas ideas rápidamente. La maestría no consiste en construir un sistema perfecto, sino en validar una hipótesis (y aprender del fracaso) con el mínimo costo."  
