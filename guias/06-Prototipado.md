@@ -29,7 +29,7 @@ Antes de escribir una línea de código, debes encontrar la "playa" correcta par
 
 * **Mal Caso de Uso:** "Un agente que reemplace a todo el departamento de servicio al cliente."  
   * *(Riesgo altísimo, complejo, "hervir el océano").*  
-* **Buen Caso de Uso:** "Un **agente**, un sistema que razona y actúa, que lea los 1.000 emails de 'contacto@empresa.com' cada noche y genere un reporte de 10 bullets para el gerente a las 8 AM."  
+* **Buen Caso de Uso:** "Un agente, un sistema que razona y actúa, que lea los 1.000 emails de 'contacto@empresa.com' cada noche y genere un reporte de 10 bullets para el gerente a las 8 AM."  
   * *(Definido, bajo riesgo, alto valor de ahorro de tiempo).*
 
 **El Filtro del "Quick Win":**  
@@ -70,7 +70,7 @@ Es hora de ensamblar.
 **1\. Elaborar el "Plano" (Prompts):**
 
 * **Define el Rol:** "Eres un 'Agente PM' experto en clasificar emails..."  
-* **Define las Herramientas:** "...tienes una herramienta leer\_email() y escribir\_reporte()."
+* **Define las Herramientas:** "...tienes una herramienta `leer_email()` y `escribir_reporte()`."
 
 **2\. Construir la "Biblioteca" (RAG):**
 
@@ -129,9 +129,9 @@ Ya tienes tu prototipo seguro (v1). Ahora debes probar su valor.
 
 **2\. Iterar (Hacia la Sinergia):**
 
-* El primer mes, el humano valida el reporte (Humano-en-el-Bucle).  
-* Cuando la "Métrica de Calidad" muestra que el agente acierta el 99% de las veces, puedes escalar.  
-* **Escalado (v2):** Mueves al humano de "En-el-Bucle" (Validación) a **"Sobre-el-Bucle" (Human-on-the-Loop)** (Supervisión). El agente ahora envía el reporte automáticamente (preparando para la Industrialización), y el humano solo recibe una alerta si algo falla.
+* **Al inicio:** El primer mes, el humano valida el reporte (**Humano-en-el-Bucle (Human-in-the-Loop)**).  
+* **¿Cuándo escalar?:** Cuando la "Métrica de Calidad" muestra que el agente acierta el 99% de las veces, puedes escalar.  
+* **Escalado (v2):** Pasas de "Humano-en-el-Bucle" (Validación) a **"Humano-sobre-el-Bucle" (Human-on-the-Loop)** (Supervisión). El agente ahora envía el reporte automáticamente (preparando para la Industrialización), y el humano solo recibe una alerta si algo falla.
 
 ---
 

@@ -95,7 +95,7 @@ No construyas un "super-agente" monolítico. Construye una "cuadrilla de especia
 
 * **El "Jefe de Taller" (Agente Enrutador):** Este es un agente de **Metacognición** (piensa sobre el pensamiento). Su único trabajo es recibir la solicitud del usuario y decidir qué "especialista" es el mejor para la tarea. Es el que optimiza el portafolio de modelos.  
 * **Los "Especialistas" (Agentes de Tarea):**  
-  * El "Archivero" (Agente **RAG**, el sistema que recupera conocimiento de la "biblioteca" interna).  
+  * El "Archivero" (Agente RAG, el sistema que recupera conocimiento de la "biblioteca" interna).  
   * El "Analista de Datos": Experto en procesar números y tablas.  
   * El "Redactor Creativo": Experto en marketing y redacción.  
   * El "Motor Barato": Un LLM rápido y económico para tareas simples como resumir emails.
