@@ -131,15 +131,15 @@ Si RAG es la biblioteca (estática), la Memoria es el "bloc de notas" (dinámico
 Para que la memoria sea dinámica, el agente debe tener permiso para usarla. Bajo el patrón "Memory-as-a-Tool", el agente utiliza su ciclo de Razonar-Actuar (ReAct) para decidir cuándo leer o escribir en su "bloc de notas":
 
 1.  **El Usuario da Información (Lunes):**
-    * 👤 **Usuario:**
+    * 👤 Usuario:
       ```text
       Mi proyecto clave se llama 'Alfa' y la fecha límite es el 15 de noviembre.
       ```
-    * 💭 **Agente (Razona):**
+    * 💭 Agente (Razona):
       ```text
       Dato fáctico importante para el futuro. Debo usar mi herramienta `escribir_nota`.
       ```
-    * ⚙️ **Agente (Actúa):**
+    * ⚙️ Agente (Actúa):
       ```yaml
       acción: escribir_nota
       argumentos:
@@ -148,22 +148,22 @@ Para que la memoria sea dinámica, el agente debe tener permiso para usarla. Baj
       ```
 
 2.  **El Usuario Pregunta (Martes, Pizarra Limpia):**
-    * 👤 **Usuario:**
+    * 👤 Usuario:
       ```text
       ¿Cuánto falta para la entrega del proyecto 'Alfa'?
       ```
-    * 💭 **Agente (Razona):**
-      ```text
-      No sé qué es 'Alfa' en mi contexto actual. Antes de responder, debo revisar mi bloc de notas.
-      ```
-    * ⚙️ **Agente (Actúa):**
+    * 💭 Agente (Razona): "No sé qué es 'Alfa' en mi contexto actual. Antes de responder, debo revisar mi bloc de notas."
+    * ⚙️ Agente (Actúa):
       ```yaml
       acción: leer_nota
       argumentos:
         llave: proyecto_alfa
       ```
-    * *Agente (Observa):* (Resultado: `{"deadline": "2025-11-15"}`)
-    * *Agente (Responde):* "Según mis notas, faltan 22 días para el proyecto 'Alfa'."
+    * 💭 Agente (Observa): (Resultado: `{"deadline": "2025-11-15"}`)
+    * 💬 Agente (Responde):
+      ```text
+      "Según mis notas, faltan 22 días para el proyecto 'Alfa'."
+      ```
 
 **Solución 4. Arquitecturas de Agentes (Los "Sub-Agentes")**
 
