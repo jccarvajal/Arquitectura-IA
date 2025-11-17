@@ -36,11 +36,11 @@ Esto es lo más importante. Un agente no solo da una respuesta y se detiene. Ope
 
 Así es como "piensa" un agente en la práctica:
 
-* **Objetivo del Usuario:**
+* 👤 Usuario:
   ```text
   Busca el pronóstico del clima de hoy en Valparaíso y envíame un resumen por email.
   ```
-* **Herramientas Disponibles:**  
+* Herramientas Disponibles: 
   * `buscar_clima(ciudad)`
   * `enviar_email(destinatario, cuerpo)`
 
