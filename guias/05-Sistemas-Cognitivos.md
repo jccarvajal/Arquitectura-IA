@@ -6,7 +6,7 @@ Subtítulo: El Plano de la Mente: De 'Trabajadores' Reactivos a 'Equipos' Cognit
 
 En la guía anterior, "contratamos" a nuestro trabajador: un **agente**, el sistema de IA capaz de razonar y actuar usando herramientas. Pero un agente sin un "plano de la mente" es solo un "loro" reactivo. Es una causa principal de la **"Brecha de Aprendizaje" (Learning Gap)** que identifican los informes de la industria: las herramientas de IA fracasan porque no pueden *adaptarse* a flujos de trabajo complejos o aprender de sus errores.
 
-Esta guía es el puente. Aquí diseñamos el "plano de la mente" del agente, su arquitectura cognitiva. Dejamos de tratarlo como un "loro" reactivo y empezamos a diseñarlo como un "equipo pensante".
+Esta guía es el puente. Aquí diseñamos el "plano de la mente" del agente, su arquitectura cognitiva. Dejamos de tratarlo como un "loro" reactivo y empezamos a diseñarlo como un *"equipo pensante"*.
 
 ---
 
@@ -14,10 +14,10 @@ Esta guía es el puente. Aquí diseñamos el "plano de la mente" del agente, su 
 
 El error más común es tratar a un LLM (un Modelo de Lenguaje Grande) como una calculadora (un sistema reactivo).
 
-* **El Trabajador Reactivo (IA Básica):** Le das un input, genera un output. Prompt → Respuesta.  
+* **El Trabajador Reactivo (IA Básica):** Le das un input, genera un output. *Prompt → Respuesta*.  
   * *Ejemplo:* "Traduce este texto."  
   * *Metáfora:* Un trabajador en la línea de ensamblaje que solo aprieta un tornillo cuando la pieza pasa frente a él.  
-* **El Equipo Cognitivo (Agente Diseñado):** Le das un objetivo, y el sistema genera y ejecuta un plan para alcanzarlo. ​​Objetivo → Pensamiento → Acción → Observación → Pensamiento → ... → Resultado.  
+* **El Equipo Cognitivo (Agente Diseñado):** Le das un objetivo, y el sistema genera y ejecuta un plan para alcanzarlo. ​*​Objetivo → Pensamiento → Acción → Observación → Pensamiento → ... → Resultado*.  
   * *Ejemplo:* "Reserva un vuelo para mi a Madrid la próxima semana, que sea económico y salga por la mañana."  
   * *Metáfora:* Un "Jefe de Taller" que recibe el objetivo, consulta el inventario (una herramienta), habla con el equipo de logística (otra herramienta) y luego presenta un plan de acción.
 
