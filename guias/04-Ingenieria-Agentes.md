@@ -44,7 +44,7 @@ Así es como "piensa" un agente en la práctica:
   * `buscar_clima(ciudad)`
   * `enviar_email(destinatario, cuerpo)`
 
-* **El agente ahora debe "razonar" y "actuar" en un bucle:**
+* El agente ahora debe "razonar" y "actuar" en un bucle:
 
   *CICLO 1: Obtener Información*
 
