@@ -61,9 +61,8 @@ Así es como "piensa" un agente en la práctica:
   * 💭 Agente (Observa):
     ```text
     Resultado de la Herramienta: { 'max': '18C', 'min': '11C', 'estado': 'Parcialmente nublado' }
-    Pensamiento: "Tengo el clima. El objetivo NO está completo. Ahora debo enviar el email."
-    (El bucle continúa porque el objetivo final no está cumplido)
     ```
+  * El bucle continúa porque el objetivo final no está cumplido
 
   *CICLO 2: Ejecutar Acción Final*
 
@@ -81,11 +80,14 @@ Así es como "piensa" un agente en la práctica:
   * 💭 Agente (Observa):
     ```text
     Resultado de la Herramienta: { 'status': 'enviado' }
-    Pensamiento: "Email enviado. El objetivo ('buscar' Y 'enviar') está cumplido."
-    (El bucle se detiene)
     ```
+  * 💭 Agente (Razona):
+    ```text
+    "Observación (Dato anterior): { 'status': 'enviado' }. Email enviado. El objetivo ('buscar' Y 'enviar') está cumplido. 
+    ```
+  * El bucle se detiene.
 
-* *Respuesta Final al Usuario:*
+  *Respuesta Final al Usuario:*
   * 💬 Agente (Responde):
     ```text
     Listo. El clima en Valparaíso es de 18C, parcialmente nublado. Te he enviado el resumen.
