@@ -2,7 +2,7 @@
 
 **Versión 1.1 (Noviembre 2025)**
 
-Un "tratado de criterio" para profesionales que comienzan su integración con IA.
+Inteligencia Artificial Aplicada es una obra orientada a profesionales y organizaciones que necesitan integrar la IA con responsabilidad, criterio y estructura. No es un manual de herramientas ni un tutorial técnico. Es un marco conceptual y operativo para pensar la tecnología desde la perspectiva de la decisión, la gobernanza y el juicio profesional.
 
 **Autor:** [Juan Carlos Carvajal](https://www.jccarvajal.com/)
 
@@ -12,11 +12,11 @@ Un "tratado de criterio" para profesionales que comienzan su integración con IA
 
 ### Propósito de esta Obra
 
-El propósito de *Inteligencia Artificial Aplicada* es dotar a la organización de un marco de pensamiento estructurado  para la adopción responsable de la Inteligencia Artificial, centrado explícitamente en la **Gobernanza, Riesgo y Cumplimiento (GRC)** y los nuevos desafíos de **Ciberseguridad** que esta tecnología impone.
+El propósito de *Inteligencia Artificial Aplicada* es dotar a las organizaciones de un **marco de pensamiento estructurado y profesional** para la adopción responsable de la Inteligencia Artificial, con énfasis explícito en los pilares de **Gobernanza, Riesgo y Cumplimiento (GRC)** y en los nuevos desafíos de **Ciberseguridad** que esta tecnología introduce en los procesos institucionales.
 
-No busca enseñar a programar, sino enseñar a **decidir, diseñar y gobernar**.
+No busca enseñar a programar, sino enseñar a **decidir, diseñar y gobernar**. El foco está en desarrollar criterio, no en operar herramientas.
 
-Su objetivo es trasladar a los equipos desde la curiosidad dispersa hacia un criterio aplicado, entregando un lenguaje común y una ruta metodológica para integrar la IA en procesos con rigor, transparencia y control.
+Su objetivo es trasladar a los equipos desde la curiosidad dispersa hacia un **criterio aplicado**, entregando un **lenguaje común**, una **arquitectura conceptual** y una **ruta metodológica** para integrar la IA en procesos reales con **rigor, trazabilidad, transparencia y control**, asegurando que la tecnología amplifique la responsabilidad humana en lugar de sustituirla o diluirla.
 
 ---
 
@@ -75,6 +75,12 @@ La obra está diseñada como un viaje de aprendizaje secuencial.
 
 ---
 
+### A quién está dirigido
+
+Esta obra está escrita para profesionales que enfrentan decisiones con impacto: líderes públicos y privados, analistas, auditores, equipos técnicos, unidades de datos, responsables de cumplimiento y diseñadores de políticas. No requiere formación técnica avanzada, pero sí requiere disposición a pensar con rigor y a trabajar con criterio.
+
+---
+
 ### Sugerencias y Mejoras
 
 Este es un documento vivo. Si encuentras una errata o tienes una sugerencia de mejora, puedes reportarla directamente en el [Repositorio de GitHub](https://github.com/jccarvajal/IA-Aplicada).
@@ -83,4 +89,11 @@ Este es un documento vivo. Si encuentras una errata o tienes una sugerencia de m
 
 ### Licencia
 
-Esta obra se distribuye bajo la Licencia **Creative Commons Atribución-NoComercial-SinObrasDerivadas 4.0 Internacional (CC BY-NC-ND 4.0)**.
+El contenido se distribuye bajo **CC BY-NC-ND 4.0**. Se permite la lectura y distribución, pero no su modificación ni su uso comercial.
+
+---
+
+### Sitio web
+
+La obra completa, junto con materiales complementarios, se encuentra en: 
+https://iaa.jccarvajal.com 
