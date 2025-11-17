@@ -94,7 +94,7 @@ La ciberseguridad tradicional se preocupaba por *firewalls* y *redes*. La *Ciber
   1. **Forzar el "Grounding" (Anclaje a RAG):** Obliga al agente a verificar antes de actuar.  
      * *Ejemplo (Prompting):* 
        ```text
-       REGLA: Antes de ejecutar `enviar_email(direccion)`, DEBES verificar que esa direccion existe explícitamente en los <DATOS> proporcionados. Si no puedes verificarlo y estás 'adivinando', detente y pide confirmación.
+       REGLA: Antes de ejecutar enviar_email(direccion), DEBES verificar que esa direccion existe explícitamente en los <DATOS> proporcionados. Si no puedes verificarlo y estás 'adivinando', detente y pide confirmación.
        ```
   2. **Humano-en-el-Bucle (El Control Definitivo):** La autonomía total es un riesgo. Implementa el punto de control donde el agente planifica su acción (ej. "Enviar email a `direccion.alucinada@empresa.com`"), pero el sistema se detiene y pide validación humana: "¿\[Aprobar\] \[Rechazar\]?" El humano detecta la alucinación y evita el desastre.
 
@@ -123,6 +123,7 @@ Esta arquitectura nos permite, por ejemplo:
 * **Filtrar Inyecciones:** Bloquear un prompt injection antes de que llegue al LLM (Riesgo de Inyeccion de Prompts).
 * **Validar Herramientas:** Interceptar la intención del agente de usar una herramienta (ej. `enviar_email`) y someterla a aprobación (Riesgo de Alucinaciones Operacionales).
 * **Auditar Salidas:** Revisar la respuesta del agente en busca de alucinaciones o filtración de datos antes de que se la muestre al usuario (Riesgo de Fuga de Datos).
+
 ---
 
 ### Parte 4: El Framework PPP: Gobernanza de la Calidad de Interacción
