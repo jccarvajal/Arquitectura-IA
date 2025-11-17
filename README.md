@@ -78,7 +78,9 @@ La obra está diseñada como un viaje de aprendizaje secuencial, modular, operat
 
 ### A quién está dirigido
 
-Esta obra está escrita para profesionales que enfrentan decisiones con impacto: líderes públicos y privados, analistas, auditores, equipos técnicos, unidades de datos, responsables de cumplimiento y diseñadores de políticas. No requiere formación técnica avanzada, pero sí requiere disposición a pensar con rigor y a trabajar con criterio.
+Esta obra está escrita para profesionales que enfrentan decisiones con impacto: líderes públicos y privados, analistas, auditores, equipos técnicos, unidades de datos, responsables de cumplimiento y diseñadores de políticas. 
+
+No requiere formación técnica avanzada, pero sí requiere disposición a pensar con rigor y a trabajar con criterio.
 
 ---
 
@@ -92,9 +94,3 @@ Este es un documento vivo. Si encuentras una errata o tienes una sugerencia de m
 
 El contenido se distribuye bajo **CC BY-NC-ND 4.0**.
 Se permite la lectura y distribución, pero no su modificación ni su uso comercial.
-
----
-
-### Sitio web
-
-La obra completa, junto con materiales complementarios, se encuentra en [https://iaa.jccarvajal.com](https://iaa.jccarvajal.com/)
