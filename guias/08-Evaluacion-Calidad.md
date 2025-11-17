@@ -4,7 +4,7 @@ Subtítulo: El Laboratorio de Control de Calidad: De la "Sensación" a la Métri
 
 #### Introducción: Del "Control de Seguridad" al "Control de Calidad"
 
-En el prototipado, construimos una máquina que "funciona". En la **Gobernanza**, definimos las reglas de seguridad para evitar que explote.
+En el *Prototipado*, construimos una máquina que "funciona". En la *Gobernanza*, definimos las reglas de seguridad para evitar que explote.
 
 Ahora debemos probar científicamente que esa máquina produce un producto de calidad y lo hace de forma consistente.
 
