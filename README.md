@@ -2,7 +2,7 @@
 
 **Versión 1.1 (Noviembre 2025)**
 
-Esta obra es un marco de criterio y gobernanza para integrar IA en organizaciones.
+Un tratado de criterio y gobernanza para integrar IA en las organizaciones.
 
 **Autor:** [Juan Carlos Carvajal](https://www.jccarvajal.com/)
 
