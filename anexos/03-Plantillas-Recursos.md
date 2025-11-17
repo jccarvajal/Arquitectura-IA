@@ -15,6 +15,7 @@ No está diseñado para "leerse" de principio a fin, sino para "usarse" como ref
 **Plantilla 1.1: El "Prompt Maestro" (CRF-R)**
 Esta plantilla es un bloque de texto estructurado, diseñado para ser copiado y pegado directamente en tu editor de código o herramienta de prompting. Es la implementación de la Guía 01.
 
+```text
 # PLANTILLA DE PROMPT MAESTRO (CRF-R)
 #
 ### 1\. CONTEXTO (El "Por qué" y "Para qué")
@@ -38,7 +39,7 @@ Basa tu respuesta ÚNICAMENTE en el \[Contexto\] proporcionado.
 # INSTRUCCIÓN DE TAREA (El "Qué")
 #
 \[Aquí va la tarea o pregunta específica. Ej: "Analiza el texto en el CONTEXTO, extrae los 5 riesgos principales en el FORMATO solicitado, obedeciendo todas las RESTRICCIONES."\]
-
+```
 ---
 
 **Plantilla 1.2: Ficha de Diseño de Agente (ReAct)**
