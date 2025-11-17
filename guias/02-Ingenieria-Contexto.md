@@ -164,7 +164,7 @@ Para que la memoria sea dinámica, el agente debe tener permiso para usarla. Baj
       ```
     * 💭 Agente (Observa):
       ```yaml
-      Resultado: `{"deadline": "2025-11-15"}`
+      Resultado: {"deadline": "2025-11-15"}
       ```
     * 💬 Agente (Responde):
       ```text
