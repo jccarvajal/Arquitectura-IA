@@ -152,14 +152,20 @@ Para que la memoria sea dinámica, el agente debe tener permiso para usarla. Baj
       ```text
       ¿Cuánto falta para la entrega del proyecto 'Alfa'?
       ```
-    * 💭 Agente (Razona): "No sé qué es 'Alfa' en mi contexto actual. Antes de responder, debo revisar mi bloc de notas."
+    * 💭 Agente (Razona): 
+      ```yaml
+      No sé qué es 'Alfa' en mi contexto actual. Antes de responder, debo revisar mi bloc de notas.
+      ```
     * ⚙️ Agente (Actúa):
       ```yaml
       acción: leer_nota
       argumentos:
         llave: proyecto_alfa
       ```
-    * 💭 Agente (Observa): (Resultado: `{"deadline": "2025-11-15"}`)
+    * 💭 Agente (Observa):
+      ```yaml
+      Resultado: `{"deadline": "2025-11-15"}`
+      ```
     * 💬 Agente (Responde):
       ```text
       "Según mis notas, faltan 22 días para el proyecto 'Alfa'."
