@@ -28,7 +28,7 @@ Su objetivo es trasladar a los equipos desde la curiosidad dispersa hacia un **c
 
 ### Tabla de Contenidos
 
-La obra está diseñada como un viaje de aprendizaje secuencial.
+La obra está diseñada como un viaje de aprendizaje secuencial, modular, operativo o estratégico:
 
 #### Introducción
 * [Nota al Lector](./nota-al-lector.md)
