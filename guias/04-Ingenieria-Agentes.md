@@ -46,47 +46,47 @@ Así es como "piensa" un agente en la práctica:
 
 * **El agente ahora debe "razonar" y "actuar" en un bucle:**
 
-  **CICLO 1: Obtener Información**
+  *CICLO 1: Obtener Información*
 
-  * 💭 **Agente (Razona):**
+  * 💭 Agente (Razona):
     ```text
     "El objetivo tiene dos partes: 'buscar' y 'enviar'. No puedo enviar sin la información. El primer paso es usar la herramienta `buscar_clima`."
     ```
-  * ⚙️ **Agente (Actúa):**
+  * ⚙️ Agente (Actúa):
     ```yaml
     acción: buscar_clima
     argumentos:
       ciudad: Valparaíso
     ```
-  * 💭 **Agente (Observa):**
+  * 💭 Agente (Observa):
     ```text
     Resultado de la Herramienta: { 'max': '18C', 'min': '11C', 'estado': 'Parcialmente nublado' }
     Pensamiento: "Tengo el clima. El objetivo NO está completo. Ahora debo enviar el email."
     (El bucle continúa porque el objetivo final no está cumplido)
     ```
 
-  **CICLO 2: Ejecutar Acción Final**
+  *CICLO 2: Ejecutar Acción Final*
 
-  * 💭 **Agente (Razona):**
+  * 💭 Agente (Razona):
     ```text
     "Basado en la observación anterior, ya tengo la información ({ 'max': '18C'... }). El siguiente paso es usar la herramienta `enviar_email`."
     ```
-  * ⚙️ **Agente (Actúa):**
+  * ⚙️ Agente (Actúa):
     ```yaml
     acción: enviar_email
     argumentos:
       destinatario: usuario@ejemplo.com
       cuerpo: "Clima de hoy en Valparaíso: 18C, parcialmente nublado."
     ```
-  * 💭 **Agente (Observa):**
+  * 💭 Agente (Observa):
     ```text
     Resultado de la Herramienta: { 'status': 'enviado' }
     Pensamiento: "Email enviado. El objetivo ('buscar' Y 'enviar') está cumplido."
     (El bucle se detiene)
     ```
 
-* **Respuesta Final al Usuario:**
-  * 💬 **Agente (Responde):**
+* *Respuesta Final al Usuario:*
+  * 💬 Agente (Responde):
     ```text
     Listo. El clima en Valparaíso es de 18C, parcialmente nublado. Te he enviado el resumen.
     ```

@@ -128,7 +128,7 @@ Si RAG es la biblioteca (estática), la Memoria es el "bloc de notas" (dinámico
 
 **Ejemplo Práctico: Memoria como Herramienta (Memory-as-a-Tool)**
 
-Para que la memoria sea dinámica, el agente debe tener permiso para usarla. Bajo el patrón "Memory-as-a-Tool", el agente utiliza su ciclo de Razonar-Actuar (ReAct) para decidir cuándo leer o escribir en su "bloc de notas":
+Para que la memoria sea dinámica, el agente debe tener permiso para usarla. Bajo el patrón "Memory-as-a-Tool", el agente utiliza su **Ciclo de Razonar-Actuar (ReAct)** para decidir cuándo leer o escribir en su "bloc de notas":
 
 1.  **El Usuario da Información (Lunes):**
     * 👤 Usuario:
