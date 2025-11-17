@@ -113,7 +113,7 @@ Aquí es donde reside el verdadero "arte" de la ingeniería de agentes. El *trad
   ```
   * *Riesgo:* 100% seguro, pero lento y tedioso. Básicamente, volvemos a la ingeniería de prompts (una técnica conocida como **Prompt Chaining**, o dividir una tarea en muchos prompts) y perdemos el beneficio de la autonomía.
 
-El Buen Enfoque: El juicio de ingeniería está en diseñar un sistema que sepa cuándo actuar solo y cuándo parar para pedir validación humana.
+*El Buen Enfoque*: El juicio de ingeniería está en diseñar un sistema que sepa cuándo actuar solo y cuándo parar para pedir validación humana.
 
 ---
 
@@ -156,7 +156,7 @@ Esta es la estrategia de escalabilidad más importante. Ya no pensamos en un sol
        Prepara el calendario de publicaciones
        ```
   3. **Síntesis:** El Director recibe los entregables de cada "PM" y los integra en el resultado final (la campaña completa).
-* **Beneficio:** El Director se encarga de la estrategia de alto nivel. Además, cada "Agente PM" trabaja con su propia "pizarra limpia" (su propio **contexto**, o memoria de trabajo), volviéndose más rápido, barato y preciso en su tarea especializada.
+* **Beneficio:** El Director se encarga de la estrategia de alto nivel. Además, cada "Agente PM" trabaja con su propia "pizarra limpia" (su propio contexto, o memoria de trabajo), volviéndose más rápido, barato y preciso en su tarea especializada.
 
 ---
 

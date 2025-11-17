@@ -6,7 +6,7 @@ Subtítulo: El Plano de la Mente: De 'Trabajadores' Reactivos a 'Equipos' Cognit
 
 En la guía anterior, "contratamos" a nuestro trabajador: un **agente**, el sistema de IA capaz de razonar y actuar usando herramientas. Pero un agente sin un "plano de la mente" es solo un "loro" reactivo. Es una causa principal de la **"Brecha de Aprendizaje" (Learning Gap)** que identifican los informes de la industria: las herramientas de IA fracasan porque no pueden *adaptarse* a flujos de trabajo complejos o aprender de sus errores.
 
-Esta guía es el puente. Aquí diseñamos el "plano de la mente" del agente, su arquitectura cognitiva. Dejamos de tratarlo como un "loro" reactivo y empezamos a diseñarlo como un "equipo" pensante.
+Esta guía es el puente. Aquí diseñamos el "plano de la mente" del agente, su arquitectura cognitiva. Dejamos de tratarlo como un "loro" reactivo y empezamos a diseñarlo como un "equipo pensante".
 
 ---
 
@@ -52,7 +52,7 @@ Para que un agente "piense", debemos darle un "Manual de Procedimientos" (un pat
     Recomiéndame un restaurante italiano cerca de la oficina.
     ```
   * *Ciclo 1:*
-    * *Reason (Pensamiento):* "Necesito la ubicación de la oficina y una lista de restaurantes. Usaré la herramienta get\_office\_location."
+    * *Reason (Pensamiento):* "Necesito la ubicación de la oficina y una lista de restaurantes. Usaré la herramienta `get_office_location`."
     * *Act (Acción):*
       ```yaml
       acción: get_office_location
@@ -60,7 +60,7 @@ Para que un agente "piense", debemos darle un "Manual de Procedimientos" (un pat
       ```
     * *Observe (Observación):* "Ubicación: Av. Principal 123."
   * *Ciclo 2:*
-    * *Reason (Pensamiento):* "Tengo la ubicación. Ahora necesito buscar restaurantes. Usaré search\_google\_maps."
+    * *Reason (Pensamiento):* "Tengo la ubicación. Ahora necesito buscar restaurantes. Usaré `search_google_maps`."
     * *Act (Acción):*
       ```yaml
       acción: search_google_maps
