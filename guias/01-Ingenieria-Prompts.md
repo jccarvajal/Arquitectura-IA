@@ -13,7 +13,7 @@ La ingeniería de prompts es la disciplina que convierte la conversación con un
 #### Conceptos Fundamentales
 
 **¿Qué es un LLM (Large Language Model)?**  
-Un LLM es un modelo de inteligencia artificial entrenado con un volumen masivo de texto y datos. Su función principal no es "pensar" o "entender" en el sentido humano, sino predecir la siguiente palabra más probable en una secuencia, basándose en el contexto que le hemos proporcionado. No "piensa", sino que calcula probabilidades basadas en el contexto proporcionado. Ejemplos incluyen los modelos de OpenAI, Google y Anthropic.
+Un LLM es un modelo de inteligencia artificial entrenado con un volumen masivo de texto y datos. Su función principal no es “pensar” o “entender” en el sentido humano, sino calcular la probabilidad de la siguiente palabra más probable en una secuencia, basándose en el contexto que le hemos proporcionado. Ejemplos incluyen los modelos de OpenAI, Google y Anthropic.
 
 * **Implicación clave:** Como se basan en la probabilidad y el contexto, la calidad de la respuesta depende directamente de la calidad de la instrucción inicial (el prompt).
 
