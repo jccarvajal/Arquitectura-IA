@@ -41,8 +41,8 @@ Así es como "piensa" un agente en la práctica:
   Busca el pronóstico del clima de hoy en Valparaíso y envíame un resumen por email.
   ```
 * **Herramientas Disponibles:**  
-  * `buscar\_clima(ciudad)`
-  * `enviar\_email(destinatario, cuerpo)`
+  * `buscar_clima(ciudad)`
+  * `enviar_email(destinatario, cuerpo)`
 
 * **El agente ahora debe "razonar" y "actuar" en un bucle:**
 
@@ -90,11 +90,11 @@ Las herramientas son la conexión del cerebro de la IA con el mundo digital. Sin
 
 *Ejemplos de Herramientas:*
 
-* `buscar\_en\_google()` 
-* `leer\_archivo('documento.pdf')`
-* `escribir\_en\_base\_de\_datos()`
-* `enviar\_email()`
-* `consultar\_API\_del\_clima()`
+* `buscar_en_google()` 
+* `leer_archivo('documento.pdf')`
+* `escribir_en_base_de_datos()`
+* `enviar_email()`
+* `consultar_API_del_clima()`
 
 ---
 
