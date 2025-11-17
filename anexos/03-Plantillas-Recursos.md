@@ -40,7 +40,6 @@ Basa tu respuesta ÚNICAMENTE en el \[Contexto\] proporcionado.
 #
 \[Aquí va la tarea o pregunta específica. Ej: "Analiza el texto en el CONTEXTO, extrae los 5 riesgos principales en el FORMATO solicitado, obedeciendo todas las RESTRICCIONES."\]
 ```
----
 
 **Plantilla 1.2: Ficha de Diseño de Agente (ReAct)**
 Esta ficha sirve como el "plano" de diseño de un agente (Guía 05) antes de construirlo.
@@ -70,8 +69,6 @@ Esta tabla debe ser completada por el equipo de desarrollo y gobernanza (Guía 0
 | 4\. Bucle de Costos | "Interruptor Automático" (Rate Limiter / Presupuesto Máximo) configurado en la API del LLM. |
 | 5\. Sesgo y Toxicidad | Filtros de contenido y tono implementados en la salida del modelo. |
 | **Aprobación Final de Gobernanza:** | \[Nombre del Responsable\] |
-
----
 
 **Plantilla 2.2: Rúbrica de Evaluación de Calidad**
 Esta rúbrica (de Guía 08) se usa para calificar las respuestas del "Golden Set" durante las pruebas de QA.
@@ -104,8 +101,6 @@ Esta matriz (de Anexo 05) se usa para comparar y seleccionar el modelo de IA (mo
 
 **Decisión Final:** \[Modelo Seleccionado\]
 **Justificación:** \[Razón principal de la elección (ej: "Mejor balance costo-rendimiento para este RAG").\]
-
----
 
 **Matriz 3.2: Decisión Estratégica (Guía 12)**
 Un framework de 2x2 para decidir para qué usar la IA en un nuevo proyecto.
