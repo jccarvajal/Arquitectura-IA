@@ -2,7 +2,7 @@
 
 **Versión 1.1 (Noviembre 2025)**
 
-Inteligencia Artificial Aplicada es una obra orientada a profesionales y organizaciones que necesitan integrar la IA con responsabilidad, criterio y estructura. No es un manual de herramientas ni un tutorial técnico. Es un marco conceptual y operativo para pensar la tecnología desde la perspectiva de la decisión, la gobernanza y el juicio profesional.
+Esta obra es un marco de criterio y gobernanza para integrar IA en organizaciones.
 
 **Autor:** [Juan Carlos Carvajal](https://www.jccarvajal.com/)
 
