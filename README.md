@@ -28,7 +28,7 @@ Su objetivo es trasladar a los equipos desde la curiosidad dispersa hacia un **c
 
 ### Tabla de Contenidos
 
-La obra está diseñada como un viaje de aprendizaje secuencial, modular, operativo o estratégico:
+La obra es una arquitectura de aprendizaje modular que traza la ruta completa de un proyecto de IA, guiando al lector desde los fundamentos técnicos y operativos hasta el criterio estratégico y la visión de futuro.
 
 #### Introducción
 * [Nota al Lector](./nota-al-lector.md)
