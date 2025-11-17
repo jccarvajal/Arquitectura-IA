@@ -83,7 +83,8 @@ Así es como "piensa" un agente en la práctica:
     ```
   * 💭 Agente (Razona):
     ```text
-    "Observación (Dato anterior): { 'status': 'enviado' }. Email enviado. El objetivo ('buscar' Y 'enviar') está cumplido. 
+    Observación (Dato anterior): { 'status': 'enviado' }. Email enviado. 
+    El objetivo ('buscar' Y 'enviar') está cumplido. 
     ```
   * El bucle se detiene.
 
@@ -106,8 +107,6 @@ Las herramientas son la conexión del cerebro de la IA con el mundo digital. Sin
 * `consultar_API_del_clima()`
 
 ---
-
-
 
 #### El Dilema Central: La "Correa" del Agente (Autonomía vs. Control)
 
