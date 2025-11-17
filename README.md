@@ -89,11 +89,11 @@ Este es un documento vivo. Si encuentras una errata o tienes una sugerencia de m
 
 ### Licencia
 
-El contenido se distribuye bajo **CC BY-NC-ND 4.0**. Se permite la lectura y distribución, pero no su modificación ni su uso comercial.
+El contenido se distribuye bajo **CC BY-NC-ND 4.0**.
+Se permite la lectura y distribución, pero no su modificación ni su uso comercial.
 
 ---
 
 ### Sitio web
 
-La obra completa, junto con materiales complementarios, se encuentra en: 
-https://iaa.jccarvajal.com 
+La obra completa, junto con materiales complementarios, se encuentra en [https://iaa.jccarvajal.com](https://iaa.jccarvajal.com/)
