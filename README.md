@@ -1,5 +1,6 @@
-# Inteligencia Artificial Aplicada: Guías para Decidir, Diseñar y Gobernar
-**Versión 1.0 (Noviembre 2025)**
+# Inteligencia Artificial Aplicada: Guías para Decidir, Diseñar y Gobernar (GRC)
+
+**Versión 1.1 (Noviembre 2025)**
 
 Un "tratado de criterio" para profesionales que comienzan su integración con IA.
 
@@ -16,6 +17,12 @@ El propósito de *Inteligencia Artificial Aplicada* es dotar a la organización 
 No busca enseñar a programar, sino enseñar a **decidir, diseñar y gobernar**.
 
 Su objetivo es trasladar a los equipos desde la curiosidad dispersa hacia un criterio aplicado, entregando un lenguaje común y una ruta metodológica para integrar la IA en procesos con rigor, transparencia y control.
+
+---
+
+### Navegación Rápida y Versiones
+
+* Para ver un histórico detallado de todas las modificaciones y versiones, consulta el [**📝 Historial de Versiones (CHANGELOG)**](./changelog.md).
 
 ---
 
