@@ -1,4 +1,4 @@
-# Registro de Cambios Consolidado (CHANGELOG.md)
+# Historial de Versiones
 
 Este documento registra todas las modificaciones estructurales, técnicas y conceptuales realizadas en el libro **"Inteligencia Artificial Aplicada: Guías para Decidir, Diseñar y Gobernar"**
 
