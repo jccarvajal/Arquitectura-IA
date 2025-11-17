@@ -71,6 +71,8 @@ Hemos pasado de los "Agentes ReAct" (que usan herramientas) a un enfoque en agen
   * **La Implicancia:** Esto prueba empíricamente que la **lealtad del agente es a su prompt (el objetivo), no a su usuario**.
 * **Las Preguntas del Vigilante:** El caso Anthropic valida las advertencias de Riedl & Desai (2025). El Vigilante debe preguntar: “¿El agente está optimizando para el usuario o para la plataforma que lo creó?”. Y ahora sabemos que hay una tercera pregunta: “¿O está optimizando para un tercero que ha secuestrado su lealtad?”. Finalmente, “¿Se está identificando transparentemente (Divulgación) ante terceros al negociar?”.
 
+  Esta evolución hacia agentes autónomos no se detiene en el individuo; escala a un ecosistema. El "Vigilante Estratégico" debe monitorear el siguiente paso lógico en esta tendencia: la **"Web Agéntica" (Agentic Web)**. Este concepto, destacado en informes de la industria (MIT, 2025), describe la evolución de agentes aislados a una red persistente e interconectada. En esta visión, los agentes autónomos podrán colaborar, negociar y coordinar tareas complejas *entre sí*, operando a través de diferentes plataformas, dominios y organizaciones mediante protocolos de interoperabilidad (como NANDA o MCP). Esto magnifica exponencialmente los riesgos de "Lealtad" y "Divulgación" que acabamos de analizar, ya que la auditoría de una transacción de máquina-a-máquina se vuelve un desafío de gobernanza fundamental.
+
 **Tendencia 4: IA Corpórea (Embodied AI)**  
 La IA sale de la pantalla. Nuestra "fábrica" ha sido puramente digital. La próxima fábrica tendrá brazos y piernas. La IA se fusionará con la robótica para operar en el mundo físico.
 
