@@ -91,14 +91,34 @@
   }
 
 
-/* Añade esto a tu archivo CSS (ej. style.css) */
+/* --- ESTILOS PARA CÓDIGO --- */
 
+/* 1. Para código EN LÍNEA (ej: `buscar_clima()`) */
 code {
-  font-family: monospace;   /* Esta es la fuente que se ve "grande" */
-  background-color: #f0f0f0;  /* Un fondo gris claro (ajusta el color) */
-  padding: 2px 5px;         /* Un poco de espacio interno */
+  font-family: monospace;
+  background-color: #f0f0f0; /* Fondo gris claro */
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+/* 2. Para BLOQUES de código (como en tu última captura) */
+pre {
+  display: block;             /* Lo convierte en un bloque */
+  background-color: #f0f0f0;  /* Fondo gris claro */
+  padding: 15px;              /* Espaciado interno */
+  margin-top: 10px;           /* Espacio superior */
+  margin-bottom: 10px;        /* Espacio inferior */
+  overflow-x: auto;         /* Añade scroll horizontal si el código es muy largo */
   border-radius: 4px;       /* Bordes redondeados */
-  font-size: 0.9em;         /* Ajusta el tamaño si es necesario */
+}
+
+/* 3. Asegura que el texto DENTRO del bloque use la fuente correcta */
+pre code {
+  font-family: monospace;
+  background-color: transparent; /* El fondo ya lo tiene <pre> */
+  padding: 0;
+  font-size: 0.9em;
 }
 
 </style>
