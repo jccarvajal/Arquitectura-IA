@@ -12,7 +12,7 @@ No está diseñado para "leerse" de principio a fin, sino para "usarse" como ref
 
 #### Sección 1: Diseño de Prompts y Agentes
 
-**Plantilla 1.1: El "Prompt Maestro" (CRF-R)**
+**Plantilla 1.1: El "Prompt Maestro" (CRF-R: Contexto, Rol, Formato, Restricciones)**
 Esta plantilla es un bloque de texto estructurado, diseñado para ser copiado y pegado directamente en tu editor de código o herramienta de prompting. Es la implementación de la Guía 01.
 
 ```text
