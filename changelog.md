@@ -13,7 +13,7 @@ Este documento registra todas las modificaciones estructurales, técnicas y conc
 * **Tesis Central:** El enfoque del libro se centró explícitamente en **GRC (Gobernanza, Riesgo y Cumplimiento)** y **Ciberseguridad**. Esta justificación fue integrada en el Prólogo, Conclusión, Guía 07 y el `README.md`.
 * **Elevación Conceptual:** Se elevó el concepto de "Ingeniería de Prompts" a la disciplina de **"Ingeniería de Contexto"** (basado en investigaciones de Google 2025).
 * **Fundamento de Límite (Transformer):** Se definió explícitamente que la arquitectura Transformer tiene dos límites estratégicos: el **Costo Cuadrático** y la **Amnesia Estática**.
-* **Validación de Riesgo:** Integración del incidente de ciberespionaje de **Anthropic** (septiembre 2025) en la Guía 13 como la prueba empírica del **"Riesgo de la Agencia"** y la lealtad al *prompt*.
+* **Validación de Riesgo:** Integración del incidente de ciberespionaje de **Anthropic** (septiembre 2025) en la Guía 07 (Gobernanza), como el caso de estudio clave para la Inyección de Prompts, y en la Guía 13 (Perspectivas) como la prueba empírica del **"Riesgo de la Agencia"** y la lealtad al *prompt*.
 
 #### Gobernanza y Responsabilidad (GRC)
 
