@@ -8,11 +8,11 @@ En el prototipado, construimos una máquina que "funciona". En la **Gobernanza**
 
 Ahora debemos probar científicamente que esa máquina produce un producto de calidad y lo hace de forma consistente.
 
-Esta guía es el "Laboratorio de Control de Calidad" (QA) de nuestra fábrica. Es el puente indispensable entre la Gobernanza y la **Industrialización** (el escalado a producción). No podemos industrializar un sistema cuya calidad no podemos medir. Esta guía nos lleva de la "sensación" subjetiva ("creo que funciona bien") a la "métrica" objetiva ("puedo probar que tiene un 92% de precisión factual").
+Esta guía es el "Laboratorio de Control de Calidad" (QA) de nuestra fábrica. Es el puente indispensable entre la *Gobernanza* y la *Industrialización* (el escalado a producción). No podemos industrializar un sistema cuya calidad no podemos medir. Esta guía nos lleva de la "sensación" subjetiva ("creo que funciona bien") a la "métrica" objetiva ("puedo probar que tiene un 92% de precisión factual").
 
 Resolver esto es el principal desafío de la industria. El riesgo de "Inexactitud" (o Alucinaciones) es el problema N°1 que las organizaciones están enfrentando en 2025. Un 30% de las empresas reporta haber experimentado consecuencias negativas por la inexactitud de la IA, y es el riesgo que más están trabajando en mitigar.
 
-Esta guía es el componente de **Cumplimiento (Compliance)** de nuestro marco GRC. No podemos 'industrializar' (Guía 09) un sistema cuya calidad no podemos medir. Esta guía nos lleva de la 'sensación' subjetiva a la 'métrica' objetiva que nos permite probar el cumplimiento de nuestra Gobernanza (Guía 07).
+Esta guía es el componente de **Cumplimiento (Compliance)** de nuestro marco GRC. No podemos 'industrializar' un sistema cuya calidad no podemos medir. Esta guía nos lleva de la 'sensación' subjetiva a la 'métrica' objetiva que nos permite probar el cumplimiento de nuestra Gobernanza.
 
 ---
 
@@ -31,7 +31,7 @@ Para gestionar la fábrica, debemos tomar estas cualidades "blandas" y convertir
 
 #### Parte 2: El "Golden Set": La Pista de Pruebas Estándar
 
-No puedes probar tu sistema "al azar". Necesitas una "pista de pruebas" estandarizada. En IA, esto se llama un "Golden Set" (Set Dorado) o Benchmark.
+No puedes probar tu sistema "al azar". Necesitas una referencia, una "pista de pruebas" estandarizada. En IA, esto se llama un "Golden Set" (Set Dorado) o Benchmark.
 
 * **¿Qué es?** Es una colección curada por expertos de cientos (o miles) de preguntas de ejemplo (prompts) que representan los desafíos reales que enfrentará tu agente.  
 * **¿Qué incluye?** No solo incluye las preguntas, sino también las respuestas ideales (o "ground truth") validadas por humanos.  
@@ -86,23 +86,23 @@ Una vez que tienes tu "Golden Set" y tus "Métricas", ¿quién hace el trabajo d
 * **Proceso:** Se utiliza una IA (Modelo B) para auditar el resultado de otra IA (Modelo A). Este mismo libro fue auditado usando esta técnica (usando ChatGPT para revisar los borradores generados con asistencia de Gemini).
 * **La Lógica (Validación Cruzada):** Como se ha documentado en flujos de trabajo de startups, usar una IA (ej. Coderabbit) para revisar el código generado por otra IA (ej. Claude) "suena redundante, pero aparentemente detecta diferentes tipos de problemas".
 * **Por qué Funciona (Puntos Ciegos):** Cada modelo de IA tiene "puntos ciegos" diferentes. Usar un "Modelo B" para revisar al "Modelo A" es una forma eficaz y de bajo costo para detectar errores lógicos, de seguridad o de estilo que el modelo original pasó por alto.
-* **Aplicación (Gobernanza):** Integramos un "Revisor de IA" como un paso de **Evaluación (Guía 08)** automatizado en nuestro *pipeline* de **Industrialización (Guía 09)**.
+* **Aplicación (Gobernanza):** Integramos un "Revisor de IA" como un paso de *Evaluación (Guía 08)* automatizado en nuestro *pipeline* de *Industrialización (Guía 09)*.
 
 ---
 
-#### Parte 5: De la Evaluación a la Producción: "Humano-en-el-Bucle" (HitL)
+#### Parte 5: De la Evaluación a la Producción: "Humano-en-el-Bucle"
 
 La evaluación no es solo algo que haces *antes* de la Industrialización. Es algo que continúa *durante* ella.
 
-El concepto de **"Humano-en-el-Bucle" (HitL)**, que es un pilar de la gobernanza y la colaboración humana, es simplemente evaluación en tiempo real.
+El concepto de **"Humano-en-el-Bucle" (Human-in-the-Loop)**, que es un pilar de la gobernanza y la colaboración humana, es simplemente evaluación en tiempo real.
 
-El Humano-en-el-Bucle no es un usuario pasivo. Es un "Auditor de Calidad" que aplica la Rúbrica de Evaluación (de esta guía) a las salidas del agente antes de que estas lleguen al cliente final o activen un proceso crítico. Es la implementación del patrón "Reflexion" (el agente que se autocorrige), pero con un humano en el bucle de auditoría.
+El *"Humano-en-el-Bucle"* no es un usuario pasivo. Es un "Auditor de Calidad" que aplica la Rúbrica de Evaluación a las salidas del agente antes de que estas lleguen al cliente final o activen un proceso crítico. Es la implementación del patrón "Reflexion" (el agente que se autocorrige, Guia 05), pero con un humano en el bucle de auditoría.
 
 ---
 
 #### Conclusión: De la Percepción a la Ingeniería de la Fiabilidad
 
-Sin un Laboratorio de Control de Calidad (Guía 08), la Gobernanza (Guía 07\) es ciega, porque no sabe qué medir ni cómo. Y la Industrialización (Guía 09\) es imprudente, porque no puede garantizar la consistencia del producto.
+Sin un Laboratorio de Control de Calidad (Guía 08), la Gobernanza (Guía 07) es ciega, porque no sabe qué medir ni cómo. Y la Industrialización (Guía 09) es imprudente, porque no puede garantizar la consistencia del producto.
 
 Esta guía proporciona las herramientas y métodos para medir objetivamente la calidad, permitiéndonos tomar decisiones basadas en datos y escalar nuestra fábrica de IA con confianza.
 
