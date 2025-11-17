@@ -30,7 +30,7 @@ La diferencia es simple pero profunda:
 Un Agente es un sistema que utiliza un LLM como "cerebro" para tomar decisiones, pero que además posee **herramientas** y un **ciclo de ejecución** para actuar de forma autónoma. Aquí está la distinción clave:
 
 * **Chatbot (Modo Básico):** Cuando le pides a ChatGPT o Gemini una idea, te responde con una idea. Es una conversación.  
-* **Agente (Modo Extendido):** Cuando le pides a Gemini que busque en tu Gmail o revise Google Flights, deja de ser un simple chatbot. En ese momento se convierte en un agente, porque usó una herramienta ('buscar\_en\_gmail') para actuar fuera de su propio cerebro.
+* **Agente (Modo Extendido):** Cuando le pides a Gemini que busque en tu Gmail o revise Google Flights, deja de ser un simple chatbot. En ese momento se convierte en un agente, porque usó una herramienta ((`buscar_en_gmail`) para actuar fuera de su propio cerebro.
 
 Herramientas como Copilot (diseñado para leer archivos y buscar en Bing) o las "Acciones GPT" están construidas para ser agentes desde el principio.
 
@@ -45,15 +45,15 @@ Así es como "piensa" un agente en la práctica:
   Busca el pronóstico del clima de hoy en Valparaíso y envíame un resumen por email.
   ```
 * **Herramientas Disponibles:**  
-  * buscar\_clima(ciudad)  
-  * enviar\_email(destinatario, cuerpo)
+  * `buscar\_clima(ciudad)`
+  * `enviar\_email(destinatario, cuerpo)`
 
 * **El agente ahora debe "razonar" y "actuar" en un bucle:**
 
   **CICLO 1: Obtener Información**
 
   1. **Razonar (Planificar):**
-     * *Pensamiento:* "El objetivo tiene dos partes: 'buscar' y 'enviar'. No puedo enviar sin la información. El primer paso es usar la herramienta buscar_clima."
+     * *Pensamiento:* "El objetivo tiene dos partes: 'buscar' y 'enviar'. No puedo enviar sin la información. El primer paso es usar la herramienta `buscar_clima`."
   2. **Actuar (Usar Herramienta):**
      * *Acción:*
        ```yaml
@@ -69,7 +69,7 @@ Así es como "piensa" un agente en la práctica:
   **CICLO 2: Ejecutar Acción Final**
 
   1. **Razonar (Planificar):**
-     * *Pensamiento:* "Basado en la observación anterior, ya tengo la información ({ 'max': '18C'... }). El siguiente paso es usar la herramienta enviar_email."
+     * *Pensamiento:* "Basado en la observación anterior, ya tengo la información ({ 'max': '18C'... }). El siguiente paso es usar la herramienta `enviar_email`."
   2. **Actuar (Usar Herramienta):**
      * *Acción:*
        ```yaml
@@ -94,11 +94,11 @@ Las herramientas son la conexión del cerebro de la IA con el mundo digital. Sin
 
 *Ejemplos de Herramientas:*
 
-* buscar\_en\_google()  
-* leer\_archivo('documento.pdf')  
-* escribir\_en\_base\_de\_datos()  
-* enviar\_email()  
-* consultar\_API\_del\_clima()
+* `buscar\_en\_google()` 
+* `leer\_archivo('documento.pdf')`
+* `escribir\_en\_base\_de\_datos()`
+* `enviar\_email()`
+* `consultar\_API\_del\_clima()`
 
 ---
 
