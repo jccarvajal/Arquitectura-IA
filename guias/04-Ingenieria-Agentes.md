@@ -24,13 +24,9 @@ Esta guía proporciona el marco de diseño para superar esa experimentación. Pr
 
 La diferencia es simple pero profunda:
 
-* Un **Chatbot** (como un LLM base) responde a tu instrucción.  
-* Un **Agente** actúa para cumplir un objetivo.
+* **Chatbot (Modo Básico):** Responde a tu instrucción. Es una conversación. Por ejemplo, cuando le pides a ChatGPT o Gemini una idea, te responde con una idea.
 
-Un Agente es un sistema que utiliza un LLM como "cerebro" para tomar decisiones, pero que además posee **herramientas** y un **ciclo de ejecución** para actuar de forma autónoma. Aquí está la distinción clave:
-
-* **Chatbot (Modo Básico):** Cuando le pides a ChatGPT o Gemini una idea, te responde con una idea. Es una conversación.  
-* **Agente (Modo Extendido):** Cuando le pides a Gemini que busque en tu Gmail o revise Google Flights, deja de ser un simple chatbot. En ese momento se convierte en un agente, porque usó una herramienta ((`buscar_en_gmail`) para actuar fuera de su propio cerebro.
+* **Agente (Modo Extendido):** Actúa para cumplir un objetivo. Utiliza un LLM como "cerebro" para tomar decisiones, pero además posee herramientas y un ciclo de ejecución para actuar de forma autónoma. Por ejemplo, cuando le pides a Gemini que busque en tu Gmail o revise Google Flights, se convierte en un agente porque usó una herramienta (`buscar_en_gmail`) para actuar fuera de su propio cerebro.
 
 Herramientas como Copilot (diseñado para leer archivos y buscar en Bing) o las "Acciones GPT" están construidas para ser agentes desde el principio.
 
