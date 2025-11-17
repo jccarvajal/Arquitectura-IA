@@ -1,4 +1,4 @@
-# Inteligencia Artificial Aplicada: Guías para Decidir, Diseñar y Gobernar (GRC)
+# Inteligencia Artificial Aplicada: Guías para Decidir, Diseñar y Gobernar
 
 **Versión 1.1 (Noviembre 2025)**
 
@@ -22,7 +22,7 @@ Su objetivo es trasladar a los equipos desde la curiosidad dispersa hacia un cri
 
 ### Navegación Rápida y Versiones
 
-* Para ver un histórico detallado de todas las modificaciones y versiones, consulta el [**📝 Historial de Versiones (CHANGELOG)**](./changelog.md).
+* Para ver un histórico detallado de todas las modificaciones y versiones, consulta el [Historial de Versiones (CHANGELOG)](./CHANGELOG.md).
 
 ---
 

@@ -1,6 +1,6 @@
 # Registro de Cambios Consolidado (CHANGELOG.md)
 
-Este documento registra todas las modificaciones estructurales, técnicas y conceptuales realizadas en el libro **"Inteligencia Artificial Aplicada: Guías para Decidir, Diseñar y Gobernar (GRC)"**
+Este documento registra todas las modificaciones estructurales, técnicas y conceptuales realizadas en el libro **"Inteligencia Artificial Aplicada: Guías para Decidir, Diseñar y Gobernar"**
 
 ---
 
@@ -32,13 +32,10 @@ Este documento registra todas las modificaciones estructurales, técnicas y conc
 * **Estilo CSS:** Se forzó el ajuste de línea (`white-space: pre-wrap`) en los bloques de código para eliminar el scroll horizontal. Se corrigió el error de aumento de fuente en iPhone al rotar la pantalla.
 * **Pies de Página:** Se reemplazaron todos los pies de página por un bloque `<div>` HTML/CSS para asegurar una alineación uniforme.
 
-### 💻 Bloques de Código y Agentes
+### Bloques de Código y Agentes
 
 * **Unificación de Acciones:** Todas las acciones de máquina (ciclos ReAct) se estandarizaron al formato **`yaml`**, reemplazando formatos anteriores (`json`, viñetas).
-* **Etiquetado Visual de Roles:** Se implementó un sistema de etiquetado con emojis para diferenciar visualmente los roles en los ciclos de agente:
-    * **👤 Usuario** (Input Humano)
-    * **💭 Agente** (Razona)
-    * **⚙️ Agente** (Actúa)
+* **Etiquetado Visual de Roles:** Se implementó un sistema de etiquetado con emojis para diferenciar visualmente los roles en los ciclos de agente.
 
 ### Actualizaciones de Contenido Detallado
 
