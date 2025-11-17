@@ -2,7 +2,7 @@
 
 ### Guía 07: La Guía Definitiva de la Gobernanza de IA
 
-Subtítulo: Del "Director de Orquesta" al "Director de Riesgo y Ciberseguridad"
+Subtítulo: Del "Director de Orquesta" al "Gobernador de Sistemas de IA"
 
 #### Introducción: De Orquestar Resultados a Gobernar Sistemas
 
@@ -13,13 +13,13 @@ Ahora, comienza el trabajo real: operarla. Esta guía aborda la siguiente capa d
 * **Riesgo:** Es el "por qué" y la gestión de amenazas técnicas (Parte 2).
 * **Cumplimiento:** Es el "límite" legal y ético (Guía 10) y la prueba de calidad (Guía 08).
 
-Ya no se trata solo de qué podemos construir, sino de cómo operamos, mantenemos y protegemos lo que hemos construido. Nuestro rol evoluciona de "Director" a "Jefe de Operaciones, Riesgo y Cumplimiento".
+Ya no se trata solo de qué podemos construir, sino de cómo operamos, mantenemos y protegemos lo que hemos construido. Nuestro rol evoluciona de "Director" a "Gobernador de Sistemas de IA".
 
 ---
 
-#### Parte 1: La Filosofía de Uso (El Manual de Operaciones)
+#### Parte 1: La Filosofía de Uso (El Manual de Gobierno)
 
-Saber que una herramienta es poderosa no te dice cómo usarla. Esta es la política que el "Jefe de Operaciones" debe implementar con su equipo.
+Saber que una herramienta es poderosa no te dice cómo usarla. Esta es la política que el "Gobernador" debe implementar con su equipo.
 
 **El Dilema Central: "Mago" vs. "Herramienta"**  
 El mayor error operativo es tratar a la IA como un "mago" (un oráculo infalible) en lugar de una "herramienta" (un asistente poderoso, pero falible).
@@ -37,7 +37,7 @@ El mayor error operativo es tratar a la IA como un "mago" (un oráculo infalible
 
 #### Parte 2: El Nuevo Perímetro de Ciberseguridad de IA
 
-En el Prototipado, le dimos "manos y pies" (Herramientas) a nuestros agentes. Ahora, como "Jefes de Seguridad", debemos entender que el "perímetro de ataque" ha cambiado.
+En el Prototipado, le dimos "manos y pies" (Herramientas) a nuestros agentes. Ahora, como "Gobernador", debemos entender que el "perímetro de ataque" ha cambiado.
 
 La ciberseguridad tradicional se preocupaba por *firewalls* y *redes*. La *Ciberseguridad de IA* se preocupa por el *lenguaje* y la *lógica*. Los riesgos que identificamos en nuestro marco GRC son los nuevos vectores de ataque:
 
@@ -94,7 +94,7 @@ La ciberseguridad tradicional se preocupaba por *firewalls* y *redes*. La *Ciber
   1. **Forzar el "Grounding" (Anclaje a RAG):** Obliga al agente a verificar antes de actuar.  
      * *Ejemplo (Prompting):* 
        ```text
-       REGLA: Antes de ejecutar enviar_email(direccion), DEBES verificar que esa direccion existe explícitamente en los <DATOS> proporcionados. Si no puedes verificarlo y estás 'adivinando', detente y pide confirmación.
+       REGLA: Antes de ejecutar `enviar_email(direccion)`, DEBES verificar que esa direccion existe explícitamente en los <DATOS> proporcionados. Si no puedes verificarlo y estás 'adivinando', detente y pide confirmación.
        ```
   2. **Humano-en-el-Bucle (El Control Definitivo):** La autonomía total es un riesgo. Implementa el punto de control donde el agente planifica su acción (ej. "Enviar email a `direccion.alucinada@empresa.com`"), pero el sistema se detiene y pide validación humana: "¿\[Aprobar\] \[Rechazar\]?" El humano detecta la alucinación y evita el desastre.
 
