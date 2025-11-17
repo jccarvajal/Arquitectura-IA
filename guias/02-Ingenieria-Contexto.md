@@ -153,7 +153,7 @@ Para que la memoria sea dinámica, el agente debe tener permiso para usarla. Baj
       ¿Cuánto falta para la entrega del proyecto 'Alfa'?
       ```
     * 💭 Agente (Razona): 
-      ```yaml
+      ```text
       No sé qué es 'Alfa' en mi contexto actual. Antes de responder, debo revisar mi bloc de notas.
       ```
     * ⚙️ Agente (Actúa):
