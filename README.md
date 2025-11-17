@@ -20,9 +20,9 @@ Su objetivo es trasladar a los equipos desde la curiosidad dispersa hacia un cri
 
 ---
 
-### Navegación Rápida y Versiones
+### Historial de Versiones
 
-* Para ver un histórico detallado de todas las modificaciones y versiones, consulta el [Historial de Versiones (CHANGELOG)](./CHANGELOG.md).
+* Para ver un histórico detallado de  las modificaciones y versiones, consulta el [Historial de Versiones](./CHANGELOG.md).
 
 ---
 
