@@ -48,41 +48,48 @@ Así es como "piensa" un agente en la práctica:
 
   **CICLO 1: Obtener Información**
 
-  1. **Razonar (Planificar):**
-     * *Pensamiento:* "El objetivo tiene dos partes: 'buscar' y 'enviar'. No puedo enviar sin la información. El primer paso es usar la herramienta `buscar_clima`."
-  2. **Actuar (Usar Herramienta):**
-     * *Acción:*
-       ```yaml
-       acción: buscar_clima
-       argumentos:
-         ciudad: Valparaíso
-       ```
-  3. **Observar (Reflexionar):**
-     * *Resultado de la Herramienta:* { 'max': '18C', 'min': '11C', 'estado': 'Parcialmente nublado' }
-     * *Pensamiento:* "Tengo el clima. El objetivo NO está completo. Ahora debo enviar el email."
-     * *(El bucle continúa porque el objetivo final no está cumplido)*
+  * 💭 **Agente (Razona):**
+    ```text
+    "El objetivo tiene dos partes: 'buscar' y 'enviar'. No puedo enviar sin la información. El primer paso es usar la herramienta `buscar_clima`."
+    ```
+  * ⚙️ **Agente (Actúa):**
+    ```yaml
+    acción: buscar_clima
+    argumentos:
+      ciudad: Valparaíso
+    ```
+  * 💭 **Agente (Observa):**
+    ```text
+    Resultado de la Herramienta: { 'max': '18C', 'min': '11C', 'estado': 'Parcialmente nublado' }
+    Pensamiento: "Tengo el clima. El objetivo NO está completo. Ahora debo enviar el email."
+    (El bucle continúa porque el objetivo final no está cumplido)
+    ```
 
   **CICLO 2: Ejecutar Acción Final**
 
-  1. **Razonar (Planificar):**
-     * *Pensamiento:* "Basado en la observación anterior, ya tengo la información ({ 'max': '18C'... }). El siguiente paso es usar la herramienta `enviar_email`."
-  2. **Actuar (Usar Herramienta):**
-     * *Acción:*
-       ```yaml
-       acción: enviar_email
-       argumentos:
-         destinatario: usuario@ejemplo.com
-         cuerpo: "Clima de hoy en Valparaíso: 18C, parcialmente nublado."
-       ```
-  3. **Observar (Reflexionar):**
-     * *Resultado de la Herramienta:* { 'status': 'enviado' }
-     * *Pensamiento:* "Email enviado. El objetivo ('buscar' Y 'enviar') está cumplido."
-     * *(El bucle se detiene)*
+  * 💭 **Agente (Razona):**
+    ```text
+    "Basado en la observación anterior, ya tengo la información ({ 'max': '18C'... }). El siguiente paso es usar la herramienta `enviar_email`."
+    ```
+  * ⚙️ **Agente (Actúa):**
+    ```yaml
+    acción: enviar_email
+    argumentos:
+      destinatario: usuario@ejemplo.com
+      cuerpo: "Clima de hoy en Valparaíso: 18C, parcialmente nublado."
+    ```
+  * 💭 **Agente (Observa):**
+    ```text
+    Resultado de la Herramienta: { 'status': 'enviado' }
+    Pensamiento: "Email enviado. El objetivo ('buscar' Y 'enviar') está cumplido."
+    (El bucle se detiene)
+    ```
 
 * **Respuesta Final al Usuario:**
-  ```text
-  Listo. El clima en Valparaíso es de 18C, parcialmente nublado. Te he enviado el resumen.
-  ```
+  * 💬 **Agente (Responde):**
+    ```text
+    Listo. El clima en Valparaíso es de 18C, parcialmente nublado. Te he enviado el resumen.
+    ```
 
 **3\. Las Herramientas (Tools): Las "Manos" del Agente**
 
@@ -97,6 +104,8 @@ Las herramientas son la conexión del cerebro de la IA con el mundo digital. Sin
 * `consultar_API_del_clima()`
 
 ---
+
+
 
 #### El Dilema Central: La "Correa" del Agente (Autonomía vs. Control)
 
@@ -119,7 +128,7 @@ Aquí es donde reside el verdadero "arte" de la ingeniería de agentes. El *trad
 
 #### Estrategias Fundamentales de Ingeniería de Agentes
 
-Estas son las técnicas para dirigir a nuestros nuevos “trabajadores digitales” sin causar un desastre. A continuación, revisaremos tres estrategias fundamentales: **El Agente con "Humano-en-el-Bucle"**, **La Orquesta de Agentes (El Director de Programa)** y **El Agente Especializado (El Flujo de "Auto-Prompting")**.
+Estas son las técnicas para dirigir a nuestros nuevos “trabajadores digitales” sin causar un desastre. A continuación, revisaremos tres estrategias fundamentales: *El Agente con "Humano-en-el-Bucle"*, *La Orquesta de Agentes (El Director de Programa)* y *El Agente Especializado (El Flujo de "Auto-Prompting")*.
 
 ---
 
