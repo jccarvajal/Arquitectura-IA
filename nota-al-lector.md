@@ -45,7 +45,7 @@ Este flujo (Por Qué -> Qué -> Cómo) está diseñado para asegurar que, cuando
 
 ### 5. Sobre la Obsolescencia: Es un "Marco" de fines de 2025
 
-Esta es la **Versión 1.0 (de Noviembre 2025\)**. La tecnología de IA es volátil y evoluciona en ciclos de meses, no de años.
+Esta es la **Versión 1.1 (de Noviembre 2025\)**. La tecnología de IA es volátil y evoluciona en ciclos de meses, no de años.
 
 Considere esta obra como un **"marco de pensamiento"** y una **"fotografía"** del panorama actual, no como un manual estático. El objetivo no es entregar reglas fijas, sino un criterio duradero para gestionar la evolución tecnológica.
 
