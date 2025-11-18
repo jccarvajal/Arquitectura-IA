@@ -11,7 +11,7 @@ Toma los conceptos abstractos de las Guías (el "qué" y el "por qué") y los ma
 Cada blueprint es una plantilla de solución que detalla:
 
 * El Problema de negocio.  
-* El Objetivo EstratégICO de la solución de IA.  
+* El Objetivo Estratégico de la solución de IA.  
 * Los "Ingredientes" (las Guías y Anexos específicos de la obra que se necesitan).  
 * El Flujo del Agente (el prompt, la lógica, las herramientas y la gobernanza).  
 * La Sinergia (el nuevo rol del humano vs. el rol del agente, y la redefinición del valor).
@@ -30,13 +30,15 @@ La obra de guías (01-13) y anexos fue diseñada para los "Arquitectos" y "Direc
 
 * **El Problema:** El equipo de soporte está sobrecargado con preguntas de **"Sistema 1"**, tareas repetitivas, de bajo juicio, como "¿Cómo reseteo mi contraseña?" o "¿Cuál es su horario de atención?".  
 * **El Objetivo Estratégico:** Automatizar de forma segura el 80% de estas consultas de "Sistema 1" para liberar a los agentes humanos para el trabajo de **"Sistema 2"** (clientes enojados, problemas complejos).  
-* **Ingredientes (El "Stack" de la Obra):** * **Guía 01 (Prompts):** Para definir el rol, el tono y las reglas de seguridad.  
+* **Ingredientes (El "Stack" de la Obra):** 
+  * **Guía 01 (Prompts):** Para definir el rol, el tono y las reglas de seguridad.  
   * **Guía 02 (Contexto y Memoria):** Específicamente la arquitectura **RAG (Generación Aumentada por Recuperación)**, para conectar el agente a la "biblioteca" de manuales de producto.  
   * **Anexo 05 (Modelos y Mercado):** Para elegir un motor rápido y barato (ej. Claude Haiku, Gemini Flash).  
   * **Guía 07 (Gobernanza):** Para definir las reglas de escalado a humano.  
   * **Guía 10 (Humanidad, Ética y Confianza):** Para aplicar "Humano-en-el-Bucle" y la "Transparencia Obligatoria".  
   * **Guía 03 (Datos):** Para asegurar que la "biblioteca" RAG esté limpia y actualizada.  
-* **El Blueprint (El Flujo del Agente):** 1. **Inicio:** El cliente inicia un chat.  
+* **El Blueprint (El Flujo del Agente):** 
+  1. **Inicio:** El cliente inicia un chat.  
   2. **RAG (Recuperación):** El sistema toma la pregunta del cliente (ej. "¡no puedo entrar\!") y la "vectoriza" (la convierte en un número) para buscar en la "biblioteca" (Base de Datos Vectorial) el artículo de ayuda más relevante.  
   3. **Prompt Aumentado:** El sistema alimenta al "motor" (el LLM) con un prompt de sistema que sintetiza la obra:  
      ```text
@@ -55,8 +57,8 @@ La obra de guías (01-13) y anexos fue diseñada para los "Arquitectos" y "Direc
      [Aquí se inyecta la pregunta del cliente: '¡no puedo entrar!']
      </PREGUNTA>
      ```
-
-* **La Sinergia (Colaboración):** * **Rol del Agente:** Maneja el 100% del trabajo de "Sistema 1".  
+* **La Sinergia (Colaboración):** 
+  * **Rol del Agente:** Maneja el 100% del trabajo de "Sistema 1".  
   * **Rol del Humano (Validador):** El humano es elevado de "tomador de tickets" a "experto en escalaciones". Ya no responde 500 reseteos de contraseña. Ahora maneja las 50 quejas sensibles y complejas que el agente le escaló, que es trabajo puro de "Sistema 2" (empatía y resolución de problemas).
 
 ---
