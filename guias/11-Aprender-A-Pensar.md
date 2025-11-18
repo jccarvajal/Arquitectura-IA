@@ -95,7 +95,7 @@ A continuación, se traduce la estrategia de alto nivel en acciones diarias para
 
 #### Manual de Campo para: El Analista (El "Validador" o "Prosumer")
 
-* **Tu Nuevo Rol:** Tu valor ya no es encontrar y resumir datos (trabajo de *"Sistema 1"* o "piloto automático"). Un *agente* de IA que usa una "biblioteca" *RAG* (Generación Aumentada por Recuperación) lo hace 1000 veces más rápido. Tu nuevo valor es tu juicio (trabajo de *"Sistema 2"* o "piloto manual"): cuestionar los resultados y detectar alucinaciones.  
+* **Tu Nuevo Rol:** Tu valor ya no es encontrar y resumir datos (trabajo de *"Sistema 1"* o "piloto automático"). Un *agente* de IA que usa una "biblioteca" *RAG* (Generación Aumentada por Recuperación) lo hace 1000 veces más rápido. Tu nuevo valor es tu juicio (trabajo de *"Sistema 2"* o "piloto manual"): *cuestionar los resultados y detectar alucinaciones*.  
 * **Tu Antigua Tarea:** "Pasa 3 horas buscando en 10 PDFs y haz un resumen."  
 * **Tu Nueva Tarea:** "Valida este resumen generado por el agente. ¿Detectas algún sesgo, alucinación o punto ciego estratégico?"
 
@@ -123,7 +123,7 @@ A continuación, se traduce la estrategia de alto nivel en acciones diarias para
 
 #### Manual de Campo para: El Gerente (El "Co-Piloto Estratégico")
 
-* **Tu Nuevo Rol:** Tu valor ya no es gestionar tareas (micro-gestión). Un **"Agente Director"** (un agente que coordina a otros agentes) puede asignar y rastrear el trabajo de "Sistema 1". Tu nuevo valor es definir la **intención** (el "por qué") y gestionar el riesgo humano y ético.  
+* **Tu Nuevo Rol:** Tu valor ya no es gestionar tareas (micro-gestión). Un *"Agente Director"* (un agente que coordina a otros agentes) puede asignar y rastrear el trabajo de "Sistema 1". Tu nuevo valor es *definir la intención* (el "por qué") y gestionar el riesgo humano y ético.  
 * **Tu Antigua Tarea:** "Equipo, esta semana quiero 10 reportes sobre el Tema X. Envíenme sus borradores el viernes."  
 * **Tu Nueva Tarea:** "Agente-Director, la intención es 'reducir el churn de clientes en 5%'. Ejecuta. Equipo humano, quiero que supervisen el 'Dashboard de Gobernanza' y me traigan solo las anomalías que requieran juicio."
 
@@ -170,11 +170,11 @@ A continuación, se traduce la estrategia de alto nivel en acciones diarias para
 
 #### Conclusión: De Usuario Pasivo a Co-Piloto de Criterio
 
-La **Sinergia Humano-IA** no es automática. Requiere que el humano desarrolle nuevas habilidades. 
+La *Sinergia Humano-IA* no es automática. Requiere que el humano desarrolle nuevas habilidades. 
 
-La "alfabetización cognitiva" (esta Guía 11\) es el conjunto de habilidades que permite al humano "elevarse". Dejamos que la IA maneje la táctica y la velocidad, mientras nosotros nos enfocamos en el criterio, la validación, la ética y la intención estratégica. 
+La "alfabetización cognitiva" (esta Guía 11) es el conjunto de habilidades que permite al humano "trasladar su valor". Dejamos que la IA maneje la táctica y la velocidad, mientras nosotros nos enfocamos en el criterio, la validación, la ética y la intención estratégica. 
 
-Sin esta guía, los profesionales se convierten en "usuarios pasivos" y la IA se convierte en una máquina de "basura elocuente". Con esta guía, se convierten en "Co-Pilotos Estratégicos" y "Prosumers", y la IA se convierte en un multiplicador de su juicio y valor.
+Sin esta guía, los profesionales corren el riesgo de operar como 'usuarios pasivos' y la IA se convierte en una máquina de 'basura elocuente'. Con esta guía, desarrollan las habilidades para ser 'Co-Pilotos Estratégicos' y 'Prosumers', y la IA se convierte en un multiplicador de su juicio y valor.
 
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
