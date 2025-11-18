@@ -82,7 +82,8 @@ Esta es la habilidad cumbre del "Co-Piloto". Es la **capacidad de descomponer un
      ```text
      Sintetiza todo en un resumen narrativo de 3 párrafos para mi manager, usando el formato 'Situación-Acción-Resultado'."
     ```
-  * Este profesional no está "usando" IA; está diseñando un flujo de trabajo cognitivo para su propio uso.
+  
+  * Resultado: Este profesional no está "usando" IA; está diseñando un flujo de trabajo cognitivo para su propio uso.
 
 ---
 
@@ -94,7 +95,7 @@ A continuación, se traduce la estrategia de alto nivel en acciones diarias para
 
 #### Manual de Campo para: El Analista (El "Validador" o "Prosumer")
 
-* **Tu Nuevo Rol:** Tu valor ya no es encontrar y resumir datos (trabajo de **"Sistema 1"** o "piloto automático"). Un **agente** de IA que usa una "biblioteca" **RAG** (Generación Aumentada por Recuperación) lo hace 1000 veces más rápido. Tu nuevo valor es tu juicio (trabajo de **"Sistema 2"** o "piloto manual"): cuestionar los resultados y detectar alucinaciones.  
+* **Tu Nuevo Rol:** Tu valor ya no es encontrar y resumir datos (trabajo de *"Sistema 1"* o "piloto automático"). Un *agente* de IA que usa una "biblioteca" *RAG* (Generación Aumentada por Recuperación) lo hace 1000 veces más rápido. Tu nuevo valor es tu juicio (trabajo de *"Sistema 2"* o "piloto manual"): cuestionar los resultados y detectar alucinaciones.  
 * **Tu Antigua Tarea:** "Pasa 3 horas buscando en 10 PDFs y haz un resumen."  
 * **Tu Nueva Tarea:** "Valida este resumen generado por el agente. ¿Detectas algún sesgo, alucinación o punto ciego estratégico?"
 
