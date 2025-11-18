@@ -51,8 +51,7 @@ fórmulas de hojas de cálculo, automatizaciones basadas en reglas fijas, dashbo
 
 #### Supervisión Humana Significativa
 
-
-**Supervisión Humana Significativa** es la intervención responsable de una persona con competencia y autoridad suficiente para revisar, validar, corregir o detener el resultado de un sistema de IA antes de que genere un impacto material.
+Es la intervención responsable de una persona con competencia y autoridad suficiente para revisar, validar, corregir o detener el resultado de un sistema de IA antes de que genere un impacto material.
 
 La responsabilidad final es siempre humana.
 
@@ -66,7 +65,7 @@ Todo uso de IA se regirá por los siguientes principios:
   Cumplimiento normativo y uso proporcional a la necesidad. La IA no es siempre la opción adecuada.
 
 * **Criterio Humano (Delegar, No Abdicar):**
-  La IA automatiza tareas de **Sistema 1**; la organización gobierna desde **Sistema 2**.
+  La IA automatiza tareas tácticas y repetitivas; la organización gobierna desde el juicio crítico y estratégico.
   Toda decisión de impacto requiere supervisión humana significativa.
   La responsabilidad recae siempre en personas.
 
@@ -84,11 +83,11 @@ Todo uso de IA se regirá por los siguientes principios:
   Principios de minimización, proporcionalidad y resguardo de datos personales.
 
 * **Seguridad y Resiliencia:**
-  Los sistemas deben ser robustos frente a errores, fallas técnicas o ataques (como inyección de prompts).
+  Los sistemas deben ser robustos frente a errores, fallas técnicas o ataques.
 
 * **Antifragilidad y Gestión del Riesgo:**
   La IA no debe introducir fragilidad sistémica.
-  Se evaluarán riesgos de errores catastróficos, acumulativos o de difícil detección (“Cisnes Negros”).
+  Se evaluarán riesgos de errores catastróficos, acumulativos o de difícil detección.
 
 * **Trazabilidad y Auditabilidad:**
   Todos los procesos que incluyan IA deben permitir reconstruir decisiones, verificar fuentes y auditar resultados.
@@ -100,7 +99,7 @@ Todo uso de IA se regirá por los siguientes principios:
 
 #### Finalidad Permitida
 
-La IA se utiliza principalmente para tareas operativas o repetitivas (S1), permitiendo que el personal se concentre en tareas de criterio, análisis, diseño y supervisión (S2).
+La IA se utiliza principalmente para tareas operativas, repetitivas o de bajo juicio, permitiendo que el personal se concentre en tareas de criterio, análisis, diseño, supervisión y juicio ético.
 
 #### Principios Específicos
 
@@ -113,7 +112,7 @@ La IA se utiliza principalmente para tareas operativas o repetitivas (S1), permi
 * **Prohibición de datos sensibles:** 
   No se permite ingresar datos personales sensibles o confidenciales en herramientas no aprobadas.
 
-* **Transparencia:** 
+* **Transparencia obligatoria:** 
   Todo chatbot o asistente debe identificarse como IA.
 
 * **Agentes Autónomos:** 
@@ -129,7 +128,7 @@ Para asegurar la gobernanza efectiva y la implementación de esta política, se 
   Máxima autoridad responsable de la vigencia, actualización y patrocinio institucional de esta política.
 
 * **Comité de Gobernanza de IA:**
-  Revisa proyectos de alto impacto, gestiona riesgos y aprueba excepciones justificadas.
+  Supervisa proyectos de alto impacto, gestiona riesgos y aprueba excepciones justificadas.
 
 * **Dueño del Sistema de IA:**
   Responsable del ciclo de vida del sistema de IA, documentación, trazabilidad y cumplimiento de esta política.
@@ -150,7 +149,7 @@ Constituye negligencia profesional o falta grave:
 
 * usar resultados de IA sin validación humana significativa,
 * automatizar decisiones críticas sin controles,
-* utilizar herramientas de IA no aprobadas (“IA en la Sombra”),
+* utilizar herramientas de IA no aprobadas,
 * ingresar datos sensibles o confidenciales en plataformas no autorizadas,
 * evadir supervisión o trazabilidad requerida.
 
