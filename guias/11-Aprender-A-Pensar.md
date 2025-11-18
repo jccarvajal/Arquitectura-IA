@@ -16,20 +16,16 @@ El mayor riesgo de la IA no es que mienta, es que **"alucina"** (inventa datos) 
 
 Este es el primer salto de habilidad. El "Usuario Pasivo" trata a la IA como un oráculo mágico. El "Co-Piloto" la trata como un asistente increíblemente rápido, pero sin sentido común, contexto de negocio, ni ética.
 
-* **Usuario Pasivo(Pide):**
+* **Usuario Pasivo (Pide):**
   ```text
   ¿Cuáles fueron las ventas del trimestre?
   ```
-  * *(Resultado: Un número simple, probablemente sin contexto, que el usuario acepta ciegamente).*  
+  * *Resultado: Un número simple, probablemente sin contexto, que el usuario acepta ciegamente.*  
 * **Co-Piloto (Instruye):**
   ```text
-  Actúa como un analista financiero experto (Rol). 
-  Analiza los datos de ventas del Q3 adjuntos (Contexto). 
-  Compáralos con el Q2 e identifica los 3 productos con mayor caída (Tarea). 
-  Genera una hipótesis en 5 puntos sobre las posibles causas, basándote en el contexto de mercado X (Razonamiento).
-  Formatea la salida como un email para gerencia (Formato).
+  Actúa como un analista financiero experto (Rol). Analiza los datos de ventas del Q3 adjuntos (Contexto). Compáralos con el Q2 e identifica los 3 productos con mayor caída (Tarea). Genera una hipótesis en 5 puntos sobre las posibles causas, basándote en el contexto de mercado X (Razonamiento). Formatea la salida como un email para gerencia (Formato).
   ```
-  * *(Resultado: Un análisis dirigido, contextualizado y listo para ser validado).*
+  * *Resultado: Un análisis dirigido, contextualizado y listo para ser validado.*
 
 La **Ingeniería de Prompts** (Guía 01) nos dio la técnica, pero esta guía nos da la intención estratégica detrás de ella.
 
