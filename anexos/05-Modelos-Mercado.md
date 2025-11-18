@@ -111,12 +111,12 @@ Para diseñar tu portafolio, usa este proceso:
 
 **Checklist Rápido de Decisión**
 
-| Pregunta Clave | Si | No | Comentarios / Acción Requerida (Ejemplos) |
-| :---- | :---- | :---- | :---- |
-| ¿Los datos son sensibles (salud, seguridad, jurídico)? | \[ \] | \[ \] | (Si es SÍ: Priorizar Open-Source Local) |
-| ¿Requiere auditoría y trazabilidad completa? | \[ \] | \[ \] | (Si es SÍ: Priorizar Open-Source o API con cláusulas de logs) |
-| ¿Necesitamos customización profunda (Ajuste Fino)? | \[ \] | \[ \] | (Si es SÍ: Requerir Open-Source) |
-| ¿Tenemos capacidad de Industrialización interna? | \[ \] | \[ \] | (Si es NO: Priorizar API o AaaS, o planificar contratación) |
+| Pregunta Clave | Acción Requerida (Ejemplos) |
+| :--- | :--- |
+| ¿Los datos son sensibles (salud, seguridad, jurídico)? | (Si es SÍ: Priorizar Open-Source Local) |
+| ¿Requiere auditoría y trazabilidad completa? | (Si es SÍ: Priorizar Open-Source o API con cláusulas de logs) |
+| ¿Necesitamos customización profunda (Ajuste Fino)? | (Si es SÍ: Requerir Open-Source) |
+| ¿Tenemos capacidad de Industrialización interna? | (Si es NO: Priorizar API o AaaS, o planificar contratación) |
 
 ---
 
