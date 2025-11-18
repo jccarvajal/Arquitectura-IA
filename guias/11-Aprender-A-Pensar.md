@@ -27,7 +27,7 @@ Este es el primer salto de habilidad. El "Usuario Pasivo" trata a la IA como un 
   ```
   * *Resultado: Un análisis dirigido, contextualizado y listo para ser validado.*
 
-La **Ingeniería de Prompts** (Guía 01) nos dio la técnica, pero esta guía nos da la intención estratégica detrás de ella.
+La *Ingeniería de Prompts* (Guía 01) nos dio la técnica, pero esta guía nos da la intención estratégica detrás de ella.
 
 ---
 
@@ -48,16 +48,40 @@ Tu trabajo ya no es "saber la respuesta", es "validar la respuesta".
 
 #### Parte 3: La Habilidad Cumbre: Desarrollar el "Pensamiento Algorítmico"
 
-Esta es la habilidad cumbre del "Co-Piloto". Es la capacidad de descomponer un problema complejo de tu propio trabajo en una secuencia de **prompts** (instrucciones) lógicos, tal como un "Diseñador Cognitivo" diseña un agente.
+Esta es la habilidad cumbre del "Co-Piloto". Es la **capacidad de descomponer un problema complejo** de tu propio trabajo en una **secuencia de prompts** (instrucciones) lógicos, tal como un "Diseñador Cognitivo" diseña un agente.
 
-* **Problema Humano Complejo:** "Necesito preparar mi evaluación de desempeño trimestral."  
-* **Usuario (Pide):** "Escríbeme una autoevaluación." (Resultado: Basura genérica).  
+* **Problema Humano Complejo:** 
+  ```text
+  Necesito preparar mi evaluación de desempeño trimestral.
+  ```
+
+* **Usuario Pasivo (Pide):**
+  ```text
+  Escríbeme una autoevaluación.
+  ```
+  * Resultado: Basura genérica
+
 * **Co-Piloto (Diseña un Algoritmo):**  
-  1. **Prompt 1 (Contexto):** "Revisemos mis objetivos clave para el Q3. Eran estos: \[Adjunta objetivos\]. ¿Están claros?"  
-  2. **Prompt 2 (Recolección):** "Voy a pegar mis 5 proyectos clave. Para cada uno, ayúdame a listar las 3 acciones principales que tomé. \[Pega proyectos\]."  
-  3. **Prompt 3 (Análisis):** "Excelente. Ahora, conecta las acciones del paso 2 con los objetivos del paso 1\. Muestra qué proyectos impactaron en qué objetivos."  
-  4. **Prompt 4 (Síntesis):** "Basado en eso, identifica 3 fortalezas demostradas y 2 áreas de mejora (con ejemplos)."  
-  5. **Prompt 5 (Generación):** "Sintetiza todo en un resumen narrativo de 3 párrafos para mi manager, usando el formato 'Situación-Acción-Resultado'."
+  1. **Prompt 1 (Contexto):**
+     ```text
+     Revisemos mis objetivos clave para el Q3. Eran estos: [Adjunta objetivos]. ¿Están claros?
+     ```
+  2. **Prompt 2 (Recolección):** 
+     ```text
+     Voy a pegar mis 5 proyectos clave. Para cada uno, ayúdame a listar las 3 acciones principales que tomé. [Pega proyectos].
+     ```
+  3. **Prompt 3 (Análisis):**
+     ```text
+     Excelente. Ahora, conecta las acciones del paso 2 con los objetivos del paso 1\. Muestra qué proyectos impactaron en qué objetivos.
+     ```  
+  4. **Prompt 4 (Síntesis):**
+     ```text
+     Basado en eso, identifica 3 fortalezas demostradas y 2 áreas de mejora (con ejemplos)."  
+     ```
+  5. **Prompt 5 (Generación):**
+     ```text
+     Sintetiza todo en un resumen narrativo de 3 párrafos para mi manager, usando el formato 'Situación-Acción-Resultado'."
+    ```
 
 Este profesional no está "usando" IA; está diseñando un flujo de trabajo cognitivo para su propio uso.
 
