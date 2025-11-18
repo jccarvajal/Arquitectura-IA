@@ -28,7 +28,7 @@ La obra de guías (01-13) y anexos fue diseñada para los "Arquitectos" y "Direc
 
 #### Blueprint 1: El "Agente de Soporte al Cliente" (PM Interno)
 
-* **El Problema:** El equipo de soporte está sobrecargado con preguntas de **"Sistema 1"** —tareas repetitivas, de bajo juicio— como "¿Cómo reseteo mi contraseña?" o "¿Cuál es su horario de atención?".  
+* **El Problema:** El equipo de soporte está sobrecargado con preguntas de **"Sistema 1"**, tareas repetitivas, de bajo juicio, como "¿Cómo reseteo mi contraseña?" o "¿Cuál es su horario de atención?".  
 * **El Objetivo Estratégico:** Automatizar de forma segura el 80% de estas consultas de "Sistema 1" para liberar a los agentes humanos para el trabajo de **"Sistema 2"** (clientes enojados, problemas complejos).  
 * **Ingredientes (El "Stack" de la Obra):** * **Guía 01 (Prompts):** Para definir el rol, el tono y las reglas de seguridad.  
   * **Guía 02 (Contexto y Memoria):** Específicamente la arquitectura **RAG (Generación Aumentada por Recuperación)**, para conectar el agente a la "biblioteca" de manuales de producto.  
