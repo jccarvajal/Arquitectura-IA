@@ -12,7 +12,7 @@ Hasta ahora, nuestra metáfora ha sido la de un "Director" o "Gobernador": un hu
 
 Esta guía rompe esa barrera. El objetivo ya no es cómo delegamos tareas, sino cómo nos fusionamos con la IA. Dejamos de ser "Directores de Orquesta" y nos convertimos en "Socios Cognitivos" o "Co-Pilotos Estratégicos".
 
-Ahora, comienza el verdadero desafío: escalar. Escalar la tecnología es un problema técnico. Escalar a las personas es un desafío de liderazgo, cultura y **Riesgo**. Esta guía es el manual para la 'Gestión del Cambio' y para definir el pilar del **Cumplimiento** ético de nuestro marco GRC.
+Ahora, comienza el verdadero desafío: **Escalar**. Escalar la tecnología es un problema técnico. Escalar a las personas es un desafío de liderazgo, cultura y **Riesgo**. Esta guía es el manual para la *'Gestión del Cambio'* y para definir el pilar del **Cumplimiento** ético de nuestro marco *GRC*.
 
 ---
 
@@ -23,19 +23,19 @@ A medida que los agentes de IA se vuelven más competentes, la tentación es la 
 * **Abdicación (El Camino del Reemplazo):** El humano deja de pensar y solo hace clic. El resultado es la resistencia y el sabotaje.  
 * **Aumento (El Camino de la Sinergia):** El humano deja de hacer tareas triviales y dedica el 100% de su esfuerzo a pensar.
 
-Esta guía es el manual para diseñar flujos de "Aumento Cognitivo", gestionando la transformación del talento y estableciendo los límites éticos de la automatización.
+Esta guía es el manual para diseñar flujos de **"Aumento Cognitivo"**, gestionando la transformación del talento y estableciendo los límites éticos de la automatización.
 
 ---
 
 #### Parte 1: El Principio de Sinergia (Sistema 1 vs. Sistema 2)
 
-Para diseñar la sinergia, primero debemos dividir el trabajo. El pensamiento humano se divide en dos "sistemas":
+Para diseñar la sinergia, primero debemos dividir el trabajo. Nos basaremos en el influyente marco conceptual de **Daniel Kahneman**, psicólogo y premio en Ciencias Económicas en memoria de Alfred Nobel. En su obra *Pensar, rápido y despacio*, él divide el pensamiento humano en dos "sistemas":
 
 **Sistema 1: El "Piloto Automático"**
 
 * **Qué es:** Es el pensamiento rápido, instintivo y de bajo esfuerzo basado en patrones.  
 * **Ejemplos Humanos:** Reconocer una cara, clasificar un email como "spam".  
-* **Rol de la IA:** Este sistema es perfecto para la delegación. Los Agentes de IA son motores de "Sistema 1" sobrealimentados. Pueden resumir 100 PDFs (usando **RAG**, el sistema de recuperación de conocimiento) o encontrar un dato en un segundo.
+* **Rol de la IA:** Este sistema es perfecto para la delegación. Los Agentes de IA son motores de "Sistema 1" sobrealimentados. Pueden resumir 100 PDFs (usando *RAG*, el sistema de recuperación de conocimiento) o encontrar un dato en un segundo.
 
 **Sistema 2: El "Piloto Manual"**
 
@@ -44,16 +44,6 @@ Para diseñar la sinergia, primero debemos dividir el trabajo. El pensamiento hu
 * **Rol del Humano:** Este es el nuevo trabajo humano. Es el dominio del juicio crítico, la empatía, la creatividad original y la definición de la "intención" (el "por qué" detrás del "qué").
 
 La **Sinergia Humano-IA** es una arquitectura de trabajo donde el Agente de IA ejecuta el 90% del trabajo de "Sistema 1", liberando al humano para que se concentre el 90% de su tiempo en el "Sistema 2".
-
-Esta **Sinergia Humano-IA** no es un concepto nuevo. Es la actualización de un principio fundacional establecido ya en 1951 por la **Lista de Fitts**.
-
-La lista original de Fitts fue profética al proponer una división del trabajo: las máquinas se encargarían del cómputo preciso y repetitivo, mientras los humanos manejarían el juicio y la reacción a eventos inesperados.
-
-Sin embargo, esa lista es un producto de su tiempo y hoy es **obsoleta en sus detalles**. Irónicamente, los LLM modernos han *invertido* la lista de Fitts:
-* Fitts dijo que las máquinas eran buenas en el **"razonamiento deductivo"** y malas en "percibir patrones".
-* La IA actual es exactamente lo opuesto: es un motor de **S1** que sobresale en "percibir patrones" pero es frágil en el "razonamiento deductivo" (nuestra "Basura Elocuente").
-
-Por lo tanto, el principio de Fitts (la división del trabajo) sigue siendo válido, pero su *implementación* ha cambiado. El marco S1/S2 de este libro es la Lista de Fitts actualizada para el siglo XXI: la IA ejecuta el S1 y el humano retiene el S2.
 
 ---
 
@@ -68,7 +58,7 @@ La "Gobernanza" también consiste en diseñar el nivel correcto de colaboración
 * **Interacción:** El Agente pregunta al humano: "¿Aprueba usted \[Enviar\]?"  
 * **Cuándo Usar:** Es el control de seguridad \#1 de la Gobernanza. Se usa para cualquier acción de alto riesgo o irreversible (gastar dinero, comunicarse con clientes, modificar datos).
 
-Este principio de validación no es solo una sugerencia ética; es una de las prácticas más correlacionadas con el éxito financiero. El informe de fines de 2025 identificó que las organizaciones de "alto rendimiento" en IA son significativamente más propensas que sus pares a tener "procesos definidos para determinar cómo y cuándo los resultados del modelo necesitan validación humana para asegurar la precisión" . Es la prueba de la "inteligencia híbrida": la combinación de IA con el juicio humano.
+Este principio de validación no es solo una sugerencia ética; es una de las prácticas más correlacionadas con el éxito financiero. El informe de fines de 2025 identificó que las organizaciones de "alto rendimiento" en IA son significativamente más propensas que sus pares a tener *"procesos definidos para determinar cómo y cuándo los resultados del modelo necesitan validación humana para asegurar la precisión"*. Es la prueba de la "inteligencia híbrida": la combinación de IA con el juicio humano.
 
 **Nivel 2: Humano-sobre-el-Bucle (Human-on-the-Loop) \- El Supervisor**
 
@@ -79,7 +69,7 @@ Este principio de validación no es solo una sugerencia ética; es una de las pr
 
 Aunque este nivel es ideal para escalar tareas de riesgo medio, su implementación es compleja. Los informes de la industria se centran en el éxito del Nivel 1 (validación activa)  porque el Nivel 2 introduce un riesgo operacional significativo conocido como la "complacencia de la automatización".
 
-Este fenómeno ocurre cuando el supervisor humano, al ver que el agente opera de forma autónoma con éxito, reduce su atención y confía ciegamente en el sistema. Esto anula el propósito del control, ya que el humano pierde la capacidad de detectar errores sutiles. El modelo de "alerta" también depende peligrosamente de que el propio agente sea capaz de identificar su propio fallo, lo cual es una suposición arriesgada, dado que el principal riesgo de la IA es la "Inexactitud" (o alucinación) , que ocurre precisamente porque el agente no sabe que está equivocado.
+Este fenómeno ocurre cuando el supervisor humano, al ver que el agente opera de forma autónoma con éxito, reduce su atención y confía ciegamente en el sistema. Esto anula el propósito del control, ya que el humano pierde la capacidad de detectar errores sutiles. El modelo de "alerta" también depende peligrosamente de que el propio agente sea capaz de identificar su propio fallo, lo cual es una suposición arriesgada, dado que el principal riesgo de la IA es la "inexactitud" (o alucinación), que ocurre precisamente porque el agente no sabe que está equivocado.
 
 **Nivel 3: Humano-al-Mando (Human-in-Command) \- El Estratega**
 
@@ -90,7 +80,7 @@ Este fenómeno ocurre cuando el supervisor humano, al ver que el agente opera de
   * *Agente Director:* "Entendido." (Activa autónomamente a otros agentes para analizar, diseñar y ejecutar la campaña).  
 * **Cuándo Usar:** Tareas estratégicas complejas donde el "cómo" es menos importante que el "qué".
 
-Este nivel de sinergia, donde el humano define la "intención estratégica" y el agente la ejecuta, es precisamente lo que el sondeo global de 2025 identifica como la mentalidad de las empresas de "alto rendimiento". Estas organizaciones son 3.6 veces más propensas que sus pares a usar la IA para una "transformación fundamental" de su negocio, en lugar de solo mejoras incrementales . Su éxito se correlaciona directamente con líderes senior que demuestran un fuerte "compromiso y propiedad" de las iniciativas de IA , definiendo objetivos de "crecimiento e innovación"  que los agentes autónomos deben perseguir.
+Este nivel de sinergia, donde el humano define la "intención estratégica" y el agente la ejecuta, es precisamente lo que el sondeo global de 2025 identifica como la mentalidad de las empresas de "alto rendimiento". Estas organizaciones son 3.6 veces más propensas que sus pares a usar la IA para una "transformación fundamental" de su negocio, en lugar de solo mejoras incrementales. Su éxito se correlaciona directamente con líderes senior que demuestran un fuerte "compromiso y propiedad" de las iniciativas de IA, definiendo objetivos de "crecimiento e innovación" que los agentes autónomos deben perseguir.
 
 ---
 
@@ -128,7 +118,7 @@ La Gobernanza (Guía 07\) fue sobre seguridad (lo que no podemos hacer porque es
 
 **Riesgo 1: Pérdida de la "Licencia Social"**  
 
-La Licencia Social es la aceptación y confianza que la ciudadanía deposita en la implementación de una tecnología. No se gana solo cumpliendo la ley; se gana con transparencia y demostrando valor público. Si la percepción es que un sistema es opaco, sesgado o engañoso, esa licencia se pierde y el proyecto fracasa, independientemente de su éxito técnico.
+La *"Licencia Social"* es la aceptación y confianza que la ciudadanía deposita en la implementación de una tecnología. No se gana solo cumpliendo la ley; se gana con transparencia y demostrando valor público. Si la percepción es que un sistema es opaco, sesgado o engañoso, esa licencia se pierde y el proyecto fracasa, independientemente de su éxito técnico.
 
 **Riesgo 2: Sesgo (Bias) Algorítmico**
 
@@ -138,7 +128,7 @@ La Licencia Social es la aceptación y confianza que la ciudadanía deposita en 
 **Riesgo 3: Engaño (Deception)**
 
 * **El Problema:** Un "Agente PM" de servicio al cliente es tan bueno que el cliente cree que está hablando con un humano empático.  
-* **El Control Ético:** Transparencia Obligatoria. Para mantener la Licencia Social, todos los agentes que interactúan con el exterior deben identificarse explícitamente como una IA. La confianza se basa en la transparencia.
+* **El Control Ético:** Transparencia Obligatoria. Para mantener la "Licencia Social", todos los agentes que interactúan con el exterior deben identificarse explícitamente como una IA. La confianza se basa en la transparencia.
 
 **Riesgo 4: Decisiones Irreversibles (Human-out-of-the-Loop)**
 
@@ -154,13 +144,13 @@ Cuando los "Agentes PM" se vuelven parte del equipo, surgen preguntas legales qu
 
 **Problema 1: De la Propiedad Intelectual (PI)**
 
-* **La Pregunta:** Un humano (Co-Piloto) usa un "Agente PM" para generar el código de un nuevo producto. ¿De quién es la PI?  
+* **La Pregunta:** Un humano (Co-Piloto) usa un "Agente PM" para generar el código de un nuevo producto. ¿De quién es la Propiedad Intelectual?  
 * **La Política de Gobernanza:** La política de la empresa debe ser explicita: "Toda Propiedad Intelectual generada usando herramientas de IA de la empresa, por empleados de la empresa, durante el horario de la empresa, es propiedad 100% de la empresa."
 
 **Problema 2: De la "Caja Negra" (Auditabilidad)**
 
 * **La Pregunta:** Un "Agente Director" optimiza la logística y causa una pérdida de $1M. ¿Cómo "interrogamos" al agente?  
-* **La Política de Gobernanza:** La **Observabilidad** (de la Guía 09\) no es solo técnica, es un requisito legal. El "Dashboard de Gobernanza" debe registrar obligatoriamente el "rastro de pensamiento" (el log del Ciclo ReAct) de cada agente. Debemos ser capaces de reconstruir la cadena de razonamiento.
+* **La Política de Gobernanza:** La *Observabilidad* (de la Guía 09) no es solo técnica, es un requisito legal. El "Dashboard de Gobernanza" debe registrar obligatoriamente el "rastro de pensamiento" (el log del Ciclo ReAct) de cada agente. Debemos ser capaces de reconstruir la cadena de razonamiento.
 
 ---
 
