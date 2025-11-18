@@ -4,9 +4,7 @@ Subtítulo: Del "Ingeniero de Prototipos" al "Director de Operaciones"
 
 #### Introducción: Del Prototipo (1) a la Producción (1000)
 
-En el *Prototipado*, construimos con éxito nuestro primer "Agente PM" (un agente de IA enfocado en un proyecto único). Demostramos el valor, validamos la seguridad básica y probamos el concepto.
-
-Pero un prototipo que funciona en la laptop de un ingeniero no es una "fábrica". Es un "Go-Kart".
+En el *Prototipado*, construimos con éxito nuestro primer "Agente PM" (un agente de IA enfocado en un proyecto único). Demostramos el valor, validamos la seguridad básica y probamos el concepto. Pero un prototipo que funciona en la laptop de un ingeniero no es una "fábrica". Es un "Go-Kart".
 
 Esta guía es el manual para la industrialización. Es el plan para pasar de construir un agente a desplegar y gestionar mil agentes de forma fiable. Nuestro rol evoluciona del "Ingeniero de Prototipos" (que construye el primer auto) al "Director de Operaciones" (que diseña, opera y mantiene la línea de ensamblaje 24/7).
 

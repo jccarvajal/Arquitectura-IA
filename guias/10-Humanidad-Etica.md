@@ -6,11 +6,9 @@ Subtítulo: Del "Co-Piloto" a la "Dirección de Transformación Humana"
 
 #### Introducción: De Escalar la Fábrica a Escalar a las Personas
 
-En las guías anteriores, completamos el viaje de construir y operar nuestra fábrica de IA. Diseñamos el **Prompt** (la instrucción), gestionamos el **Contexto** (la memoria), dirigimos a los **Agentes** (los trabajadores autónomos) y aseguramos la **Gobernanza** (la seguridad) y la **Industrialización** (el escalado técnico).
+En las guías anteriores, completamos el viaje de construir y operar nuestra fábrica de IA. Diseñamos el **Prompt** (la instrucción), gestionamos el **Contexto** (la memoria), dirigimos a los **Agentes** (los trabajadores autónomos) y aseguramos la **Gobernanza** (la seguridad) y la **Industrialización** (el escalado técnico). 
 
-Hasta ahora, nuestra metáfora ha sido la de un "Director" o "Gobernador": un humano externo al sistema que da órdenes y monitorea.
-
-Esta guía rompe esa barrera. El objetivo ya no es cómo delegamos tareas, sino cómo nos fusionamos con la IA. Dejamos de ser "Directores de Orquesta" y nos convertimos en "Socios Cognitivos" o "Co-Pilotos Estratégicos".
+Hasta ahora, nuestra metáfora ha sido la de un "Director" o "Gobernador": un humano externo al sistema que da órdenes y monitorea. Esta guía rompe esa barrera. El objetivo ya no es cómo delegamos tareas, sino cómo nos fusionamos con la IA. Dejamos de ser "Directores de Orquesta" y nos convertimos en "Socios Cognitivos" o "Co-Pilotos Estratégicos".
 
 Ahora, comienza el verdadero desafío: **Escalar**. Escalar la tecnología es un problema técnico. Escalar a las personas es un desafío de liderazgo, cultura y **Riesgo**. Esta guía es el manual para la *'Gestión del Cambio'* y para definir el pilar del **Cumplimiento** ético de nuestro marco *GRC*.
 
