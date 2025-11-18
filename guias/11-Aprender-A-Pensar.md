@@ -82,8 +82,7 @@ Esta es la habilidad cumbre del "Co-Piloto". Es la **capacidad de descomponer un
      ```text
      Sintetiza todo en un resumen narrativo de 3 párrafos para mi manager, usando el formato 'Situación-Acción-Resultado'."
     ```
-
-Este profesional no está "usando" IA; está diseñando un flujo de trabajo cognitivo para su propio uso.
+  * Este profesional no está "usando" IA; está diseñando un flujo de trabajo cognitivo para su propio uso.
 
 ---
 
