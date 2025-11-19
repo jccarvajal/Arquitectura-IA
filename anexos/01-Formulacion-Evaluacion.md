@@ -52,12 +52,12 @@ Este documento debe ser completado por el "Dueño del Proyecto" y visado por el 
 
 | Dimensión | Pregunta de Validación ("Go / No-Go") | Referencia de Solución | Estado |
 | :--- | :--- | :--- | :--- |
-| **1. Proporcionalidad** | ¿El valor del proyecto justifica los riesgos y costos? ¿Es la IA el medio adecuado y proporcional, o estamos "matando moscas a cañonazos"? | **Guía 06:** Filtro "Quick Win".<br>**Anexo 02:** Política Inst. | `[ ]` |
-| **2. Licencia Social** | ¿Aprobarían los usuarios/ciudadanos este uso de sus datos si se hiciera público hoy en las noticias? ¿El sistema evita el engaño (se identifica como IA)? | **Guía 10:** Confianza.<br>**Guía 13:** Divulgación. | `[ ]` |
-| **3. Protección de Datos** | ¿Hay datos sensibles o personales involucrados? Si es así, ¿tenemos la arquitectura segura (ej. Modelo Local vs API Pública) y la base legal? | **Guía 03:** Privacidad.<br>**Guía 07:** Fuga de Datos. | `[ ]` |
-| **4. Transparencia** | ¿Es explicable la decisión? ¿Podemos trazar *por qué* la IA tomó una decisión (logs de razonamiento/CoT) si nos auditan? | **Guía 09:** Observabilidad.<br>**Guía 05:** Cadena de Pensamiento. | `[ ]` |
-| **5. Discriminación** | ¿Están limpios los datos de origen de sesgos históricos (ej. género, raza, nivel socioeconómico)? ¿Existen grupos vulnerables afectados? | **Guía 03:** Auditoría de Datos.<br>**Guía 10:** Sesgo Algorítmico. | `[ ]` |
-| **6. Responsabilidad** | ¿Existe un "Dueño del Sistema" humano designado formalmente? ¿Está definido el protocolo de supervisión humana significativa? | **Anexo 02:** Roles.<br>**Guía 07:** Rendición de Cuentas. | `[ ]` |
+| **1. Proporcionalidad** | ¿El valor justifica riesgos y costos? ¿Es la IA el medio proporcional o existen alternativas tradicionales más simples? | **Guía 06:** Filtro "Quick Win".<br>**Anexo 02:** Política Inst. | `[ ]` |
+| **2. Licencia Social** | ¿Aprobarían los afectados este uso si se hiciera público? ¿El sistema evita el engaño (se identifica como IA)? | **Guía 10:** Confianza.<br>**Guía 13:** Divulgación. | `[ ]` |
+| **3. Protección de Datos** | ¿Hay datos sensibles? Si es así, ¿tenemos la arquitectura segura y la base legal para procesarlos? | **Guía 03:** Privacidad.<br>**Guía 07:** Fuga de Datos. | `[ ]` |
+| **4. Transparencia** | ¿Es explicable la decisión? ¿Podemos trazar *por qué* actuó así (logs de razonamiento) ante una auditoría? | **Guía 09:** Observabilidad.<br>**Guía 05:** Cadena de Pensamiento. | `[ ]` |
+| **5. Discriminación** | ¿Datos de origen libres de sesgos históricos? ¿Se ha evaluado el impacto en grupos vulnerables? | **Guía 03:** Auditoría de Datos.<br>**Guía 10:** Sesgo Algorítmico. | `[ ]` |
+| **6. Responsabilidad** | ¿Existe un "Dueño del Sistema" designado? ¿Está definido el protocolo de supervisión humana? | **Anexo 02:** Roles.<br>**Guía 07:** Rendición de Cuentas. | `[ ]` |
 
 ---
 
