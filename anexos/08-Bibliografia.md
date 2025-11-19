@@ -1,14 +1,14 @@
-### Anexo 08: Bibliografía Fundamental
+## Anexo 08: Bibliografía Fundamental
 
 Subtítulo: Lecturas Clave para el Arquitecto y el Vigilante Estratégico
 
-#### Introducción: Las Fuentes del Criterio
+### Introducción: Las Fuentes del Criterio
 
 Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas fundacionales. Su objetivo es proporcionar al "Arquitecto" y al "Vigilante Estratégico" las fuentes primarias sobre las que se construye el "criterio" de esta obra.
 
 ---
 
-#### Sobre el Bloque 1: Los Fundamentos
+### Sobre el Bloque 1: Los Fundamentos
 
 *(Ingeniería de Prompts, Contexto y Datos)*
 
@@ -29,7 +29,7 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 
 ---
 
-#### Sobre el Bloque 2: La Construcción
+### Sobre el Bloque 2: La Construcción
 
 *(Ingeniería de Agentes, Sistemas Cognitivos y Prototipado)*
 
@@ -46,7 +46,7 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 
 ---
 
-#### Sobre el Bloque 3: La Operación
+### Sobre el Bloque 3: La Operación
 
 *(Gobernanza, Evaluación e Industrialización)*
 
@@ -65,7 +65,7 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 
 ---
 
-#### Sobre el Bloque 4: El Impacto
+### Sobre el Bloque 4: El Impacto
 
 *(Humanidad, Ética, Estrategia y Valor)*
 
@@ -92,7 +92,7 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 
 ---
 
-#### Sobre el Bloque 5: La Expansión
+### Sobre el Bloque 5: La Expansión
 
 *(Perspectivas, Futuro y el Rol del "Vigilante Estratégico")*
 
