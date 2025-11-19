@@ -126,6 +126,4 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
     <div>
       <a href="../">Volver al Índice</a>
     </div>
-    <div>
-    </div>
 </div>
