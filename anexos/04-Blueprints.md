@@ -1,4 +1,4 @@
-### Anexo 02: Lecciones de Implementación (Blueprints)
+### Anexo 04: Lecciones de Implementación (Blueprints)
 
 Subtítulo: Blueprints y Casos de Estudio
 
@@ -33,7 +33,7 @@ La obra de guías (01-13) y anexos fue diseñada para los "Arquitectos" y "Direc
 * **Ingredientes (El "Stack" de la Obra):** 
   * **Guía 01 (Prompts):** Para definir el rol, el tono y las reglas de seguridad.  
   * **Guía 02 (Contexto y Memoria):** Específicamente la arquitectura **RAG (Generación Aumentada por Recuperación)**, para conectar el agente a la "biblioteca" de manuales de producto.  
-  * **Anexo 05 (Modelos y Mercado):** Para elegir un motor rápido y barato (ej. Claude Haiku, Gemini Flash).  
+  * **Anexo 03 (Modelos y Mercado):** Para elegir un motor rápido y barato (ej. Claude Haiku, Gemini Flash).  
   * **Guía 07 (Gobernanza):** Para definir las reglas de escalado a humano.  
   * **Guía 10 (Humanidad, Ética y Confianza):** Para aplicar "Humano-en-el-Bucle" y la "Transparencia Obligatoria".  
   * **Guía 03 (Datos):** Para asegurar que la "biblioteca" RAG esté limpia y actualizada.  
@@ -57,6 +57,7 @@ La obra de guías (01-13) y anexos fue diseñada para los "Arquitectos" y "Direc
      [Aquí se inyecta la pregunta del cliente: '¡no puedo entrar!']
      </PREGUNTA>
      ```
+
 * **La Sinergia (Colaboración):** 
   * **Rol del Agente:** Maneja el 100% del trabajo de "Sistema 1".  
   * **Rol del Humano (Validador):** El humano es elevado de "tomador de tickets" a "experto en escalaciones". Ya no responde 500 reseteos de contraseña. Ahora maneja las 50 quejas sensibles y complejas que el agente le escaló, que es trabajo puro de "Sistema 2" (empatía y resolución de problemas).
@@ -68,8 +69,8 @@ La obra de guías (01-13) y anexos fue diseñada para los "Arquitectos" y "Direc
 * **El Problema:** Un equipo legal necesita revisar 5.000 contratos (Datos Internos) para encontrar una cláusula de riesgo específica ("Cláusula de Terminación por Conveniencia"). Es un trabajo de "Sistema 1" masivo y de alto costo.  
 * **El Objetivo Estratégico:** Automatizar el 100% de la revisión (la decisión final sigue siendo humana) en un entorno seguro (on-premise).  
 * **Ingredientes (El "Stack" de la Obra):** 
-  * **Anexo 05 (Modelos y Mercado):** Modelo Open-Source (ej. Llama 3 8B) para control total de datos ("Comprar la Máquina").  
-  * **Anexo 01 (Ajuste Fino):** Para entrenar al modelo en la habilidad de "razonar como abogado" y formatear la salida en un JSON perfecto.  
+  * **Anexo 03 (Modelos y Mercado):** Modelo Open-Source (ej. Llama 3 8B) para control total de datos ("Comprar la Máquina").  
+  * **Anexo 05 (Ajuste Fino):** Para entrenar al modelo en la habilidad de "razonar como abogado" y formatear la salida en un JSON perfecto.  
   * **Guía 02 (Contexto y Memoria):** Arquitectura RAG para inyectar el texto del contrato específico en el prompt.  
   * **Guía 09 (Industrialización de IA):** Para industrializar el proceso y ejecutarlo en un servidor local seguro, guardando el "rastro de pensamiento" (log) de cada decisión para la auditabilidad.  
   * **Guía 03 (Datos):** Para asegurar que los 5.000 contratos son la versión correcta y están limpios.  
@@ -111,13 +112,13 @@ La obra de guías (01-13) y anexos fue diseñada para los "Arquitectos" y "Direc
   * **Guía 04 (Agentes):** Arquitectura de "Director de Programa" (PM de PMs).  
   * **Guía 01 (Prompts):** El "Prompt de Intención" (definir el "qué", no el "cómo").  
   * **Guía 05 (Diseño de Sistemas Cognitivos):** Para el "Agente Enrutador" (el que elige qué especialista usar).  
-  * **Anexo 05 (Modelos y Mercado):** Un portafolio de motores (AaaS y API).  
+  * **Anexo 03 (Modelos y Mercado):** Un portafolio de motores (AaaS y API).  
   * **Guía 07 (Gobernanza):** "Presupuestos de Agente" y "Humano-en-el-Bucle" para la acción final.  
   * **Guía 03 (Datos):** Para alimentar al Agente Investigador con datos de mercado fiables.  
 * **El Blueprint (El Flujo del Agente Director):** 
   1. **👤 Humano (Director de Estrategia):** Escribe el "Prompt de Intención":  
      ```text
-     Agente-Director, tu objetivo es 'diseñar un plan de lanzamiento para el producto X'. Tu presupuesto total es de $100. Debes 1) investigar el mercado (usando fuentes fiables), 2) generar 5 eslóganes, 3) redactar 3 emails de lanzamiento. Formula tu plan y preséntamelo.
+     "Agente-Director, tu objetivo es 'diseñar un plan de lanzamiento para el producto X'. Tu presupuesto total es de $100. Debes 1) investigar el mercado (usando fuentes fiables), 2) generar 5 eslóganes, 3) redactar 3 emails de lanzamiento. Formula tu plan y preséntamelo."
      ```
   2. **💭 Agente Director (Ciclo ReAct 1):** 
      * *Razona:* "OK. Mi primer paso es la investigación de mercado. Usaré al 'Agente-Investigador'."  
@@ -131,7 +132,7 @@ La obra de guías (01-13) y anexos fue diseñada para los "Arquitectos" y "Direc
      * *Razona:* "Tengo los eslóganes. Ahora necesito los emails. Usaré el motor más barato."  
      * *Actúa (Enrutador):* Llama al Agente PM 3 (Redactor), que es una API de Claude 3.5 Haiku.  
      * *Observa:* "Tengo 3 borradores de email."  
-  5. **💭 Agente Director (Gobernanza - Control Final):** 
+  5. **💭 Agente Director (Gobernanza - Control Final):**
      * *Razona:* "Tengo todos los entregables. Mi plan está completo. El costo total fue $1.50 (dentro del presupuesto de $100). No tengo la herramienta enviar\_email. Debo presentar el plan al humano."  
      * *Respuesta al Humano:* "Plan completado (Costo: $1.50). Aquí están la investigación, los 5 eslóganes y los 3 borradores. Esperando validación (Humano-en-el-Bucle)."  
 * **La Sinergia (Colaboración):** 
@@ -152,9 +153,9 @@ La obra de guías (01-13) y anexos fue diseñada para los "Arquitectos" y "Direc
   * **Guía 07 (Gobernanza):** El agente reporta a un dashboard de gobernanza.  
 * **El Blueprint (El Flujo del Agente):** 
   1. **Inicio (Programado):** El agente se "despierta" a las 2 AM.  
-  2. **Prompt de Sistema:**
-     ```text
-     Eres 'Auditor-IA-001', un agente de gobernanza de datos. Tu única misión es asegurar la salud de nuestras bibliotecas RAG. Tienes las herramientas scan_vector_db() y check_metadata(). Ejecuta tu protocolo de auditoría y reporta solo las anomalías al Dashboard de Gobernanza.
+  2. **Prompt de Sistema:** 
+    ```text
+     "Eres 'Auditor-IA-001', un agente de gobernanza de datos. Tu única misión es asegurar la salud de nuestras bibliotecas RAG. Tienes las herramientas scan_vector_db() y check_metadata(). Ejecuta tu protocolo de auditoría y reporta solo las anomalías al Dashboard de Gobernanza."
      ```
   3. **Ciclo ReAct 1:** 
      * *Razona:* "Iniciando auditoría. Primero, buscaré documentos sin metadatos de 'fecha\_caducidad'."  
@@ -178,17 +179,17 @@ La obra de guías (01-13) y anexos fue diseñada para los "Arquitectos" y "Direc
 
 #### Blueprint 5: El "Generador de Datos Sintéticos" (PM de Entrenamiento)
 
-* **El Problema:** El **Ajuste Fino (Fine-Tuning)**, la técnica para especializar el "cerebro" de un modelo, requiere cientos o miles de ejemplos de alta calidad. ¿Qué pasa si solo tenemos 50 ejemplos "perfectos" de emails de soporte, no los 1.000 necesarios?  
+* **El Problema:** El **Ajuste Fino (Fine-Tuning)** —la técnica para especializar el "cerebro" de un modelo— requiere cientos o miles de ejemplos de alta calidad. ¿Qué pasa si solo tenemos 50 ejemplos "perfectos" de emails de soporte, no los 1.000 necesarios?  
 * **El Objetivo Estratégico:** Usar un "motor de frontera" (un LLM grande y caro como GPT-4o u Opus) para "auto-multiplicar" los 50 ejemplos humanos "dorados", generando 950 nuevos ejemplos de **datos sintéticos** de alta calidad para el set de entrenamiento.  
-* **Ingredientes (El "Stack" de la Obra):**
+* **Ingredientes (El "Stack" de la Obra):** 
   * **Guía 03 (Datos):** Específicamente la táctica de "Datos Sintéticos".  
-  * **Anexo 01 (Ajuste Fino):** Es el consumidor final de este blueprint.  
-  * **Anexo 05 (Modelos):** Para usar un motor de frontera (caro) solo para esta tarea de generación.  
+  * **Anexo 05 (Ajuste Fino):** Es el consumidor final de este blueprint.  
+  * **Anexo 03 (Modelos):** Para usar un motor de frontera (caro) solo para esta tarea de generación.  
   * **Guía 01 (Prompts):** Un "meta-prompt" que define las cualidades de un buen ejemplo.  
   * **Guía 08 (Evaluación):** El rol humano es 100% "Validador" de los datos generados.  
 * **El Blueprint (El Flujo del Agente):** 
   1. **Contexto:** El humano provee 10 de los 50 ejemplos "dorados" en el prompt.  
-  2. **Prompt de Sistema (Meta-Prompt):**
+  2. **Prompt de Sistema (Meta-Prompt):** 
      ```text
      Eres un 'Generador de Datos de Entrenamiento'. Has analizado los 10 ejemplos <CONTEXTO> que definen nuestra 'Voz de Marca' (empática, resolutiva, profesional). Tu tarea es generar 20 nuevos ejemplos de pares (pregunta_cliente, respuesta_agente) que sigan exactamente este estilo y calidad.
      ```
@@ -227,19 +228,19 @@ La obra de guías (01-13) y anexos fue diseñada para los "Arquitectos" y "Direc
 * **El Problema:** El "Agente-Analista-Legal" (Blueprint 2\) es un activo interno tan valioso y eficiente que otras organizaciones han preguntado si pueden usarlo.  
 * **El Objetivo Estratégico:** Implementar la Estrategia de Innovación convirtiendo un activo de eficiencia interna (un "centro de costos") en un producto comercial externo (un "centro de ingresos") como un **Agente-como-Servicio (AaaS)**.  
 * **Ingredientes (El "Stack" de la Obra):** 
-  * **Guía 12 (Estrategia y Valor):** Específicamente la "InnovACIÓN (Oportunidad)".  
+  * **Guía 12 (Estrategia y Valor):** Específicamente la "Innovación (Oportunidad)".  
   * **Guía 09 (Industrialización):** Llevado a nivel de producto (gestión de API, escalabilidad, monitoreo multi-tenant).  
   * **Guía 07 (Gobernanza):** Fundamental. Se necesita una gobernanza multi-tenant:  
     * **Aislamiento de Datos:** El Cliente A nunca debe poder ver los datos RAG del Cliente B.  
     * **Gestión de Costos:** El "Dashboard de Gobernanza" debe rastrear los costos de API por cliente.  
-  * **Anexo 01 (Ajuste Fino):** El "adaptador" LoRA entrenado es ahora la Propiedad Intelectual (PI) secreta que se está vendiendo.  
-  * **Anexo 05 (Modelos):** El modelo open-source subyacente.  
+  * **Anexo 05 (Ajuste Fino):** El "adaptador" LoRA entrenado es ahora la Propiedad Intelectual (PI) secreta que se está vendiendo.  
+  * **Anexo 03 (Modelos):** El modelo open-source subyacente.  
 * **El Blueprint (El Flujo de Arquitectura):** 
   1. (Industrialización) Crear un endpoint de API seguro para el agente especializado.  
   2. (Gobernanza) Implementar un "API Gateway" para la autenticación (claves de API por cliente) y "Límites de Tasa" (para prevenir abusos y bucles de costos).  
   3. (Datos / Gobernanza) Modificar la lógica RAG para que sea "consciente del tenant". La "biblioteca" (Base Vectorial) se filtra automáticamente usando el ID del cliente que hace la llamada.  
   4. (Industrialización / Gobernanza) Vincular el "Dashboard de Gobernanza" (costos, tokens, latencia) a los sistemas de facturación, monitoreando el rendimiento por cliente.  
-  5. (Ajuste Fino) El "adaptador" de AjustE Fino es el activo central (la PI) que se protege.  
+  5. (Ajuste Fino) El "adaptador" de Ajuste Fino es el activo central (la PI) que se protege.  
 * **La Sinergia (Colaboración):** 
   * **Rol del Agente:** El agente ahora genera valor directo.  
   * **Rol del Humano (Estratega):** La organización ha completado el viaje. La IA ya no es solo una herramienta de eficiencia interna; se ha convertido en un producto de innovación externa, creando un nuevo "Foso Competitivo".
@@ -247,12 +248,12 @@ La obra de guías (01-13) y anexos fue diseñada para los "Arquitectos" y "Direc
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
     <div>
-      <a href="./01-Ajuste-Fino.html">« Anexo Anterior</a>
+      <a href="./03-Modelos-Mercado.html">« Anexo Anterior</a>
     </div>
     <div>
       <a href="../">Volver al Índice</a>
     </div>
     <div>
-      <a href="./03-Plantillas-Recursos.html">Siguiente Anexo »</a>
+      <a href="./05-Ajuste-Fino.html">Siguiente Anexo »</a>
     </div>
 </div>

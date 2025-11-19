@@ -65,13 +65,14 @@ La obra es una arquitectura de aprendizaje modular que traza la ruta completa de
 
 #### Anexos (Biblioteca del Arquitecto)
 
-* [Anexo 01: Ajuste Fino y Adaptación de Modelos](./anexos/01-Ajuste-Fino.md)
-* [Anexo 02: Lecciones de Implementación](./anexos/02-Blueprints.md)
-* [Anexo 03: Plantillas y Recursos](./anexos/03-Plantillas-Recursos.md)
-* [Anexo 04: Política Institucional de IA](./anexos/04-Politica-Institucional.md)
-* [Anexo 05: Modelos y Mercado LLM](./anexos/05-Modelos-Mercado.md)
-* [Anexo 06: Glosario Unificado](./anexos/06-Glosario.md)
-* [Anexo 07: Bibliografía Fundamental](./anexos/07-Bibliografia.md)
+* [Anexo 01: Formulación y Evaluación de Proyectos de IA](./anexos/01-Formulacion-Evaluacion.md)
+* [Anexo 02: Política Institucional de IA](./anexos/02-Politica-Institucional.md)
+* [Anexo 03: Modelos y Mercado LLM](./anexos/03-Modelos-Mercado.md)
+* [Anexo 04: Lecciones de Implementación](./anexos/04-Blueprints.md)
+* [Anexo 05: Ajuste Fino y Adaptación de Modelos](./anexos/05-Ajuste-Fino.md)
+* [Anexo 06: Plantillas y Recursos](./anexos/06-Plantillas-Recursos.md)
+* [Anexo 07: Glosario Unificado](./anexos/07-Glosario.md)
+* [Anexo 08: Bibliografía Fundamental](./anexos/08-Bibliografia.md)
 
 ---
 

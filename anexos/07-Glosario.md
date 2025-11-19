@@ -1,4 +1,4 @@
-### Anexo 06: Glosario Unificado
+### Anexo 07: Glosario Unificado
 
 #### Introducción: Un Lenguaje Común
 
@@ -21,17 +21,17 @@ Este anexo es el léxico centralizado de "Inteligencia Artificial Aplicada". La 
 **Agente Enrutador (Router Agent)**
 
 * **Definición:** Un tipo de agente "gerente" (o de metacognición) cuyo único trabajo es analizar una solicitud y dirigirla al agente especialista o al modelo de IA (LLM) más adecuado para esa tarea específica (ej: enviar tareas analíticas a Claude 3 Opus y tareas simples a Haiku).  
-* **Referencia Principal:** Guía 05 (Diseño de Sistemas Cognitivos), Anexo 05 (Modelos y Mercado LLM).
+* **Referencia Principal:** Guía 05 (Diseño de Sistemas Cognitivos), Anexo 03 (Modelos y Mercado LLM).
 
 **Agentes-como-Servicio (AaaS)**
 
-* **Definición:** Una estrategia de adquisición (Anexo 05) donde se "contrata al especialista". Es un producto de IA terminado (ej. Perplexity, Copilot) que se consume vía suscripción, ofreciendo rápida implementación a cambio de baja flexibilidad técnica.
-* **Referencia Principal:** Anexo 05 (Modelos y Mercado LLM).
+* **Definición:** Una estrategia de adquisición (Anexo 03) donde se "contrata al especialista". Es un producto de IA terminado (ej. Perplexity, Copilot) que se consume vía suscripción, ofreciendo rápida implementación a cambio de baja flexibilidad técnica.
+* **Referencia Principal:** Anexo 03 (Modelos y Mercado LLM).
 
 **Ajuste Fino (Fine-Tuning)**
 
-* **Definición:** El proceso de re-entrenar un modelo de IA preexistente (como Llama 3\) usando un conjunto de datos más pequeño y específico. No le enseña nuevo conocimiento, sino que ajusta su comportamiento, tono, estilo o su habilidad para realizar una tarea muy específica.  
-* **Referencia Principal:** Anexo 01 (Ajuste Fino y Adaptación de Modelos).
+* **Definición:** El proceso de re-entrenar un modelo de IA preexistente (como Llama 3) usando un conjunto de datos más pequeño y específico. No le enseña nuevo conocimiento, sino que ajusta su comportamiento, tono, estilo o su habilidad para realizar una tarea muy específica.  
+* **Referencia Principal:** Anexo 05 (Ajuste Fino y Adaptación de Modelos).
 
 **Alucinación (Hallucination)**
 
@@ -71,7 +71,7 @@ Este anexo es el léxico centralizado de "Inteligencia Artificial Aplicada". La 
 **Blueprint**
 
 * **Definición:** Un caso de estudio práctico y un plano de arquitectura. Es la plantilla que conecta la teoría de las Guías y la técnica de los Anexos para resolver un problema de negocio específico, detallando los ingredientes, el flujo y la sinergia resultante.  
-* **Referencia Principal:** Anexo 02 (Lecciones de Implementación).
+* **Referencia Principal:** Anexo 04 (Lecciones de Implementación).
 
 **Brecha de Aprendizaje (Learning Gap)**
 
@@ -80,7 +80,7 @@ Este anexo es el léxico centralizado de "Inteligencia Artificial Aplicada". La 
 
 **Brecha GenAI (GenAI Divide)**
 
-* **Definición:** Término de la industria (2025) que describe la amplia brecha entre la alta experimentación con IA Generativa (la mayoría de las organizaciones) y el bajo retorno de inversión tangible (el 5% que logra impacto real en el negocio ). También se le conoce como la "Brecha de Escalamiento" (Scaling Gap), ya que los sondeos muestran que la mayoría de las empresas (62%) están atascadas en fases de "Experimentación" o "Pilotaje" y no logran escalar el valor a nivel empresarial.  
+* **Definición:** Término de la industria (2025) que describe la amplia brecha entre la alta experimentación con IA Generativa (la mayoría de las organizaciones) y el bajo retorno de inversión tangible (el 5% que logra impacto real en el negocio). También se le conoce como la "Brecha de Escalamiento" (Scaling Gap), ya que los sondeos muestran que la mayoría de las empresas (62%) están atascadas en fases de "Experimentación" o "Pilotaje" y no logran escalar el valor a nivel empresarial.  
 * **Referencia Principal:** Guía 12 (Estrategia y Valor en la Era de la IA).
 
 **Bucle de Costos (Cost Loop)**
@@ -116,17 +116,22 @@ Este anexo es el léxico centralizado de "Inteligencia Artificial Aplicada". La 
 **Datos Sintéticos (Synthetic Data)**
 
 * **Definición:** Una táctica de Estrategia de Datos donde se utiliza un modelo de IA potente para generar un gran volumen de ejemplos de entrenamiento de alta calidad. Es la fuente de datos clave para el Ajuste Fino.
-* **Referencia Principal:** Guía 03 (Estrategia de Datos), Anexo 01 (Ajuste Fino).
+* **Referencia Principal:** Guía 03 (Estrategia de Datos), Anexo 05 (Ajuste Fino).
 
 **Divulgación (Disclosure)**
 
 * **Definición:** Un principio legal y técnico para Agentes Autónomos (Guía 13). Requiere que el agente se identifique transparentemente como una IA y revele ante Terceros a quién representa (quién es su "Principal"). Es la base de la confianza en el comercio automatizado para asignar responsabilidad financiera.
-* **Referencia Principal:** Guía 13 (Perspectivas y Futuro de la IA), Anexo 07 (Bibliografía Fundamental).
+* **Referencia Principal:** Guía 13 (Perspectivas y Futuro de la IA), Anexo 08 (Bibliografía Fundamental).
 
 **Estrategia de Datos (Data Strategy)**
 
 * **Definición:** El plan maestro para la adquisición, almacenamiento, limpieza, seguridad y (crucialmente) vectorización de los datos propietarios de una organización. Define el "combustible" que alimentará a los sistemas RAG y de Ajuste Fino.  
 * **Referencia Principal:** Guía 03 (Estrategia de Datos).
+
+**Evaluación de Impacto Algorítmico (EIA)**
+
+* **Definición:** Una práctica preventiva de gobernanza (Guía 07) que analiza los posibles riesgos, sesgos y daños de un sistema de IA antes de su implementación. Formaliza la rendición de cuentas al asignar un responsable humano ("Dueño del Sistema") y es el equivalente al "Screening" o "Triage" obligatorio.
+* **Referencia Principal:** Guía 07 (Gobernanza de IA), Anexo 01 (Formulación y Evaluación).
 
 **Foso Competitivo (Moat)**
 
@@ -175,13 +180,13 @@ Este anexo es el léxico centralizado de "Inteligencia Artificial Aplicada". La 
 
 **Industrialización (Industrialization)**
 
-* **Definición:** El proceso de llevar un prototipo de IA funcional (Guía 06\) a un sistema de nivel de producción: escalable, confiable, monitoreado y mantenible. Ver LLM-Ops.  
+* **Definición:** El proceso de llevar un prototipo de IA funcional (Guía 06) a un sistema de nivel de producción: escalable, confiable, monitoreado y mantenible. Ver LLM-Ops.  
 * **Referencia Principal:** Guía 09 (Industrialización de IA).
 
 **Ingeniería de Contexto (Context Engineering)**
 
 * **Definición:** La evolución de la Ingeniería de Prompts. Es la disciplina técnica (definida por Google, 2025) de ensamblar dinámicamente *toda* la información necesaria (instrucciones, herramientas, RAG, memoria y sesión) dentro de la ventana de contexto de un LLM para crear agentes inteligentes y con estado.
-* **Referencia Principal:** Guía 02 (Ingeniería de Contexto y Memoria), Anexo 07 (Bibliografía Fundamental).
+* **Referencia Principal:** Guía 02 (Ingeniería de Contexto y Memoria), Anexo 08 (Bibliografía Fundamental).
 
 **Ingeniería de Prompts (Prompt Engineering)**
 
@@ -201,12 +206,12 @@ Este anexo es el léxico centralizado de "Inteligencia Artificial Aplicada". La 
 **Lealtad Agéntica (Agentic Loyalty)**
 
 * **Definición:** Un nuevo riesgo de gobernanza para agentes autónomos (identificado por Riedl & Desai, 2025). Se refiere al conflicto de interés potencial donde un agente podría priorizar los intereses comerciales de su plataforma desarrolladora sobre los intereses de su usuario (el Principal), violando el "deber fiduciario".
-* **Referencia Principal:** Guía 13 (Perspectivas y Futuro de la IA), Anexo 07 (Bibliografía Fundamental).
+* **Referencia Principal:** Guía 13 (Perspectivas y Futuro de la IA), Anexo 08 (Bibliografía Fundamental).
 
 **Ley de Agencia (Agency Law)**
 
 * **Definición:** El marco legal centenario que regula las relaciones donde una persona (Agente) actúa en nombre de otra (Principal). Se ha convertido en el marco de referencia crítico (Guía 13) para determinar la responsabilidad y los límites de autoridad de los nuevos Agentes Autónomos de IA que ejecutan transacciones.
-* **Referencia Principal:** Anexo 07 (Bibliografía Fundamental).
+* **Referencia Principal:** Anexo 08 (Bibliografía Fundamental).
 
 **Licencia Social (Social License)**
 
@@ -220,7 +225,7 @@ Este anexo es el léxico centralizado de "Inteligencia Artificial Aplicada". La 
 
 **LLM-como-Juez (LLM-as-a-judge)**
 
-* **Definición:** Una táctica de Evaluación (Guía 08). Consiste en usar un LLM de máxima potencia (ej. GPT-4o) como un "robot de QA". Se le entrega la Rúbrica de Evaluación (Anexo 03) como prompt para que califique de forma rápida y escalable las respuestas del agente.
+* **Definición:** Una táctica de Evaluación (Guía 08). Consiste en usar un LLM de máxima potencia (ej. GPT-4o) como un "robot de QA". Se le entrega la Rúbrica de Evaluación (Anexo 06) como prompt para que califique de forma rápida y escalable las respuestas del agente.
 * **Referencia Principal:** Guía 08 (Evaluación, Calidad y Validación de IA).
 
 **LLM-Ops (Large Language Model Operations)**
@@ -231,7 +236,7 @@ Este anexo es el léxico centralizado de "Inteligencia Artificial Aplicada". La 
 **LoRA / QLoRA**
 
 * **Definición:** (Low-Rank Adaptation) La técnica de ingeniería clave para el Ajuste Fino eficiente. En lugar de re-entrenar el modelo completo (miles de millones de parámetros), "congela" el modelo base e inserta una pequeña "capa adaptadora" que es la única que se entrena. QLoRA es una versión aún más eficiente en memoria.  
-* **Referencia Principal:** Anexo 01 (Ajuste Fino y Adaptación de Modelos).
+* **Referencia Principal:** Anexo 05 (Ajuste Fino y Adaptación de Modelos).
 
 **Memoria (vs. RAG)**
 
@@ -250,8 +255,8 @@ Este anexo es el léxico centralizado de "Inteligencia Artificial Aplicada". La 
 
 **Modelos Open-Source (Ejecución Local)**
 
-* **Definición:** Una estrategia de adquisición (Anexo 05) donde se "compra la máquina". El modelo (ej. Llama, Mistral) se ejecuta en infraestructura propia, dando **Control** y **Soberanía de Datos** total. Es clave para el Ajuste Fino.
-* **Referencia Principal:** Anexo 05 (Modelos y Mercado LLM).
+* **Definición:** Una estrategia de adquisición (Anexo 03) donde se "compra la máquina". El modelo (ej. Llama, Mistral) se ejecuta en infraestructura propia, dando **Control** y **Soberanía de Datos** total. Es clave para el Ajuste Fino.
+* **Referencia Principal:** Anexo 03 (Modelos y Mercado LLM).
 
 **Modelos Pequeños (SLMs)**
 
@@ -260,8 +265,8 @@ Este anexo es el léxico centralizado de "Inteligencia Artificial Aplicada". La 
 
 **Modelos Propietarios (APIs)**
 
-* **Definición:** Una estrategia de adquisición (Anexo 05) donde se "arrienda el cerebro". Se accede al modelo (ej. GPT, Claude) a través de una API, pagando por token. Prioriza el **Rendimiento** sobre el **Control**.
-* **Referencia Principal:** Anexo 05 (Modelos y Mercado LLM).
+* **Definición:** Una estrategia de adquisición (Anexo 03) donde se "arrienda el cerebro". Se accede al modelo (ej. GPT, Claude) a través de una API, pagando por token. Prioriza el **Rendimiento** sobre el **Control**.
+* **Referencia Principal:** Anexo 03 (Modelos y Mercado LLM).
 
 **Multimodalidad (Multimodality)**
 
@@ -345,8 +350,8 @@ Este anexo es el léxico centralizado de "Inteligencia Artificial Aplicada". La 
 
 **Rúbrica de Evaluación (Evaluation Rubric)**
 
-* **Definición:** Una plantilla de calificación (Anexo 03) usada en la Evaluación (Guía 08) para medir objetivamente la calidad de la respuesta de un agente. Incluye métricas clave como Facticidad, Relevancia, Tono y Seguridad.
-* **Referencia Principal:** Guía 08 (Evaluación, Calidad y Validación de IA), Anexo 03 (Plantillas y Recursos).
+* **Definición:** Una plantilla de calificación (Anexo 06) usada en la Evaluación (Guía 08) para medir objetivamente la calidad de la respuesta de un agente. Incluye métricas clave como Facticidad, Relevancia, Tono y Seguridad.
+* **Referencia Principal:** Guía 08 (Evaluación, Calidad y Validación de IA), Anexo 06 (Plantillas y Recursos).
 
 **Sesión (de Agente)**
 
@@ -373,10 +378,15 @@ Este anexo es el léxico centralizado de "Inteligencia Artificial Aplicada". La 
 * **Definición:** La unidad fundamental de procesamiento de un LLM. Un token no es una palabra; es una "pieza" de palabra (ej: "Gobernanza" pueden ser 3: "Gob", "er", "nanza"). Los costos y la Ventana de Contexto se miden en tokens.  
 * **Referencia Principal:** Guía 02 (Ingeniería de Contexto y Memoria).
 
+**TOON (Token-Oriented Object Notation)**
+
+* **Definición:** Un formato de serialización de datos diseñado para ser más eficiente en tokens que JSON. Reduce el "overhead" sintáctico (llaves y comillas), optimizando el costo y la latencia en la comunicación con LLMs, especialmente en una Web Agéntica.
+* **Referencia Principal:** Guía 13 (Perspectivas y Futuro de la IA), Anexo 03 (Modelos y Mercado LLM).
+
 **Transformer**
 
 * **Definición:** La arquitectura de IA fundamental que define la generación actual de LLMs (GPT, Llama, Gemini, etc.). Su mecanismo clave es la "auto-atención". Sus limitaciones estratégicas son el **Costo Cuadrático** (un problema de contexto) y la **Amnesia Estática** (un problema de memoria).
-* **Referencia Principal:** Guía 02 (Ingeniería de Contexto y Memoria), Anexo 05 (Modelos y Mercado LLM).
+* **Referencia Principal:** Guía 02 (Ingeniería de Contexto y Memoria), Anexo 03 (Modelos y Mercado LLM).
 
 **Tree of Thoughts (ToT)**
 
@@ -401,17 +411,17 @@ Este anexo es el léxico centralizado de "Inteligencia Artificial Aplicada". La 
 **Web Agéntica (Agentic Web)**
 
 * **Definición:** Concepto de la industria (mencionado en informes del MIT de 2025) que describe la siguiente evolución de la IA, más allá de los agentes individuales. Es una red persistente e interconectada de agentes autónomos que pueden colaborar, negociar y coordinar tareas entre sí a través de diferentes plataformas, dominios y organizaciones, utilizando protocolos de interoperabilidad (como NANDA, MCP o A2A ).
-* **Referencia Principal:** Guía 13 (Perspectivas y Futuro de la IA) .
+* **Referencia Principal:** Guía 13 (Perspectivas y Futuro de la IA).
 
 ---
-  <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
+<div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
     <div>
-      <a href="./05-Modelos-Mercado.html">« Anexo Anterior</a>
+      <a href="./06-Plantillas-Recursos.html">« Anexo Anterior</a>
     </div>
     <div>
       <a href="../">Volver al Índice</a>
     </div>
     <div>
-      <a href="./07-Bibliografia.html">Siguiente Anexo »</a>
+      <a href="./08-Bibliografia.html">Siguiente Anexo »</a>
     </div>
-  </div>
+</div>

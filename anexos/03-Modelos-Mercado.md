@@ -1,4 +1,4 @@
-### Anexo 05: Modelos y Mercado LLM
+### Anexo 03: Modelos y Mercado LLM
 
 Subtítulo: Del "Jefe de Adquisiciones" al "Arquitecto de Portafolio"
 
@@ -135,14 +135,14 @@ Para instituciones públicas o reguladas (finanzas, salud), el factor **Control*
 La maestría no reside en saber qué LLM es "mejor", sino en tener el juicio de ingeniería para diseñar un ecosistema flexible: rendimiento donde importa, Control donde hay riesgo, y Costo donde la escala lo exige. El rol final no es solo gobernar una fábrica; es ser el "Arquitecto del Portafolio de IA".
 
 ---
-  <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
+<div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
     <div>
-      <a href="./04-Politica-Institucional.html">« Anexo Anterior</a>
+      <a href="./02-Politica-Institucional.html">« Anexo Anterior</a>
     </div>
     <div>
       <a href="../">Volver al Índice</a>
     </div>
     <div>
-      <a href="./06-Glosario.html">Siguiente Anexo »</a>
+      <a href="./04-Blueprints.html">Siguiente Anexo »</a>
     </div>
-  </div>
+</div>

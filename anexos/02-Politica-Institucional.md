@@ -1,5 +1,5 @@
 
-## Anexo 04: Política Institucional de Uso Responsable de Inteligencia Artificial
+## Anexo 02: Política Institucional de Uso Responsable de Inteligencia Artificial
 
 *Plantilla Marco para Organizaciones Públicas y Privadas*
 
@@ -175,14 +175,14 @@ Para adopción en empresas privadas, se recomienda:
 * mantener idénticos los principios de transparencia, seguridad y trazabilidad.
 
 ---
-  <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
+<div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
     <div>
-      <a href="./03-Plantillas-Recursos.html">« Anexo Anterior</a>
+      <a href="./01-Formulacion-Evaluacion.html">« Anexo Anterior</a>
     </div>
     <div>
       <a href="../">Volver al Índice</a>
     </div>
     <div>
-      <a href="./05-Modelos-Mercado.html">Siguiente Anexo »</a>
+      <a href="./03-Modelos-Mercado.html">Siguiente Anexo »</a>
     </div>
-  </div>
+</div>

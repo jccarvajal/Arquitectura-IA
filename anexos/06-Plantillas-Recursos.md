@@ -1,4 +1,4 @@
-### Anexo 03: Plantillas y Recursos
+### Anexo 06: Plantillas y Recursos
 
 Subtítulo: El "Cinturón de Herramientas" del Arquitecto
 
@@ -89,7 +89,7 @@ Esta rúbrica (de Guía 08) se usa para calificar las respuestas del "Golden Set
 #### Sección 3: Estrategia y Operaciones
 
 **Matriz 3.1: Decisión de Mercado de LLM**
-Esta matriz (de Anexo 05) se usa para comparar y seleccionar el modelo de IA (motor) adecuado para un caso de uso específico.
+Esta matriz (de Anexo 03) se usa para comparar y seleccionar el modelo de IA (motor) adecuado para un caso de uso específico.
 
 **Caso de Uso:** \[Ej: Chatbot de RAG para consulta de pólizas\]
 
@@ -108,17 +108,17 @@ Un framework de 2x2 para decidir para qué usar la IA en un nuevo proyecto.
 | (Eje Y \ Eje X) | **INNOVACIÓN BAJA (Hacer lo mismo)** | **INNOVACIÓN ALTA (Hacer cosas nuevas)** |
 | :--- | :--- | :--- |
 | **EFICIENCIA ALTA (Hacerlo más barato/rápido)** | **Cuadrante 1: Optimización de Procesos.**<br>Descripción: Usar IA para automatizar tareas repetitivas y reducir costos.<br>Ejemplos: Clasificación de emails, resúmenes automáticos, transcripción de reuniones. | **Cuadrante 2: Transformación de Negocio.**<br>Descripción: Usar la eficiencia de la IA (costo marginal cero) para crear nuevos modelos de negocio o servicios que antes eran inviables.<br>Ejemplos: Hiper-personalización a escala (Guía 12), Producto-como-Agente (Blueprint 7). |
-| **EFICIENCIA BAJA (Hacerlo al mismo costo/velocidad)** | **Cuadrante 3: Experimentación (PoC).**<br>Descripción: Proyectos de bajo impacto para desarrollar habilidades internas sin un ROI claro.<br>EjemplOS: Un bot de Slack interno para diversión, pruebas de concepto desechables. | **Cuadrante 4: Investigación y Desarrollo (I+D).**<br>Descripción: Proyectos de alto costo/esfuerzo para crear capacidades completamente nuevas. El ROI no es inmediato.<br>Ejemplos: Desarrollar un "Agente Director" (Blueprint 3) o un modelo con Ajuste Fino (Anexo 01) por primera vez. |
+| **EFICIENCIA BAJA (Hacerlo al mismo costo/velocidad)** | **Cuadrante 3: Experimentación (PoC).**<br>Descripción: Proyectos de bajo impacto para desarrollar habilidades internas sin un ROI claro.<br>EjemplOS: Un bot de Slack interno para diversión, pruebas de concepto desechables. | **Cuadrante 4: Investigación y Desarrollo (I+D).**<br>Descripción: Proyectos de alto costo/esfuerzo para crear capacidades completamente nuevas. El ROI no es inmediato.<br>Ejemplos: Desarrollar un "Agente Director" (Blueprint 3) o un modelo con Ajuste Fino (Anexo 05) por primera vez. |
 
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
     <div>
-      <a href="./02-Blueprints.html">« Anexo Anterior</a>
+      <a href="./05-Ajuste-Fino.html">« Anexo Anterior</a>
     </div>
     <div>
       <a href="../">Volver al Índice</a>
     </div>
     <div>
-      <a href="./04-Politica-Institucional.html">Siguiente Anexo »</a>
+      <a href="./07-Glosario.html">Siguiente Anexo »</a>
     </div>
 </div>
