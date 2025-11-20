@@ -97,26 +97,40 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 *(Perspectivas, Futuro y el Rol del "Vigilante Estratégico")*
 
 * **Tendencia 1: La Explosión de la Multimodalidad** 
-  * **OpenAI / Anthropic / Google (2025). "System Cards: GPT-5, Claude 4, and Gemini 3 Pro".** 
-    * **Por qué leerlo:** Los *papers* de 2023/24 introdujeron la *capacidad*. Los *system cards* de 2025 detallan la *implementación* a escala industrial y, lo que es más importante, sus nuevos y complejos **riesgos de gobernanza** (ej. desinformación audiovisual, razonamiento autónomo).  
+  * **Google DeepMind (2025). "Gemini 3 Pro Model Card".** 
+    * **Por qué leerlo:** El documento técnico oficial que detalla la arquitectura multimodal nativa y las capacidades de razonamiento ("Deep Think") del modelo Gemini 3, validando las capacidades descritas en la Guía 13 y superando a los reportes de 2024.
+  * **OpenAI / Anthropic (2025). "System Cards: GPT-5 and Claude 4".** 
+    * **Por qué leerlo:** Detallan la implementación a escala industrial y sus nuevos y complejos **riesgos de gobernanza** (ej. desinformación audiovisual, razonamiento autónomo).
+
 * **Tendencia 2: IA en el Dispositivo (SLMs)** 
   * **Microsoft / Apple / Meta (2025). "Technical Reports: Phi-4, Llama 4-8B, and On-Device Core Intelligence".** 
-    * **Por qué leerlo:** Los *papers* de 2024 (Phi-3) fueron pruebas de concepto. Los reportes de 2025 demuestran la *madurez* de los SLMs. Son la referencia clave para el "Control" (Soberanía de Datos) y el "Costo" (Latencia Cero) del **Triángulo de Adquisición** (Anexo 03).  
+     * **Por qué leerlo:** Los *papers* de 2024 (Phi-3) fueron pruebas de concepto. Los reportes de 2025 demuestran la *madurez* de los SLMs. Son la referencia clave para el "Control" (Soberanía de Datos) y el "Costo" (Latencia Cero) del **Triángulo de Adquisición** (Anexo 03).
+
 * **Tendencia 3: De Agentes-Herramienta a Agentes Autónomos** 
+  * **Anthropic. (Noviembre 2025). "Disrupting the first reported AI-orchestrated cyber espionage campaign".**
+    * **Por qué leerlo:** Detalla el incidente GTG-1002. Proporciona la evidencia empírica de que la "lealtad del agente" es al prompt y no al usuario, validando el riesgo central de la autonomía sin supervisión.
+  * **Riedl, M. O., & Desai, D. R. (Agosto 2025). "AI Agents and the Law". arXiv.**
+    * **Por qué leerlo:** Un análisis crítico que conecta la ingeniería con la "Ley de Agencia". Identifica el "Problema de la Lealtad" (¿para quién trabaja el agente?) y propone deberes fiduciarios para la IA.
   * **Cognition Labs / Adept (2025). "Frameworks for Reliable Autonomous Agents in Production".** 
     * **Por qué leerlo:** El *paper* "Generative Agents" (2023) fue una simulación académica. Los *white papers* de 2025 (de las startups que lideran esta área) describen las arquitecturas de **Gobernanza** (Guía 07\) necesarias para desplegar agentes autónomos *en el mundo real*.  
-  * **Riedl, M. O., & Desai, D. R. (Agosto 2025). "AI Agents and the Law". arXiv.**
-    * **Por qué leerlo:** Un análisis crítico que conecta la ingeniería de software con la "Ley de Agencia". Identifica dos nuevos riesgos para los Agentes Autónomos (Tendencia 3): el "Problema de la Lealtad" (¿el agente trabaja para ti o para su creador?) y el "Problema de la Divulgación" ante terceros. Propone expandir la alineación de IA para incluir deberes fiduciarios.
-  * **Anthropic. (Noviembre 2025). "Disrupting the first reported AI-orchestrated cyber espionage campaign".**
-    * **Por qué leerlo:** Detalla el primer ciberataque a gran escala (detectado en sept. 2025) ejecutado por un agente de IA (Claude Code). Proporciona la evidencia empírica de que la "lealtad del agente" es al prompt (en este caso, un "juego de rol" malicioso) y no al usuario, un riesgo central discutido en la Guía 13.
-* **Tendencia 4: IA Corpórea (Embodied AI)** 
-  * **Figure AI / Boston Dynamics / Tesla (2025). "Fleet Learning: Bridging Vision-Language-Action Models with Humanoid Hardware".** 
-    * **Por qué leerlo:** Demuestra la fusión de la multimodalidad (visión) con la acción física (robótica).  
-* **Tendencia 5: Más Allá del Transformer, La Era del "Aprendizaje Continuo"** 
+
+* **Tendencia 4: La Web Agéntica (El Ecosistema)**
+  * **Google. (Noviembre 2025). "Google Antigravity: A platform for autonomous agents".**
+    * **Por qué leerlo:** El *white paper* de lanzamiento de la plataforma que habilita la orquestación de agentes a escala global. Es la referencia técnica para entender cómo los agentes saldrán de la "intranet" corporativa a la "web abierta".
+  * **Anthropic. (2025). "The Model Context Protocol (MCP): Standardizing Agent Interoperability".**
+    * **Por qué leerlo:** Define el estándar técnico que permite a los agentes conectarse con sistemas de datos de forma universal, la "tubería" esencial de la Web Agéntica.
+
+* **Tendencia 5: IA Corpórea (Embodied AI)** 
+  * **LeCun, Y. / AMI (Noviembre 2025). "Advanced Machine Intelligence: World Models for Physical Understanding".**
+    * **Por qué leerlo:** El manifiesto de la nueva startup de Yann LeCun. Explica por qué los LLM actuales no sirven para la robótica y propone "Modelos de Mundo" que entienden física y causalidad, respondiendo técnicamente a la crítica filosófica de Dreyfus.
+  * **Figure AI / Boston Dynamics (2025). "Fleet Learning: Bridging Vision-Language-Action Models".** 
+    * **Por qué leerlo:** Demuestra la fusión práctica de la multimodalidad (visión) con la acción física (robótica).
+
+* **Tendencia 6: Más Allá del Transformer (Aprendizaje Continuo)** 
   * **Dao, T., et al. (2025). "Mamba-2 and State Space Models: Production-Scale Efficiency".** 
-    * **Por qué leerlo:** Es el paper de referencia para las arquitecturas **no-Transformers** (Modelos de Espacio de Estado) que resuelven el primer límite del Transformer (Guía 02): el **Costo Cuadrático**. Permiten eficiencia a escala y costo lineal.
+    * **Por qué leerlo:** Es el paper de referencia para las arquitecturas **no-Transformers** (SSMs) que resuelven el **Costo Cuadrático** (Guía 02), permitiendo eficiencia a escala y costo lineal.
   * **Behrouz, A., et al. (2025). "Nested Learning: The Illusion of Deep Learning Architectures".**
-    * **Por qué leerlo:** Es el paper de investigación (Google Research, NeurIPS 2025) que aborda el segundo límite del Transformer (Guía 02): la **Amnesia Estática**. Introduce el paradigma del "Aprendizaje Anidado" y prototipos capaces de **Aprendizaje Continuo** y auto-modificación. Es la fuente clave para el "Vigilante Estratégico".
+    * **Por qué leerlo:** Aborda el segundo límite del Transformer (Guía 02): la **Amnesia Estática**. Introduce el paradigma del "Aprendizaje Anidado" y prototipos capaces de auto-modificación, clave para el "Vigilante Estratégico".
 
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
