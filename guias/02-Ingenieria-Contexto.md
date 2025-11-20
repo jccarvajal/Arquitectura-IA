@@ -76,7 +76,7 @@ La "auto-atención" del Transformer debe calcular la relación de cada token con
 
 Los Transformers son **estáticos**; están "congelados" en el tiempo después de su entrenamiento. Una vez que la ventana de contexto se cierra (termina la conversación), el modelo olvida todo. No puede **consolidar** lo aprendido en esa sesión en sus pesos (su "cerebro" permanente).
 
-* **Implicación Estratégica:** Esta **"Amnesia Estática"** es su mayor limitación funcional y la causa raíz de la "Brecha de Aprendizaje".
+* **Implicación Estratégica:** Esta limitación funcional, **a la que llamaremos conceptualmente "Amnesia Estática"**, es la causa raíz de la "Brecha de Aprendizaje".
 
 ---
 
