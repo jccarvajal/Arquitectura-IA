@@ -26,9 +26,12 @@ Ambas miradas, la del Arquitecto que diseña y la del Profesional que ejecuta, s
 
 --- 
 
-### 3. Sobre el uso de metáforas y referencias culturales
+### 3. Sobre el uso de metáforas: Ciencia Ficción y Mecánica
 
-Las referencias a ciencia ficción y a pensadores contemporáneos se usan aquí como herramientas cognitivas: ayudan a traducir ideas complejas de IA y gobernanza en imágenes claras y recordables. No reemplazan el rigor técnico; lo hacen más accesible y útil para decidir.
+A lo largo del texto encontrará dos tipos de herramientas cognitivas para aterrizar conceptos abstractos:
+
+* **Referencias Culturales:** Usamos la ciencia ficción y la filosofía para ilustrar dilemas éticos y de gobernanza.
+* **La Metáfora Industrial:** Tratamos deliberadamente a la IA con terminología mecánica (**Fábrica, Motor, Combustible, Línea de Ensamblaje**). Esta elección no es decorativa; busca desmitificar la tecnología, quitándole su aura "mágica" para tratarla como lo que es: un proceso de ingeniería que requiere insumos de calidad, mantenimiento y controles de seguridad.
 
 ---
 
