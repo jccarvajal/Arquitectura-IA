@@ -123,7 +123,7 @@ Herramientas para la toma de decisiones técnicas y de compra.
 Recursos listos para copiar y usar en producción.
 
 * [Anexo 06: Plantillas y Recursos](./anexos/06-Plantillas-Recursos.md)
-  *Prompts maestros (CRF-R) y rúbricas de evaluación de calidad.*
+  *Plantilla de "Prompt Maestro" y rúbricas de evaluación de calidad.*
 
 #### 📚 Referencias y Fundamentos
 Base de conocimiento para alinear equipos y profundizar el criterio.
