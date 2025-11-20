@@ -45,7 +45,7 @@ Tu tarea ya no es solo optimizar la línea de ensamblaje; es detectar la invenci
 Como "Vigilante" no solo miras las "actualizaciones". Miras las "disrupciones" que cambian el paradigma. Esto es lo que está en el mapa actual (fines de 2025\) y futuro (más allá de 2026):
 
 **Tendencia 1: La Explosión de la Multimodalidad (El "Ahora")**  
-Esta es la tendencia dominante actual. Los modelos ya no solo leen texto; ahora ven, oyen y hablan. Modelos como GPT-5 y Gemini 2.5 Pro han normalizado la capacidad de analizar imágenes, audio y video.
+Esta es la tendencia dominante actual. Los modelos ya no solo leen texto; ahora ven, oyen y hablan. Modelos como GPT-5 y Gemini 3 Pro han normalizado la capacidad de analizar imágenes, audio y video.
 
 * **Impacto Práctico:** Esto expande radicalmente los casos de uso más allá del "chatbot". Ahora podemos construir agentes que:  
   * Entienden el mundo real a través de una cámara (ej. "dime si este equipo de seguridad está bien instalado").  
