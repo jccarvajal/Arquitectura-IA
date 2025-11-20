@@ -12,8 +12,6 @@ Este documento debe ser completado por el "Dueño del Proyecto" y visado por el 
 
 > **Instrucción de Uso:** Este documento no es un trámite. Es un mecanismo de defensa. Si al completarlo descubres que el proyecto no es viable, has ahorrado tiempo y presupuesto. **Descartar una mala idea aquí es un éxito.**
 
-<br>
-
 ---
 
 #### Sección 1: Definición Estratégica (El "Por Qué")
@@ -38,8 +36,6 @@ Este documento debe ser completado por el "Dueño del Proyecto" y visado por el 
 ¿Buscamos hacer lo mismo más barato (Eficiencia/S1) o hacer algo nuevo que antes era imposible (Innovación/S2)? Esto define el presupuesto y la tolerancia al riesgo.
 * **Selección:** `[ Eficiencia / Innovación ]`
 
-<br>
-
 ---
 
 #### Sección 2: Viabilidad Técnica (El "Cómo")
@@ -61,8 +57,6 @@ Este documento debe ser completado por el "Dueño del Proyecto" y visado por el 
 * **Sistema 2 (Piloto Manual):** Tareas de razonamiento profundo, juicio moral, estratégico o diagnóstico. -> *Riesgo Alto (Requiere Humano-en-el-Bucle estricto).*
 * **Evaluación:** `[ Definir clasificación S1 / S2 ]`
 
-<br>
-
 ---
 
 #### Sección 3: Checklist de Validación Ética y de Impacto (El "Deberíamos")
@@ -79,8 +73,6 @@ Este documento debe ser completado por el "Dueño del Proyecto" y visado por el 
 | **4. Transparencia** | ¿Es explicable la decisión? ¿Podemos trazar *por qué* actuó así (logs de razonamiento) ante una auditoría? | **Guía 09** | `[ ]` |
 | **5. Discriminación** | ¿Están los datos de origen libres de sesgos históricos? ¿Se ha evaluado el impacto en grupos vulnerables? | **Guía 03** | `[ ]` |
 | **6. Responsabilidad** | ¿Existe un "Dueño del Sistema" humano designado? ¿Está definido quién paga los platos rotos si la IA falla? | **Anexo 02** | `[ ]` |
-
-<br>
 
 ---
 
@@ -99,8 +91,6 @@ Este documento debe ser completado por el "Dueño del Proyecto" y visado por el 
 
 ¿Cuál es el costo estimado de operación mensual? (Considerando el costo por token de entrada/salida y volumen de transacciones). Evita el "Bucle de Costos".
 * **Estimación:** `[$ / mes]`
-
-<br>
 
 ---
 
