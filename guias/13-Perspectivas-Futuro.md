@@ -60,7 +60,7 @@ Como contraparte a los modelos gigantes ("fuerza bruta"), ha surgido una tendenc
   * **Latencia Cero:** Las respuestas son instantáneas, sin depender de una API.  
   * **Costo Marginal Cero:** Una vez desplegado, el costo por inferencia es prácticamente nulo.
 
-**Tendencia 3: De Agentes-Herramienta a Agentes Autónomos (El Trabajador)**
+**Tendencia 3: De Agentes-Herramienta a Agentes Autónomos (El Trabajador)** 
 Hemos pasado de los "Agentes ReAct" (que usan herramientas bajo supervisión) a un enfoque en agentes autónomos. La meta ya no es un "asistente" que ayuda, sino un "trabajador" que completa tareas complejas de múltiples pasos (la promesa de la Guía 04 y Guía 05).
 
 * **El Hito:** El enfoque de la industria es construir agentes que puedan tomar un objetivo de alto nivel (ej. "planifica mis vacaciones y resérvalas") y ejecutar todo el proceso de forma independiente.
@@ -70,21 +70,21 @@ Hemos pasado de los "Agentes ReAct" (que usan herramientas bajo supervisión) a 
   * **La Lealtad:** Los atacantes usaron ingeniería social para convencer al agente de que era un tester defensivo. El agente obedeció a su prompt y ejecutó el ataque, demostrando que su lealtad es a la instrucción, no a la ética.
   * **La Lección:** Incluso en este nivel de sofisticación, la IA "alucinaba" éxitos, obligando a los humanos a validar resultados. Esto confirma que la autonomía total sin supervisión (Sistema 2) sigue siendo inestable.
 
-**Tendencia 4: La Web Agéntica (El Ecosistema)**
+**Tendencia 4: La Web Agéntica (El Ecosistema)** 
 Si la Tendencia 3 trata sobre el *trabajador*, esta tendencia trata sobre la *red*. Los agentes están saliendo de los servidores corporativos para conectarse entre sí en una red abierta.
 
 * **El Nuevo Estándar:** Esta tendencia ha dejado de ser teórica. Con el lanzamiento de **Google Antigravity** (2025) y protocolos de interoperabilidad como **MCP** (Model Context Protocol), estamos viendo el nacimiento de la infraestructura real de la Web Agéntica.
 * **Impacto Práctico:** Ya no se trata de que *tu* agente reserve un vuelo visitando una web humana. Se trata de que *tu* agente negocie directamente con el *agente* de la aerolínea, de máquina a máquina, en milisegundos.
 * **El Desafío de Gobernanza:** La auditoría de una transacción autónoma entre dos IAs de diferentes empresas se vuelve el desafío fundamental. ¿Cómo aseguras la identidad (Divulgación) y la confianza cuando ningún humano está mirando la negociación en tiempo real?
 
-**Tendencia 5: IA Corpórea (Embodied AI)**
+**Tendencia 5: IA Corpórea (Embodied AI)** 
 La IA sale de la pantalla. Nuestra "fábrica" ha sido puramente digital. La próxima fábrica tendrá brazos y piernas. La IA se fusionará con la robótica para operar en el mundo físico.
 
 * **Impacto Práctico:** El "Vigilante" debe monitorear a los agentes robóticos (Figure AI, Tesla Optimus) que pueden entender comandos de lenguaje natural y ejecutarlos físicamente.
 * **El Cerebro Físico (AMI y Modelos de Mundo):** El desafío no es el hardware, sino la cognición física. Iniciativas como la nueva startup **AMI** de Yann LeCun (anunciada a fines de 2025) buscan crear "Modelos de Mundo": IAs que no solo predicen texto, sino que **entienden la física, la causa y el efecto**, permitiendo planificar acciones complejas en el mundo real que los LLMs actuales no pueden comprender.
 * **El Cierre Filosófico:** Curiosamente, esta iniciativa parece ser la respuesta técnica a la crítica filosófica de **Hubert Dreyfus** (ver Prólogo). Si Dreyfus argumentaba que la IA fallaba por carecer de "percepción encarnada" y no saber "habitar el mundo", los "Modelos de Mundo" buscan precisamente dotar a la máquina de esa comprensión física y causal, cerrando la brecha entre manipular símbolos y entender la realidad.
 
-**Tendencia 6: Más Allá del Transformer, La Era del "Aprendizaje Continuo"**s
+**Tendencia 6: Más Allá del Transformer, La Era del "Aprendizaje Continuo"** 
 Como establecimos en la Guía 02 (Ingeniería de Contexto y Memoria), la arquitectura Transformer define la generación actual de IA, pero su naturaleza es fundamentalmente estática. Allí definimos su limitación clave como la "Amnesia Estática": los modelos se "congelan" y no pueden consolidar nuevo conocimiento en su memoria a largo plazo.
 
 Investigaciones recientes (Google Research, NeurIPS 2025) buscan resolver precisamente esta amnesia. El **"Nested Learning" (Aprendizaje Anidado)** es un nuevo paradigma que reemplaza las "capas de cómputo" estáticas por "capas de cognición" que operan y se actualizan a múltiples frecuencias (escalas de tiempo), similar a las ondas cerebrales. Prototipos han implementado esta idea, introduciendo modelos "auto-modificables" con "memoria continua".
