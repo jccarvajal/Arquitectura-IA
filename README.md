@@ -136,7 +136,7 @@ Base de conocimiento para alinear equipos y profundizar el criterio.
 ---
 
 ### Changelog
-* **v1.1 (Noviembre 2025):** Actualización mayor. Se integran conceptos de Web Agéntica, nuevas arquitecturas de modelos (Gemini 3) y se refuerza el marco de Gobernanza de Ciberseguridad.
+* **v1.1 (Noviembre 2025):** Actualización mayor. Se integran conceptos de Web Agéntica, nuevas arquitecturas de modelos y se refuerza el marco de Gobernanza de Ciberseguridad.
 * Ver [Historial Completo](./changelog.md).
 
 ### Sugerencias y Mejoras
