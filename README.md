@@ -88,7 +88,7 @@ La dimensión humana y de negocio.
 Prospección tecnológica.
 
 * [Guía 13: Perspectivas](./guias/13-Perspectivas-Futuro.md)
-  *Web Agéntica, Gemini 3 y nuevos paradigmas.*
+  *Web Agéntica y nuevos paradigmas.*
 
 #### 🏁 Conclusión
 El cierre del ciclo estratégico.
