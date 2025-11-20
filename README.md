@@ -84,7 +84,7 @@ La dimensión humana y de negocio.
 * [Guía 12: Estrategia y Valor](./guias/12-Estrategia-Valor.md)
   *Modelos de negocio y fosos competitivos.*
 
-#### 🔭 Bloque 5: La Expansión (Cómo proyectamos)
+#### 🔭 Bloque 5: Futuro (Cómo proyectamos)
 Prospección tecnológica.
 
 * [Guía 13: Perspectivas](./guias/13-Perspectivas-Futuro.md)
