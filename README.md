@@ -1,5 +1,5 @@
 # Inteligencia Artificial Aplicada
-## Guías para Decidir, Diseñar y Gobernar
+### Guías para Decidir, Diseñar y Gobernar
 
 **Versión 1.1 (Noviembre 2025)**
 
