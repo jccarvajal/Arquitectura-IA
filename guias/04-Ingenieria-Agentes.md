@@ -34,6 +34,18 @@ Herramientas como Copilot (diseñado para leer archivos y buscar en Bing) o las 
 
 Esto es lo más importante. Un agente no solo da una respuesta y se detiene. Opera en un bucle (loop) hasta que cumple el objetivo. Este ciclo se conoce comúnmente como **ReAct**, un patrón que combina el Razonamiento (Reason) con la Acción (Act).
 
+graph TD
+    A([Inicio: Solicitud del Usuario]) --> B{¿Objetivo Cumplido?}
+    B -- Sí --> C([Respuesta Final])
+    B -- No --> D[💭 RAZONAR]
+    D --> E[⚙️ ACTUAR: Usar Herramienta]
+    E --> F[👀 OBSERVAR: Leer Resultado]
+    F --> B
+    
+    style D fill:#f9f,stroke:#333,stroke-width:2px
+    style E fill:#bbf,stroke:#333,stroke-width:2px
+    style F fill:#bfb,stroke:#333,stroke-width:2px
+
 Así es como "piensa" un agente en la práctica:
 
 * 👤 Usuario:
