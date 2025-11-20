@@ -2,6 +2,7 @@
 ## Guías para Decidir, Diseñar y Gobernar
 
 **Versión 1.1 (Noviembre 2025)**
+
 **Autor:** [Juan Carlos Carvajal](https://www.jccarvajal.com/)
 
 <img src="./portada.jpeg" alt="Portada del Libro - Inteligencia Artificial Aplicada" width="500">
