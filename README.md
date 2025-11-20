@@ -1,96 +1,106 @@
-# Inteligencia Artificial Aplicada: Guías para Decidir, Diseñar y Gobernar
+# Inteligencia Artificial Aplicada
+## Guías para Decidir, Diseñar y Gobernar
 
 **Versión 1.1 (Noviembre 2025)**
-
-Un tratado de criterio y gobernanza para integrar IA en las organizaciones.
-
 **Autor:** [Juan Carlos Carvajal](https://www.jccarvajal.com/)
 
 <img src="./portada.jpeg" alt="Portada del Libro - Inteligencia Artificial Aplicada" width="500">
 
 ---
 
-### Propósito de esta Obra
+### Descripción del Proyecto
 
-El propósito de *Inteligencia Artificial Aplicada* es dotar a las organizaciones de un **marco de pensamiento estructurado y profesional** para la adopción responsable de la Inteligencia Artificial, con énfasis explícito en los pilares de **Gobernanza, Riesgo y Cumplimiento (GRC)** y en los nuevos desafíos de **Ciberseguridad** que esta tecnología introduce en los procesos institucionales.
+Esta obra no es un libro tradicional; es una **documentación técnica y estratégica** diseñada para cerrar la brecha entre la experimentación con Inteligencia Artificial y su implementación productiva en organizaciones.
 
-No busca enseñar a programar, sino enseñar a **decidir, diseñar y gobernar**. El foco está en desarrollar criterio, no en operar herramientas.
+Mientras el mercado se enfoca en las herramientas ("qué modelo usar"), este repositorio se enfoca en el **criterio de ingeniería y gestión** ("cómo construir sistemas fiables").
 
-Su objetivo es trasladar a los equipos desde la curiosidad dispersa hacia un **criterio aplicado**, entregando un **lenguaje común**, una **arquitectura conceptual** y una **ruta metodológica** para integrar la IA en procesos reales con **rigor, trazabilidad, transparencia y control**, asegurando que la tecnología amplifique la responsabilidad humana en lugar de sustituirla o diluirla.
-
----
-
-### Historial de Versiones
-
-* Para ver un histórico detallado de las modificaciones y versiones, consulta el [Historial de Versiones](./changelog.md).
+El objetivo es proporcionar un **Marco de GRC (Gobernanza, Riesgo y Cumplimiento)** que permita a líderes técnicos y estratégicos:
+1.  **Decidir** con base en la viabilidad técnica y el valor de negocio (no en el *hype*).
+2.  **Diseñar** sistemas cognitivos robustos utilizando patrones de ingeniería (RAG, Agentes, CoT).
+3.  **Gobernar** la operación mitigando riesgos de seguridad, alucinaciones y costos.
 
 ---
 
-### Tabla de Contenidos
+### Tesis Central: GRC y Sinergia
 
-La obra es una arquitectura de aprendizaje modular que traza la ruta completa de un proyecto de IA, guiando al lector desde los fundamentos técnicos y operativos hasta el criterio estratégico y la visión de futuro.
+La premisa fundamental es que la IA generativa actual opera como un "Sistema 1" (rápido, probabilístico, sin juicio). Para su implementación segura, requiere una arquitectura que delegue la ejecución táctica pero mantenga la responsabilidad estratégica ("Sistema 2") en el operador humano.
 
-#### Introducción
-* [Nota al Lector](./nota-al-lector.md)
-* [Prólogo: Fundación](./prologo.md)
-* [Ideas Centrales de las Guias](./ideas-centrales.md)
-
-#### Bloque 1: Los Fundamentos (Cómo funciona)
-* [Guía 01: Ingeniería de Prompts](./guias/01-Ingenieria-Prompts.md)
-* [Guía 02: Ingeniería de Contexto y Memoria](./guias/02-Ingenieria-Contexto.md)
-* [Guía 03: Estrategia de Datos](./guias/03-Estrategia-Datos.md)
-
-#### Bloque 2: La Construcción (Cómo se hace)
-* [Guía 04: Ingeniería de Agentes de IA](./guias/04-Ingenieria-Agentes.md)
-* [Guía 05: Diseño de Sistemas Cognitivos](./guias/05-Sistemas-Cognitivos.md)
-* [Guía 06: Prototipado y Experimentación](./guias/06-Prototipado.md)
-
-#### Bloque 3: La Operación (Cómo se gestiona)
-* [Guía 07: Gobernanza de IA](./guias/07-Gobernanza.md)
-* [Guía 08: Evaluación, Calidad y Validación de IA](./guias/08-Evaluacion-Calidad.md)
-* [Guía 09: Industrialización de IA](./guias/09-Industrializacion.md)
-
-#### Bloque 4: El Impacto (Cómo nos afecta)
-* [Guía 10: Humanidad, Ética y Confianza](./guias/10-Humanidad-Etica.md)
-* [Guía 11: Aprender a Pensar con IA](./guias/11-Aprender-A-Pensar.md)
-* [Guía 12: Estrategia y Valor en la Era de la IA](./guias/12-Estrategia-Valor.md)
-
-#### Bloque 5: La Expansión (Cómo proyectamos)
-* [Guía 13: Perspectivas y Futuro de la IA](./guias/13-Perspectivas-Futuro.md)
-
-#### Conclusión
-* [De la Fundación a la Expansión](./conclusion.md)
+Este repositorio propone el principio de **"Delegar, no Abdicar"**, implementado a través de controles técnicos de Ciberseguridad y políticas de uso que aseguran la trazabilidad y la ética en la toma de decisiones.
 
 ---
 
-#### Anexos (Biblioteca del Arquitecto)
+### Estructura de la Documentación
 
-* [Anexo 01: Formulación y Evaluación de Proyectos de IA](./anexos/01-Formulacion-Evaluacion.md)
-* [Anexo 02: Política Institucional de IA](./anexos/02-Politica-Institucional.md)
-* [Anexo 03: Modelos y Mercado LLM](./anexos/03-Modelos-Mercado.md)
-* [Anexo 04: Lecciones de Implementación](./anexos/04-Blueprints.md)
-* [Anexo 05: Ajuste Fino y Adaptación de Modelos](./anexos/05-Ajuste-Fino.md)
-* [Anexo 06: Plantillas y Recursos](./anexos/06-Plantillas-Recursos.md)
-* [Anexo 07: Glosario Unificado](./anexos/07-Glosario.md)
-* [Anexo 08: Bibliografía Fundamental](./anexos/08-Bibliografia.md)
+El contenido está organizado modularmente siguiendo el ciclo de vida de un proyecto de IA.
+
+#### 🏛️ Introducción
+Marco conceptual y filosófico.
+* [**Nota al Lector**](./nota-al-lector.md) | Alcance y definición de roles (Arquitecto vs. Profesional).
+* [**Prólogo: Fundación**](./prologo.md) | Bases teóricas (Kahneman, Dreyfus, Taleb).
+* [**Ideas Centrales**](./ideas-centrales.md) | Resumen ejecutivo de los conceptos clave.
+
+#### 🧱 Bloque 1: Fundamentos Técnicos
+Comprensión de las capacidades y límites del motor.
+* [**Guía 01: Ingeniería de Prompts**](./guias/01-Ingenieria-Prompts.md) | Diseño de instrucciones deterministas.
+* [**Guía 02: Ingeniería de Contexto**](./guias/02-Ingenieria-Contexto.md) | Gestión de memoria y limitaciones del Transformer.
+* [**Guía 03: Estrategia de Datos**](./guias/03-Estrategia-Datos.md) | Gobernanza de la fuente y vectores (RAG).
+
+#### 🏗️ Bloque 2: Ingeniería y Construcción
+Arquitecturas para sistemas autónomos.
+* [**Guía 04: Ingeniería de Agentes**](./guias/04-Ingenieria-Agentes.md) | Orquestación y Ciclos ReAct.
+* [**Guía 05: Sistemas Cognitivos**](./guias/05-Sistemas-Cognitivos.md) | Patrones de razonamiento (Chain of Thought, Tree of Thoughts).
+* [**Guía 06: Prototipado**](./guias/06-Prototipado.md) | Metodología de validación rápida.
+
+#### 🎛️ Bloque 3: Operación y Gobernanza
+El paso a producción: seguridad, calidad y monitoreo.
+* [**Guía 07: Gobernanza de IA**](./guias/07-Gobernanza.md) | Ciberseguridad y control de riesgos (Inyección, Shadow AI).
+* [**Guía 08: Evaluación y QA**](./guias/08-Evaluacion-Calidad.md) | Métricas objetivas y "Golden Sets".
+* [**Guía 09: Industrialización**](./guias/09-Industrializacion.md) | LLM-Ops y escalabilidad.
+
+#### 🤝 Bloque 4: Impacto y Estrategia
+La dimensión humana y de negocio.
+* [**Guía 10: Ética y Confianza**](./guias/10-Humanidad-Etica.md) | Licencia Social y Sinergia S1/S2.
+* [**Guía 11: Pensamiento Algorítmico**](./guias/11-Aprender-A-Pensar.md) | Nuevas competencias para el equipo humano.
+* [**Guía 12: Estrategia y Valor**](./guias/12-Estrategia-Valor.md) | Modelos de negocio y fosos competitivos.
+
+#### 🔭 Bloque 5: Futuro
+Prospección tecnológica.
+* [**Guía 13: Perspectivas**](./guias/13-Perspectivas-Futuro.md) | Web Agéntica, Gemini 3 y nuevos paradigmas.
+
+#### 🏁 Conclusión
+* [**Cierre: De la Fundación a la Expansión**](./conclusion.md) | Síntesis del marco GRC y el mandato de vigilancia continua.
 
 ---
 
-### A quién está dirigido
+### 🛠️ Anexos y Herramientas
+Recursos prácticos organizados por su función en el ciclo del proyecto.
 
-Esta obra está escrita para profesionales que enfrentan decisiones con impacto: líderes públicos y privados, analistas, auditores, equipos técnicos, unidades de datos, responsables de cumplimiento y diseñadores de políticas. 
+#### 📋 Estrategia y Gobernanza
+Herramientas para el "Día 0": Definición y Permisos.
+* [**Anexo 01: Formulación de Proyectos**](./anexos/01-Formulacion-Evaluacion.md) | Canvas de viabilidad técnica, ética y financiera ("Screening").
+* [**Anexo 02: Política Institucional**](./anexos/02-Politica-Institucional.md) | Marco regulatorio base para el uso responsable de IA.
 
-No requiere formación técnica avanzada, pero sí requiere disposición a pensar con rigor y a trabajar con criterio.
+#### 📐 Arquitectura y Diseño
+Herramientas para la toma de decisiones técnicas y de compra.
+* [**Anexo 03: Modelos y Mercado**](./anexos/03-Modelos-Mercado.md) | Matriz para elegir entre APIs, Open Source y Agentes-como-Servicio.
+* [**Anexo 04: Blueprints**](./anexos/04-Blueprints.md) | Patrones de arquitectura y casos de uso reales (Soporte, Legal, Estrategia).
+* [**Anexo 05: Ajuste Fino (Fine-Tuning)**](./anexos/05-Ajuste-Fino.md) | Guía técnica para decidir entre RAG y entrenamiento especializado.
+
+#### 🧰 Caja de Herramientas
+Recursos listos para copiar y usar en producción.
+* [**Anexo 06: Plantillas y Recursos**](./anexos/06-Plantillas-Recursos.md) | Prompts maestros (CRF-R) y rúbricas de evaluación de calidad.
+
+#### 📚 Referencias y Fundamentos
+Base de conocimiento para alinear equipos y profundizar el criterio.
+* [**Anexo 07: Glosario Técnico**](./anexos/07-Glosario.md) | Definiciones unificadas para evitar la ambigüedad conceptual.
+* [**Anexo 08: Bibliografía**](./anexos/08-Bibliografia.md) | Papers fundacionales y reportes de industria (2017-2025).
 
 ---
 
-### Sugerencias y Mejoras
-
-Este es un documento vivo. Si encuentras una errata o tienes una sugerencia de mejora, puedes reportarla directamente en el [Repositorio de GitHub](https://github.com/jccarvajal/IA-Aplicada).
-
----
+### Changelog
+* **v1.1 (Noviembre 2025):** Actualización mayor. Se integran conceptos de Web Agéntica, nuevas arquitecturas de modelos (Gemini 3) y se refuerza el marco de Gobernanza de Ciberseguridad.
+* Ver [Historial Completo](./changelog.md).
 
 ### Licencia
-
-El contenido se distribuye bajo **CC BY-NC-ND 4.0**.
-Se permite la lectura y distribución, pero no su modificación ni su uso comercial.
+El contenido se distribuye bajo licencia **CC BY-NC-ND 4.0**.
+Se autoriza su uso educativo y de referencia profesional. No se permite la modificación ni el uso comercial sin autorización expresa del autor.
