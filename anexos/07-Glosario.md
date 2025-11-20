@@ -378,11 +378,6 @@ Este anexo es el léxico centralizado de "Inteligencia Artificial Aplicada". La 
 * **Definición:** La unidad fundamental de procesamiento de un LLM. Un token no es una palabra; es una "pieza" de palabra (ej: "Gobernanza" pueden ser 3: "Gob", "er", "nanza"). Los costos y la Ventana de Contexto se miden en tokens.  
 * **Referencia Principal:** Guía 02 (Ingeniería de Contexto y Memoria).
 
-**TOON (Token-Oriented Object Notation)**
-
-* **Definición:** Un formato de serialización de datos diseñado para ser más eficiente en tokens que JSON. Reduce el "overhead" sintáctico (llaves y comillas), optimizando el costo y la latencia en la comunicación con LLMs, especialmente en una Web Agéntica.
-* **Referencia Principal:** Guía 13 (Perspectivas y Futuro de la IA), Anexo 03 (Modelos y Mercado LLM).
-
 **Transformer**
 
 * **Definición:** La arquitectura de IA fundamental que define la generación actual de LLMs (GPT, Llama, Gemini, etc.). Su mecanismo clave es la "auto-atención". Sus limitaciones estratégicas son el **Costo Cuadrático** (un problema de contexto) y la **Amnesia Estática** (un problema de memoria).
