@@ -10,7 +10,7 @@ El subtítulo promete una guía "práctica". Es crucial definir qué entendemos 
 
 Este no es un manual de "cómo hacer clic" ni una colección de recetas técnicas rápidas. El "hype" de la industria se enfoca en la herramienta mágica; esta obra se enfoca en el operador humano.
 
-Es un **"tratado de criterio**". La tesis central es que la aplicación práctica y segura de la IA solo es posible cuando se construye primero un marco de pensamiento estratégico, ético y de gobernanza. El "hype" es una trampa que lleva a la desilusión; el criterio es la base que permite construir valor sostenible.
+Es un **"tratado de criterio"**. La tesis central es que la aplicación práctica y segura de la IA solo es posible cuando se construye primero un marco de pensamiento estratégico, ético y de gobernanza. El "hype" es una trampa que lleva a la desilusión; el criterio es la base que permite construir valor sostenible.
 
 Le pedimos que aborde esta lectura no como un manual de instrucciones, sino como un diálogo reflexivo para construir ese criterio.
 
@@ -43,15 +43,25 @@ Este flujo (Por Qué -> Qué -> Cómo) está diseñado para asegurar que, cuando
 
 ---
 
-### 5. Sobre la Obsolescencia: Es un "Marco" de fines de 2025
+### 5. Requisitos para el Viaje
 
-Esta es la **Versión 1.1 (de Noviembre 2025\)**. La tecnología de IA es volátil y evoluciona en ciclos de meses, no de años.
+Para sacar el máximo provecho de esta obra, asumimos tres cosas sobre usted:
+
+1. **Disposición Activa:** No es una lectura pasiva. Requiere voluntad para reflexionar sobre arquitectura de sistemas y gestión de riesgos, más allá de la simple operación.
+2. **Uso de Léxico Preciso:** Usaremos términos específicos (*Basura Elocuente, Lealtad Agéntica*) definidos en el **Glosario (Anexo 07)**. Son herramientas necesarias para nombrar nuevos problemas.
+3. **Acceso a Herramientas:** Los ejercicios prácticos (*Blueprints*) están diseñados para modelos de capacidad media-alta (nivel GPT-4o, Claude 3.5 o Gemini 3). Modelos antiguos podrían no ejecutar las estrategias correctamente.
+
+---
+
+### 6. Sobre la Obsolescencia: Es un "Marco" de fines de 2025
+
+Esta es la **Versión 1.1 (de Noviembre 2025)**. La tecnología de IA es volátil y evoluciona en ciclos de meses, no de años.
 
 Considere esta obra como un **"marco de pensamiento"** y una **"fotografía"** del panorama actual, no como un manual estático. El objetivo no es entregar reglas fijas, sino un criterio duradero para gestionar la evolución tecnológica.
 
 ---
 
-### 6. Sobre la autoría y el uso de IA
+### 7. Sobre la autoría y el uso de IA
 
 Este documento fue desarrollado por Juan Carlos Carvajal, quien es el autor principal y responsable de su contenido, estructura y visión final. Para más información sobre el autor, sus proyectos o para contacto profesional, puede visitar [www.jccarvajal.com](https://www.jccarvajal.com/).
 
