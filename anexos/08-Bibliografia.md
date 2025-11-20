@@ -97,7 +97,7 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 *(Perspectivas, Futuro y el Rol del "Vigilante Estratégico")*
 
 * **Tendencia 1: La Explosión de la Multimodalidad** 
-  * **OpenAI / Anthropic / Google (2025). "System Cards: GPT-5, Claude 4, and Gemini 2.5 Pro".** 
+  * **OpenAI / Anthropic / Google (2025). "System Cards: GPT-5, Claude 4, and Gemini 3 Pro".** 
     * **Por qué leerlo:** Los *papers* de 2023/24 introdujeron la *capacidad*. Los *system cards* de 2025 detallan la *implementación* a escala industrial y, lo que es más importante, sus nuevos y complejos **riesgos de gobernanza** (ej. desinformación audiovisual, razonamiento autónomo).  
 * **Tendencia 2: IA en el Dispositivo (SLMs)** 
   * **Microsoft / Apple / Meta (2025). "Technical Reports: Phi-4, Llama 4-8B, and On-Device Core Intelligence".** 

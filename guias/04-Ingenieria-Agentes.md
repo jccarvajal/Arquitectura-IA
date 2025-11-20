@@ -247,6 +247,16 @@ La evolución de nuestra maestría en IA ha sido un viaje de abstracción:
 Al dominar la dirección de agentes, dejas de construir soluciones para empezar a orquestar resultados.
 
 ---
+
+#### Nota del Arquitecto: La Frontera de la Web Agéntica
+
+Lo que has aprendido en esta guía es cómo orquestar agentes dentro de tu propia infraestructura (tu "Intranet de Agentes"). Sin embargo, la frontera se está rompiendo rápidamente.
+
+Protocolos emergentes (como MCP o NANDA) están permitiendo que estos agentes salgan de tu servidor para negociar con agentes de otras organizaciones en la **"Web Agéntica"**. Este salto de una orquestación interna controlada a una interoperabilidad externa abierta introduce riesgos masivos de "Lealtad" y "Seguridad" que exploraremos en profundidad en la **Guía 13: Perspectivas y Futuro**.
+
+Por ahora, domina la orquestación interna. Es el requisito previo para sobrevivir en la web abierta que viene.
+
+---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
     <a href="./03-Estrategia-Datos.html">« Guía Anterior</a>

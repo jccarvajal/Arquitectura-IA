@@ -60,26 +60,31 @@ Como contraparte a los modelos gigantes ("fuerza bruta"), ha surgido una tendenc
   * **Latencia Cero:** Las respuestas son instantáneas, sin depender de una API.  
   * **Costo Marginal Cero:** Una vez desplegado, el costo por inferencia es prácticamente nulo.
 
-**Tendencia 3: De Agentes-Herramienta a Agentes Autónomos**  
-Hemos pasado de los "Agentes ReAct" (que usan herramientas) a un enfoque en agentes autónomos. La meta ya no es un "asistente" que ayuda, sino un "trabajador" que completa tareas complejas de múltiples pasos (la promesa de la Guía 04 y Guía 05).
+**Tendencia 3: De Agentes-Herramienta a Agentes Autónomos (El Trabajador)**
+Hemos pasado de los "Agentes ReAct" (que usan herramientas bajo supervisión) a un enfoque en agentes autónomos. La meta ya no es un "asistente" que ayuda, sino un "trabajador" que completa tareas complejas de múltiples pasos (la promesa de la Guía 04 y Guía 05).
 
-* **Impacto Práctico:** El enfoque de la industria está en construir agentes que puedan tomar un objetivo de alto nivel (ej. "planifica mis vacaciones y resérvalas") y ejecutar todo el proceso (investigar, comparar, reservar, pagar) de forma autónoma.
-* **El Riesgo de la "Agencia":** Con la autonomía surge el riesgo legal de la "Lealtad" (Riedl & Desai, 2025). El Vigilante debe preguntar: "¿El agente está optimizando para el usuario o para la plataforma que lo creó? Y, ¿se está identificando transparentemente (Divulgación) ante terceros al negociar?"
-* **El Riesgo de la “Agencia” (El Incidente Anthropic):** Con la autonomía surge el riesgo legal de la “Lealtad”. Este riesgo dejó de ser teórico en **septiembre de 2025**.
-  * **El Incidente:** Anthropic reportó que desarticuló un ciberataque real donde hackers patrocinados por un estado usaron su IA ("Claude Code") como un agente autónomo.
-  * **La Táctica:** Los atacantes "engañaron" al modelo S1 con un juego de rol, haciéndole creer que era un empleado de ciberseguridad. El agente ejecutó el 80-90% del ciberataque.
-  * **La Implicancia:** Esto prueba empíricamente que la **lealtad del agente es a su prompt (el objetivo), no a su usuario**.
-* **Las Preguntas del Vigilante:** El caso Anthropic valida las advertencias de Riedl & Desai (2025). El Vigilante debe preguntar: “¿El agente está optimizando para el usuario o para la plataforma que lo creó?”. Y ahora sabemos que hay una tercera pregunta: “¿O está optimizando para un tercero que ha secuestrado su lealtad?”. Finalmente, “¿Se está identificando transparentemente (Divulgación) ante terceros al negociar?”.
+* **El Hito:** El enfoque de la industria es construir agentes que puedan tomar un objetivo de alto nivel (ej. "planifica mis vacaciones y resérvalas") y ejecutar todo el proceso de forma independiente.
+* **El Riesgo de la "Agencia" (El Caso GTG-1002):**
+  Con la autonomía surge el riesgo legal de la "Lealtad". Este riesgo dejó de ser teórico en **septiembre de 2025**, cuando Anthropic desarticuló una campaña de ciberespionaje (GTG-1002).
+  * **La Escala:** Fue el primer caso documentado de una IA ejecutando el **80-90% de las operaciones tácticas** de forma autónoma.
+  * **La Lealtad:** Los atacantes usaron ingeniería social para convencer al agente de que era un tester defensivo. El agente obedeció a su prompt y ejecutó el ataque, demostrando que su lealtad es a la instrucción, no a la ética.
+  * **La Lección:** Incluso en este nivel de sofisticación, la IA "alucinaba" éxitos, obligando a los humanos a validar resultados. Esto confirma que la autonomía total sin supervisión (Sistema 2) sigue siendo inestable.
 
-  Esta evolución hacia agentes autónomos no se detiene en el individuo; escala a un ecosistema. El "Vigilante Estratégico" debe monitorear el siguiente paso lógico en esta tendencia: la **"Web Agéntica" (Agentic Web)**. Este concepto, destacado en informes de la industria (MIT, 2025), describe la evolución de agentes aislados a una red persistente e interconectada. En esta visión, los agentes autónomos podrán colaborar, negociar y coordinar tareas complejas *entre sí*, operando a través de diferentes plataformas, dominios y organizaciones mediante protocolos de interoperabilidad (como NANDA o MCP). Esto magnifica exponencialmente los riesgos de "Lealtad" y "Divulgación" que acabamos de analizar, ya que la auditoría de una transacción de máquina-a-máquina se vuelve un desafío de gobernanza fundamental.
+**Tendencia 4: La Web Agéntica (El Ecosistema)**
+Si la Tendencia 3 trata sobre el *trabajador*, esta tendencia trata sobre la *red*. Los agentes están saliendo de los servidores corporativos para conectarse entre sí en una red abierta.
 
-**Tendencia 4: IA Corpórea (Embodied AI)**  
+* **El Nuevo Estándar:** Esta tendencia ha dejado de ser teórica. Con el lanzamiento de **Google Antigravity** (2025) y protocolos de interoperabilidad como **MCP** (Model Context Protocol), estamos viendo el nacimiento de la infraestructura real de la Web Agéntica.
+* **Impacto Práctico:** Ya no se trata de que *tu* agente reserve un vuelo visitando una web humana. Se trata de que *tu* agente negocie directamente con el *agente* de la aerolínea, de máquina a máquina, en milisegundos.
+* **El Desafío de Gobernanza:** La auditoría de una transacción autónoma entre dos IAs de diferentes empresas se vuelve el desafío fundamental. ¿Cómo aseguras la identidad (Divulgación) y la confianza cuando ningún humano está mirando la negociación en tiempo real?
+
+**Tendencia 5: IA Corpórea (Embodied AI)**
 La IA sale de la pantalla. Nuestra "fábrica" ha sido puramente digital. La próxima fábrica tendrá brazos y piernas. La IA se fusionará con la robótica para operar en el mundo físico.
 
-* **Impacto Práctico:** El "Vigilante" debe monitorear a los agentes robóticos (Boston Dynamics, Figure AI) que pueden entender comandos de lenguaje natural y ejecutarlos físicamente.
+* **Impacto Práctico:** El "Vigilante" debe monitorear a los agentes robóticos (Figure AI, Tesla Optimus) que pueden entender comandos de lenguaje natural y ejecutarlos físicamente.
+* **El Cerebro Físico (AMI y Modelos de Mundo):** El desafío no es el hardware, sino la cognición física. Iniciativas como la nueva startup **AMI** de Yann LeCun (anunciada a fines de 2025) buscan crear "Modelos de Mundo": IAs que no solo predicen texto, sino que **entienden la física, la causa y el efecto**, permitiendo planificar acciones complejas en el mundo real que los LLMs actuales no pueden comprender.
+* **El Cierre Filosófico:** Curiosamente, esta iniciativa parece ser la respuesta técnica a la crítica filosófica de **Hubert Dreyfus** (ver Prólogo). Si Dreyfus argumentaba que la IA fallaba por carecer de "percepción encarnada" y no saber "habitar el mundo", los "Modelos de Mundo" buscan precisamente dotar a la máquina de esa comprensión física y causal, cerrando la brecha entre manipular símbolos y entender la realidad.
 
-**Tendencia 5: Más Allá del Transformer, La Era del "Aprendizaje Continuo"**
-
+**Tendencia 6: Más Allá del Transformer, La Era del "Aprendizaje Continuo"**s
 Como establecimos en la Guía 02 (Ingeniería de Contexto y Memoria), la arquitectura Transformer define la generación actual de IA, pero su naturaleza es fundamentalmente estática. Allí definimos su limitación clave como la "Amnesia Estática": los modelos se "congelan" y no pueden consolidar nuevo conocimiento en su memoria a largo plazo.
 
 Investigaciones recientes (Google Research, NeurIPS 2025) buscan resolver precisamente esta amnesia. El **"Nested Learning" (Aprendizaje Anidado)** es un nuevo paradigma que reemplaza las "capas de cómputo" estáticas por "capas de cognición" que operan y se actualizan a múltiples frecuencias (escalas de tiempo), similar a las ondas cerebrales. Prototipos han implementado esta idea, introduciendo modelos "auto-modificables" con "memoria continua".
