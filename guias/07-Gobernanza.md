@@ -126,9 +126,9 @@ La ciberseguridad tradicional se preocupaba por *firewalls* y *redes*. La *Ciber
 
 Si la Gobernanza es el "qué" estratégico, la **LOSA (Layer of Safety & Alignment)** es el "cómo" técnico. Es la arquitectura que envuelve al modelo y a sus agentes, actuando como una capa desacoplada de seguridad, control y alineamiento que protege a la organización incluso cuando el modelo subyacente es opaco, no determinista o evoluciona con el tiempo.
 
-A diferencia de los enfoques ingenuos que esperan que un agente "decida ser seguro", la LOSA impone la seguridad desde fuera. Es un *middleware* explícito: una envolvente de control que gobierna todas las entradas, decisiones intermedias y salidas del sistema de IA.
+A diferencia de los enfoques ingenuos que esperan que un agente "decida ser seguro", la LOSA impone la seguridad desde fuera. Es un middleware explícito: una envolvente de control que gobierna todas las entradas, decisiones intermedias y salidas del sistema de IA.
 
-Los "guardrails", "circuit breakers" y los puntos de "Validación Humana" no son conceptos abstractos, sino componentes de software que residen dentro de esta arquitectura.
+Los "guardrails", "circuit breakers" y los puntos de "Validación Humana" no son conceptos abstractos, sino componentes de software que residen dentro de esta arquitectura. A esta capa arquitectónica de seguridad, que la industria suele implementar mediante diversos filtros dispersos, la denominaremos formalmente LOSA para unificar su gestión.
 
 #### 1. Qué resuelve la LOSA
 
