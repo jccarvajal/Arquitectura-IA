@@ -60,7 +60,7 @@ Las Políticas del "Arquitecto de la Información":
 
 #### Parte 2: El Pipeline "ETL-V" (La Refinería de Combustible)
 
-"ETL" (Extract, Transform, Load) es un término clásico de la ingeniería de datos. Para la IA, le agregamos una "V". Este es el proceso técnico (la "refinería") que convierte tus datos "crudos" (petróleo) en "combustible" RAG (gasolina de avión).
+"ETL" (Extract, Transform, Load) es un término clásico de la ingeniería de datos. **En esta obra, proponemos adaptar el concepto a "ETL-V" (añadiendo la Vectorización).** Este es el proceso técnico (la "refinería") que convierte tus datos "crudos" (petróleo) en "combustible" RAG (gasolina de avión).
 
 1. **Extract (Extraer):** El proceso de "succionar" los datos crudos de donde viven.  
    * *Ejemplo:* Conectarse a Google Drive, a una base de datos SQL, a un sitio web (scraping) o a una carpeta de red.  
