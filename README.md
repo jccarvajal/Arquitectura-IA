@@ -44,7 +44,7 @@ Marco conceptual y filosófico.
 * [Ideas Centrales](./ideas-centrales.md)
   *Resumen ejecutivo de los conceptos clave.*
 
-#### 🧱 Bloque 1: Fundamentos Técnicos
+#### 🧱 Bloque 1: Fundamentos Técnicos (Cómo funciona)
 Comprensión de las capacidades y límites del motor.
 
 * [Guía 01: Ingeniería de Prompts](./guias/01-Ingenieria-Prompts.md)
@@ -54,7 +54,7 @@ Comprensión de las capacidades y límites del motor.
 * [Guía 03: Estrategia de Datos](./guias/03-Estrategia-Datos.md)
   *Gobernanza de la fuente y vectores (RAG).*
 
-#### 🏗️ Bloque 2: Ingeniería y Construcción
+#### 🏗️ Bloque 2: Ingeniería y Construcción (Cómo se hace)
 Arquitecturas para sistemas autónomos.
 
 * [Guía 04: Ingeniería de Agentes](./guias/04-Ingenieria-Agentes.md)
@@ -64,7 +64,7 @@ Arquitecturas para sistemas autónomos.
 * [Guía 06: Prototipado](./guias/06-Prototipado.md)
   *Metodología de validación rápida.*
 
-#### 🎛️ Bloque 3: Operación y Gobernanza
+#### 🎛️ Bloque 3: Operación y Gobernanza (Cómo se gestiona)
 El paso a producción: seguridad, calidad y monitoreo.
 
 * [Guía 07: Gobernanza de IA](./guias/07-Gobernanza.md)
@@ -74,7 +74,7 @@ El paso a producción: seguridad, calidad y monitoreo.
 * [Guía 09: Industrialización](./guias/09-Industrializacion.md)
   *LLM-Ops y escalabilidad.*
 
-#### 🤝 Bloque 4: Impacto y Estrategia
+#### 🤝 Bloque 4: Impacto y Estrategia (Cómo nos afecta)
 La dimensión humana y de negocio.
 
 * [Guía 10: Ética y Confianza](./guias/10-Humanidad-Etica.md)
@@ -84,7 +84,7 @@ La dimensión humana y de negocio.
 * [Guía 12: Estrategia y Valor](./guias/12-Estrategia-Valor.md)
   *Modelos de negocio y fosos competitivos.*
 
-#### 🔭 Bloque 5: Futuro
+#### 🔭 Bloque 5: La Expansión (Cómo proyectamos)
 Prospección tecnológica.
 
 * [Guía 13: Perspectivas](./guias/13-Perspectivas-Futuro.md)
