@@ -31,12 +31,39 @@ Para gestionar la fábrica, debemos tomar estas cualidades "blandas" y convertir
 
 #### Parte 2: El "Golden Set": La Pista de Pruebas Estándar
 
-No puedes probar tu sistema "al azar". Necesitas una referencia, una "pista de pruebas" estandarizada. En IA, esto se llama un "Golden Set" (Set Dorado) o Benchmark.
+No puedes probar tu sistema "al azar". Necesitas una referencia, una "pista de pruebas". En la ingeniería de IA tradicional, esto es un archivo estático. En la **Arquitectura de IA moderna**, el "Golden Set" (Set Dorado) es un organismo vivo.
 
-* **¿Qué es?** Es una colección curada por expertos de cientos (o miles) de preguntas de ejemplo (prompts) que representan los desafíos reales que enfrentará tu agente.  
-* **¿Qué incluye?** No solo incluye las preguntas, sino también las respuestas ideales (o "ground truth") validadas por humanos.  
-* **¿Para qué sirve?** Cada vez que haces un cambio en tu fábrica (un nuevo prompt, un nuevo modelo de motor), corres el sistema completo contra este "Golden Set".  
-* **Metáfora:** Es la "pista de pruebas" oficial de la fábrica. No puedes decir que el nuevo motor es "mejor" si no lo has probado en la misma pista y bajo las mismas condiciones que el motor antiguo.
+**1. De Estático a Dinámico**
+
+* **El Enfoque Antiguo (Estático):** Un Excel con 50 preguntas y respuestas ideales creado al inicio del proyecto.
+  * *Problema:* La realidad cambia (precios, leyes, productos). El set se pudre en un mes y el agente aprueba un examen obsoleto.
+* **El Enfoque Moderno (Living Ground Truth):** Un flujo de datos continuo. El Golden Set no se "escribe", se "cosecha" de la operación real.
+
+**2. El Ciclo de Vida del Dato de Evaluación**
+
+Para mantener la calidad industrial, debes implementar una tubería (pipeline) que gestione la verdad:
+
+* **A. Cosecha (Harvesting):**
+  ¿De dónde salen las preguntas de prueba? De los **"Casos de Borde"** (Edge Cases) en producción.
+  * *Mecanismo:* Cada vez que un "Humano-en-el-Bucle" (Guía 10) corrige o rechaza una respuesta del agente, ese incidente se captura automáticamente. "Aquí el agente falló".
+
+* **B. Curaduría (Curation - Sistema 2):**
+  Ese fallo capturado no entra sucio al set. Pasa a una bandeja de revisión donde un experto humano (S2) define cuál *debería* haber sido la respuesta correcta.
+  * *Resultado:* Transformamos un error operativo en un activo de aprendizaje ("Ground Truth").
+
+* **C. Inyección (Regression Testing):**
+  El nuevo caso curado se agrega al Golden Set. La próxima vez que actualices el modelo, se le evaluará contra este nuevo caso difícil.
+  * *Objetivo:* Asegurar que el agente **nunca cometa el mismo error dos veces**. Esto se llama "Prueba de Regresión": garantizar que al arreglar algo nuevo, no rompimos algo viejo.
+
+* **D. Retiro (Decommissioning):**
+  Las preguntas sobre productos descontinuados o leyes derogadas deben ser purgadas automáticamente para no penalizar al agente por estar actualizado.
+
+**3. La Métrica de Cobertura**
+
+Un Golden Set profesional no solo mide "aciertos", mide **cobertura**.
+* ¿Tengo preguntas de prueba para el tema "Reembolsos"? Sí.
+* ¿Tengo preguntas de prueba para "Inyección de Prompts"? No.
+* *Acción:* El Arquitecto debe diseñar casos sintéticos (usando la técnica del Blueprint 5) para cubrir los huecos donde no tenemos datos reales.
 
 ---
 
