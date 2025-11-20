@@ -49,7 +49,7 @@ Comprensión de las capacidades y límites del motor.
 
 * [Guía 01: Ingeniería de Prompts](./guias/01-Ingenieria-Prompts.md)
   *Diseño de instrucciones deterministas.*
-* [Guía 02: Ingeniería de Contexto](./guias/02-Ingenieria-Contexto.md)
+* [Guía 02: Ingeniería de Contexto y Memoria](./guias/02-Ingenieria-Contexto.md)
   *Gestión de memoria y limitaciones del Transformer.*
 * [Guía 03: Estrategia de Datos](./guias/03-Estrategia-Datos.md)
   *Gobernanza de la fuente y vectores (RAG).*
@@ -59,9 +59,9 @@ Arquitecturas para sistemas autónomos.
 
 * [Guía 04: Ingeniería de Agentes](./guias/04-Ingenieria-Agentes.md)
   *Orquestación y Ciclos ReAct.*
-* [Guía 05: Sistemas Cognitivos](./guias/05-Sistemas-Cognitivos.md)
+* [Guía 05: Diseño de Sistemas Cognitivos](./guias/05-Sistemas-Cognitivos.md)
   *Patrones de razonamiento (Chain of Thought, Tree of Thoughts).*
-* [Guía 06: Prototipado](./guias/06-Prototipado.md)
+* [Guía 06: Prototipado y Experimentación](./guias/06-Prototipado.md)
   *Metodología de validación rápida.*
 
 #### 🎛️ Bloque 3: Operación y Gobernanza (Cómo se gestiona)
