@@ -1,4 +1,4 @@
-## Bloque 1: Los Fundamentos (Cómo funciona)
+## Bloque 1: Fundamentos Técnicos (Cómo funciona)
 
 ### Guía 01: La Guía Definitiva de la Ingeniería de Prompts
 
