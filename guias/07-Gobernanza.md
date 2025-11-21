@@ -205,9 +205,9 @@ Investigaciones recientes (Sun, et al., 2025) demuestran que el éxito de un age
 
 ---
 
-#### Parte 5: El Pilar de la Gobernanza (Observabilidad)
+#### Parte 5: El Pilar de la Gobernanza (Observabilidad Ampliada)
 
-No puedes "gobernar" lo que no puedes "ver". Muchos sistemas de IA son percibidos como "cajas negras", un problema conocido como **Opacidad**: la incapacidad de entender cómo un sistema llega a un resultado. Para combatir la opacidad, la **Observabilidad**, la capacidad técnica de monitorear el sistema a través de métricas y registros de eventos (logs), es el pilar central de la gobernanza.
+No puedes "gobernar" lo que no puedes "ver". Muchos sistemas de IA son percibidos como "cajas negras", un problema conocido como **Opacidad**: la incapacidad de entender cómo un sistema llega a un resultado. Para combatir la opacidad, la **Observabilidad Ampliada**, la capacidad técnica de monitorear el sistema a través de métricas y registros de eventos (logs), es el pilar central de la gobernanza.
 
 Es el panel de control en tiempo real de tu "fábrica" de IA. Es la única forma de saber si tus agentes están operando de forma segura y eficiente.
 
