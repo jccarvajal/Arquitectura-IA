@@ -96,6 +96,17 @@ Es el panel de control en tiempo real de tu "fábrica" de IA. Es la única forma
 * **Alertas:** "ALERTA: Detectados 50 intentos de *Inyección de Prompt* (ataques de instrucción oculta) desde la IP 1.2.3.4 en la última hora. El 'Agente Lector Tonto' los bloqueó."  
 * **Auditoría:** Registros de cada *"Ciclo ReAct"* (el rastro de pensamiento del agente) para la "Auditabilidad de Caja Negra", que permite revisar cómo un agente tomó una decisión.
 
+#### La Diferencia Conceptual: Estándar vs. Ampliada
+
+La Observabilidad Ampliada no es un simple cambio de nombre; es un cambio de propósito. La práctica tradicional se enfoca en el *Uptime*; la práctica Ampliada se enfoca en la *Auditabilidad* y el *Riesgo*.
+
+| Aspecto | Observabilidad Estándar (Tradicional) | Observabilidad Ampliada (Nuevo Enfoque) |
+| :--- | :--- | :--- |
+| **Foco** | La Salud de la **Infraestructura** (CPU, Latencia). | La Salud de la **Decisión Cognitiva** y la **Seguridad del Resultado**. |
+| **Pregunta** | ¿El servidor está lento? ¿El API funciona? | ¿El agente está alucinando? ¿El costo por token se disparó? |
+| **Datos Clave** | CPU, RAM, Latencia de API, Tasa de Errores. | **Trazas de Razonamiento (ReAct Logs), Costo por Token, Alertas de Inyección, Drifts de Calidad.** |
+| **Propósito** | Fiabilidad (*Uptime* y *Performance*). | **Auditabilidad, Control Financiero y Mitigación de Riesgo (GRC).** |
+
 ---
 
 #### Conclusión: De Ingeniero a Director de Ecosistema
