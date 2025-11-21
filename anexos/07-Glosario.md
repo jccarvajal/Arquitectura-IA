@@ -273,10 +273,10 @@ Este anexo es el léxico centralizado de "Inteligencia Artificial Aplicada". La 
 * **Definición:** La capacidad de los LLM modernos (Guía 13) de procesar múltiples tipos de *input* (modalidades) más allá del texto, incluyendo imágenes, audio y video.
 * **Referencia Principal:** Guía 13 (Perspectivas y Futuro de la IA), Guía 02 (Ingeniería de Contexto y Memoria).
 
-**Observabilidad (Observability)**
+**Observabilidad Ampliada (Expanded Observability)**
 
-* **Definición:** Un pilar de la Gobernanza (Guía 07). Es la capacidad de ver lo que está sucediendo dentro del sistema de IA en tiempo real: qué prompts recibe, qué respuestas genera, cuántos tokens consume, qué tan seguido alucina. No puedes gobernar lo que no puedes ver.  
-* **Referencia Principal:** Guía 07 (Gobernanza de IA), Guía 08 (Evaluación, Calidad y Validación de IA).
+* **Definición:** La evolución de la práctica tradicional de Observabilidad. Es la capacidad extendida para monitorear la salud de la decisión cognitiva y la seguridad del resultado (GRC), más allá del monitoreo de infraestructura estándar. Captura y registra trazas de razonamiento, costos y calidad a escala industrial.
+* **Referencia Principal:** Guía 07 (Gobernanza de IA), Guía 09 (Industrialización de IA).
 
 **Patrones de Razonamiento (Reasoning Patterns)**
 
