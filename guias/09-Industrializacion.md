@@ -71,11 +71,13 @@ Este es el núcleo de las Operaciones de IA. En el prototipo, un prompt es un te
 
 ---
 
-#### Parte 3: La Observabilidad (La Gobernanza a Escala Industrial)
+### Parte 3: La Observabilidad Ampliada (La Gobernanza a Escala Industrial)
 
-No puedes 'gobernar' lo que no puedes 'ver'. La *Observabilidad* es la implementación técnica del **Riesgo** y **Cumplimiento** (el R y C de GRC). Es el *"Dashboard de Gobernanza"* que nos permite auditar la fábrica y monitorear nuestro perímetro de *ciberseguridad* en tiempo real.
+No puedes 'gobernar' lo que no puedes 'ver'. La **Observabilidad Ampliada** es la implementación técnica del Riesgo y Cumplimiento (el R y C de GRC) en el entorno de producción de IA. Es la evolución de las prácticas de monitoreo tradicionales (CPU, red, memoria) para incluir los nuevos desafíos del sistema cognitivo.
 
-El "Dashboard de Gobernanza" del prototipo era una hoja de cálculo. En producción, es un sistema de monitoreo en tiempo real (como Datadog o Prometheus, pero para LLMs). No puedes gobernar lo que no puedes ver.
+Esta Observabilidad Ampliada no solo monitorea el hardware; **su función primordial es capturar y registrar el proceso de pensamiento interno del agente (trazas, costos y validación humana)** para garantizar auditabilidad, seguridad y control de costos a escala industrial.
+
+Es el panel de control en tiempo real de tu "fábrica" de IA. Es la única forma de saber si tus agentes están operando de forma segura y eficiente.
 
 **1\. Monitoreo de Costos y Latencia:**
 
