@@ -141,7 +141,7 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
     * **Por qué leerlo:** Es el "Manifiesto Técnico" original de Yann LeCun. Define la arquitectura **JEPA** (Joint Embedding Predictive Architecture) y los "Modelos de Mundo", la base teórica de la startup AMI para crear IAs que entiendan la causa y efecto físico, no solo el lenguaje.
   * **Figure AI (2025). "Figure 03: Fleet Learning & Architecture".** [[Web]](https://www.figure.ai/news/introducing-figure-03)
     * **Por qué leerlo:** El reporte técnico del despliegue del robot Figure 03. Detalla cómo la **"tubería de datos de flota"** (Fleet Data Pipeline) permite que un robot aprenda una tarea (ej. manipular una pieza) y suba el conocimiento a la nube para que los otros 10.000 robots de la flota lo aprendan instantáneamente ("Aprendizaje de Flota").
-* **Boston Dynamics (2025). "The Electric Atlas: Reinforcement Learning for Dynamic Humanoids".** [[Web]](https://bostondynamics.com/blog/electric-new-era-for-atlas/)
+  * **Boston Dynamics (2025). "The Electric Atlas: Reinforcement Learning for Dynamic Humanoids".** [[Web]](https://bostondynamics.com/blog/electric-new-era-for-atlas/)
     * **Por qué leerlo:** Detalla el cambio histórico de la robótica: el paso de la hidráulica (fuerza bruta) a la eléctrica controlada por **Aprendizaje por Refuerzo (RL)**. Explica cómo el modelo "aprende" a moverse y manipular objetos en lugar de ser programado paso a paso.
 
 * **Tendencia 6: Más Allá del Transformer (Aprendizaje Continuo)**
