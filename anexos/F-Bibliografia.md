@@ -20,7 +20,7 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
   * **Por qué leerlo:** Introduce LoRA, la técnica de ingeniería clave para el **Ajuste Fino** (Guía 07) eficiente, permitiendo adaptar modelos masivos con recursos limitados.
 * **Boonstra, L. (Febrero 2025). "Prompt Engineering Guide".** [[Web]](https://www.kaggle.com/whitepaper-prompt-engineering)
   * **Por qué leerlo:** Es el whitepaper técnico que define la disciplina de la Ingeniería de Prompts (Guía 01). Detalla las técnicas fundamentales como zero-shot, few-shot, role prompting y los patrones de razonamiento como Chain-of-Thought y ReAct.
-* **Milam, K., & Gulli, A. (Noviembre 2025). "Context Engineering: Sessions, Memory".** [[Web]](https://cloud.google.com/blog/products/ai-machine-learning)
+* **Milam, K., & Gulli, A. (Noviembre 2025). "Context Engineering: Sessions, Memory".** [[Web]](https://www.kaggle.com/whitepaper-context-engineering-sessions-and-memory)
   * **Por qué leerlo:** El *whitepaper* fundacional que define la "Ingeniería de Contexto". Proporciona el "criterio de arquitecto" clave para diferenciar **RAG** (el "bibliotecario" experto en hechos) de la **Memoria** (el "asistente personal" experto en el usuario).
 * **Gobierno de Chile. (1999). "Ley N° 19.628 sobre protección de la vida privada".** [[Web]](https://www.bcn.cl/leychile/navegar?idNorma=141599)
   * **Por qué leerlo:** Es el pilar legal de la **Gobernanza de Datos** (Guía 04) en Chile. Define "dato personal" y "dato sensible", estableciendo la base legal de la "Estrategia de Datos".
@@ -39,9 +39,9 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
   * **Por qué leerlo:** Introduce el **Ciclo ReAct (Reason + Act)**, el "motor" fundamental de los **Agentes** (Guía 05) que les permite usar "Herramientas".
 * **Yao, S., et al. (2023). "Tree of Thoughts: Deliberate Problem Solving with Large Language Models".** [[PDF]](https://arxiv.org/abs/2305.10601)
   * **Por qué leerlo:** Define el patrón de razonamiento avanzado **Tree of Thoughts (ToT)** (Guía 06), que permite a los agentes explorar múltiples caminos de solución.
-* **Wiesinger, J., Marlow, P., & Vuskovic, V. (Septiembre 2024). "Agents".** [[Web]](https://cloud.google.com/transform/cio-guide-to-ai-agents)
+* **Wiesinger, J., Marlow, P., & Vuskovic, V. (Septiembre 2024). "Agents".** [[Web]](https://www.kaggle.com/whitepaper-agents)
   * **Por qué leerlo:** Whitepaper conceptual que introduce la arquitectura de un Agente (Guía 05) como la composición de un Modelo (el cerebro), Herramientas (las manos) y una Capa de Orquestación.
-* **Gulli, A., et al. (Febrero 2025). "The Agents Companion".** [[Libro]](https://learning.oreilly.com/library/view/the-agents-companion/9781098166024/)
+* **Gulli, A., et al. (Febrero 2025). "The Agents Companion".** [[Libro]](https://www.kaggle.com/whitepaper-agent-companion)
   * **Por qué leerlo:** Es el "102" de las guías de construcción. Explora patrones de "múltiples agentes" (jerárquicos, colaborativos) y detalla la Evaluación de Agentes (Guía 10).
 
 ---
@@ -60,9 +60,9 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
   * **Por qué leerlo:** Marco de seguridad fundamental que aborda la protección de la IA en la infraestructura y el producto. Respaldo conceptual para la Gobernanza (Guía 09).
 * **ISO/IEC. (2023). "ISO/IEC 42001:2023 Information technology — Artificial intelligence — Management system".** [[Web]](https://www.iso.org/standard/81230.html)
   * **Por qué leerlo:** Es el primer estándar internacional certificable para sistemas de gestión de IA. Referencia técnica definitiva para operacionalizar el marco GRC.
-* **Huyen, Chip (2024). "AI Engineering".** [[Libro]](https://www.oreilly.com/library/view/ai-engineering/9781098166291/)
+* **Huyen, Chip (2024). "AI Engineering".** [[Libro]](https://www.oreilly.com/library/view/ai-engineering/9781098166298/)
   * **Por qué leerlo:** Complemento técnico directo de esta obra. Detalla la implementación de ingeniería para Agentes, RAG y "Guardrails" en producción.
-* **Kartakis, S., et al. (Noviembre 2025). "Prototype to Production".** [[Web]](https://cloud.google.com/blog/topics/developers-practitioners)
+* **Kartakis, S., et al. (Noviembre 2025). "Prototype to Production".** [[Web]](https://www.kaggle.com/whitepaper-prototype-to-production)
   * **Por qué leerlo:** Manual de "AgentOps" que fundamenta la **Guía 11: Industrialización**. Detalla CI/CD y Observabilidad para agentes.
 
 ---
@@ -73,13 +73,13 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 
 * **Challapally, A., et al. (Julio 2025). "The GenAI Divide: State of AI in Business 2025". MIT / Project NANDA.** [[PDF]](https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf)
   * **Por qué leerlo:** Es el informe de mercado clave de 2025. Proporciona los datos estadísticos que validan la tesis de esta obra: la **"Brecha GenAI"** (el 95% de las empresas con ROI cero). Define los conceptos de **"Shadow AI"** (IA en la sombra), **"Prosumers"** (usuarios expertos) y la superioridad de la estrategia "Comprar" vs. "Construir", que son fundamentales para la Gobernanza (Guía 07), la Sinergia (Guía 11) y la Estrategia (Guía 12).
-* **Singla, A., et al. (Noviembre 2025). "The state of AI in 2025". McKinsey.** [[Web]](https://www.mckinsey.com/capabilities/quantumblack/our-insights)
+* **Singla, A., et al. (Noviembre 2025). "The state of AI in 2025". McKinsey.** [[Web]](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)
   * **Por qué leerlo:** Valida la "Brecha de Escalamiento" e identifica la "validación humana" como diferenciador clave de los *high performers*.
 * **Kahneman, D. (2011). "Thinking, Fast and Slow".** [[Libro]](https://us.macmillan.com/books/9780374533557/thinkingfastandslow)
   * **Por qué leerlo:** Fuente del marco **"Sistema 1 / Sistema 2"**, pilar conceptual de la **Sinergia Humano-IA** (Guía 15).
 * **Dreyfus, H. L. (1992). "What Computers Still Can't Do: A Critique of Artificial Reason".** [[Libro]](https://mitpress.mit.edu/9780262540674/what-computers-still-cant-do/)
   * **Por qué leerlo:** Base filosófica del Prólogo. Argumenta por qué la inteligencia sin "cuerpo" es distinta a la humana.
-* **Taleb, N. N. (2012). "Antifragile: Things That Gain from Disorder".** [[Libro]](https://www.penguinrandomhouse.com/books/213442/antifragile-by-nassim-nicholas-taleb/)
+* **Taleb, N. N. (2012). "Antifragile: Things That Gain from Disorder".** [[Libro]](https://www.penguinrandomhouse.com/books/176227/antifragile-by-nassim-nicholas-taleb/)
   * **Por qué leerlo:** Define **Fragilidad** y **Skin in the Game** (Prólogo). Esencial para entender el riesgo de sistemas sin consecuencias.
 * **Heath, C., & Heath, D. (2010). "Switch: How to Change Things When Change Is Hard".** [[Libro]](https://heathbrothers.com/books/switch/)
   * **Por qué leerlo:** Manual práctico para la **gestión del cambio**, esencial para ejecutar la Guía 15 y gestionar la resistencia cultural.
@@ -105,11 +105,11 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 * **Tendencia 1: La Explosión de la Multimodalidad (Model Cards y System Cards)**
   * **Google DeepMind (2025). "Gemini 3 Pro Model Card".** [[Web]](https://ai.google.dev/gemini-api/docs/models)
     * **Por qué leerlo:** El documento técnico oficial de la arquitectura multimodal nativa y el razonamiento ("Deep Think") de Gemini 3.
-  * **OpenAI (2025). "GPT-4o System Card".** [[PDF]](https://cdn.openai.com/gpt-4o-system-card.pdf)
+  * **OpenAI (2025). "GPT-5 System Card".** [[PDF]](https://openai.com/index/gpt-5-system-card/)
     * **Por qué leerlo:** Detalla los riesgos de gobernanza en modelos omnicanal y la mitigación de audio/visión no deseada.
-  * **Anthropic (2025). "Claude 3.5 Sonnet System Card".** [[Web]](https://www.anthropic.com/news/claude-3-5-sonnet)
+  * **Anthropic (2025). "Claude 3.5 Sonnet System Card".** [[PDF]](https://assets.anthropic.com/m/12f214efcc2f457a/original/Claude-Sonnet-4-5-System-Card.pdf)
     * **Por qué leerlo:** El estándar de la industria en "Seguridad Constitucional" y evaluación de riesgos catastróficos (CBRN).
-  * **Meta (2025). "Llama 3.1 Model Card".** [[Web]](https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md)
+  * **Meta (2025). "Llama 4 Model Card".** [[Web]](https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md)
     * **Por qué leerlo:** La referencia obligatoria para el uso de modelos de frontera Open Source (Pesos Abiertos).
   * **Mistral AI (2025). "Mistral Large Model Card".** [[Web]](https://docs.mistral.ai/getting-started/models/)
     * **Por qué leerlo:** Ejemplo de eficiencia europea y modelos optimizados para razonamiento lógico y código.
