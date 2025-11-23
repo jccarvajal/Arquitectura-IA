@@ -1,8 +1,8 @@
-# Guía 12: El ROI de la IA: El Mapa de las Cinco Zonas
+## Guía 12: El ROI de la IA: El Mapa de las Cinco Zonas
 
 **Subtítulo: Clasificación Estratégica para el "Arquitecto de Capital"**
 
-## Introducción: IA como Asignación de Capital
+### Introducción: IA como Asignación de Capital
 
 La Inteligencia Artificial no es magia: es una decisión de inversión. Y toda decisión de inversión —ya sea CAPEX, OPEX, horas hombre o reputación institucional— debe responder una sola pregunta fundamental:
 
