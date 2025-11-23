@@ -1,4 +1,4 @@
-### Guía 05: Diseño de Sistemas Cognitivos
+### Guía 06: Diseño de Sistemas Cognitivos
 
 Subtítulo: El Plano de la Mente: De 'Trabajadores' Reactivos a 'Equipos' Cognitivos
 
@@ -134,12 +134,12 @@ Hemos pasado de "contratar" al trabajador a diseñar su "plan de trabajo" detall
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
-    <a href="./04-Ingenieria-Agentes.html">« Guía Anterior</a>
+    <a href="./05-Ingenieria-Agentes.md">« Guía 05</a>
   </div>
   <div>
     <a href="../">Volver al Índice</a>
   </div>
   <div>
-    <a href="./06-Prototipado.html">Siguiente Guía »</a>
+    <a href="./07-Fine-Tuning.md">Guía 07 »</a>
   </div>
 </div>

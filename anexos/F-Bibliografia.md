@@ -1,4 +1,4 @@
-## Anexo 08: Bibliografía Fundamental
+## Anexo F: Bibliografía Fundamental
 
 Subtítulo: Lecturas Clave para el Arquitecto y el Vigilante Estratégico
 
@@ -134,10 +134,10 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
-    <div>
-      <a href="./07-Glosario.html">« Anexo Anterior</a>
-    </div>
-    <div>
-      <a href="../">Volver al Índice</a>
-    </div>
+  <div>
+    <a href="./E-Glosario.md">« Anexo E</a>
+  </div>
+  <div>
+    <a href="../">Volver al Índice</a>
+  </div>
 </div>

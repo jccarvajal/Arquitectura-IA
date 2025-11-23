@@ -1,4 +1,6 @@
-### Guía 12: Estrategia y Valor en la Era de la IA
+## Bloque 4: Impacto y Estrategía (Cómo nos afecta)
+
+### Guía 13: Estrategia y Valor en la Era de la IA
 
 Subtítulo: Del "Director de Transformación" al "Director de Estrategia"
 
@@ -97,12 +99,12 @@ Como "Director de Estrategia", tu rol es usar la eficiencia operativa de la IA (
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
-    <a href="./11-Aprender-A-Pensar.html">« Guía Anterior</a>
+    <a href="./12-ROI-Financiero.md">« Guía 12</a>
   </div>
   <div>
     <a href="../">Volver al Índice</a>
   </div>
   <div>
-    <a href="./13-Perspectivas-Futuro.html">Siguiente Guía »</a>
+    <a href="./14-Modelos-Mercado.md">Guía 14 »</a>
   </div>
 </div>

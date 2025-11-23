@@ -1,4 +1,4 @@
-### Anexo 01: Formulación y Evaluación de Proyectos de IA
+### Anexo A: Formulación y Evaluación de Proyectos de IA
 
 Subtítulo: El Canvas de Viabilidad: De la Idea al Proyecto
 
@@ -114,13 +114,13 @@ Si la IA falla catastróficamente o el servicio se cae, ¿el equipo humano manti
 
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
-    <div>
-      <a href="../conclusion.html">« Conclusión</a>
-    </div>
-    <div>
-      <a href="../">Volver al Índice</a>
-    </div>
-    <div>
-      <a href="./02-Politica-Institucional.html">Siguiente Anexo »</a>
-    </div>
+  <div>
+    <a href="../conclusion.md">« Conclusión</a>
+  </div>
+  <div>
+    <a href="../">Volver al Índice</a>
+  </div>
+  <div>
+    <a href="./B-Politica-Institucional.md">Anexo B »</a>
+  </div>
 </div>

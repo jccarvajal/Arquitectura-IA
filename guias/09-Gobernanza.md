@@ -1,6 +1,6 @@
 ## Bloque 3: Operación y Gobernanza (Cómo se gestiona)
 
-### Guía 07: La Guía Definitiva de la Gobernanza de IA
+### Guía 09: La Guía Definitiva de la Gobernanza de IA
 
 Subtítulo: Del "Director de Orquesta" al "Gobernador de Sistemas de IA"
 
@@ -234,12 +234,12 @@ Al dominar la gobernanza, dejas de orquestar resultados para empezar a garantiza
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
-    <a href="./06-Prototipado.html">« Guía Anterior</a>
+    <a href="./08-Prototipado.md">« Guía 08</a>
   </div>
   <div>
     <a href="../">Volver al Índice</a>
   </div>
   <div>
-    <a href="./08-Evaluacion-Calidad.html">Siguiente Guía »</a>
+    <a href="./10-Evaluacion-Calidad.md">Guía 10 »</a>
   </div>
 </div>

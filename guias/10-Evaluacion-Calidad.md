@@ -1,4 +1,4 @@
-### Guía 08: Evaluación, Calidad y Validación de IA
+### Guía 10: Evaluación, Calidad y Validación de IA
 
 Subtítulo: El Laboratorio de Control de Calidad: De la "Sensación" a la Métrica
 
@@ -136,12 +136,12 @@ Esta guía proporciona las herramientas y métodos para medir objetivamente la c
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
-    <a href="./07-Gobernanza.html">« Guía Anterior</a>
+    <a href="./09-Gobernanza.md">« Guía 09</a>
   </div>
   <div>
     <a href="../">Volver al Índice</a>
   </div>
   <div>
-    <a href="./09-Industrializacion.html">Siguiente Guía »</a>
+    <a href="./11-Industrializacion.md">Guía 11 »</a>
   </div>
 </div>

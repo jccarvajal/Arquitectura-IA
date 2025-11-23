@@ -1,4 +1,4 @@
-### Anexo 03: Modelos y Mercado LLM
+### Guia 14: Modelos y Mercado LLM
 
 Subtítulo: Del "Jefe de Adquisiciones" al "Arquitecto de Portafolio"
 
@@ -136,13 +136,13 @@ La maestría no reside en saber qué LLM es "mejor", sino en tener el juicio de 
 
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
-    <div>
-      <a href="./02-Politica-Institucional.html">« Anexo Anterior</a>
-    </div>
-    <div>
-      <a href="../">Volver al Índice</a>
-    </div>
-    <div>
-      <a href="./04-Blueprints.html">Siguiente Anexo »</a>
-    </div>
+  <div>
+    <a href="./13-Estrategia-Valor.md">« Guía 13</a>
+  </div>
+  <div>
+    <a href="../">Volver al Índice</a>
+  </div>
+  <div>
+    <a href="./15-Etica-Confianza.md">Guía 15 »</a>
+  </div>
 </div>

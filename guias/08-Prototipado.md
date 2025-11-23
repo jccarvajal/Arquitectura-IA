@@ -1,4 +1,4 @@
-### Guía 06: Prototipado y Experimentación
+### Guía 08: Prototipado y Experimentación
 
 Subtítulo: Del "Arquitecto de Portafolio" al "Ingeniero Jefe de Prototipos"
 
@@ -146,12 +146,12 @@ Has construido tu primera línea de ensamblaje. Has demostrado el ROI. Ahora, y 
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
-    <a href="./05-Sistemas-Cognitivos.html">« Guía Anterior</a>
+    <a href="./07-Fine-Tuning.md">« Guía 07</a>
   </div>
   <div>
     <a href="../">Volver al Índice</a>
   </div>
   <div>
-    <a href="./07-Gobernanza.html">Siguiente Guía »</a>
+    <a href="./09-Gobernanza.md">Guía 09 »</a>
   </div>
 </div>

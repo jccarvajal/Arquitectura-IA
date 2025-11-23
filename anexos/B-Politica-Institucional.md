@@ -1,5 +1,5 @@
 
-## Anexo 02: Política Institucional de Uso Responsable de Inteligencia Artificial
+## Anexo B: Política Institucional de Uso Responsable de Inteligencia Artificial
 
 *Plantilla Marco para Organizaciones Públicas y Privadas*
 
@@ -176,13 +176,13 @@ Para adopción en empresas privadas, se recomienda:
 
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
-    <div>
-      <a href="./01-Formulacion-Evaluacion.html">« Anexo Anterior</a>
-    </div>
-    <div>
-      <a href="../">Volver al Índice</a>
-    </div>
-    <div>
-      <a href="./03-Modelos-Mercado.html">Siguiente Anexo »</a>
-    </div>
+  <div>
+    <a href="./A-Formulacion-Evaluacion.md">« Anexo A</a>
+  </div>
+  <div>
+    <a href="../">Volver al Índice</a>
+  </div>
+  <div>
+    <a href="./C-Blueprints.md">Anexo C »</a>
+  </div>
 </div>

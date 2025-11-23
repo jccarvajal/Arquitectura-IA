@@ -1,6 +1,6 @@
 ## Bloque 5: La Expansión (Cómo proyectamos)
 
-### Guía 13: Perspectivas y Futuro de la IA
+### Guía 17: Perspectivas y Futuro de la IA
 
 Subtítulo: De "Arquitecto de la Fábrica" a "Vigilante Estratégico"
 
@@ -131,12 +131,12 @@ El trabajo del "Vigilante Estratégico" no es adivinar, es auditar. Es aplicar l
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
-    <a href="./12-Estrategia-Valor.html">« Guía Anterior</a>
+    <a href="./16-Aprender-A-Pensar.md">« Guía 16</a>
   </div>
   <div>
     <a href="../">Volver al Índice</a>
   </div>
   <div>
-    <a href="../conclusion.html">Conclusión »</a>
+    <a href="../conclusion.md">Conclusión »</a>
   </div>
 </div>

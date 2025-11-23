@@ -1,6 +1,4 @@
-## Bloque 4: Impacto y Estrategía (Cómo nos afecta)
-
-### Guía 10: Humanidad, Ética y Confianza
+### Guía 15: Humanidad, Ética y Confianza
 
 Subtítulo: Del "Co-Piloto" a la "Dirección de Transformación Humana"
 
@@ -165,12 +163,12 @@ Dejamos de ser "Directores de Orquesta" y nos convertimos en "Socios Cognitivos"
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
-    <a href="./09-Industrializacion.html">« Guía Anterior</a>
+    <a href="./14-Modelos-Mercado.md">« Guía 14</a>
   </div>
   <div>
     <a href="../">Volver al Índice</a>
   </div>
   <div>
-    <a href="./11-Aprender-A-Pensar.html">Siguiente Guía »</a>
+    <a href="./16-Aprender-A-Pensar.md">Guía 16 »</a>
   </div>
 </div>

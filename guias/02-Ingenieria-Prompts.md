@@ -1,6 +1,4 @@
-## Bloque 1: Fundamentos Técnicos (Cómo funciona)
-
-### Guía 01: La Guía Definitiva de la Ingeniería de Prompts
+### Guía 02: La Guía Definitiva de la Ingeniería de Prompts
 
 Subtítulo: El Plano del "Arquitecto de Instrucciones"
 
@@ -263,12 +261,12 @@ Este juicio es la habilidad central que desarrollaremos en este marco. Esta guí
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
-    <a href="../ideas-centrales.html">« Ideas Centrales</a>
+    <a href="./01-Anatomia-Modelos.md">« Guía 01</a>
   </div>
   <div>
     <a href="../">Volver al Índice</a>
   </div>
   <div>
-    <a href="./02-Ingenieria-Contexto.html">Siguiente Guía »</a>
+    <a href="./03-Contexto-Memoria.md">Guía 03 »</a>
   </div>
 </div>

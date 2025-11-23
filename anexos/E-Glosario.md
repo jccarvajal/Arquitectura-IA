@@ -1,4 +1,4 @@
-## Anexo 07: Glosario Unificado
+## Anexo E: Glosario Unificado
 
 ### Introducción: Un Lenguaje Común
 
@@ -410,13 +410,13 @@ Este anexo es el léxico centralizado de "Inteligencia Artificial Aplicada". La 
 
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
-    <div>
-      <a href="./06-Plantillas-Recursos.html">« Anexo Anterior</a>
-    </div>
-    <div>
-      <a href="../">Volver al Índice</a>
-    </div>
-    <div>
-      <a href="./08-Bibliografia.html">Siguiente Anexo »</a>
-    </div>
+  <div>
+    <a href="./D-Plantillas-Recursos.md">« Anexo D</a>
+  </div>
+  <div>
+    <a href="../">Volver al Índice</a>
+  </div>
+  <div>
+    <a href="./F-Bibliografia.md">Anexo F »</a>
+  </div>
 </div>

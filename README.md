@@ -1,11 +1,11 @@
-# Inteligencia Artificial Aplicada
-### Guías para Decidir, Diseñar y Gobernar
+# Arquitectura de Inteligencia Artificial
+## Guías para Decidir, Diseñar y Gobernar
 
-**Versión 1.1 (Noviembre 2025)**
+**Versión 1.2 (Noviembre 2025)**
 
 **Autor:** [Juan Carlos Carvajal](https://www.jccarvajal.com/)
 
-<img src="./portada.jpeg" alt="Portada del Libro - Inteligencia Artificial Aplicada" width="500">
+<img src="./portada.jpeg" alt="Portada del Libro - Arquitectura de Inteligencia Artificial" width="500">
 
 ---
 
@@ -44,51 +44,59 @@ Marco conceptual y filosófico.
 * [Ideas Centrales](./ideas-centrales.md)
   *Resumen ejecutivo de los conceptos clave.*
 
-#### 🧱 Bloque 1: Fundamentos Técnicos
+#### 🧱 Bloque 1: Fundamentos y Mecánica (Guías 1 a 4)
 Comprensión de las capacidades y límites del motor.
 
-* [Guía 01: Ingeniería de Prompts](./guias/01-Ingenieria-Prompts.md)
-  *Diseño de instrucciones deterministas.*
-* [Guía 02: Ingeniería de Contexto](./guias/02-Ingenieria-Contexto.md)
-  *Gestión de memoria y limitaciones del Transformer.*
-* [Guía 03: Estrategia de Datos](./guias/03-Estrategia-Datos.md)
-  *Gobernanza de la fuente y vectores (RAG).*
+* [Guía 01: Anatomía de Modelos](./guias/01-Anatomia-Modelos.md)
+  *Arquitectura LLM, Hardware y el ciclo ML (Training-Inference).*
+* [Guía 02: Ingeniería de Prompts](./guias/02-Ingenieria-Prompts.md)
+  *Diseño de instrucciones deterministas y el método CRF-R.*
+* [Guía 03: Contexto y Memoria](./guias/03-Contexto-Memoria.md)
+  *Gestión de memoria, RAG vs. Memoria Explícita y Amnesia Estática.*
+* [Guía 04: Estrategia de Datos](./guias/04-Estrategia-Datos.md)
+  *Gobernanza de la fuente y el pipeline ETL-V.*
 
-#### 🏗️ Bloque 2: Ingeniería y Construcción
-Arquitecturas para sistemas autónomos.
+#### 🏗️ Bloque 2: Arquitectura y Construcción Avanzada (Guías 5 a 8)
+Diseño del sistema agente, especialización y validación del prototipo.
 
-* [Guía 04: Ingeniería de Agentes](./guias/04-Ingenieria-Agentes.md)
-  *Orquestación y Ciclos ReAct.*
-* [Guía 05: Sistemas Cognitivos](./guias/05-Sistemas-Cognitivos.md)
+* [Guía 05: Ingeniería de Agentes](./guias/05-Ingenieria-Agentes.md)
+  *Orquestación y Ciclos ReAct (El motor del Agente).*
+* [Guía 06: Sistemas Cognitivos](./guias/06-Sistemas-Cognitivos.md)
   *Patrones de razonamiento (Chain of Thought, Tree of Thoughts).*
-* [Guía 06: Prototipado y Experimentación](./guias/06-Prototipado.md)
-  *Metodología de validación rápida.*
+* [Guía 07: Ajuste Fino (Fine-Tuning)](./guias/07-Fine-Tuning.md)
+  *Guía técnica para especializar un motor: RAG vs. Fine-Tuning.*
+* [Guía 08: Prototipado](./guias/08-Prototipado.md)
+  *Metodología del Quick Win y Gobernanza Mínima Viable.*
 
-#### 🎛️ Bloque 3: Operación y Gobernanza
-El paso a producción: seguridad, calidad y monitoreo.
+#### 🎛️ Bloque 3: Operación y GRC (Guías 9 a 12)
+El paso a producción: seguridad, calidad y monitoreo de la fábrica.
 
-* [Guía 07: Gobernanza de IA](./guias/07-Gobernanza.md)
-  *Ciberseguridad y control de riesgos (Inyección, Shadow AI).*
-* [Guía 08: Evaluación y QA](./guias/08-Evaluacion-Calidad.md)
-  *Métricas objetivas y "Golden Sets".*
-* [Guía 09: Industrialización](./guias/09-Industrializacion.md)
-  *LLM-Ops y escalabilidad.*
+* [Guía 09: Gobernanza](./guias/09-Gobernanza.md)
+  *Arquitectura LOSA y control de riesgos (Inyección, Shadow AI).*
+* [Guía 10: Evaluación y QA](./guias/10-Evaluacion-Calidad.md)
+  *El Golden Set Vivo y Protocolo de Validación Semántica.*
+* [Guía 11: Industrialización](./guias/11-Industrializacion.md)
+  *Observabilidad Ampliada y LLM-Ops.*
+* [Guía 12: ROI Financiero](./guias/12-ROI-Financiero.md)
+  *Mapa de las Cuatro Zonas: Dónde invertir y dónde evitar la destrucción de valor.*
 
-#### 🤝 Bloque 4: Impacto y Estrategia
-La dimensión humana y de negocio.
+#### 🤝 Bloque 4: Estrategia e Impacto Humano (Guías 13 a 16)
+Decisiones de alto nivel, habilitación de habilidades y alineación de la misión.
 
-* [Guía 10: Ética y Confianza](./guias/10-Humanidad-Etica.md)
+* [Guía 13: Estrategia y Valor](./guias/13-Estrategia-Valor.md)
+  *Modelos de negocio y el Foso Competitivo.*
+* [Guía 14: Modelos y Mercado](./guias/14-Modelos-Mercado.md)
+  *Estrategia de portafolio y el Triángulo de Adquisición.*
+* [Guía 15: Ética y Confianza](./guias/15-Etica-Confianza.md)
   *Licencia Social y Sinergia S1/S2.*
-* [Guía 11: Pensamiento Algorítmico](./guias/11-Aprender-A-Pensar.md)
-  *Nuevas competencias para el equipo humano.*
-* [Guía 12: Estrategia y Valor](./guias/12-Estrategia-Valor.md)
-  *Modelos de negocio y fosos competitivos.*
+* [Guía 16: Aprender a Pensar](./guias/16-Aprender-A-Pensar.md)
+  *Nuevas competencias para el equipo humano y el Pensamiento Algorítmico.*
 
-#### 🔭 Bloque 5: Futuro
+#### 🔭 Bloque 5: Proyección (Guía 17)
 Prospección tecnológica.
 
-* [Guía 13: Perspectivas](./guias/13-Perspectivas-Futuro.md)
-  *Web Agéntica y nuevos paradigmas.*
+* [Guía 17: Perspectivas](./guias/17-Perspectivas.md)
+  *Web Agéntica   y el rol del Vigilante Estratégico.*
 
 #### 🏁 Conclusión
 El cierre del ciclo estratégico.
@@ -98,45 +106,36 @@ El cierre del ciclo estratégico.
 
 ---
 
-### 🛠️ Anexos y Herramientas
-Recursos prácticos organizados por su función en el ciclo del proyecto.
+### 🛠️ Anexos y Herramientas (Biblioteca del Arquitecto)
 
 #### 📋 Estrategia y Gobernanza
 Herramientas para el "Día 0": Definición y Permisos.
 
-* [Anexo 01: Formulación de Proyectos](./anexos/01-Formulacion-Evaluacion.md)
+* [Anexo A: Formulación de Proyectos](./anexos/A-Formulacion-Evaluacion.md)
   *Canvas de viabilidad técnica, ética y financiera ("Screening").*
-* [Anexo 02: Política Institucional](./anexos/02-Politica-Institucional.md)
+* [Anexo B: Política Institucional](./anexos/B-Politica-Institucional.md)
   *Marco regulatorio base para el uso responsable de IA.*
 
 #### 📐 Arquitectura y Diseño
 Herramientas para la toma de decisiones técnicas y de compra.
 
-* [Anexo 03: Modelos y Mercado](./anexos/03-Modelos-Mercado.md)
-  *Matriz para elegir entre APIs, Open Source y Agentes-como-Servicio.*
-* [Anexo 04: Blueprints](./anexos/04-Blueprints.md)
+* [Anexo C: Blueprints](./anexos/C-Blueprints.md)
   *Patrones de arquitectura y casos de uso reales (Soporte, Legal, Estrategia).*
-* [Anexo 05: Ajuste Fino (Fine-Tuning)](./anexos/05-Ajuste-Fino.md)
-  *Guía técnica para decidir entre RAG y entrenamiento especializado.*
-
-#### 🧰 Caja de Herramientas
-Recursos listos para copiar y usar en producción.
-
-* [Anexo 06: Plantillas y Recursos](./anexos/06-Plantillas-Recursos.md)
-  *Plantilla de "Prompt Maestro" y rúbricas de evaluación de calidad.*
+* [Anexo D: Plantillas y Recursos](./anexos/D-Plantillas-Recursos.md)
+  *Prompts maestros (CRF-R) y rúbricas de evaluación de calidad.*
 
 #### 📚 Referencias y Fundamentos
 Base de conocimiento para alinear equipos y profundizar el criterio.
 
-* [Anexo 07: Glosario Técnico](./anexos/07-Glosario.md)
+* [Anexo E: Glosario](./anexos/E-Glosario.md)
   *Definiciones unificadas para evitar la ambigüedad conceptual.*
-* [Anexo 08: Bibliografía](./anexos/08-Bibliografia.md)
+* [Anexo F: Bibliografía](./anexos/F-Bibliografia.md)
   *Papers fundacionales y reportes de industria (2017-2025).*
 
 ---
 
 ### Changelog
-* **v1.1 (Noviembre 2025):** Actualización mayor. Se integran conceptos de Web Agéntica, nuevas arquitecturas de modelos y se refuerza el marco de Gobernanza de Ciberseguridad.
+* **v1.2 (Noviembre 2025):** Evolución a "Arquitectura de IA". Reestructuración modular a 17 Guías, integración del capítulo ROI Financiero, y blindaje conceptual de LOSA y Observabilidad.
 * Ver [Historial Completo](./changelog.md).
 
 ### Sugerencias y Mejoras

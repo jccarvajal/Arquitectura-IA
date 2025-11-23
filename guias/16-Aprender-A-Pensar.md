@@ -1,4 +1,4 @@
-### Guía 11: Aprender a Pensar con IA: Habilidades y Tácticas por Rol
+### Guía 16: Aprender a Pensar con IA: Habilidades y Tácticas por Rol
 
 Subtítulo: Alfabetización Cognitiva: De Usuario Pasivo a Co-Piloto Estratégico
 
@@ -179,12 +179,12 @@ Sin esta guía, los profesionales corren el riesgo de operar como 'usuarios pasi
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
-    <a href="./10-Humanidad-Etica.html">« Guía Anterior</a>
+    <a href="./15-Etica-Confianza.md">« Guía 15</a>
   </div>
   <div>
     <a href="../">Volver al Índice</a>
   </div>
   <div>
-    <a href="./12-Estrategia-Valor.html">Siguiente Guía »</a>
+    <a href="./17-Perspectivas.md">Guía 17 »</a>
   </div>
 </div>

@@ -1,4 +1,4 @@
-### Guía 03: La Guía Definitiva de la Estrategia de Datos
+### Guía 04: La Guía Definitiva de la Estrategia de Datos
 
 Subtítulo: Del "Jefe de Operaciones" al "Arquitecto de la Información"
 
@@ -118,12 +118,12 @@ Sin una Estrategia de Datos robusta, la fábrica de IA más avanzada del mundo s
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
-    <a href="./02-Ingenieria-Contexto.html">« Guía Anterior</a>
+    <a href="./03-Contexto-Memoria.md">« Guía 03</a>
   </div>
   <div>
     <a href="../">Volver al Índice</a>
   </div>
   <div>
-    <a href="./04-Ingenieria-Agentes.html">Siguiente Guía »</a>
+    <a href="./05-Ingenieria-Agentes.md">Guía 05 »</a>
   </div>
 </div>

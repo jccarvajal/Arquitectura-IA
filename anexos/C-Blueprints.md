@@ -1,4 +1,4 @@
-### Anexo 04: Lecciones de Implementación (Blueprints)
+### Anexo C: Lecciones de Implementación (Blueprints)
 
 Subtítulo: Blueprints y Casos de Estudio
 
@@ -247,13 +247,13 @@ La obra de guías (01-13) y anexos fue diseñada para los "Arquitectos" y "Direc
 
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
-    <div>
-      <a href="./03-Modelos-Mercado.html">« Anexo Anterior</a>
-    </div>
-    <div>
-      <a href="../">Volver al Índice</a>
-    </div>
-    <div>
-      <a href="./05-Ajuste-Fino.html">Siguiente Anexo »</a>
-    </div>
+  <div>
+    <a href="./B-Politica-Institucional.md">« Anexo B</a>
+  </div>
+  <div>
+    <a href="../">Volver al Índice</a>
+  </div>
+  <div>
+    <a href="./D-Plantillas-Recursos.md">Anexo D »</a>
+  </div>
 </div>

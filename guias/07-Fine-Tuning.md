@@ -1,4 +1,4 @@
-### Anexo 05: Ajuste Fino y Adaptación de Modelos
+### Guia 07: Ajuste Fino y Adaptación de Modelos
 
 Subtítulo: El Manual del "Especialista de Motores"
 
@@ -102,13 +102,13 @@ Un agente que tiene acceso a los libros correctos (RAG) y que además se graduó
 
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
-    <div>
-      <a href="./04-Blueprints.html">« Anexo Anterior</a>
-    </div>
-    <div>
-      <a href="../">Volver al Índice</a>
-    </div>
-    <div>
-      <a href="./06-Plantillas-Recursos.html">Siguiente Anexo »</a>
-    </div>
+  <div>
+    <a href="./06-Sistemas-Cognitivos.md">« Guía 06</a>
+  </div>
+  <div>
+    <a href="../">Volver al Índice</a>
+  </div>
+  <div>
+    <a href="./08-Prototipado.md">Guía 08 »</a>
+  </div>
 </div>

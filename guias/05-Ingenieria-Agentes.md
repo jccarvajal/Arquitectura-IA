@@ -1,6 +1,6 @@
 ## Bloque 2: Ingeniería y Construcción (Cómo se hace)
 
-### Guía 04: La Guía Definitiva de la Ingeniería de Agentes de IA
+### Guía 05: La Guía Definitiva de la Ingeniería de Agentes de IA
 
 Subtítulo: Del "Arquitecto de Instrucciones" al "Director de Programa"
 
@@ -259,12 +259,12 @@ Por ahora, domina la orquestación interna. Es el requisito previo para sobreviv
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
-    <a href="./03-Estrategia-Datos.html">« Guía Anterior</a>
+    <a href="./04-Estrategia-Datos.md">« Guía 04</a>
   </div>
   <div>
     <a href="../">Volver al Índice</a>
   </div>
   <div>
-    <a href="./05-Sistemas-Cognitivos.html">Siguiente Guía »</a>
+    <a href="./06-Sistemas-Cognitivos.md">Guía 06 »</a>
   </div>
 </div>

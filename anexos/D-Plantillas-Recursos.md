@@ -1,4 +1,4 @@
-### Anexo 06: Plantillas y Recursos
+### Anexo D: Plantillas y Recursos
 
 Subtítulo: El "Cinturón de Herramientas" del Arquitecto
 
@@ -112,13 +112,13 @@ Un framework de 2x2 para decidir para qué usar la IA en un nuevo proyecto.
 
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
-    <div>
-      <a href="./05-Ajuste-Fino.html">« Anexo Anterior</a>
-    </div>
-    <div>
-      <a href="../">Volver al Índice</a>
-    </div>
-    <div>
-      <a href="./07-Glosario.html">Siguiente Anexo »</a>
-    </div>
+  <div>
+    <a href="./C-Blueprints.md">« Anexo C</a>
+  </div>
+  <div>
+    <a href="../">Volver al Índice</a>
+  </div>
+  <div>
+    <a href="./E-Glosario.md">Anexo E »</a>
+  </div>
 </div>
