@@ -105,12 +105,12 @@ Para esta fábrica.  Y para todas las que vendrán.
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
-    <a href="./guias/17-Perspectivas.md">« Guía 17</a>
+    <a href="./guias/17-Perspectivas.html">« Guía 17</a>
   </div>
   <div>
     <a href="../">Volver al Índice</a>
   </div>
   <div>
-    <a href="./anexos/A-Formulacion-Evaluacion.md">Anexo A »</a>
+    <a href="./anexos/A-Formulacion-Evaluacion.html">Anexo A »</a>
   </div>
 </div>
