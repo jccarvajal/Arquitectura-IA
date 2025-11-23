@@ -1,8 +1,8 @@
-### Anexo A: Formulación y Evaluación de Proyectos de IA
+## Anexo A: Formulación y Evaluación de Proyectos de IA
 
 Subtítulo: El Canvas de Viabilidad: De la Idea al Proyecto
 
-#### Introducción: El Primer Filtro de Gobernanza
+### Introducción: El Primer Filtro de Gobernanza
 
 Antes de prototipar, debemos validar. Este anexo es la herramienta de **"Screening" (Triage)** mencionada en la **Guía 07 (Gobernanza)**.
 
@@ -14,7 +14,7 @@ Este documento debe ser completado por el "Dueño del Proyecto" y visado por el 
 
 ---
 
-#### Sección 1: Definición Estratégica (El "Por Qué")
+### Sección 1: Definición Estratégica (El "Por Qué")
 
 > **Contexto para el Arquitecto:**
 
@@ -38,7 +38,7 @@ Este documento debe ser completado por el "Dueño del Proyecto" y visado por el 
 
 ---
 
-#### Sección 2: Viabilidad Técnica (El "Cómo")
+### Sección 2: Viabilidad Técnica (El "Cómo")
 
 > **Contexto para el Arquitecto:**
 
@@ -59,7 +59,7 @@ Este documento debe ser completado por el "Dueño del Proyecto" y visado por el 
 
 ---
 
-#### Sección 3: Checklist de Validación Ética y de Impacto (El "Deberíamos")
+### Sección 3: Checklist de Validación Ética y de Impacto (El "Deberíamos")
 
 > **Contexto para el Arquitecto:**
 
@@ -76,7 +76,7 @@ Este documento debe ser completado por el "Dueño del Proyecto" y visado por el 
 
 ---
 
-#### Sección 4: Definición de Éxito (El "Cuánto")
+### Sección 4: Definición de Éxito (El "Cuánto")
 
 > **Contexto para el Arquitecto:**
 
@@ -94,7 +94,7 @@ Este documento debe ser completado por el "Dueño del Proyecto" y visado por el 
 
 ---
 
-#### Sección 5: Ciclo de Vida y Salida (El "Final")
+### Sección 5: Ciclo de Vida y Salida (El "Final")
 
 > **Contexto para el Arquitecto:**
 

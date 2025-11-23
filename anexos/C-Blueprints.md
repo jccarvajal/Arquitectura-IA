@@ -1,8 +1,8 @@
-### Anexo C: Lecciones de Implementación (Blueprints)
+## Anexo C: Lecciones de Implementación (Blueprints)
 
 Subtítulo: Blueprints y Casos de Estudio
 
-#### Introducción: ¿Qué es un "Blueprint"?
+### Introducción: ¿Qué es un "Blueprint"?
 
 En el contexto de esta obra, un "Blueprint" es un caso de estudio práctico y un plano de arquitectura. Su función es ser el puente entre la teoría y la práctica. 
  
@@ -20,13 +20,13 @@ Es la pieza que conecta la estrategia (las Guías) con la ejecución, y forma pa
 
 ---
 
-#### El Portafolio del Arquitecto
+### El Portafolio del Arquitecto
 
 La obra de guías (01-13) y anexos fue diseñada para los "Arquitectos" y "Directores". Este anexo es la práctica: el "Portafolio del Arquitecto". Estos son los planos que un "Ingeniero de Prototipos" o un "Director de Industrialización" usaría. A continuación, se presentan varios blueprints que aumentan en complejidad. Este portafolio no es exhaustivo y está diseñado para crecer.
 
 ---
 
-#### Blueprint 1: El "Agente de Soporte al Cliente" (PM Interno)
+### Blueprint 1: El "Agente de Soporte al Cliente" (PM Interno)
 
 * **El Problema:** El equipo de soporte está sobrecargado con preguntas de **"Sistema 1"**, tareas repetitivas, de bajo juicio, como "¿Cómo reseteo mi contraseña?" o "¿Cuál es su horario de atención?".  
 * **El Objetivo Estratégico:** Automatizar de forma segura el 80% de estas consultas de "Sistema 1" para liberar a los agentes humanos para el trabajo de **"Sistema 2"** (clientes enojados, problemas complejos).  
@@ -64,7 +64,7 @@ La obra de guías (01-13) y anexos fue diseñada para los "Arquitectos" y "Direc
 
 ---
 
-#### Blueprint 2: El "Agente-Analista-Legal" (PM Experto)
+### Blueprint 2: El "Agente-Analista-Legal" (PM Experto)
 
 * **El Problema:** Un equipo legal necesita revisar 5.000 contratos (Datos Internos) para encontrar una cláusula de riesgo específica ("Cláusula de Terminación por Conveniencia"). Es un trabajo de "Sistema 1" masivo y de alto costo.  
 * **El Objetivo Estratégico:** Automatizar el 100% de la revisión (la decisión final sigue siendo humana) en un entorno seguro (on-premise).  
@@ -104,7 +104,7 @@ La obra de guías (01-13) y anexos fue diseñada para los "Arquitectos" y "Direc
 
 ---
 
-#### Blueprint 3: El "Agente de Estrategia" (Director de Programa)
+### Blueprint 3: El "Agente de Estrategia" (Director de Programa)
 
 * **El Problema:** El Director de Marketing necesita lanzar un nuevo producto. Es un objetivo estratégico complejo, no una tarea simple.  
 * **El Objetivo Estratégico:** Usar una "Orquesta de Agentes" (un agente "Director" que coordina "Especialistas") para ejecutar el "trabajo de campo" estratégico, permitiendo al director humano enfocarse en el juicio.  
@@ -141,7 +141,7 @@ La obra de guías (01-13) y anexos fue diseñada para los "Arquitectos" y "Direc
 
 ---
 
-#### Blueprint 4: El "Agente de Gobernanza de Datos" (PM de Auditoría)
+### Blueprint 4: El "Agente de Gobernanza de Datos" (PM de Auditoría)
 
 * **El Problema:** La organización ha implementado 50 Agentes RAG (Blueprint 1), pero "datos basura" (obsoletos, incorrectos, duplicados) en las bibliotecas RAG son el mayor riesgo operativo. Se necesita una auditoría constante.  
 * **El Objetivo Estratégico:** Crear un agente autónomo que audite continuamente las Bases de Datos Vectoriales para encontrar y reportar datos obsoletos o conflictivos, asegurando la salud del ecosistema de IA.  
@@ -177,7 +177,7 @@ La obra de guías (01-13) y anexos fue diseñada para los "Arquitectos" y "Direc
 
 ---
 
-#### Blueprint 5: El "Generador de Datos Sintéticos" (PM de Entrenamiento)
+### Blueprint 5: El "Generador de Datos Sintéticos" (PM de Entrenamiento)
 
 * **El Problema:** El **Ajuste Fino (Fine-Tuning)** —la técnica para especializar el "cerebro" de un modelo— requiere cientos o miles de ejemplos de alta calidad. ¿Qué pasa si solo tenemos 50 ejemplos "perfectos" de emails de soporte, no los 1.000 necesarios?  
 * **El Objetivo Estratégico:** Usar un "motor de frontera" (un LLM grande y caro como GPT-4o u Opus) para "auto-multiplicar" los 50 ejemplos humanos "dorados", generando 950 nuevos ejemplos de **datos sintéticos** de alta calidad para el set de entrenamiento.  
@@ -202,7 +202,7 @@ La obra de guías (01-13) y anexos fue diseñada para los "Arquitectos" y "Direc
 
 ---
 
-#### Blueprint 6: El "Co-Piloto Creativo" (Sinergia de Escritura)
+### Blueprint 6: El "Co-Piloto Creativo" (Sinergia de Escritura)
 
 * **El Problema:** Un gerente necesita escribir un reporte estratégico complejo. Sufre del "síndrome de la página en blanco" y la tarea es puramente de "Sistema 2", por lo que no puede ser totalmente delegada.  
 * **El Objetivo Estratégico:** Usar la IA no como un "escritor fantasma", sino como un "compañero de debate" para aplicar el "Pensamiento Algorítmico" (descomponer un problema grande en pasos) e iterar en un producto de alta calidad.  
@@ -223,7 +223,7 @@ La obra de guías (01-13) y anexos fue diseñada para los "Arquitectos" y "Direc
 
 ---
 
-#### Blueprint 7: El "Producto-como-Agente" (Monetización Externa)
+### Blueprint 7: El "Producto-como-Agente" (Monetización Externa)
 
 * **El Problema:** El "Agente-Analista-Legal" (Blueprint 2\) es un activo interno tan valioso y eficiente que otras organizaciones han preguntado si pueden usarlo.  
 * **El Objetivo Estratégico:** Implementar la Estrategia de Innovación convirtiendo un activo de eficiencia interna (un "centro de costos") en un producto comercial externo (un "centro de ingresos") como un **Agente-como-Servicio (AaaS)**.  

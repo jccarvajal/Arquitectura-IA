@@ -1,6 +1,6 @@
 ## Guía 12: El ROI de la IA: El Mapa de las Cinco Zonas
 
-**Subtítulo: Clasificación Estratégica para el "Arquitecto de Capital"**
+Subtítulo: Clasificación Estratégica para el "Arquitecto de Capital"
 
 ### Introducción: IA como Asignación de Capital
 
