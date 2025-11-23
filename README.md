@@ -1,5 +1,5 @@
 # Arquitectura de Inteligencia Artificial
-## Guías para Decidir, Diseñar y Gobernar
+### Guías para Decidir, Diseñar y Gobernar
 
 **Versión 1.2 (Noviembre 2025)**
 

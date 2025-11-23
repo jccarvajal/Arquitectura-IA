@@ -1,6 +1,24 @@
 # Historial de Versiones
 
-Este documento registra todas las modificaciones estructurales, técnicas y conceptuales realizadas en el libro **"Inteligencia Artificial Aplicada: Guías para Decidir, Diseñar y Gobernar"**
+Este documento registra todas las modificaciones estructurales, técnicas y conceptuales realizadas en el libro **"Arquitectura de Inteligencia Artificial: Guías para Decidir, Diseñar y Gobernar"**
+
+---
+
+### Versión 1.2 (Noviembre 2025)
+
+**Motivo:** Evolución a un estándar de arquitectura corporativa. Cambio de nombre a **"Arquitectura de IA"** para reflejar el enfoque en diseño y gobernanza de sistemas. Reestructuración modular del contenido.
+
+#### Cambios Estructurales y de Arquitectura
+
+* **Cambio de Nombre:** El título principal de la obra fue cambiado de *"Inteligencia Artificial Aplicada"* a **"Arquitectura de Inteligencia Artificial"**.
+* **Reestructuración Modular:** El sistema de Guías fue reordenado y ampliado a **17 Guías** y **6 Anexos (A-F)** para optimizar el flujo de Estrategia, Construcción y Operación.
+* **Integración de Contenido Nuevo:** Se añadieron las guías de alto valor **ROI Financiero** (Guía 12), **Ajuste Fino** (Guía 07) y **Anatomía de Modelos** (Guía 01).
+* **Blindaje Conceptual (LOSA/Evaluación):**
+    * **LOSA:** El concepto fue formalmente expandido a una **Arquitectura Middleware** (Guía 09), definiendo sus componentes de Input, Process, y Output control.
+    * **Golden Set:** Elevado de un *benchmark* estático a un **Protocolo de Verdad Viva** (Living Ground Truth), con un ciclo de vida para cosecha y curaduría continua (Guía 10).
+    * **Observabilidad:** El término genérico fue reemplazado por **Observabilidad Ampliada** a nivel de sistema.
+* **Consistencia Terminológica:** Se aclaró que **Amnesia Estática** y **ETL-V** son adaptaciones conceptuales propias del libro.
+* **Actualizaciones Tecnológicas:** Se sincronizaron todas las referencias al estándar de vanguardia **Gemini 3 Pro**, **Google Antigravity** y la iniciativa **AMI (LeCun)**.
 
 ---
 
@@ -45,7 +63,7 @@ Este documento registra todas las modificaciones estructurales, técnicas y conc
 | **Guía 04** | Coherencia ReAct | Se alineó el formato del ciclo ReAct y los emojis con el estándar de la Guía 02. |
 | **Guía 10** | Fundamentos S1/S2 | Se añadió la atribución explícita a **Daniel Kahneman** y se eliminó la referencia confusa a la "Lista de Fitts". |
 | **Guía 13** | Perspectivas y Futuro | Se añadió **"Nested Learning"** y **"Web Agéntica"** (Agentic Web) como tendencias futuras. |
-| **Anexo 03** | Plantillas | Se explicitaron las siglas **"CRF-R"** (Contexto, Rol, Formato, Restricciones) en la Plantilla 1.1 y se corrigió el formato de código. |
+| **Anexo 03** | Plantillas | Se explicitó la sigla **"CRF-R"** (Contexto, Rol, Formato, Restricciones) en la Plantilla 1.1 y se corrigió el formato de código. |
 | **Anexo 06** | Glosario Unificado | Se añadieron más de 30 términos, incluyendo: **Ingeniería de Contexto**, **Amnesia Estática**, **Web Agéntica**, **GRC** y **Lealtad Agéntica**. |
 
 ---
