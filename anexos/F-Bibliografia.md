@@ -153,7 +153,7 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
-    <a href="./E-Glosario.md">« Anexo E</a>
+    <a href="./E-Glosario.html">« Anexo E</a>
   </div>
   <div>
     <a href="../">Volver al Índice</a>

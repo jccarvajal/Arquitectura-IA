@@ -179,12 +179,12 @@ Sin esta guía, los profesionales corren el riesgo de operar como 'usuarios pasi
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
-    <a href="./15-Etica-Confianza.md">« Guía 15</a>
+    <a href="./15-Etica-Confianza.html">« Guía 15</a>
   </div>
   <div>
     <a href="../">Volver al Índice</a>
   </div>
   <div>
-    <a href="./17-Perspectivas.md">Guía 17 »</a>
+    <a href="./17-Perspectivas.html">Guía 17 »</a>
   </div>
 </div>

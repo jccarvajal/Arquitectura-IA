@@ -248,12 +248,12 @@ La obra de guías (01-13) y anexos fue diseñada para los "Arquitectos" y "Direc
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
-    <a href="./B-Politica-Institucional.md">« Anexo B</a>
+    <a href="./B-Politica-Institucional.html">« Anexo B</a>
   </div>
   <div>
     <a href="../">Volver al Índice</a>
   </div>
   <div>
-    <a href="./D-Plantillas-Recursos.md">Anexo D »</a>
+    <a href="./D-Plantillas-Recursos.html">Anexo D »</a>
   </div>
 </div>

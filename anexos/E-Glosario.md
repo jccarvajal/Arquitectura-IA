@@ -446,12 +446,12 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
-    <a href="./D-Plantillas-Recursos.md">« Anexo D</a>
+    <a href="./D-Plantillas-Recursos.html">« Anexo D</a>
   </div>
   <div>
     <a href="../">Volver al Índice</a>
   </div>
   <div>
-    <a href="./F-Bibliografia.md">Anexo F »</a>
+    <a href="./F-Bibliografia.html">Anexo F »</a>
   </div>
 </div>

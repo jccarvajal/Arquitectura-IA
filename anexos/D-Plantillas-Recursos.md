@@ -113,12 +113,12 @@ Un framework de 2x2 para decidir para qué usar la IA en un nuevo proyecto.
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
-    <a href="./C-Blueprints.md">« Anexo C</a>
+    <a href="./C-Blueprints.html">« Anexo C</a>
   </div>
   <div>
     <a href="../">Volver al Índice</a>
   </div>
   <div>
-    <a href="./E-Glosario.md">Anexo E »</a>
+    <a href="./E-Glosario.html">Anexo E »</a>
   </div>
 </div>

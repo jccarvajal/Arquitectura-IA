@@ -177,12 +177,12 @@ Para adopción en empresas privadas, se recomienda:
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
-    <a href="./A-Formulacion-Evaluacion.md">« Anexo A</a>
+    <a href="./A-Formulacion-Evaluacion.html">« Anexo A</a>
   </div>
   <div>
     <a href="../">Volver al Índice</a>
   </div>
   <div>
-    <a href="./C-Blueprints.md">Anexo C »</a>
+    <a href="./C-Blueprints.html">Anexo C »</a>
   </div>
 </div>

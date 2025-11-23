@@ -259,12 +259,12 @@ Por ahora, domina la orquestación interna. Es el requisito previo para sobreviv
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
-    <a href="./04-Estrategia-Datos.md">« Guía 04</a>
+    <a href="./04-Estrategia-Datos.html">« Guía 04</a>
   </div>
   <div>
     <a href="../">Volver al Índice</a>
   </div>
   <div>
-    <a href="./06-Sistemas-Cognitivos.md">Guía 06 »</a>
+    <a href="./06-Sistemas-Cognitivos.html">Guía 06 »</a>
   </div>
 </div>

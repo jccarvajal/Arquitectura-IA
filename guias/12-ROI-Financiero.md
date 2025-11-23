@@ -172,12 +172,12 @@ La IA no se adopta con valentía tecnológica; se adopta con **criterio financie
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
-    <a href="./11-Industrializacion.md">« Guía 11</a>
+    <a href="./11-Industrializacion.html">« Guía 11</a>
   </div>
   <div>
     <a href="../">Volver al Índice</a>
   </div>
   <div>
-    <a href="./13-Estrategia-Valor.md">Guía 13 »</a>
+    <a href="./13-Estrategia-Valor.html">Guía 13 »</a>
   </div>
 </div>

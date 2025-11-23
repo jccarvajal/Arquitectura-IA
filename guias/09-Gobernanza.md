@@ -234,12 +234,12 @@ Al dominar la gobernanza, dejas de orquestar resultados para empezar a garantiza
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
-    <a href="./08-Prototipado.md">« Guía 08</a>
+    <a href="./08-Prototipado.html">« Guía 08</a>
   </div>
   <div>
     <a href="../">Volver al Índice</a>
   </div>
   <div>
-    <a href="./10-Evaluacion-Calidad.md">Guía 10 »</a>
+    <a href="./10-Evaluacion-Calidad.html">Guía 10 »</a>
   </div>
 </div>

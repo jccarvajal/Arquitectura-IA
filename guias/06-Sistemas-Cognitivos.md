@@ -134,12 +134,12 @@ Hemos pasado de "contratar" al trabajador a diseñar su "plan de trabajo" detall
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
-    <a href="./05-Ingenieria-Agentes.md">« Guía 05</a>
+    <a href="./05-Ingenieria-Agentes.html">« Guía 05</a>
   </div>
   <div>
     <a href="../">Volver al Índice</a>
   </div>
   <div>
-    <a href="./07-Fine-Tuning.md">Guía 07 »</a>
+    <a href="./07-Fine-Tuning.html">Guía 07 »</a>
   </div>
 </div>

@@ -261,12 +261,12 @@ Este juicio es la habilidad central que desarrollaremos en este marco. Esta guí
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
-    <a href="./01-Anatomia-Modelos.md">« Guía 01</a>
+    <a href="./01-Anatomia-Modelos.html">« Guía 01</a>
   </div>
   <div>
     <a href="../">Volver al Índice</a>
   </div>
   <div>
-    <a href="./03-Contexto-Memoria.md">Guía 03 »</a>
+    <a href="./03-Contexto-Memoria.html">Guía 03 »</a>
   </div>
 </div>

@@ -146,12 +146,12 @@ Has construido tu primera línea de ensamblaje. Has demostrado el ROI. Ahora, y 
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
-    <a href="./07-Fine-Tuning.md">« Guía 07</a>
+    <a href="./07-Fine-Tuning.html">« Guía 07</a>
   </div>
   <div>
     <a href="../">Volver al Índice</a>
   </div>
   <div>
-    <a href="./09-Gobernanza.md">Guía 09 »</a>
+    <a href="./09-Gobernanza.html">Guía 09 »</a>
   </div>
 </div>

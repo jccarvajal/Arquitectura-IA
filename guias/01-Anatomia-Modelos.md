@@ -126,12 +126,12 @@ Utilice este cuestionario para evaluar modelos en contextos corporativos o de co
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
-    <a href="../ideas-centrales.md">« Ideas Centrales</a>
+    <a href="../ideas-centrales.html">« Ideas Centrales</a>
   </div>
   <div>
     <a href="../">Volver al Índice</a>
   </div>
   <div>
-    <a href="./02-Ingenieria-Prompts.md">Guía 02 »</a>
+    <a href="./02-Ingenieria-Prompts.html">Guía 02 »</a>
   </div>
 </div>

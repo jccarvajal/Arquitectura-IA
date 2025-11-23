@@ -204,12 +204,12 @@ La maestría aquí reside en una doble habilidad:
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
-    <a href="./02-Ingenieria-Prompts.md">« Guía 02</a>
+    <a href="./02-Ingenieria-Prompts.html">« Guía 02</a>
   </div>
   <div>
     <a href="../">Volver al Índice</a>
   </div>
   <div>
-    <a href="./04-Estrategia-Datos.md">Guía 04 »</a>
+    <a href="./04-Estrategia-Datos.html">Guía 04 »</a>
   </div>
 </div>

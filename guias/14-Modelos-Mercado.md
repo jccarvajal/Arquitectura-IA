@@ -137,12 +137,12 @@ La maestría no reside en saber qué LLM es "mejor", sino en tener el juicio de 
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
-    <a href="./13-Estrategia-Valor.md">« Guía 13</a>
+    <a href="./13-Estrategia-Valor.html">« Guía 13</a>
   </div>
   <div>
     <a href="../">Volver al Índice</a>
   </div>
   <div>
-    <a href="./15-Etica-Confianza.md">Guía 15 »</a>
+    <a href="./15-Etica-Confianza.html">Guía 15 »</a>
   </div>
 </div>
