@@ -12,19 +12,19 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 
 *(Ingeniería de Prompts, Contexto y Datos)*
 
-* **Vaswani, A., et al. (2017). "Attention Is All You Need".** 
-  * **Por qué leerlo:** Es el *paper* seminal que introdujo la arquitectura "Transformer", el motor fundamental de todos los LLM modernos que se discuten en esta obra.  
-* **Lewis, P., et al. (2020). "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks".** 
-  * **Por qué leerlo:** Es el *paper* que introduce formalmente la arquitectura **RAG**, la solución técnica clave para el problema de la "Ventana de Contexto" discutido en la Guía 02.  
-* **Hu, E., et al. (2021). "LoRA: Low-Rank Adaptation of Large Language Models".**
-  * **Por qué leerlo:** Es el paper técnico seminal que introduce LoRA (Low-Rank Adaptation), la técnica de ingeniería clave definida en el Anexo 07 (Glosario). Proporciona el fundamento de ingeniería esencial para el Anexo 05: Ajuste Fino y Adaptación de Modelos.
-* **Boonstra, L. (Febrero 2025). "Prompt Engineering".**
-  * **Por qué leerlo:** Es el whitepaper técnico que define la disciplina de la Ingeniería de Prompts (Guía 01). Detalla las técnicas fundamentales como zero-shot , few-shot , role prompting y los patrones de razonamiento como Chain-of-Thought y ReAct  que son la base del "Método de 7 Pasos".
-* **Milam, K., & Gulli, A. (Noviembre 2025). "Context Engineering: Sessions, Memory".**
-  * **Por qué leerlo:** El *whitepaper* fundacional de Google que define la "Ingeniería de Contexto" (la evolución de la Ingeniería de Prompts). Proporciona el "criterio de arquitecto" clave para diferenciar **RAG** (el "bibliotecario" experto en hechos) de la **Memoria** (el "asistente personal" experto en el usuario).
-* **Gobierno de Chile. (1999). "Ley N° 19.628 sobre protección de la vida privada".**
-  * **Por qué leerlo:** Es el pilar legal de la **Gobernanza de Datos** (Guía 03) en Chile. Define "dato personal" y "dato sensible", estableciendo la base legal de la "Estrategia de Datos".  
-* **Cavoukian, A. (2009). "Privacy by Design: The 7 Foundational Principles".** 
+* **Vaswani, A., et al. (2017). "Attention Is All You Need".** [[PDF]](https://arxiv.org/abs/1706.03762)
+  * **Por qué leerlo:** Es el *paper* seminal que introdujo la arquitectura "Transformer", el motor fundamental de todos los LLM modernos que se discuten en esta obra.
+* **Lewis, P., et al. (2020). "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks".** [[PDF]](https://arxiv.org/abs/2005.11401)
+  * **Por qué leerlo:** Es el *paper* que introduce formalmente la arquitectura **RAG**, la solución técnica clave para el problema de la "Ventana de Contexto" discutido en la Guía 02.
+* **Hu, E., et al. (2021). "LoRA: Low-Rank Adaptation of Large Language Models".** [[PDF]](https://arxiv.org/abs/2106.09685)
+  * **Por qué leerlo:** Introduce LoRA, la técnica de ingeniería clave para el **Ajuste Fino** (Guía 07) eficiente, permitiendo adaptar modelos masivos con recursos limitados.
+* **Boonstra, L. (Febrero 2025). "Prompt Engineering Guide".** [[Web]](https://www.kaggle.com/whitepaper-prompt-engineering)
+  * **Por qué leerlo:** Es el whitepaper técnico que define la disciplina de la Ingeniería de Prompts (Guía 01). Detalla las técnicas fundamentales como zero-shot, few-shot, role prompting y los patrones de razonamiento como Chain-of-Thought y ReAct.
+* **Milam, K., & Gulli, A. (Noviembre 2025). "Context Engineering: Sessions, Memory".** [[Web]](https://cloud.google.com/blog/products/ai-machine-learning)
+  * **Por qué leerlo:** El *whitepaper* fundacional que define la "Ingeniería de Contexto". Proporciona el "criterio de arquitecto" clave para diferenciar **RAG** (el "bibliotecario" experto en hechos) de la **Memoria** (el "asistente personal" experto en el usuario).
+* **Gobierno de Chile. (1999). "Ley N° 19.628 sobre protección de la vida privada".** [[Web]](https://www.bcn.cl/leychile/navegar?idNorma=141599)
+  * **Por qué leerlo:** Es el pilar legal de la **Gobernanza de Datos** (Guía 04) en Chile. Define "dato personal" y "dato sensible", estableciendo la base legal de la "Estrategia de Datos".
+* **Cavoukian, A. (2009). "Privacy by Design: The 7 Foundational Principles".** [[PDF]](https://iapp.org/media/pdf/resource_center/pbd_implement_7found_principles.pdf)
   * **Por qué leerlo:** Establece el marco internacional para la "Privacidad desde el Diseño" y "por Defecto", un concepto central de la "Guía Ética" (BID/UAI) para la formulación de proyectos.
 
 ---
@@ -33,16 +33,16 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 
 *(Ingeniería de Agentes, Sistemas Cognitivos y Prototipado)*
 
-* **Wei, J., et al. (2022). "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models".** 
-  * **Por qué leerlo:** Es la investigación clave que demuestra cómo forzar a un LLM a "pensar paso a paso", introduciendo el patrón de razonamiento **Chain of Thought (CoT)** (Guía 05).  
-* **Yao, S., et al. (2022). "ReAct: Synergizing Reasoning and Acting in Language Models".** 
-  * **Por qué leerlo:** Introduce el **Ciclo ReAct (Reason \+ Act)**, el "motor" fundamental de los **Agentes** (Guía 04\) que les permite usar "Herramientas".  
-* **Yao, S., et al. (2023). "Tree of Thoughts: Deliberate Problem Solving with Large Language Models".** 
-  * **Por qué leerlo:** Define el patrón de razonamiento avanzado **Tree of Thoughts (ToT)** (Guía 05), que permite a los agentes explorar múltiples caminos de solución.
-* **Wiesinger, J., Marlow, P., & Vuskovic, V. (Septiembre 2024). "Agents".**
-  * **Por qué leerlo:** Es el whitepaper conceptual que introduce la arquitectura de un Agente (Guía 04) como la composición de un Modelo (el cerebro), Herramientas (las manos) y una Capa de Orquestación (el ciclo de razonamiento). Distingue formalmente entre "Modelos" (solo predicen) y "Agentes" (toman acciones).
-* **Gulli, A., et al. (Febrero 2025). "Agents Companion".**
-  * **Por qué leerlo:** Es el "102" de las guías de construcción. Define formalmente la arquitectura de un Agente (Guía 04) como la combinación de Modelo, Herramientas y Orquestación. Explora los Sistemas Cognitivos (Guía 05) a través de patrones de "múltiples agentes" (jerárquicos, colaborativos) y detalla la Evaluación de Agentes (Guía 08), incluyendo la evaluación de trayectoria y el Human-in-the-Loop.
+* **Wei, J., et al. (2022). "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models".** [[PDF]](https://arxiv.org/abs/2201.11903)
+  * **Por qué leerlo:** Investigación clave que demuestra cómo forzar a un LLM a "pensar paso a paso", introduciendo el patrón de razonamiento **Chain of Thought (CoT)** (Guía 06).
+* **Yao, S., et al. (2022). "ReAct: Synergizing Reasoning and Acting in Language Models".** [[PDF]](https://arxiv.org/abs/2210.03629)
+  * **Por qué leerlo:** Introduce el **Ciclo ReAct (Reason + Act)**, el "motor" fundamental de los **Agentes** (Guía 05) que les permite usar "Herramientas".
+* **Yao, S., et al. (2023). "Tree of Thoughts: Deliberate Problem Solving with Large Language Models".** [[PDF]](https://arxiv.org/abs/2305.10601)
+  * **Por qué leerlo:** Define el patrón de razonamiento avanzado **Tree of Thoughts (ToT)** (Guía 06), que permite a los agentes explorar múltiples caminos de solución.
+* **Wiesinger, J., Marlow, P., & Vuskovic, V. (Septiembre 2024). "Agents".** [[Web]](https://cloud.google.com/transform/cio-guide-to-ai-agents)
+  * **Por qué leerlo:** Whitepaper conceptual que introduce la arquitectura de un Agente (Guía 05) como la composición de un Modelo (el cerebro), Herramientas (las manos) y una Capa de Orquestación.
+* **Gulli, A., et al. (Febrero 2025). "The Agents Companion".** [[Libro]](https://learning.oreilly.com/library/view/the-agents-companion/9781098166024/)
+  * **Por qué leerlo:** Es el "102" de las guías de construcción. Explora patrones de "múltiples agentes" (jerárquicos, colaborativos) y detalla la Evaluación de Agentes (Guía 10).
 
 ---
 
@@ -50,18 +50,20 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 
 *(Gobernanza, Evaluación e Industrialización)*
 
-* **Gobierno de Chile. (2008). "Ley N° 20.285 sobre acceso a la información pública".** 
-  * **Por qué leerlo:** Es el fundamento legal de la **Transparencia y Rendición de Cuentas** (Accountability) en el sector público, un pilar de la **Gobernanza de IA** (Guía 07).  
-* **Burrell, J. (2016). "How the machine 'thinks': Understanding opacity in machine learning algorithms".** 
-  * **Por qué leerlo:** Define los tres tipos de **Opacidad** (intrínseca, intencional, analfabeta), que justifican la necesidad de la **Observabilidad** (Guía 07 y Guía 09).  
-* **Zheng, L., et al. (2023). "Judging LLM-as-a-judge with MT-Bench and Chatbot Arena".** 
-  * **Por qué leerlo:** Proporciona el fundamento técnico y las métricas para la "Evaluación Asistida por IA" (el **"LLM Juez"**), un concepto central de la **Guía 08: Evaluación**.
-* **Google. (2023-2024). "Secure AI Framework (SAIF)".**
-  * **Por qué leerlo:** Es el marco de seguridad fundamental de Google (referenciado en el whitepaper "Prototype to Production") que aborda la seguridad de la IA en la infraestructura y el producto. Proporciona un respaldo conceptual clave para la Gobernanza (Guía 07) y la Industrialización (Guía 09).
-* **Huyen, Chip (2024). "AI Engineering".** 
-  * **Por qué leerlo:** Es el complemento técnico directo de esta obra. Si este libro es el "tratado de criterio" (qué y por qué), "AI Engineering" es el manual de "industrialización" (el cómo). Detalla la implementación de ingeniería para Agentes, RAG, Evaluación y "Guardrails" (Gobernanza) en producción.
-* **Kartakis, S., et al. (Noviembre 2025). "Prototype to Production".**
-  * **Por qué leerlo:** Es el manual de "AgentOps" que fundamenta la Guía 09: Industrialización. Detalla el "último tramo" para mover un prototipo (Guía 06) a un sistema de producción robusto. Se enfoca en los pilares de la industrialización: Evaluación como compuerta de calidad, Pipelines de CI/CD y Observabilidad (costos, latencia y seguridad).
+* **Gobierno de Chile. (2008). "Ley N° 20.285 sobre acceso a la información pública".** [[Web]](https://www.bcn.cl/leychile/navegar?idNorma=276363)
+  * **Por qué leerlo:** Es el fundamento legal de la **Transparencia y Rendición de Cuentas** en el sector público, un pilar de la **Gobernanza de IA** (Guía 09).
+* **Burrell, J. (2016). "How the machine 'thinks': Understanding opacity in machine learning algorithms".** [[PDF]](https://journals.sagepub.com/doi/abs/10.1177/2053951715622512)
+  * **Por qué leerlo:** Define los tres tipos de **Opacidad** (intrínseca, intencional, analfabeta), que justifican la necesidad de la **Observabilidad** (Guía 09 y Guía 11).
+* **Zheng, L., et al. (2023). "Judging LLM-as-a-judge with MT-Bench and Chatbot Arena".** [[PDF]](https://arxiv.org/abs/2306.05685)
+  * **Por qué leerlo:** Proporciona el fundamento técnico para la "Evaluación Asistida por IA" (el **"LLM Juez"**), un concepto central de la **Guía 10: Evaluación**.
+* **Google. (2024). "Secure AI Framework (SAIF)".** [[Web]](https://safety.google/cybersecurity-advancements/saif/)
+  * **Por qué leerlo:** Marco de seguridad fundamental que aborda la protección de la IA en la infraestructura y el producto. Respaldo conceptual para la Gobernanza (Guía 09).
+* **ISO/IEC. (2023). "ISO/IEC 42001:2023 Information technology — Artificial intelligence — Management system".** [[Web]](https://www.iso.org/standard/81230.html)
+  * **Por qué leerlo:** Es el primer estándar internacional certificable para sistemas de gestión de IA. Referencia técnica definitiva para operacionalizar el marco GRC.
+* **Huyen, Chip (2024). "AI Engineering".** [[Libro]](https://www.oreilly.com/library/view/ai-engineering/9781098166291/)
+  * **Por qué leerlo:** Complemento técnico directo de esta obra. Detalla la implementación de ingeniería para Agentes, RAG y "Guardrails" en producción.
+* **Kartakis, S., et al. (Noviembre 2025). "Prototype to Production".** [[Web]](https://cloud.google.com/blog/topics/developers-practitioners)
+  * **Por qué leerlo:** Manual de "AgentOps" que fundamenta la **Guía 11: Industrialización**. Detalla CI/CD y Observabilidad para agentes.
 
 ---
 
@@ -69,26 +71,30 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 
 *(Humanidad, Ética, Estrategia y Valor)*
 
-* **Challapally, A., et al. (Julio 2025). "The GenAI Divide: State of AI in Business 2025". MIT / Project NANDA.** 
-  * **Por qué leerlo:** Es el informe de mercado clave de 2025. Proporciona los datos estadísticos que validan la tesis de esta obra: la **"Brecha GenAI"** (el 95% de las empresas con ROI cero). Define los conceptos de **"Shadow AI"** (IA en la sombra), **"Prosumers"** (usuarios expertos) y la superioridad de la estrategia "Comprar" vs. "Construir", que son fundamentales para la Gobernanza (Guía 07), la Sinergia (Guía 11) y la Estrategia (Guía 12). 
-* **Singla, A., Sukharevsky, A., Yee, L., & Chui, M. (Noviembre 2025). "The state of AI in 2025: Agents, innovation, and transformation". QuantumBlack, AI by McKinsey.**
-  * **Por qué leerlo:** Valida estadísticamente la "Brecha de Escalamiento", demostrando que la mayoría de las empresas están atascadas en pilotaje y no logran impacto en el EBIT . Identifica la "validación humana" y el enfoque en la "innovación" como los diferenciadores clave de los "high performers".
-* **Kahneman, D. (2011). "Thinking, Fast and Slow".** 
-  * **Por qué leerlo:** Es la fuente del marco **"Sistema 1 / Sistema 2"**, el pilar conceptual de la **Guía 10 (Sinergia Humano-IA)** para la división del trabajo cognitivo.  
-* **Heath, C., & Heath, D. (2010). "Switch: How to Change Things When Change Is Hard".** 
-  * **Por qué leerlo:** Es el manual práctico para la **gestión del cambio**. Mientras Kahneman *diagnostica* el conflicto cognitivo (S1/S2), "Switch" (Jinete/Elefante/Camino) proporciona el *método* para implementarlo. Esencial para ejecutar la **Guía 10**, gestionar la resistencia cultural y lograr la "Licencia Social".  
-* **Gobierno de Chile (BID Lab, Gob Digital, UAI). (2022). "Guía Formulación ética de proyectos de ciencia de datos".** 
-  * **Por qué leerlo:** Proporciona el **marco legal y fundacional chileno** (Leyes 19.628, 20.285, 20.609) para la ética de datos, la transparencia y la no discriminación. Define los conceptos clave de **"Opacidad"** y **"Licencia Social"** en el contexto del sector público.  
-* **Angwin, J., Larson, J., Mattu, S., & Kirchner, L. (2016). "Machine Bias". ProPublica.** 
-  * **Por qué leerlo:** Una investigación periodística fundamental que expone los **sesgos y la discriminación** en los algoritmos de predicción, justificando la **Guía 03** y la **Brújula Ética** (Guía 10).  
-* **Buolamwini, J., & Gebru, T. (2018). "Gender shades: Intersectional accuracy disparities..."** 
-  * **Por qué leerlo:** La investigación seminal que demostró **sesgos masivos** en los sistemas de reconocimiento facial, un caso de uso clave de la "Guía Ética" (BID/UAI).  
-* **Data Futures Partnership (2017). "A Path to Social Licence: Guidelines for Trusted Data Use".**
-  * **Por qué leerlo:** Define el concepto de **"Licencia Social"**, un requisito ético central (Guía 10\) y de la "Guía Ética" (BID/UAI) para la aceptación pública.  
-* **Gobierno de Chile. (2012). "Ley N° 20.609 que establece medidas contra la discriminación".** 
-  * **Por qué leerlo:** Proporciona la definición legal de **"discriminación arbitraria"** y las categorías protegidas, el "guardarraíl" legal para la **Guía 08 (Evaluación)** y la **Guía 10 (Ética)**.
-* **Unión Europea. (2024). "Reglamento del Parlamento Europeo [...] por el que se establecen normas armonizadas en materia de inteligencia artificial (Ley de Inteligencia Artificial)".**
-  * **Por qué leerlo:** Es el primer marco regulatorio integral de IA del mundo. Proporciona el fundamento legal que convierte la **Gobernanza** (Guía 07), la **Evaluación** (Guía 08) y la **Gobernanza de Datos** (Guía 03) de "mejores prácticas" en "obligaciones legales" para sistemas de alto riesgo.
+* **Challapally, A., et al. (Julio 2025). "The GenAI Divide: State of AI in Business 2025". MIT / Project NANDA.** [[PDF]](https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf)
+  * **Por qué leerlo:** Es el informe de mercado clave de 2025. Proporciona los datos estadísticos que validan la tesis de esta obra: la **"Brecha GenAI"** (el 95% de las empresas con ROI cero). Define los conceptos de **"Shadow AI"** (IA en la sombra), **"Prosumers"** (usuarios expertos) y la superioridad de la estrategia "Comprar" vs. "Construir", que son fundamentales para la Gobernanza (Guía 07), la Sinergia (Guía 11) y la Estrategia (Guía 12).
+* **Singla, A., et al. (Noviembre 2025). "The state of AI in 2025". McKinsey.** [[Web]](https://www.mckinsey.com/capabilities/quantumblack/our-insights)
+  * **Por qué leerlo:** Valida la "Brecha de Escalamiento" e identifica la "validación humana" como diferenciador clave de los *high performers*.
+* **Kahneman, D. (2011). "Thinking, Fast and Slow".** [[Libro]](https://us.macmillan.com/books/9780374533557/thinkingfastandslow)
+  * **Por qué leerlo:** Fuente del marco **"Sistema 1 / Sistema 2"**, pilar conceptual de la **Sinergia Humano-IA** (Guía 15).
+* **Dreyfus, H. L. (1992). "What Computers Still Can't Do: A Critique of Artificial Reason".** [[Libro]](https://mitpress.mit.edu/9780262540674/what-computers-still-cant-do/)
+  * **Por qué leerlo:** Base filosófica del Prólogo. Argumenta por qué la inteligencia sin "cuerpo" es distinta a la humana.
+* **Taleb, N. N. (2012). "Antifragile: Things That Gain from Disorder".** [[Libro]](https://www.penguinrandomhouse.com/books/213442/antifragile-by-nassim-nicholas-taleb/)
+  * **Por qué leerlo:** Define **Fragilidad** y **Skin in the Game** (Prólogo). Esencial para entender el riesgo de sistemas sin consecuencias.
+* **Heath, C., & Heath, D. (2010). "Switch: How to Change Things When Change Is Hard".** [[Libro]](https://heathbrothers.com/books/switch/)
+  * **Por qué leerlo:** Manual práctico para la **gestión del cambio**, esencial para ejecutar la Guía 15 y gestionar la resistencia cultural.
+* **Gobierno de Chile (BID Lab, UAI). (2022). "Guía Formulación ética de proyectos de ciencia de datos".** [[Web]](https://goblab.uai.cl/guia-formulacion-etica-de-proyectos-de-ciencia-de-datos/)
+  * **Por qué leerlo:** Marco legal para la ética de datos, definiendo **"Opacidad"** y **"Licencia Social"**.
+* **Angwin, J., et al. (2016). "Machine Bias". ProPublica.** [[Web]](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing)
+  * **Por qué leerlo:** Investigación que expone los **sesgos** en algoritmos, justificando la **Brújula Ética**.
+* **Buolamwini, J., & Gebru, T. (2018). "Gender Shades".** [[PDF]](http://gendershades.org/overview.html)
+  * **Por qué leerlo:** Investigación seminal sobre **sesgos en reconocimiento facial**.
+* **Data Futures Partnership (2017). "A Path to Social Licence: Guidelines for Trusted Data Use".** [[PDF]](https://aisp.upenn.edu/wp-content/uploads/2019/08/Trusted-Data-Use_2017.pdf)
+  * **Por qué leerlo:** Define el concepto de **"Licencia Social"**, requisito ético central de la Guía 15. Establece que la confianza no es un estado permanente, sino un permiso que se renueva continuamente mediante la transparencia y el valor compartido.
+* **Gobierno de Chile. (2012). "Ley N° 20.609 que establece medidas contra la discriminación".** [[Web]](https://www.bcn.cl/leychile/navegar?idNorma=1042092)
+  * **Por qué leerlo:** Proporciona la definición legal de **"discriminación arbitraria"**.
+* **Unión Europea. (2024). "Reglamento de Inteligencia Artificial (AI Act)".** [[Web]](https://artificialintelligenceact.eu/)
+  * **Por qué leerlo:** Primer marco regulatorio integral que convierte la Gobernanza y Evaluación en obligaciones legales.
 
 ---
 
@@ -96,41 +102,53 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 
 *(Perspectivas, Futuro y el Rol del "Vigilante Estratégico")*
 
-* **Tendencia 1: La Explosión de la Multimodalidad** 
-  * **Google DeepMind (2025). "Gemini 3 Pro Model Card".** 
-    * **Por qué leerlo:** El documento técnico oficial que detalla la arquitectura multimodal nativa y las capacidades de razonamiento ("Deep Think") del modelo Gemini 3, validando las capacidades descritas en la Guía 13 y superando a los reportes de 2024.
-  * **OpenAI / Anthropic (2025). "System Cards: GPT-5 and Claude 4".** 
-    * **Por qué leerlo:** Detallan la implementación a escala industrial y sus nuevos y complejos **riesgos de gobernanza** (ej. desinformación audiovisual, razonamiento autónomo).
+* **Tendencia 1: La Explosión de la Multimodalidad (Model Cards y System Cards)**
+  * **Google DeepMind (2025). "Gemini 3 Pro Model Card".** [[Web]](https://ai.google.dev/gemini-api/docs/models)
+    * **Por qué leerlo:** El documento técnico oficial de la arquitectura multimodal nativa y el razonamiento ("Deep Think") de Gemini 3.
+  * **OpenAI (2025). "GPT-4o System Card".** [[PDF]](https://cdn.openai.com/gpt-4o-system-card.pdf)
+    * **Por qué leerlo:** Detalla los riesgos de gobernanza en modelos omnicanal y la mitigación de audio/visión no deseada.
+  * **Anthropic (2025). "Claude 3.5 Sonnet System Card".** [[Web]](https://www.anthropic.com/news/claude-3-5-sonnet)
+    * **Por qué leerlo:** El estándar de la industria en "Seguridad Constitucional" y evaluación de riesgos catastróficos (CBRN).
+  * **Meta (2025). "Llama 3.1 Model Card".** [[Web]](https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md)
+    * **Por qué leerlo:** La referencia obligatoria para el uso de modelos de frontera Open Source (Pesos Abiertos).
+  * **Mistral AI (2025). "Mistral Large Model Card".** [[Web]](https://docs.mistral.ai/getting-started/models/)
+    * **Por qué leerlo:** Ejemplo de eficiencia europea y modelos optimizados para razonamiento lógico y código.
 
-* **Tendencia 2: IA en el Dispositivo (SLMs)** 
-  * **Microsoft / Apple / Meta (2025). "Technical Reports: Phi-4, Llama 4-8B, and On-Device Core Intelligence".** 
-     * **Por qué leerlo:** Los *papers* de 2024 (Phi-3) fueron pruebas de concepto. Los reportes de 2025 demuestran la *madurez* de los SLMs. Son la referencia clave para el "Control" (Soberanía de Datos) y el "Costo" (Latencia Cero) del **Triángulo de Adquisición** (Anexo 03).
+* **Tendencia 2: IA en el Dispositivo (SLMs)**
+  * **Microsoft (2025). "Phi-4 Technical Report".** [[PDF]](https://arxiv.org/abs/2412.08905)
+    * **Por qué leerlo:** Define el estado del arte en **razonamiento complejo en modelos pequeños**. Demuestra cómo un modelo que cabe en un laptop puede superar a modelos 10 veces más grandes en matemáticas y lógica, validando la tesis de que "el tamaño no es inteligencia".
+  * **Meta (2025). "Llama 3.2: Revolutionizing Edge AI".** [[Web]](https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/)
+    * **Por qué leerlo:** El informe técnico de los modelos de **1B y 3B parámetros**. Es la referencia obligatoria para entender cómo desplegar agentes multimodales (texto e imagen) directamente en dispositivos móviles sin conexión a internet.
+  * **Apple (2025). "OpenELM: An Efficient Language Model Family".** [[PDF]](https://arxiv.org/abs/2404.14619)
+    * **Por qué leerlo:** Fundamental para el "Control". Apple publica no solo los pesos, sino el framework de entrenamiento completo, ofreciendo la máxima transparencia para entornos donde la **auditoría del código** es un requisito legal.
 
-* **Tendencia 3: De Agentes-Herramienta a Agentes Autónomos** 
-  * **Anthropic. (Noviembre 2025). "Disrupting the first reported AI-orchestrated cyber espionage campaign".**
-    * **Por qué leerlo:** Detalla el incidente GTG-1002. Proporciona la evidencia empírica de que la "lealtad del agente" es al prompt y no al usuario, validando el riesgo central de la autonomía sin supervisión.
-  * **Riedl, M. O., & Desai, D. R. (Agosto 2025). "AI Agents and the Law". arXiv.**
-    * **Por qué leerlo:** Un análisis crítico que conecta la ingeniería con la "Ley de Agencia". Identifica el "Problema de la Lealtad" (¿para quién trabaja el agente?) y propone deberes fiduciarios para la IA.
-  * **Cognition Labs / Adept (2025). "Frameworks for Reliable Autonomous Agents in Production".** 
-    * **Por qué leerlo:** El *paper* "Generative Agents" (2023) fue una simulación académica. Los *white papers* de 2025 (de las startups que lideran esta área) describen las arquitecturas de **Gobernanza** (Guía 07\) necesarias para desplegar agentes autónomos *en el mundo real*.  
+* **Tendencia 3: De Agentes-Herramienta a Agentes Autónomos**
+  * **Cognition Labs (2025). "A Theory of Building Long-running Agents".** [[Web]](https://cognition.ai/blog/dont-build-multi-agents)
+    * **Por qué leerlo:** Describe la arquitectura de ingeniería necesaria para evitar la fragilidad en agentes autónomos, proponiendo un enfoque de "agente único con contexto compartido" en lugar de sistemas multi-agente desconectados.
+  * **Anthropic (Noviembre 2025). "Disrupting the first reported AI-orchestrated cyber espionage campaign".** [[Web]](https://www.anthropic.com/news/disrupting-AI-espionage)
+    * **Por qué leerlo:** El reporte oficial de seguridad que detalla el incidente GTG-1002. Proporciona la evidencia empírica de cómo la "lealtad del agente" al prompt (jailbreak) superó a sus protocolos de seguridad.
+  * **Riedl, M. O., & Desai, D. R. (Agosto 2025). "AI Agents and the Law". arXiv.** [[PDF]](https://arxiv.org/abs/2508.08544)
+    * **Por qué leerlo:** Análisis crítico sobre la "Ley de Agencia" y los deberes fiduciarios, fundamental para entender la responsabilidad legal de los agentes autónomos.
 
 * **Tendencia 4: La Web Agéntica (El Ecosistema)**
-  * **Google. (Noviembre 2025). "Google Antigravity: A platform for autonomous agents".**
-    * **Por qué leerlo:** El *white paper* de lanzamiento de la plataforma que habilita la orquestación de agentes a escala global. Es la referencia técnica para entender cómo los agentes saldrán de la "intranet" corporativa a la "web abierta".
-  * **Anthropic. (2025). "The Model Context Protocol (MCP): Standardizing Agent Interoperability".**
-    * **Por qué leerlo:** Define el estándar técnico que permite a los agentes conectarse con sistemas de datos de forma universal, la "tubería" esencial de la Web Agéntica.
+  * **Google (Noviembre 2025). "Google Antigravity: Platform for Autonomous Agents".** [[Web]](https://antigravity.google)
+    * **Por qué leerlo:** El sitio de documentación oficial de la plataforma que habilita la orquestación global de agentes, definiendo los estándares de la "intranet de agentes".
+  * **Anthropic (2025). "The Model Context Protocol (MCP)".** [[Web]](https://modelcontextprotocol.io)
+    * **Por qué leerlo:** La especificación técnica del estándar abierto que permite a los agentes conectarse universalmente con sistemas de datos, la "tubería" esencial de la Web Agéntica.
 
-* **Tendencia 5: IA Corpórea (Embodied AI)** 
-  * **LeCun, Y. / AMI (Noviembre 2025). "Advanced Machine Intelligence: World Models for Physical Understanding".**
-    * **Por qué leerlo:** El manifiesto de la nueva startup de Yann LeCun. Explica por qué los LLM actuales no sirven para la robótica y propone "Modelos de Mundo" que entienden física y causalidad, respondiendo técnicamente a la crítica filosófica de Dreyfus.
-  * **Figure AI / Boston Dynamics (2025). "Fleet Learning: Bridging Vision-Language-Action Models".** 
-    * **Por qué leerlo:** Demuestra la fusión práctica de la multimodalidad (visión) con la acción física (robótica).
+* **Tendencia 5: IA Corpórea (Embodied AI)**
+  * **LeCun, Y. (2022/2025). "A Path Towards Autonomous Machine Intelligence (AMI)".** [[PDF]](https://openreview.net/pdf?id=BZ5a1r-kVsf)
+    * **Por qué leerlo:** Es el "Manifiesto Técnico" original de Yann LeCun. Define la arquitectura **JEPA** (Joint Embedding Predictive Architecture) y los "Modelos de Mundo", la base teórica de la startup AMI para crear IAs que entiendan la causa y efecto físico, no solo el lenguaje.
+  * **Figure AI (2025). "Figure 03: Fleet Learning & Architecture".** [[Web]](https://www.figure.ai/news/introducing-figure-03)
+    * **Por qué leerlo:** El reporte técnico del despliegue del robot Figure 03. Detalla cómo la **"tubería de datos de flota"** (Fleet Data Pipeline) permite que un robot aprenda una tarea (ej. manipular una pieza) y suba el conocimiento a la nube para que los otros 10.000 robots de la flota lo aprendan instantáneamente ("Aprendizaje de Flota").
+* **Boston Dynamics (2025). "The Electric Atlas: Reinforcement Learning for Dynamic Humanoids".** [[Web]](https://bostondynamics.com/blog/electric-new-era-for-atlas/)
+    * **Por qué leerlo:** Detalla el cambio histórico de la robótica: el paso de la hidráulica (fuerza bruta) a la eléctrica controlada por **Aprendizaje por Refuerzo (RL)**. Explica cómo el modelo "aprende" a moverse y manipular objetos en lugar de ser programado paso a paso.
 
-* **Tendencia 6: Más Allá del Transformer (Aprendizaje Continuo)** 
-  * **Dao, T., et al. (2025). "Mamba-2 and State Space Models: Production-Scale Efficiency".** 
-    * **Por qué leerlo:** Es el paper de referencia para las arquitecturas **no-Transformers** (SSMs) que resuelven el **Costo Cuadrático** (Guía 02), permitiendo eficiencia a escala y costo lineal.
-  * **Behrouz, A., et al. (2025). "Nested Learning: The Illusion of Deep Learning Architectures".**
-    * **Por qué leerlo:** Aborda el segundo límite del Transformer (Guía 02): la **Amnesia Estática**. Introduce el paradigma del "Aprendizaje Anidado" y prototipos capaces de auto-modificación, clave para el "Vigilante Estratégico".
+* **Tendencia 6: Más Allá del Transformer (Aprendizaje Continuo)**
+  * **Dao, T., & Gu, A. (2025). "Transformers are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality (Mamba-2)".** [[PDF]](https://arxiv.org/abs/2405.21060)
+    * **Por qué leerlo:** Es el paper de referencia para las arquitecturas **no-Transformers** (SSMs) que resuelven el **Costo Cuadrático** (Guía 03), permitiendo eficiencia a escala y costo lineal.
+  * **Behrouz, A., et al. (2025). "Nested Learning: The Illusion of Deep Learning Architectures".** [[Web]](https://research.google/blog/introducing-nested-learning-a-new-ml-paradigm-for-continual-learning/)
+    * **Por qué leerlo:** Aborda el segundo límite del Transformer (Guía 03): la **Amnesia Estática**. Introduce el paradigma del "Aprendizaje Anidado" y prototipos capaces de auto-modificación, clave para el "Vigilante Estratégico".
 
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">

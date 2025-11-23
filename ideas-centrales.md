@@ -54,12 +54,12 @@
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
   <div>
-    <a href="./prologo.md">« Prólogo</a>
+    <a href="./prologo.html">« Prólogo</a>
   </div>
   <div>
     <a href="../">Volver al Índice</a>
   </div>
   <div>
-    <a href="./guias/01-Anatomia-Modelos.md">Guía 01 »</a>
+    <a href="./guias/01-Anatomia-Modelos.html">Guía 01 »</a>
   </div>
 </div>
