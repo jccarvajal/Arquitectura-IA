@@ -11,7 +11,7 @@ En las guías anteriores, dominamos el arte de la construcción. Hemos construid
 Ahora, comienza el trabajo real: operarla. Esta guía aborda la siguiente capa de maestría: el marco de *Gobernanza, Riesgo y Cumplimiento (GRC)*.
 * **Gobernanza:** Es el "qué" estratégico y la "sala de control" (Parte 1, 3, 4).
 * **Riesgo:** Es el "por qué" y la gestión de amenazas técnicas (Parte 2).
-* **Cumplimiento:** Es el "límite" legal y ético (Guía 10) y la prueba de calidad (Guía 08).
+* **Cumplimiento:** Es el "límite" legal y ético (Guía 15) y la prueba de calidad (Guía 10).
 
 Ya no se trata solo de qué podemos construir, sino de cómo operamos, mantenemos y protegemos lo que hemos construido. Nuestro rol evoluciona de "Director" a "Gobernador de Sistemas de IA".
 

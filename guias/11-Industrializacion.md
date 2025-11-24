@@ -8,7 +8,7 @@ En el *Prototipado*, construimos con éxito nuestro primer "Agente PM" (un agent
 
 Esta guía es el manual para la industrialización. Es el plan para pasar de construir un agente a desplegar y gestionar mil agentes de forma fiable. Nuestro rol evoluciona del "Ingeniero de Prototipos" (que construye el primer auto) al "Director de Operaciones" (que diseña, opera y mantiene la línea de ensamblaje 24/7).
 
-En resumen, la Industrialización es la disciplina que implementa el marco de **GRC** a escala. Transforma la **Gobernanza** (Guía 07) y la **Evaluación** (Guía 08) de procesos manuales a un sistema automatizado, confiable y monitoreado.
+En resumen, la Industrialización es la disciplina que implementa el marco de **GRC** a escala. Transforma la **Gobernanza** (Guía 09) y la **Evaluación** (Guía 10) de procesos manuales a un sistema automatizado, confiable y monitoreado.
 
 ---
 

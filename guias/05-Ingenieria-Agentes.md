@@ -6,7 +6,7 @@ Subtítulo: Del "Arquitecto de Instrucciones" al "Director de Programa"
 
 #### Introducción: De la Respuesta a la Acción
 
-En las guías anteriores, definimos la *instrucción* (Guía 01: Prompts) y la *memoria* (Guía 02: Contexto). Esas guías resuelven la parte de la **"Brecha de Aprendizaje" (Learning Gap)** de la IA relacionada con su incapacidad para recordar.
+En las guías anteriores, definimos la *instrucción* (Guía 02: Prompts) y la *memoria* (Guía 03: Contexto). Esas guías resuelven la parte de la **"Brecha de Aprendizaje" (Learning Gap)** de la IA relacionada con su incapacidad para recordar.
 
 Ahora, abordamos la segunda mitad de esa brecha: la incapacidad de la IA genérica para *actuar* e integrarse en los flujos de trabajo del mundo real.
 
@@ -175,7 +175,7 @@ Esta es la estrategia de escalabilidad más importante. Ya no pensamos en un sol
 Este es uno de los puntos de partida más simples y poderosos, que se conecta directamente con el concepto de **Meta-Prompting** (usar la IA para ayudarte a crear prompts).
 
 * **¿Qué es?** En lugar de un agente "que lo hace todo", creas un agente (un chat) dedicado a una sola tarea con un contexto perfecto.
-* **¿Por qué funciona?** Un flujo de trabajo de "auto-prompting" (self-prompting) es un ejemplo perfecto. Usas un "Chat 1" (El Taller) para que actúe como un Agente Especialista en crear prompts. Su "herramienta" es el conocimiento de la Guía 01. Luego, copias el resultado (el prompt avanzado) y lo pegas en un "Chat 2" (La Ejecución). Este segundo chat es el Agente Ejecutor, que opera con una "pizarra limpia" (contexto) y una instrucción perfecta.
+* **¿Por qué funciona?** Un flujo de trabajo de "auto-prompting" (self-prompting) es un ejemplo perfecto. Usas un "Chat 1" (El Taller) para que actúe como un Agente Especialista en crear prompts. Su "herramienta" es el conocimiento de la Guía 02. Luego, copias el resultado (el prompt avanzado) y lo pegas en un "Chat 2" (La Ejecución). Este segundo chat es el Agente Ejecutor, que opera con una "pizarra limpia" (contexto) y una instrucción perfecta.
 
 **Ejemplo de Flujo de Trabajo (El Taller y la Ejecución):**
 
@@ -183,7 +183,7 @@ Tu objetivo es crear un email de marketing persuasivo.
 
 **Paso 1: Usar el "Chat 1" (El Taller)**
 
-Este chat está pre-cargado con el "Método de Prompting en 7 Pasos" (Guía 01).
+Este chat está pre-cargado con el "Método de Prompting en 7 Pasos" (Guía 02).
 
 * 👤 **Usuario (Define el Objetivo):**
   ```text
@@ -197,7 +197,7 @@ Este chat está pre-cargado con el "Método de Prompting en 7 Pasos" (Guía 01).
 
 * ⚙️ **Agente Taller (Actúa - Genera el Prompt):**
   ```text
-  Aquí tienes un prompt de "Nivel Arquitecto", optimizado según la Guía 01:
+  Aquí tienes un prompt de "Nivel Arquitecto", optimizado según la Guía 02:
 
   [INICIO DEL PROMPT GENERADO]
   Actúa como un experto en redacción de marketing B2B, especializado en el sector financiero. Tu audiencia son Gerentes de Finanzas con poco tiempo.
@@ -252,7 +252,7 @@ Al dominar la dirección de agentes, dejas de construir soluciones para empezar 
 
 Lo que has aprendido en esta guía es cómo orquestar agentes dentro de tu propia infraestructura (tu "Intranet de Agentes"). Sin embargo, la frontera se está rompiendo rápidamente.
 
-Protocolos emergentes (como MCP o NANDA) están permitiendo que estos agentes salgan de tu servidor para negociar con agentes de otras organizaciones en la **"Web Agéntica"**. Este salto de una orquestación interna controlada a una interoperabilidad externa abierta introduce riesgos masivos de "Lealtad" y "Seguridad" que exploraremos en profundidad en la **Guía 13: Perspectivas y Futuro**.
+Protocolos emergentes (como MCP o NANDA) están permitiendo que estos agentes salgan de tu servidor para negociar con agentes de otras organizaciones en la **"Web Agéntica"**. Este salto de una orquestación interna controlada a una interoperabilidad externa abierta introduce riesgos masivos de "Lealtad" y "Seguridad" que exploraremos en profundidad en la **Guía 17: Perspectivas y Futuro**.
 
 Por ahora, domina la orquestación interna. Es el requisito previo para sobrevivir en la web abierta que viene.
 

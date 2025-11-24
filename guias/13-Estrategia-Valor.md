@@ -75,7 +75,7 @@ El "Director de Estrategia" debe saber dónde construir su "foso" (moat) para de
 **El Foso 1: Tu Framework GRC (Gobernanza, Riesgo y Cumplimiento)**
 
 * **La Ventaja:** Tu competencia también puede construir un agente, pero el de ellos es inseguro, ineficiente y frágil.
-* **Tu Foso:** Tu marco de **GRC** (implementado vía Guía 07, 08 y 09) te permite operar a escala con costos controlados, seguridad robusta y calidad medible. Tu fábrica es más eficiente y confiable. Ganas por operaciones, confianza y **ciberseguridad**.
+* **Tu Foso:** Tu marco de **GRC** (implementado vía Guía 09, 10 y 11) te permite operar a escala con costos controlados, seguridad robusta y calidad medible. Tu fábrica es más eficiente y confiable. Ganas por operaciones, confianza y **ciberseguridad**.
 
 **El Foso 2: Los Datos de RAG**
 

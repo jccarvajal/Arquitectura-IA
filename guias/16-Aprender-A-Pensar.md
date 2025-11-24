@@ -27,7 +27,7 @@ Este es el primer salto de habilidad. El "Usuario Pasivo" trata a la IA como un 
   ```
   * *Resultado: Un análisis dirigido, contextualizado y listo para ser validado.*
 
-La *Ingeniería de Prompts* (Guía 01) nos dio la técnica, pero esta guía nos da la intención estratégica detrás de ella.
+La *Ingeniería de Prompts* (Guía 02) nos dio la técnica, pero esta guía nos da la intención estratégica detrás de ella.
 
 ---
 
@@ -172,7 +172,7 @@ A continuación, se traduce la estrategia de alto nivel en acciones diarias para
 
 La *Sinergia Humano-IA* no es automática. Requiere que el humano desarrolle nuevas habilidades. 
 
-La "alfabetización cognitiva" (esta Guía 11) es el conjunto de habilidades que permite al humano "trasladar su valor". Dejamos que la IA maneje la táctica y la velocidad, mientras nosotros nos enfocamos en el criterio, la validación, la ética y la intención estratégica. 
+La "alfabetización cognitiva" (esta Guía 13) es el conjunto de habilidades que permite al humano "trasladar su valor". Dejamos que la IA maneje la táctica y la velocidad, mientras nosotros nos enfocamos en el criterio, la validación, la ética y la intención estratégica. 
 
 Sin esta guía, los profesionales corren el riesgo de operar como 'usuarios pasivos' y la IA se convierte en una máquina de 'basura elocuente'. Con esta guía, desarrollan las habilidades para ser 'Co-Pilotos Estratégicos' y 'Prosumers', y la IA se convierte en un multiplicador de su juicio y valor.
 

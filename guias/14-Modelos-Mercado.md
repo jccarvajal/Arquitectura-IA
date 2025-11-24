@@ -24,13 +24,13 @@ Es esta capacidad de "ver" y "conectar" el contexto completo de un texto lo que 
 
 Sin embargo, esta arquitectura tiene dos implicaciones estratégicas que impactan directamente en el "Triángulo de Adquisición" (Rendimiento, Control, Costo):
 1. **Costo de Escalado (Costo):** El mecanismo de auto-atención es computacionalmente intensivo. Su costo y uso de memoria crecen cuadráticamente con la longitud del contexto. Duplicar la longitud de un documento no duplica el costo, sino que lo cuadruplica (o más), lo que encarece la operación a gran escala.
-2. **Naturaleza Estática (Control):** Los Transformers se entrenan en una "foto" masiva del conocimiento (un corpus de datos) y luego se "congelan". No están diseñados para aprender de forma continua o para integrar nueva información después de su entrenamiento, un desafío que exploramos en la Guía 13: Perspectivas.
+2. **Naturaleza Estática (Control):** Los Transformers se entrenan en una "foto" masiva del conocimiento (un corpus de datos) y luego se "congelan". No están diseñados para aprender de forma continua o para integrar nueva información después de su entrenamiento, un desafío que exploramos en la Guía 17: Perspectivas.
 
 ---
 
 #### Parte 2: El Panorama 2025-2026: Los Tres Ecosistemas
 
-Como “Jefes de Adquisiciones” de nuestra fábrica de IA, el mercado de “motores” (LLMs) se ha consolidado en tres ecosistemas claros. Como establecimos en la **Guía 02**, la arquitectura **Transformer** es el motor técnico fundamental que impulsa a la gran mayoría de los modelos en estos ecosistemas (GPT, Llama, Claude, etc.).
+Como “Jefes de Adquisiciones” de nuestra fábrica de IA, el mercado de “motores” (LLMs) se ha consolidado en tres ecosistemas claros. Como establecimos en la **Guía 03**, la arquitectura **Transformer** es el motor técnico fundamental que impulsa a la gran mayoría de los modelos en estos ecosistemas (GPT, Llama, Claude, etc.).
 
 Este anexo se enfoca en cómo los proveedores "empaquetan" esa arquitectura, con sus límites de costo cuadrático y memoria estática, en distintas estrategias de suministro:
 

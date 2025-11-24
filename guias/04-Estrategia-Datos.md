@@ -4,11 +4,11 @@ Subtítulo: Del "Jefe de Operaciones" al "Arquitecto de la Información"
 
 #### Introducción: El Combustible de la Fábrica
 
-En las guías anteriores, definimos los fundamentos de la IA: cómo darle Instrucciones precisas (Guía 01) y cómo gestiona su Memoria limitada (Guía 02). Hemos descrito el "motor" de la IA. Ahora, debemos hablar del combustible: los datos.
+En las guías anteriores, definimos los fundamentos de la IA: cómo darle Instrucciones precisas (Guía 02) y cómo gestiona su Memoria limitada (Guía 03). Hemos descrito el "motor" de la IA. Ahora, debemos hablar del combustible: los datos.
 
 Esta guía es el manual para el "Arquitecto de la Información". Es la guía fundamental que precede a la construcción de agentes y la industrialización. Pero esta guía no es solo técnica; es el pilar del **Cumplimiento** (la 'C' de nuestro marco GRC).
 
-Si la Guía 01 (Prompts) es el plano, esta guía es sobre la materia prima, y la Gobernanza de IA (Guía 07) fracasará si la **Gobernanza de Datos** no asegura un 'combustible limpio'. El Arquitecto de la Información es, por tanto, el primer rol de GRC en la fábrica.
+Si la Guía 02 (Prompts) es el plano, esta guía es sobre la materia prima, y la Gobernanza de IA (Guía 09) fracasará si la **Gobernanza de Datos** no asegura un 'combustible limpio'. El Arquitecto de la Información es, por tanto, el primer rol de GRC en la fábrica.
 
 ---
 
@@ -27,8 +27,8 @@ El "Arquitecto de la Información" no es un rol de IA; es un rol de Gobernanza d
 
 Más adelante nos enfocaremos en la **Gobernanza de IA** (el control sobre las *acciones* del agente). En esta guía, nos enfocamos en controlar la *fuente* (el "qué sabe").
 
-* **Gobernanza de IA (Guía 07):** Se pregunta: "¿El agente intentó enviar un email malicioso?"  
-* **Gobernanza de Datos (Guía 03):** Se pregunta: "¿El email que leyó el agente era verdadero y actualizado?"
+* **Gobernanza de IA (Guía 09):** Se pregunta: "¿El agente intentó enviar un email malicioso?"  
+* **Gobernanza de Datos (Guía 04):** Se pregunta: "¿El email que leyó el agente era verdadero y actualizado?"
 
 Las Políticas del "Arquitecto de la Información":
 

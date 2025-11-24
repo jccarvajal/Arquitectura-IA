@@ -4,7 +4,7 @@ Subtítulo: Resolviendo la "Brecha de Aprendizaje" de la IA
 
 #### Introducción: Del Prompt Perfecto a la Coherencia Sostenida
 
-Si la Ingeniería de Prompts (Guía 01) es la disciplina que nos permite construir una *instrucción* perfecta, la **Ingeniería de Contexto (Context Engineering)** es la ciencia de construir el entorno donde vive esa instrucción.
+Si la Ingeniería de Prompts (Guía 02) es la disciplina que nos permite construir una *instrucción* perfecta, la **Ingeniería de Contexto (Context Engineering)** es la ciencia de construir el entorno donde vive esa instrucción.
 
 Informes de la industria de 2025 (como el "State of AI in Business" del MIT) identifican que el mayor obstáculo para el éxito de la IA no es la calidad del modelo, sino la **"Brecha de Aprendizaje" (The Learning Gap)**. Este término describe por qué la mayoría de los pilotos de IA (el 95%) fracasan: las herramientas genéricas son fundamentalmente "tontas" porque operan sin memoria.
 
@@ -109,7 +109,7 @@ Esta es la estrategia principal para gestionar el historial de la conversación.
 
 **Solución 2. Generación Aumentada por Recuperación (RAG) (La “Biblioteca Externa”)**
 
-Esta es la arquitectura de memoria más crítica. Mantiene el conocimiento vasto fuera de la "pizarra" y lo inyecta *just-in-time*. RAG es la solución de ingeniería al dilema del **Costo Cuadrático** (Guía 02) y la **"Amnesia Estática"** (el LLM no puede aprender de nuevos documentos).
+Esta es la arquitectura de memoria más crítica. Mantiene el conocimiento vasto fuera de la "pizarra" y lo inyecta *just-in-time*. RAG es la solución de ingeniería al dilema del **Costo Cuadrático** (Guía 03) y la **"Amnesia Estática"** (el LLM no puede aprender de nuevos documentos).
 
 * **La Metáfora:** Es un **Bibliotecario de Investigación** (experto en hechos, que no necesita conocerte a ti, el usuario).
 
@@ -188,13 +188,13 @@ Para que la memoria sea dinámica, el agente debe tener permiso para usarla. Baj
 
 Esta es la estrategia de contexto más avanzada: "divide y vencerás". En lugar de un solo "cerebro" (un LLM) tratando de manejar todo en una pizarra, creas un equipo de "cerebros especialistas".
 
-* **Cómo Funciona:** Un **"Agente Director"** (Guía 04) recibe la tarea compleja (ej. "planifica un viaje") y la descompone, llamando a "Sub-agentes" especialistas (ej. "Agente de Vuelos", "Agente de Itinerarios"). Cada sub-agente opera en su propia **"pizarra limpia"** y devuelve solo el resultado final al Director.
+* **Cómo Funciona:** Un **"Agente Director"** (Guía 05) recibe la tarea compleja (ej. "planifica un viaje") y la descompone, llamando a "Sub-agentes" especialistas (ej. "Agente de Vuelos", "Agente de Itinerarios"). Cada sub-agente opera en su propia **"pizarra limpia"** y devuelve solo el resultado final al Director.
 
 ---
 
 #### Conclusión: De Arquitecto de Prompts a Arquitecto de Sistemas
 
-La ingeniería de prompts (Guía 01) te transforma de usuario a arquitecto de instrucciones. La Ingeniería de Contexto y Memoria te da el siguiente ascenso: de Arquitecto de Prompts a Arquitecto de Sistemas de IA.
+La ingeniería de prompts (Guía 02) te transforma de usuario a arquitecto de instrucciones. La Ingeniería de Contexto y Memoria te da el siguiente ascenso: de Arquitecto de Prompts a Arquitecto de Sistemas de IA.
 
 La maestría aquí reside en una doble habilidad:
 

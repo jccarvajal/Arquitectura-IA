@@ -4,7 +4,7 @@ Subtítulo: El Manual del "Especialista de Motores"
 
 #### Introducción: De "Leer Libros" a "Ir a la Universidad"
 
-En las guías principales, hemos establecido que la Ingeniería de Contexto (Guía 02) es clave. La herramienta principal que exploramos fue **RAG (Generación Aumentada por Recuperación)**, nuestra arquitectura del "Bibliotecario de Investigación". 
+En las guías principales, hemos establecido que la Ingeniería de Contexto (Guía 03) es clave. La herramienta principal que exploramos fue **RAG (Generación Aumentada por Recuperación)**, nuestra arquitectura del "Bibliotecario de Investigación". 
 
 RAG es la forma de darle "libros" (conocimiento externo) al "cerebro" (LLM) para que los lea en tiempo real.  
 
@@ -37,18 +37,18 @@ Este es el *trade-off* más importante de la arquitectura de IA. Usar la herrami
 
 #### Parte 1: Caso de Uso N°1 (Habilidad) - "La Voz de la Marca"
 
-* **El Problema:** Tienes un "Agente PM de Servicio al Cliente". Usando solo Prompts (Guía 01), tienes que recordarle en cada chat tu tono de voz: "Recuerda ser empático, profesional, usar estas 5 frases clave y nunca sonar robótico." Es ineficiente y el resultado es inconsistente.  
+* **El Problema:** Tienes un "Agente PM de Servicio al Cliente". Usando solo Prompts (Guía 02), tienes que recordarle en cada chat tu tono de voz: "Recuerda ser empático, profesional, usar estas 5 frases clave y nunca sonar robótico." Es ineficiente y el resultado es inconsistente.  
 * **La Solución (Ajuste Fino):** 
   1. **Recolectar Datos:** Juntas 1.000 ejemplos de emails "perfectos" de tu mejor agente de soporte humano (una aplicación de la Estrategia de Datos).  
   2. **Entrenar:** Haces "ajuste fino" a un modelo Open-Source (del Anexo 03) con esos 1.000 ejemplos.  
   3. **Resultado:** El "cerebro" del modelo se modifica. El modelo *aprende* tu tono de voz.  
-* **Beneficio:** Ahora, tu prompt (Guía 01) es 90% más corto. Ya no dices "Actúa como...". Simplemente dices: "Cliente tiene problema X. Responde." El modelo responderá automáticamente con la "Voz de la Marca" que le enseñaste. Ya no *actúa* como un agente de soporte; *es* un agente de soporte.
+* **Beneficio:** Ahora, tu prompt (Guía 02) es 90% más corto. Ya no dices "Actúa como...". Simplemente dices: "Cliente tiene problema X. Responde." El modelo responderá automáticamente con la "Voz de la Marca" que le enseñaste. Ya no *actúa* como un agente de soporte; *es* un agente de soporte.
 
 ---
 
 #### Parte 2: Caso de Uso N°2 (Formato) - "El Experto en JSON"
 
-* **El Problema:** Tu "Dashboard de Gobernanza" (Guía 07) necesita que tus agentes reporten su estado en un formato JSON extremadamente complejo y específico. Usar Prompts (Guía 01) es frágil; el agente a menudo olvida un campo o añade comillas extra.  
+* **El Problema:** Tu "Dashboard de Gobernanza" (Guía 09) necesita que tus agentes reporten su estado en un formato JSON extremadamente complejo y específico. Usar Prompts (Guía 02) es frágil; el agente a menudo olvida un campo o añade comillas extra.  
 * **La Solución (Ajuste Fino):** 
   1. **Recolectar Datos:** Generas 500 ejemplos del par pregunta -> JSON_perfecto (usando la técnica de "Datos Sintéticos").  
   2. **Entrenar:** Haces "ajuste fino" a un modelo (ej. Mistral) en esa tarea específica.  
@@ -70,7 +70,7 @@ Este es el *trade-off* más importante de la arquitectura de IA. Usar la herrami
 
 #### Parte 4: El "Stack" Técnico (Cómo se hace sin 500 GPUs)
 
-En el pasado, hacer "ajuste fino" requería un centro de datos. Hoy, gracias a los modelos Open-Source y nuevas técnicas, un "Ingeniero de Prototipos" (Guía 06) puede hacerlo en una sola laptop o un servidor en la nube. 
+En el pasado, hacer "ajuste fino" requería un centro de datos. Hoy, gracias a los modelos Open-Source y nuevas técnicas, un "Ingeniero de Prototipos" (Guía 08) puede hacerlo en una sola laptop o un servidor en la nube. 
  
 La clave es no re-entrenar el modelo entero. Solo "afinas" una pequeña fracción de él.
 
@@ -93,7 +93,7 @@ Cuando ejecutas tu agente, "cargas" el modelo base y "encima" le pones tu "adapt
 
 RAG y el Ajuste Fino no son competidores; son un equipo. 
 
-El "Ingeniero de Prototipos" (Guía 06) usa esta "Guía de Especialización" para construir una "fábrica" industrializada (Guía 09) verdaderamente optimizada.
+El "Ingeniero de Prototipos" (Guía 08) usa esta "Guía de Especialización" para construir una "fábrica" industrializada (Guía 11) verdaderamente optimizada.
 
 * Usas **RAG** para darle a tus agentes el **conocimiento** que necesitan.  
 * Usas **Ajuste Fino** para darles la **habilidad**, estilo y formato que necesitas.

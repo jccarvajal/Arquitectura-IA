@@ -110,7 +110,7 @@ Respuesta: Su valor ha cambiado. Su trabajo ya no es hacer tareas de Sistema 1, 
 
 #### Parte 4: La Brújula Ética (Las "Líneas Rojas" de la Automatización)
 
-La Gobernanza (Guía 07\) fue sobre seguridad (lo que no podemos hacer porque es riesgoso). Esta parte es sobre ética (lo que no deberíamos hacer, aunque sea técnicamente posible y seguro).
+La Gobernanza (Guía 09\) fue sobre seguridad (lo que no podemos hacer porque es riesgoso). Esta parte es sobre ética (lo que no deberíamos hacer, aunque sea técnicamente posible y seguro).
 
 **Riesgo 1: Pérdida de la "Licencia Social"**  
 
@@ -146,7 +146,7 @@ Cuando los "Agentes PM" se vuelven parte del equipo, surgen preguntas legales qu
 **Problema 2: De la "Caja Negra" (Auditabilidad)**
 
 * **La Pregunta:** Un "Agente Director" optimiza la logística y causa una pérdida de $1M. ¿Cómo "interrogamos" al agente?  
-* **La Política de Gobernanza:** La *Observabilidad* (de la Guía 09) no es solo técnica, es un requisito legal. El "Dashboard de Gobernanza" debe registrar obligatoriamente el "rastro de pensamiento" (el log del Ciclo ReAct) de cada agente. Debemos ser capaces de reconstruir la cadena de razonamiento.
+* **La Política de Gobernanza:** La *Observabilidad* (de la Guía 11) no es solo técnica, es un requisito legal. El "Dashboard de Gobernanza" debe registrar obligatoriamente el "rastro de pensamiento" (el log del Ciclo ReAct) de cada agente. Debemos ser capaces de reconstruir la cadena de razonamiento.
 
 ---
 

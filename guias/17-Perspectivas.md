@@ -6,7 +6,7 @@ Subtítulo: De "Arquitecto de la Fábrica" a "Vigilante Estratégico"
 
 #### Introducción: Anticipando las Próximas Revoluciones
 
-Hemos llegado al final de nuestro mapa. Construimos los cimientos (Bloque 1), ensamblamos la maquinaria (Bloque 2), tomamos la sala de control (Bloque 3\) y definimos el impacto y la estrategia de nuestra fábrica (Bloque 4). Con la Guía 12 (Estrategia y Valor), le dimos un propósito claro a nuestra operación.
+Hemos llegado al final de nuestro mapa. Construimos los cimientos (Bloque 1), ensamblamos la maquinaria (Bloque 2), tomamos la sala de control (Bloque 3\) y definimos el impacto y la estrategia de nuestra fábrica (Bloque 4). Con la Guía 13 (Estrategia y Valor), le dimos un propósito claro a nuestra operación.
 
 Este epílogo es el "telescopio" de la fábrica. Su propósito es abordar la única certeza de esta industria: esta fábrica (basada en LLMs y Transformers) es solo la primera de muchas. Se volverá obsoleta.
 
@@ -22,9 +22,9 @@ La paradoja es que la maestría no reside en conocer las herramientas actuales, 
 
 La verdadera maestría, el objetivo de esta obra, fue desarrollar un marco de pensamiento y un criterio duradero.
 
-* La **Gobernanza** (Guía 07\) no es solo para LLMs; es un marco para gestionar cualquier tecnología impredecible.  
-* El **Diseño Cognitivo** (Guía 05\) no es solo sobre Agentes ReAct; es la disciplina de diseñar procesos de pensamiento autónomos.  
-* La **Alfabetización Cognitiva** (Guía 11\) no es solo sobre cómo hablar con GPT; es la habilidad humana de validar y dirigir cualquier cognición sintética.
+* La **Gobernanza** (Guía 09\) no es solo para LLMs; es un marco para gestionar cualquier tecnología impredecible.  
+* El **Diseño Cognitivo** (Guía 06\) no es solo sobre Agentes ReAct; es la disciplina de diseñar procesos de pensamiento autónomos.  
+* La **Alfabetización Cognitiva** (Guía 13\) no es solo sobre cómo hablar con GPT; es la habilidad humana de validar y dirigir cualquier cognición sintética.
 
 Esta obra no te enseñó a operar *esta* fábrica; te enseñó a ser un Arquitecto de Fábricas Cognitivas.
 
@@ -61,7 +61,7 @@ Como contraparte a los modelos gigantes ("fuerza bruta"), ha surgido una tendenc
   * **Costo Marginal Cero:** Una vez desplegado, el costo por inferencia es prácticamente nulo.
 
 **Tendencia 3: De Agentes-Herramienta a Agentes Autónomos (El Trabajador)**  
-Hemos pasado de los "Agentes ReAct" (que usan herramientas bajo supervisión) a un enfoque en agentes autónomos. La meta ya no es un "asistente" que ayuda, sino un "trabajador" que completa tareas complejas de múltiples pasos (la promesa de la Guía 04 y Guía 05).
+Hemos pasado de los "Agentes ReAct" (que usan herramientas bajo supervisión) a un enfoque en agentes autónomos. La meta ya no es un "asistente" que ayuda, sino un "trabajador" que completa tareas complejas de múltiples pasos (la promesa de la Guía 05 y Guía 06).
 
 * **El Hito:** El enfoque de la industria es construir agentes que puedan tomar un objetivo de alto nivel (ej. "planifica mis vacaciones y resérvalas") y ejecutar todo el proceso de forma independiente.
 * **El Riesgo de la "Agencia" (El Caso GTG-1002):**
@@ -85,13 +85,13 @@ La IA sale de la pantalla. Nuestra "fábrica" ha sido puramente digital. La pró
 * **El Cierre Filosófico:** Curiosamente, esta iniciativa parece ser la respuesta técnica a la crítica filosófica de **Hubert Dreyfus** (ver Prólogo). Si Dreyfus argumentaba que la IA fallaba por carecer de "percepción encarnada" y no saber "habitar el mundo", los "Modelos de Mundo" buscan precisamente dotar a la máquina de esa comprensión física y causal, cerrando la brecha entre manipular símbolos y entender la realidad.
 
 **Tendencia 6: Más Allá del Transformer, La Era del "Aprendizaje Continuo"**  
-Como establecimos en la Guía 02 (Ingeniería de Contexto y Memoria), la arquitectura Transformer define la generación actual de IA, pero su naturaleza es fundamentalmente estática. Allí definimos su limitación clave como la "Amnesia Estática": los modelos se "congelan" y no pueden consolidar nuevo conocimiento en su memoria a largo plazo.
+Como establecimos en la Guía 03 (Ingeniería de Contexto y Memoria), la arquitectura Transformer define la generación actual de IA, pero su naturaleza es fundamentalmente estática. Allí definimos su limitación clave como la "Amnesia Estática": los modelos se "congelan" y no pueden consolidar nuevo conocimiento en su memoria a largo plazo.
 
 Investigaciones recientes (Google Research, NeurIPS 2025) buscan resolver precisamente esta amnesia. El **"Nested Learning" (Aprendizaje Anidado)** es un nuevo paradigma que reemplaza las "capas de cómputo" estáticas por "capas de cognición" que operan y se actualizan a múltiples frecuencias (escalas de tiempo), similar a las ondas cerebrales. Prototipos han implementado esta idea, introduciendo modelos "auto-modificables" con "memoria continua".
 
-* **Impacto Práctico:** El "Vigilante Estratégico" debe entender que esto no es una simple mejora, sino un cambio de arquitectura que resuelve las dos limitaciones clave de la Guía 02:
+* **Impacto Práctico:** El "Vigilante Estratégico" debe entender que esto no es una simple mejora, sino un cambio de arquitectura que resuelve las dos limitaciones clave de la Guía 03:
   * **Resuelve el Costo Cuadrático:** Arquitecturas alternativas (como Mamba, referenciada en el Anexo 08) habilitan el procesamiento de contexto largo a un costo lineal, haciendo viables los análisis masivos.
-  * **Resuelve la Amnesia Estática:** Los modelos de "Aprendizaje Anidado" podrán aprender de la retroalimentación del usuario y consolidar ese conocimiento, cerrando la "Brecha de Aprendizaje" (Guía 02) y permitiendo una personalización real.
+  * **Resuelve la Amnesia Estática:** Los modelos de "Aprendizaje Anidado" podrán aprender de la retroalimentación del usuario y consolidar ese conocimiento, cerrando la "Brecha de Aprendizaje" (Guía 03) y permitiendo una personalización real.
   * **Revoluciona la Gobernanza:** El desafío de auditoría cambia radicalmente. Como "Vigilante Estratégico", debes anticipar la transición de supervisar un "artefacto" de IA estático (un Transformer congelado) a gobernar un "sistema" de IA dinámico que aprende, evoluciona por sí mismo y podría desarrollar sesgos en tiempo real.
 
 ---
@@ -120,7 +120,7 @@ Con esta aclaración, nuestra postura operativa se vuelve clara. Escucharás sob
 
 Las cinco tendencias descritas en esta guía (Multimodalidad, SLMs, Agentes Autónomos, Robótica y Aprendizaje Continuo) son el panorama actual. En 18 meses, esta lista será diferente.
 
-El "Aprendizaje Anidado" puede que resuelva la "Amnesia Estática" de la Guía 02, pero introducirá nuevos desafíos de gobernanza para la Guía 07. Los Agentes Autónomos pueden cumplir la promesa de la Guía 04, pero traen los riesgos de "Lealtad" que acabamos de analizar.
+El "Aprendizaje Anidado" puede que resuelva la "Amnesia Estática" de la Guía 03, pero introducirá nuevos desafíos de gobernanza para la Guía 09. Los Agentes Autónomos pueden cumplir la promesa de la Guía 05, pero traen los riesgos de "Lealtad" que acabamos de analizar.
 
 Esto confirma la "Paradoja de la Maestría" con la que abrimos. La maestría no es conocer esta lista de tendencias. Es tener el marco para evaluarlas.
 
