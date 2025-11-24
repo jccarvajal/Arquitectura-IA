@@ -98,10 +98,9 @@ Así es como se ve la traza de un agente moderno:
 
 **3. Las Herramientas (Tools): Las "Manos" del Agente**
 
-Las herramientas son la conexión del cerebro de la IA con el mundo digital. Sin herramientas, es solo un "conversador". Con herramientas, es un "actor".
-*Ejemplos:* `buscar_en_google()`, `leer_archivo()`, `consultar_API_del_clima()`.
+Las herramientas son funciones de código (APIs, scripts Python) que conectan el cerebro de la IA con el mundo digital. Sin herramientas, el modelo es solo un "conversador"; con ellas, se convierte en un "actor" capaz de ejecutar tareas reales.
 
-Las herramientas son funciones de código (APIs, scripts Python) que el modelo puede "llamar". Sin herramientas, es solo un "conversador". Con herramientas, es un "actor".
+*Ejemplos:* `buscar_en_google()`, `leer_archivo()`, `consultar_API_del_clima()`.
 
 ---
 
