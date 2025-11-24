@@ -10,7 +10,7 @@ Para la mayoría de los usuarios, una IA es una **"Caja Negra"**: un sistema opa
 
 Este pensamiento mágico es peligroso para un Arquitecto. Si no entiendes los límites físicos de la máquina, no puedes gobernarla. En esta guía, vamos a "abrir la caja". Vamos a desmontar el motor para entender sus componentes mecánicos: el Ciclo de Entrenamiento (cómo aprende), la Inferencia (cómo actúa) y los Parámetros (su capacidad). Dejaremos de ver magia y empezaremos a ver ingeniería.
 
-Los modelos generativos modernos (como GPT-4, Claude 3.5 o Llama 3) no son bases de conocimiento ni sistemas de razonamiento lógico en sentido humano: son **motores probabilísticos de predicción**, moldeados a través de múltiples fases de entrenamiento.
+Los modelos generativos modernos (como Gemini 3, GPT-5 o Llama 4) no son bases de conocimiento ni sistemas de razonamiento lógico en sentido humano: son **motores probabilísticos de predicción**, moldeados a través de múltiples fases de entrenamiento.
 
 Este anexo describe el ciclo de vida técnico que transforma terabytes de texto crudo en un asistente capaz de seguir instrucciones. El objetivo es que el arquitecto decida en función de **criterio de ingeniería**, no de intuición ni del *hype* del mercado.
 
@@ -27,7 +27,7 @@ Los modelos no procesan palabras, sino **tokens** (fragmentos numéricos).
 
 #### B. Ventana de Contexto y Atención
 La atención permite al modelo relacionar conceptos distantes para mantener coherencia narrativa y lógica.
-* **Implicancia de Diseño:** La calidad del razonamiento (lo que algunos llaman "Sistema 2") está limitada por la fidelidad del mecanismo de atención y por el tamaño de la ventana de contexto. Contextos saturados degradan la capacidad instruccional (*Lost in the Middle phenomenon*).
+* **Implicancia de Diseño:** La calidad del razonamiento (lo que en esta obra definimos como “Sistema 2”) está limitada por la fidelidad del mecanismo de atención y por el tamaño de la ventana de contexto. Contextos saturados degradan la capacidad instruccional (*Lost in the Middle phenomenon*).
 
 ---
 
