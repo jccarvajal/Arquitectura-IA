@@ -13,7 +13,7 @@ No está diseñado para "leerse" de principio a fin, sino para "usarse" como ref
 ### Sección 1: Diseño de Prompts y Agentes
 
 **Plantilla 1.1: El "Prompt Maestro" (CRF-R: Contexto, Rol, Formato, Restricciones)**
-Esta plantilla es un bloque de texto estructurado, diseñado para ser copiado y pegado directamente en tu editor de código o herramienta de prompting. Es la implementación de la Guía 01.
+Esta plantilla es un bloque de texto estructurado, diseñado para ser copiado y pegado directamente en tu editor de código o herramienta de prompting. Es la implementación de la Guía 02.
 
 ```text
 # PLANTILLA DE PROMPT MAESTRO (CRF-R)
@@ -59,19 +59,19 @@ Esta ficha sirve como el "plano" de diseño de un agente (Guía 05) antes de con
 ### Sección 2: Gobernanza y Calidad
 
 **Checklist 2.1: Control de Riesgos de Seguridad (Pre-Lanzamiento)**
-Esta tabla debe ser completada por el equipo de desarrollo y gobernanza (Guía 07) antes de pasar a producción.
+Esta tabla debe ser completada por el equipo de desarrollo y gobernanza (Guía 09) antes de pasar a producción.
 
 | Riesgo Mitigado | Control Implementado |
 | :--- | :--- |
 | 1\. Inyección de Prompts | "Firewall de Prompt" (Sanitización de inputs y prompts del sistema robustos). |
 | 2\. Fuga de Datos (PII) | Detección y Enmascaramiento de PII (Datos Personales Sensibles) en logs e inputs. |
-| 3\. Alucinaciones Operacionales | Monitoreo de Facticidad (Guía 08) y mecanismo de "Humano-en-el-Bucle" (Guía 10) para tareas críticas. |
+| 3\. Alucinaciones Operacionales | Monitoreo de Facticidad (Guía 10) y mecanismo de "Humano-en-el-Bucle" (Guía 15) para tareas críticas. |
 | 4\. Bucle de Costos | "Interruptor Automático" (Rate Limiter / Presupuesto Máximo) configurado en la API del LLM. |
 | 5\. Sesgo y Toxicidad | Filtros de contenido y tono implementados en la salida del modelo. |
 | **Aprobación Final de Gobernanza:** | \[Nombre del Responsable\] |
 
 **Plantilla 2.2: Rúbrica de Evaluación de Calidad**
-Esta rúbrica (de Guía 08) se usa para calificar las respuestas del "Golden Set" durante las pruebas de QA.
+Esta rúbrica (de Guía 10) se usa para calificar las respuestas del "Golden Set" durante las pruebas de QA.
 
 **Prompt ID:** \[Golden-Set-001\] | **Modelo:** \[Ej: GPT-4o\] | **Evaluador:** \[Nombre\] | **Fecha:** \[Fecha\]
 
@@ -89,11 +89,11 @@ Esta rúbrica (de Guía 08) se usa para calificar las respuestas del "Golden Set
 ### Sección 3: Estrategia y Operaciones
 
 **Matriz 3.1: Decisión de Mercado de LLM**
-Esta matriz (de Anexo 03) se usa para comparar y seleccionar el modelo de IA (motor) adecuado para un caso de uso específico.
+Esta matriz (de Guía 14) se usa para comparar y seleccionar el modelo de IA (motor) adecuado para un caso de uso específico.
 
 **Caso de Uso:** \[Ej: Chatbot de RAG para consulta de pólizas\]
 
-| Modelo (Motor) | Rendimiento (QA) (Puntaje Guía 08) | Costo (Estimado) (Por Millón de Tokens) | Capacidad (Ventana de Contexto) | Gobernanza (Soberanía) |
+| Modelo (Motor) | Rendimiento (QA) (Puntaje Guía 10) | Costo (Estimado) (Por Millón de Tokens) | Capacidad (Ventana de Contexto) | Gobernanza (Soberanía) |
 | :--- | :--- | :--- | :--- | :--- |
 | \[Ej: GPT-4o\] | \[Puntaje: 12/13\] | \[$5.00 (In) / $15.00 (Out)\] | \[128k\] | \[Pública (EEUU)\] |
 | \[Ej: Claude 3 Opus\] | \[Puntaje: 11.5/13\] | \[$15.00 (In) / $75.00 (Out)\] | \[200k\] | \[Pública (EEUU)\] |
@@ -102,13 +102,13 @@ Esta matriz (de Anexo 03) se usa para comparar y seleccionar el modelo de IA (mo
 **Decisión Final:** \[Modelo Seleccionado\]
 **Justificación:** \[Razón principal de la elección (ej: "Mejor balance costo-rendimiento para este RAG").\]
 
-**Matriz 3.2: Decisión Estratégica (Guía 12)**
+**Matriz 3.2: Decisión Estratégica (Guía 13)**
 Un framework de 2x2 para decidir para qué usar la IA en un nuevo proyecto.
 
 | (Eje Y \ Eje X) | **INNOVACIÓN BAJA (Hacer lo mismo)** | **INNOVACIÓN ALTA (Hacer cosas nuevas)** |
 | :--- | :--- | :--- |
 | **EFICIENCIA ALTA (Hacerlo más barato/rápido)** | **Cuadrante 1: Optimización de Procesos.**<br>Descripción: Usar IA para automatizar tareas repetitivas y reducir costos.<br>Ejemplos: Clasificación de emails, resúmenes automáticos, transcripción de reuniones. | **Cuadrante 2: Transformación de Negocio.**<br>Descripción: Usar la eficiencia de la IA (costo marginal cero) para crear nuevos modelos de negocio o servicios que antes eran inviables.<br>Ejemplos: Hiper-personalización a escala (Guía 12), Producto-como-Agente (Blueprint 7). |
-| **EFICIENCIA BAJA (Hacerlo al mismo costo/velocidad)** | **Cuadrante 3: Experimentación (PoC).**<br>Descripción: Proyectos de bajo impacto para desarrollar habilidades internas sin un ROI claro.<br>EjemplOS: Un bot de Slack interno para diversión, pruebas de concepto desechables. | **Cuadrante 4: Investigación y Desarrollo (I+D).**<br>Descripción: Proyectos de alto costo/esfuerzo para crear capacidades completamente nuevas. El ROI no es inmediato.<br>Ejemplos: Desarrollar un "Agente Director" (Blueprint 3) o un modelo con Ajuste Fino (Anexo 05) por primera vez. |
+| **EFICIENCIA BAJA (Hacerlo al mismo costo/velocidad)** | **Cuadrante 3: Experimentación (PoC).**<br>Descripción: Proyectos de bajo impacto para desarrollar habilidades internas sin un ROI claro.<br>EjemplOS: Un bot de Slack interno para diversión, pruebas de concepto desechables. | **Cuadrante 4: Investigación y Desarrollo (I+D).**<br>Descripción: Proyectos de alto costo/esfuerzo para crear capacidades completamente nuevas. El ROI no es inmediato.<br>Ejemplos: Desarrollar un "Agente Director" (Blueprint 3) o un modelo con Ajuste Fino (Guía 07) por primera vez. |
 
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
