@@ -101,21 +101,29 @@ Así es como se ve la traza de un agente moderno:
 Las herramientas son la conexión del cerebro de la IA con el mundo digital. Sin herramientas, es solo un "conversador". Con herramientas, es un "actor".
 *Ejemplos:* `buscar_en_google()`, `leer_archivo()`, `consultar_API_del_clima()`.
 
-**3\. Las Herramientas (Tools): Las "Manos" del Agente**
-
 Las herramientas son funciones de código (APIs, scripts Python) que el modelo puede "llamar". Sin herramientas, es solo un "conversador". Con herramientas, es un "actor".
 
 ---
 
-#### El Dilema Central: El Bucle de Agente Autónomo (Autonomía vs. Control)
+#### El Dilema Central: La "Correa" del Agente (Autonomía vs. Control)
 
-Aquí reside el verdadero arte de la ingeniería. Los modelos modernos tienen una **"Directiva de Persistencia"**: tienden a intentar resolver el problema una y otra vez si fallan, comportándose como trabajadores tenaces. Esto cambia el riesgo:
+Aquí reside el verdadero arte de la ingeniería. El *trade-off* ya no es solo costo vs. latencia, sino **Autonomía vs. Seguridad**.
 
-* **Riesgo Antiguo (Alucinación):** El agente inventa una respuesta.
-* **Riesgo Moderno (Bucle Infinito):** El agente entra en un "Bucle Autónomo" tratando de arreglar un error, gastando presupuesto y recursos computacionales sin detenerse.
+* **Correa Suelta (Autonomía Total):**
+  ```text
+  "OK Agente, aquí tienes $100 y mi tarjeta de crédito. Reserva el mejor viaje."
+  ```
+  * *Riesgo Antiguo (Alucinación):* Poderoso, pero aterrador. El agente podría reservar el hotel equivocado o enviar un email vergonzoso.
+  * *Riesgo Moderno (Bucle Infinito):* Con los nuevos modelos persistentes, el agente podría entrar en un bucle tratando de encontrar el "vuelo perfecto" eternamente, gastando presupuesto y recursos sin detenerse.
+  * *Mitigación:* Aquí es donde implementamos **"Circuit Breakers"** (límites duros de iteración, ej. `max_steps=15`) para cortar la ejecución forzosamente.
 
-**La Solución: "Circuit Breakers" (Cortocircuitos)**
-En lugar de simplemente "darle la tarjeta de crédito" al agente (Correa Suelta) o micro-gestionarlo (Correa Corta), implementamos **Cortocircuitos**: límites duros en el código (ej. `max_iterations=10`) que detienen forzosamente al agente si no ha resuelto la tarea en un tiempo razonable.
+* **Correa Corta (Control Total):**
+  ```text
+  "OK Agente, dime tu primer paso.... OK, apruebo ese paso, ejecútalo.... OK, muéstrame el resultado.... Ahora, dime tu segundo paso."
+  ```
+  * *Riesgo:* 100% seguro, pero lento y tedioso. Básicamente, volvemos a la ingeniería de prompts manual y perdemos el beneficio de tener un trabajador digital.
+
+**El Buen Enfoque:** El juicio de ingeniería está en diseñar un sistema que sepa cuándo actuar solo y cuándo detenerse para pedir validación humana. Esto nos lleva directamente a nuestra primera estrategia.
 
 ---
 
