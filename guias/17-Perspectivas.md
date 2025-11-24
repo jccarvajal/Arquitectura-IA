@@ -24,7 +24,7 @@ La verdadera maestría, el objetivo de esta obra, fue desarrollar un marco de pe
 
 * La **Gobernanza** (Guía 09\) no es solo para LLMs; es un marco para gestionar cualquier tecnología impredecible.  
 * El **Diseño Cognitivo** (Guía 06\) no es solo sobre Agentes ReAct; es la disciplina de diseñar procesos de pensamiento autónomos.  
-* La **Alfabetización Cognitiva** (Guía 13\) no es solo sobre cómo hablar con GPT; es la habilidad humana de validar y dirigir cualquier cognición sintética.
+* La **Alfabetización Cognitiva** (Guía 16\) no es solo sobre cómo hablar con GPT; es la habilidad humana de validar y dirigir cualquier cognición sintética.
 
 Esta obra no te enseñó a operar *esta* fábrica; te enseñó a ser un Arquitecto de Fábricas Cognitivas.
 

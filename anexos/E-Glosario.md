@@ -66,7 +66,7 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 **Blueprint**
 
 * **Definición:** Un caso de estudio práctico y un plano de arquitectura. Es la plantilla que conecta la teoría de las Guías y la técnica de los Anexos para resolver un problema de negocio específico, detallando los ingredientes, el flujo y la sinergia resultante.  
-* **Referencia Principal:** Anexo B (Blueprints).
+* **Referencia Principal:** Anexo C (Blueprints).
 
 **Brecha de Aprendizaje (Learning Gap)**
 
@@ -111,7 +111,7 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 **CRF-R**
 
 * **Definición:** Acrónimo mnemotécnico propio de esta obra para el diseño de prompts robustos: **C**ontexto, **R**ol, **F**ormato, **R**estricciones.
-* **Referencia Principal:** Guía 02 (Ingeniería de Prompts), Anexo C (Plantillas).
+* **Referencia Principal:** Guía 02 (Ingeniería de Prompts), Anexo D (Plantillas).
 
 **Datos Sintéticos (Synthetic Data)**
 
@@ -376,7 +376,7 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 **Rúbrica de Evaluación (Evaluation Rubric)**
 
 * **Definición:** Plantilla de calificación usada para medir objetivamente la calidad de la respuesta de un agente.
-* **Referencia Principal:** Guía 10 (Evaluación y QA), Anexo C (Plantillas).
+* **Referencia Principal:** Guía 10 (Evaluación y QA), Anexo D (Plantillas).
 
 **Sesión (de Agente)**
 

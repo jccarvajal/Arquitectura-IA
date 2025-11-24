@@ -31,12 +31,12 @@ La obra de guías (01-13) y anexos fue diseñada para los "Arquitectos" y "Direc
 * **El Problema:** El equipo de soporte está sobrecargado con preguntas de **"Sistema 1"**, tareas repetitivas, de bajo juicio, como "¿Cómo reseteo mi contraseña?" o "¿Cuál es su horario de atención?".  
 * **El Objetivo Estratégico:** Automatizar de forma segura el 80% de estas consultas de "Sistema 1" para liberar a los agentes humanos para el trabajo de **"Sistema 2"** (clientes enojados, problemas complejos).  
 * **Ingredientes (El "Stack" de la Obra):** 
-  * **Guía 01 (Prompts):** Para definir el rol, el tono y las reglas de seguridad.  
-  * **Guía 02 (Contexto y Memoria):** Específicamente la arquitectura **RAG (Generación Aumentada por Recuperación)**, para conectar el agente a la "biblioteca" de manuales de producto.  
-  * **Anexo 03 (Modelos y Mercado):** Para elegir un motor rápido y barato (ej. Claude Haiku, Gemini Flash).  
-  * **Guía 07 (Gobernanza):** Para definir las reglas de escalado a humano.  
-  * **Guía 10 (Humanidad, Ética y Confianza):** Para aplicar "Humano-en-el-Bucle" y la "Transparencia Obligatoria".  
-  * **Guía 03 (Datos):** Para asegurar que la "biblioteca" RAG esté limpia y actualizada.  
+  * **Guía 02 (Prompts):** Para definir el rol, el tono y las reglas de seguridad.  
+  * **Guía 03 (Contexto y Memoria):** Específicamente la arquitectura **RAG (Generación Aumentada por Recuperación)**, para conectar el agente a la "biblioteca" de manuales de producto.  
+  * **Guía 14 (Modelos y Mercado):** Para elegir un motor rápido y barato (ej. Claude Haiku, Gemini Flash).  
+  * **Guía 09 (Gobernanza):** Para definir las reglas de escalado a humano.  
+  * **Guía 15 (Humanidad, Ética y Confianza):** Para aplicar "Humano-en-el-Bucle" y la "Transparencia Obligatoria".  
+  * **Guía 04 (Datos):** Para asegurar que la "biblioteca" RAG esté limpia y actualizada.  
 * **El Blueprint (El Flujo del Agente):** 
   1. **Inicio:** El cliente inicia un chat.  
   2. **RAG (Recuperación):** El sistema toma la pregunta del cliente (ej. "¡no puedo entrar\!") y la "vectoriza" (la convierte en un número) para buscar en la "biblioteca" (Base de Datos Vectorial) el artículo de ayuda más relevante.  
@@ -69,11 +69,11 @@ La obra de guías (01-13) y anexos fue diseñada para los "Arquitectos" y "Direc
 * **El Problema:** Un equipo legal necesita revisar 5.000 contratos (Datos Internos) para encontrar una cláusula de riesgo específica ("Cláusula de Terminación por Conveniencia"). Es un trabajo de "Sistema 1" masivo y de alto costo.  
 * **El Objetivo Estratégico:** Automatizar el 100% de la revisión (la decisión final sigue siendo humana) en un entorno seguro (on-premise).  
 * **Ingredientes (El "Stack" de la Obra):** 
-  * **Anexo 03 (Modelos y Mercado):** Modelo Open-Source (ej. Llama 3 8B) para control total de datos ("Comprar la Máquina").  
-  * **Anexo 05 (Ajuste Fino):** Para entrenar al modelo en la habilidad de "razonar como abogado" y formatear la salida en un JSON perfecto.  
-  * **Guía 02 (Contexto y Memoria):** Arquitectura RAG para inyectar el texto del contrato específico en el prompt.  
-  * **Guía 09 (Industrialización de IA):** Para industrializar el proceso y ejecutarlo en un servidor local seguro, guardando el "rastro de pensamiento" (log) de cada decisión para la auditabilidad.  
-  * **Guía 03 (Datos):** Para asegurar que los 5.000 contratos son la versión correcta y están limpios.  
+  * **Guía 14 (Modelos y Mercado):** Modelo Open-Source (ej. Llama 3 8B) para control total de datos ("Comprar la Máquina").  
+  * **Guía 07 (Ajuste Fino):** Para entrenar al modelo en la habilidad de "razonar como abogado" y formatear la salida en un JSON perfecto.  
+  * **Guía 03 (Contexto y Memoria):** Arquitectura RAG para inyectar el texto del contrato específico en el prompt.  
+  * **Guía 11 (Industrialización de IA):** Para industrializar el proceso y ejecutarlo en un servidor local seguro, guardando el "rastro de pensamiento" (log) de cada decisión para la auditabilidad.  
+  * **Guía 04 (Datos):** Para asegurar que los 5.000 contratos son la versión correcta y están limpios.  
 * **El Blueprint (El Flujo del Agente):** 
   1. **El "Motor":** Se toma el modelo Llama 3 8B y se le aplica **Ajuste Fino** (la técnica para especializar un modelo) con 1.000 ejemplos de (texto\_contrato) \-\> (json\_análisis\_legal). El resultado es el "motor" especializado: llama-3-legal-analyst-v1.  
   2. **Industrialización:** Se crea un "Agente PM" (un servicio en un servidor seguro) que itera sobre la base de datos de 5.000 contratos.  
@@ -109,12 +109,12 @@ La obra de guías (01-13) y anexos fue diseñada para los "Arquitectos" y "Direc
 * **El Problema:** El Director de Marketing necesita lanzar un nuevo producto. Es un objetivo estratégico complejo, no una tarea simple.  
 * **El Objetivo Estratégico:** Usar una "Orquesta de Agentes" (un agente "Director" que coordina "Especialistas") para ejecutar el "trabajo de campo" estratégico, permitiendo al director humano enfocarse en el juicio.  
 * **Ingredientes (El "Stack" de la Obra):** 
-  * **Guía 04 (Agentes):** Arquitectura de "Director de Programa" (PM de PMs).  
-  * **Guía 01 (Prompts):** El "Prompt de Intención" (definir el "qué", no el "cómo").  
-  * **Guía 05 (Diseño de Sistemas Cognitivos):** Para el "Agente Enrutador" (el que elige qué especialista usar).  
-  * **Anexo 03 (Modelos y Mercado):** Un portafolio de motores (AaaS y API).  
-  * **Guía 07 (Gobernanza):** "Presupuestos de Agente" y "Humano-en-el-Bucle" para la acción final.  
-  * **Guía 03 (Datos):** Para alimentar al Agente Investigador con datos de mercado fiables.  
+  * **Guía 05 (Agentes):** Arquitectura de "Director de Programa" (PM de PMs).  
+  * **Guía 02 (Prompts):** El "Prompt de Intención" (definir el "qué", no el "cómo").  
+  * **Guía 06 (Diseño de Sistemas Cognitivos):** Para el "Agente Enrutador" (el que elige qué especialista usar).  
+  * **Guía 14 (Modelos y Mercado):** Un portafolio de motores (AaaS y API).  
+  * **Guía 09 (Gobernanza):** "Presupuestos de Agente" y "Humano-en-el-Bucle" para la acción final.  
+  * **Guía 04 (Datos):** Para alimentar al Agente Investigador con datos de mercado fiables.  
 * **El Blueprint (El Flujo del Agente Director):** 
   1. **👤 Humano (Director de Estrategia):** Escribe el "Prompt de Intención":  
      ```text
@@ -146,11 +146,11 @@ La obra de guías (01-13) y anexos fue diseñada para los "Arquitectos" y "Direc
 * **El Problema:** La organización ha implementado 50 Agentes RAG (Blueprint 1), pero "datos basura" (obsoletos, incorrectos, duplicados) en las bibliotecas RAG son el mayor riesgo operativo. Se necesita una auditoría constante.  
 * **El Objetivo Estratégico:** Crear un agente autónomo que audite continuamente las Bases de Datos Vectoriales para encontrar y reportar datos obsoletos o conflictivos, asegurando la salud del ecosistema de IA.  
 * **Ingredientes (El "Stack" de la Obra):** 
-  * **Guía 09 (Industrialización):** Para ejecutar este agente en un ciclo programado (ej. cada noche).  
-  * **Guía 04 (Agentes):** Como un "Agente PM" autónomo con herramientas para leer/escanear bases de datos.  
-  * **Guía 03 (Datos):** El agente usará las "reglas de negocio" (metadatos, fechas de caducidad) definidas en esta guía.  
-  * **Guía 08 (Evaluación):** El agente es, en sí mismo, una herramienta de evaluación de la calidad de los datos.  
-  * **Guía 07 (Gobernanza):** El agente reporta a un dashboard de gobernanza.  
+  * **Guía 11 (Industrialización):** Para ejecutar este agente en un ciclo programado (ej. cada noche).  
+  * **Guía 05 (Agentes):** Como un "Agente PM" autónomo con herramientas para leer/escanear bases de datos.  
+  * **Guía 04 (Datos):** El agente usará las "reglas de negocio" (metadatos, fechas de caducidad) definidas en esta guía.  
+  * **Guía 10 (Evaluación):** El agente es, en sí mismo, una herramienta de evaluación de la calidad de los datos.  
+  * **Guía 09 (Gobernanza):** El agente reporta a un dashboard de gobernanza.  
 * **El Blueprint (El Flujo del Agente):** 
   1. **Inicio (Programado):** El agente se "despierta" a las 2 AM.  
   2. **Prompt de Sistema:** 
@@ -182,11 +182,11 @@ La obra de guías (01-13) y anexos fue diseñada para los "Arquitectos" y "Direc
 * **El Problema:** El **Ajuste Fino (Fine-Tuning)** —la técnica para especializar el "cerebro" de un modelo— requiere cientos o miles de ejemplos de alta calidad. ¿Qué pasa si solo tenemos 50 ejemplos "perfectos" de emails de soporte, no los 1.000 necesarios?  
 * **El Objetivo Estratégico:** Usar un "motor de frontera" (un LLM grande y caro como GPT-4o u Opus) para "auto-multiplicar" los 50 ejemplos humanos "dorados", generando 950 nuevos ejemplos de **datos sintéticos** de alta calidad para el set de entrenamiento.  
 * **Ingredientes (El "Stack" de la Obra):** 
-  * **Guía 03 (Datos):** Específicamente la táctica de "Datos Sintéticos".  
-  * **Anexo 05 (Ajuste Fino):** Es el consumidor final de este blueprint.  
-  * **Anexo 03 (Modelos):** Para usar un motor de frontera (caro) solo para esta tarea de generación.  
-  * **Guía 01 (Prompts):** Un "meta-prompt" que define las cualidades de un buen ejemplo.  
-  * **Guía 08 (Evaluación):** El rol humano es 100% "Validador" de los datos generados.  
+  * **Guía 04 (Datos):** Específicamente la táctica de "Datos Sintéticos".  
+  * **Guía 07 (Ajuste Fino):** Es el consumidor final de este blueprint.  
+  * **Guía 14 (Modelos):** Para usar un motor de frontera (caro) solo para esta tarea de generación.  
+  * **Guía 02 (Prompts):** Un "meta-prompt" que define las cualidades de un buen ejemplo.  
+  * **Guía 10 (Evaluación):** El rol humano es 100% "Validador" de los datos generados.  
 * **El Blueprint (El Flujo del Agente):** 
   1. **Contexto:** El humano provee 10 de los 50 ejemplos "dorados" en el prompt.  
   2. **Prompt de Sistema (Meta-Prompt):** 
@@ -207,9 +207,9 @@ La obra de guías (01-13) y anexos fue diseñada para los "Arquitectos" y "Direc
 * **El Problema:** Un gerente necesita escribir un reporte estratégico complejo. Sufre del "síndrome de la página en blanco" y la tarea es puramente de "Sistema 2", por lo que no puede ser totalmente delegada.  
 * **El Objetivo Estratégico:** Usar la IA no como un "escritor fantasma", sino como un "compañero de debate" para aplicar el "Pensamiento Algorítmico" (descomponer un problema grande en pasos) e iterar en un producto de alta calidad.  
 * **Ingredientes (El "Stack" de la Obra):** 
-  * **Guía 11 (Aprender a Pensar):** Específicamente "Pensamiento Algorítmico" y "Táctica del Abogado del Diablo".  
-  * **Guía 01 (Prompts):** Múltiples prompts iterativos (una técnica llamada **Prompt Chaining**).  
-  * **Guía 10 (Sinergia):** Este es un ejemplo puro de "Humano-al-Mando" (Nivel 3).  
+  * **Guía 16 (Aprender a Pensar):** Específicamente "Pensamiento Algorítmico" y "Táctica del Abogado del Diablo".  
+  * **Guía 02 (Prompts):** Múltiples prompts iterativos (una técnica llamada **Prompt Chaining**).  
+  * **Guía 15 (Sinergia):** Este es un ejemplo puro de "Humano-al-Mando" (Nivel 3).  
 * **El Blueprint (El Flujo de "Pensamiento Algorítmico"):** 
   1. **Prompt 1 (Lluvia de Ideas):** Humano: "Estoy escribiendo un reporte sobre \[TEMA\]. Basado en \[DATOS ADJUNTOS\], dame 5 ángulos de análisis posibles."  
   2. **Prompt 2 (Esquema):** Humano: "Me gusta el ángulo 3 ('Impacto en la eficiencia operativa'). Conviértelo en un esquema detallado de 6 secciones para el reporte."  
@@ -228,13 +228,13 @@ La obra de guías (01-13) y anexos fue diseñada para los "Arquitectos" y "Direc
 * **El Problema:** El "Agente-Analista-Legal" (Blueprint 2\) es un activo interno tan valioso y eficiente que otras organizaciones han preguntado si pueden usarlo.  
 * **El Objetivo Estratégico:** Implementar la Estrategia de Innovación convirtiendo un activo de eficiencia interna (un "centro de costos") en un producto comercial externo (un "centro de ingresos") como un **Agente-como-Servicio (AaaS)**.  
 * **Ingredientes (El "Stack" de la Obra):** 
-  * **Guía 12 (Estrategia y Valor):** Específicamente la "Innovación (Oportunidad)".  
-  * **Guía 09 (Industrialización):** Llevado a nivel de producto (gestión de API, escalabilidad, monitoreo multi-tenant).  
-  * **Guía 07 (Gobernanza):** Fundamental. Se necesita una gobernanza multi-tenant:  
+  * **Guía 13 (Estrategia y Valor):** Específicamente la "Innovación (Oportunidad)".  
+  * **Guía 11 (Industrialización):** Llevado a nivel de producto (gestión de API, escalabilidad, monitoreo multi-tenant).  
+  * **Guía 09 (Gobernanza):** Fundamental. Se necesita una gobernanza multi-tenant:  
     * **Aislamiento de Datos:** El Cliente A nunca debe poder ver los datos RAG del Cliente B.  
     * **Gestión de Costos:** El "Dashboard de Gobernanza" debe rastrear los costos de API por cliente.  
-  * **Anexo 05 (Ajuste Fino):** El "adaptador" LoRA entrenado es ahora la Propiedad Intelectual (PI) secreta que se está vendiendo.  
-  * **Anexo 03 (Modelos):** El modelo open-source subyacente.  
+  * **Guía 07 (Ajuste Fino):** El "adaptador" LoRA entrenado es ahora la Propiedad Intelectual (PI) secreta que se está vendiendo.  
+  * **Guía 14 (Modelos):** El modelo open-source subyacente.  
 * **El Blueprint (El Flujo de Arquitectura):** 
   1. (Industrialización) Crear un endpoint de API seguro para el agente especializado.  
   2. (Gobernanza) Implementar un "API Gateway" para la autenticación (claves de API por cliente) y "Límites de Tasa" (para prevenir abusos y bucles de costos).  
