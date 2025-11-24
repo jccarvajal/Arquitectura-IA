@@ -139,7 +139,7 @@ Base de conocimiento para alinear equipos y profundizar el criterio.
 * Ver [Historial Completo](./changelog.md).
 
 ### Sugerencias y Mejoras
-Este es un documento vivo. Si encuentras una errata o tienes una sugerencia de mejora, puedes reportarla directamente en el [Repositorio de GitHub](https://github.com/jccarvajal/IA-Aplicada).
+Este es un documento vivo. Si encuentras una errata o tienes una sugerencia de mejora, puedes reportarla directamente en el [Repositorio de GitHub](https://github.com/jccarvajal/Arquitectura-IA).
 
 ### Licencia
 El contenido se distribuye bajo licencia **CC BY-NC-ND 4.0**.
