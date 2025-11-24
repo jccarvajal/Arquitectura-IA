@@ -78,7 +78,7 @@ El paso a producción: seguridad, calidad y monitoreo de la fábrica.
 * [Guía 11: Industrialización](./guias/11-Industrializacion.md)
   *Observabilidad Ampliada y LLM-Ops.*
 * [Guía 12: ROI Financiero](./guias/12-ROI-Financiero.md)
-  *Mapa de las Cuatro Zonas: Dónde invertir y dónde evitar la destrucción de valor.*
+  *Mapa de las Cinco Zonas: Dónde invertir y dónde evitar la destrucción de valor.*
 
 #### 🤝 Bloque 4: Estrategia e Impacto Humano (Guías 13 a 16)
 Decisiones de alto nivel, habilitación de habilidades y alineación de la misión.
