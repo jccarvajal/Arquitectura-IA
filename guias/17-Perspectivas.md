@@ -90,7 +90,7 @@ Como establecimos en la Guía 03 (Ingeniería de Contexto y Memoria), la arquite
 Investigaciones recientes (Google Research, NeurIPS 2025) buscan resolver precisamente esta amnesia. El **"Nested Learning" (Aprendizaje Anidado)** es un nuevo paradigma que reemplaza las "capas de cómputo" estáticas por "capas de cognición" que operan y se actualizan a múltiples frecuencias (escalas de tiempo), similar a las ondas cerebrales. Prototipos han implementado esta idea, introduciendo modelos "auto-modificables" con "memoria continua".
 
 * **Impacto Práctico:** El "Vigilante Estratégico" debe entender que esto no es una simple mejora, sino un cambio de arquitectura que resuelve las dos limitaciones clave de la Guía 03:
-  * **Resuelve el Costo Cuadrático:** Arquitecturas alternativas (como Mamba, referenciada en el Anexo 08) habilitan el procesamiento de contexto largo a un costo lineal, haciendo viables los análisis masivos.
+  * **Resuelve el Costo Cuadrático:** Arquitecturas alternativas (como Mamba, referenciada en el Anexo F) habilitan el procesamiento de contexto largo a un costo lineal, haciendo viables los análisis masivos.
   * **Resuelve la Amnesia Estática:** Los modelos de "Aprendizaje Anidado" podrán aprender de la retroalimentación del usuario y consolidar ese conocimiento, cerrando la "Brecha de Aprendizaje" (Guía 03) y permitiendo una personalización real.
   * **Revoluciona la Gobernanza:** El desafío de auditoría cambia radicalmente. Como "Vigilante Estratégico", debes anticipar la transición de supervisar un "artefacto" de IA estático (un Transformer congelado) a gobernar un "sistema" de IA dinámico que aprende, evoluciona por sí mismo y podría desarrollar sesgos en tiempo real.
 

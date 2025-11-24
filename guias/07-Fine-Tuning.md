@@ -40,7 +40,7 @@ Este es el *trade-off* más importante de la arquitectura de IA. Usar la herrami
 * **El Problema:** Tienes un "Agente PM de Servicio al Cliente". Usando solo Prompts (Guía 02), tienes que recordarle en cada chat tu tono de voz: "Recuerda ser empático, profesional, usar estas 5 frases clave y nunca sonar robótico." Es ineficiente y el resultado es inconsistente.  
 * **La Solución (Ajuste Fino):** 
   1. **Recolectar Datos:** Juntas 1.000 ejemplos de emails "perfectos" de tu mejor agente de soporte humano (una aplicación de la Estrategia de Datos).  
-  2. **Entrenar:** Haces "ajuste fino" a un modelo Open-Source (del Anexo 03) con esos 1.000 ejemplos.  
+  2. **Entrenar:** Haces "ajuste fino" a un modelo Open-Source (del Guía 14) con esos 1.000 ejemplos.  
   3. **Resultado:** El "cerebro" del modelo se modifica. El modelo *aprende* tu tono de voz.  
 * **Beneficio:** Ahora, tu prompt (Guía 02) es 90% más corto. Ya no dices "Actúa como...". Simplemente dices: "Cliente tiene problema X. Responde." El modelo responderá automáticamente con la "Voz de la Marca" que le enseñaste. Ya no *actúa* como un agente de soporte; *es* un agente de soporte.
 
