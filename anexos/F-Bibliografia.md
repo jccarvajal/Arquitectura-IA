@@ -42,7 +42,7 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 * **Wiesinger, J., Marlow, P., & Vuskovic, V. (Septiembre 2024). "Agents".** [[Web]](https://www.kaggle.com/whitepaper-agents)
   * **Por qué leerlo:** Whitepaper conceptual que introduce la arquitectura de un Agente (Guía 05) como la composición de un Modelo (el cerebro), Herramientas (las manos) y una Capa de Orquestación.
 * **Gulli, A., et al. (Febrero 2025). "The Agents Companion".** [[Libro]](https://www.kaggle.com/whitepaper-agent-companion)
-  * **Por qué leerlo:** Es la profundización técnica las guías de construcción. Explora patrones de "múltiples agentes" (jerárquicos, colaborativos) y detalla la Evaluación de Agentes (Guía 10).
+  * **Por qué leerlo:** Es la profundización técnica de las guías de construcción. Explora patrones de "múltiples agentes" (jerárquicos, colaborativos) y detalla la Evaluación de Agentes (Guía 10).
 
 ---
 
