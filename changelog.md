@@ -20,6 +20,12 @@ Este documento registra todas las modificaciones estructurales, técnicas y conc
 * **Consistencia Terminológica:** Se aclaró que **Amnesia Estática** y **ETL-V** son adaptaciones conceptuales propias del libro.
 * **Actualizaciones Tecnológicas:** Se sincronizaron todas las referencias al estándar de vanguardia **Gemini 3 Pro**, **Google Antigravity** y la iniciativa **AMI (LeCun)**.
 
+#### Validación y Despliegue (Integridad)
+
+* **Auditoría de Referencias:** Revisión forense y corrección del 100% de las referencias cruzadas internas para alinearlas con la nueva numeración (Guías 01-17). Se eliminaron referencias "fantasmas" a anexos antiguos.
+* **Sanitización de Formato:** Se corrigieron los bloques de código en el **Anexo D (Plantillas)**, eliminando caracteres de escape conflictivos para asegurar la usabilidad directa ("Copy/Paste") en cualquier visor Markdown.
+* **Integridad del Corpus:** Validación final de coherencia narrativa entre Estrategia (Guía 13), Gobernanza (Guía 09) y Ética (Guía 15).
+
 ---
 
 ### Versión 1.1 (Noviembre 2025)
