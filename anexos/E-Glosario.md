@@ -146,7 +146,7 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 **Foso Competitivo (Moat)**
 
 * **Definición:** La ventaja estratégica defendible que una empresa construye con IA. Reside en los datos propietarios (para RAG), los datos de juicio humano (para Ajuste Fino) y la eficiencia de la Gobernanza, no en el modelo LLM.
-* **Referencia Principal:** Guía 15 (Estrategia y Valor).
+* **Referencia Principal:** Guía 13 (Estrategia y Valor).
 
 **Framework PPP (Productividad, Proactividad y Personalización)**
 

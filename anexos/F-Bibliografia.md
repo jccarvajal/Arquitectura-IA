@@ -15,11 +15,11 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 * **Vaswani, A., et al. (2017). "Attention Is All You Need".** [[PDF]](https://arxiv.org/abs/1706.03762)
   * **Por qué leerlo:** Es el *paper* seminal que introdujo la arquitectura "Transformer", el motor fundamental de todos los LLM modernos que se discuten en esta obra.
 * **Lewis, P., et al. (2020). "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks".** [[PDF]](https://arxiv.org/abs/2005.11401)
-  * **Por qué leerlo:** Es el *paper* que introduce formalmente la arquitectura **RAG**, la solución técnica clave para el problema de la "Ventana de Contexto" discutido en la Guía 02.
+  * **Por qué leerlo:** Es el *paper* que introduce formalmente la arquitectura **RAG**, la solución técnica clave para el problema de la "Ventana de Contexto" discutido en la Guía 03.
 * **Hu, E., et al. (2021). "LoRA: Low-Rank Adaptation of Large Language Models".** [[PDF]](https://arxiv.org/abs/2106.09685)
   * **Por qué leerlo:** Introduce LoRA, la técnica de ingeniería clave para el **Ajuste Fino** (Guía 07) eficiente, permitiendo adaptar modelos masivos con recursos limitados.
 * **Boonstra, L. (Febrero 2025). "Prompt Engineering Guide".** [[Web]](https://www.kaggle.com/whitepaper-prompt-engineering)
-  * **Por qué leerlo:** Es el whitepaper técnico que define la disciplina de la Ingeniería de Prompts (Guía 01). Detalla las técnicas fundamentales como zero-shot, few-shot, role prompting y los patrones de razonamiento como Chain-of-Thought y ReAct.
+  * **Por qué leerlo:** Es el whitepaper técnico que define la disciplina de la Ingeniería de Prompts (Guía 02). Detalla las técnicas fundamentales como zero-shot, few-shot, role prompting y los patrones de razonamiento como Chain-of-Thought y ReAct.
 * **Milam, K., & Gulli, A. (Noviembre 2025). "Context Engineering: Sessions, Memory".** [[Web]](https://www.kaggle.com/whitepaper-context-engineering-sessions-and-memory)
   * **Por qué leerlo:** El *whitepaper* fundacional que define la "Ingeniería de Contexto". Proporciona el "criterio de arquitecto" clave para diferenciar **RAG** (el "bibliotecario" experto en hechos) de la **Memoria** (el "asistente personal" experto en el usuario).
 * **Gobierno de Chile. (1999). "Ley N° 19.628 sobre protección de la vida privada".** [[Web]](https://www.bcn.cl/leychile/navegar?idNorma=141599)
@@ -42,7 +42,7 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 * **Wiesinger, J., Marlow, P., & Vuskovic, V. (Septiembre 2024). "Agents".** [[Web]](https://www.kaggle.com/whitepaper-agents)
   * **Por qué leerlo:** Whitepaper conceptual que introduce la arquitectura de un Agente (Guía 05) como la composición de un Modelo (el cerebro), Herramientas (las manos) y una Capa de Orquestación.
 * **Gulli, A., et al. (Febrero 2025). "The Agents Companion".** [[Libro]](https://www.kaggle.com/whitepaper-agent-companion)
-  * **Por qué leerlo:** Es el "102" de las guías de construcción. Explora patrones de "múltiples agentes" (jerárquicos, colaborativos) y detalla la Evaluación de Agentes (Guía 10).
+  * **Por qué leerlo:** Es la profundización técnica las guías de construcción. Explora patrones de "múltiples agentes" (jerárquicos, colaborativos) y detalla la Evaluación de Agentes (Guía 10).
 
 ---
 
@@ -72,7 +72,7 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 *(Humanidad, Ética, Estrategia y Valor)*
 
 * **Challapally, A., et al. (Julio 2025). "The GenAI Divide: State of AI in Business 2025". MIT / Project NANDA.** [[PDF]](https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf)
-  * **Por qué leerlo:** Es el informe de mercado clave de 2025. Proporciona los datos estadísticos que validan la tesis de esta obra: la **"Brecha GenAI"** (el 95% de las empresas con ROI cero). Define los conceptos de **"Shadow AI"** (IA en la sombra), **"Prosumers"** (usuarios expertos) y la superioridad de la estrategia "Comprar" vs. "Construir", que son fundamentales para la Gobernanza (Guía 07), la Sinergia (Guía 11) y la Estrategia (Guía 12).
+  * **Por qué leerlo:** Es el informe de mercado clave de 2025. Proporciona los datos estadísticos que validan la tesis de esta obra: la **"Brecha GenAI"** (el 95% de las empresas con ROI cero). Define los conceptos de **"Shadow AI"** (IA en la sombra), **"Prosumers"** (usuarios expertos) y la superioridad de la estrategia "Comprar" vs. "Construir", que son fundamentales para la Gobernanza (Guía 09), la Sinergia (Guía 15) y la Estrategia (Guía 13).
 * **Singla, A., et al. (Noviembre 2025). "The state of AI in 2025". McKinsey.** [[Web]](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)
   * **Por qué leerlo:** Valida la "Brecha de Escalamiento" e identifica la "validación humana" como diferenciador clave de los *high performers*.
 * **Kahneman, D. (2011). "Thinking, Fast and Slow".** [[Libro]](https://us.macmillan.com/books/9780374533557/thinkingfastandslow)
