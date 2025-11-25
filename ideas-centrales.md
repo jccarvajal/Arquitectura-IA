@@ -40,12 +40,12 @@
 "Una 'fábrica' sin un 'propósito' es solo un costo. La maestría consiste en definir el 'para qué' estratégico de la IA: el foso competitivo (Moat) y el camino hacia la Innovación."
 
 * **Guía 14 (Modelos y Mercado):** 
-"El rol estratégico no es elegir un motor, sino un **Portafolio** flexible. La maestría consiste en optimizar el Triángulo de Adquisición (Rendimiento, Costo, Control) según el caso de uso."
+"El rol estratégico no es elegir un motor, sino un Portafolio flexible. La maestría consiste en optimizar el Triángulo de Adquisición (Rendimiento, Costo, Control) según el caso de uso."
 
 * **Guía 15 (Ética y Confianza):** 
 "La confianza es el pilar. La maestría consiste en entender que la 'ética' es compliance: saber dónde están las Líneas Rojas (Decisiones Irreversibles) y cómo aplicar la Licencia Social."
 
-* **Guía 16 (Aprender a Pensar):** 
+* **Guía 16 (Aprender a Pensar con IA):** 
 "La IA es un Sistema 1 (táctico); la 'basura cognitiva entra, basura elocuente sale'. La maestría consiste en que el humano se convierta en un 'co-piloto' cuyo valor es el criterio (Pensamiento Algorítmico)."
 
 * **Guía 17 (Perspectivas):** 
