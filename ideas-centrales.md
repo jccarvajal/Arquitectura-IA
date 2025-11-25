@@ -34,7 +34,7 @@
 "Un 'prototipo' resuelve un problema una vez; un sistema 'industrializado' lo resuelve de forma fiable. La maestría consiste en construir el sistema detrás del sistema (Observabilidad Ampliada y LLM-Ops)."
 
 * **Guía 12 (ROI Financiero):** 
-"La IA es una asignación de capital. La maestría consiste en usar el Mapa de las Cuatro Zonas para invertir en proyectos que crean valor y evitar los que lo destruyen (destrucción de valor)."
+"La IA es una asignación de capital. La maestría consiste en usar el Mapa de las Cinco Zonas para invertir en proyectos que crean valor y evitar los que lo destruyen (destrucción de valor)."
 
 * **Guía 13 (Estrategia y Valor):** 
 "Una 'fábrica' sin un 'propósito' es solo un costo. La maestría consiste en definir el 'para qué' estratégico de la IA: el foso competitivo (Moat) y el camino hacia la Innovación."
