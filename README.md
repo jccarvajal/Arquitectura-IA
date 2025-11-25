@@ -89,7 +89,7 @@ Decisiones de alto nivel, habilitación de habilidades y alineación de la misi�
   *Estrategia de portafolio y el Triángulo de Adquisición.*
 * [Guía 15: Ética y Confianza](./guias/15-Etica-Confianza.md)
   *Licencia Social y Sinergia S1/S2.*
-* [Guía 16: Aprender a Pensar](./guias/16-Aprender-A-Pensar.md)
+* [Guía 16: Aprender a Pensar con IA](./guias/16-Aprender-A-Pensar.md)
   *Nuevas competencias para el equipo humano y el Pensamiento Algorítmico.*
 
 #### 🔭 Bloque 5: Proyección (Guía 17)
