@@ -22,7 +22,7 @@ La generación actual se sustenta en la arquitectura **Transformer** (Vaswani et
 
 #### A. Tokenización
 Los modelos no procesan palabras, sino **tokens** (fragmentos numéricos).
-* **Implicancia Económica:** Un tokenizador ineficiente —especialmente en modelos anglocéntricos aplicados al español— aumenta el costo real de inferencia.
+* **Implicancia Económica:** Un tokenizador ineficiente, especialmente en modelos anglocéntricos aplicados al español, aumenta el costo real de inferencia.
 * **Implicancia Técnica:** Más tokens para expresar la misma idea implica mayor latencia y mayor superficie para alucinaciones.
 
 #### B. Ventana de Contexto y Atención
