@@ -17,7 +17,7 @@ Gobernar la IA es evitar ese destino.
 
 ---
 
-### 2. La Inteligencia que Tenemos: Un S1 Amplificado
+### 2. La Inteligencia que Tenemos: Un S1 Ampliado
 
 En el prólogo establecimos que la IA generativa actual es un **Sistema 1 ampliado**, brillante para producir patrones y frágil para razonar.
 
