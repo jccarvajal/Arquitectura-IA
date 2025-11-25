@@ -278,6 +278,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** La capacidad de un sistema (usualmente un Agente Enrutador) para analizar una tarea y decidir qué proceso usar para resolverla.
 * **Referencia Principal:** Guía 06 (Sistemas Cognitivos).
 
+**Model Card (Ficha del Motor)**
+
+* **Definición:** Documento técnico que reporta las capacidades de la Fase 1 (Pre-Entrenamiento) de un modelo. Detalla la arquitectura, parámetros, fecha de corte de conocimientos y benchmarks de rendimiento puro. Es esencial para evaluar la viabilidad técnica.
+* **Referencia Principal:** Guía 01 (Anatomía de Modelos).
+
 **Modelos Open-Source (Ejecución Local)**
 
 * **Definición:** Estrategia de adquisición donde se "compra la máquina". El modelo se ejecuta en infraestructura propia.
@@ -317,6 +322,16 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** Métrica de calidad que mide la habilidad del agente para adaptar su estilo a las preferencias del usuario.
 * **Referencia Principal:** Guía 09 (Gobernanza).
+
+**Post-Entrenamiento (Post-training)**
+
+* **Definición:** La segunda fase del ciclo de vida, donde el "Modelo Base" se refina mediante SFT y RLHF para convertirse en un asistente útil y seguro. Aquí se definen el comportamiento, el tono y los límites de seguridad.
+* **Referencia Principal:** Guía 01 (Anatomía de Modelos).
+
+**Pre-Entrenamiento (Pre-training)**
+
+* **Definición:** La primera y más costosa fase de creación de una IA, donde el modelo aprende patrones estadísticos a partir de datos masivos para convertirse en un "Modelo Base". En esta etapa, el modelo predice, pero aún no sabe seguir instrucciones.
+* **Referencia Principal:** Guía 01 (Anatomía de Modelos).
 
 **Proactividad (dentro del Framework PPP)**
 
@@ -363,10 +378,25 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** El "motor" o patrón de razonamiento fundamental de un Agente. Opera en un bucle de Razonamiento + Acción.
 * **Referencia Principal:** Guía 05 (Ingeniería de Agentes), Guía 06 (Sistemas Cognitivos).
 
+**Red Teaming**
+
+* **Definición:** Práctica de seguridad ofensiva donde un equipo (humano o automatizado) actúa como adversario simulando ataques contra el modelo. Su objetivo es forzar fallos, lograr *jailbreaks* o generar contenido dañino deliberadamente para identificar y parchar vulnerabilidades antes del despliegue.
+* **Referencia Principal:** Guía 01 (Anatomía de Modelos).
+
 **Reflexión (Reflection)**
 
 * **Definición:** Patrón de razonamiento donde un agente critica y corrige su propio trabajo.
 * **Referencia Principal:** Guía 06 (Sistemas Cognitivos).
+
+**RLAIF (Constitutional AI / AI Feedback)**
+
+* **Definición:** Evolución escalable del RLHF. En lugar de humanos, es otra IA la que supervisa y califica al modelo basándose en una "Constitución" o conjunto de reglas explícitas.
+* **Referencia Principal:** Guía 01 (Anatomía de Modelos).
+
+**RLHF (Reinforcement Learning from Human Feedback)**
+
+* **Definición:** Técnica de alineación donde el modelo aprende a preferir ciertas respuestas sobre otras basándose en un sistema de recompensas derivado de la calificación humana. Se usa para ajustar el tono y la seguridad.
+* **Referencia Principal:** Guía 01 (Anatomía de Modelos).
 
 **Rotura de Contexto (Context Rot)**
 
@@ -383,6 +413,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** El "mesón de trabajo" temporal del agente. Contenedor cronológico de una conversación.
 * **Referencia Principal:** Guía 03 (Contexto y Memoria).
 
+**SFT (Supervised Fine-Tuning)**
+
+* **Definición:** "Ajuste Fino Supervisado". Es la técnica de la Fase 2 donde se entrena al modelo con ejemplos de *Instrucción -> Respuesta* escritos por humanos, enseñándole a conversar y seguir órdenes en lugar de solo autocompletar texto.
+* **Referencia Principal:** Guía 01 (Anatomía de Modelos).
+
 **Sinergia Humano-IA (Human-AI Synergy)**
 
 * **Definición:** Arquitectura de trabajo donde la IA ejecuta el "Sistema 1" y el humano el "Sistema 2".
@@ -397,6 +432,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** Sistema de IA que razona, planifica, usa herramientas y aprende, imitando un proceso de pensamiento.
 * **Referencia Principal:** Guía 06 (Sistemas Cognitivos).
+
+**System Card (Ficha de Seguridad)**
+
+* **Definición:** Documento de seguridad que reporta los resultados de la Fase 2 (Post-Entrenamiento). Detalla las pruebas de *Red Teaming*, las tasas de rechazo y los protocolos de alineación utilizados para hacer seguro al modelo. Es esencial para evaluar el cumplimiento normativo.
+* **Referencia Principal:** Guía 01 (Anatomía de Modelos).
 
 **Token**
 

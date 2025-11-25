@@ -16,7 +16,19 @@ Este anexo describe el ciclo de vida técnico que transforma terabytes de texto 
 
 ---
 
-### 1. El Motor Base: Arquitectura Transformer
+### 1. El Mapa del Territorio: IA vs. ML vs. DL
+
+Antes de inspeccionar el motor, debemos ubicarlo en el mapa. Es común usar los términos "IA", "Machine Learning" y "Deep Learning" indistintamente, pero son conceptos jerárquicos, como muñecas rusas (Matrioskas).
+* **Inteligencia Artificial (IA):** Es el concepto general. Se refiere a cualquier técnica que permita a las computadoras imitar el comportamiento humano (lógica, reglas si-entonces, árboles de decisión).
+* **Machine Learning (ML - Aprendizaje Automático):** Es un subconjunto de la IA. Aquí, la máquina no se programa con reglas explícitas, sino que "aprende" patrones a partir de datos estadísticos para hacer predicciones.
+* **Deep Learning (DL - Aprendizaje Profundo):** Es un subconjunto del ML inspirado en la biología. Utiliza **Redes Neuronales Artificiales** con muchas capas ("profundas") para procesar datos complejos. Aquí es donde viven los LLMs (Large Language Models).
+* **IA Generativa (GenAI):** Es la frontera actual del Deep Learning. A diferencia de la IA tradicional que analiza o clasifica (ej. filtro de spam), la GenAI puede crear nuevo contenido (texto, código, imágenes) que no existía previamente, basándose en los patrones aprendidos.
+
+**Implicancia para el Arquitecto:** Cuando hablamos de "Arquitectura de IA" en este libro, nos referimos específicamente a **Deep Learning Generativo**. Esto implica que no trabajamos con sistemas deterministas (reglas fijas), sino con sistemas probabilísticos (predicciones creativas pero falibles).
+
+---
+
+### 2. El Motor Base: Arquitectura Transformer
 
 La generación actual se sustenta en la arquitectura **Transformer** (Vaswani et al., 2017). Su innovación central es el procesamiento paralelo y el **Mecanismo de Atención**, que asigna "pesos" de relevancia entre partes distantes de una secuencia.
 
@@ -31,7 +43,7 @@ La atención permite al modelo relacionar conceptos distantes para mantener cohe
 
 ---
 
-### 2. Fase 1: Pre-Entrenamiento (Pre-training)
+### 3. Fase 1: Pre-Entrenamiento (Pre-training)
 **El nacimiento del "Modelo Base"**
 
 > **Nota terminológica:** En la industria, el "entrenamiento principal" del modelo se denomina **Pre-Entrenamiento**. Aunque el nombre parezca preliminar, esta es la fase donde realmente se construyen los pesos fundamentales. Las etapas posteriores (SFT, RLHF, RLAIF) no reemplazan esta base; la especializan.
@@ -45,7 +57,7 @@ Es la fase de mayor inversión (meses de cómputo en miles de GPUs). El modelo a
 
 ---
 
-### 3. Fase 2: Post-Entrenamiento (Post-training)
+### 4. Fase 2: Post-Entrenamiento (Post-training)
 **La creación del Asistente**
 
 Esta fase convierte al motor estadístico en un sistema útil y seguro. Se divide en capas conductuales y normativas.
@@ -69,7 +81,9 @@ Alineación escalable utilizando **IA supervisando IA**.
 
 ---
 
-### 4. Resumen Estratégico: Las Capas del Modelo
+### 5. Resumen Estratégico: Las Capas del Modelo
+
+**La Arquitectura en Capas:** Para efectos de auditoría y gestión de riesgos, visualice el modelo final no como un bloque monolítico, sino como una "lasaña" de tres capas funcionales. Cada capa aporta una capacidad específica, pero también introduce un riesgo inherente. El Arquitecto debe entender que un fallo en la capa inferior (estadística) no puede ser arreglado completamente en la capa superior (normativa); los cimientos defectuosos comprometen toda la estructura.
 
 | Capa | Naturaleza | Función Real | Riesgo Principal |
 | :--- | :--- | :--- | :--- |
@@ -79,7 +93,7 @@ Alineación escalable utilizando **IA supervisando IA**.
 
 ---
 
-### 5. De la Teoría a la Auditoría: Documentación
+### 6. De la Teoría a la Auditoría: Documentación
 
 Para aplicar GRC, exige la documentación correcta para cada fase:
 
@@ -95,12 +109,15 @@ Documenta la **Fase 2 (Post-entrenamiento)**.
 
 ---
 
-### 6. Herramienta Práctica: Checklist de Auditoría
+### 7. Herramienta Práctica: Checklist de Auditoría
 
-Utilice este cuestionario para evaluar modelos en contextos corporativos o de contratación pública, contrastando la información de la *Model Card* y la *System Card*.
+A continuación, se presentan las tablas de control para evaluar modelos en contextos corporativos o de contratación pública. Estas listas de verificación permiten contrastar las promesas comerciales con la realidad técnica descrita en la *Model Card* y la *System Card*.
 
 #### I. Auditoría del Modelo Base (Model Card)
 *Evaluación de capacidades fundamentales y viabilidad técnica.*
+
+Esta sección evalúa la *"Viabilidad Técnica"*. 
+Buscamos responder: *¿Tiene este motor la capacidad física y el conocimiento necesario para realizar la tarea?*
 
 | Pregunta de Control | Evidencia Esperada | Riesgo Asociado | Acción Mitigadora |
 | :--- | :--- | :--- | :--- |
@@ -112,6 +129,9 @@ Utilice este cuestionario para evaluar modelos en contextos corporativos o de co
 #### II. Auditoría del Post-Entrenamiento (System Card)
 *Evaluación de alineación, seguridad y comportamiento.*
 
+Esta sección evalúa la *"Seguridad y Alineación"*. 
+Buscamos responder: *¿Es seguro desplegar este modelo ante usuarios o empleados? ¿Cumple con nuestras normas de gobernanza?*
+
 | Pregunta de Control | Evidencia Esperada | Riesgo Asociado | Acción Mitigadora |
 | :--- | :--- | :--- | :--- |
 | **¿Qué metodología SFT se usó?** | Descripción del dataset. | El modelo no sigue instrucciones de formato. | Afinar *System Prompts* o realizar SFT adicional. |
@@ -120,6 +140,8 @@ Utilice este cuestionario para evaluar modelos en contextos corporativos o de co
 | **¿Cuáles son las tasas de rechazo (*Refusal Rates*)?** | Métricas de rechazo. | *Negative Refusal*; bloqueo injustificado de tareas. | Ajustar el modelo o cambiar proveedor si es muy restrictivo. |
 
 #### III. Dictamen de Auditoría (Plantilla)
+
+**Cierre del Proceso:** Para finalizar la auditoría, no basta con listar hallazgos; es imperativo tomar una decisión ejecutiva documentada. Esta plantilla consolida la viabilidad técnica (proveniente de la *Model Card*) y la alineación de seguridad (proveniente de la *System Card*) en un dictamen formal. Úsela como el "sello de autorización" indispensable antes de que cualquier modelo toque infraestructura productiva o datos reales.
 
 **Fecha de Evaluación:** `DD/MM/AAAA`
 **Modelo Evaluado:** `[Nombre del Modelo y Versión]`
