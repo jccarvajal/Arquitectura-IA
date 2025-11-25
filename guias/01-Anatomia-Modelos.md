@@ -58,26 +58,25 @@ Es la fase de mayor inversión (meses de cómputo en miles de GPUs). El modelo a
 ---
 
 ### 4. Fase 2: Post-Entrenamiento (Post-training)
-**La creación del Asistente**
 
-Esta fase convierte al motor estadístico en un sistema útil y seguro. Se divide en capas conductuales y normativas.
+**La creación del Asistente:** Esta fase convierte al motor estadístico en un sistema útil y seguro. Se divide en capas conductuales y normativas.
 
-#### A. SFT (Supervised Fine-Tuning)
-Entrenamiento con pares curados **Instrucción -> Respuesta** escritos por humanos.
-* **Función:** Enseñar al modelo a estructurar diálogos, seguir pasos y adoptar un tono útil.
-* **Riesgo:** **Alucinación Confiada**. El modelo puede dar respuestas erróneas con un tono autoritativo.
+#### A. SFT (Supervised Fine-Tuning) - El Entrenamiento Conductual
+En esta etapa, el modelo deja de ser un simple predictor de texto (que solo quiere completar frases) para convertirse en un asistente dialogante. Se le alimenta con miles de ejemplos de alta calidad en formato **(Instrucción, Respuesta Ideal)** escritos por humanos expertos. Es como enviar al modelo a una "escuela de modales" donde aprende el formato de pregunta-respuesta.
+* **Función:** Enseñar al modelo a estructurar diálogos coherentes, seguir instrucciones complejas paso a paso y adoptar un tono de servicio útil.
+* **Riesgo:** **Alucinación Confiada**. Como el modelo aprende la *forma* de una respuesta correcta (el estilo seguro y profesional) antes que el *contenido* factual, puede entregar información falsa con un tono de autoridad total, "impostando" competencia.
 
-#### B. RLHF (Reinforcement Learning from Human Feedback)
-Capa clásica de alineación.
-1.  Humanos ordenan respuestas.
-2.  Se entrena un "Modelo de Recompensa".
-3.  El LLM se ajusta para maximizar esa recompensa.
-* **Limitación:** Puede inducir **Negative Refusal** (rechazo excesivo por sobreprotección ideológica o de seguridad).
+#### B. RLHF (Reinforcement Learning from Human Feedback) - El Ajuste de Preferencias
+Esta es la capa clásica de alineación ética y de seguridad. Dado que es imposible escribir una regla para cada situación social posible, se utiliza un sistema de "premios y castigos" basado en la preferencia humana.
+1.  **Comparación:** Los humanos no escriben respuestas, sino que **ordenan** dos respuestas generadas por la IA (Opción A vs. Opción B) según cuál es mejor (más segura, más útil, menos tóxica).
+2.  **Modelo de Recompensa:** Esos datos entrenan a un segundo modelo (el *Reward Model*) que aprende a predecir qué preferiría un humano.
+3.  **Optimización:** El LLM principal juega millones de partidas contra este Modelo de Recompensa, ajustando sus pesos para maximizar su puntaje de aprobación.
+* **Limitación:** Puede inducir **Negative Refusal** (Rechazo Negativo). Si el modelo es castigado excesivamente por temas sensibles durante el entrenamiento, se vuelve paranoico y empieza a rechazar solicitudes inocuas (ej: rechazar "cómo matar un proceso en Linux" por considerarlo violento).
 
-#### C. RLAIF (Constitutional AI / AI Feedback)
-Alineación escalable utilizando **IA supervisando IA**.
-* **Mecanismo:** Una "Constitución" de reglas explícitas guía el juicio del modelo supervisor.
-* **Ventaja:** Mayor consistencia y menor variabilidad humana.
+#### C. RLAIF (Constitutional AI / AI Feedback) - La Alineación Escalable
+El cuello de botella del RLHF son los humanos: son lentos, caros, inconsistentes y se cansan. RLAIF soluciona esto reemplazando al evaluador humano por otra IA.
+* **Mecanismo:** En lugar de preferencias subjetivas de una multitud, se utiliza una **"Constitución"** (un set de principios explícitos, ej: "Elige la respuesta que sea más útil y menos dañina"). Un Modelo Supervisor usa esta constitución para evaluar y entrenar al Modelo Principal a una velocidad y escala imposible para humanos.
+* **Ventaja:** Mayor consistencia normativa (la IA no se cansa ni tiene días malos) y transparencia (las reglas están escritas en la Constitución, no en la mente subjetiva de miles de contratistas).
 
 ---
 
@@ -114,9 +113,8 @@ Documenta la **Fase 2 (Post-entrenamiento)**.
 A continuación, se presentan las tablas de control para evaluar modelos en contextos corporativos o de contratación pública. Estas listas de verificación permiten contrastar las promesas comerciales con la realidad técnica descrita en la *Model Card* y la *System Card*.
 
 #### I. Auditoría del Modelo Base (Model Card)
-*Evaluación de capacidades fundamentales y viabilidad técnica.*
 
-Esta sección evalúa la *"Viabilidad Técnica"*. 
+**Evaluación de capacidades fundamentales y viabilidad técnica:** Esta sección evalúa la *"Viabilidad Técnica"*. 
 Buscamos responder: *¿Tiene este motor la capacidad física y el conocimiento necesario para realizar la tarea?*
 
 | Pregunta de Control | Evidencia Esperada | Riesgo Asociado | Acción Mitigadora |
@@ -127,9 +125,8 @@ Buscamos responder: *¿Tiene este motor la capacidad física y el conocimiento n
 | **¿Cuáles son los resultados en benchmarks estándar?** | MMLU, HumanEval. | Modelo insuficiente para tareas de razonamiento. | Escalar a un modelo más avanzado (Frontier Model). |
 
 #### II. Auditoría del Post-Entrenamiento (System Card)
-*Evaluación de alineación, seguridad y comportamiento.*
 
-Esta sección evalúa la *"Seguridad y Alineación"*. 
+**Evaluación de alineación, seguridad y comportamiento:** Esta sección evalúa la *"Seguridad y Alineación"*. 
 Buscamos responder: *¿Es seguro desplegar este modelo ante usuarios o empleados? ¿Cumple con nuestras normas de gobernanza?*
 
 | Pregunta de Control | Evidencia Esperada | Riesgo Asociado | Acción Mitigadora |
