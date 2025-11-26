@@ -128,6 +128,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** La fase inicial y masiva del ciclo de vida de un modelo (Guía 01), donde el LLM aprende patrones a partir de terabytes de datos. Es distinto a la Inferencia y al Ajuste Fino.
 * **Referencia Principal:** Guía 01 (Anatomía de Modelos).
 
+**ESG (Environmental, Social, and Governance)**
+
+* **Definición:** Marco de criterios corporativos que mide la sostenibilidad. En IA, el factor 'E' (Ambiental) vigila el consumo energético de los modelos, y el 'S' (Social) vigila el sesgo y el impacto laboral.
+* **Referencia Principal:** Guía 15 (Ética y Confianza).
+
 **Estrategia de Datos (Data Strategy)**
 
 * **Definición:** El plan maestro para la adquisición, almacenamiento, limpieza, seguridad y (crucialmente) vectorización de los datos propietarios. Define el "combustible" que alimentará a los sistemas RAG.
@@ -172,7 +177,12 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** La tesis central de la obra. El marco estratégico que una organización utiliza para gestionar su Gobernanza (el "cómo" se opera), su Riesgo (el "por qué" se controla) y su Cumplimiento (la "prueba" de que se hace bien).
 * **Referencia Principal:** Prólogo, Guía 09, Guía 15.
- 
+
+**Green AI**
+
+* **Definición:** Enfoque de investigación y operación de IA que prioriza la eficiencia energética y la reducción de la huella de carbono, en contraposición a la "Red AI" (que busca precisión pura a cualquier costo computacional).
+* **Referencia Principal:** Guía 15 (Ética y Confianza), Guía 12 (ROI).
+
 **Hiper-Personalización**
 
 * **Definición:** Un modelo de negocio habilitado por la IA que permite ofrecer un servicio de "conserje" personalizado a millones de clientes simultáneamente.
@@ -323,6 +333,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** Métrica de calidad que mide la habilidad del agente para adaptar su estilo a las preferencias del usuario.
 * **Referencia Principal:** Guía 09 (Gobernanza).
 
+**Portabilidad del Prompt (Prompt Portability)**
+
+* **Definición:** Práctica de ingeniería que busca diseñar instrucciones (prompts) agnósticas al modelo, permitiendo que una misma "fábrica" cognitiva opere con distintos motores (ej. cambiar de GPT-4 a Llama 3) con ajustes mínimos.
+* **Referencia Principal:** Guía 11 (Industrialización).
+
 **Post-Entrenamiento (Post-training)**
 
 * **Definición:** La segunda fase del ciclo de vida, donde el "Modelo Base" se refina mediante SFT y RLHF para convertirse en un asistente útil y seguro. Aquí se definen el comportamiento, el tono y los límites de seguridad.
@@ -433,6 +448,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** Sistema de IA que razona, planifica, usa herramientas y aprende, imitando un proceso de pensamiento.
 * **Referencia Principal:** Guía 06 (Sistemas Cognitivos).
 
+**Sistema Inmunológico Corporativo**
+
+* **Definición:** Metáfora para describir la resistencia natural de una organización al cambio. Se manifiesta cuando mandos medios sabotean iniciativas de innovación (como la IA) para proteger su estatus, presupuesto o headcount existente.
+* **Referencia Principal:** Guía 15 (Ética y Confianza).
+
 **System Card (Ficha de Seguridad)**
 
 * **Definición:** Documento de seguridad que reporta los resultados de la Fase 2 (Post-Entrenamiento). Detalla las pruebas de *Red Teaming*, las tasas de rechazo y los protocolos de alineación utilizados para hacer seguro al modelo. Es esencial para evaluar el cumplimiento normativo.
@@ -462,6 +482,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** Proceso de convertir datos en representaciones numéricas (vectores) para búsqueda semántica (RAG).
 * **Referencia Principal:** Guía 04 (Estrategia de Datos), Guía 03 (Contexto).
+
+**Vendor Lock-in (Secuestro del Proveedor)**
+
+* **Definición:** Riesgo estratégico donde una organización se vuelve dependiente de un proveedor único (ej. OpenAI, AWS) debido a que su código o prompts están acoplados a tecnologías propietarias, haciendo el costo de migración prohibitivo.
+* **Referencia Principal:** Guía 11 (Industrialización), Guía 14 (Modelos).
 
 **Ventana de Contexto (Context Window)**
 
