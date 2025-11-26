@@ -125,7 +125,7 @@ La ciberseguridad tradicional se preocupaba por *firewalls* y *redes*. La *Ciber
 
 * **¿Qué es?** Es un ataque a la cadena de suministro de conocimiento. Ocurre cuando un adversario inserta datos maliciosos en el conjunto de entrenamiento o en la base de conocimiento (RAG) para manipular el comportamiento futuro del modelo ante palabras clave específicas ("triggers").
 
-* **La Escala del Riesgo:** Evidencia de finales de 2025 demuestra la fragilidad de los modelos: la inserción de **tan solo 250 documentos maliciosos** en un corpus de entrenamiento masivo es suficiente para comprometer el comportamiento del modelo.
+* **La Escala del Riesgo:** Evidencia de finales de 2025 demuestra la fragilidad de los modelos: la *inserción de tan solo 250 documentos maliciosos* en un corpus de entrenamiento masivo es suficiente para comprometer el comportamiento del modelo.
 
 * **Controles de Seguridad:**
   1.  **Curaduría de RAG:** Escaneo de seguridad y hashing de todos los documentos que entran a la "biblioteca" del agente.
