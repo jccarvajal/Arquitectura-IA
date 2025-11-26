@@ -16,7 +16,7 @@ Este anexo describe el ciclo de vida técnico que transforma terabytes de texto 
 
 ---
 
-### Parte 1. El Mapa del Territorio: IA vs. ML vs. DL
+### Parte 1: El Mapa del Territorio: IA vs. ML vs. DL
 
 Antes de inspeccionar el motor, debemos ubicarlo en el mapa. Es común usar los términos "IA", "Machine Learning" y "Deep Learning" indistintamente, pero son conceptos jerárquicos, como muñecas rusas (Matrioskas).
 * **Inteligencia Artificial (IA):** Es el concepto general. Se refiere a cualquier técnica que permita a las computadoras imitar el comportamiento humano (lógica, reglas si-entonces, árboles de decisión).
@@ -28,7 +28,7 @@ Antes de inspeccionar el motor, debemos ubicarlo en el mapa. Es común usar los 
 
 ---
 
-### Parte 2. El Motor Base: Arquitectura Transformer
+### Parte 2: El Motor Base: Arquitectura Transformer
 
 La generación actual se sustenta en la arquitectura **Transformer** (Vaswani et al., 2017). Su innovación central es el procesamiento paralelo y el **Mecanismo de Atención**, que asigna "pesos" de relevancia entre partes distantes de una secuencia.
 
@@ -43,7 +43,7 @@ La atención permite al modelo relacionar conceptos distantes para mantener cohe
 
 ---
 
-### Parte 3. Fase 1: Pre-Entrenamiento (Pre-training)
+### Parte 3: Fase 1: Pre-Entrenamiento (Pre-training)
 **El nacimiento del "Modelo Base"**
 
 > **Nota terminológica:** En la industria, el "entrenamiento principal" del modelo se denomina **Pre-Entrenamiento**. Aunque el nombre parezca preliminar, esta es la fase donde realmente se construyen los pesos fundamentales. Las etapas posteriores (SFT, RLHF, RLAIF) no reemplazan esta base; la especializan.
@@ -57,7 +57,7 @@ Es la fase de mayor inversión (meses de cómputo en miles de GPUs). El modelo a
 
 ---
 
-### Parte 4. Fase 2: Post-Entrenamiento (Post-training)
+### Parte 4: Fase 2: Post-Entrenamiento (Post-training)
 
 **La creación del Asistente:** Esta fase convierte al motor estadístico en un sistema útil y seguro. Se divide en capas conductuales y normativas.
 
@@ -80,7 +80,7 @@ El cuello de botella del RLHF son los humanos: son lentos, caros, inconsistentes
 
 ---
 
-### Parte 5. Resumen Estratégico: Las Capas del Modelo
+### Parte 5: Resumen Estratégico: Las Capas del Modelo
 
 **La Arquitectura en Capas:** Para efectos de auditoría y gestión de riesgos, visualice el modelo final no como un bloque monolítico, sino como una "lasaña" de tres capas funcionales. Cada capa aporta una capacidad específica, pero también introduce un riesgo inherente. El Arquitecto debe entender que un fallo en la capa inferior (estadística) no puede ser arreglado completamente en la capa superior (normativa); los cimientos defectuosos comprometen toda la estructura.
 
@@ -92,7 +92,7 @@ El cuello de botella del RLHF son los humanos: son lentos, caros, inconsistentes
 
 ---
 
-### Parte 6. De la Teoría a la Auditoría: Documentación
+### Parte 6: De la Teoría a la Auditoría: Documentación
 
 El "Arquitecto de IA" no opera basándose en comunicados de prensa o marketing. Opera basándose en **evidencia técnica documentada**.
 
@@ -127,7 +127,7 @@ Es el "Informe de Seguridad y Riesgos". Nos dice cómo se comporta el modelo ant
 
 ---
 
-### Parte 7. Herramienta Práctica: Checklist de Auditoría
+### Parte 7: Herramienta Práctica: Checklist de Auditoría
 
 A continuación, se presentan las tablas de control para evaluar modelos en contextos corporativos o de contratación pública. Estas listas de verificación permiten contrastar las promesas comerciales con la realidad técnica descrita en la *Model Card* y la *System Card*.
 

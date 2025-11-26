@@ -103,6 +103,17 @@ Aquí es donde defines el "cómo". Sé explícito sobre el formato, la estructur
   Presenta el resultado en formato de tabla.
   ```
 
+> **La Síntesis Estructural: El Marco CRF-R**
+>
+> Para aplicar los pasos 1, 2 y 3 con rigor de ingeniería en cada interacción, en esta obra utilizamos el acrónimo estándar **CRF-R**. Esta es la estructura que define a un "Prompt Maestro" (ver plantilla en **Anexo D**):
+>
+> 1.  **C - Contexto:** (Del Paso 1). La situación, los datos de entrada y el "para qué".
+> 2.  **R - Rol:** (Del Paso 2). La *persona* que debe adoptar la IA.
+> 3.  **F - Formato:** (Del Paso 3). La estructura exacta de la salida (Tabla, JSON, Email).
+> 4.  **R - Restricciones:** (Del Paso 3). Las líneas rojas y lo que NO debe hacer.
+>
+> *Nota del Arquitecto: Si su prompt tiene estos 4 componentes definidos explícitamente, ha reducido la probabilidad de error (alucinación o formato incorrecto) en un 80%.*
+
 **Paso 4: Usa Ejemplos y Referencias (Few-Shot Prompting)**  
 Si tienes un formato o estilo muy específico en mente, muéstrale al modelo un ejemplo. Los LLM son excelentes para reconocer y replicar patrones.
 

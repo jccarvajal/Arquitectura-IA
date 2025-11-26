@@ -28,7 +28,7 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
   * **Por qué leerlo:** Es el pilar legal de la **Gobernanza de Datos** (Guía 04) en Chile. Define "dato personal" y "dato sensible", estableciendo la base legal de la "Estrategia de Datos".
 * **Cavoukian, A. (2009). "Privacy by Design: The 7 Foundational Principles".** [[PDF]](https://iapp.org/media/pdf/resource_center/pbd_implement_7found_principles.pdf)
   * **Por qué leerlo:** Establece el marco internacional para la "Privacidad desde el Diseño" y "por Defecto", un concepto central de la "Guía Ética" (BID/UAI) para la formulación de proyectos.
-* **Souly, A., et al. (2025). "Poisoning Attacks on LLMs Require a Near-Constant Number of Poison Samples". arXiv.** [[PDF]](http://arxiv.org/abs/2510.07192)
+* **Souly, A., et al. (2025). "Poisoning Attacks on LLMs Require a Near-Constant Number of Poison Samples". arXiv.** [[WEB]](http://arxiv.org/abs/2510.07192)
   * **Por qué leerlo:** El estudio técnico citado en el reporte internacional que demuestra la fragilidad de los modelos ante ataques de envenenamiento de datos con muy pocos recursos (aprox. 250 muestras). Fundamental para justificar la **Gobernanza de la Fuente** en la Guía 04.
 
 ---
@@ -45,9 +45,9 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
   * **Por qué leerlo:** Define el patrón de razonamiento avanzado **Tree of Thoughts (ToT)** (Guía 06), que permite a los agentes explorar múltiples caminos de solución.
 * **Wiesinger, J., Marlow, P., & Vuskovic, V. (Septiembre 2024). "Agents".** [[Web]](https://www.kaggle.com/whitepaper-agents)
   * **Por qué leerlo:** Whitepaper conceptual que introduce la arquitectura de un Agente (Guía 05) como la composición de un Modelo (el cerebro), Herramientas (las manos) y una Capa de Orquestación.
-* **Gulli, A., et al. (Febrero 2025). "The Agents Companion".** [[Libro]](https://www.kaggle.com/whitepaper-agent-companion)
+* **Gulli, A., et al. (Febrero 2025). "The Agents Companion".** [[Web]](https://www.kaggle.com/whitepaper-agent-companion)
   * **Por qué leerlo:** Es la profundización técnica de las guías de construcción. Explora patrones de "múltiples agentes" (jerárquicos, colaborativos) y detalla la Evaluación de Agentes (Guía 10).
-* **Baker, B., et al. (OpenAI). (2025). "Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation".** [[PDF]](https://arxiv.org/abs/2503.11926)
+* **Baker, B., et al. (OpenAI). (2025). "Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation".** [[Web]](https://arxiv.org/abs/2503.11926)
   * **Por qué leerlo:** Profundiza en los desafíos de supervisar modelos que "piensan" (CoT), advirtiendo sobre cómo una mala supervisión puede incentivar al modelo a ocultar sus verdaderos razonamientos. Lectura clave para la Guía 11.
 
 ---
@@ -66,13 +66,13 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
   * **Por qué leerlo:** Marco de seguridad fundamental que aborda la protección de la IA en la infraestructura y el producto. Respaldo conceptual para la Gobernanza (Guía 09).
 * **ISO/IEC. (2023). "ISO/IEC 42001:2023 Information technology — Artificial intelligence — Management system".** [[Web]](https://www.iso.org/standard/81230.html)
   * **Por qué leerlo:** Es el primer estándar internacional certificable para sistemas de gestión de IA. Referencia técnica definitiva para operacionalizar el marco GRC.
-* **Huyen, Chip (2024). "AI Engineering".** [[Libro]](https://www.oreilly.com/library/view/ai-engineering/9781098166298/)
+* **Huyen, Chip (2024). "AI Engineering".** [[Web]](https://www.oreilly.com/library/view/ai-engineering/9781098166298/)
   * **Por qué leerlo:** Complemento técnico directo de esta obra. Detalla la implementación de ingeniería para Agentes, RAG y "Guardrails" en producción.
 * **Kartakis, S., et al. (Noviembre 2025). "Prototype to Production".** [[Web]](https://www.kaggle.com/whitepaper-prototype-to-production)
   * **Por qué leerlo:** Manual de "AgentOps" que fundamenta la **Guía 11: Industrialización**. Detalla CI/CD y Observabilidad para agentes.
 * **Zaharia, M., et al. (Berkeley AI Research). (2024). "The Shift from Models to Compound AI Systems".** [[Web]](https://bair.berkeley.edu/blog/2024/02/18/compound-ai-systems/)
   * **Por qué leerlo:** Paper visionario que valida la tesis de la **Guía 11**. Argumenta que el "Estado del Arte" ya no se logra con un mejor modelo, sino con un mejor *sistema* (componentes modulares, RAG, herramientas), justificando la necesidad de **Portabilidad** y arquitectura sobre la elección del motor.
-* **Department for Science, Innovation and Technology (DSIT). (2025). "International AI Safety Report: Second Key Update". UK Government.** [[PDF]](https://www.gov.uk/government/publications/international-ai-safety-report-2025)
+* **Department for Science, Innovation and Technology (DSIT). (2025). "International AI Safety Report: Second Key Update". UK Government.** [[Web]](https://www.gov.uk/government/publications/international-ai-safety-report-2025)
   * **Por qué leerlo:** Es la auditoría global del estado de la seguridad en IA a fines de 2025. Valida la necesidad de la "Defensa en Profundidad" (LOSA), cuantifica el riesgo de *Data Poisoning* y establece el estándar para el monitoreo de agentes autónomos.
   
 ---
@@ -85,13 +85,13 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
   * **Por qué leerlo:** Es el informe de mercado clave de 2025. Proporciona los datos estadísticos que validan la tesis de esta obra: la **"Brecha GenAI"** (el 95% de las empresas con ROI cero). Define los conceptos de **"Shadow AI"** (IA en la sombra), **"Prosumers"** (usuarios expertos) y la superioridad de la estrategia "Comprar" vs. "Construir", que son fundamentales para la Gobernanza (Guía 09), la Sinergia (Guía 15) y la Estrategia (Guía 13).
 * **Singla, A., et al. (Noviembre 2025). "The state of AI in 2025". McKinsey.** [[Web]](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai)
   * **Por qué leerlo:** Valida la "Brecha de Escalamiento" e identifica la "validación humana" como diferenciador clave de los *high performers*.
-* **Kahneman, D. (2011). "Thinking, Fast and Slow".** [[Libro]](https://us.macmillan.com/books/9780374533557/thinkingfastandslow)
+* **Kahneman, D. (2011). "Thinking, Fast and Slow".** [[Web]](https://us.macmillan.com/books/9780374533557/thinkingfastandslow)
   * **Por qué leerlo:** Fuente del marco **"Sistema 1 / Sistema 2"**, pilar conceptual de la **Sinergia Humano-IA** (Guía 15).
-* **Dreyfus, H. L. (1992). "What Computers Still Can't Do: A Critique of Artificial Reason".** [[Libro]](https://mitpress.mit.edu/9780262540674/what-computers-still-cant-do/)
+* **Dreyfus, H. L. (1992). "What Computers Still Can't Do: A Critique of Artificial Reason".** [[Web]](https://mitpress.mit.edu/9780262540674/what-computers-still-cant-do/)
   * **Por qué leerlo:** Base filosófica del Prólogo. Argumenta por qué la inteligencia sin "cuerpo" es distinta a la humana.
-* **Taleb, N. N. (2012). "Antifragile: Things That Gain from Disorder".** [[Libro]](https://www.penguinrandomhouse.com/books/176227/antifragile-by-nassim-nicholas-taleb/)
+* **Taleb, N. N. (2012). "Antifragile: Things That Gain from Disorder".** [[Web]](https://www.penguinrandomhouse.com/books/176227/antifragile-by-nassim-nicholas-taleb/)
   * **Por qué leerlo:** Define **Fragilidad** y **Skin in the Game** (Prólogo). Esencial para entender el riesgo de sistemas sin consecuencias.
-* **Heath, C., & Heath, D. (2010). "Switch: How to Change Things When Change Is Hard".** [[Libro]](https://heathbrothers.com/books/switch/)
+* **Heath, C., & Heath, D. (2010). "Switch: How to Change Things When Change Is Hard".** [[Web]](https://heathbrothers.com/books/switch/)
   * **Por qué leerlo:** Manual práctico para la **gestión del cambio**, esencial para ejecutar la Guía 15 y gestionar la resistencia cultural.
 * **Gobierno de Chile (BID Lab, UAI). (2022). "Guía Formulación ética de proyectos de ciencia de datos".** [[Web]](https://goblab.uai.cl/guia-formulacion-etica-de-proyectos-de-ciencia-de-datos/)
   * **Por qué leerlo:** Marco legal para la ética de datos, definiendo **"Opacidad"** y **"Licencia Social"**.
@@ -107,7 +107,7 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
   * **Por qué leerlo:** Primer marco regulatorio integral que convierte la Gobernanza y Evaluación en obligaciones legales.
 * **Strubell, E., Ganesh, A., & McCallum, A. (2019). "Energy and Policy Considerations for Deep Learning in NLP".** [[PDF]](https://arxiv.org/abs/1906.02243)
   * **Por qué leerlo:** El estudio fundacional que puso número a la huella de carbono de la IA. Reveló que entrenar un modelo grande puede emitir tanto CO2 como 5 coches en toda su vida útil. Lectura obligatoria para justificar el riesgo de **"Green AI"** en la **Guía 15**.
-* **Gilley, A., Godek, M., & Gilley, J. W. (2009). "Change, Resistance, and the Organizational Immune System".** [[Link]](https://www.researchgate.net/publication/211386571_Change_Resistance_and_the_Organizational_Immune_System)
+* **Gilley, A., Godek, M., & Gilley, J. W. (2009). "Change, Resistance, and the Organizational Immune System".** [[Web]](https://www.researchgate.net/publication/211386571_Change_Resistance_and_the_Organizational_Immune_System)
   * **Por qué leerlo:** Provee la base teórica para entender por qué las organizaciones atacan la innovación interna, validando tu sección sobre la **"Gestión del Sabotaje"** en la **Guía 15**.
 
 ---
