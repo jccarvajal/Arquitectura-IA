@@ -106,6 +106,19 @@ Respuesta: Su valor ha cambiado. Su trabajo ya no es hacer tareas de Sistema 1, 
 * **Descripción:** El ex-analista ahora es un "Ingeniero de Prototipos". Su trabajo es proactivamente encontrar nuevos procesos de "Sistema 1" y diseñar el "Agente PM" que los automatice.  
 * **Habilidad Clave:** Pensamiento sistémico, diseño de flujos de trabajo.
 
+#### La Resistencia Inmunológica: Gestión del Sabotaje
+
+El mayor enemigo de la implementación no es técnico, es político. Las organizaciones tienen un "sistema inmunológico" diseñado para proteger el *status quo*.
+
+A menudo, la IA es percibida por los mandos medios no como una ayuda, sino como una amenaza a su poder. En la economía tradicional corporativa, el poder de un gerente se mide por su *headcount* (cuántas personas tiene a cargo) y su presupuesto.
+
+* **El Incentivo Perverso:** Si un "Agente PM" hace el trabajo de 5 analistas, el gerente racional teme perder a 5 personas y, por ende, perder estatus y presupuesto.
+* **El Síntoma (Sabotaje Pasivo):** El gerente dirá: "La IA no entiende nuestro negocio", "Es muy arriesgado", o esconderá las ganancias de eficiencia para no sufrir recortes.
+* **La Cura (Realineación de Incentivos):** Como Director de Transformación, debes cambiar la métrica de poder.
+  * *Antigua Métrica:* "Poder = Tamaño del equipo". (Incentiva la burocracia).
+  * *Nueva Métrica:* "Poder = Impacto/Margen por empleado". (Incentiva la eficiencia).
+  * *Acción:* Premia públicamente al gerente que logra *más* resultados con el *mismo* equipo (usando IA para escalar servicios), no al que pide más contrataciones. Solo cuando cambias el incentivo, desactivas el sistema inmunológico.
+
 ---
 
 #### Parte 4: La Brújula Ética (Las "Líneas Rojas" de la Automatización)
@@ -131,6 +144,13 @@ La *"Licencia Social"* es la aceptación y confianza que la ciudadanía deposita
 * **El Problema:** Un "Agente Director" analiza los datos de rendimiento y decide, basado en métricas, que un empleado debe ser despedido.  
 * **El Control Ético:** "Líneas Rojas" Infranqueables. Ciertas decisiones nunca pueden ser delegadas a un agente, ni siquiera a Nivel 2 ("Supervisión"). Requieren siempre Nivel 1 ("Validación") o Nivel 0 (El humano hace el 100% de la decisión).  
 * **Ejemplos de "Líneas Rojas":** Decisiones de contratación o despido; evaluaciones de desempeño formales; diagnósticos médicos; o cualquier decisión con impacto legal, físico o que termine una relación.
+
+**Riesgo 5: La Huella Invisible (Impacto Ambiental y ESG)**
+
+* **El Problema:** Existe la ilusión de que la IA es "limpia" porque es digital. La realidad física es que cada consulta a un modelo gigante consume agua (refrigeración) y energía. Entrenar y operar modelos ineficientes genera una huella de carbono masiva que puede entrar en conflicto con las metas de sostenibilidad (ESG) de la organización.
+* **El Control Ético:** **Eficiencia como Valor Moral.** El Arquitecto tiene la responsabilidad ética de no usar un "cañón para matar una mosca".
+  * *Política:* Priorizar siempre el modelo más pequeño capaz de hacer el trabajo (SLMs).
+  * *Práctica:* Si un modelo pequeño (Llama 3 8B) puede resumir un texto igual que un modelo gigante (GPT-4), elegir el gigante es una irresponsabilidad ambiental. La "Green AI" no es solo ahorro de dinero; es ingeniería responsable.
 
 ---
 
