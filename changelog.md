@@ -6,71 +6,49 @@ Este documento registra todas las modificaciones estructurales, técnicas y conc
 
 ### Versión 1.2 (Noviembre 2025)
 
-**Motivo:** Evolución a un estándar de arquitectura corporativa. Cambio de nombre a **"Arquitectura de IA"** para reflejar el enfoque en diseño y gobernanza de sistemas. Reestructuración modular del contenido.
+**Motivo:** Evolución a un estándar de arquitectura corporativa. Cambio de nombre a **"Arquitectura de IA"** para reflejar el enfoque en diseño y gobernanza de sistemas. Integración de estándares internacionales de seguridad (UK Safety Report 2025).
 
 #### Cambios Estructurales y de Arquitectura
 
 * **Cambio de Nombre:** El título principal de la obra fue cambiado de *"Inteligencia Artificial Aplicada"* a **"Arquitectura de Inteligencia Artificial"**.
-* **Reestructuración Modular:** El sistema de Guías fue reordenado y ampliado a **17 Guías** y **6 Anexos (A-F)** para optimizar el flujo de Estrategia, Construcción y Operación.
-* **Integración de Contenido Nuevo:** Se añadieron las guías de alto valor **ROI Financiero** (Guía 12), **Ajuste Fino** (Guía 07) y **Anatomía de Modelos** (Guía 01).
-* **Blindaje Conceptual (LOSA/Evaluación):**
-    * **LOSA:** El concepto fue formalmente expandido a una **Arquitectura Middleware** (Guía 09), definiendo sus componentes de Input, Process, y Output control.
-    * **Golden Set:** Elevado de un *benchmark* estático a un **Protocolo de Verdad Viva** (Living Ground Truth), con un ciclo de vida para cosecha y curaduría continua (Guía 10).
-    * **Observabilidad:** El término genérico fue reemplazado por **Observabilidad Ampliada** a nivel de sistema.
-* **Consistencia Terminológica:** Se aclaró que **Amnesia Estática** y **ETL-V** son adaptaciones conceptuales propias del libro.
-* **Actualizaciones Tecnológicas:** Se sincronizaron todas las referencias al estándar de vanguardia **Gemini 3 Pro**, **Google Antigravity** y la iniciativa **AMI (LeCun)**.
+* **Reestructuración Modular:** El sistema de Guías fue reordenado y ampliado a **17 Guías** y **6 Anexos (A-F)**.
+* **Nuevas Guías Clave:** Se crearon las guías de **ROI Financiero** (Guía 12), **Ajuste Fino** (Guía 07) y **Anatomía de Modelos** (Guía 01).
 
-#### Validación y Despliegue (Integridad)
+#### Actualizaciones de Seguridad y Gobernanza (Nov 2025)
 
-* **Auditoría de Referencias:** Revisión forense y corrección del 100% de las referencias cruzadas internas para alinearlas con la nueva numeración (Guías 01-17). Se eliminaron referencias "fantasmas" a anexos antiguos.
-* **Sanitización de Formato:** Se corrigieron los bloques de código en el **Anexo D (Plantillas)**, eliminando caracteres de escape conflictivos para asegurar la usabilidad directa ("Copy/Paste") en cualquier visor Markdown.
-* **Integridad del Corpus:** Validación final de coherencia narrativa entre Estrategia (Guía 13), Gobernanza (Guía 09) y Ética (Guía 15).
+* **Validación de LOSA:** Se alineó la arquitectura LOSA con el estándar global de **"Defensa en Profundidad"** (Defence-in-Depth) citado en el reporte de seguridad del Reino Unido.
+* **Nuevos Vectores de Riesgo:** Se incorporó el **Envenenamiento de Datos (Data Poisoning)** en la Guía 09, citando la vulnerabilidad crítica ante inserciones mínimas (250 documentos).
+* **Estándar de Auditoría:** Se adoptó el concepto de **"Safety Cases"** (Casos de Seguridad) en el Anexo A y Guía 01 como el estándar para justificar despliegues seguros.
+* **Observabilidad:** Se refinó el monitoreo para incluir la auditoría de **"Cadena de Pensamiento" (CoT)** en la Guía 11.
+
+#### Actualizaciones de Ética y Estrategia
+
+* **Sostenibilidad (Green AI):** Se añadió en la Guía 15 el riesgo de impacto ambiental y la responsabilidad ESG en la selección de modelos.
+* **Gestión del Cambio:** Se incorporó la sección de **"Resistencia Inmunológica"** y gestión del sabotaje interno en la Guía 15.
+* **Portabilidad:** Se añadió la estrategia de **"Prompt-as-Code"** y desacople de proveedores en la Guía 11 para mitigar el *Vendor Lock-in*.
+
+#### Mejoras Didácticas y de Formato
+
+* **Mapa del Territorio:** Inclusión del diagrama conceptual **IA > ML > DL > GenAI** en la Guía 01.
+* **Marco CRF-R:** Se insertó explícitamente la síntesis del método de prompting (Contexto, Rol, Formato, Restricciones) en la Guía 02.
+* **Sanitización:** Corrección de formatos en bloques de código para asegurar compatibilidad visual en móviles y editores Markdown.
 
 ---
 
 ### Versión 1.1 (Noviembre 2025)
 
-**Motivo:** Transición a un marco de pensamiento estratégico completo. Integración de la arquitectura Transformer como límite fundacional, consolidación del enfoque GRC (Gobernanza, Riesgo y Cumplimiento) y refinamiento de la consistencia interna.
+**Motivo:** Transición a un marco de pensamiento estratégico completo. Consolidación del enfoque GRC.
 
-#### Cambios Estratégicos y Fundacionales
+#### Cambios Estratégicos
 
-* **Tesis Central:** El enfoque del libro se centró explícitamente en **GRC (Gobernanza, Riesgo y Cumplimiento)** y **Ciberseguridad**. Esta justificación fue integrada en el Prólogo, Conclusión, Guía 07 y el `README.md`.
-* **Elevación Conceptual:** Se elevó el concepto de "Ingeniería de Prompts" a la disciplina de **"Ingeniería de Contexto"** (basado en investigaciones de Google 2025).
-* **Fundamento de Límite (Transformer):** Se definió explícitamente que la arquitectura Transformer tiene dos límites estratégicos: el **Costo Cuadrático** y la **Amnesia Estática**.
-* **Validación de Riesgo:** Integración del incidente de ciberespionaje de **Anthropic** (septiembre 2025) en la **Guía 07 (Gobernanza)**, como el caso de estudio clave para la **Inyección de Prompts**, y en la **Guía 13 (Perspectivas)** como la prueba empírica del **"Riesgo de la Agencia"** y la lealtad al *prompt*.
+* **Tesis Central:** El enfoque del libro se centró explícitamente en **GRC (Gobernanza, Riesgo y Cumplimiento)**.
+* **Ingeniería de Contexto:** Se elevó el concepto de "Ingeniería de Prompts" a una disciplina de gestión de memoria y contexto.
+* **Límites del Transformer:** Definición explícita del **Costo Cuadrático** y la **Amnesia Estática** como limitantes estructurales.
 
-#### Gobernanza y Responsabilidad (GRC)
+#### Gobernanza y Responsabilidad
 
-* **Arquitectura de Seguridad:**
-    * **NUEVO:** Se añadió la capa **LOSA** (Layer of Safety & Alignment) como arquitectura para implementar los *guardrails* y el *Human-in-the-Loop* (Guía 07).
-    * **Reestructuración Guía 07:** Se renombró la Parte 2 a **"El Nuevo Perímetro de Ciberseguridad de IA"** y se unificó el rol de liderazgo bajo el término **"Gobernador"** para eliminar inconsistencias.
-* **Marco Operacional (Sector Público - Política de IA):**
-    * **Alcance:** Se añadió la subsección **"Definición de Sistema de IA"** para especificar las tecnologías cubiertas y excluir explícitamente tecnologías de bajo riesgo.
-    * **Rendición de Cuentas:** Se incluyeron roles de gobernanza granular: **Dueño del Sistema de IA** y **Monitor de Cumplimiento**.
-    * **Clasificación de Riesgo:** Se añadió el **Procedimiento de Screening (Triage)** obligatorio.
-
-#### Consistencia, Estilo y Estructura
-
-* **Nomenclatura Unificada:** Se eliminó el formato numérico genérico y se unificó la nomenclatura de los encabezados.
-* **Estilo CSS:** Se forzó el ajuste de línea (`white-space: pre-wrap`) en los bloques de código para eliminar el scroll horizontal en móviles.
-* **Tablas y Matrices:** Se corrigió el formato de la **Matriz 3.2 (Anexo 03)** completando los 4 cuadrantes y se optimizó la tabla del **Anexo 05** eliminando columnas redundantes.
-
-#### Bloques de Código y Agentes
-
-* **Unificación de Acciones:** Todas las acciones de máquina (ciclos ReAct) se estandarizaron al formato **`yaml`**.
-* **Etiquetado Visual de Roles:** Se implementó un sistema de etiquetado con emojis (`👤`, `💭`, `⚙️`, `💬`) consistente en las Guías 02 y 04 para diferenciar visualmente los roles en los ciclos de agente.
-* **Lógica ReAct:** Se estandarizó la separación entre **Observación** (dato) y **Reflexión** (pensamiento) en los ejemplos prácticos.
-
-#### Actualizaciones de Contenido Detallado
-
-| Guía / Anexo | Cambio Principal | Detalle / Conceptos Añadidos |
-| :--- | :--- | :--- |
-| **Guía 02** | Reestructuración Didáctica | Se reorganizó el flujo (Problema -> Causa -> Criterio -> Solución), se añadió la sección **"Criterio del Arquitecto"** y se eliminó la tabla redundante. |
-| **Guía 04** | Coherencia ReAct | Se alineó el formato del ciclo ReAct y los emojis con el estándar de la Guía 02. |
-| **Guía 10** | Fundamentos S1/S2 | Se añadió la atribución explícita a **Daniel Kahneman** y se eliminó la referencia confusa a la "Lista de Fitts". |
-| **Guía 13** | Perspectivas y Futuro | Se añadió **"Nested Learning"** y **"Web Agéntica"** (Agentic Web) como tendencias futuras. |
-| **Anexo 03** | Plantillas | Se explicitó la sigla **"CRF-R"** (Contexto, Rol, Formato, Restricciones) en la Plantilla 1.1 y se corrigió el formato de código. |
-| **Anexo 06** | Glosario Unificado | Se añadieron más de 30 términos, incluyendo: **Ingeniería de Contexto**, **Amnesia Estática**, **Web Agéntica**, **GRC** y **Lealtad Agéntica**. |
+* **Arquitectura LOSA:** Introducción inicial de la capa *middleware* de seguridad.
+* **Roles de Gobernanza:** Definición de "Dueño del Sistema" y "Monitor de Cumplimiento" en la Política Institucional (Anexo B).
 
 ---
 
@@ -78,6 +56,5 @@ Este documento registra todas las modificaciones estructurales, técnicas y conc
 
 **Motivo:** Publicación inicial del borrador de contenidos.
 
-* **Publicación:** Se movió la publicación del libro a un dominio personalizado, consolidando la presencia en `iaa.jccarvajal.com`.
-* **Contenido:** Cubría los Principios, la Filosofía central (**Delegar, No Abdicar**) y la gestión de Riesgos específicos del sector público.
-* **Revisión:** Se integró la táctica de **"Revisión IA-revisa-IA"** en la Guía 08 (Evaluación).
+* **Lanzamiento:** Publicación del libro en dominio personalizado.
+* **Contenido Base:** Principios de "Delegar, No Abdicar" y gestión de riesgos del sector público.
