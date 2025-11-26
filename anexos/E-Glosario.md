@@ -118,6 +118,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** Una táctica donde se utiliza un modelo de IA potente para generar un gran volumen de ejemplos de entrenamiento de alta calidad. Es la fuente de datos clave para el Ajuste Fino.
 * **Referencia Principal:** Guía 04 (Estrategia de Datos), Guía 07 (Ajuste Fino).
 
+**Deep Learning (DL)**
+
+* **Definición:** (Aprendizaje Profundo). Un subconjunto especializado del ML inspirado en la biología. Utiliza Redes Neuronales Artificiales con muchas capas ("profundas") para procesar datos complejos no estructurados (imágenes, texto). Es la base tecnológica de los LLMs.
+* **Referencia Principal:** Guía 01 (Anatomía de Modelos).
+
 **Divulgación (Disclosure)**
 
 * **Definición:** Un principio legal y técnico para Agentes Autónomos. Requiere que el agente se identifique transparentemente como una IA y revele ante Terceros a quién representa (quién es su "Principal").
@@ -203,6 +208,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** El uso no autorizado de herramientas de IA públicas por parte de empleados para tareas laborales. Es un riesgo de gobernanza principal.
 * **Referencia Principal:** Guía 09 (Gobernanza).
 
+**IA Generativa (GenAI)**
+
+* **Definición:** La frontera actual del Deep Learning. A diferencia de la IA tradicional que solo analiza o clasifica datos existentes, la GenAI puede **crear** contenido nuevo (texto, código, imágenes) basándose en los patrones aprendidos durante su entrenamiento.
+* **Referencia Principal:** Guía 01 (Anatomía de Modelos).
+
 **Industrialización (Industrialization)**
 
 * **Definición:** El proceso de llevar un prototipo de IA funcional a un sistema de nivel de producción: escalable, confiable, monitoreado y mantenible.
@@ -222,6 +232,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** La disciplina de diseñar y estructurar instrucciones (prompts) de manera clara y precisa para obtener respuestas controladas.
 * **Referencia Principal:** Guía 02 (Ingeniería de Prompts).
+
+**Inteligencia Artificial (IA)**
+
+* **Definición:** El concepto general que engloba cualquier técnica que permita a las computadoras imitar el comportamiento humano. Incluye desde sistemas basados en reglas lógicas (simbólica) hasta el aprendizaje automático moderno.
+* **Referencia Principal:** Guía 01 (Anatomía de Modelos).
 
 **Inyección de Prompts (Prompt Injection)**
 
@@ -272,6 +287,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** Arquitectura de seguridad propuesta en esta obra. Es una capa *middleware* desacoplada que impone controles de entrada, proceso y salida sobre el modelo para garantizar la gobernanza técnica.
 * **Referencia Principal:** Guía 09 (Gobernanza).
+
+**Machine Learning (ML)**
+
+* **Definición:** (Aprendizaje Automático). Un subconjunto de la IA donde las máquinas no se programan con reglas explícitas, sino que "aprenden" patrones y reglas a partir de datos estadísticos para realizar predicciones.
+* **Referencia Principal:** Guía 01 (Anatomía de Modelos).
 
 **Memoria (vs. RAG)**
 
