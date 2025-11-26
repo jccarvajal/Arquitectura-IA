@@ -69,6 +69,13 @@ Este es el núcleo de las Operaciones de IA. En el prototipo, un prompt es un te
 * **El Problema:** ¿Cómo actualizas a los 1.000 agentes "PM" en producción con el nuevo prompt (v1.2) sin detener la fábrica?  
 * **La Solución:** Un pipeline de CI/CD. Al aprobar el cambio en Git, el sistema automáticamente "despliega" el nuevo prompt, quizás primero a un 1% de los agentes ("Canary deployment") y, si todo va bien, al 100%.
 
+**4\. Portabilidad (Desacople del Proveedor):**
+
+* **El Problema (Vendor Lock-in):** Si escribes tus prompts y tu código dependiendo de funciones propietarias exclusivas de un proveedor (ej. las "Assistants API" de OpenAI o formatos muy específicos de Anthropic), quedas secuestrado. Si ese proveedor sube precios o cambia sus términos, reescribir toda tu fábrica será costosísimo.
+* **La Solución:** **Abstracción de Ingeniería.**
+  * *Diseño Agnóstico:* Escribe los prompts en un formato estándar (Markdown puro) y usa una capa de software intermedia (frameworks como LangChain o tu propio "Enrutador") para traducir ese estándar al modelo de turno.
+  * *Beneficio:* Tu propiedad intelectual es el prompt agnóstico, no la implementación específica. Esto te da la libertad de cambiar de GPT-5 a Claude 4 o a Llama 3 con un solo cambio de configuración, sin detener la operación.
+
 ---
 
 ### Parte 3: La Observabilidad Ampliada (La Gobernanza a Escala Industrial)
