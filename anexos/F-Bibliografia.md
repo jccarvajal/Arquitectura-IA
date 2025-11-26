@@ -12,6 +12,8 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 
 *(Ingeniería de Prompts, Contexto y Datos)*
 
+* **Goodfellow, I., Bengio, Y., & Courville, A. (2016). "Deep Learning". MIT Press.** [[Web]](https://www.deeplearningbook.org/)
+  * **Por qué leerlo:** Es la "biblia" técnica que define formalmente la jerarquía: Inteligencia Artificial (la meta) > Machine Learning (la técnica) > Deep Learning (la arquitectura de redes neuronales que hace posible la IA moderna).
 * **Vaswani, A., et al. (2017). "Attention Is All You Need".** [[PDF]](https://arxiv.org/abs/1706.03762)
   * **Por qué leerlo:** Es el *paper* seminal que introdujo la arquitectura "Transformer", el motor fundamental de todos los LLM modernos que se discuten en esta obra.
 * **Lewis, P., et al. (2020). "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks".** [[PDF]](https://arxiv.org/abs/2005.11401)
@@ -64,6 +66,8 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
   * **Por qué leerlo:** Complemento técnico directo de esta obra. Detalla la implementación de ingeniería para Agentes, RAG y "Guardrails" en producción.
 * **Kartakis, S., et al. (Noviembre 2025). "Prototype to Production".** [[Web]](https://www.kaggle.com/whitepaper-prototype-to-production)
   * **Por qué leerlo:** Manual de "AgentOps" que fundamenta la **Guía 11: Industrialización**. Detalla CI/CD y Observabilidad para agentes.
+* **Zaharia, M., et al. (Berkeley AI Research). (2024). "The Shift from Models to Compound AI Systems".** [[Web]](https://bair.berkeley.edu/blog/2024/02/18/compound-ai-systems/)
+  * **Por qué leerlo:** Paper visionario que valida la tesis de la **Guía 11**. Argumenta que el "Estado del Arte" ya no se logra con un mejor modelo, sino con un mejor *sistema* (componentes modulares, RAG, herramientas), justificando la necesidad de **Portabilidad** y arquitectura sobre la elección del motor.
 
 ---
 
@@ -95,6 +99,10 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
   * **Por qué leerlo:** Proporciona la definición legal de **"discriminación arbitraria"**.
 * **Unión Europea. (2024). "Reglamento de Inteligencia Artificial (AI Act)".** [[Web]](https://artificialintelligenceact.eu/)
   * **Por qué leerlo:** Primer marco regulatorio integral que convierte la Gobernanza y Evaluación en obligaciones legales.
+* **Strubell, E., Ganesh, A., & McCallum, A. (2019). "Energy and Policy Considerations for Deep Learning in NLP".** [[PDF]](https://arxiv.org/abs/1906.02243)
+  * **Por qué leerlo:** El estudio fundacional que puso número a la huella de carbono de la IA. Reveló que entrenar un modelo grande puede emitir tanto CO2 como 5 coches en toda su vida útil. Lectura obligatoria para justificar el riesgo de **"Green AI"** en la **Guía 15**.
+* **Gilley, A., Godek, M., & Gilley, J. W. (2009). "Change, Resistance, and the Organizational Immune System".** [[Link]](https://www.researchgate.net/publication/233246309_Change_Resistance_and_the_Organizational_Immune_System)
+  * **Por qué leerlo:** Provee la base teórica para entender por qué las organizaciones atacan la innovación interna, validando tu sección sobre la **"Gestión del Sabotaje"** en la **Guía 15**.
 
 ---
 
