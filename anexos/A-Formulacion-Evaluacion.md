@@ -10,6 +10,8 @@ Su propósito es evitar el "solucionismo tecnológico" (usar IA para problemas q
 
 Este documento debe ser completado por el "Dueño del Proyecto" y visado por el "Comité de Gobernanza" antes de escribir la primera línea de código.
 
+> **Nota Técnica:** Este Canvas actúa como una versión ágil de un **"Caso de Seguridad" (Safety Case)**. La industria y los reguladores internacionales están adoptando los *Safety Cases* (inspirados en la ingeniería aeronáutica y nuclear) como el estándar de oro para justificar que un sistema es seguro antes de su despliegue. Al completar este documento, usted está construyendo la evidencia estructurada necesaria para una auditoría de seguridad.
+
 > **Instrucción de Uso:** Este documento no es un trámite. Es un mecanismo de defensa. Si al completarlo descubres que el proyecto no es viable, has ahorrado tiempo y presupuesto. **Descartar una mala idea aquí es un éxito.**
 
 ---

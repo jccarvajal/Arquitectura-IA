@@ -121,6 +121,16 @@ La ciberseguridad tradicional se preocupaba por *firewalls* y *redes*. La *Ciber
   2. **Presupuestos de Agente (Agent Budgeting):** Asignar un presupuesto por tarea.  
      * *Control:* "El 'Agente Director' (PM de PMs) no solo asigna la tarea, asigna un presupuesto. (Ej: 'Agente Investigador, tienes $1.00 para completar esta investigación'). El agente debe optimizar sus acciones (ej. usar un modelo más barato) para cumplir la misión dentro del costo."
 
+**6\. Riesgo: Envenenamiento de Datos (Data Poisoning)**
+
+* **¿Qué es?** Es un ataque a la cadena de suministro de conocimiento. Ocurre cuando un adversario inserta datos maliciosos en el conjunto de entrenamiento o en la base de conocimiento (RAG) para manipular el comportamiento futuro del modelo ante palabras clave específicas ("triggers").
+
+* **La Escala del Riesgo:** Evidencia de finales de 2025 demuestra la fragilidad de los modelos: la inserción de **tan solo 250 documentos maliciosos** en un corpus de entrenamiento masivo es suficiente para comprometer el comportamiento del modelo.
+
+* **Controles de Seguridad:**
+  1.  **Curaduría de RAG:** Escaneo de seguridad y hashing de todos los documentos que entran a la "biblioteca" del agente.
+  2.  **Trazabilidad de Datos:** Mantener un registro inmutable del origen de cada dato (Data Provenance) para poder "purgar" fuentes contaminadas.
+
 ---
 
 ### Parte 3: La Arquitectura de la Confianza (LOSA)
@@ -132,6 +142,8 @@ A diferencia de los enfoques ingenuos que esperan que un agente "decida ser segu
 Los "guardrails", "circuit breakers" y los puntos de "Validación Humana" no son conceptos abstractos, sino componentes de software que residen dentro de esta arquitectura. A esta capa arquitectónica de seguridad, que la industria suele implementar mediante diversos filtros dispersos, la denominaremos formalmente LOSA para unificar su gestión.
 
 #### 1. Qué resuelve la LOSA
+
+> **Validación de Estándar Global:** La arquitectura LOSA es la implementación técnica del principio de **"Defensa en Profundidad" (Defence-in-Depth)**. Reportes internacionales de seguridad de IA (2025) concluyen que ningún control único es infalible; la seguridad requiere múltiples capas redundantes (entrenamiento, despliegue y monitoreo) para que, si una falla, las otras contengan el riesgo.
 
 Los modelos avanzados generan tres clases de riesgo que esta capa mitiga:
 1. **Riesgos de Entrada:** Prompts maliciosos, engañosos o manipulados (*prompt injection*, *jailbreaks*).

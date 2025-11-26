@@ -103,6 +103,12 @@ Es el panel de control en tiempo real de tu "fábrica" de IA. Es la única forma
 * **Alertas:** "ALERTA: Detectados 50 intentos de *Inyección de Prompt* (ataques de instrucción oculta) desde la IP 1.2.3.4 en la última hora. El 'Agente Lector Tonto' los bloqueó."  
 * **Auditoría:** Registros de cada *"Ciclo ReAct"* (el rastro de pensamiento del agente) para la "Auditabilidad de Caja Negra", que permite revisar cómo un agente tomó una decisión.
 
+**4\. Monitoreo Cognitivo (Chain of Thought):**
+
+* **El Problema:** Un modelo puede dar la respuesta correcta por las razones incorrectas (o manipuladas). Mirar solo el *output* es insuficiente.
+* **La Métrica:** **Auditoría de Cadena de Pensamiento (CoT).** El sistema debe registrar y analizar los pasos intermedios de razonamiento del modelo.
+* **Alerta de Seguridad:** Si el modelo intenta ocultar sus pasos de razonamiento o si la "lógica interna" difiere del "resultado final" (engaño estratégico), se debe activar un *Circuit Breaker* inmediato. La observabilidad moderna exige ver *cómo* piensa el agente, no solo *qué* dice.
+
 #### La Diferencia Conceptual: Estándar vs. Ampliada
 
 La Observabilidad Ampliada no es un simple cambio de nombre; es un cambio de propósito. La práctica tradicional se enfoca en el *Uptime*; la práctica Ampliada se enfoca en la *Auditabilidad* y el *Riesgo*.

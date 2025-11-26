@@ -41,12 +41,17 @@ Este anexo se enfoca en cómo los proveedores "empaquetan" esa arquitectura, con
 * **Fortaleza:** Acceso inmediato a la máxima potencia y a ventanas de contexto gigantescas (1M+ tokens). Ideal para tareas cognitivas complejas.  
 * **Riesgo:** Dependencia tecnológica y exposición de datos al proveedor (los datos viajan a su nube). El costo operacional es alto por token.
 
-**B. Modelos Open-Source (Ejecución Local) \- "Comprar la Máquina"**
+**B. Modelos Open-Source / Open-Weigh (Ejecución Local) \- "Comprar la Máquina"**
 
-* **Qué es:** Descargas y ejecutas el modelo en tu propia infraestructura (on-premise o nube privada).  
+* **Qué es:** Descargas los "pesos" del modelo y lo ejecutas en tu propia infraestructura (on-premise o nube privada). Tienes la máquina, no solo una conexión a ella.
 * **Proyectos:** Llama (Meta), Mistral/Mixtral, Qwen.  
-* **Fortaleza:** Soberanía total de los datos (ideal para entornos regulados). Máximo control y personalización (incluyendo el **Ajuste Fino**, la técnica para especializar el "cerebro" del modelo).  
-* **Riesgo:** Alto costo inicial (Hardware GPU) y requiere un equipo especializado en infraestructura e **Industrialización** (el proceso de escalar prototipos a producción).
+* **Fortaleza:** **Soberanía y transparencia** de los datos ya que nunca salen de tu control (ideal para entornos regulados). Ofrece máximo control para personalización profunda, incluyendo el **Ajuste Fino** para especializar el "cerebro" sin restricciones externas.
+* **Riesgo:**
+    1. **Costo de Infraestructura:** Requiere hardware GPU dedicado y un equipo de ingeniería capaz de gestionar la **Industrialización** (el proceso de escalar prototipos a producción).
+    2. **Responsabilidad de Seguridad Total:** A diferencia de las APIs, donde el proveedor gestiona la seguridad, aquí el modelo es vulnerable. Las técnicas de seguridad nativas (como el "desaprendizaje" de conceptos dañinos) son inmaduras y pueden revertirse fácilmente con un ajuste fino mínimo. Si no construyes tu propia capa de seguridad (LOSA), el modelo está desprotegido.
+
+> **Actualización de Mercado (Nov 2025):** La brecha de capacidad se ha cerrado. Actualmente, los modelos abiertos de vanguardia tienen un retraso de **menos de un año** respecto a los modelos de frontera cerrados.
+> *Implicancia:* La decisión de usar Open-Source ya no implica sacrificar inteligencia. El *trade-off* ha cambiado: ganas potencia y soberanía, pero asumes el 100% de la carga de la ciberseguridad, ya que las salvaguardas del proveedor se pueden desactivar.
 
 **C. Agentes-como-Servicio (AaaS) \- "Contratar al Especialista"**
 
