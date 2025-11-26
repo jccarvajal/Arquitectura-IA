@@ -28,6 +28,8 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
   * **Por qué leerlo:** Es el pilar legal de la **Gobernanza de Datos** (Guía 04) en Chile. Define "dato personal" y "dato sensible", estableciendo la base legal de la "Estrategia de Datos".
 * **Cavoukian, A. (2009). "Privacy by Design: The 7 Foundational Principles".** [[PDF]](https://iapp.org/media/pdf/resource_center/pbd_implement_7found_principles.pdf)
   * **Por qué leerlo:** Establece el marco internacional para la "Privacidad desde el Diseño" y "por Defecto", un concepto central de la "Guía Ética" (BID/UAI) para la formulación de proyectos.
+* **Souly, A., et al. (2025). "Poisoning Attacks on LLMs Require a Near-Constant Number of Poison Samples". arXiv.** [[PDF]](http://arxiv.org/abs/2510.07192)
+  * **Por qué leerlo:** El estudio técnico citado en el reporte internacional que demuestra la fragilidad de los modelos ante ataques de envenenamiento de datos con muy pocos recursos (aprox. 250 muestras). Fundamental para justificar la **Gobernanza de la Fuente** en la Guía 04.
 
 ---
 
@@ -45,6 +47,8 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
   * **Por qué leerlo:** Whitepaper conceptual que introduce la arquitectura de un Agente (Guía 05) como la composición de un Modelo (el cerebro), Herramientas (las manos) y una Capa de Orquestación.
 * **Gulli, A., et al. (Febrero 2025). "The Agents Companion".** [[Libro]](https://www.kaggle.com/whitepaper-agent-companion)
   * **Por qué leerlo:** Es la profundización técnica de las guías de construcción. Explora patrones de "múltiples agentes" (jerárquicos, colaborativos) y detalla la Evaluación de Agentes (Guía 10).
+* **Baker, B., et al. (OpenAI). (2025). "Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation".** [[PDF]](https://arxiv.org/abs/2503.11926)
+  * **Por qué leerlo:** Profundiza en los desafíos de supervisar modelos que "piensan" (CoT), advirtiendo sobre cómo una mala supervisión puede incentivar al modelo a ocultar sus verdaderos razonamientos. Lectura clave para la Guía 11.
 
 ---
 
@@ -68,7 +72,9 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
   * **Por qué leerlo:** Manual de "AgentOps" que fundamenta la **Guía 11: Industrialización**. Detalla CI/CD y Observabilidad para agentes.
 * **Zaharia, M., et al. (Berkeley AI Research). (2024). "The Shift from Models to Compound AI Systems".** [[Web]](https://bair.berkeley.edu/blog/2024/02/18/compound-ai-systems/)
   * **Por qué leerlo:** Paper visionario que valida la tesis de la **Guía 11**. Argumenta que el "Estado del Arte" ya no se logra con un mejor modelo, sino con un mejor *sistema* (componentes modulares, RAG, herramientas), justificando la necesidad de **Portabilidad** y arquitectura sobre la elección del motor.
-
+* **Department for Science, Innovation and Technology (DSIT). (2025). "International AI Safety Report: Second Key Update". UK Government.** [[PDF]](https://www.gov.uk/government/publications/international-ai-safety-report-2025)
+  * **Por qué leerlo:** Es la auditoría global del estado de la seguridad en IA a fines de 2025. Valida la necesidad de la "Defensa en Profundidad" (LOSA), cuantifica el riesgo de *Data Poisoning* y establece el estándar para el monitoreo de agentes autónomos.
+  
 ---
 
 ### Sobre el Bloque 4: El Impacto

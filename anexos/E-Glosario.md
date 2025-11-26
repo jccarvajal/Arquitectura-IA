@@ -83,6 +83,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** Un riesgo operacional crítico donde un agente autónomo, usualmente operando en un ciclo ReAct, entra en un bucle (loop) infinito. Esto causa que el agente ejecute miles de llamadas a la API sin control, generando un gasto masivo e imprevisto.
 * **Referencia Principal:** Guía 09 (Gobernanza), Guía 06 (Sistemas Cognitivos).
 
+**Casos de Seguridad (Safety Cases)**
+
+* **Definición:** Metodología de aseguramiento donde los desarrolladores deben presentar un argumento estructurado y basado en evidencia de que su sistema de IA no causará daños inaceptables antes de ser desplegado. Inspirado en estándares de ingeniería de aviación y energía nuclear.
+* **Referencia Principal:** Anexo A (Formulación), Guía 01 (Anatomía).
+
 **Chain-of-Thought (CoT)**
 
 * **Definición:** Una técnica de *prompting* y un patrón de razonamiento. Consiste en forzar al modelo a explicar su razonamiento "paso a paso" antes de dar la respuesta final, lo que aumenta la precisión en tareas lógicas.
@@ -123,6 +128,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** (Aprendizaje Profundo). Un subconjunto especializado del ML inspirado en la biología. Utiliza Redes Neuronales Artificiales con muchas capas ("profundas") para procesar datos complejos no estructurados (imágenes, texto). Es la base tecnológica de los LLMs.
 * **Referencia Principal:** Guía 01 (Anatomía de Modelos).
 
+**Defensa en Profundidad (Defence-in-Depth)**
+
+* **Definición:** Estrategia de seguridad que implementa múltiples capas de protección independientes (en entrenamiento, despliegue y monitoreo) para que el fallo de una no comprometa todo el sistema. Es el principio rector técnico de la arquitectura LOSA validado por estándares internacionales en 2025.
+* **Referencia Principal:** Guía 09 (Gobernanza).
+
 **Divulgación (Disclosure)**
 
 * **Definición:** Un principio legal y técnico para Agentes Autónomos. Requiere que el agente se identifique transparentemente como una IA y revele ante Terceros a quién representa (quién es su "Principal").
@@ -132,6 +142,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** La fase inicial y masiva del ciclo de vida de un modelo (Guía 01), donde el LLM aprende patrones a partir de terabytes de datos. Es distinto a la Inferencia y al Ajuste Fino.
 * **Referencia Principal:** Guía 01 (Anatomía de Modelos).
+
+**Envenenamiento de Datos (Data Poisoning)**
+
+* **Definición:** Tipo de ataque a la cadena de suministro donde un adversario inserta una pequeña cantidad de datos maliciosos en el conjunto de entrenamiento (tan solo 250 documentos son suficientes) para manipular el comportamiento futuro del modelo ante ciertos disparadores.
+* **Referencia Principal:** Guía 04 (Estrategia de Datos), Guía 09 (Gobernanza).
 
 **ESG (Environmental, Social, and Governance)**
 
@@ -327,6 +342,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** Estrategia de adquisición donde se "arrienda el cerebro". Se accede al modelo a través de una API.
 * **Referencia Principal:** Guía 14 (Modelos y Mercado).
+
+**Monitoreo de Cadena de Pensamiento (CoT Monitoring)**
+
+* **Definición:** Práctica de observabilidad ampliada que consiste en revisar y auditar los pasos intermedios de razonamiento (el "pensamiento" visible) de un modelo antes de que genere su respuesta final, permitiendo detectar engaños estratégicos o lógica defectuosa que no se vería en el resultado final.
+* **Referencia Principal:** Guía 11 (Industrialización).
 
 **Multimodalidad (Multimodality)**
 
