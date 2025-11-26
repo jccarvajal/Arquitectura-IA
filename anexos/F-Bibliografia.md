@@ -101,7 +101,7 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
   * **Por qué leerlo:** Primer marco regulatorio integral que convierte la Gobernanza y Evaluación en obligaciones legales.
 * **Strubell, E., Ganesh, A., & McCallum, A. (2019). "Energy and Policy Considerations for Deep Learning in NLP".** [[PDF]](https://arxiv.org/abs/1906.02243)
   * **Por qué leerlo:** El estudio fundacional que puso número a la huella de carbono de la IA. Reveló que entrenar un modelo grande puede emitir tanto CO2 como 5 coches en toda su vida útil. Lectura obligatoria para justificar el riesgo de **"Green AI"** en la **Guía 15**.
-* **Gilley, A., Godek, M., & Gilley, J. W. (2009). "Change, Resistance, and the Organizational Immune System".** [[Link]](https://www.researchgate.net/publication/233246309_Change_Resistance_and_the_Organizational_Immune_System)
+* **Gilley, A., Godek, M., & Gilley, J. W. (2009). "Change, Resistance, and the Organizational Immune System".** [[Link]](https://www.researchgate.net/publication/211386571_Change_Resistance_and_the_Organizational_Immune_System)
   * **Por qué leerlo:** Provee la base teórica para entender por qué las organizaciones atacan la innovación interna, validando tu sección sobre la **"Gestión del Sabotaje"** en la **Guía 15**.
 
 ---
