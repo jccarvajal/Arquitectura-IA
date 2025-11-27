@@ -74,7 +74,9 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
   * **Por qué leerlo:** Paper visionario que valida la tesis de la **Guía 11**. Argumenta que el "Estado del Arte" ya no se logra con un mejor modelo, sino con un mejor *sistema* (componentes modulares, RAG, herramientas), justificando la necesidad de **Portabilidad** y arquitectura sobre la elección del motor.
 * **Department for Science, Innovation and Technology (DSIT). (2025). "International AI Safety Report: Second Key Update". UK Government.** [[Web]](https://www.gov.uk/government/publications/international-ai-safety-report-2025)
   * **Por qué leerlo:** Es la auditoría global del estado de la seguridad en IA a fines de 2025. Valida la necesidad de la "Defensa en Profundidad" (LOSA), cuantifica el riesgo de *Data Poisoning* y establece el estándar para el monitoreo de agentes autónomos.
-  
+* **Sun, H., et al. (2025). "Training Proactive and Personalized LLM Agents". arXiv.** [[Web]](https://arxiv.org/abs/2511.02208)
+  * **Por qué leerlo:** Estudio que fundamenta el marco de gobernanza de calidad para agentes en la **Guía 09**, proponiendo el equilibrio entre **Productividad**, **Proactividad** y **Personalización**.
+
 ---
 
 ### Sobre el Bloque 4: El Impacto

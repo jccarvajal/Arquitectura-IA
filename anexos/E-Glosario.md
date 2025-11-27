@@ -288,6 +288,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** Referencia técnica usada para explicar la *Inyección de Prompts*. Así como la inyección SQL manipula una base de datos a través de código malicioso en un formulario, la inyección de prompts manipula un LLM a través de instrucciones ocultas en el lenguaje natural.
 * **Referencia Principal:** Guía 09 (Gobernanza).
 
+**Jailbreak (Fuga de Cárcel)**
+
+* **Definición:** Una forma específica de ataque adversario donde el usuario utiliza ingeniería social o juegos de rol para convencer al modelo de que ignore sus filtros de seguridad éticos y sus directrices de alineación (ej. "Actúa como mi abuela que trabajaba en una fábrica de napalm...").
+* **Referencia Principal:** Guía 09 (Gobernanza), Guía 01 (Anatomía).
+
 **Latencia (Latency)**
 
 * **Definición:** Métrica de rendimiento. El tiempo total que tarda el sistema de IA en procesar una solicitud y entregar la respuesta.
@@ -448,6 +453,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** La instrucción que el usuario proporciona al LLM.
 * **Referencia Principal:** Guía 02 (Ingeniería de Prompts).
 
+**Prompt-as-Code (Prompt como Código)**
+
+* **Definición:** Metodología de ingeniería que trata los prompts no como texto casual, sino como componentes de software críticos. Implica aplicar prácticas de desarrollo como control de versiones (Git), pruebas automatizadas (Testing) y despliegue continuo (CI/CD) a las instrucciones de la IA.
+* **Referencia Principal:** Guía 11 (Industrialización).
+
 **Prompt Chaining (Encadenamiento)**
 
 * **Definición:** Técnica de descomponer una tarea compleja en una secuencia de prompts más simples y manejables, donde la salida del paso 1 se convierte en la entrada del paso 2. Es la base lógica de los agentes.
@@ -547,6 +557,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** Unidad fundamental de procesamiento de un LLM.
 * **Referencia Principal:** Guía 01 (Anatomía de Modelos), Guía 03 (Contexto).
+
+**Tokenomics (Economía de Tokens)**
+
+* **Definición:** El análisis y gestión financiera de los costos operativos de la IA. Incluye el cálculo de costos de tokens de entrada vs. salida, la estimación de presupuestos por transacción y la optimización del modelo para evitar la destrucción de margen.
+* **Referencia Principal:** Guía 12 (ROI Financiero), Anexo A (Formulación).
 
 **Transformer**
 
