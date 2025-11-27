@@ -195,6 +195,10 @@ Esta arquitectura es indispensable porque permite controlar la IA sin modificar 
 
 **Las políticas viven en la Gobernanza, pero se ejecutan dentro de la LOSA.**
 
+> **🛠️ Herramienta de Implementación:**
+>
+> La teoría de la LOSA se materializa en el código. Para ver cómo se escriben estas reglas de seguridad, anti-inyección y límites éticos directamente en las instrucciones del modelo, consulte la **Plantilla 1.2: El "Prompt de Sistema" de Alta Gobernanza** en el **Anexo D (Plantillas y Recursos)**.
+
 ---
 
 ### Parte 4: El Framework PPP: Gobernanza de la Calidad de Interacción

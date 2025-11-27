@@ -38,6 +38,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** Un riesgo operacional crítico donde el LLM genera información que es factualmente incorrecta, inventada o contradictoria, pero la presenta con total confianza y elocuencia. Es una "mentira" no intencional.  
 * **Referencia Principal:** Guía 09 (Gobernanza), Guía 10 (Evaluación y QA).
 
+**Alucinación Confiada (Confident Hallucination)**
+
+* **Definición:** El riesgo específico donde un modelo genera información falsa con un tono de autoridad y coherencia persuasiva, haciendo que el error sea difícil de detectar para un humano no experto. Es el subproducto no deseado del entrenamiento conductual (SFT).
+* **Referencia Principal:** Guía 01 (Anatomía de Modelos), Guía 09 (Gobernanza).
+
 **Amnesia Estática (Static Amnesia)**
 
 * **Definición:** Un término conceptual propio de esta obra para describir la limitación fundamental de la arquitectura Transformer. Es la incapacidad estructural del modelo para consolidar nueva información (aprendida de las interacciones) en su memoria a largo plazo (los pesos del modelo) después de que finaliza su entrenamiento.
@@ -93,6 +98,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** Una técnica de *prompting* y un patrón de razonamiento. Consiste en forzar al modelo a explicar su razonamiento "paso a paso" antes de dar la respuesta final, lo que aumenta la precisión en tareas lógicas.
 * **Referencia Principal:** Guía 02 (Ingeniería de Prompts), Guía 06 (Sistemas Cognitivos).
 
+**Circuit Breaker (Interruptor Automático)**
+
+* **Definición:** Mecanismo de seguridad en la arquitectura LOSA que detiene forzosamente la ejecución de un agente si detecta anomalías críticas, como un bucle de costos, un intento de inyección o una desviación del comportamiento esperado.
+* **Referencia Principal:** Guía 09 (Gobernanza), Guía 05 (Ingeniería de Agentes).
+
 **Co-Piloto Estratégico**
 
 * **Definición:** El rol humano evolucionado en la sinergia Humano-IA. El Co-Piloto no es un "usuario" pasivo que "pide" tareas, sino un "operador" activo que "instruye", "valida" y "audita" a la IA, usando su criterio de "Sistema 2" para dirigir la herramienta.
@@ -102,6 +112,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** Una estrategia de ingeniería de contexto donde, en una conversación larga, el sistema usa un LLM para resumir automáticamente el historial de chat anterior, preservando el contexto clave sin exceder la Ventana de Contexto.  
 * **Referencia Principal:** Guía 03 (Contexto y Memoria).
+
+**Complacencia de la Automatización (Automation Complacency)**
+
+* **Definición:** Fenómeno psicológico y de riesgo operativo donde un humano, al ver que el sistema de IA funciona bien la mayoría del tiempo, reduce su vigilancia y deja de validar críticamente los resultados, aumentando la vulnerabilidad ante fallos silenciosos. Es el riesgo principal del Nivel 2 de Sinergia (Humano-sobre-el-Bucle).
+* **Referencia Principal:** Guía 15 (Ética y Confianza).
 
 **Consolidación (de Memoria)**
 
@@ -137,6 +152,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** Un principio legal y técnico para Agentes Autónomos. Requiere que el agente se identifique transparentemente como una IA y revele ante Terceros a quién representa (quién es su "Principal").
 * **Referencia Principal:** Guía 17 (Perspectivas), Anexo F (Bibliografía).
+
+**Drift (Deriva del Modelo)**
+
+* **Definición:** El deterioro gradual del rendimiento de un sistema de IA en producción. Puede ser *Data Drift* (los datos del mundo real cambian y el modelo queda obsoleto) o *Model Drift* (el proveedor actualiza el modelo base y cambia su comportamiento, rompiendo los prompts existentes).
+* **Referencia Principal:** Guía 11 (Industrialización).
 
 **Entrenamiento (Training)**
 
@@ -203,6 +223,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** Enfoque de investigación y operación de IA que prioriza la eficiencia energética y la reducción de la huella de carbono, en contraposición a la "Red AI" (que busca precisión pura a cualquier costo computacional).
 * **Referencia Principal:** Guía 15 (Ética y Confianza), Guía 12 (ROI).
 
+**Grounding (Anclaje)**
+
+* **Definición:** El proceso técnico de conectar las respuestas de la IA a fuentes de datos verificables y reales (como documentos RAG o resultados de herramientas) para reducir las alucinaciones. Una respuesta "anclada" siempre puede citar su fuente.
+* **Referencia Principal:** Guía 03 (Contexto y Memoria), Guía 09 (Gobernanza).
+
 **Hiper-Personalización**
 
 * **Definición:** Un modelo de negocio habilitado por la IA que permite ofrecer un servicio de "conserje" personalizado a millones de clientes simultáneamente.
@@ -256,6 +281,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 **Inyección de Prompts (Prompt Injection)**
 
 * **Definición:** El principal riesgo de seguridad de los LLM. Ocurre cuando un atacante introduce instrucciones ocultas dentro de un prompt legítimo para secuestrar el comportamiento del agente.
+* **Referencia Principal:** Guía 09 (Gobernanza).
+
+**Inyección SQL (Analogía)**
+
+* **Definición:** Referencia técnica usada para explicar la *Inyección de Prompts*. Así como la inyección SQL manipula una base de datos a través de código malicioso en un formulario, la inyección de prompts manipula un LLM a través de instrucciones ocultas en el lenguaje natural.
 * **Referencia Principal:** Guía 09 (Gobernanza).
 
 **Latencia (Latency)**
@@ -322,6 +352,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** La capacidad de un sistema (usualmente un Agente Enrutador) para analizar una tarea y decidir qué proceso usar para resolverla.
 * **Referencia Principal:** Guía 06 (Sistemas Cognitivos).
+
+**Meta-Prompting**
+
+* **Definición:** Técnica avanzada de ingeniería de prompts donde se instruye al modelo para que actúe como un experto en prompts y ayude a redactar, mejorar o criticar sus propias instrucciones. Es usar la IA para programar a la IA.
+* **Referencia Principal:** Guía 02 (Ingeniería de Prompts).
 
 **Model Card (Ficha del Motor)**
 
@@ -412,6 +447,16 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** La instrucción que el usuario proporciona al LLM.
 * **Referencia Principal:** Guía 02 (Ingeniería de Prompts).
+
+**Prompt Chaining (Encadenamiento)**
+
+* **Definición:** Técnica de descomponer una tarea compleja en una secuencia de prompts más simples y manejables, donde la salida del paso 1 se convierte en la entrada del paso 2. Es la base lógica de los agentes.
+* **Referencia Principal:** Guía 02 (Ingeniería de Prompts), Guía 06 (Sistemas Cognitivos).
+
+**Prompt de Sistema (System Prompt)**
+
+* **Definición:** La instrucción maestra e invisible para el usuario final que define el comportamiento, rol, restricciones y personalidad del modelo. Es donde residen las reglas de gobernanza que el modelo debe obedecer por encima de las instrucciones del usuario.
+* **Referencia Principal:** Guía 02 (Ingeniería de Prompts), Guía 09 (Gobernanza), Anexo D (Plantillas)
 
 **Prototipado (Prototyping)**
 
@@ -542,6 +587,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** Red interconectada de agentes autónomos que pueden colaborar y negociar tareas entre sí a través de internet.
 * **Referencia Principal:** Guía 17 (Perspectivas).
+
+**Zero-Shot / Few-Shot Prompting**
+
+* **Definición:** Clasificación de prompts según la cantidad de ejemplos provistos. *Zero-Shot* es pedir sin ejemplos ("Traduce esto"). *Few-Shot* es proveer ejemplos de la tarea ("Traduce esto, aquí tienes 3 ejemplos de cómo quiero que lo hagas") para mejorar drásticamente la calidad.
+* **Referencia Principal:** Guía 02 (Ingeniería de Prompts).
 
 **Zonas de ROI**
 
