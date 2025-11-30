@@ -76,7 +76,9 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
   * **Por qué leerlo:** Es la auditoría global del estado de la seguridad en IA a fines de 2025. Valida la necesidad de la "Defensa en Profundidad" (LOSA), cuantifica el riesgo de *Data Poisoning* y establece el estándar para el monitoreo de agentes autónomos.
 * **Sun, W., et al. (2025). "Training Proactive and Personalized LLM Agents". arXiv.** [[Web]](https://arxiv.org/abs/2511.02208)
   * **Por qué leerlo:** Estudio que fundamenta el marco de gobernanza de calidad para agentes en la **Guía 09**, proponiendo el equilibrio entre **Productividad**, **Proactividad** y **Personalización**.
-
+* **Zou, A., et al. (2023). "Universal and Transferable Adversarial Attacks on Aligned Language Models". arXiv.** [[PDF]](https://arxiv.org/abs/2307.15043)
+  * **Por qué leerlo:** El estudio que demostró que *cualquier* modelo (incluso los más seguros) puede ser "hackeado" mediante sufijos adversarios universales. Es la prueba científica definitiva de que la seguridad no puede delegarse al modelo, justificando la necesidad de una capa externa (**LOSA**) en la **Guía 09**.
+  
 ---
 
 ### Sobre el Bloque 4: El Impacto
