@@ -103,6 +103,17 @@ El "Arquitecto de la Información" debe decidir qué combustible usar.
 * **Ventaja:** Puedes crear "combustible" perfectamente limpio y formateado para tareas donde no tienes datos del mundo real.  
 * **Desventaja:** Riesgo de "endogamia". Si usas una IA para entrenar a otra IA, corres el riesgo de que ambas aprendan y amplifiquen los mismos errores o sesgos.
 
+##### Herramienta de Diagnóstico: Matriz de Madurez de Datos
+
+Antes de inyectar datos a tu motor RAG, debes evaluar su madurez. Basado en la metodología de *Data Science for Social Good* (adaptada por el **Laboratorio de Gobierno de Chile y la UAI**), evalúa tus fuentes de datos en estas dimensiones universales:
+
+1.  **Accesibilidad:** ¿Los datos están en formatos abiertos (CSV, JSON) y accesibles remotamente, o atrapados en PDFs y silos manuales?
+2.  **Integración:** ¿Se pueden cruzar con otras bases mediante identificadores únicos (ID, Rol) o están aislados?
+3.  **Calidad:** ¿Están limpios y completos, o requieren una "refinería" ETL masiva?
+4.  **Privacidad:** ¿Tienen los niveles de anonimización adecuados para el propósito del proyecto?
+
+*Regla de Oro:* Si la madurez es "Básica" (PDFs, manual, sin identificadores), el riesgo de alucinación del agente aumenta exponencialmente.
+
 ---
 
 #### Conclusión: El Socio Crítico de la Fábrica

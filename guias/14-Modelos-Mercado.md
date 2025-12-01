@@ -26,6 +26,17 @@ Sin embargo, esta arquitectura tiene dos implicaciones estratégicas que impacta
 1. **Costo de Escalado (Costo):** El mecanismo de auto-atención es computacionalmente intensivo. Su costo y uso de memoria crecen cuadráticamente con la longitud del contexto. Duplicar la longitud de un documento no duplica el costo, sino que lo cuadruplica (o más), lo que encarece la operación a gran escala.
 2. **Naturaleza Estática (Control):** Los Transformers se entrenan en una "foto" masiva del conocimiento (un corpus de datos) y luego se "congelan". No están diseñados para aprender de forma continua o para integrar nueva información después de su entrenamiento, un desafío que exploramos en la Guía 17: Perspectivas.
 
+> **Nota del Arquitecto (Actualización de Industria 2025):**
+> La industria ha validado oficialmente el cambio de paradigma de "Chatbots" a "Agentes". El reporte *101 Real-World Gen AI Use Cases* (Google Cloud, Oct 2025) clasifica el mercado ya no por modelos, sino por **6 Tipos de Agentes**:
+> 1.  **Customer Agents:** (Nuestro Blueprint 1).
+> 2.  **Employee Agents:** (Nuestros Agentes PM de productividad).
+> 3.  **Creative Agents:** (Nuestros Co-Pilotos de Marketing).
+> 4.  **Data Agents:** (Nuestros Agentes de Gobernanza y RAG).
+> 5.  **Code Agents:** (Nuestros Co-Pilotos de Desarrollo).
+> 6.  **Security Agents:** (Nuestros componentes de arquitectura LOSA).
+>
+> *Implicancia:* La estrategia de "Agente Enrutador" propuesta en esta guía es la única capaz de orquestar estos 6 tipos de especialistas en un solo portafolio coherente.
+
 ---
 
 #### Parte 2: El Panorama 2025-2026: Los Tres Ecosistemas
@@ -122,6 +133,16 @@ Para diseñar tu portafolio, usa este proceso:
 | ¿Requiere auditoría y trazabilidad completa? | (Si es SÍ: Priorizar Open-Source o API con cláusulas de logs) |
 | ¿Necesitamos customización profunda (Ajuste Fino)? | (Si es SÍ: Requerir Open-Source) |
 | ¿Tenemos capacidad de Industrialización interna? | (Si es NO: Priorizar API o AaaS, o planificar contratación) |
+
+##### Referencia de Adquisición Pública: El Modelo de la Directiva N°44
+
+Para los "Arquitectos de Portafolio", es valioso analizar cómo los estados avanzados se protegen contractualmente. La **Directiva de Compra N°44 (Chile, 2023)** sobre proyectos de Ciencia de Datos e IA ofrece un catálogo de cláusulas de seguridad que cualquier empresa debería copiar en sus contratos:
+
+* **Cláusula de "Caja Negra" (Explicabilidad):** Exigir al proveedor mecanismos que permitan comprender *por qué* el modelo llegó a una decisión. No aceptar modelos opacos en decisiones críticas.
+* **Propiedad Intelectual:** Definir explícitamente si se adquiere el código fuente ("work for hire") o solo una licencia de uso.
+* **Evaluación de Impacto:** Exigir una "Evaluación de Impacto en Protección de Datos" (DPIA) antes de la adjudicación.
+
+**Herramienta:** Puede consultar las **Bases Tipo de Ciencia de Datos e IA** (disponibles como referencia pública en ChileCompra) para extraer estándares técnicos de SLA, perfiles de equipo e hitos de pago aplicables a cualquier industria.
 
 ---
 

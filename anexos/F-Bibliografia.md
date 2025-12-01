@@ -30,7 +30,9 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
   * **Por qué leerlo:** Establece el marco internacional para la "Privacidad desde el Diseño" y "por Defecto", un concepto central de la "Guía Ética" (BID/UAI) para la formulación de proyectos.
 * **Souly, A., et al. (2025). "Poisoning Attacks on LLMs Require a Near-Constant Number of Poison Samples". arXiv.** [[WEB]](http://arxiv.org/abs/2510.07192)
   * **Por qué leerlo:** El estudio técnico citado en el reporte internacional que demuestra la fragilidad de los modelos ante ataques de envenenamiento de datos con muy pocos recursos (aprox. 250 muestras). Fundamental para justificar la **Gobernanza de la Fuente** en la Guía 04.
-
+* **Laboratorio de Gobierno & UAI. (2022). "Guía Permitido Innovar: ¿Cómo podemos desarrollar proyectos de ciencia de datos?".** [[Web]](https://lab.gob.cl/permitido-innovar)
+  * **Por qué leerlo:** Provee herramientas prácticas universales para la etapa de fundamentación, destacando la "Matriz de Madurez de Datos" (evaluación de calidad, acceso y privacidad de la fuente) y el análisis de pre-factibilidad PESTL.
+  
 ---
 
 ### Sobre el Bloque 2: La Construcción
@@ -78,6 +80,8 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
   * **Por qué leerlo:** Estudio que fundamenta el marco de gobernanza de calidad para agentes en la **Guía 09**, proponiendo el equilibrio entre **Productividad**, **Proactividad** y **Personalización**.
 * **Zou, A., et al. (2023). "Universal and Transferable Adversarial Attacks on Aligned Language Models". arXiv.** [[PDF]](https://arxiv.org/abs/2307.15043)
   * **Por qué leerlo:** El estudio que demostró que *cualquier* modelo (incluso los más seguros) puede ser "hackeado" mediante sufijos adversarios universales. Es la prueba científica definitiva de que la seguridad no puede delegarse al modelo, justificando la necesidad de una capa externa (**LOSA**) en la **Guía 09**.
+* **Consejo para la Transparencia (CPLT). (Enero 2025). "Guía para la adopción de las Recomendaciones sobre Transparencia Algorítmica".** [[PDF]](https://www.consejotransparencia.cl/wp-content/uploads/page/2024/05/GUIA-Transparencia-Algoritmica-junio-2025.pdf)
+  * **Por qué leerlo:** Establece el estándar de referencia para la "Transparencia Proactiva". Define qué es un Sistema de Decisión Automatizada (SDA) y cómo publicar su inventario, lógica y casos de uso sin vulnerar la seguridad.
   
 ---
 
@@ -113,6 +117,12 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
   * **Por qué leerlo:** El estudio fundacional que puso número a la huella de carbono de la IA. Reveló que entrenar un modelo grande puede emitir tanto CO2 como 5 coches en toda su vida útil. Lectura obligatoria para justificar el riesgo de **"Green AI"** en la **Guía 15**.
 * **Gilley, A., Godek, M., & Gilley, J. W. (2009). "Change, Resistance, and the Organizational Immune System".** [[Web]](https://www.researchgate.net/publication/211386571_Change_Resistance_and_the_Organizational_Immune_System)
   * **Por qué leerlo:** Provee la base teórica para entender por qué las organizaciones atacan la innovación interna, validando tu sección sobre la **"Gestión del Sabotaje"** en la **Guía 15**.
+* **Google Cloud. (Octubre 2025). "101 Real-World Gen AI Use Cases from Industry Leaders".** [[Web]](https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders)
+  * **Por qué leerlo:** Es la validación empírica definitiva del manuscrito. Confirma la transición de Chatbots a Agentes, valida los Blueprints de Soporte, Legal y Datos con casos de éxito reales (Toyota, Mercari, Freshfields) y respalda el modelo de ROI de la Guía 12 con cifras auditadas.
+* **Dirección de Compras y Contratación Pública (ChileCompra). (Dic 2023). "Directiva N°44: Recomendaciones para la adquisición de proyectos de Ciencia de Datos e IA".** [[PDF]](https://www.chilecompra.cl/wp-content/uploads/2023/12/Directiva-Recomendaciones-proyectos-Ciencia-Datos-IA.pdf)
+  * **Por qué leerlo:** Un modelo robusto para la contratación de tecnología (Guía 14). Ofrece cláusulas tipo para proteger la propiedad intelectual, exigir explicabilidad ("caja blanca") y definir niveles de servicio (SLA) en proyectos de IA.
+* **División de Gobierno Digital & UAI. (2022). "Guía de Formulación Ética de Proyectos de Ciencia de Datos".** [[Web]](h[ttps://digital.gob.cl](https://goblab.uai.cl/guia-formulacion-etica-de-proyectos-de-ciencia-de-datos/))
+  * **Por qué leerlo:** Marco de referencia esencial para la Guía 15. Define operacionalmente la "Licencia Social", la proporcionalidad en el uso de IA y los protocolos para mitigar sesgos en datos administrativos.
 
 ---
 

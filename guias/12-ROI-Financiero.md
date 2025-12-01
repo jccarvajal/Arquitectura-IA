@@ -33,6 +33,9 @@ El retorno proviene de la continuidad operativa y la reducción de desperdicios 
 * **Visión Artificial para Control de Calidad:**
     * *Caso:* Cámaras de alta velocidad detectan microdefectos que el ojo humano no percibe.
     * *Ganancia:* Menos material desechado (*scrap*), menos devoluciones.
+* **Optimización de Procesos de Fábrica:**
+    * *Caso:* **Toyota** implementó agentes para acceder a manuales y datos de reparación complejos.
+    * *Ganancia:* Reducción reportada de **10,000 horas-hombre** al año, validando la tesis de eficiencia operativa pura.
 
 ### 1.2. Logística y Retail (Capital de Trabajo)
 El retorno proviene de la liberación de flujo de caja y protección de márgenes.
@@ -43,6 +46,9 @@ El retorno proviene de la liberación de flujo de caja y protección de márgene
 * **Precios Dinámicos (Dynamic Pricing):**
     * *Caso:* Ajuste automático de precios según elasticidad de la demanda y competencia.
     * *Ganancia:* Incremento directo del margen bruto.
+* **Generación de Contenido a Velocidad (Marketing):**
+    * *Caso:* **Carrefour** y **Gazelle** (Real Estate).
+    * *Ganancia:* Gazelle redujo el tiempo de generación de contenido de **4 horas a 10 segundos**, y Carrefour produce videos de campaña en semanas en lugar de meses. El ROI proviene de la velocidad de ejecución.
 
 ### 1.3. Servicios Financieros (Gestión de Riesgo)
 El retorno proviene de la mitigación de pérdidas y eficiencia.
@@ -50,6 +56,12 @@ El retorno proviene de la mitigación de pérdidas y eficiencia.
 * **Detección de Fraude Contextual:**
     * *Caso:* Análisis de biometría del comportamiento e historial transaccional en tiempo real.
     * *Ganancia:* Reduce el fraude real y, crucialmente, disminuye los falsos positivos que molestan al cliente.
+* **Recuperación de Deuda Inteligente:**
+    * *Caso:* Consultora **atmira** y su plataforma SIREC.
+    * *Ganancia:* Mejora de las tasas de recuperación de deuda en un **30-40%**, demostrando impacto directo en el flujo de caja.
+* **Retención y Servicio al Cliente (Escala):**
+    * *Caso:* **ING Bank** implementó chatbots de GenAI para mejorar las respuestas a consultas de clientes, y **Scotiabank** transformó sus operaciones bancarias globales.
+    * *Ganancia:* Mejora en la retención de clientes mediante respuestas inmediatas y precisas, reduciendo la fuga hacia la competencia por mala atención.
 
 ### 1.4. Sector Público (Eficiencia y Recaudación)
 El retorno se mide en capacidad de ejecución estatal y "valor público".
@@ -60,6 +72,12 @@ El retorno se mide en capacidad de ejecución estatal y "valor público".
 * **Optimización de Compras Públicas:**
     * *Caso:* Detección de sobreprecios, colusión entre oferentes o incoherencias en licitaciones (Ej: ChileCompra, Países Bajos).
     * *Ganancia:* Ahorro directo al erario público y reducción de corrupción.
+* **Inclusión y Acceso a Servicios (Barreras de Idioma):**
+    * *Caso:* **División de Servicios de Vehículos y Conductores de Minnesota**.
+    * *Ganancia:* Implementaron traducción en tiempo real para hablantes no nativos, reduciendo las barreras de acceso a trámites esenciales y optimizando el tiempo de los funcionarios en ventanilla.
+* **Eficiencia Administrativa y Empleo:**
+    * *Caso:* **Ministerio de Trabajo de Qatar** (Plataforma "Ouqoul").
+    * *Ganancia:* Lanzaron una plataforma impulsada por IA para emparejar automáticamente a graduados con oportunidades de empleo en el sector privado, agilizando la emisión de permisos de trabajo y reduciendo la burocracia estatal.
 
 ### 1.5. Salud (Gestión de Capacidad y Vida)
 El retorno se mide en descongestión del sistema, optimización de recursos escasos y resultados clínicos.
@@ -116,6 +134,7 @@ Proyectos impulsados por el marketing o la novedad. No suelen destruir valor fin
     * *Consecuencia:* Mueren apagados silenciosamente.
 * **Smart Cities "Para la Foto":**
     * *Síntoma:* Basureros con sensores o drones de inauguración que no se integran a la operación municipal real.
+    * *Consecuencia:* Abandono inmediato tras la cobertura de prensa, generando costos hundidos de mantenimiento y escepticismo ciudadano hacia la modernización.
 
 ---
 

@@ -129,6 +129,14 @@ La Gobernanza (Guía 09\) fue sobre seguridad (lo que no podemos hacer porque es
 
 La *"Licencia Social"* es la aceptación y confianza que la ciudadanía deposita en la implementación de una tecnología. No se gana solo cumpliendo la ley; se gana con transparencia y demostrando valor público. Si la percepción es que un sistema es opaco, sesgado o engañoso, esa licencia se pierde y el proyecto fracasa, independientemente de su éxito técnico.
 
+**Profundización: Las 3 Preguntas de la Licencia Social**
+Según la guía de *Formulación Ética de Proyectos de Ciencia de Datos* (GobDigital/UAI), la Licencia Social no es un contrato legal, sino la aceptación ciudadana. Para ganarla, tu sistema debe responder satisfactoriamente tres preguntas simples ante la opinión pública (válidas para cualquier país):
+1.  **Qué:** ¿Para qué se usa exactamente mi información?
+2.  **Quién:** ¿Quién se beneficia de esto? (¿Solo la institución o también el ciudadano?)
+3.  **Cómo:** ¿Están mis datos seguros y puedo pedir que se corrijan?
+
+Si tu "Agente" no puede responder estas preguntas en lenguaje claro (Opacidad Analfabeta), perderá la confianza, independientemente de su precisión técnica.
+
 **Riesgo 2: Sesgo (Bias) Algorítmico**
 
 * **El Problema:** El motor RAG es una "biblioteca". Si los documentos de la biblioteca (ej. revisiones de desempeño de los últimos 20 años) están llenos de sesgos humanos, el "Agente PM de Contratación" aprenderá esos sesgos y los amplificará.  
