@@ -22,7 +22,7 @@ Es la pieza que conecta la estrategia (las Guías) con la ejecución, y forma pa
 
 ### El Portafolio del Arquitecto
 
-La obra de guías (01-13) y anexos fue diseñada para los "Arquitectos" y "Directores". Este anexo es la práctica: el "Portafolio del Arquitecto". Estos son los planos que un "Ingeniero de Prototipos" o un "Director de Industrialización" usaría. A continuación, se presentan varios blueprints que aumentan en complejidad. Este portafolio no es exhaustivo y está diseñado para crecer.
+La obra de guías y anexos fue diseñada para los "Arquitectos" y "Directores". Este anexo es la práctica: el "Portafolio del Arquitecto". Estos son los planos que un "Ingeniero de Prototipos" o un "Director de Industrialización" usaría. A continuación, se presentan varios blueprints que aumentan en complejidad. Este portafolio no es exhaustivo y está diseñado para crecer.
 
 ---
 
