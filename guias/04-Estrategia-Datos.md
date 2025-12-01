@@ -2,13 +2,13 @@
 
 Subtítulo: Del "Jefe de Operaciones" al "Arquitecto de la Información"
 
-#### Introducción: El Combustible de la Fábrica
+#### Introducción: La Calidad del Combustible determina la Vida del Motor
 
-En las guías anteriores, definimos los fundamentos de la IA: cómo darle Instrucciones precisas (Guía 02) y cómo gestiona su Memoria limitada (Guía 03). Hemos descrito el "motor" de la IA. Ahora, debemos hablar del combustible: los datos.
+Un motor de Ferrari con gasolina sucia no gana carreras; se rompe. En la Inteligencia Artificial, los datos no son un simple "insumo" administrativo; son el único activo estratégico que tu competencia no puede alquilar.
 
-Esta guía es el manual para el "Arquitecto de la Información". Es la guía fundamental que precede a la construcción de agentes y la industrialización. Pero esta guía no es solo técnica; es el pilar del **Cumplimiento** (la 'C' de nuestro marco GRC).
+El principio de hierro de esta ingeniería es brutal: **"Basura Entra, Basura Elocuente Sale"**. Un agente alimentado con manuales obsoletos no comete errores obvios; miente con autoridad y citas falsas.
 
-Si la Guía 02 (Prompts) es el plano, esta guía es sobre la materia prima, y la Gobernanza de IA (Guía 09) fracasará si la **Gobernanza de Datos** no asegura un 'combustible limpio'. El Arquitecto de la Información es, por tanto, el primer rol de GRC en la fábrica.
+Esta guía transforma el rol de "gestor de archivos" al de **"Arquitecto de Información"**. Si no controlas la fuente (el "combustible"), la Gobernanza de la IA es imposible.
 
 ---
 

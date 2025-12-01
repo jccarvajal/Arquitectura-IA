@@ -2,13 +2,15 @@
 
 Subtítulo: Alfabetización Cognitiva: De Usuario Pasivo a Co-Piloto Estratégico
 
-#### Introducción: El Desafío de la "Basura Elocuente"
+#### Introducción: La Trampa de la Elocuencia
 
-En la guía anterior, definimos la nueva relación laboral: el humano como "Co-Piloto" y "Validador". Pero, ¿qué habilidades se necesitan para ser un buen "Validador" o un "Co-Piloto" eficaz? Esta guía es el manual de alfabetización cognitiva. Es el manual de entrenamiento para el cerebro humano.  
+En la guía anterior, definimos la nueva relación laboral. Pero esa relación tiene un enemigo silencioso.
 
-La IA es una "calculadora para el lenguaje y el razonamiento". Si introduces **"basura cognitiva"** (preguntas vagas, falta de criterio, supuestos erróneos), obtendrás **"basura elocuente"** (respuestas fluidas, seguras de sí mismas, pero inútiles o peligrosas a una velocidad aterradora).  
+La IA ha democratizado la sintaxis perfecta. Hoy, un interno y un vicepresidente pueden generar el mismo memo impecable en segundos. Esto crea una nueva amenaza invisible: la **Basura Elocuente**.
 
-El mayor riesgo de la IA no es que mienta, es que **"alucina"** (inventa datos) con una confianza absoluta. El profesional novato ("Usuario Pasivo") es víctima de esto porque su mentalidad es la de "pedir" y "aceptar". El "Co-Piloto Estratégico", o **"Prosumer"** (un productor y consumidor experto de IA), sabe que su trabajo no es pedir, sino instruir y validar.
+Antes, la incompetencia se notaba en la mala redacción o la falta de datos. Ahora, el error viene envuelto en prosa de nivel Nobel y confianza estadística absoluta.
+
+La "Alfabetización Cognitiva" no es un curso de *soft skills* para ser mejor persona. Es una *disciplina de supervivencia profesional*. Se trata de desarrollar un **"Sistema Inmunológico Intelectual"** capaz de auditar a una máquina que miente mejor que cualquier humano. En esta nueva economía, tu valor ya no reside en producir respuestas, sino en tener el criterio implacable para interrogarlas.
 
 ---
 

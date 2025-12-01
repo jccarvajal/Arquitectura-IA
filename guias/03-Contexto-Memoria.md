@@ -2,13 +2,13 @@
 
 Subtítulo: Resolviendo la "Brecha de Aprendizaje" de la IA
 
-#### Introducción: Del Prompt Perfecto a la Coherencia Sostenida
+#### Introducción: La Amnesia Estática y el Costo del Olvido
 
-Si la Ingeniería de Prompts (Guía 02) es la disciplina que nos permite construir una *instrucción* perfecta, la **Ingeniería de Contexto (Context Engineering)** es la ciencia de construir el entorno donde vive esa instrucción.
+La inteligencia sin memoria es ruido. El modelo más avanzado del mundo es inútil si olvida quién eres o qué le pediste hace tres turnos de conversación.
 
-Informes de la industria de 2025 (como el "State of AI in Business" del MIT) identifican que el mayor obstáculo para el éxito de la IA no es la calidad del modelo, sino la **"Brecha de Aprendizaje" (The Learning Gap)**. Este término describe por qué la mayoría de los pilotos de IA (el 95%) fracasan: las herramientas genéricas son fundamentalmente "tontas" porque operan sin memoria.
+Esta es la limitación técnica más severa de la arquitectura actual: los LLMs sufren de **Amnesia Estática**. No aprenden de ti; solo "ven" lo que está en su ventana inmediata.
 
-La "Brecha de Aprendizaje" tiene tres componentes:
+La "Brecha de Aprendizaje" que frustra a las empresas no es culpa del modelo, es culpa de la arquitectura de memoria. Esta guía no es sobre cómo hablarle a la IA, es sobre cómo construir el "entorno" para que la IA sepa de qué está hablando.
 
 1.  **No recuerdan el contexto:** (El problema de la "pizarra en blanco"). La IA olvida la conversación después de un breve intercambio.
 2.  **No aprenden del feedback:** (Repiten los mismos errores). La IA no mejora su desempeño con el tiempo o con la corrección del usuario.

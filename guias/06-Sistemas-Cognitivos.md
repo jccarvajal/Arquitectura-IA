@@ -2,11 +2,13 @@
 
 Subtítulo: El Plano de la Mente: De 'Trabajadores' Reactivos a 'Equipos' Cognitivos
 
-#### Introducción: Del "Trabajador" al "Equipo Pensante"
+#### Introducción: La Mente detrás de la Herramienta
 
-En la guía anterior, "contratamos" a nuestro trabajador: un **agente**, el sistema de IA capaz de razonar y actuar usando herramientas. Pero un agente sin un "plano de la mente" es solo un "loro" reactivo. Es una causa principal de la **"Brecha de Aprendizaje" (Learning Gap)** que identifican los informes de la industria: las herramientas de IA fracasan porque no pueden *adaptarse* a flujos de trabajo complejos o aprender de sus errores.
+Darle herramientas a un agente sin enseñarle a pensar es imprudente. Un agente autónomo sin una arquitectura cognitiva clara es solo un script glorificado disparando acciones al azar.
 
-Esta guía es el puente. Aquí diseñamos el "plano de la mente" del agente, su arquitectura cognitiva. Dejamos de tratarlo como un "loro" reactivo y empezamos a diseñarlo como un *"equipo pensante"*.
+La "Brecha de Aprendizaje" a menudo no es falta de conocimiento, sino falta de **proceso**. El modelo sabe *qué* es una factura, pero no sabe *cómo* razonar sobre una discrepancia contable.
+
+En esta guía, dejamos de diseñar al "trabajador" (el agente) para diseñar al "equipo pensante". Pasamos de la ejecución ciega a la **Ingeniería de la Cognición**, instalando patrones de razonamiento (como *Chain-of-Thought*) que actúan como el manual de procedimientos del cerebro sintético.
 
 ---
 

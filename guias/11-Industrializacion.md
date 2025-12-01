@@ -2,13 +2,13 @@
 
 Subtítulo: Del "Ingeniero de Prototipos" al "Director de Operaciones"
 
-#### Introducción: Del Prototipo (1) a la Producción (1000)
+#### Introducción: La Fragilidad del Prototipo
 
-En el *Prototipado*, construimos con éxito nuestro primer "Agente PM" (un agente de IA enfocado en un proyecto único). Demostramos el valor, validamos la seguridad básica y probamos el concepto. Pero un prototipo que funciona en la laptop de un ingeniero no es una "fábrica". Es un "Go-Kart".
+Un script que funciona en tu laptop es un hobby. Un sistema que soporta 10.000 usuarios concurrentes sin alucinar es ingeniería.
 
-Esta guía es el manual para la industrialización. Es el plan para pasar de construir un agente a desplegar y gestionar mil agentes de forma fiable. Nuestro rol evoluciona del "Ingeniero de Prototipos" (que construye el primer auto) al "Director de Operaciones" (que diseña, opera y mantiene la línea de ensamblaje 24/7).
+El paso del prototipo a la producción es el "Valle de la Muerte" de la IA. Lo que funciona una vez, rara vez funciona mil veces seguidas bajo carga. La agilidad del desarrollo choca con la necesidad de robustez operativa.
 
-En resumen, la Industrialización es la disciplina que implementa el marco de **GRC** a escala. Transforma la **Gobernanza** (Guía 09) y la **Evaluación** (Guía 10) de procesos manuales a un sistema automatizado, confiable y monitoreado.
+Esta guía es el manual del **Director de Operaciones**. Aquí transformamos prompts de texto en **"Prompt-as-Code"**, implementamos pipelines de despliegue y activamos la **Observabilidad Ampliada** para monitorear no solo si el servidor está encendido, sino si la IA está "pensando" correctamente.
 
 ---
 

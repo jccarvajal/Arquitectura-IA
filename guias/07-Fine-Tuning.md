@@ -2,15 +2,13 @@
 
 Subtítulo: El Manual del "Especialista de Motores"
 
-#### Introducción: De "Leer Libros" a "Ir a la Universidad"
+#### Introducción: Diferenciando "Saber" de "Ser"
 
-En las guías principales, hemos establecido que la Ingeniería de Contexto (Guía 03) es clave. La herramienta principal que exploramos fue **RAG (Generación Aumentada por Recuperación)**, nuestra arquitectura del "Bibliotecario de Investigación". 
+Existe una confusión costosa en la industria: creer que para que una IA sepa sobre tu empresa, debes re-entrenarla. Eso es falso. Para el *conocimiento*, usamos RAG.
 
-RAG es la forma de darle "libros" (conocimiento externo) al "cerebro" (LLM) para que los lea en tiempo real.  
+Pero, ¿qué pasa cuando quieres cambiar el *comportamiento*? ¿Qué pasa cuando necesitas que la IA no solo cite la ley, sino que *piense* como un abogado agresivo o *escriba* con el tono exacto de tu marca?
 
-Pero RAG tiene limitaciones. Es excelente para el **conocimiento** (hechos, datos), pero terrible para la **habilidad** (estilo, tono, formato). 
-
-Este anexo presenta la segunda herramienta clave: el **Fine-Tuning (Ajuste Fino)**.
+RAG es darle libros a un estudiante. **Ajuste Fino (Fine-Tuning)** es enviarlo a la universidad durante cuatro años. Esta guía es el manual para cuando la instrucción no basta y necesitas modificar la estructura misma del "cerebro" para especializar la habilidad.
 
 * **RAG:** Es darle a un agente genérico un libro de medicina para que lo lea.  
 * **Ajuste Fino:** Es tomar a un agente genérico y mandarlo a la facultad de medicina durante 6 meses hasta que *piense* como un médico.

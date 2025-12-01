@@ -2,9 +2,13 @@
 
 Subtítulo: Del "Jefe de Adquisiciones" al "Arquitecto de Portafolio"
 
-#### Introducción: Del Gobierno al Portafolio
+#### Introducción: La Falacia del "Modelo Único"
 
-En guías anteriores aprendimos a diseñar y **gobernar**, es decir, controlar de forma segura los sistemas de IA. Este anexo es el manual de adquisiciones. Su objetivo no es señalar al "mejor" modelo, sino entregar una metodología para construir un ecosistema de portafolio. El rol estratégico no es elegir un solo motor, sino diseñar un portafolio flexible que combine modelos de manera inteligente.
+No existe el "mejor modelo". Existe solo el modelo más eficiente para una tarea específica. El error estratégico más común es la "monogamia tecnológica": casarse con un solo proveedor (ej. solo GPT) para todas las tareas.
+
+El mercado de 2025 es un ecosistema fragmentado de especialistas: modelos propietarios masivos, modelos open-source soberanos y agentes-como-servicio.
+
+Esta guía transforma al "Comprador de Software" en un **"Arquitecto de Portafolio"**. Aprenderemos a optimizar el **Triángulo de Adquisición** (Rendimiento, Control, Costo) implementando un **Agente Enrutador** que orquesta múltiples cerebros según la necesidad del momento.
 
 ---
 

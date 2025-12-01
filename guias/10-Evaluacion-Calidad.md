@@ -2,17 +2,13 @@
 
 Subtítulo: El Laboratorio de Control de Calidad: De la "Sensación" a la Métrica
 
-#### Introducción: Del "Control de Seguridad" al "Control de Calidad"
+#### Introducción: Si no puedes medirlo, no puedes gobernarlo
 
-En el *Prototipado*, construimos una máquina que "funciona". En la *Gobernanza*, definimos las reglas de seguridad para evitar que explote.
+En el software tradicional, un error es un colapso del sistema (crash). En la IA Generativa, un error es una mentira convincente. Esta diferencia hace que el control de calidad tradicional sea obsoleto.
 
-Ahora debemos probar científicamente que esa máquina produce un producto de calidad y lo hace de forma consistente.
+El mayor riesgo para la adopción empresarial no es la falta de capacidad, sino la **incertidumbre**. ¿Cómo industrializas un sistema que responde diferente cada vez?
 
-Esta guía es el "Laboratorio de Control de Calidad" (QA) de nuestra fábrica. Es el puente indispensable entre la *Gobernanza* y la *Industrialización* (el escalado a producción). No podemos industrializar un sistema cuya calidad no podemos medir. Esta guía nos lleva de la "sensación" subjetiva ("creo que funciona bien") a la "métrica" objetiva ("puedo probar que tiene un 92% de precisión factual").
-
-Resolver esto es el principal desafío de la industria. El riesgo de "Inexactitud" (o Alucinaciones) es el problema N°1 que las organizaciones están enfrentando en 2025. Un 30% de las empresas reporta haber experimentado consecuencias negativas por la inexactitud de la IA, y es el riesgo que más están trabajando en mitigar.
-
-Esta guía es el componente de **Cumplimiento (Compliance)** de nuestro marco GRC. No podemos 'industrializar' un sistema cuya calidad no podemos medir. Esta guía nos lleva de la 'sensación' subjetiva a la 'métrica' objetiva que nos permite probar el cumplimiento de nuestra Gobernanza.
+Esta guía transforma la calidad de una "sensación subjetiva" a una **"métrica de ingeniería"**. Abandonamos la revisión manual ("se ve bien") para construir el **Laboratorio de QA**, donde la eficacia se mide contra un "Golden Set" vivo y riguroso.
 
 ---
 

@@ -4,16 +4,19 @@
 
 Subtítulo: Del "Director de Orquesta" al "Gobernador de Sistemas de IA"
 
-#### Introducción: De Orquestar Resultados a Gobernar Sistemas
+#### Introducción: La Arquitectura del Control
 
-En las guías anteriores, dominamos el arte de la construcción. Hemos construido nuestra primera "máquina".
+Un motor potente sin frenos no es un vehículo; es un arma. Al pasar del laboratorio al mundo real, la prioridad del Arquitecto cambia drásticamente: ya no importa solo *qué puede hacer* el modelo, sino *qué podemos impedir que haga*.
 
-Ahora, comienza el trabajo real: operarla. Esta guía aborda la siguiente capa de maestría: el marco de *Gobernanza, Riesgo y Cumplimiento (GRC)*.
+La "magia" de la IA se disipa rápido ante una inyección de prompt exitosa o una fuga de datos masiva. Aquí es donde termina la experimentación y comienza la **Gobernanza**.
+
+Ya no se trata solo de qué podemos construir, sino de cómo operamos, mantenemos y protegemos lo que hemos construido. Esta guía establece el marco de **GRC (Gobernanza, Riesgo y Cumplimiento)** no como burocracia, sino como la "Sala de Control" necesaria para la maestría:
+
 * **Gobernanza:** Es el "qué" estratégico y la "sala de control" (Parte 1, 3, 4).
 * **Riesgo:** Es el "por qué" y la gestión de amenazas técnicas (Parte 2).
 * **Cumplimiento:** Es el "límite" legal y ético (Guía 15) y la prueba de calidad (Guía 10).
 
-Ya no se trata solo de qué podemos construir, sino de cómo operamos, mantenemos y protegemos lo que hemos construido. Nuestro rol evoluciona de "Director" a "Gobernador de Sistemas de IA".
+Nuestro rol evoluciona de "Director" a "Gobernador de Sistemas de IA". Definiremos la **Arquitectura LOSA**, el middleware de seguridad indispensable para operar en entornos hostiles.
 
 ---
 
