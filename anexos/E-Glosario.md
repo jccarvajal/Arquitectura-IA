@@ -63,6 +63,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** Una característica clave de los modelos de Aprendizaje Anidado. Es la capacidad del sistema para aprender y modificar su propio algoritmo de actualización, en lugar de depender de una regla de aprendizaje fija.
 * **Referencia Principal:** Guía 17 (Perspectivas).
 
+**Auto-Prompting**
+
+* **Definición:** Es el mecanismo fundamental de la **Agencia**. Se refiere a la capacidad de un agente autónomo para generar sus propias instrucciones internas o "pensamientos" (dentro de un bucle como *ReAct*) para decidir el siguiente paso a tomar sin intervención humana. Es la IA diciéndose a sí misma qué hacer a continuación para cumplir un objetivo.
+* **Referencia Principal:** Guía 05 (Ingeniería de Agentes), Guía 17 (Perspectivas).
+
 **Basura Elocuente (Eloquent Bullshit)**
 
 * **Definición:** El principal producto de riesgo de la IA. Es el resultado de combinar una "basura cognitiva" (un prompt vago, sin criterio o mal formulado) con un LLM potente. La IA produce una respuesta fluida, profesional y convincente que es fundamentalmente incorrecta o inútil.  
@@ -365,8 +370,8 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 **Meta-Prompting**
 
-* **Definición:** Técnica avanzada de ingeniería de prompts donde se instruye al modelo para que actúe como un experto en prompts y ayude a redactar, mejorar o criticar sus propias instrucciones. Es usar la IA para programar a la IA.
-* **Referencia Principal:** Guía 02 (Ingeniería de Prompts).
+* **Definición:** Técnica avanzada de **Diseño** donde se instruye al modelo para que actúe como un experto en ingeniería de prompts. No se le pide que realice la tarea, sino que diseñe, mejore o critique la instrucción (el prompt) que se usará para realizar la tarea. Es usar la IA para programar a la IA.
+* **Referencia Principal:** Guía 02 (Ingeniería de Prompts), Guía 06 (Sistemas Cognitivos).
 
 **Model Card (Ficha del Motor)**
 
@@ -537,6 +542,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** Término normativo (CPLT/Ley 21.180) que engloba cualquier sistema tecnológico (incluyendo IA, pero también reglas simples o Excel complejos) que ayude, asista, apoye o reemplace la toma de decisiones de un órgano administrativo. Es la unidad de medida para la Transparencia Algorítmica.
 * **Referencia Principal:** Guía 09 (Gobernanza), Anexo B (Política).
+
+**Self-Prompting**
+
+* **Definición:** En esta obra, se refiere específicamente a la **Estrategia del Agente Especializado** (o flujo de "Auto-Prompting"). Es la técnica de utilizar una instancia de IA (un "Chat Taller") para redactar el prompt perfecto que luego será ejecutado por otra instancia (el "Chat Ejecutor"). Es el acto de "prepararse a uno mismo" el contexto antes de actuar.
+* **Referencia Principal:** Guía 05 (Ingeniería de Agentes).
 
 **Sesión (de Agente)**
 
