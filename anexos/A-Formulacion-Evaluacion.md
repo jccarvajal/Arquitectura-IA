@@ -98,9 +98,9 @@ Si el sistema falla, ¿mantenemos la capacidad humana de operar manualmente (Act
 **Decisión del Comité de Gobernanza / Sponsor:**
 Basado en la evidencia de este Canvas, el proyecto se califica como:
 
-* [ ] **VIABLE (APROBADO):** El valor es claro, los riesgos están mitigados y los datos están listos. -> *Pasa a Prototipado (Guía 08).*
-* [ ] **CONDICIONAL:** Requiere resolver la brecha de datos o ética antes de avanzar. -> *Volver a Formulación.*
-* [ ] **NO VIABLE (RECHAZADO):** El riesgo supera al valor o existe una alternativa No-IA mejor. -> *Fin del proceso.*
+* `[ ]` **VIABLE (APROBADO):** El valor es claro, los riesgos están mitigados y los datos están listos. -> *Pasa a Prototipado (Guía 08).*
+* `[ ]` **CONDICIONAL:** Requiere resolver la brecha de datos o ética antes de avanzar. -> *Volver a Formulación.*
+* `[ ]` **NO VIABLE (RECHAZADO):** El riesgo supera al valor o existe una alternativa No-IA mejor. -> *Fin del proceso.*
 
 **Firma del Responsable:** ___________________________
 
