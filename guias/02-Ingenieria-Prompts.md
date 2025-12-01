@@ -139,9 +139,11 @@ Si tienes un formato o estilo muy específico en mente, no lo describas; muéstr
     * *Ejemplo de Few-Shot:*
       ```text
       Quiero clasificar la urgencia de correos. Aprende de estos ejemplos:
+      
       1. "El servidor se cayó" -> ALTA
       2. "¿Podemos reunirnos mañana?" -> MEDIA
       3. "Gracias por la info" -> BAJA
+      
       Ahora clasifica este: "El sistema está lento." ->
       ```
 
