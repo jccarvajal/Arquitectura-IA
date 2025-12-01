@@ -24,7 +24,7 @@ Antes de inspeccionar el motor, debemos ubicarlo en el mapa. Es común usar los 
 * **Deep Learning (DL - Aprendizaje Profundo):** Es un subconjunto del ML inspirado en la biología. Utiliza *Redes Neuronales Artificiales* con muchas capas ("profundas") para procesar datos complejos. Aquí es donde viven los LLMs (Large Language Models).
 * **IA Generativa (GenAI):** Es la frontera actual del Deep Learning. A diferencia de la IA tradicional que analiza o clasifica (ej. filtro de spam), la GenAI puede crear nuevo contenido (texto, código, imágenes) que no existía previamente, basándose en los patrones aprendidos.
 
-**Implicancia para el Arquitecto:** Cuando hablamos de "Arquitectura de IA" en este libro, nos referimos específicamente a **Deep Learning Generativo**. Esto implica que no trabajamos con sistemas deterministas (reglas fijas), sino con sistemas probabilísticos (predicciones creativas pero falibles).
+**Implicancia para el Arquitecto:** Cuando hablamos de "Arquitectura de IA" en esta obra, nos referimos específicamente a **Deep Learning Generativo**. Esto implica que no trabajamos con sistemas deterministas (reglas fijas), sino con sistemas probabilísticos (predicciones creativas pero falibles).
 
 ---
 

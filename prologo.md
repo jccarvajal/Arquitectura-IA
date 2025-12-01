@@ -8,7 +8,7 @@ En un extremo se encuentra la **utopía del hype**, una visión muy presente en 
 
 En el otro extremo está la **distopía de la abdicación**, capturada con precisión por Frank Herbert en *Dune*. La Yihad Butleriana representa la reacción de una humanidad que delegó tanto su criterio que terminó perdiendo su agencia.
 
-Este libro rechaza ambas ilusiones y propone un marco profesional para evitar la necesidad de enfrentar una nueva Yihad Butleriana.
+Esta obra rechaza ambas ilusiones y propone un marco profesional para evitar la necesidad de enfrentar una nueva Yihad Butleriana.
 
 ---
 
@@ -87,7 +87,7 @@ Este no es un discurso pesimista. Es realismo técnico.
 Entre la utopía de *La Cultura* y la advertencia de *Dune* existe un camino razonable.
 Ese camino lo anticipó Isaac Asimov en *Fundación*: crear estructuras conceptuales que permitan **gobernar la incertidumbre durante transiciones profundas**.
 
-Este libro aspira a cumplir esa función **al proponer** que la única forma de gestionar la IA es con un marco robusto de **Gobernanza, Riesgo y Cumplimiento (GRC)**. Esta es la "Fundación" que debemos construir.
+Esta propuesta aspira a cumplir esa función **al proponer** que la única forma de gestionar la IA es con un marco robusto de **Gobernanza, Riesgo y Cumplimiento (GRC)**. Esta es la "Fundación" que debemos construir.
 
 Nuestro momento histórico también recuerda a *The Expanse*, la saga escrita por James S. A. Corey. En ella, la *Protomolécula* es la metáfora perfecta de la IA: una herramienta alienígena, opaca, poderosa y sin agencia propia.
 
@@ -96,7 +96,7 @@ La saga nos muestra los dos únicos destinos que esta herramienta habilita, depe
 
 2. **La Expansión (La Oportunidad):** Sin embargo, la función original de la *Protomolécula* era permitir la construcción y expansión, **abriendo nuevas rutas**. La IA actual (nuestra "Protomolécula") funciona igual.
 
-Este libro es un manual para evitar el destino de *Protogen* mediante la implementación de una *Fundación* de GRC. Argumentamos que la verdadera **Expansión**, la ampliación de la capacidad humana, solo se alcanza cuando el criterio (GRC) y el juicio humano (S2) dirigen la herramienta.
+Esta obra es un manual para evitar el destino de *Protogen* mediante la implementación de una *Fundación* de GRC. Argumentamos que la verdadera **Expansión**, la ampliación de la capacidad humana, solo se alcanza cuando el criterio (GRC) y el juicio humano (S2) dirigen la herramienta.
 
 **La expansión real no vendrá de la máquina, sino del juicio humano que la dirige.**
 

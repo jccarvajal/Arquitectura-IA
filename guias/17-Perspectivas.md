@@ -124,7 +124,7 @@ El "Aprendizaje Anidado" puede que resuelva la "Amnesia Estática" de la Guía 0
 
 Esto confirma la "Paradoja de la Maestría" con la que abrimos. La maestría no es conocer esta lista de tendencias. Es tener el marco para evaluarlas.
 
-El trabajo del "Vigilante Estratégico" no es adivinar, es auditar. Es aplicar los principios de gobernanza, diseño y estrategia de este libro a cualquier nueva tecnología que surja. 
+El trabajo del "Vigilante Estratégico" no es adivinar, es auditar. Es aplicar los principios de gobernanza, diseño y estrategia de esta obra a cualquier nueva tecnología que surja. 
 
 **El criterio es la única constante.**
 

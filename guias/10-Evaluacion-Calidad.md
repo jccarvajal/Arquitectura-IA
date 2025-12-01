@@ -110,7 +110,7 @@ Una vez que tienes tu "Golden Set" y tus "Métricas", ¿quién hace el trabajo d
 **C. Táctica Avanzada: Revisión "IA-revisa-IA" (El Auditor Cruzado)**
 
 * **Metáfora:** Usar un "auditor" de un competidor para revisar el trabajo de tu fábrica.
-* **Proceso:** Se utiliza una IA (Modelo B) para auditar el resultado de otra IA (Modelo A). Este mismo libro fue auditado usando esta técnica (usando ChatGPT para revisar los borradores generados con asistencia de Gemini).
+* **Proceso:** Se utiliza una IA (Modelo B) para auditar el resultado de otra IA (Modelo A). Esta misma obra fue auditada usando esta técnica (usando ChatGPT para revisar los borradores generados con asistencia de Gemini).
 * **La Lógica (Validación Cruzada):** Como se ha documentado en flujos de trabajo de startups, usar una IA (ej. Coderabbit) para revisar el código generado por otra IA (ej. Claude) "suena redundante, pero aparentemente detecta diferentes tipos de problemas".
 * **Por qué Funciona (Puntos Ciegos):** Cada modelo de IA tiene "puntos ciegos" diferentes. Usar un "Modelo B" para revisar al "Modelo A" es una forma eficaz y de bajo costo para detectar errores lógicos, de seguridad o de estilo que el modelo original pasó por alto.
 * **Aplicación (Gobernanza):** Integramos un "Revisor de IA" como un paso de *Evaluación (Guía 10)* automatizado en nuestro *pipeline* de *Industrialización (Guía 11)*.
