@@ -138,15 +138,17 @@ Para diseñar tu portafolio, usa este proceso:
 | ¿Necesitamos customización profunda (Ajuste Fino)? | (Si es SÍ: Requerir Open-Source) |
 | ¿Tenemos capacidad de Industrialización interna? | (Si es NO: Priorizar API o AaaS, o planificar contratación) |
 
-##### Referencia de Adquisición Pública: El Modelo de la Directiva N°44
+##### Caso de Estudio: Estándares Gubernamentales Avanzados
 
-Para los "Arquitectos de Portafolio", es valioso analizar cómo los estados avanzados se protegen contractualmente. La **Directiva de Compra N°44 (Chile, 2023)** sobre proyectos de Ciencia de Datos e IA ofrece un catálogo de cláusulas de seguridad que cualquier empresa debería copiar en sus contratos:
+Para operar en un mercado global, el Arquitecto debe adoptar los estándares contractuales más altos disponibles. Analizamos el modelo de la **Directiva N°44** (un estándar gubernamental de referencia en Latam y la OCDE) como un *benchmark* de cómo las organizaciones maduras se protegen legalmente ante proveedores de IA.
 
-* **Cláusula de "Caja Negra" (Explicabilidad):** Exigir al proveedor mecanismos que permitan comprender *por qué* el modelo llegó a una decisión. No aceptar modelos opacos en decisiones críticas.
-* **Propiedad Intelectual:** Definir explícitamente si se adquiere el código fuente ("work for hire") o solo una licencia de uso.
-* **Evaluación de Impacto:** Exigir una "Evaluación de Impacto en Protección de Datos" (DPIA) antes de la adjudicación.
+Independientemente de su jurisdicción, este marco propone un catálogo de cláusulas universales que cualquier empresa debería replicar en sus contratos:
 
-**Herramienta:** Puede consultar las **Bases Tipo de Ciencia de Datos e IA** (disponibles como referencia pública en ChileCompra) para extraer estándares técnicos de SLA, perfiles de equipo e hitos de pago aplicables a cualquier industria.
+* **Cláusula de "Caja Negra" (Explicabilidad):** Exigir al proveedor mecanismos técnicos que permitan comprender *por qué* el modelo llegó a una decisión. La norma es no aceptar modelos opacos (Black Box) para decisiones críticas de negocio.
+* **Propiedad Intelectual del "Fine-Tuning":** Definir explícitamente la propiedad de los pesos neuronales. Si usted paga por el entrenamiento, los pesos resultantes ("el cerebro ajustado") deben ser suyos, no del proveedor.
+* **Evaluación de Impacto (DPIA):** Exigir una "Evaluación de Impacto en Protección de Datos" antes de la adjudicación, para mapear riesgos de privacidad antes de escribir código.
+
+**Herramienta:** Aunque este es un documento de origen público (Bases Tipo de Ciencia de Datos), su estructura técnica actúa como un estándar de referencia internacional para definir SLAs (Niveles de Servicio), perfiles de equipo e hitos de pago aplicables a cualquier industria privada.
 
 ---
 

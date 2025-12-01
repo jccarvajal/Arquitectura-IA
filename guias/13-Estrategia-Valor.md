@@ -6,11 +6,13 @@ Subtítulo: Del "Director de Transformación" al "Director de Estrategia"
 
 #### Introducción: Escapar del Purgatorio de los Pilotos
 
-Construir la fábrica es un desafío técnico; hacerla rentable es un desafío de negocio. El 90% de los proyectos de IA mueren en el "Purgatorio de los Pilotos" porque optimizan tareas triviales en lugar de transformar modelos de negocio.
+Construir la fábrica es un desafío técnico; hacerla rentable es un desafío de negocio.
 
-La eficiencia (hacer lo mismo más barato) es una trampa gravitacional. El verdadero valor de la IA no está en reducir costos marginales, sino en habilitar productos que antes eran económicamente imposibles.
+La industria ha identificado una clara **"Brecha GenAI"**: la disonancia estructural entre la adopción masiva de herramientas y el escaso retorno de inversión tangible. Mientras la experimentación es omnipresente, la gran mayoría de las organizaciones se encuentran estancadas en fases piloto, incapaces de escalar hacia un impacto real en el negocio (EBIT).
 
-Esta guía es para el **Director de Estrategia**. Aquí dejamos de mirar los servidores y miramos el mercado, definiendo cómo cruzar la "Brecha GenAI" para convertir la capacidad técnica en **Foso Competitivo**.
+Esta guía es el manual para el **Director de Estrategia**. Nuestro trabajo ya no es gestionar la tecnología, sino apalancarla para cruzar esa brecha.
+
+La eficiencia (hacer lo mismo más barato) es una trampa gravitacional. El verdadero valor de la IA no está en reducir costos marginales, sino en habilitar productos que antes eran económicamente imposibles, convirtiendo la capacidad técnica en un **Foso Competitivo**.
 
 ---
 

@@ -1,12 +1,10 @@
-## Bloque 5: La Expansión (Cómo proyectamos)
-
 ### Guía 17: Perspectivas y Futuro de la IA
 
 Subtítulo: De "Arquitecto de la Fábrica" a "Vigilante Estratégico"
 
 #### Introducción: Anticipando las Próximas Revoluciones
 
-Hemos llegado al final de nuestro mapa. Construimos los cimientos (Bloque 1), ensamblamos la maquinaria (Bloque 2), tomamos la sala de control (Bloque 3\) y definimos el impacto y la estrategia de nuestra fábrica (Bloque 4). Con la Guía 13 (Estrategia y Valor), le dimos un propósito claro a nuestra operación.
+Hemos llegado al final de nuestro mapa. Construimos los cimientos, ensamblamos la maquinaria, tomamos la sala de control y definimos la estrategia. En la guía anterior (Guía 16), reentrenamos al operador humano para sobrevivir en este nuevo entorno.
 
 Este epílogo es el "telescopio" de la fábrica. Su propósito es abordar la única certeza de esta industria: esta fábrica (basada en LLMs y Transformers) es solo la primera de muchas. Se volverá obsoleta.
 

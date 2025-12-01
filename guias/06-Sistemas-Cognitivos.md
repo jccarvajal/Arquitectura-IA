@@ -4,11 +4,15 @@ Subtítulo: El Plano de la Mente: De 'Trabajadores' Reactivos a 'Equipos' Cognit
 
 #### Introducción: La Mente detrás de la Herramienta
 
-Darle herramientas a un agente sin enseñarle a pensar es imprudente. Un agente autónomo sin una arquitectura cognitiva clara es solo un script glorificado disparando acciones al azar.
+Darle herramientas a un agente sin enseñarle a pensar es imprudente.
 
-La "Brecha de Aprendizaje" a menudo no es falta de conocimiento, sino falta de **proceso**. El modelo sabe *qué* es una factura, pero no sabe *cómo* razonar sobre una discrepancia contable.
+En la **Guía 05**, construimos el **Cuerpo**: le dimos al agente "manos" (Herramientas) para tocar el mundo digital y "piernas" (Ciclo ReAct) para moverse. Pero un cuerpo sin mente es peligroso; es solo un script glorificado disparando acciones al azar, gastando presupuesto y cometiendo errores a velocidad de máquina.
 
-En esta guía, dejamos de diseñar al "trabajador" (el agente) para diseñar al "equipo pensante". Pasamos de la ejecución ciega a la **Ingeniería de la Cognición**, instalando patrones de razonamiento (como *Chain-of-Thought*) que actúan como el manual de procedimientos del cerebro sintético.
+Esta guía trata sobre el **Cerebro**.
+
+La "Brecha de Aprendizaje" a menudo no es falta de conocimiento, sino falta de **estrategia**. El modelo sabe *qué* es una factura, pero no sabe *cómo* razonar sobre una discrepancia contable compleja sin un plan.
+
+Aquí dejamos de diseñar la ejecución para diseñar la **Ingeniería de la Cognición**. Instalaremos patrones de razonamiento (como *Chain-of-Thought* y *Tree of Thoughts*) que actúan como el "manual de procedimientos" del cerebro sintético, transformando a un trabajador reactivo en un estratega deliberado.
 
 ---
 

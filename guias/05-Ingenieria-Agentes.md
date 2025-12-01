@@ -212,11 +212,11 @@ Copias ese prompt generado y lo pegas en un chat nuevo. El Agente Ejecutor, al r
 
 **Aplicación Práctica:** Podemos diseñar chats pre-cargados (agentes) para tareas específicas: un "Agente-Traductor-Legal" (cargado con glosarios legales) o un "Agente-Revisor-de-Estilo" (cargado con la guía de marca de la empresa).
 
-> 💡 **Nota de Diseño: Delimitadores Sintácticos**
+> 💡 **Patrón de Ingeniería: Encapsulamiento de Contexto**
 >
-> **Recomendamos el uso estricto de Delimitadores Sintácticos.** Si bien la sintaxis exacta puede variar según el proveedor (XML para modelos como Claude/Gemini, o Markdown/JSON para GPT), el principio arquitectónico es universal: **encapsular los datos e instrucciones en contenedores**.
+> La ambigüedad sintáctica es la causa raíz de la inyección de prompts. **La norma es el encapsulamiento estricto.**
 >
-> El uso de etiquetas como `<restricciones>` o `[INICIO]` ayuda al modelo a diferenciar claramente entre "órdenes a obedecer" y "datos a procesar", previniendo la inyección de prompts y mejorando la obediencia del agente.
+> Independientemente del modelo (XML para Claude, Markdown para GPT), trate las instrucciones y los datos como tipos de objetos distintos. No mezcle texto plano; use contenedores explícitos (ej. `<data>...</data>` o bloques `---`) para que el modelo pueda distinguir estructuralmente entre una orden de control y el contenido a procesar.
 
 ---
 
