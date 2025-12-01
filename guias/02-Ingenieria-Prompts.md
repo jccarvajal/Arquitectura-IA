@@ -74,7 +74,7 @@ Antes de escribir, define con precisión qué resultado necesitas y cómo medir�
       Debe mencionar obligatoriamente las palabras clave: 'sostenibilidad', 'logística' y 'optimización'.
       ```
 
-**Paso 2: Asigna un Rol y Contexto**  
+**Paso 2: Asigna un Rol (Role Play) y Contexto**  
 Dale al LLM una "personalidad" o un rol de experto. Esto acota su conocimiento y define el tono, estilo y perspectiva de la respuesta.
 
 * **Ejemplo Sin Rol:**
@@ -114,16 +114,36 @@ Aquí es donde defines el "cómo". Sé explícito sobre el formato, la estructur
 >
 > *Nota del Arquitecto: Si su prompt tiene estos 4 componentes definidos explícitamente, ha reducido la probabilidad de error (alucinación o formato incorrecto) en un 80%.*
 
-**Paso 4: Usa Ejemplos y Referencias (Few-Shot Prompting)**  
-Si tienes un formato o estilo muy específico en mente, muéstrale al modelo un ejemplo. Los LLM son excelentes para reconocer y replicar patrones.
+**Paso 4: Usa Ejemplos y Referencias (La Estrategia "Few-Shot")**
+Si tienes un formato o estilo muy específico en mente, no lo describas; muéstralo. En ingeniería, distinguimos tres niveles de control según la cantidad de ejemplos (o "disparos/shots") que le damos al modelo:
 
-* **Ejemplo 1:**
+* **Zero-Shot (0 Ejemplos):** Le pides al modelo que actúe "en frío".
+    * *Uso:* Tareas generales, creativas o de conocimiento común.
+    * *Riesgo:* Mayor variabilidad y alucinación. Confías 100% en el entrenamiento del modelo.
+* **Ejemplo de Zero-Shot:**
+  ```text
+  Actúa como un historiador literario especializado en el Siglo de Oro español. Redacta una respuesta de 150 palabras explicando quién escribió 'Don Quijote'.
+  ```
+
+* **One-Shot (1 Ejemplo):** Le das un caso ideal para anclar el formato.
+    * *Uso:* Cuando necesitas una estructura específica (ej. un JSON).
+    * *Ventaja:* **Anclaje Rápido.** Asegura el formato deseado inmediatamente con un costo de tokens mínimo, evitando la ambigüedad del Zero-Shot.
+* **Ejemplo de One-Shot:**
   ```text
   Quiero crear resúmenes de libros con este estilo: 'Libro: El Principito. Idea Clave: Lo esencial es invisible a los ojos; las relaciones y el amor son más importantes que las apariencias.' Ahora, genera un resumen con el mismo estilo para el libro 'Cien años de soledad'.
   ```
-* **Ejemplo 2:**
+
+* **Few-Shot (3+ Ejemplos):** La técnica reina de la fiabilidad. Le das múltiples casos de "Input -> Output Ideal".
+    * *Uso:* Tareas complejas de clasificación o tono de marca.
+    * *Ventaja:* Reduce drásticamente las alucinaciones sin necesidad de re-entrenar el modelo.
+* **Ejemplo de Few-Shot:**
   ```text
-  Quiero respuestas en el estilo 'Pregunta-Respuesta Invertida'. Ejemplo: 'Fue la penicilina el descubrimiento que revolucionó la medicina moderna. ¿Cuál fue el descubrimiento de Alexander Fleming?' Ahora, usa ese estilo para el concepto de la relatividad de Einstein.
+  Quiero clasificar la urgencia de correos. Aprende de estos ejemplos:
+  1. "El servidor se cayó" -> ALTA
+  2. "¿Podemos reunirnos mañana?" -> MEDIA
+  3. "Gracias por la info" -> BAJA
+  
+  Ahora clasifica este: "El sistema está lento." ->
   ```
 
 **Paso 5: Incorpora Técnicas Avanzadas (Estratégicamente)**  

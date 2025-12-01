@@ -188,11 +188,6 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** Una práctica preventiva de gobernanza que analiza los posibles riesgos, sesgos y daños de un sistema de IA antes de su implementación.
 * **Referencia Principal:** Guía 09 (Gobernanza), Anexo A (Formulación).
 
-**Explicabilidad (Explainability)**
-
-* **Definición:** La capacidad de un sistema de IA para permitir que un humano comprenda *por qué* y *cómo* llegó a una decisión o resultado específico. En el contexto de adquisiciones públicas (Directiva 44), es un requisito contractual para evitar el riesgo de "Caja Negra" en decisiones administrativas.
-* **Referencia Principal:** Guía 09 (Gobernanza), Guía 14 (Modelos).
-
 **Foso Competitivo (Moat)**
 
 * **Definición:** La ventaja estratégica defendible que una empresa construye con IA. Reside en los datos propietarios (para RAG), los datos de juicio humano (para Ajuste Fino) y la eficiencia de la Gobernanza, no en el modelo LLM.
@@ -642,6 +637,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** Red interconectada de agentes autónomos que pueden colaborar y negociar tareas entre sí a través de internet.
 * **Referencia Principal:** Guía 17 (Perspectivas).
+
+**XAI (Explainable AI / IA Explicable)**
+
+* **Definición:** Conjunto de técnicas que buscan que los resultados de la IA sean comprensibles para humanos. En esta obra, priorizamos la *Explicabilidad Funcional* (ver el razonamiento a través de *Chain of Thought*) por sobre la *Interpretabilidad Mecanística* (entender los pesos matemáticos), ya que es la única viable para Arquitectos que operan modelos vía API.
+* **Referencia Principal:** Guía 09 (Gobernanza), Guía 14 (Modelos).
 
 **Zero-Shot / Few-Shot Prompting**
 
