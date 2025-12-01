@@ -103,6 +103,7 @@ Basado en la evidencia de este Canvas, el proyecto se califica como:
 * [ ] **NO VIABLE (RECHAZADO):** El riesgo supera al valor o existe una alternativa No-IA mejor. -> *Fin del proceso.*
 
 **Firma del Responsable:** ___________________________
+
 **Fecha del Dictamen:** ___________________________
 
 ---
