@@ -1,118 +1,109 @@
-## Anexo A: Formulación y Evaluación de Proyectos de IA
+## Anexo A: Formulación y Viabilidad de Proyectos
 
-Subtítulo: El Canvas de Viabilidad: De la Idea al Proyecto
+Subtítulo: Estructura base para Casos de Seguridad (Safety Cases)
 
 ### Introducción: El Primer Filtro de Gobernanza
 
-Antes de prototipar, debemos validar. Este anexo es la herramienta de **"Screening" (Triage)** mencionada en la **Guía 09 (Gobernanza)**.
+Antes de prototipar, debemos validar. Este documento es la herramienta de **"Screening" (Triage)** mencionada en la **Guía 09 (Gobernanza)**.
 
-Su propósito es evitar el "solucionismo tecnológico" (usar IA para problemas que no lo requieren) y asegurar que solo los proyectos que son **técnicamente viables**, **estratégicamente valiosos** y **éticamente robustos** pasen a la fase de desarrollo.
+Su propósito es evitar el "solucionismo tecnológico" y asegurar que solo los proyectos que son **técnicamente viables** (datos enlazables), **estratégicamente valiosos** (transforman una actividad real) y **éticamente robustos** pasen a desarrollo.
 
-Este documento debe ser completado por el "Dueño del Proyecto" y visado por el "Comité de Gobernanza" antes de escribir la primera línea de código.
-
-> **Nota Técnica:** Este Canvas actúa como una versión ágil de un **"Caso de Seguridad" (Safety Case)**. La industria y los reguladores internacionales están adoptando los *Safety Cases* (inspirados en la ingeniería aeronáutica y nuclear) como el estándar de oro para justificar que un sistema es seguro antes de su despliegue. Al completar este documento, usted está construyendo la evidencia estructurada necesaria para una auditoría de seguridad.
-
-> **Instrucción de Uso:** Este documento no es un trámite. Es un mecanismo de defensa. Si al completarlo descubres que el proyecto no es viable, has ahorrado tiempo y presupuesto. **Descartar una mala idea aquí es un éxito.**
+> **Nota Técnica:** Al completar este documento, estás construyendo la evidencia estructurada (Safety Case) requerida para futuras auditorías de seguridad. Si descubres aquí que el proyecto no es viable, **descartarlo es un éxito**.
 
 ---
 
-### Sección 1: Definición Estratégica (El "Por Qué")
+### Sección 1: Definición Estratégica (La Transformación)
 
-> **Contexto para el Arquitecto:**
->
-> El error N°1 es empezar por la solución ("Queremos un chatbot") en lugar del problema. Aquí aplicamos el principio de **Proporcionalidad**. La IA es costosa y probabilística (a veces falla). Si el problema se puede resolver con software tradicional (determinista y barato), **no uses IA**.
-> * **Referencia:** Guía 13 (Eficiencia vs. Innovación).
+> **Contexto:** No basta con tener un "dolor". Debemos identificar qué *actividad humana* específica va a cambiar. Si no puedes describir el "Antes" y el "Después" operativo, no tienes un proyecto, tienes solo una idea.
 
 **1. El Dolor del Negocio:**
+¿Qué problema raíz estamos resolviendo? Describa la carencia y su costo actual, no la solución.
+* **Respuesta:** `[Describe el problema raíz y su impacto económico/operativo]`
 
-¿Qué problema específico estamos tratando de resolver? Describa el impacto negativo actual. No describa la solución ("necesito IA"), describa la carencia ("estamos perdiendo 4 horas diarias en clasificar facturas").
-* **Respuesta:** `[Describe el problema raíz y su costo]`
-
-**2. La Alternativa No-IA (El Filtro de Oro):**
-
-¿Se puede resolver esto con reglas simples, una macro de Excel, un formulario web estándar o contratando a un pasante? **Si la respuesta es sí, el proyecto de IA debe descartarse o justificarse con extrema cautela.**
-* **Justificación:** `[Por qué los métodos tradicionales fallan aquí (ej: variabilidad de datos no estructurados)]`
+**2. La Actividad a Transformar (Flujo Antes/Después):**
+Describa la tarea específica tal como se hace HOY y cómo se propone que la haga la IA.
+* **Antes (Manual/Actual):** `[Ej: Un analista descarga 500 contratos y lee uno por uno buscando cláusulas de riesgo. Tarda 40 horas.]`
+* **Después (Con IA):** `[Ej: La IA pre-clasifica los 500 contratos en minutos. El analista solo revisa los 15 marcados como "Alto Riesgo". Tarda 2 horas.]`
 
 **3. Tipo de Valor (Según Guía 13):**
-
-¿Buscamos hacer lo mismo más barato (Eficiencia/S1) o hacer algo nuevo que antes era imposible (Innovación/S2)? Esto define el presupuesto y la tolerancia al riesgo.
+¿Buscamos hacer lo mismo más barato (**Eficiencia/S1**) o hacer algo nuevo que antes era imposible (**Innovación/S2**)?
 * **Selección:** `[ Eficiencia / Innovación ]`
 
 ---
 
-### Sección 2: Viabilidad Técnica (El "Cómo")
+### Sección 2: Viabilidad Técnica de Datos (El Combustible)
 
-> **Contexto para el Arquitecto:**
->
-> Aquí evaluamos si tenemos los "ingredientes" para la fábrica.
-> 1.  **Datos (Guía 04):** La IA es un motor; los datos son el combustible. Sin combustible limpio (datos accesibles y legales), el motor se funde.
-> 2.  **Cognición (Guía 15):** No todas las tareas son iguales. Automatizar el "Sistema 1" (rápido/patrones) es seguro. Automatizar el "Sistema 2" (juicio/moral) es peligroso y requiere supervisión humana estricta.
+> **Contexto:** El 80% de los proyectos fallan aquí. No basta con "tener datos". Necesitamos saber si esos datos pueden "hablar" entre sí (Identificador Único) y si tienen el detalle suficiente (Granularidad).
 
-**1. Disponibilidad de Datos (El Combustible):**
+**1. Disponibilidad y Enlace (El "Killer" del Proyecto):**
+¿Tenemos acceso a los datos? Y crucialmente: **¿Tienen un identificador único (ej: RUT, N° Ticket, SKU) que permita cruzar distintas fuentes?** Sin ID, no hay sistema.
+* **Estado:** `[ No disponible / Silos desconectados (Sin ID) / Enlazable y Limpio ]`
 
-¿Tenemos acceso a los datos necesarios? ¿Están digitalizados? ¿Tenemos el derecho legal de usarlos? (No basta con que existan; deben ser accesibles para la máquina).
-* **Estado:** `[ No disponible / Crudo y sucio / Limpio y Catalogado ]`
+**2. Granularidad y Frecuencia:**
+¿El dato tiene el nivel de detalle necesario para la decisión? (Ej: Si quieres predecir ventas diarias, ¿tienes datos diarios o solo resúmenes mensuales?).
+* **Evaluación:** `[ Granularidad Insuficiente / Granularidad Adecuada ]`
 
-**2. Complejidad Cognitiva (Clasificación de Riesgo S1/S2):**
-
-* **Sistema 1 (Piloto Automático):** Tareas rápidas, repetitivas, basadas en patrones (ej. clasificar emails, extraer datos). -> *Riesgo Bajo/Medio.*
-* **Sistema 2 (Piloto Manual):** Tareas de razonamiento profundo, juicio moral, estratégico o diagnóstico. -> *Riesgo Alto (Requiere Humano-en-el-Bucle estricto).*
-* **Evaluación:** `[ Definir clasificación S1 / S2 ]`
+**3. Complejidad Cognitiva (Riesgo S1/S2):**
+* **Sistema 1 (Piloto Automático):** Tareas rápidas, patrones, clasificación. -> *Riesgo Bajo.*
+* **Sistema 2 (Piloto Manual):** Razonamiento profundo, juicio moral o estratégico. -> *Riesgo Alto (Requiere Humano-en-el-Bucle).*
+* **Clasificación:** `[ Sistema 1 / Sistema 2 ]`
 
 ---
 
-### Sección 3: Checklist de Validación Ética y de Impacto (El "Deberíamos")
+### Sección 3: Checklist de Validación Ética (El "Safety Case")
 
-> **Contexto para el Arquitecto:**
->
-> Este es el núcleo de **GRC (Gobernanza, Riesgo y Cumplimiento)**. No basta con que sea técnicamente posible; debemos asegurar la **Licencia Social**. Si el proyecto se filtrara a la prensa mañana, ¿la explicación sería vergonzosa? Si la respuesta es sí, falta un control ético.
+> **Contexto:** Este es el núcleo de **GRC**. Validamos la **Proporcionalidad** y la **Licencia Social**.
 
 | Dimensión | Pregunta de Validación ("Go / No-Go") | Referencia | Estado |
 | :--- | :--- | :--- | :--- |
-| **1. Proporcionalidad** | ¿El valor justifica riesgos y costos? ¿Es la IA el medio proporcional o es "matar moscas a cañonazos"? | **Guía 12** (ROI) | `[ ]` |
-| **2. Licencia Social** | ¿Aprobarían los afectados (empleados/ciudadanos) este uso si se hiciera público? ¿El sistema se identifica como IA (evita el engaño)? | **Guía 15** | `[ ]` |
-| **3. Protección de Datos** | ¿Hay datos sensibles? Si es así, ¿tenemos la arquitectura segura (LOSA) y la base legal para procesarlos? | **Guía 09** | `[ ]` |
+| **1. Proporcionalidad** | ¿Es la IA el medio adecuado? *¿Existe una alternativa No-IA (Excel, Regla simple) más barata y efectiva?* | **Guía 12** | `[ ]` |
+| **2. Licencia Social** | ¿Aprobarían los afectados (ciudadanos/empleados) este uso si apareciera en la prensa mañana? | **Guía 15** | `[ ]` |
+| **3. Protección de Datos** | ¿Hay datos personales? Si es así, ¿tenemos base legal para tratarlos y arquitectura segura (LOSA)? | **Guía 09** | `[ ]` |
 | **4. Transparencia** | ¿Es explicable la decisión? ¿Podemos trazar *por qué* actuó así (logs de razonamiento) ante una auditoría? | **Guía 09** | `[ ]` |
-| **5. Discriminación** | ¿Están los datos de origen libres de sesgos históricos? ¿Se ha evaluado el impacto en grupos vulnerables? | **Guía 04** | `[ ]` |
-| **6. Responsabilidad** | ¿Existe un "Dueño del Sistema" humano designado? ¿Está definido quién paga los platos rotos si la IA falla? | **Anexo B** | `[ ]` |
+| **5. Sesgos** | ¿Los datos históricos ("Antes") contienen prejuicios que la IA podría aprender y amplificar? | **Guía 04** | `[ ]` |
+| **6. Responsabilidad** | ¿Existe un "Dueño del Sistema" humano designado que asuma la responsabilidad final del resultado? | **Anexo B** | `[ ]` |
 
 ---
 
-### Sección 4: Definición de Éxito (El "Cuánto")
+### Sección 4: Definición de Éxito (El "Golden Set")
 
-> **Contexto para el Arquitecto:**
->
-> Si no puedes medirlo, no puedes gobernarlo. Evita métricas vanidosas ("que el chat se sienta fluido"). Necesitamos métricas de ingeniería (**Guía 10**). Debes definir el **"Golden Set"** (la prueba de la verdad) contra la cual se comparará al agente.
+> **Contexto:** Si no puedes medirlo, no puedes gobernarlo. Define contra qué vamos a comparar.
 
 **1. Métrica de Calidad (El "Golden Set"):**
-
-¿Contra qué vamos a comparar a la IA? Defina el umbral de aceptación. (Ej: "El agente debe igualar el 90% de precisión de nuestros auditores senior en una muestra de control de 100 casos").
+¿Contra qué estándar de verdad compararemos a la IA? (Ej: "Debe coincidir con la clasificación del auditor senior en el 90% de los casos").
 * **KPI Objetivo:** `[Definir métrica objetiva y umbral]`
 
 **2. Estimación de Costo (Tokenomics):**
-
-¿Cuál es el costo estimado de operación mensual? (Considerando el costo por token de entrada/salida y volumen de transacciones). Evita el "Bucle de Costos" (**Guía 09**).
-* **Estimación:** `[$ / mes]`
+¿Cuál es el costo estimado de operación mensual vs. el ahorro proyectado?
+* **Estimación:** `[$ Costo vs. $ Ahorro]`
 
 ---
 
 ### Sección 5: Ciclo de Vida y Salida (El "Final")
 
-> **Contexto para el Arquitecto:**
->
-> Todo sistema de software se convierte eventualmente en deuda técnica. La responsabilidad final de GRC es saber cómo apagar el sistema antes de encenderlo (el **Plan de Retiro** o Decommissioning). No crees "Agentes Zombis" que sigan operando cuando ya no son necesarios.
+> **Contexto:** Todo sistema de software se convierte eventualmente en deuda técnica. La responsabilidad final de GRC es saber cómo apagar el sistema *antes* de encenderlo. Debemos evitar crear "Agentes Zombis" (que operan sin propósito) y prevenir la "Atrofia Cognitiva" (que el equipo humano olvide cómo hacer el trabajo).
 
 **1. Plan de Retiro (Decommissioning):**
-
-Cuando este proyecto termine o la tecnología quede obsoleta:
-* ¿Cómo se eliminarán los datos vectorizados de la base de conocimiento (RAG)?
-* ¿Cómo se revocan los permisos del agente?
-* **Plan:** `[Definir protocolo de borrado seguro y apagado]`
+¿Cómo se apaga el sistema y se borran los datos vectorizados (RAG) cuando el proyecto termine?
+* **Plan:** `[Protocolo de borrado seguro]`
 
 **2. Resiliencia (Deuda Cognitiva):**
+Si el sistema falla, ¿mantenemos la capacidad humana de operar manualmente (Actividad "Antes")?
+* **Mitigación:** `[Ej: Simulacro manual trimestral]`
 
-Si la IA falla catastróficamente o el servicio se cae, ¿el equipo humano mantiene la capacidad ("músculo cognitivo") de operar manualmente?
-* **Mitigación:** `[Ej: Simulacro manual trimestral / Documentación de proceso manual]`
+---
+
+### Dictamen Final (Triage)
+
+**Decisión del Comité de Gobernanza / Sponsor:**
+Basado en la evidencia de este Canvas, el proyecto se califica como:
+
+* [ ] **VIABLE (APROBADO):** El valor es claro, los riesgos están mitigados y los datos están listos. -> *Pasa a Prototipado (Guía 08).*
+* [ ] **CONDICIONAL:** Requiere resolver la brecha de datos o ética antes de avanzar. -> *Volver a Formulación.*
+* [ ] **NO VIABLE (RECHAZADO):** El riesgo supera al valor o existe una alternativa No-IA mejor. -> *Fin del proceso.*
+
+**Firma del Responsable:** ___________________________
+**Fecha del Dictamen:** ___________________________
 
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
