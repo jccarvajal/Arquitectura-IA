@@ -127,7 +127,7 @@ Si tienes un formato o estilo muy específico en mente, no lo describas; muéstr
 
 * **One-Shot (1 Ejemplo):** Le das un caso ideal para anclar el formato.
     * *Uso:* Cuando necesitas una estructura específica (ej. un JSON).
-    * *Ventaja:* **Anclaje Rápido.** Asegura el formato deseado inmediatamente con un costo de tokens mínimo, evitando la ambigüedad del Zero-Shot.
+    * *Ventaja:* *Anclaje Rápido*. Asegura el formato deseado inmediatamente con un costo de tokens mínimo, evitando la ambigüedad del Zero-Shot.
     * *Ejemplo de One-Shot:*
       ```text
       Quiero crear resúmenes de libros con este estilo: 'Libro: El Principito. Idea Clave: Lo esencial es invisible a los ojos; las relaciones y el amor son más importantes que las apariencias.' Ahora, genera un resumen con el mismo estilo para el libro 'Cien años de soledad'.
