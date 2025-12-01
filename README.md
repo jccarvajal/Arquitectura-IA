@@ -111,7 +111,7 @@ El cierre del ciclo estratégico.
 #### 📋 Estrategia y Gobernanza
 Herramientas para el "Día 0": Definición y Permisos.
 
-* [Anexo A: Formulación de Proyectos](./anexos/A-Formulacion-Evaluacion.md)
+* [Anexo A: Formulación de Proyectos](./anexos/A-Formulacion-Viabilidad.md)
   *Canvas de viabilidad técnica, ética y financiera ("Screening").*
 * [Anexo B: Política Institucional](./anexos/B-Politica-Institucional.md)
   *Marco regulatorio base para el uso responsable de IA.*
