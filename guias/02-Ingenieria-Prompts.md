@@ -131,7 +131,7 @@ Si tienes un formato o estilo muy específico en mente, no lo describas; muéstr
     * *Ejemplo de One-Shot:*
       ```text
       Quiero crear resúmenes de libros con este estilo: 'Libro: El Principito. Idea Clave: Lo esencial es invisible a los ojos; las relaciones y el amor son más importantes que las apariencias.' Ahora, genera un resumen con el mismo estilo para el libro 'Cien años de soledad'.
-       ```
+      ```
 
 * **Few-Shot (3+ Ejemplos):** La técnica reina de la fiabilidad. Le das múltiples casos de "Input -> Output Ideal".
     * *Uso:* Tareas complejas de clasificación o tono de marca.
