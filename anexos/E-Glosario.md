@@ -188,6 +188,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** Una práctica preventiva de gobernanza que analiza los posibles riesgos, sesgos y daños de un sistema de IA antes de su implementación.
 * **Referencia Principal:** Guía 09 (Gobernanza), Anexo A (Formulación).
 
+**Explicabilidad (Explainability)**
+
+* **Definición:** La capacidad de un sistema de IA para permitir que un humano comprenda *por qué* y *cómo* llegó a una decisión o resultado específico. En el contexto de adquisiciones públicas (Directiva 44), es un requisito contractual para evitar el riesgo de "Caja Negra" en decisiones administrativas.
+* **Referencia Principal:** Guía 09 (Gobernanza), Guía 14 (Modelos).
+
 **Foso Competitivo (Moat)**
 
 * **Definición:** La ventaja estratégica defendible que una empresa construye con IA. Reside en los datos propietarios (para RAG), los datos de juicio humano (para Ajuste Fino) y la eficiencia de la Gobernanza, no en el modelo LLM.
@@ -343,6 +348,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** (Aprendizaje Automático). Un subconjunto de la IA donde las máquinas no se programan con reglas explícitas, sino que "aprenden" patrones y reglas a partir de datos estadísticos para realizar predicciones.
 * **Referencia Principal:** Guía 01 (Anatomía de Modelos).
 
+**Madurez de Datos (Data Maturity)**
+
+* **Definición:** Medida de la capacidad de una organización para utilizar sus datos de manera efectiva. Se evalúa en dimensiones como accesibilidad, integración, calidad y privacidad. Un bajo nivel de madurez impide el despliegue seguro de agentes de IA.
+* **Referencia Principal:** Guía 04 (Estrategia de Datos).
+
 **Memoria (vs. RAG)**
 
 * **Definición:** Distinción arquitectónica clave. **RAG** es el "bibliotecario" (hechos externos estáticos), la **Memoria** es el "asistente personal" (contexto del usuario dinámico).
@@ -407,6 +417,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** Habilidad humana de descomponer un problema complejo en una secuencia de pasos lógicos para un Co-Piloto de IA.
 * **Referencia Principal:** Guía 16 (Aprender a Pensar).
+
+**Perfilamiento (Profiling)**
+
+* **Definición:** Tratamiento automatizado de datos personales consistente en utilizar dichos datos para evaluar, analizar o predecir aspectos relativos al rendimiento profesional, situación económica, salud, preferencias personales, fiabilidad, comportamiento, ubicación o movimientos de una persona natural.
+* **Referencia Principal:** Guía 15 (Ética), Anexo B (Política).
 
 **Personalización (dentro del Framework PPP)**
 
@@ -473,6 +488,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** Proceso rápido para validar una hipótesis de IA. Su objetivo es "matar malas ideas rápidamente".
 * **Referencia Principal:** Guía 08 (Prototipado).
 
+**Pseudonimización (Pseudonymization)**
+
+* **Definición:** Técnica de seguridad de datos (distinta de la anonimización) que sustituye un atributo identificador (ej. nombre) por un seudónimo o código, de manera que los datos no pueden atribuirse a un titular sin información adicional que figura por separado. Es un estándar recomendado para datos en sistemas RAG.
+* **Referencia Principal:** Guía 04 (Estrategia de Datos), Guía 09 (Gobernanza).
+
 **Quick Win (Victoria Rápida)**
 
 * **Definición:** Caso de uso piloto que busca el **Máximo Valor** con el **Mínimo Riesgo**.
@@ -518,6 +538,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** Plantilla de calificación usada para medir objetivamente la calidad de la respuesta de un agente.
 * **Referencia Principal:** Guía 10 (Evaluación y QA), Anexo D (Plantillas).
 
+**SDA (Sistema de Decisión Automatizada)**
+
+* **Definición:** Término normativo (CPLT/Ley 21.180) que engloba cualquier sistema tecnológico (incluyendo IA, pero también reglas simples o Excel complejos) que ayude, asista, apoye o reemplace la toma de decisiones de un órgano administrativo. Es la unidad de medida para la Transparencia Algorítmica.
+* **Referencia Principal:** Guía 09 (Gobernanza), Anexo B (Política).
+
 **Sesión (de Agente)**
 
 * **Definición:** El "mesón de trabajo" temporal del agente. Contenedor cronológico de una conversación.
@@ -548,6 +573,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** Metáfora para describir la resistencia natural de una organización al cambio. Se manifiesta cuando mandos medios sabotean iniciativas de innovación (como la IA) para proteger su estatus, presupuesto o headcount existente.
 * **Referencia Principal:** Guía 15 (Ética y Confianza).
 
+**SLA (Service Level Agreement)**
+
+* **Definición:** Acuerdo de Nivel de Servicio. Cláusula contractual crítica en la adquisición de tecnología que define métricas objetivas de calidad, tiempos de respuesta (ej. "Primera respuesta en 2 horas") y penalizaciones por incumplimiento.
+* **Referencia Principal:** Guía 14 (Modelos), Guía 11 (Industrialización).
+
 **System Card (Ficha de Seguridad)**
 
 * **Definición:** Documento de seguridad que reporta los resultados de la Fase 2 (Post-Entrenamiento). Detalla las pruebas de *Red Teaming*, las tasas de rechazo y los protocolos de alineación utilizados para hacer seguro al modelo. Es esencial para evaluar el cumplimiento normativo.
@@ -567,6 +597,16 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** Arquitectura fundamental de la IA generativa actual. Limitada por el Costo Cuadrático y la Amnesia Estática.
 * **Referencia Principal:** Guía 01 (Anatomía de Modelos), Guía 03 (Contexto).
+
+**Transparencia Algorítmica**
+
+* **Definición:** Estándar de publicidad activa que permite conocer la existencia, lógica, finalidad y tipos de datos de un sistema SDA. Busca prevenir la opacidad y la arbitrariedad sin necesariamente revelar el código fuente o secretos comerciales.
+* **Referencia Principal:** Guía 09 (Gobernanza).
+
+**Transparencia Proactiva**
+
+* **Definición:** Principio y obligación de publicar información relevante para la ciudadanía en los sitios web institucionales *antes* de que sea solicitada, superando los mínimos legales de la Transparencia Activa tradicional. En IA, implica publicar el inventario de algoritmos (SDA).
+* **Referencia Principal:** Guía 09 (Gobernanza).
 
 **Tree of Thoughts (ToT)**
 

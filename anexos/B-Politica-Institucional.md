@@ -165,14 +165,19 @@ Su vigencia comienza desde la fecha de aprobación formal.
 
 ---
 
-### Guía de Adaptación para el Sector Privado
+### Guía de Adaptación: Contexto Internacional y Sector Privado
 
-Para adopción en empresas privadas, se recomienda:
+**Nota para el Arquitecto Global:** Esta política utiliza como **benchmark** (punto de referencia) el estándar del Consejo para la Transparencia (CPLT) de Chile, reconocido por su rigor en transparencia algorítmica. Si opera en otra jurisdicción (Latam, España, Global), utilice estos principios como referencia de "Estado del Arte", reemplazando las citas legales por sus equivalentes locales (ej. GDPR en Europa, LGPD en Brasil, Ley 1581 en Colombia).
 
-* reemplazar “interés público” por “valor de negocio / confianza del cliente”,
-* ajustar la legalidad a marcos corporativos, PI y protección del consumidor,
-* reemplazar “probidad administrativa” por responsabilidad laboral contractual,
-* mantener idénticos los principios de transparencia, seguridad y trazabilidad.
+**Adaptación de Conceptos:**
+Si esta política se implementa en una empresa privada o en una jurisdicción distinta, reemplace los conceptos de la siguiente manera para mantener el espíritu del estándar sin la rigidez administrativa local:
+
+* **"Interés Público"** → se lee como **"Confianza del Cliente y Reputación de Marca"**.
+* **"Probidad Administrativa"** → se lee como **"Ética Corporativa y Cumplimiento ESG"**.
+* **"Transparencia Activa"** → se lee como **"Divulgación Responsable (Responsible Disclosure)"**.
+* **"Sujeto Obligado"** → se lee como **"Responsable del Tratamiento de Datos"**.
+
+*Nota Final:* Aunque normas específicas como la Ley 20.285 (Chile) son locales, la tendencia regulatoria hacia la **Protección de Datos** y la **Explicabilidad de la IA** es universal. Adoptar este estándar hoy adelanta el cumplimiento regulatorio de mañana en cualquier mercado.
 
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">

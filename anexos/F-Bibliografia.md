@@ -80,9 +80,9 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
   * **Por qué leerlo:** Estudio que fundamenta el marco de gobernanza de calidad para agentes en la **Guía 09**, proponiendo el equilibrio entre **Productividad**, **Proactividad** y **Personalización**.
 * **Zou, A., et al. (2023). "Universal and Transferable Adversarial Attacks on Aligned Language Models". arXiv.** [[PDF]](https://arxiv.org/abs/2307.15043)
   * **Por qué leerlo:** El estudio que demostró que *cualquier* modelo (incluso los más seguros) puede ser "hackeado" mediante sufijos adversarios universales. Es la prueba científica definitiva de que la seguridad no puede delegarse al modelo, justificando la necesidad de una capa externa (**LOSA**) en la **Guía 09**.
-* **Consejo para la Transparencia (CPLT). (Enero 2025). "Guía para la adopción de las Recomendaciones sobre Transparencia Algorítmica".** [[PDF]](https://www.consejotransparencia.cl/wp-content/uploads/page/2024/05/GUIA-Transparencia-Algoritmica-junio-2025.pdf)
-  * **Por qué leerlo:** Establece el estándar de referencia para la "Transparencia Proactiva". Define qué es un Sistema de Decisión Automatizada (SDA) y cómo publicar su inventario, lógica y casos de uso sin vulnerar la seguridad.
-  
+* **Consejo para la Transparencia (CPLT). (Junio 2025). "Guía para la adopción de las Recomendaciones sobre Transparencia Algorítmica".** [[PDF]](https://www.consejotransparencia.cl/wp-content/uploads/page/2024/05/GUIA-Transparencia-Algoritmica-junio-2025.pdf)
+  * **Por qué leerlo:** Define la taxonomía técnica de publicación de algoritmos. **Para el Sector Público:** Es el manual de cumplimiento obligatorio. **Para el Sector Privado:** Es el mejor *benchmark* disponible para estructurar políticas de transparencia corporativa y ESG.
+
 ---
 
 ### Sobre el Bloque 4: El Impacto

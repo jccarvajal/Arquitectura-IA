@@ -33,17 +33,19 @@ El mayor error operativo es tratar a la IA como un "mago" (un oráculo infalible
 2. **"Cero Confianza en Respuestas 'Crudas'":** Ninguna salida de un LLM que tenga implicaciones legales, médicas, financieras, de código o de reputación, debe usarse "en crudo", esto es, copiar y pegar.  
 3. **"La Habilidad Clave es la Validación":** La nueva habilidad de alto valor no es la generación de contenido, es la validación y curación de ese contenido. El "Estado del Arte" del humano es el juicio crítico.
 
-##### Estudio de Caso Normativo: El Estándar de Transparencia (Benchmark Chileno)
+#### El Estándar de Transparencia: Obligación Pública, Oportunidad Privada
 
-Aunque la regulación varía por país, es útil observar los estándares más exigentes para diseñar nuestra gobernanza. Un ejemplo de vanguardia es el estándar de **Transparencia Algorítmica** establecido por el Consejo para la Transparencia (CPLT) de Chile en 2025.
+El Consejo para la Transparencia (CPLT) de Chile ha publicado la *Guía de Adopción de Transparencia Algorítmica (2025)*. La aplicación de este estándar varía según tu sector:
 
-Este marco exige "Transparencia Proactiva" sobre tres dimensiones que cualquier organización, pública o privada, debería considerar como buena práctica global:
+* **Sector Público (Mandatorio):** Si eres un "Sujeto Obligado" (Ministerio, Municipio, Servicio), esta transparencia es un deber. Debes publicar el inventario de tus sistemas (SDA) en el sitio de Transparencia Activa.
+* **Sector Privado (Estratégico):** No estás obligado por ley, pero adoptar este estándar voluntariamente es la vía más rápida para ganar la **Licencia Social**. Diferénciate de la competencia publicando una versión simplificada de estas fichas para generar confianza en tus clientes.
 
-1.  **Inventario Público:** Listar qué sistemas de decisión automatizada (SDA) se están utilizando.
-2.  **Casos de Uso:** Explicar en qué trámites o servicios impactan al usuario.
-3.  **Lógica General:** Describir cómo funciona el sistema (objetivo y categorías de datos) sin revelar secretos comerciales ni vulnerar la ciberseguridad.
+**La Taxonomía del CPLT (Modelo de Referencia):**
+Para cumplir (o liderar), estructura la información de tus agentes en tres niveles:
 
-> **Nota para el Arquitecto Global:** Incluso si su jurisdicción no lo exige aún, adoptar este estándar de transparencia proactiva es la mejor vacuna contra la pérdida de confianza y la "Licencia Social" (Guía 15).
+1.  **Inventario:** ¿Qué sistemas existen? (Nombre, versión, proveedor).
+2.  **Uso:** ¿En qué servicio o producto impactan al usuario?
+3.  **Lógica (Caja Blanca):** Explicación en lenguaje claro de cómo funciona el sistema y qué datos usa, sin revelar secretos comerciales.
 
 ---
 
