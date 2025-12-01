@@ -36,7 +36,7 @@ Describa la tarea específica tal como se hace HOY y cómo se propone que la hag
 > **Contexto:** El 80% de los proyectos fallan aquí. No basta con "tener datos". Necesitamos saber si esos datos pueden "hablar" entre sí (Identificador Único) y si tienen el detalle suficiente (Granularidad).
 
 **1. Disponibilidad y Enlace (El "Killer" del Proyecto):**
-¿Tenemos acceso a los datos? Y crucialmente: **¿Tienen un identificador único (ej: RUT, N° Ticket, SKU) que permita cruzar distintas fuentes?** Sin ID, no hay sistema.
+¿Tenemos acceso a los datos? Y crucialmente: ¿Tienen un identificador único (ej: RUT, N° Ticket, SKU) que permita cruzar distintas fuentes? Sin ID, no hay sistema.
 * **Estado:** `[ No disponible / Silos desconectados (Sin ID) / Enlazable y Limpio ]`
 
 **2. Granularidad y Frecuencia:**
