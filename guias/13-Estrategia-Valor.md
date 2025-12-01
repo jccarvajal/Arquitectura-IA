@@ -1,4 +1,4 @@
-## Bloque 4: Impacto y Estrategía (Cómo nos afecta)
+## Bloque 4: Impacto y Estrategia (Cómo nos afecta)
 
 ### Guía 13: Estrategia y Valor en la Era de la IA
 
