@@ -82,7 +82,8 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
   * **Por qué leerlo:** El estudio que demostró que *cualquier* modelo (incluso los más seguros) puede ser "hackeado" mediante sufijos adversarios universales. Es la prueba científica definitiva de que la seguridad no puede delegarse al modelo, justificando la necesidad de una capa externa (**LOSA**) en la **Guía 09**.
 * **Consejo para la Transparencia (CPLT). (Junio 2025). "Guía para la adopción de las Recomendaciones sobre Transparencia Algorítmica".** [[PDF]](https://www.consejotransparencia.cl/wp-content/uploads/page/2024/05/GUIA-Transparencia-Algoritmica-junio-2025.pdf)
   * **Por qué leerlo:** Define la taxonomía técnica de publicación de algoritmos. **Para el Sector Público:** Es el manual de cumplimiento obligatorio. **Para el Sector Privado:** Es el mejor *benchmark* disponible para estructurar políticas de transparencia corporativa y ESG.
-
+* **Shaib, C., et al. (2025). "Learning the Wrong Lessons: Syntactic-Domain Spurious Correlations in Language Models". NeurIPS 2025.** [[PDF]](http://arxiv.org/abs/2509.21155v2)
+  * **Por qué leerlo:** Es un estudio clave que demuestra cómo la **sintaxis** puede anular la **semántica**, creando una nueva vulnerabilidad de seguridad que permite *bypass* (saltarse) las negativas éticas del modelo (*jailbreaks*). Es la prueba científica de que la seguridad no puede delegarse al LLM, justificando la arquitectura **LOSA** y el **Monitoreo de CoT** (Guía 09, 11).
 ---
 
 ### Sobre el Bloque 4: El Impacto
