@@ -12,6 +12,38 @@ Esta guía transforma al "Comprador de Software" en un **"Arquitecto de Portafol
 
 ---
 
+#### Concepto Clave: La Arquitectura de Adquisición (Suscripción vs. API)
+
+Antes de elegir un proveedor, el Arquitecto debe elegir la modalidad de acceso. Existe una confusión habitual en el mercado al no distinguir entre el **Producto de Consumo** (el coche con chofer) y el **Componente de Ingeniería** (el motor).
+
+**1. La Distinción Estructural**
+
+| Criterio | Chatbot (AaaS/Suscripción) | API (Inferencia Pura) |
+| :--- | :--- | :--- |
+| **Ejemplo** | ChatGPT Plus, Claude.ai, Gemini Advanced. | OpenAI API, Anthropic API, Vertex AI. |
+| **Finalidad** | **Aumento Personal.** Herramienta cerrada para potenciar a un humano. | **Automatización Industrial.** Componente para construir sistemas (Agentes). |
+| **Gobernanza** | **Caja Negra.** Sin acceso al *System Prompt*. El proveedor controla los filtros. | **Caja de Cristal.** Control total sobre el *System Prompt* y la capa LOSA. |
+| **Costo** | **Fijo.** (Ej. $20/mes). No escala con el volumen, pero tiene límites de uso. | **Variable.** (Pago por Token). Escala linealmente con la eficiencia del prompt. |
+| **Integración** | **Nula/Baja.** Difícil de conectar con ERPs o bases de datos propias. | **Total.** Es la única vía para conectar Herramientas y RAG. |
+
+**2. Herramienta de Decisión: El Algoritmo de los 3 Filtros**
+
+Para decidir qué contratar, no use la intuición. Aplique este algoritmo secuencial:
+
+* **Filtro 1: Integración (La Pregunta Técnica)**
+    * ¿Necesita que la IA se conecte a otros software (BD, CRM, Excel)?
+    * ¿Necesita inyectar conocimiento propietario masivo (RAG)?
+    * *> Si la respuesta es SÍ a cualquiera, está obligado a usar **API**.*
+
+* **Filtro 2: Usuario (La Pregunta Operativa)**
+    * ¿Es para **Aumento Individual**? (Un analista dialogando para inspirarse). -> **Suscripción**.
+    * ¿Es para **Procesos de Fondo**? (Clasificar 1.000 correos a las 3 AM sin humanos). -> **API**.
+
+* **Filtro 3: Financiero (El Quiebre de Tokenomics)**
+    * Si ambos son viables, decida por volumen. La Suscripción es rentable para uso humano intensivo diario (costo fijo). La API es rentable para tareas esporádicas o de alto volumen automatizado (costo variable optimizable).
+
+---
+
 #### Parte 1: El Pilar Técnico: La Arquitectura Transformer
 
 Antes de analizar el mercado de "motores" (modelos), es crucial entender la arquitectura técnica que define a la generación actual de IA: el **Transformer**.

@@ -48,6 +48,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** Un término conceptual propio de esta obra para describir la limitación fundamental de la arquitectura Transformer. Es la incapacidad estructural del modelo para consolidar nueva información (aprendida de las interacciones) en su memoria a largo plazo (los pesos del modelo) después de que finaliza su entrenamiento.
 * **Referencia Principal:** Guía 03 (Contexto y Memoria), Guía 17 (Perspectivas).
 
+**API (Application Programming Interface)**
+
+* **Definición:** Mecanismo de código que permite que dos sistemas de software se comuniquen. En la arquitectura de IA, es la vía para acceder al modelo de forma programática. A diferencia de un Chatbot (orientado al consumo), la API permite el control total sobre los parámetros de inferencia, la inyección del *System Prompt* y la integración en flujos de trabajo automatizados (Agentes).
+* **Referencia Principal:** Guía 14 (Modelos), Guía 11 (Industrialización).
+
 **Aprendizaje Anidado (Nested Learning)**
 
 * **Definición:** Un paradigma de arquitectura de IA que se perfila como el sucesor del Transformer. Propuesto por Google Research (NeurIPS 2025), abandona las "capas de cómputo" estáticas por "capas de cognición" que operan y se actualizan a múltiples frecuencias (escalas de tiempo).
@@ -102,6 +107,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** Una técnica de *prompting* y un patrón de razonamiento. Consiste en forzar al modelo a explicar su razonamiento "paso a paso" antes de dar la respuesta final, lo que aumenta la precisión en tareas lógicas.
 * **Referencia Principal:** Guía 02 (Ingeniería de Prompts), Guía 06 (Sistemas Cognitivos).
+
+**Chatbot**
+
+* **Definición:** Interfaz de software diseñada para simular una conversación humana. En esta obra, representa el nivel de "Producto de Consumo" (SaaS) con controles de seguridad pre-configurados (filtros) y baja flexibilidad técnica. Se distingue del **Agente** en que el Chatbot solo "conversa" (intercambio de texto), mientras que el Agente "actúa" y ejecuta tareas utilizando herramientas.
+* **Referencia Principal:** Guía 05 (Agentes), Guía 14 (Modelos).
 
 **Circuit Breaker (Interruptor Automático)**
 
