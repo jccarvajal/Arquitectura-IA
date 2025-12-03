@@ -12,6 +12,20 @@ Esta guía transforma al "Comprador de Software" en un **"Arquitecto de Portafol
 
 ---
 
+#### Concepto Clave: El Límite de la Agencia (AaaS vs. API)
+
+La distinción entre el producto de consumo (suscripción) y el componente de ingeniería (API) no es comercial; es **arquitectónica**. Define el límite máximo de **Gobernanza** que puedes imponer sobre el sistema.
+
+| Criterio | Chatbot (AaaS/Producto) | API (Inferencia Pura) |
+| :--- | :--- | :--- |
+| **Finalidad** | Producto cerrado y terminado. Enfocado en la conversación y la generación de contenido. | Motor crudo de predicción (endpoint) que se integra vía código. Es el componente central del sistema. |
+| **Control de Gobernanza** | **Caja Negra.** Sin acceso al Prompt de Sistema ni a los filtros de seguridad del modelo. El proveedor maneja el riesgo. | **Caja de Cristal.** Control total sobre el **Prompt de Sistema** (reglas maestras) para imponer la **LOSA** y los controles de seguridad. |
+| **Costo Operacional** | Fijo (Suscripción). El costo no es optimizable. | Variable (**Pago por Token**). Permite la optimización de *Tokenomics* y el balanceo de carga entre modelos (Guía 12). |
+| **Integración / Agencia** | Baja. No puede **Actuar** con sistemas externos. | Alta. Es el único camino para conectar **Herramientas** y construir **Agentes ReAct** (Guía 05). |
+| **Contexto Propietario** | Limitado al historial de chat. | Permite la inyección de conocimiento masivo propietario mediante **RAG** (Guía 03). |
+
+---
+
 #### Parte 1: El Pilar Técnico: La Arquitectura Transformer
 
 Antes de analizar el mercado de "motores" (modelos), es crucial entender la arquitectura técnica que define a la generación actual de IA: el **Transformer**.
