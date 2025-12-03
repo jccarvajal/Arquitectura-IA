@@ -49,7 +49,39 @@ El "Stack" del Prototipo era gratuito y local. El "Stack" de Producción es empr
 
 ---
 
-#### Parte 2: "Prompt-as-Code" (La Gobernanza del Plano)
+#### Parte 2: El Motor de Ejecución (Filosofía de Orquestación)
+
+Una vez que tenemos el modelo (API) y las herramientas, necesitamos un "sistema nervioso" que mueva los datos. La elección del orquestador no es un detalle administrativo; define la **Soberanía**, la **Escalabilidad** y la capacidad de conectarse con el pasado (Legacy) o el futuro (GenAI).
+
+Existen tres filosofías de orquestación para desplegar Agentes:
+
+**A. Orquestación SaaS / No-Code (El Prototipo Rápido)**
+* **Ejemplos:** Zapier, Make (ex Integromat).
+* **Filosofía:** "Velocidad sobre Control". Se alquila la infraestructura para conectar APIs modernas de forma visual.
+* **Caso de Uso:** Prototipado (Guía 08), MVPs o procesos no críticos donde el costo por ejecución no es relevante.
+* **Riesgo GRC:** Los datos viajan por servidores de terceros (caja negra). Alta fricción para lógicas complejas y costos que escalan mal.
+
+**B. Orquestación Corporativa y RPA (El Puente al Legado)**
+* **Ejemplos:** UiPath, Microsoft Power Automate, Copilot Studio.
+* **Filosofía:** "Seguridad y Compatibilidad".
+* **El Factor RPA:** A diferencia de los otros, herramientas como UiPath permiten la automatización robótica (RPA), interactuando con interfaces de software antiguo (Legacy) que no tienen API, simulando clics y tecleo humano.
+* **Caso de Uso:** Procesos internos regulados (Banca, Seguros, Gobierno) que dependen de sistemas "Mainframe" o escritorio, donde la identidad y la auditoría son obligatorias.
+* **Riesgo GRC:** Alto costo de licenciamiento, "Vendor Lock-in" y curvas de aprendizaje pronunciadas.
+
+**C. Orquestación de Ingeniería / GenAI Native (La Fábrica Soberana)**
+* **Ejemplos:** n8n (Self-hosted), Flowise, LangFlow, Python (LangChain).
+* **Filosofía:** "Soberanía y Lógica Cognitiva". Herramientas diseñadas específicamente para manejar cadenas de razonamiento (Chains) y RAG visualmente o por código.
+* **Caso de Uso:** *Agentes Industriales.* Procesos de alto volumen, manejo de datos sensibles (PII) o arquitecturas cognitivas complejas.
+* **Ventaja GRC:** *Soberanía de Datos Total.* Al usar versiones *self-hosted* (alojamiento propio), los datos nunca salen de tu control. Permite inyectar código personalizado para validaciones estrictas (Safety Cases).
+
+> **Criterio del Arquitecto:**
+> * ¿Sistemas modernos con API? Use **A** (Rápido) o **C** (Robusto).
+> * ¿Sistemas viejos sin API (Pantalla verde, SAP antiguo)? Está obligado a usar **B (UiPath/RPA)**.
+> * ¿Datos confidenciales o alto volumen? Prefiera **C (Ingeniería Soberana)** para evitar costos por tarea y fuga de datos.
+
+---
+
+#### Parte 3: "Prompt-as-Code" (La Gobernanza del Plano)
 
 Este es el núcleo de las Operaciones de IA. En el prototipo, un prompt es un texto que cambias. En producción, un prompt es la "lógica de negocio" central de tu fábrica. Si lo cambias y lo rompes, rompes la fábrica. Debes tratar los prompts como software.
 
@@ -78,7 +110,7 @@ Este es el núcleo de las Operaciones de IA. En el prototipo, un prompt es un te
 
 ---
 
-### Parte 3: La Observabilidad Ampliada (La Gobernanza a Escala Industrial)
+### Parte 4: La Observabilidad Ampliada (La Gobernanza a Escala Industrial)
 
 No puedes 'gobernar' lo que no puedes 'ver'. La **Observabilidad Ampliada** es la implementación técnica del Riesgo y Cumplimiento (el R y C de GRC) en el entorno de producción de IA. Es la evolución de las prácticas de monitoreo tradicionales (CPU, red, memoria) para incluir los nuevos desafíos del sistema cognitivo.
 
