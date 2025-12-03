@@ -12,17 +12,35 @@ Esta guía transforma al "Comprador de Software" en un **"Arquitecto de Portafol
 
 ---
 
-#### Concepto Clave: El Límite de la Agencia (AaaS vs. API)
+#### Concepto Clave: La Arquitectura de Adquisición (Suscripción vs. API)
 
-La distinción entre el producto de consumo (suscripción) y el componente de ingeniería (API) no es comercial; es **arquitectónica**. Define el límite máximo de **Gobernanza** que puedes imponer sobre el sistema.
+Antes de elegir un proveedor, el Arquitecto debe elegir la modalidad de acceso. Existe una confusión habitual en el mercado al no distinguir entre el **Producto de Consumo** (el coche con chofer) y el **Componente de Ingeniería** (el motor).
 
-| Criterio | Chatbot (AaaS/Producto) | API (Inferencia Pura) |
+**1. La Distinción Estructural**
+
+| Criterio | Chatbot (AaaS/Suscripción) | API (Inferencia Pura) |
 | :--- | :--- | :--- |
-| **Finalidad** | Producto cerrado y terminado. Enfocado en la conversación y la generación de contenido. | Motor crudo de predicción (endpoint) que se integra vía código. Es el componente central del sistema. |
-| **Control de Gobernanza** | **Caja Negra.** Sin acceso al Prompt de Sistema ni a los filtros de seguridad del modelo. El proveedor maneja el riesgo. | **Caja de Cristal.** Control total sobre el **Prompt de Sistema** (reglas maestras) para imponer la **LOSA** y los controles de seguridad. |
-| **Costo Operacional** | Fijo (Suscripción). El costo no es optimizable. | Variable (**Pago por Token**). Permite la optimización de *Tokenomics* y el balanceo de carga entre modelos (Guía 12). |
-| **Integración / Agencia** | Baja. No puede **Actuar** con sistemas externos. | Alta. Es el único camino para conectar **Herramientas** y construir **Agentes ReAct** (Guía 05). |
-| **Contexto Propietario** | Limitado al historial de chat. | Permite la inyección de conocimiento masivo propietario mediante **RAG** (Guía 03). |
+| **Ejemplo** | ChatGPT Plus, Claude.ai, Gemini Advanced. | OpenAI API, Anthropic API, Vertex AI. |
+| **Finalidad** | **Aumento Personal.** Herramienta cerrada para potenciar a un humano. | **Automatización Industrial.** Componente para construir sistemas (Agentes). |
+| **Gobernanza** | **Caja Negra.** Sin acceso al *System Prompt*. El proveedor controla los filtros. | **Caja de Cristal.** Control total sobre el *System Prompt* y la capa LOSA. |
+| **Costo** | **Fijo.** (Ej. $20/mes). No escala con el volumen, pero tiene límites de uso. | **Variable.** (Pago por Token). Escala linealmente con la eficiencia del prompt. |
+| **Integración** | **Nula/Baja.** Difícil de conectar con ERPs o bases de datos propias. | **Total.** Es la única vía para conectar Herramientas y RAG. |
+
+**2. Herramienta de Decisión: El Algoritmo de los 3 Filtros**
+
+Para decidir qué contratar, no use la intuición. Aplique este algoritmo secuencial:
+
+* **Filtro 1: Integración (La Pregunta Técnica)**
+    * ¿Necesita que la IA se conecte a otros software (BD, CRM, Excel)?
+    * ¿Necesita inyectar conocimiento propietario masivo (RAG)?
+    * *> Si la respuesta es SÍ a cualquiera, está obligado a usar **API**.*
+
+* **Filtro 2: Usuario (La Pregunta Operativa)**
+    * ¿Es para **Aumento Individual**? (Un analista dialogando para inspirarse). -> **Suscripción**.
+    * ¿Es para **Procesos de Fondo**? (Clasificar 1.000 correos a las 3 AM sin humanos). -> **API**.
+
+* **Filtro 3: Financiero (El Quiebre de Tokenomics)**
+    * Si ambos son viables, decida por volumen. La Suscripción es rentable para uso humano intensivo diario (costo fijo). La API es rentable para tareas esporádicas o de alto volumen automatizado (costo variable optimizable).
 
 ---
 
