@@ -418,6 +418,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** La evolución de la práctica tradicional de Observabilidad. Es la capacidad extendida para monitorear la salud de la decisión cognitiva y la seguridad del resultado (GRC). Captura y registra trazas de razonamiento, costos y calidad a escala industrial.
 * **Referencia Principal:** Guía 09 (Gobernanza), Guía 11 (Industrialización).
 
+**Orquestador**
+
+* **Definición:** El "sistema nervioso" de una arquitectura de Agentes. Es el software encargado de recibir el input, llamar al modelo (API), gestionar la memoria, ejecutar herramientas externas y devolver el resultado. Puede ser No-Code (ej. Zapier) o basado en código (ej. Python/LangChain).
+* **Referencia Principal:** Guía 11 (Industrialización).
+
 **Patrones de Razonamiento (Reasoning Patterns)**
 
 * **Definición:** Estructuras de pensamiento algorítmico diseñadas para los agentes (CoT, ReAct, ToT).
@@ -543,6 +548,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** Problema operacional cuando la Ventana de Contexto se sobrecarga y la IA "olvida" instrucciones.
 * **Referencia Principal:** Guía 03 (Contexto y Memoria).
 
+**RPA (Robotic Process Automation)**
+
+* **Definición:** Tecnología de automatización que utiliza "bots" de software para imitar las acciones humanas en una interfaz digital (clics, tecleo, navegación). A diferencia de las APIs (que hablan de máquina a máquina), el RPA es la única solución para integrar sistemas "Legacy" (antiguos) que carecen de conectores modernos.
+* **Referencia Principal:** Guía 11 (Industrialización).
+
 **Rúbrica de Evaluación (Evaluation Rubric)**
 
 * **Definición:** Plantilla de calificación usada para medir objetivamente la calidad de la respuesta de un agente.
@@ -567,6 +577,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** "Ajuste Fino Supervisado". Es la técnica de la Fase 2 donde se entrena al modelo con ejemplos de *Instrucción -> Respuesta* escritos por humanos, enseñándole a conversar y seguir órdenes en lugar de solo autocompletar texto.
 * **Referencia Principal:** Guía 01 (Anatomía de Modelos).
+
+**Shadow IT (TI en las Sombras)**
+
+* **Definición:** Uso de sistemas, dispositivos o software (como cuentas de Zapier o ChatGPT personales) dentro de una organización sin la aprobación explícita del departamento de TI. Representa un riesgo crítico de fuga de datos y falta de gobernanza.
+* **Referencia Principal:** Guía 11 (Industrialización), Guía 09 (Gobernanza).
 
 **Sinergia Humano-IA (Human-AI Synergy)**
 

@@ -84,6 +84,9 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
   * **Por qué leerlo:** Define la taxonomía técnica de publicación de algoritmos. **Para el Sector Público:** Es el manual de cumplimiento obligatorio. **Para el Sector Privado:** Es el mejor *benchmark* disponible para estructurar políticas de transparencia corporativa y ESG.
 * **Shaib, C., et al. (2025). "Learning the Wrong Lessons: Syntactic-Domain Spurious Correlations in Language Models". NeurIPS 2025.** [[PDF]](http://arxiv.org/abs/2509.21155v2)
   * **Por qué leerlo:** Es un estudio clave que demuestra cómo la **sintaxis** puede anular la **semántica**, creando una nueva vulnerabilidad de seguridad que permite *bypass* (saltarse) las negativas éticas del modelo (*jailbreaks*). Es la prueba científica de que la seguridad no puede delegarse al LLM, justificando la arquitectura **LOSA** y el **Monitoreo de CoT** (Guía 09, 11).
+* **UiPath (2024). "The Future of Automation: Integrating GenAI with RPA". Whitepaper.** [[Web]](https://www.uipath.com/resources/whitepapers)
+  * **Por qué leerlo:** Fundamenta la necesidad técnica de mantener herramientas de RPA (robots que hacen clics) para conectar la IA moderna con la infraestructura bancaria y gubernamental antigua ("Legacy") que no tiene APIs.
+
 ---
 
 ### Sobre el Bloque 4: El Impacto
