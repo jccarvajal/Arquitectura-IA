@@ -84,7 +84,7 @@ Existen tres filosofías de orquestación para desplegar Agentes:
 
 ---
 
-#### Protocolo de Gobernanza: La Regla de los Tres Semáforos
+#### Parte 3: Protocolo de Gobernanza (La Regla de los Tres Semáforos)
 
 La facilidad de uso de los orquestadores crea un riesgo de seguridad invisible: el "Shadow AI". Para mitigar la fuga de datos sin frenar la innovación, el Arquitecto debe imponer este protocolo de tres niveles:
 
@@ -117,7 +117,7 @@ La facilidad de uso de los orquestadores crea un riesgo de seguridad invisible: 
 
 ---
 
-#### Parte 3: "Prompt-as-Code" (La Gobernanza del Plano)
+#### Parte 4: "Prompt-as-Code" (La Gobernanza del Plano)
 
 Este es el núcleo de las Operaciones de IA. En el prototipo, un prompt es un texto que cambias. En producción, un prompt es la "lógica de negocio" central de tu fábrica. Si lo cambias y lo rompes, rompes la fábrica. Debes tratar los prompts como software.
 
@@ -146,7 +146,7 @@ Este es el núcleo de las Operaciones de IA. En el prototipo, un prompt es un te
 
 ---
 
-### Parte 4: La Observabilidad Ampliada (La Gobernanza a Escala Industrial)
+### Parte 5: La Observabilidad Ampliada (La Gobernanza a Escala Industrial)
 
 No puedes 'gobernar' lo que no puedes 'ver'. La **Observabilidad Ampliada** es la implementación técnica del Riesgo y Cumplimiento (el R y C de GRC) en el entorno de producción de IA. Es la evolución de las prácticas de monitoreo tradicionales (CPU, red, memoria) para incluir los nuevos desafíos del sistema cognitivo.
 
@@ -177,7 +177,7 @@ Es el panel de control en tiempo real de tu "fábrica" de IA. Es la única forma
 * **La Métrica:** **Auditoría de Cadena de Pensamiento (CoT).** El sistema debe registrar y analizar los pasos intermedios de razonamiento del modelo.
 * **Alerta de Seguridad:** Si el modelo intenta ocultar sus pasos de razonamiento o si la "lógica interna" difiere del "resultado final" (engaño estratégico), se debe activar un *Circuit Breaker* inmediato. La observabilidad moderna exige ver *cómo* piensa el agente, no solo *qué* dice.
 
-#### La Diferencia Conceptual: Estándar vs. Ampliada
+**La Diferencia Conceptual: Estándar vs. Ampliada**
 
 La Observabilidad Ampliada no es un simple cambio de nombre; es un cambio de propósito. La práctica tradicional se enfoca en el *Uptime*; la práctica Ampliada se enfoca en la *Auditabilidad* y el *Riesgo*.
 
@@ -192,7 +192,9 @@ La Observabilidad Ampliada no es un simple cambio de nombre; es un cambio de pro
 
 #### Conclusión: De Ingeniero a Director de Ecosistema
 
-Hemos pasado del Prototipo a la Producción. Nuestro rol como "Director de Operaciones" ya no es "construir" un agente. Es gestionar un ecosistema vivo de cientos de agentes. Tu trabajo es ser el "Ingeniero de Confiabilidad" (SRE) de la fábrica. Te aseguras de que los planos (prompts) estén versionados, que las máquinas (LLMs) estén monitoreadas y que la línea de ensamblaje (los "Agentes PM") nunca se detenga, preparando el terreno para gestionar el impacto humano.
+Hemos pasado del Prototipo a la Producción. Nuestro rol como "Director de Operaciones" ya no es solo hacer que el agente funcione, sino garantizar que la arquitectura sea **soberana y segura**.
+
+Tu trabajo ahora es ser el "Ingeniero de Confiabilidad" (SRE) de la fábrica: defines **dónde se ejecutan los datos (Orquestación)**, impones los **semáforos de riesgo (Gobernanza)** y aseguras que los planos (prompts) estén versionados. Ya no gestionas scripts sueltos; gestionas activos empresariales estables, preparando el terreno para demostrar su verdadero valor financiero.
 
 ---
 <div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
