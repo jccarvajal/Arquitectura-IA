@@ -74,10 +74,46 @@ Existen tres filosofías de orquestación para desplegar Agentes:
 * **Caso de Uso:** *Agentes Industriales.* Procesos de alto volumen, manejo de datos sensibles (PII) o arquitecturas cognitivas complejas.
 * **Ventaja GRC:** *Soberanía de Datos Total.* Al usar versiones *self-hosted* (alojamiento propio), los datos nunca salen de tu control. Permite inyectar código personalizado para validaciones estrictas (Safety Cases).
 
+> **Nota Técnica: La "Nube" en tu Laptop**
+> Herramientas como **n8n** ofrecen una versión de escritorio (Desktop App). Esto permite al Arquitecto desarrollar y probar flujos complejos con datos confidenciales reales en su propia máquina (Localhost), sin riesgo de fuga, antes de desplegarlos en el servidor de producción seguro.
+
 > **Criterio del Arquitecto:**
 > * ¿Sistemas modernos con API? Use **A** (Rápido) o **C** (Robusto).
 > * ¿Sistemas viejos sin API (Pantalla verde, SAP antiguo)? Está obligado a usar **B (UiPath/RPA)**.
 > * ¿Datos confidenciales o alto volumen? Prefiera **C (Ingeniería Soberana)** para evitar costos por tarea y fuga de datos.
+
+---
+
+#### Protocolo de Gobernanza: La Regla de los Tres Semáforos
+
+La facilidad de uso de los orquestadores crea un riesgo de seguridad invisible: el "Shadow AI". Para mitigar la fuga de datos sin frenar la innovación, el Arquitecto debe imponer este protocolo de tres niveles:
+
+**🔴 Nivel Rojo (Prohibido en SaaS/No-Code)**
+* **Dato:** Información Personal Identificable (PII), Datos Financieros, Secretos Comerciales.
+* **Regla:** Bajo ninguna circunstancia estos datos pueden transitar por orquestadores públicos (Zapier, Make) en cuentas personales o gratuitas.
+* **Solución:** Debe usarse **Ingeniería Soberana (n8n Self-hosted)** o **Entorno Corporativo (Power Automate)** donde la auditoría esté garantizada.
+
+**🟡 Nivel Amarillo (Zona de Transición)**
+* **Dato:** Correos internos no confidenciales, Agendas, Tareas operativas.
+* **Regla:** Se permite el uso de SaaS (Make/Zapier) solo si se utiliza una **Cuenta de Servicio Empresarial** (Enterprise Plan) gestionada por TI, nunca cuentas personales de Gmail ("Shadow IT").
+* **Requisito:** La autenticación debe ser vía SSO (Single Sign-On) para revocar el acceso si el empleado deja la empresa.
+
+**🟢 Nivel Verde (Zona de Sandbox)**
+* **Dato:** Información pública, RSS Feeds, Prototipos con datos sintéticos (falsos).
+* **Regla:** Libertad total para que los equipos usen herramientas No-Code para experimentar y prototipar.
+* **Objetivo:** Fomentar la "Alfabetización de Automatización" sin riesgo real.
+
+> **La Regla de Oro del Agente:** Un Agente nunca debe operar con la identidad de un humano (ej. "juan@empresa.com"). Debe tener su propia **Identidad de Servicio** (ej. "agente-ventas@empresa.com") para que sus acciones sean trazables y auditables en los logs.
+
+---
+
+> **⚠️ La Trampa de la Usabilidad: El "Síndrome del Atajo"**
+>
+> A menudo, los usuarios perciben herramientas como Zapier o Make como simples "Atajos del iPhone" para el trabajo. Esta percepción es peligrosa.
+> * **En un iPhone:** La automatización ocurre en tu dispositivo (privado).
+> * **En Zapier/SaaS:** La automatización ocurre copiando tus datos a un servidor externo (público).
+>
+> El trabajo del Arquitecto es recordar al equipo que, aunque la interfaz parezca un juguete, **la responsabilidad legal es industrial**. Un "atajo" mal configurado puede exfiltrar 10.000 correos de clientes en segundos.
 
 ---
 
