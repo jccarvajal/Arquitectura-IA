@@ -12,6 +12,43 @@ Tras una década analizando éxitos, fracasos, regulaciones y *benchmarks* globa
 
 ### El Mapa de las Cinco Zonas
 
+```mermaid
+graph TD
+    Invest([💰 Decisión de Inversión en IA]) --> Evaluacion{¿Genera Valor Real?}
+
+    subgraph Ganadores [Rentabilidad Clara]
+        Evaluacion -->|Sí, Probado| Green[🟩 ZONA VERDE: Ganadores]
+        Green --> G1(Mantenimiento Predictivo)
+        Green --> G2(Fraude y Riesgo)
+        Green --> G3(Eficiencia Operativa)
+    end
+
+    subgraph Condicionales [Depende de Ejecución]
+        Evaluacion -->|Sí, pero complejo| Yellow[🟨 ZONA AMARILLA: Tácticos]
+        Yellow --> Y1(Chatbots Normativos)
+        Yellow --> Y2(Triage Automático)
+    end
+
+    subgraph Trampas [Cuidado]
+        Evaluacion -->|No, solo Marketing| Orange[🟧 ZONA NARANJA: Vanidosos]
+        Evaluacion -->|No, Alto Riesgo| Red[🟥 ZONA ROJA: Destrucción]
+    end
+
+    subgraph Base [Habilitadores]
+        Evaluacion -->|Valor a Largo Plazo| Blue[🟦 ZONA AZUL: Sistémico]
+        Blue --> B1(Infraestructura Datos)
+        Blue --> B2(Auditoría / LOSA)
+    end
+
+    %% Estilos de Semáforo
+    style Green fill:#e8f5e9,stroke:#2e7d32,stroke-width:3px
+    style Yellow fill:#fffde7,stroke:#fbc02d,stroke-width:2px
+    style Orange fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
+    style Red fill:#ffebee,stroke:#c62828,stroke-width:2px
+    style Blue fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
+    style Invest fill:#333,color:#fff,stroke:#000
+```
+
 * 🟩 **Zona Verde (Ganadores):** Proyectos con ROI alto, madurez probada y beneficios financieros o físicos inmediatos.
 * 🟨 **Zona Amarilla (Tácticos):** ROI positivo pero condicional; depende de la calidad de los datos y la disciplina en la ejecución.
 * 🟧 **Zona Naranja (Vanidosos):** Proyectos que no destruyen la empresa, pero queman presupuesto y credibilidad.
