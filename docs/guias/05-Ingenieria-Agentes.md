@@ -8,9 +8,10 @@ Subtítulo: Del "Arquitecto de Instrucciones" al "Director de Programa"
 
 En las guías anteriores, definimos la *instrucción* (Guía 02) y la *memoria* (Guía 03). Hemos construido un erudito encadenado: una IA que sabe mucho y recuerda todo, pero no puede hacer nada.
 
-Esta limitación explica el cementerio de proyectos de IA corporativos: las empresas siguen construyendo **Oráculos pasivos** —chatbots glorificados que esperan preguntas— cuando el mercado exige **Obreros autónomos**.
+Esta limitación explica el cementerio de proyectos de IA corporativos: las empresas siguen construyendo **Oráculos pasivos**, chatbots glorificados que esperan preguntas, cuando el mercado exige **Obreros autónomos**.
 
 La diferencia entre un juguete y una herramienta es la **Agencia**.
+
 * Un **Chatbot** te dice cómo reservar un vuelo.
 * Un **Agente** te envía la tarjeta de embarque a tu correo.
 
