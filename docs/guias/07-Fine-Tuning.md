@@ -21,6 +21,37 @@ Tu rol aquí es el de "Especialista de Motores". No estás usando el motor, lo e
 
 Este es el *trade-off* más importante de la arquitectura de IA. Usar la herramienta incorrecta es caro e ineficiente.
 
+```mermaid
+graph TD
+    subgraph PROBLEM [El Problema de Negocio]
+        Need(¿Qué necesita la IA?)
+    end
+
+    %% CAMINO RAG
+    Need -->|Conocimiento: Datos, Hechos| PathRAG[Camino RAG]
+    subgraph RAG_ARCH [📚 RAG: El Bibliotecario]
+        Docs[Documentos PDF/Excel] -->|ETL| VectorDB[(Base Vectorial)]
+        VectorDB -->|Contexto| Prompt
+        Prompt -->|Inferencia| Model1[🤖 Modelo Estándar]
+        Model1 --> Out1[Respuesta con Datos]
+    end
+
+    %% CAMINO FINE-TUNING
+    Need -->|Habilidad: Tono, Formato| PathFT[Camino Fine-Tuning]
+    subgraph FT_ARCH [🎓 Fine-Tuning: El Especialista]
+        Examples[Dataset: 1000 Ejemplos] -->|Entrenamiento| Training(Proceso LoRA)
+        Training -->|Modifica Pesos| Model2[🧠 Modelo Especializado]
+        Model2 -->|Inferencia| Out2[Respuesta con Estilo]
+    end
+
+    %% ESTILOS
+    style RAG_ARCH fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
+    style FT_ARCH fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    style Need fill:#fff,stroke:#333,stroke-width:2px,color:#000
+    style Model1 fill:#fff,stroke:#1565c0
+    style Model2 fill:#fff,stroke:#7b1fa2
+```
+
 | Característica | RAG (Gestión de Contexto) | Ajuste Fino (Adaptación de Modelo) |
 | :---- | :---- | :---- |
 | **Objetivo Principal** | Insertar **Conocimiento** (Hechos, Datos) | Modificar **Habilidad** (Estilo, Tono, Formato) |
