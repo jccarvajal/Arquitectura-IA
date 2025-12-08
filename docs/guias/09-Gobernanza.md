@@ -158,6 +158,43 @@ A diferencia de los enfoques ingenuos que esperan que un agente "decida ser segu
 
 Los "guardrails", "circuit breakers" y los puntos de "Validación Humana" no son conceptos abstractos, sino componentes de software que residen dentro de esta arquitectura. A esta capa arquitectónica de seguridad, que la industria suele implementar mediante diversos filtros dispersos, la denominaremos formalmente LOSA para unificar su gestión.
 
+```mermaid
+graph TD
+    subgraph EXTERNO [Zona No Confiable]
+        User([👤 Usuario / Atacante])
+    end
+
+    subgraph LOSA_LAYER [🛡️ Arquitectura LOSA - Middleware de Seguridad]
+        direction TB
+        Input[1️⃣ Control de ENTRADA] -->|Sanitización| Check1{¿Prompt Seguro?}
+        
+        Check1 -->|No: Inyección/Jailbreak| Block1[⛔ Bloqueo Inmediato]
+        Check1 -->|Sí| LLM[🧠 Modelo LLM / Agente]
+        
+        LLM --> RawResp[Respuesta Cruda]
+        RawResp --> Output[2️⃣ Control de SALIDA]
+        
+        Output -->|Validación| Check2{¿Datos Seguros?}
+        Check2 -->|No: Fuga PII/Alucinación| Block2[⚠️ Censurar o Regenerar]
+        Check2 -->|Sí| Final[✅ Respuesta Final]
+        
+        Audit[📝 Logs de Auditoría & Trazabilidad] -.-> Input
+        Audit -.-> Output
+    end
+
+    User -->|Prompt| Input
+    Block1 -.-> User
+    Final --> User
+
+    %% Estilos Cyber/Noir
+    style LOSA_LAYER fill:#f1f8e9,stroke:#33691e,stroke-width:2px
+    style LLM fill:#e3f2fd,stroke:#0d47a1
+    style Input fill:#ffecb3,stroke:#ff6f00
+    style Output fill:#ffecb3,stroke:#ff6f00
+    style Block1 fill:#ffcdd2,stroke:#b71c1c
+    style User fill:#eeeeee,stroke:#333
+```
+
 #### 1. Qué resuelve la LOSA
 
 > **Validación de Estándar Global:** La arquitectura LOSA es la implementación técnica del principio de **"Defensa en Profundidad" (Defence-in-Depth)**. Reportes internacionales de seguridad de IA (2025) concluyen que ningún control único es infalible; la seguridad requiere múltiples capas redundantes (entrenamiento, despliegue y monitoreo) para que, si una falla, las otras contengan el riesgo.
