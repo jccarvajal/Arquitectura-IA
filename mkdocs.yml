@@ -1,0 +1,87 @@
+site_name: Arquitectura de Inteligencia Artificial
+site_url: https://ia.jccarvajal.com
+site_author: Juan Carlos Carvajal
+site_description: Guías para Decidir, Diseñar y Gobernar sistemas de IA.
+copyright: Copyright &copy; 2025 Juan Carlos Carvajal - Licencia CC BY-NC-ND 4.0
+
+# Configuración del Tema (Material for MkDocs - Modo Cyber/Noir)
+theme:
+  name: material
+  language: es
+  logo: assets/images/portada.jpeg
+  favicon: assets/images/favicon.ico
+  palette: 
+    - scheme: slate
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+    - scheme: default
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.integrate
+
+# Extensiones (ACTIVACIÓN DE MERMAID)
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - attr_list
+  - toc:
+      permalink: true
+
+# Mapa del Sitio (Estructura de Archivos)
+nav:
+  - Inicio: index.md
+  - Introducción:
+    - Nota al Lector: nota-al-lector.md
+    - Prólogo: prologo.md
+    - Ideas Centrales: ideas-centrales.md
+  - Bloque 1 - Fundamentos:
+    - Guía 01 - Anatomía: guias/01-Anatomia-Modelos.md
+    - Guía 02 - Prompts: guias/02-Ingenieria-Prompts.md
+    - Guía 03 - Contexto: guias/03-Contexto-Memoria.md
+    - Guía 04 - Datos: guias/04-Estrategia-Datos.md
+  - Bloque 2 - Construcción:
+    - Guía 05 - Agentes: guias/05-Ingenieria-Agentes.md
+    - Guía 06 - Cognición: guias/06-Sistemas-Cognitivos.md
+    - Guía 07 - Fine-Tuning: guias/07-Fine-Tuning.md
+    - Guía 08 - Prototipado: guias/08-Prototipado.md
+  - Bloque 3 - Operación:
+    - Guía 09 - Gobernanza: guias/09-Gobernanza.md
+    - Guía 10 - QA: guias/10-Evaluacion-Calidad.md
+    - Guía 11 - Industrialización: guias/11-Industrializacion.md
+    - Guía 12 - ROI: guias/12-ROI-Financiero.md
+  - Bloque 4 - Estrategia:
+    - Guía 13 - Valor: guias/13-Estrategia-Valor.md
+    - Guía 14 - Modelos: guias/14-Modelos-Mercado.md
+    - Guía 15 - Ética: guias/15-Etica-Confianza.md
+    - Guía 16 - Operación Cognitiva: guias/16-Aprender-A-Pensar.md
+  - Bloque 5 - Futuro:
+    - Guía 17 - Perspectivas: guias/17-Perspectivas.md
+  - Conclusión: conclusion.md
+  - Anexos:
+    - A - Formulación: anexos/A-Formulacion-Viabilidad.md
+    - B - Política: anexos/B-Politica-Institucional.md
+    - C - Blueprints: anexos/C-Blueprints.md
+    - D - Plantillas: anexos/D-Plantillas-Recursos.md
+    - E - Glosario: anexos/E-Glosario.md
+    - F - Bibliografía: anexos/F-Bibliografia.md
+  - Acerca de:
+    - Changelog: changelog.md
