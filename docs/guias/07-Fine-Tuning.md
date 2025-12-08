@@ -23,33 +23,46 @@ Este es el *trade-off* más importante de la arquitectura de IA. Usar la herrami
 
 ```mermaid
 graph TD
-    subgraph PROBLEM [El Problema de Negocio]
-        Need(¿Qué necesita la IA?)
-    end
+    %% ESTILOS (Alto Contraste: Fondo claro, Texto negro)
+    classDef base fill:#ffffff,stroke:#333,stroke-width:2px,color:#000;
+    classDef blue fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000;
+    classDef purple fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#000;
 
-    %% CAMINO RAG
-    Need -->|Conocimiento: Datos, Hechos| PathRAG[Camino RAG]
-    subgraph RAG_ARCH [📚 RAG: El Bibliotecario]
-        Docs[Documentos PDF/Excel] -->|ETL| VectorDB[(Base Vectorial)]
-        VectorDB -->|Contexto| Prompt
+    %% 1. EL PROBLEMA
+    Start([🚀 Necesidad de Negocio]) --> Decision{¿Qué le falta a la IA?}
+    class Start,Decision base;
+
+    %% 2. RAMIFICACIÓN
+    Decision -->|Conocimiento: Datos/Hechos| NodeRAG[Camino RAG]
+    Decision -->|Habilidad: Tono/Formato| NodeFT[Camino Fine-Tuning]
+    class NodeRAG blue;
+    class NodeFT purple;
+
+    %% 3. ARQUITECTURA RAG (Columna Izquierda)
+    subgraph RAG_BOX [📚 RAG: El Bibliotecario]
+        direction TB
+        Doc[📄 Documentos PDF/Excel] -->|ETL + Vectorización| DB[(🗄️ Base Vectorial)]
+        DB -->|Búsqueda Semántica| Context[🧩 Contexto Relevante]
+        Context -->|Inyección| Prompt[📝 Prompt Aumentado]
         Prompt -->|Inferencia| Model1[🤖 Modelo Estándar]
-        Model1 --> Out1[Respuesta con Datos]
+        Model1 --> Res1[✅ Respuesta Factual]
     end
 
-    %% CAMINO FINE-TUNING
-    Need -->|Habilidad: Tono, Formato| PathFT[Camino Fine-Tuning]
-    subgraph FT_ARCH [🎓 Fine-Tuning: El Especialista]
-        Examples[Dataset: 1000 Ejemplos] -->|Entrenamiento| Training(Proceso LoRA)
-        Training -->|Modifica Pesos| Model2[🧠 Modelo Especializado]
-        Model2 -->|Inferencia| Out2[Respuesta con Estilo]
+    %% 4. ARQUITECTURA FINE-TUNING (Columna Derecha)
+    subgraph FT_BOX [🎓 Fine-Tuning: El Especialista]
+        direction TB
+        Data[Dataset: 1.000 Ejemplos] -->|Entrenamiento| Train[⚙️ Proceso LoRA]
+        Train -->|Modificación de Pesos| Model2[🧠 Modelo Especializado]
+        Model2 -->|Inferencia Directa| Res2[✨ Respuesta con Estilo]
     end
 
-    %% ESTILOS
-    style RAG_ARCH fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
-    style FT_ARCH fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
-    style Need fill:#fff,stroke:#333,stroke-width:2px,color:#000
-    style Model1 fill:#fff,stroke:#1565c0
-    style Model2 fill:#fff,stroke:#7b1fa2
+    %% CONEXIONES FINALES
+    NodeRAG --> RAG_BOX
+    NodeFT --> FT_BOX
+
+    %% APLICAR ESTILOS A NODOS INTERNOS
+    class Doc,DB,Context,Prompt,Model1,Res1 blue;
+    class Data,Train,Model2,Res2 purple;
 ```
 
 | Característica | RAG (Gestión de Contexto) | Ajuste Fino (Adaptación de Modelo) |
