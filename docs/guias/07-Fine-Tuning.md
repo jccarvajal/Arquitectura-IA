@@ -23,44 +23,43 @@ Este es el *trade-off* más importante de la arquitectura de IA. Usar la herrami
 
 ```mermaid
 graph TD
-    %% ESTILOS (Alto Contraste: Fondo claro, Texto negro)
+    %% ESTILOS
     classDef base fill:#ffffff,stroke:#333,stroke-width:2px,color:#000;
     classDef blue fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000;
     classDef purple fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#000;
 
-    %% 1. EL PROBLEMA
-    Start([🚀 Necesidad de Negocio]) --> Decision{¿Qué le falta a la IA?}
+    %% 1. EL PROBLEMA (Texto Compactado)
+    Start([🚀 Necesidad<br/>de Negocio]) --> Decision{¿Qué le<br/>falta a la IA?}
     class Start,Decision base;
 
-    %% 2. RAMIFICACIÓN
-    Decision -->|Conocimiento: Datos/Hechos| NodeRAG[Camino RAG]
-    Decision -->|Habilidad: Tono/Formato| NodeFT[Camino Fine-Tuning]
+    %% 2. RAMIFICACIÓN (Texto Compactado)
+    Decision -->|Conocimiento:<br/>Datos/Hechos| NodeRAG[Camino RAG]
+    Decision -->|Habilidad:<br/>Tono/Formato| NodeFT[Camino Fine-Tuning]
     class NodeRAG blue;
     class NodeFT purple;
 
-    %% 3. ARQUITECTURA RAG (Columna Izquierda)
+    %% 3. ARQUITECTURA RAG
     subgraph RAG_BOX [📚 RAG: El Bibliotecario]
         direction TB
-        Doc[📄 Documentos PDF/Excel] -->|ETL + Vectorización| DB[(🗄️ Base Vectorial)]
-        DB -->|Búsqueda Semántica| Context[🧩 Contexto Relevante]
-        Context -->|Inyección| Prompt[📝 Prompt Aumentado]
-        Prompt -->|Inferencia| Model1[🤖 Modelo Estándar]
-        Model1 --> Res1[✅ Respuesta Factual]
+        Doc[📄 Documentos<br/>PDF/Excel] -->|ETL +<br/>Vectorización| DB[(🗄️ Base<br/>Vectorial)]
+        DB -->|Búsqueda<br/>Semántica| Context[🧩 Contexto<br/>Relevante]
+        Context -->|Inyección| Prompt[📝 Prompt<br/>Aumentado]
+        Prompt -->|Inferencia| Model1[🤖 Modelo<br/>Estándar]
+        Model1 --> Res1[✅ Respuesta<br/>Factual]
     end
 
-    %% 4. ARQUITECTURA FINE-TUNING (Columna Derecha)
+    %% 4. ARQUITECTURA FINE-TUNING
     subgraph FT_BOX [🎓 Fine-Tuning: El Especialista]
         direction TB
-        Data[Dataset: 1.000 Ejemplos] -->|Entrenamiento| Train[⚙️ Proceso LoRA]
-        Train -->|Modificación de Pesos| Model2[🧠 Modelo Especializado]
-        Model2 -->|Inferencia Directa| Res2[✨ Respuesta con Estilo]
+        Data[Dataset:<br/>1.000 Ejemplos] -->|Entrenamiento| Train[⚙️ Proceso<br/>LoRA]
+        Train -->|Modificación<br/>de Pesos| Model2[🧠 Modelo<br/>Especializado]
+        Model2 -->|Inferencia<br/>Directa| Res2[✨ Respuesta<br/>con Estilo]
     end
 
-    %% CONEXIONES FINALES
+    %% CONEXIONES
     NodeRAG --> RAG_BOX
     NodeFT --> FT_BOX
 
-    %% APLICAR ESTILOS A NODOS INTERNOS
     class Doc,DB,Context,Prompt,Model1,Res1 blue;
     class Data,Train,Model2,Res2 purple;
 ```
