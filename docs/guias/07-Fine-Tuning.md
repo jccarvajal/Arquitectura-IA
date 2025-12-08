@@ -23,16 +23,16 @@ Este es el *trade-off* más importante de la arquitectura de IA. Usar la herrami
 
 ```mermaid
 graph TD
-    %% ESTILOS
-    classDef base fill:#ffffff,stroke:#333,stroke-width:2px,color:#000;
-    classDef blue fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000;
-    classDef purple fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#000;
+    %% ESTILOS (Con ajuste de FUENTE y RELLENO)
+    classDef base fill:#ffffff,stroke:#333,stroke-width:2px,color:#000,font-size:15px;
+    classDef blue fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000,font-size:14px;
+    classDef purple fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#000,font-size:14px;
 
-    %% 1. EL PROBLEMA (Texto Compactado)
-    Start([🚀 Necesidad<br/>de Negocio]) --> Decision{¿Qué le<br/>falta a la IA?}
+    %% 1. EL PROBLEMA (Usando paréntesis para bordes redondeados, no pastilla)
+    Start(🚀 Necesidad de Negocio) --> Decision{¿Qué le<br/>falta a la IA?}
     class Start,Decision base;
 
-    %% 2. RAMIFICACIÓN (Texto Compactado)
+    %% 2. RAMIFICACIÓN
     Decision -->|Conocimiento:<br/>Datos/Hechos| NodeRAG[Camino RAG]
     Decision -->|Habilidad:<br/>Tono/Formato| NodeFT[Camino Fine-Tuning]
     class NodeRAG blue;
