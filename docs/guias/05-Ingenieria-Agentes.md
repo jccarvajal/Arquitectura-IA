@@ -32,6 +32,25 @@ Para lograr este salto de "conversar" a "trabajar", dejamos de tratar al LLM com
 
 Esto es lo más importante. Un agente no solo da una respuesta y se detiene. Opera en un bucle (loop) hasta que cumple el objetivo. Este ciclo se conoce comúnmente como **ReAct**, un patrón que combina el Razonamiento (Reason) con la Acción (Act).
 
+```mermaid
+graph TD
+    User([👤 Input Usuario]) -->|Solicitud| LLM[🧠 Cerebro LLM]
+    
+    subgraph Ciclo_ReAct [Bucle de Razonamiento]
+        LLM -->|Pensamiento| Decide{¿Tengo la info?}
+        Decide -->|No| Tool[🛠️ Elegir Herramienta]
+        Tool -->|Acción| API[⚙️ Ejecutar API/Función]
+        API -->|Observación| Result[📄 Resultado de Datos]
+        Result --> LLM
+    end
+    
+    Decide -->|Sí| Final[💬 Respuesta Final]
+    
+    style Ciclo_ReAct fill:#f9f9f9,stroke:#333,stroke-width:2px,stroke-dasharray: 5 5
+    style LLM fill:#e1f5fe,stroke:#01579b
+    style Final fill:#e8f5e9,stroke:#2e7d32
+```
+
 En la arquitectura moderna (2025), exigimos lo que llamamos el **"Patrón de Pensamiento Visible"**. No queremos que el agente actúe a ciegas; queremos ver su lógica estructurada antes de que toque una herramienta.
 
 Así es como se ve la traza de un agente moderno:
