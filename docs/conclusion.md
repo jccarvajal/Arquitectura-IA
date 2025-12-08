@@ -101,16 +101,3 @@ Y es también una invitación a la **Expansión**: a abrir rutas, construir acce
 Tu responsabilidad, y tu oportunidad, es mantener abiertas esas rutas.
 
 Para esta fábrica.  Y para todas las que vendrán.
-
----
-<div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
-  <div>
-    <a href="./guias/17-Perspectivas.html">« Guía 17</a>
-  </div>
-  <div>
-    <a href="../">Volver al Índice</a>
-  </div>
-  <div>
-    <a href="./anexos/A-Formulacion-Viabilidad.html">Anexo A »</a>
-  </div>
-</div>

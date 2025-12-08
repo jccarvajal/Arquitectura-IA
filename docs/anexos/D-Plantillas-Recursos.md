@@ -149,16 +149,3 @@ Un framework de 2x2 para decidir para qué usar la IA en un nuevo proyecto.
 | :--- | :--- | :--- |
 | **EFICIENCIA ALTA (Hacerlo más barato/rápido)** | **Cuadrante 1: Optimización de Procesos.**<br>Descripción: Usar IA para automatizar tareas repetitivas y reducir costos.<br>Ejemplos: Clasificación de emails, resúmenes automáticos, transcripción de reuniones. | **Cuadrante 2: Transformación de Negocio.**<br>Descripción: Usar la eficiencia de la IA (costo marginal cero) para crear nuevos modelos de negocio o servicios que antes eran inviables.<br>Ejemplos: Hiper-personalización a escala (Guía 12), Producto-como-Agente (Blueprint 7). |
 | **EFICIENCIA BAJA (Hacerlo al mismo costo/velocidad)** | **Cuadrante 3: Experimentación (PoC).**<br>Descripción: Proyectos de bajo impacto para desarrollar habilidades internas sin un ROI claro.<br>EjemplOS: Un bot de Slack interno para diversión, pruebas de concepto desechables. | **Cuadrante 4: Investigación y Desarrollo (I+D).**<br>Descripción: Proyectos de alto costo/esfuerzo para crear capacidades completamente nuevas. El ROI no es inmediato.<br>Ejemplos: Desarrollar un "Agente Director" (Blueprint 3) o un modelo con Ajuste Fino (Guía 07) por primera vez. |
-
----
-<div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
-  <div>
-    <a href="./C-Blueprints.html">« Anexo C</a>
-  </div>
-  <div>
-    <a href="../">Volver al Índice</a>
-  </div>
-  <div>
-    <a href="./E-Glosario.html">Anexo E »</a>
-  </div>
-</div>

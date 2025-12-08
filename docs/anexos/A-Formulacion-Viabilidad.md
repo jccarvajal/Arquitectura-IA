@@ -85,16 +85,3 @@ Basado en la evidencia de este Canvas, el proyecto se califica como:
 **Firma del Responsable:** ___________________________
 
 **Fecha del Dictamen:** ___________________________
-
----
-<div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
-  <div>
-    <a href="../conclusion.html">« Conclusión</a>
-  </div>
-  <div>
-    <a href="../">Volver al Índice</a>
-  </div>
-  <div>
-    <a href="./B-Politica-Institucional.html">Anexo B »</a>
-  </div>
-</div>

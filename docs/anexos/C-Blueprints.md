@@ -265,16 +265,3 @@ La obra de guías y anexos fue diseñada para los "Arquitectos" y "Directores". 
 
 > **✅ Validación de Mercado (Caso Real 2025):**
 > La transición de "Herramienta Interna" a "Producto Vendible" es validada por **Moveo.AI**, que construyó su plataforma de agentes de experiencia del cliente (CX) sobre la infraestructura de Vertex AI, convirtiendo la capacidad técnica en un producto SaaS. Del mismo modo, **Sutherland** transformó sus operaciones de BPO (outsourcing) integrando agentes cognitivos para la banca y salud, pasando de vender "horas-hombre" a vender "resultados automatizados", tal como propone este blueprint.
-
----
-<div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
-  <div>
-    <a href="./B-Politica-Institucional.html">« Anexo B</a>
-  </div>
-  <div>
-    <a href="../">Volver al Índice</a>
-  </div>
-  <div>
-    <a href="./D-Plantillas-Recursos.html">Anexo D »</a>
-  </div>
-</div>

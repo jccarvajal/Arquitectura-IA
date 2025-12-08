@@ -197,16 +197,3 @@ Para instituciones públicas o reguladas (finanzas, salud), el factor **Control*
 #### Conclusión: De Gobernador a Arquitecto de Portafolio
 
 La maestría no reside en saber qué LLM es "mejor", sino en tener el juicio de ingeniería para diseñar un ecosistema flexible: rendimiento donde importa, Control donde hay riesgo, y Costo donde la escala lo exige. El rol final no es solo gobernar una fábrica; es ser el "Arquitecto del Portafolio de IA".
-
----
-<div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
-  <div>
-    <a href="./13-Estrategia-Valor.html">« Guía 13</a>
-  </div>
-  <div>
-    <a href="../">Volver al Índice</a>
-  </div>
-  <div>
-    <a href="./15-Etica-Confianza.html">Guía 15 »</a>
-  </div>
-</div>

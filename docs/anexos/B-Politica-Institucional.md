@@ -178,16 +178,3 @@ Si esta política se implementa en una empresa privada o en una jurisdicción di
 * **"Sujeto Obligado"** → se lee como **"Responsable del Tratamiento de Datos"**.
 
 *Nota Final:* Aunque normas específicas como la Ley 20.285 (Chile) son locales, la tendencia regulatoria hacia la **Protección de Datos** y la **Explicabilidad de la IA** es universal. Adoptar este estándar hoy adelanta el cumplimiento regulatorio de mañana en cualquier mercado.
-
----
-<div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
-  <div>
-    <a href="./A-Formulacion-Viabilidad.html">« Anexo A</a>
-  </div>
-  <div>
-    <a href="../">Volver al Índice</a>
-  </div>
-  <div>
-    <a href="./C-Blueprints.html">Anexo C »</a>
-  </div>
-</div>

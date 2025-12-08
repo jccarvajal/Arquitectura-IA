@@ -183,16 +183,3 @@ Comprender la anatomía del modelo (Entrenamiento vs. Inferencia, Parámetros vs
 Como "Arquitectos de IA", este conocimiento técnico nos da poder. Dejamos de tratar a la IA como a un colega humano misterioso y empezamos a tratarla como lo que realmente es: un motor de alto rendimiento que requiere ingeniería, mantenimiento y, sobre todo, un operador competente al volante.
 
 Ahora que entendemos el motor, estamos listos para aprender a darle instrucciones en la **Guía 02: Ingeniería de Prompts**.
-
----
-<div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
-  <div>
-    <a href="../ideas-centrales.html">« Ideas Centrales</a>
-  </div>
-  <div>
-    <a href="../">Volver al Índice</a>
-  </div>
-  <div>
-    <a href="./02-Ingenieria-Prompts.html">Guía 02 »</a>
-  </div>
-</div>

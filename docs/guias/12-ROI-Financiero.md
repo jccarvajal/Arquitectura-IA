@@ -187,16 +187,3 @@ Las organizaciones fracasan frecuentemente porque saltan directo a la **🟥 Zon
 El ROI real de la IA está en lo operativo, en lo "aburrido", en la gestión de listas de espera y el mantenimiento de máquinas.
 
 La IA no se adopta con valentía tecnológica; se adopta con **criterio financiero y ético**.
-
----
-<div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
-  <div>
-    <a href="./11-Industrializacion.html">« Guía 11</a>
-  </div>
-  <div>
-    <a href="../">Volver al Índice</a>
-  </div>
-  <div>
-    <a href="./13-Estrategia-Valor.html">Guía 13 »</a>
-  </div>
-</div>

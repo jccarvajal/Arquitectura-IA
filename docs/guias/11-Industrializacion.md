@@ -195,16 +195,3 @@ La Observabilidad Ampliada no es un simple cambio de nombre; es un cambio de pro
 Hemos pasado del Prototipo a la Producción. Nuestro rol como "Director de Operaciones" ya no es solo hacer que el agente funcione, sino garantizar que la arquitectura sea **soberana y segura**.
 
 Tu trabajo ahora es ser el "Ingeniero de Confiabilidad" (SRE) de la fábrica: defines **dónde se ejecutan los datos (Orquestación)**, impones los **semáforos de riesgo (Gobernanza)** y aseguras que los planos (prompts) estén versionados. Ya no gestionas scripts sueltos; gestionas activos empresariales estables, preparando el terreno para demostrar su verdadero valor financiero.
-
----
-<div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
-  <div>
-    <a href="./10-Evaluacion-Calidad.html">« Guía 10</a>
-  </div>
-  <div>
-    <a href="../">Volver al Índice</a>
-  </div>
-  <div>
-    <a href="./12-ROI-Financiero.html">Guía 12 »</a>
-  </div>
-</div>

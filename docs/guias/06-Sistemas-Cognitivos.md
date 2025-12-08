@@ -136,16 +136,3 @@ Por lo tanto, un diseño cognitivo debe incluir "guardarrailes" (barandillas). E
 #### Conclusión: Del Contrato al Plan Cognitivo Detallado
 
 Hemos pasado de "contratar" al trabajador a diseñar su "plan de trabajo" detallado. Ahora tenemos el "plano de la mente". Con este plano cognitivo en mano, estamos listos para ir al taller y construir la primera versión funcional de la maquinaria en la **Guía 08: Prototipado y Experimentación**.
-
----
-<div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
-  <div>
-    <a href="./05-Ingenieria-Agentes.html">« Guía 05</a>
-  </div>
-  <div>
-    <a href="../">Volver al Índice</a>
-  </div>
-  <div>
-    <a href="./07-Fine-Tuning.html">Guía 07 »</a>
-  </div>
-</div>

@@ -139,16 +139,3 @@ A continuación, se definen los protocolos de ejecución para los roles crítico
 El reentrenamiento cognitivo no es opcional. Es el requisito de entrada para la nueva economía.
 
 Esta guía cierra la brecha de habilidades humanas. Mientras la **Guía 11** industrializó la máquina, esta guía industrializa al operador. Dejamos atrás la ingenuidad del "usuario" para asumir la responsabilidad del "Comandante": el único en la sala capaz de distinguir entre una verdad procesada y una mentira perfecta.
-
----
-<div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
-  <div>
-    <a href="./15-Etica-Confianza.html">« Guía 15</a>
-  </div>
-  <div>
-    <a href="../">Volver al Índice</a>
-  </div>
-  <div>
-    <a href="./17-Perspectivas.html">Guía 17 »</a>
-  </div>
-</div>

@@ -181,13 +181,3 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
     * **Por qué leerlo:** Es el paper de referencia para las arquitecturas **no-Transformers** (SSMs) que resuelven el **Costo Cuadrático** (Guía 03), permitiendo eficiencia a escala y costo lineal.
   * **Behrouz, A., et al. (2025). "Nested Learning: The Illusion of Deep Learning Architectures".** [[Web]](https://research.google/blog/introducing-nested-learning-a-new-ml-paradigm-for-continual-learning/)
     * **Por qué leerlo:** Aborda el segundo límite del Transformer (Guía 03): la **Amnesia Estática**. Introduce el paradigma del "Aprendizaje Anidado" y prototipos capaces de auto-modificación, clave para el "Vigilante Estratégico".
-
----
-<div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
-  <div>
-    <a href="./E-Glosario.html">« Anexo E</a>
-  </div>
-  <div>
-    <a href="../">Volver al Índice</a>
-  </div>
-</div>

@@ -687,16 +687,3 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** Marco de clasificación financiera para proyectos de IA. Se divide en Zona Verde (Ganadores), Amarilla (Tácticos), Naranja (Vanidosos) y Roja (Destrucción de Valor).
 * **Referencia Principal:** Guía 12 (ROI Financiero).
-
----
-<div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
-  <div>
-    <a href="./D-Plantillas-Recursos.html">« Anexo D</a>
-  </div>
-  <div>
-    <a href="../">Volver al Índice</a>
-  </div>
-  <div>
-    <a href="./F-Bibliografia.html">Anexo F »</a>
-  </div>
-</div>

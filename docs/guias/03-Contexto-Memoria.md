@@ -200,16 +200,3 @@ La maestría aquí reside en una doble habilidad:
 
 1.  **La Ciencia (La Arquitectura):** Aplicar con disciplina la estrategia correcta (RAG, Memoria, Agentes) para gestionar el flujo de información, balanceando el dilema central de costo, latencia y coherencia.
 2.  **El Arte (El Criterio):** Saber que la respuesta más inteligente a menudo proviene de la pizarra más limpia.
-
----
-<div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
-  <div>
-    <a href="./02-Ingenieria-Prompts.html">« Guía 02</a>
-  </div>
-  <div>
-    <a href="../">Volver al Índice</a>
-  </div>
-  <div>
-    <a href="./04-Estrategia-Datos.html">Guía 04 »</a>
-  </div>
-</div>

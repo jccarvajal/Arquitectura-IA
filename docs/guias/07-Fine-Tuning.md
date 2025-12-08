@@ -97,16 +97,3 @@ El "Ingeniero de Prototipos" (Guía 08) usa esta "Guía de Especialización" par
 * Usas **Ajuste Fino** para darles la **habilidad**, estilo y formato que necesitas.
 
 Un agente que tiene acceso a los libros correctos (RAG) y que además se graduó en la especialidad correcta (Ajuste Fino) es el trabajador autónomo definitivo.
-
----
-<div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
-  <div>
-    <a href="./06-Sistemas-Cognitivos.html">« Guía 06</a>
-  </div>
-  <div>
-    <a href="../">Volver al Índice</a>
-  </div>
-  <div>
-    <a href="./08-Prototipado.html">Guía 08 »</a>
-  </div>
-</div>

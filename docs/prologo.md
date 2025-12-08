@@ -99,16 +99,3 @@ La saga nos muestra los dos únicos destinos que esta herramienta habilita, depe
 Esta obra es un manual para evitar el destino de *Protogen* mediante la implementación de una *Fundación* de GRC. Argumentamos que la verdadera **Expansión**, la ampliación de la capacidad humana, solo se alcanza cuando el criterio (GRC) y el juicio humano (S2) dirigen la herramienta.
 
 **La expansión real no vendrá de la máquina, sino del juicio humano que la dirige.**
-
----
-<div style="display: flex; justify-content: space-between; font-size: 0.9em; padding-top: 10px;">
-<div>
-    <a href="./nota-al-lector.html">« Nota al Lector</a>
-  </div>
-  <div>
-    <a href="../">Volver al Índice</a>
-  </div>
-  <div>
-      <a href="./ideas-centrales.html">Ideas Centrales »</a>
-  </div>
-</div>
