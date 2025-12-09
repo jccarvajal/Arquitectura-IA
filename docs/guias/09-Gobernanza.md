@@ -160,45 +160,31 @@ Los "guardrails", "circuit breakers" y los puntos de "Validación Humana" no son
 
 ```mermaid
 graph TD
-    %% ESTILOS (Alto Contraste + Fuente 14px)
-    classDef base fill:#eeeeee,stroke:#333,stroke-width:2px,color:#000,font-size:14px;
-    classDef layer fill:#f1f8e9,stroke:#33691e,stroke-width:2px,color:#000,font-size:14px;
-    classDef blue fill:#e3f2fd,stroke:#0d47a1,stroke-width:2px,color:#000,font-size:14px;
-    classDef orange fill:#ffecb3,stroke:#ff6f00,stroke-width:2px,color:#000,font-size:14px;
-    classDef red fill:#ffcdd2,stroke:#b71c1c,stroke-width:2px,color:#000,font-size:14px;
+    %% CONFIGURACIÓN MAESTRA
+    classDef default font-size:14px,stroke-width:2px;
 
-    %% EXTERNO
     subgraph EXTERNO [Zona No Confiable]
         User(👤 Usuario<br/>Atacante)
     end
-    class User base;
 
-    %% ARQUITECTURA LOSA
-    subgraph LOSA_LAYER [🛡️ Arquitectura LOSA - Middleware]
+    subgraph LOSA_LAYER [🛡️ Arquitectura LOSA]
         direction TB
-        Input(1️⃣ Control<br/>de ENTRADA) -->|Sanitización| Check1{¿Prompt<br/>Seguro?}
+        Input(1️⃣ Control<br/>de ENTRADA) -->|Sanitizar| Check1{¿Seguro?}
         
-        Check1 -->|No: Inyección| Block1(⛔ Bloqueo<br/>Inmediato)
-        Check1 -->|Sí| LLM(🧠 Modelo<br/>Agente)
+        Check1 -->|No| Block1(⛔ Bloqueo)
+        Check1 -->|Sí| LLM(🧠 Modelo)
         
-        LLM --> RawResp[Respuesta<br/>Cruda]
+        LLM --> RawResp[Respuesta]
         RawResp --> Output(2️⃣ Control<br/>de SALIDA)
         
-        Output -->|Validación| Check2{¿Datos<br/>Seguros?}
-        Check2 -->|No: Fuga PII| Block2(⚠️ Censurar<br/>o Regenerar)
-        Check2 -->|Sí| Final(✅ Respuesta<br/>Final)
+        Output -->|Validar| Check2{¿Datos OK?}
+        Check2 -->|No| Block2(⚠️ Censurar)
+        Check2 -->|Sí| Final(✅ Respuesta)
         
-        Audit(📝 Logs de<br/>Auditoría) -.-> Input
+        Audit(📝 Logs) -.-> Input
         Audit -.-> Output
     end
-    class LOSA_LAYER layer;
-    class Input,Output orange;
-    class LLM,RawResp,Final blue;
-    class Block1,Block2 red;
-    class Check1,Check2 orange;
-    class Audit base;
 
-    %% CONEXIONES
     User -->|Prompt| Input
     Block1 -.-> User
     Final --> User
