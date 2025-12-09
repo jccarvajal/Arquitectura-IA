@@ -14,59 +14,56 @@ Tras una década analizando éxitos, fracasos, regulaciones y *benchmarks* globa
 
 ```mermaid
 graph LR
-    Invest([💰 Inversión IA]) --> Evaluacion{¿Genera Valor?}
+    %% ESTILOS (Alto Contraste + Fuente 14px/15px)
+    classDef base fill:#ffffff,stroke:#333,stroke-width:2px,color:#000,font-size:15px;
+    classDef green fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#000,font-size:14px;
+    classDef yellow fill:#fffde7,stroke:#fbc02d,stroke-width:2px,color:#000,font-size:14px;
+    classDef orange fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000,font-size:14px;
+    classDef red fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#000,font-size:14px;
+    classDef blue fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000,font-size:14px;
+
+    %% INICIO
+    Invest(💰 Inversión<br/>en IA) --> Evaluacion{¿Genera<br/>Valor?}
+    class Invest,Evaluacion base;
 
     %% ZONA VERDE
-    Evaluacion -->|Sí, Probado| Green[🟩 ZONA VERDE: Ganadores]
+    Evaluacion -->|Sí, Probado| Green(🟩 ZONA VERDE:<br/>Ganadores)
     subgraph Z_Green [Rentabilidad Clara]
         direction TB
-        Green --> G1(Mantenimiento Predictivo)
-        Green --> G2(Fraude y Riesgo)
-        Green --> G3(Eficiencia Operativa)
+        Green --> G1(Mantenimiento<br/>Predictivo)
+        Green --> G2(Fraude y<br/>Riesgo)
+        Green --> G3(Eficiencia<br/>Operativa)
     end
+    class Green,G1,G2,G3 green;
 
     %% ZONA AMARILLA
-    Evaluacion -->|Sí, pero complejo| Yellow[🟨 ZONA AMARILLA: Tácticos]
+    Evaluacion -->|Sí, Complejo| Yellow(🟨 ZONA AMARILLA:<br/>Tácticos)
     subgraph Z_Yellow [Depende de Ejecución]
         direction TB
-        Yellow --> Y1(Chatbots Normativos)
-        Yellow --> Y2(Triage Automático)
+        Yellow --> Y1(Chatbots<br/>Normativos)
+        Yellow --> Y2(Triage<br/>Automático)
     end
+    class Yellow,Y1,Y2 yellow;
 
-    %% ZONA NARANJA Y ROJA
-    Evaluacion -->|Marketing| Orange[🟧 ZONA NARANJA: Vanidosos]
-    Evaluacion -->|Alto Riesgo| Red[🟥 ZONA ROJA: Destrucción]
-
+    %% RIESGOS
+    Evaluacion -->|Marketing| Orange(🟧 ZONA NARANJA:<br/>Vanidosos)
+    Evaluacion -->|Alto Riesgo| Red(🟥 ZONA ROJA:<br/>Destrucción)
     subgraph Z_Risk [Riesgo de Valor]
         direction TB
-        Orange --> O1(Chatbots Tontos)
-        Red --> R1(Decisión Autónoma S2)
+        Orange --> O1(Chatbots<br/>Tontos)
+        Red --> R1(Decisión<br/>Autónoma S2)
     end
-
-    %% ZONA AZUL
-    Evaluacion -->|Largo Plazo| Blue[🟦 ZONA AZUL: Sistémico]
-    subgraph Z_Blue [Habilitadores]
-        direction TB
-        Blue --> B1(Infraestructura Datos)
-        Blue --> B2(Auditoría / LOSA)
-    end
-
-    %% ESTILOS CORREGIDOS (Fondo claro para todos para asegurar contraste)
-    classDef green fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#000;
-    classDef yellow fill:#fffde7,stroke:#fbc02d,stroke-width:2px,color:#000;
-    classDef orange fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000;
-    classDef red fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#000;
-    classDef blue fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000;
-    
-    %% ESTILO DEL NODO INICIO (CAMBIADO: Fondo blanco, borde negro, texto negro)
-    classDef base fill:#ffffff,stroke:#333,stroke-width:3px,color:#000;
-
-    class Green,G1,G2,G3 green;
-    class Yellow,Y1,Y2 yellow;
     class Orange,O1 orange;
     class Red,R1 red;
+
+    %% AZUL
+    Evaluacion -->|Largo Plazo| Blue(🟦 ZONA AZUL:<br/>Sistémico)
+    subgraph Z_Blue [Habilitadores]
+        direction TB
+        Blue --> B1(Infraestructura<br/>Datos)
+        Blue --> B2(Auditoría<br/>LOSA)
+    end
     class Blue,B1,B2 blue;
-    class Invest base; 
 ```
 
 * 🟩 **Zona Verde (Ganadores):** Proyectos con ROI alto, madurez probada y beneficios financieros o físicos inmediatos.
