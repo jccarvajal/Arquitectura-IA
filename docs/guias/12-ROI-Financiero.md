@@ -13,66 +13,40 @@ Tras una década analizando éxitos, fracasos, regulaciones y *benchmarks* globa
 ### El Mapa de las Cinco Zonas
 
 ```mermaid
-graph LR
-    %% 1. ESTILOS (Solo tamaño de fuente, sin forzar color de texto)
-    classDef base fill:#fff,stroke:#333,stroke-width:2px,font-size:15px;
-    classDef green fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,font-size:14px;
-    classDef yellow fill:#fffde7,stroke:#fbc02d,stroke-width:2px,font-size:14px;
-    classDef orange fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,font-size:14px;
-    classDef red fill:#ffebee,stroke:#c62828,stroke-width:2px,font-size:14px;
-    classDef blue fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,font-size:14px;
+graph TD
+    Invest([💰 Decisión de Inversión en IA]) --> Evaluacion{¿Genera Valor Real?}
 
-    %% 2. NODO PRINCIPAL
-    Invest(💰 Inversión IA) --> Evaluacion{¿Genera Valor?}
-    class Invest,Evaluacion base;
-
-    %% 3. GRUPOS INVISIBLES (Para ordenar sin mostrar cajas feas)
-
-    %% --- VERDE (ARRIBA) ---
-    subgraph G_Green [ ]
-        direction LR
-        Evaluacion -->|Sí, Probado| Green(🟩 ZONA VERDE)
-        Green --> G1(Mantenimiento)
-        Green --> G2(Fraude)
-        Green --> G3(Eficiencia)
+    subgraph Ganadores [Rentabilidad Clara]
+        Evaluacion -->|Sí, Probado| Green[🟩 ZONA VERDE: Ganadores]
+        Green --> G1(Mantenimiento Predictivo)
+        Green --> G2(Fraude y Riesgo)
+        Green --> G3(Eficiencia Operativa)
     end
-    class Green,G1,G2,G3 green;
 
-    %% --- AMARILLO (MEDIO) ---
-    subgraph G_Yellow [ ]
-        direction LR
-        Evaluacion -->|Sí, Complejo| Yellow(🟨 ZONA AMARILLA)
+    subgraph Condicionales [Depende de Ejecución]
+        Evaluacion -->|Sí, pero complejo| Yellow[🟨 ZONA AMARILLA: Tácticos]
         Yellow --> Y1(Chatbots Normativos)
         Yellow --> Y2(Triage Automático)
     end
-    class Yellow,Y1,Y2 yellow;
 
-    %% --- RIESGO (ABAJO) ---
-    subgraph G_Risk [ ]
-        direction LR
-        Evaluacion -->|Marketing| Orange(🟧 ZONA NARANJA)
-        Evaluacion -->|Peligro| Red(🟥 ZONA ROJA)
-        
-        Orange --> O1(Chatbots Tontos)
-        Red --> R1(Decisión Autónoma)
+    subgraph Trampas [Cuidado]
+        Evaluacion -->|No, solo Marketing| Orange[🟧 ZONA NARANJA: Vanidosos]
+        Evaluacion -->|No, Alto Riesgo| Red[🟥 ZONA ROJA: Destrucción]
     end
-    class Orange,O1 orange;
-    class Red,R1 red;
 
-    %% --- AZUL (FONDO) ---
-    subgraph G_Blue [ ]
-        direction LR
-        Evaluacion -->|Largo Plazo| Blue(🟦 ZONA AZUL)
-        Blue --> B1(Infraestructura)
-        Blue --> B2(Auditoría LOSA)
+    subgraph Base [Habilitadores]
+        Evaluacion -->|Valor a Largo Plazo| Blue[🟦 ZONA AZUL: Sistémico]
+        Blue --> B1(Infraestructura Datos)
+        Blue --> B2(Auditoría / LOSA)
     end
-    class Blue,B1,B2 blue;
 
-    %% 4. TRUCO DE INVISIBILIDAD (Elimina bordes y fondos de los grupos)
-    style G_Green fill:none,stroke:none
-    style G_Yellow fill:none,stroke:none
-    style G_Risk fill:none,stroke:none
-    style G_Blue fill:none,stroke:none
+    %% Estilos de Semáforo
+    style Green fill:#e8f5e9,stroke:#2e7d32,stroke-width:3px
+    style Yellow fill:#fffde7,stroke:#fbc02d,stroke-width:2px
+    style Orange fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
+    style Red fill:#ffebee,stroke:#c62828,stroke-width:2px
+    style Blue fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
+    style Invest fill:#333,color:#fff,stroke:#000
 ```
 
 * 🟩 **Zona Verde (Ganadores):** Proyectos con ROI alto, madurez probada y beneficios financieros o físicos inmediatos.
