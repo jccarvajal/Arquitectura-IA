@@ -14,11 +14,12 @@ Tras una década analizando éxitos, fracasos, regulaciones y *benchmarks* globa
 
 ```mermaid
 graph LR
-    %% CONFIGURACIÓN MAESTRA
+    %% CONFIGURACIÓN MAESTRA (Estilo limpio)
     classDef default font-size:14px,stroke-width:2px;
 
     Invest(💰 Inversión<br/>en IA) --> Evaluacion{¿Genera<br/>Valor?}
 
+    %% ZONA VERDE
     Evaluacion -->|Sí| Green(🟩 ZONA VERDE:<br/>Ganadores)
     subgraph Z_Green [Rentabilidad Clara]
         direction TB
@@ -27,6 +28,7 @@ graph LR
         Green --> G3(Eficiencia)
     end
 
+    %% ZONA AMARILLA
     Evaluacion -->|Complejo| Yellow(🟨 ZONA AMARILLA:<br/>Tácticos)
     subgraph Z_Yellow [Depende de Ejecución]
         direction TB
@@ -34,6 +36,7 @@ graph LR
         Yellow --> Y2(Triage)
     end
 
+    %% ZONA RIESGO (NARANJA + ROJA)
     Evaluacion -->|Riesgo| Orange(🟧 NARANJA:<br/>Vanidosos)
     Evaluacion -->|Peligro| Red(🟥 ROJA:<br/>Destrucción)
     subgraph Z_Risk [Riesgo de Valor]
@@ -42,12 +45,19 @@ graph LR
         Red --> R1(Autónomos)
     end
 
+    %% ZONA AZUL
     Evaluacion -->|Futuro| Blue(🟦 ZONA AZUL:<br/>Sistémico)
     subgraph Z_Blue [Habilitadores]
         direction TB
         Blue --> B1(Datos)
         Blue --> B2(Auditoría)
     end
+
+    %% --- TRUCO DE ORDENAMIENTO (ENLACES INVISIBLES) ---
+    %% Esto obliga a Mermaid a apilar las zonas de arriba a abajo
+    Green ~~~ Yellow
+    Yellow ~~~ Orange
+    Orange ~~~ Blue
 ```
 
 * 🟩 **Zona Verde (Ganadores):** Proyectos con ROI alto, madurez probada y beneficios financieros o físicos inmediatos.
