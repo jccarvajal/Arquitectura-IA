@@ -54,15 +54,6 @@ graph LR
         Blue --> B1(Infraestructura Datos)
         Blue --> B2(Auditoría / LOSA)
     end
-
-    %% --- FORZAR EL ORDEN VERTICAL ---
-    %% Usamos enlaces invisibles (~~~) para apilar los subgráficos
-    %% en el orden deseado: Verde -> Amarillo -> Naranja -> Rojo -> Azul
-
-    Z_Green ~~~ Z_Yellow
-    Z_Yellow ~~~ Z_Orange
-    Z_Orange ~~~ Z_Red
-    Z_Red ~~~ Z_Blue
 ```
 
 * 🟩 **Zona Verde (Ganadores):** Proyectos con ROI alto, madurez probada y beneficios financieros o físicos inmediatos.
