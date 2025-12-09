@@ -32,7 +32,8 @@ Más adelante nos enfocaremos en la **Gobernanza de IA** (el control sobre las *
 
 Las Políticas del "Arquitecto de la Información":
 
-1. **Catalogación (Metadata):** No puedes gobernar lo que no puedes encontrar. Cada documento en tu "biblioteca" RAG debe tener "etiquetas" (metadata):  
+1. **Catalogación (Metadata):** No puedes gobernar lo que no puedes encontrar. Cada documento en tu "biblioteca" RAG debe tener "etiquetas" (metadata):
+
    * *Ejemplo:*
      ```text
      { documento: 'manual\_bcp.pdf', 

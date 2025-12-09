@@ -117,12 +117,14 @@ El proceso de RAG opera en dos fases arquitectónicas distintas:
 
 **A. Fase de Indexación (Offline): La Preparación del Conocimiento**
 Esta fase solo ocurre una vez o cuando se actualiza un documento. Transforma tus documentos "crudos" en una memoria lista para ser consultada por la máquina.
+
 1.  **Troceo (Chunking):** Los documentos largos (PDFs, HTML) se dividen en fragmentos de texto pequeños y manejables (los *chunks*).
 2.  **Vectorización (Embedding):** Cada fragmento de texto se convierte en una representación numérica (un vector) que captura su significado semántico (su "idea").
 3.  **Carga (Load):** Los vectores y los fragmentos originales se almacenan en una Base de Datos Vectorial, lista para la búsqueda.
 
 **B. Fase de Recuperación y Generación (Online): La Ejecución Semántica**
 Esta fase ocurre en tiempo real, cada vez que el usuario hace una pregunta. Es el ciclo en que se "aumenta" el prompt.
+
 1.  **Vectorización de la Consulta:** La pregunta del usuario se vectoriza de la misma manera que los documentos.
 2.  **Búsqueda Semántica:** El sistema busca en la Base Vectorial aquellos fragmentos de texto cuyo vector es numéricamente más similar al vector de la pregunta (es decir, aquellos fragmentos con el significado más cercano).
 3.  **Aumento del Contexto:** El sistema inyecta esos fragmentos recuperados (la "evidencia") en la ventana de contexto del LLM, junto con la pregunta original.

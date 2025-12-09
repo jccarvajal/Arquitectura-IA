@@ -272,7 +272,7 @@ Aquí conectamos las técnicas avanzadas con el método de 7 pasos para ver dón
     Analiza la respuesta anterior. ¿Es el tono adecuado para el público objetivo? ¿Hay alguna frase que podría sonar confusa? Propón mejoras.
     ```
   * **Técnica de más valor: Self-Consistency.** Al comparar las diferentes salidas generadas, puedes evaluar cuál cumple mejor el objetivo inicial.  
-* **Paso 7 (Itera con Intención):**  
+* **Paso 7 (Itera con Intención):**
   * **Técnica de más valor: Prompt Chaining.** Si un prompt monolítico y complejo falla repetidamente, la mejor forma de iterar es descomponerlo en una cadena de prompts más simples. Esto te da control granular sobre cada parte del proceso.  
   * **Técnica de más valor: Meta-Prompting.** Si estás atascado, pregúntale al modelo:
     ```text

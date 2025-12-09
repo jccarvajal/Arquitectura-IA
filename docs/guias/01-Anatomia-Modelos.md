@@ -19,6 +19,7 @@ Este anexo describe el ciclo de vida técnico que transforma terabytes de texto 
 ### Parte 1: El Mapa del Territorio: IA vs. ML vs. DL
 
 Antes de inspeccionar el motor, debemos ubicarlo en el mapa. Es común usar los términos "IA", "Machine Learning" y "Deep Learning" indistintamente, pero son conceptos jerárquicos, como muñecas rusas (Matrioskas).
+
 * **Inteligencia Artificial (IA):** Es el concepto general. Se refiere a cualquier técnica que permita a las computadoras imitar el comportamiento humano (lógica, reglas si-entonces, árboles de decisión).
 * **Machine Learning (ML - Aprendizaje Automático):** Es un subconjunto de la IA. Aquí, la máquina no se programa con reglas explícitas, sino que "aprende" patrones a partir de datos estadísticos para hacer predicciones.
 * **Deep Learning (DL - Aprendizaje Profundo):** Es un subconjunto del ML inspirado en la biología. Utiliza *Redes Neuronales Artificiales* con muchas capas ("profundas") para procesar datos complejos. Aquí es donde viven los LLMs (Large Language Models).
@@ -34,11 +35,13 @@ La generación actual se sustenta en la arquitectura **Transformer** (Vaswani et
 
 #### A. Tokenización
 Los modelos no procesan palabras, sino **tokens** (fragmentos numéricos).
+
 * **Implicancia Económica:** Un tokenizador ineficiente, especialmente en modelos anglocéntricos aplicados al español, aumenta el costo real de inferencia.
 * **Implicancia Técnica:** Más tokens para expresar la misma idea implica mayor latencia y mayor superficie para alucinaciones.
 
 #### B. Ventana de Contexto y Atención
 La atención permite al modelo relacionar conceptos distantes para mantener coherencia narrativa y lógica.
+
 * **Implicancia de Diseño:** La calidad del razonamiento (lo que en esta obra definimos como “Sistema 2”) está limitada por la fidelidad del mecanismo de atención y por el tamaño de la ventana de contexto. Contextos saturados degradan la capacidad instruccional (*Lost in the Middle phenomenon*).
 
 ---
@@ -63,11 +66,13 @@ Es la fase de mayor inversión (meses de cómputo en miles de GPUs). El modelo a
 
 #### A. SFT (Supervised Fine-Tuning) - El Entrenamiento Conductual
 En esta etapa, el modelo deja de ser un simple predictor de texto (que solo quiere completar frases) para convertirse en un asistente dialogante. Se le alimenta con miles de ejemplos de alta calidad en formato **(Instrucción, Respuesta Ideal)** escritos por humanos expertos. Es como enviar al modelo a una "escuela de modales" donde aprende el formato de pregunta-respuesta.
+
 * **Función:** Enseñar al modelo a estructurar diálogos coherentes, seguir instrucciones complejas paso a paso y adoptar un tono de servicio útil.
 * **Riesgo:** **Alucinación Confiada**. Como el modelo aprende la *forma* de una respuesta correcta (el estilo seguro y profesional) antes que el *contenido* factual, puede entregar información falsa con un tono de autoridad total, "impostando" competencia.
 
 #### B. RLHF (Reinforcement Learning from Human Feedback) - El Ajuste de Preferencias
 Esta es la capa clásica de alineación ética y de seguridad. Dado que es imposible escribir una regla para cada situación social posible, se utiliza un sistema de "premios y castigos" basado en la preferencia humana.
+
 1.  **Comparación:** Los humanos no escriben respuestas, sino que **ordenan** dos respuestas generadas por la IA (Opción A vs. Opción B) según cuál es mejor (más segura, más útil, menos tóxica).
 2.  **Modelo de Recompensa:** Esos datos entrenan a un segundo modelo (el *Reward Model*) que aprende a predecir qué preferiría un humano.
 3.  **Optimización:** El LLM principal juega millones de partidas contra este Modelo de Recompensa, ajustando sus pesos para maximizar su puntaje de aprobación.
@@ -75,6 +80,7 @@ Esta es la capa clásica de alineación ética y de seguridad. Dado que es impos
 
 #### C. RLAIF (Constitutional AI / AI Feedback) - La Alineación Escalable
 El cuello de botella del RLHF son los humanos: son lentos, caros, inconsistentes y se cansan. RLAIF soluciona esto reemplazando al evaluador humano por otra IA.
+
 * **Mecanismo:** En lugar de preferencias subjetivas de una multitud, se utiliza una **"Constitución"** (un set de principios explícitos, ej: "Elige la respuesta que sea más útil y menos dañina"). Un Modelo Supervisor usa esta constitución para evaluar y entrenar al Modelo Principal a una velocidad y escala imposible para humanos.
 * **Ventaja:** Mayor consistencia normativa (la IA no se cansa ni tiene días malos) y transparencia (las reglas están escritas en la Constitución, no en la mente subjetiva de miles de contratistas).
 
@@ -165,8 +171,7 @@ Buscamos responder: *¿Es seguro desplegar este modelo ante usuarios o empleados
 * **Conclusión Técnica:** `[Viable / No Viable]`
 * **Conclusión Normativa:** `[Cumple / No Cumple]`
 
-**Recomendación Final:**
-[ ] APROBAR | [ ] APROBAR CON CONDICIONES | [ ] NO APROBAR
+**Recomendación Final:** `[ ] APROBAR | [ ] APROBAR CON CONDICIONES | [ ] NO APROBAR`
 
 ---
 

@@ -92,6 +92,7 @@ Esta propuesta aspira a cumplir esa función **al proponer** que la única forma
 Nuestro momento histórico también recuerda a *The Expanse*, la saga escrita por James S. A. Corey. En ella, la *Protomolécula* es la metáfora perfecta de la IA: una herramienta alienígena, opaca, poderosa y sin agencia propia.
 
 La saga nos muestra los dos únicos destinos que esta herramienta habilita, dependiendo del GRC que la rodea:
+
 1. **El Caos (El Riesgo):** En manos de *Protogen*, una organización que opera sin GRC, la *Protomolécula* desata un caos industrial. Esto representa el nuevo desafío de **ciberseguridad**: un desastre causado no por un ataque externo, sino por un **fallo catastrófico de gobernanza** sobre una tecnología que no se comprende.
 
 2. **La Expansión (La Oportunidad):** Sin embargo, la función original de la *Protomolécula* era permitir la construcción y expansión, **abriendo nuevas rutas**. La IA actual (nuestra "Protomolécula") funciona igual.

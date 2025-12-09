@@ -38,6 +38,7 @@ A lo largo del texto encontrará dos tipos de herramientas cognitivas para aterr
 ### 4. Sobre la Estructura: El Orden de Lectura (El "Por Qué", "Qué" y "Cómo")
 
 La obra está diseñada para ser un "viaje de aprendizaje" y un "manual de consulta", pero su estructura preliminar es intencional para construir el criterio antes que la técnica.
+
 * **El "Por Qué" (Prólogo: Fundación):** Inmediatamente después de esta nota, encontrarás el Prólogo. Te pedimos que no te lo saltes. Es el manifiesto filosófico y la "Fundación" conceptual que da sentido a todas las guías. Establece el marco de pensamiento (Kahneman, Taleb, Dreyfus, Asimov) que justifica el enfoque de gobernanza de todo la obra.
 * **El "Qué" (Ideas Centrales):** A continuación, verás las Ideas Centrales. Es el "resumen ejecutivo" de cada guía, destilado en una sola frase. Actúa como un mapa de alto nivel de lo que estás a punto de aprender.
 * **El "Cómo" (Las Guías y Anexos):** Este es el cuerpo principal de la obra, el "viaje" secuencial. Está diseñado para el "Arquitecto", pero cada Guía es lo suficientemente autónoma para servir como manual de consulta para el "Profesional".
