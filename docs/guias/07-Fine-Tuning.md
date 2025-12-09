@@ -29,7 +29,7 @@ graph TD
     classDef purple fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#000,font-size:14px;
 
     %% 1. EL PROBLEMA (Usando paréntesis para bordes redondeados, no pastilla)
-    Start(🚀 Necesidad de Negocio) --> Decision{¿Qué le<br/>falta a la IA?}
+    Start(🚀 Necesidad<br/>de Negocio) --> Decision{¿Qué le<br/>falta a la IA?}
     class Start,Decision base;
 
     %% 2. RAMIFICACIÓN
