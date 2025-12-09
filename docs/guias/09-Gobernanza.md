@@ -160,39 +160,48 @@ Los "guardrails", "circuit breakers" y los puntos de "Validación Humana" no son
 
 ```mermaid
 graph TD
-    subgraph EXTERNO [Zona No Confiable]
-        User([👤 Usuario / Atacante])
-    end
+    %% ESTILOS (Alto Contraste + Fuente 14px)
+    classDef base fill:#eeeeee,stroke:#333,stroke-width:2px,color:#000,font-size:14px;
+    classDef layer fill:#f1f8e9,stroke:#33691e,stroke-width:2px,color:#000,font-size:14px;
+    classDef blue fill:#e3f2fd,stroke:#0d47a1,stroke-width:2px,color:#000,font-size:14px;
+    classDef orange fill:#ffecb3,stroke:#ff6f00,stroke-width:2px,color:#000,font-size:14px;
+    classDef red fill:#ffcdd2,stroke:#b71c1c,stroke-width:2px,color:#000,font-size:14px;
 
-    subgraph LOSA_LAYER [🛡️ Arquitectura LOSA - Middleware de Seguridad]
+    %% EXTERNO
+    subgraph EXTERNO [Zona No Confiable]
+        User(👤 Usuario<br/>Atacante)
+    end
+    class User base;
+
+    %% ARQUITECTURA LOSA
+    subgraph LOSA_LAYER [🛡️ Arquitectura LOSA - Middleware]
         direction TB
-        Input[1️⃣ Control de ENTRADA] -->|Sanitización| Check1{¿Prompt Seguro?}
+        Input(1️⃣ Control<br/>de ENTRADA) -->|Sanitización| Check1{¿Prompt<br/>Seguro?}
         
-        Check1 -->|No: Inyección/Jailbreak| Block1[⛔ Bloqueo Inmediato]
-        Check1 -->|Sí| LLM[🧠 Modelo LLM / Agente]
+        Check1 -->|No: Inyección| Block1(⛔ Bloqueo<br/>Inmediato)
+        Check1 -->|Sí| LLM(🧠 Modelo<br/>Agente)
         
-        LLM --> RawResp[Respuesta Cruda]
-        RawResp --> Output[2️⃣ Control de SALIDA]
+        LLM --> RawResp[Respuesta<br/>Cruda]
+        RawResp --> Output(2️⃣ Control<br/>de SALIDA)
         
-        Output -->|Validación| Check2{¿Datos Seguros?}
-        Check2 -->|No: Fuga PII/Alucinación| Block2[⚠️ Censurar o Regenerar]
-        Check2 -->|Sí| Final[✅ Respuesta Final]
+        Output -->|Validación| Check2{¿Datos<br/>Seguros?}
+        Check2 -->|No: Fuga PII| Block2(⚠️ Censurar<br/>o Regenerar)
+        Check2 -->|Sí| Final(✅ Respuesta<br/>Final)
         
-        Audit[📝 Logs de Auditoría & Trazabilidad] -.-> Input
+        Audit(📝 Logs de<br/>Auditoría) -.-> Input
         Audit -.-> Output
     end
+    class LOSA_LAYER layer;
+    class Input,Output orange;
+    class LLM,RawResp,Final blue;
+    class Block1,Block2 red;
+    class Check1,Check2 orange;
+    class Audit base;
 
+    %% CONEXIONES
     User -->|Prompt| Input
     Block1 -.-> User
     Final --> User
-
-    %% Estilos Cyber/Noir
-    style LOSA_LAYER fill:#f1f8e9,stroke:#33691e,stroke-width:2px
-    style LLM fill:#e3f2fd,stroke:#0d47a1
-    style Input fill:#ffecb3,stroke:#ff6f00
-    style Output fill:#ffecb3,stroke:#ff6f00
-    style Block1 fill:#ffcdd2,stroke:#b71c1c
-    style User fill:#eeeeee,stroke:#333
 ```
 
 #### 1. Qué resuelve la LOSA
