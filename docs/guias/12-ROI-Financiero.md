@@ -13,40 +13,58 @@ Tras una década analizando éxitos, fracasos, regulaciones y *benchmarks* globa
 ### El Mapa de las Cinco Zonas
 
 ```mermaid
-graph TD
-    Invest([💰 Decisión de Inversión en IA]) --> Evaluacion{¿Genera Valor Real?}
+graph LR
+    Invest([💰 Inversión IA]) --> Evaluacion{¿Genera Valor?}
 
-    subgraph Ganadores [Rentabilidad Clara]
-        Evaluacion -->|Sí, Probado| Green[🟩 ZONA VERDE: Ganadores]
+    %% ZONA VERDE
+    Evaluacion -->|Sí, Probado| Green[🟩 ZONA VERDE: Ganadores]
+    subgraph Z_Green [Rentabilidad Clara]
+        direction TB
         Green --> G1(Mantenimiento Predictivo)
         Green --> G2(Fraude y Riesgo)
         Green --> G3(Eficiencia Operativa)
     end
 
-    subgraph Condicionales [Depende de Ejecución]
-        Evaluacion -->|Sí, pero complejo| Yellow[🟨 ZONA AMARILLA: Tácticos]
+    %% ZONA AMARILLA
+    Evaluacion -->|Sí, pero complejo| Yellow[🟨 ZONA AMARILLA: Tácticos]
+    subgraph Z_Yellow [Depende de Ejecución]
+        direction TB
         Yellow --> Y1(Chatbots Normativos)
         Yellow --> Y2(Triage Automático)
     end
 
-    subgraph Trampas [Cuidado]
-        Evaluacion -->|No, solo Marketing| Orange[🟧 ZONA NARANJA: Vanidosos]
-        Evaluacion -->|No, Alto Riesgo| Red[🟥 ZONA ROJA: Destrucción]
+    %% ZONA NARANJA Y ROJA
+    Evaluacion -->|Marketing| Orange[🟧 ZONA NARANJA: Vanidosos]
+    Evaluacion -->|Alto Riesgo| Red[🟥 ZONA ROJA: Destrucción]
+
+    subgraph Z_Risk [Riesgo de Valor]
+        direction TB
+        Orange --> O1(Chatbots Tontos)
+        Red --> R1(Decisión Autónoma S2)
     end
 
-    subgraph Base [Habilitadores]
-        Evaluacion -->|Valor a Largo Plazo| Blue[🟦 ZONA AZUL: Sistémico]
+    %% ZONA AZUL
+    Evaluacion -->|Largo Plazo| Blue[🟦 ZONA AZUL: Sistémico]
+    subgraph Z_Blue [Habilitadores]
+        direction TB
         Blue --> B1(Infraestructura Datos)
         Blue --> B2(Auditoría / LOSA)
     end
 
-    %% Estilos de Semáforo
-    style Green fill:#e8f5e9,stroke:#2e7d32,stroke-width:3px
-    style Yellow fill:#fffde7,stroke:#fbc02d,stroke-width:2px
-    style Orange fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
-    style Red fill:#ffebee,stroke:#c62828,stroke-width:2px
-    style Blue fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
-    style Invest fill:#333,color:#fff,stroke:#000
+    %% ESTILOS
+    classDef green fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
+    classDef yellow fill:#fffde7,stroke:#fbc02d,stroke-width:2px;
+    classDef orange fill:#fff3e0,stroke:#ef6c00,stroke-width:2px;
+    classDef red fill:#ffebee,stroke:#c62828,stroke-width:2px;
+    classDef blue fill:#e3f2fd,stroke:#1565c0,stroke-width:2px;
+    classDef base fill:#333,color:#fff,stroke:#000;
+
+    class Green,G1,G2,G3 green;
+    class Yellow,Y1,Y2 yellow;
+    class Orange,O1 orange;
+    class Red,R1 red;
+    class Blue,B1,B2 blue;
+    class Invest base;
 ```
 
 * 🟩 **Zona Verde (Ganadores):** Proyectos con ROI alto, madurez probada y beneficios financieros o físicos inmediatos.
