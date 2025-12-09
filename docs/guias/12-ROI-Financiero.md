@@ -51,13 +51,6 @@ graph LR
         Blue --> B2(Auditoría / LOSA)
     end
 
-    %% ESTILOS CORREGIDOS (Fondo claro para todos para asegurar contraste)
-    classDef green fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#000;
-    classDef yellow fill:#fffde7,stroke:#fbc02d,stroke-width:2px,color:#000;
-    classDef orange fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000;
-    classDef red fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#000;
-    classDef blue fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000;
-    
     %% ESTILO DEL NODO INICIO (CAMBIADO: Fondo blanco, borde negro, texto negro)
     classDef base fill:#ffffff,stroke:#333,stroke-width:3px,color:#000;
 
