@@ -4,6 +4,27 @@ Este documento registra todas las modificaciones estructurales, técnicas y conc
 
 ---
 
+### Versión 1.3 (Diciembre 2025)
+
+**Motivo:** Consolidación del concepto de "Agencia Humana" y actualización mayor de infraestructura. Migración a plataforma de documentación técnica (MkDocs) y validación filosófica post-lanzamiento (Innerarity).
+
+#### Actualizaciones Conceptuales (La Capa de Agencia)
+
+* **Conclusión (Nueva Sección):** Se añadió "La Construcción de la Agencia", integrando la visión de Daniel Innerarity sobre la gobernanza como un acto de negociación entre oferta tecnológica y demanda humana.
+* **Guía 15 (Nuevo Riesgo):** Se incorporó la "Politización de la Arquitectura" (Riesgo 2.1), abordando el sesgo intencional de diseño (Caso Grok) y la no-neutralidad de los modelos.
+* **Bibliografía Blindada:** Inclusión de referencias críticas sobre teoría política de la IA en el Anexo F.
+
+#### Actualizaciones de Infraestructura y Visualización
+
+* **Migración a MkDocs:** El repositorio migró de Jekyll a **MkDocs (Material Theme)** para mejorar la navegación, la búsqueda y la experiencia de lectura técnica.
+* **Diagramas Vivos (Mermaid.js):** Se reemplazaron descripciones estáticas por diagramas de código renderizados en tiempo real para conceptos críticos:
+    * **Ciclo ReAct** (Guía 05).
+    * **Arquitectura RAG vs Fine-Tuning** (Guía 07).
+    * **Arquitectura LOSA** (Guía 09).
+    * **Mapa de ROI** (Guía 12).
+
+---
+
 ### Versión 1.2 (Noviembre 2025)
 
 **Motivo:** Evolución a un estándar de arquitectura corporativa. Cambio de nombre a **"Arquitectura de IA"** para reflejar el enfoque en diseño y gobernanza de sistemas. Integración de estándares internacionales de seguridad (UK Safety Report 2025).

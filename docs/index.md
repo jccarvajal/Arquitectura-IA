@@ -1,7 +1,7 @@
 # Arquitectura de Inteligencia Artificial
 ### Guías para Decidir, Diseñar y Gobernar
 
-**Versión 1.2 (Noviembre 2025)**
+**Versión 1.3 (Diciembrfe 2025)**
 
 **Autor:** [Juan Carlos Carvajal](https://www.jccarvajal.com/)
 
@@ -135,7 +135,7 @@ Base de conocimiento para alinear equipos y profundizar el criterio.
 ---
 
 ### Changelog
-* **v1.2 (Noviembre 2025):** Evolución a "Arquitectura de IA". Reestructuración modular a 17 Guías, integración del capítulo ROI Financiero, y blindaje conceptual de LOSA y Observabilidad.
+* **v1.3 (Diciembre 2025):** Evolución a "Arquitectura de IA". Reestructuración modular a 17 Guías, integración del capítulo ROI Financiero, y blindaje conceptual de LOSA y Observabilidad.
 * Ver [Historial Completo](./changelog.md).
 
 ### Sugerencias y Mejoras
