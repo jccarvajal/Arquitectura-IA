@@ -51,9 +51,6 @@ graph LR
         Blue --> B2(Auditoría / LOSA)
     end
 
-    %% ESTILO DEL NODO INICIO (CAMBIADO: Fondo blanco, borde negro, texto negro)
-    classDef base fill:#ffffff,stroke:#333,stroke-width:3px,color:#000;
-
     class Green,G1,G2,G3 green;
     class Yellow,Y1,Y2 yellow;
     class Orange,O1 orange;
