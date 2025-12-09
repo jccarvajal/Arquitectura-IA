@@ -35,21 +35,32 @@ Esto es lo más importante. Un agente no solo da una respuesta y se detiene. Ope
 
 ```mermaid
 graph TD
-    User([👤 Input Usuario]) -->|Solicitud| LLM[🧠 Cerebro LLM]
+    %% ESTILOS (Estética Unificada)
+    classDef base fill:#ffffff,stroke:#333,stroke-width:2px,color:#000,font-size:15px;
+    classDef blue fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000,font-size:14px;
+    classDef green fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#000,font-size:14px;
+    classDef grey fill:#f5f5f5,stroke:#333,stroke-width:2px,color:#000,stroke-dasharray: 5 5,font-size:14px;
+
+    %% NODOS
+    User(👤 Input<br/>Usuario) -->|Solicitud| LLM(🧠 Cerebro<br/>LLM)
+    class User base;
+    class LLM blue;
     
-    subgraph Ciclo_ReAct [Bucle de Razonamiento]
-        LLM -->|Pensamiento| Decide{¿Tengo la info?}
-        Decide -->|No| Tool[🛠️ Elegir Herramienta]
-        Tool -->|Acción| API[⚙️ Ejecutar API/Función]
-        API -->|Observación| Result[📄 Resultado de Datos]
+    %% SUBGRAFO DEL BUCLE
+    subgraph Ciclo_ReAct [🔁 Bucle de Razonamiento]
+        direction TB
+        LLM -->|Pensamiento| Decide{¿Tengo<br/>la info?}
+        Decide -->|No| Tool(🛠️ Elegir<br/>Herramienta)
+        Tool -->|Acción| API(⚙️ Ejecutar<br/>API/Función)
+        API -->|Observación| Result(📄 Resultado<br/>de Datos)
         Result --> LLM
     end
+    class Ciclo_ReAct grey;
+    class Decide,Tool,API,Result blue;
     
-    Decide -->|Sí| Final[💬 Respuesta Final]
-    
-    style Ciclo_ReAct fill:#f9f9f9,stroke:#333,stroke-width:2px,stroke-dasharray: 5 5
-    style LLM fill:#e1f5fe,stroke:#01579b
-    style Final fill:#e8f5e9,stroke:#2e7d32
+    %% SALIDA
+    Decide -->|Sí| Final(💬 Respuesta<br/>Final)
+    class Final green;
 ```
 
 En la arquitectura moderna (2025), exigimos lo que llamamos el **"Patrón de Pensamiento Visible"**. No queremos que el agente actúe a ciegas; queremos ver su lógica estructurada antes de que toque una herramienta.
