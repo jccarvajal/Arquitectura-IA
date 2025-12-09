@@ -85,7 +85,21 @@ sino un presente donde comunidades profesionales con criterio, responsabilidad y
 
 ---
 
-### 6. Epílogo: Rutas que se Mantienen Abiertas
+### 6. La Construcción de la Agencia: Negociar, no solo Aceptar
+
+Finalmente, debemos entender que la gobernanza no es un acto pasivo de regulación; es un acto activo de negociación.
+
+Como advierte el filósofo Daniel Innerarity, el riesgo real de la sociedad algorítmica no es que las máquinas se rebelen (superinteligencia), sino que los humanos abdiquen (estupidez artificial). Si aceptamos la "Oferta Tecnológica" (lo que el mercado nos vende) sin contrastarla con nuestra "Demanda Humana" (lo que realmente necesitamos), perdemos nuestra agencia.
+
+Tu rol como Arquitecto es articular esa demanda.
+* **La Oferta** dice: "Aquí tienes un modelo que lo hace todo, pero es una caja negra".
+* **La Demanda (Tu Agencia)** responde: "No lo acepto. Exijo explicabilidad o no hay trato".
+
+Gobernar es tener la capacidad de decir "no" al menú por defecto. La verdadera soberanía no reside en tener la IA más potente, sino en tener la libertad de rechazarla cuando no sirve a nuestros fines humanos.
+
+---
+
+### 7. Epílogo: Rutas que se Mantienen Abiertas
 
 Tu trabajo, desde ahora, no es solo usar IA.
 Es sostener un marco.

@@ -127,7 +127,9 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
   * **Por qué leerlo:** Un modelo robusto para la contratación de tecnología (Guía 14). Ofrece cláusulas tipo para proteger la propiedad intelectual, exigir explicabilidad ("caja blanca") y definir niveles de servicio (SLA) en proyectos de IA.
 * **División de Gobierno Digital & UAI. (2022). "Guía de Formulación Ética de Proyectos de Ciencia de Datos".** [[Web]](h[ttps://digital.gob.cl](https://goblab.uai.cl/guia-formulacion-etica-de-proyectos-de-ciencia-de-datos/))
   * **Por qué leerlo:** Marco de referencia esencial para la Guía 15. Define operacionalmente la "Licencia Social", la proporcionalidad en el uso de IA y los protocolos para mitigar sesgos en datos administrativos.
-
+* **Innerarity, D. (2023). "Una teoría crítica de la inteligencia artificial". Galaxia Gutenberg.** [[Web]](https://www.galaxiagutenberg.com/libros/una-teoria-critica-de-la-inteligencia-artificial/)
+  * **Por qué leerlo:** Es la base filosófica de la **"Construcción de la Agencia"** (Conclusión). Innerarity argumenta que la IA no es una inteligencia que compite con la humana, sino una herramienta de gestión de la complejidad, y que el verdadero peligro es la "abdicación" del juicio humano frente al cálculo algorítmico.
+  
 ---
 
 ### Sobre el Bloque 5: La Expansión
