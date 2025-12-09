@@ -33,13 +33,17 @@ graph LR
         Yellow --> Y2(Triage Automático)
     end
 
-    %% ZONA NARANJA Y ROJA
+    %% ZONA NARANJA
     Evaluacion -->|Marketing| Orange[🟧 ZONA NARANJA: Vanidosos]
-    Evaluacion -->|Alto Riesgo| Red[🟥 ZONA ROJA: Destrucción]
-
-    subgraph Z_Risk [Riesgo de Valor]
+    subgraph Z_Orange [Riesgo: Vanidad]
         direction TB
         Orange --> O1(Chatbots Tontos)
+    end
+
+    %% ZONA ROJA
+    Evaluacion -->|Alto Riesgo| Red[🟥 ZONA ROJA: Destrucción]
+    subgraph Z_Red [Riesgo: Destrucción]
+        direction TB
         Red --> R1(Decisión Autónoma S2)
     end
 
@@ -50,13 +54,6 @@ graph LR
         Blue --> B1(Infraestructura Datos)
         Blue --> B2(Auditoría / LOSA)
     end
-
-    class Green,G1,G2,G3 green;
-    class Yellow,Y1,Y2 yellow;
-    class Orange,O1 orange;
-    class Red,R1 red;
-    class Blue,B1,B2 blue;
-    class Invest base;
 ```
 
 * 🟩 **Zona Verde (Ganadores):** Proyectos con ROI alto, madurez probada y beneficios financieros o físicos inmediatos.
