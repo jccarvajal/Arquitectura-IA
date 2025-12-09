@@ -142,6 +142,13 @@ Si tu "Agente" no puede responder estas preguntas en lenguaje claro (Opacidad An
 * **El Problema:** El motor RAG es una "biblioteca". Si los documentos de la biblioteca (ej. revisiones de desempeño de los últimos 20 años) están llenos de sesgos humanos, el "Agente PM de Contratación" aprenderá esos sesgos y los amplificará.  
 * **El Control Ético:** Auditoría de Datos de Origen. Antes de conectar un agente a una base de datos (RAG), se debe realizar una auditoría ética sobre esos datos (un principio clave de la Estrategia de Datos). El agente debe ser instruido para ignorar datos demográficos en la toma de decisiones.
 
+**La Politización de la Arquitectura (Sesgo Intencional)**
+
+* **El Problema:** A menudo asumimos que el sesgo es un "error" en los datos (un accidente). Sin embargo, casos recientes (como el lanzamiento de **Grok** por xAI o las controversias de Gemini en 2024) demuestran un nuevo fenómeno: el **Sesgo de Diseño**.
+* **El Análisis:** La IA no tiene ideología; tiene dueños. Un modelo es la proyección automatizada del "Sistema 2" (la visión del mundo) de sus creadores sobre un "Sistema 1" (el modelo). La "seguridad" a veces se utiliza como excusa para filtrar visiones del mundo competidoras, o inversamente, la "libertad de expresión" se usa como excusa para eliminar guardarraíles de seguridad.
+* **El Control Ético:** **Auditoría de Alineación.** Como "Vigilante Estratégico", debes evaluar no solo qué sabe el modelo, sino *a quién sirve* su arquitectura.
+  * *Acción:* Al elegir un modelo para tareas sensibles (educación, noticias, política), no asumas neutralidad. Realiza pruebas de *Red Teaming* ideológico para detectar si el modelo tiene una "agenda" oculta que pueda comprometer la reputación de tu organización.
+
 **Riesgo 3: Engaño (Deception)**
 
 * **El Problema:** Un "Agente PM" de servicio al cliente es tan bueno que el cliente cree que está hablando con un humano empático.  
