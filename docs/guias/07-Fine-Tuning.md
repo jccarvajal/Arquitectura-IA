@@ -23,45 +23,32 @@ Este es el *trade-off* más importante de la arquitectura de IA. Usar la herrami
 
 ```mermaid
 graph TD
-    %% ESTILOS (Con ajuste de FUENTE y RELLENO)
-    classDef base fill:#ffffff,stroke:#333,stroke-width:2px,color:#000,font-size:15px;
-    classDef blue fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000,font-size:14px;
-    classDef purple fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#000,font-size:14px;
+    %% CONFIGURACIÓN MAESTRA
+    classDef default font-size:14px,stroke-width:2px;
 
-    %% 1. EL PROBLEMA (Usando paréntesis para bordes redondeados, no pastilla)
-    Start(🚀 Necesidad<br/>de Negocio) --> Decision{¿Qué le<br/>falta a la IA?}
-    class Start,Decision base;
+    Start(🚀 Necesidad de Negocio) --> Decision{¿Qué le<br/>falta a la IA?}
 
-    %% 2. RAMIFICACIÓN
     Decision -->|Conocimiento:<br/>Datos/Hechos| NodeRAG[Camino RAG]
     Decision -->|Habilidad:<br/>Tono/Formato| NodeFT[Camino Fine-Tuning]
-    class NodeRAG blue;
-    class NodeFT purple;
 
-    %% 3. ARQUITECTURA RAG
     subgraph RAG_BOX [📚 RAG: El Bibliotecario]
         direction TB
-        Doc[📄 Documentos<br/>PDF/Excel] -->|ETL +<br/>Vectorización| DB[(🗄️ Base<br/>Vectorial)]
-        DB -->|Búsqueda<br/>Semántica| Context[🧩 Contexto<br/>Relevante]
-        Context -->|Inyección| Prompt[📝 Prompt<br/>Aumentado]
-        Prompt -->|Inferencia| Model1[🤖 Modelo<br/>Estándar]
+        Doc[📄 Documentos<br/>PDF/Excel] -->|ETL| DB[(🗄️ Base<br/>Vectorial)]
+        DB -->|Búsqueda| Context[🧩 Contexto]
+        Context -->|Inyección| Prompt[📝 Prompt]
+        Prompt -->|Inferencia| Model1[🤖 Modelo]
         Model1 --> Res1[✅ Respuesta<br/>Factual]
     end
 
-    %% 4. ARQUITECTURA FINE-TUNING
     subgraph FT_BOX [🎓 Fine-Tuning: El Especialista]
         direction TB
-        Data[Dataset:<br/>1.000 Ejemplos] -->|Entrenamiento| Train[⚙️ Proceso<br/>LoRA]
-        Train -->|Modificación<br/>de Pesos| Model2[🧠 Modelo<br/>Especializado]
-        Model2 -->|Inferencia<br/>Directa| Res2[✨ Respuesta<br/>con Estilo]
+        Data[Dataset:<br/>Ejemplos] -->|Entrenar| Train[⚙️ Proceso<br/>LoRA]
+        Train -->|Pesos| Model2[🧠 Modelo<br/>Ajustado]
+        Model2 -->|Inferencia| Res2[✨ Respuesta<br/>Estilizada]
     end
 
-    %% CONEXIONES
     NodeRAG --> RAG_BOX
     NodeFT --> FT_BOX
-
-    class Doc,DB,Context,Prompt,Model1,Res1 blue;
-    class Data,Train,Model2,Res2 purple;
 ```
 
 | Característica | RAG (Gestión de Contexto) | Ajuste Fino (Adaptación de Modelo) |
