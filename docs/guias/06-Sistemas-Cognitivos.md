@@ -21,11 +21,11 @@ Aquí dejamos de diseñar la ejecución para diseñar la **Ingeniería de la Cog
 El error más común es tratar a un LLM (un Modelo de Lenguaje Grande) como una calculadora (un sistema reactivo).
 
 * **El Trabajador Reactivo (IA Básica):** Le das un input, genera un output. *Prompt → Respuesta*.  
-  * *Ejemplo:* "Traduce este texto."  
-  * *Metáfora:* Un trabajador en la línea de ensamblaje que solo aprieta un tornillo cuando la pieza pasa frente a él.  
+    * *Ejemplo:* "Traduce este texto."  
+    * *Metáfora:* Un trabajador en la línea de ensamblaje que solo aprieta un tornillo cuando la pieza pasa frente a él.  
 * **El Equipo Cognitivo (Agente Diseñado):** Le das un objetivo, y el sistema genera y ejecuta un plan para alcanzarlo. ​*​Objetivo → Pensamiento → Acción → Observación → Pensamiento → ... → Resultado*.  
-  * *Ejemplo:* "Reserva un vuelo para mi a Madrid la próxima semana, que sea económico y salga por la mañana."  
-  * *Metáfora:* Un "Jefe de Taller" que recibe el objetivo, consulta el inventario (una herramienta), habla con el equipo de logística (otra herramienta) y luego presenta un plan de acción.
+    * *Ejemplo:* "Reserva un vuelo para mi a Madrid la próxima semana, que sea económico y salga por la mañana."  
+    * *Metáfora:* Un "Jefe de Taller" que recibe el objetivo, consulta el inventario (una herramienta), habla con el equipo de logística (otra herramienta) y luego presenta un plan de acción.
 
 Esta guía se enfoca en diseñar al "Jefe de Taller".
 
@@ -41,11 +41,11 @@ Para que un agente "piense", debemos darle un "Manual de Procedimientos" (un pat
 * **Metáfora:** Una simple línea de ensamblaje. No se puede pasar al Paso 2 hasta completar el Paso 1\.  
 * **Cuándo usarlo:** Para problemas lógicos, matemáticos o de razonamiento deductivo que se benefician de un proceso lineal.  
 * **Ejemplo Práctico (Prompt):**  
-  "Pregunta: Juan tiene 5 manzanas. Regala 2 a Ana y compra 3 más. ¿Cuántas tiene?  
-  Respuesta: Pensemos paso a paso:  
-  1. Juan empieza con 5 manzanas.  
-  2. Regala 2 a Ana, le quedan 5−2=3 manzanas.  
-  3. Compra 3 manzanas más, ahora tiene 3+3=6 manzanas. Respuesta final: 6\.
+    "Pregunta: Juan tiene 5 manzanas. Regala 2 a Ana y compra 3 más. ¿Cuántas tiene?  
+    Respuesta: Pensemos paso a paso:  
+    1. Juan empieza con 5 manzanas.  
+    2. Regala 2 a Ana, le quedan 5−2=3 manzanas.  
+    3. Compra 3 manzanas más, ahora tiene 3+3=6 manzanas. Respuesta final: 6\.
 
 **B. ReAct (Reason \+ Act): El "Detective con Herramientas"**
 
@@ -53,31 +53,31 @@ Para que un agente "piense", debemos darle un "Manual de Procedimientos" (un pat
 * **Metáfora:** Un detective que, en lugar de adivinar, usa activamente sus herramientas (lupa, teléfono, base de datos de huellas).
 * **Cuándo usarlo:** Casi siempre. Es la arquitectura fundamental para cualquier agente que deba interactuar con el mundo exterior.
 * **Ejemplo Práctico (Ciclo):**
-  * *Input:*
-    ```text
-    Recomiéndame un restaurante italiano cerca de la oficina.
-    ```
-  * *Ciclo 1:*
-    * *Reason (Pensamiento):* "Necesito la ubicación de la oficina y una lista de restaurantes. Usaré la herramienta `get_office_location`."
-    * *Act (Acción):*
-      ```yaml
-      acción: get_office_location
-      argumentos: {}
-      ```
+    * *Input:*
+        ```text
+        Recomiéndame un restaurante italiano cerca de la oficina.
+        ```
+    * *Ciclo 1:*
+        * *Reason (Pensamiento):* "Necesito la ubicación de la oficina y una lista de restaurantes. Usaré la herramienta `get_office_location`."
+        * *Act (Acción):*
+            ```yaml
+            acción: get_office_location
+            argumentos: {}
+            ```
     * *Observe (Observación):* "Ubicación: Av. Principal 123."
-  * *Ciclo 2:*
-    * *Reason (Pensamiento):* "Tengo la ubicación. Ahora necesito buscar restaurantes. Usaré `search_google_maps`."
-    * *Act (Acción):*
-      ```yaml
-      acción: search_google_maps
-      argumentos:
-        query: "restaurante italiano"
-        ubicacion: "Av. Principal 123"
-      ```
-    * *Observe (Observación):* "Resultados: \[Restaurante A, Restaurante B, Restaurante C\]."
-  * *Ciclo 3:*
-    * *Reason (Pensamiento):* "Tengo la lista. Ahora puedo formular la respuesta."
-    * *Act (Acción):* (Genera la respuesta final al usuario).
+    * *Ciclo 2:*
+        * *Reason (Pensamiento):* "Tengo la ubicación. Ahora necesito buscar restaurantes. Usaré `search_google_maps`."
+        * *Act (Acción):*
+            ```yaml
+            acción: search_google_maps
+            argumentos:
+              query: "restaurante italiano"
+              ubicacion: "Av. Principal 123"
+            ```
+        * *Observe (Observación):* "Resultados: \[Restaurante A, Restaurante B, Restaurante C\]."
+    * *Ciclo 3:*
+        * *Reason (Pensamiento):* "Tengo la lista. Ahora puedo formular la respuesta."
+        * *Act (Acción):* (Genera la respuesta final al usuario).
 
 **C. Tree of Thoughts (ToT): El "Comité de Estrategia"**
 
@@ -101,10 +101,10 @@ No construyas un "super-agente" monolítico. Construye una "cuadrilla de especia
 
 * **El "Jefe de Taller" (Agente Enrutador):** Este es un agente de **Metacognición** (piensa sobre el pensamiento). Su único trabajo es recibir la solicitud del usuario y decidir qué "especialista" es el mejor para la tarea. Es el que optimiza el portafolio de modelos.  
 * **Los "Especialistas" (Agentes de Tarea):**  
-  * El "Archivero" (Agente RAG, el sistema que recupera conocimiento de la "biblioteca" interna).  
-  * El "Analista de Datos": Experto en procesar números y tablas.  
-  * El "Redactor Creativo": Experto en marketing y redacción.  
-  * El "Motor Barato": Un LLM rápido y económico para tareas simples como resumir emails.
+    * El "Archivero" (Agente RAG, el sistema que recupera conocimiento de la "biblioteca" interna).  
+    * El "Analista de Datos": Experto en procesar números y tablas.  
+    * El "Redactor Creativo": Experto en marketing y redacción.  
+    * El "Motor Barato": Un LLM rápido y económico para tareas simples como resumir emails.
 
 Esta arquitectura modular es la implementación técnica de tu estrategia de portafolio.
 

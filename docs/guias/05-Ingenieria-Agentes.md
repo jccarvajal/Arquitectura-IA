@@ -57,62 +57,62 @@ En la arquitectura moderna (2025), exigimos lo que llamamos el **"Patrón de Pen
 Así es como se ve la traza de un agente moderno:
 
 * 👤 Usuario:
-  ```text
-  Busca el pronóstico del clima de hoy en Valparaíso y envíame un resumen por email.
-  ```
+    ```text
+    Busca el pronóstico del clima de hoy en Valparaíso y envíame un resumen por email.
+    ```
 
 * El agente ahora debe "razonar" y "actuar" en un bucle:
 
-  *CICLO 1: Obtener Información*
+    *CICLO 1: Obtener Información*
 
-  * 💭 Agente (Razonamiento Estructurado):
-    ```xml
-    <pensamiento>
-      Objetivo: Buscar clima + Enviar email.
-      Estado Actual: No tengo datos del clima.
-      Decisión: Debo invocar la herramienta 'buscar_clima' antes de poder redactar el correo.
-    </pensamiento>
-    ```
-  * ⚙️ Agente (Actúa):
-    ```yaml
-    acción: buscar_clima
-    argumentos:
-      ciudad: Valparaíso
-    ```
-  * 💭 Agente (Observación):
-    ```text
-    { 'max': '18C', 'min': '11C', 'estado': 'Nublado' }
-    ```
-  * El bucle continúa porque el objetivo final no está cumplido
+    * 💭 Agente (Razonamiento Estructurado):
+        ```xml
+        <pensamiento>
+          Objetivo: Buscar clima + Enviar email.
+          Estado Actual: No tengo datos del clima.
+          Decisión: Debo invocar la herramienta 'buscar_clima' antes de poder redactar el correo.
+        </pensamiento>
+        ```
+    * ⚙️ Agente (Actúa):
+        ```yaml
+        acción: buscar_clima
+        argumentos:
+          ciudad: Valparaíso
+        ```
+    * 💭 Agente (Observación):
+        ```text
+        { 'max': '18C', 'min': '11C', 'estado': 'Nublado' }
+        ```
+    * El bucle continúa porque el objetivo final no está cumplido
 
-  *CICLO 2: Ejecutar Acción Final*
+    *CICLO 2: Ejecutar Acción Final*
 
-  * 💭 Agente (Razonamiento Estructurado):
-    ```xml
-    <pensamiento>
-      Dato recibido: 18C, Nublado.
-      Condición: Tengo toda la información necesaria.
-      Decisión: Proceder a enviar el correo.
-    </pensamiento>
-    ```
-  * ⚙️ Agente (Actúa):
-    ```yaml
-    acción: enviar_email
-    argumentos:
-      destinatario: usuario@ejemplo.com
-      cuerpo: "Clima de hoy en Valparaíso: 18C, nublado."
-    ```
-  * 💭 Agente (Observación):
-    ```text
-    { 'status': 'enviado' }
-    ```
-  * El bucle se detiene.
+    * 💭 Agente (Razonamiento Estructurado):
+        ```xml
+        <pensamiento>
+          Dato recibido: 18C, Nublado.
+          Condición: Tengo toda la información necesaria.
+          Decisión: Proceder a enviar el correo.
+        </pensamiento>
+        ```
+    * ⚙️ Agente (Actúa):
+        ```yaml
+        acción: enviar_email
+        argumentos:
+          destinatario: usuario@ejemplo.com
+          cuerpo: "Clima de hoy en Valparaíso: 18C, nublado."
+        ```
+    * 💭 Agente (Observación):
+        ```text
+        { 'status': 'enviado' }
+        ```
+    * El bucle se detiene.
 
-  *Respuesta Final al Usuario:*
-  * 💬 Agente (Responde):
-    ```text
-    Listo. El clima en Valparaíso es de 18C, parcialmente nublado. Te he enviado el resumen.
-    ```
+    *Respuesta Final al Usuario:*
+    * 💬 Agente (Responde):
+        ```text
+        Listo. El clima en Valparaíso es de 18C, parcialmente nublado. Te he enviado el resumen.
+        ```
 
 > **Nota de Arquitectura:** Independientemente del modelo (OpenAI, Gemini, Claude), la arquitectura robusta exige que el agente "muestre su trabajo". Separar el razonamiento (`<pensamiento>`) de la acción final es vital para la auditoría y depuración.
 
@@ -129,18 +129,18 @@ Las herramientas son funciones de código (APIs, scripts Python) que conectan el
 Aquí reside el verdadero arte de la ingeniería. El *trade-off* ya no es solo costo vs. latencia, sino **Autonomía vs. Seguridad**.
 
 * **Correa Suelta (Autonomía Total):**
-  ```text
-  "OK Agente, aquí tienes $100 y mi tarjeta de crédito. Reserva el mejor viaje."
-  ```
-  * *Riesgo Antiguo (Alucinación):* Poderoso, pero aterrador. El agente podría reservar el hotel equivocado o enviar un email vergonzoso.
-  * *Riesgo Moderno (Bucle Infinito):* Con los nuevos modelos persistentes, el agente podría entrar en un bucle tratando de encontrar el "vuelo perfecto" eternamente, gastando presupuesto y recursos sin detenerse.
-  * *Mitigación:* Aquí es donde implementamos **"Circuit Breakers"** (límites duros de iteración, ej. `max_steps=15`) para cortar la ejecución forzosamente.
+    ```text
+    "OK Agente, aquí tienes $100 y mi tarjeta de crédito. Reserva el mejor viaje."
+    ```
+    * *Riesgo Antiguo (Alucinación):* Poderoso, pero aterrador. El agente podría reservar el hotel equivocado o enviar un email vergonzoso.
+    * *Riesgo Moderno (Bucle Infinito):* Con los nuevos modelos persistentes, el agente podría entrar en un bucle tratando de encontrar el "vuelo perfecto" eternamente, gastando presupuesto y recursos sin detenerse.
+    * *Mitigación:* Aquí es donde implementamos **"Circuit Breakers"** (límites duros de iteración, ej. `max_steps=15`) para cortar la ejecución forzosamente.
 
 * **Correa Corta (Control Total):**
-  ```text
-  "OK Agente, dime tu primer paso.... OK, apruebo ese paso, ejecútalo.... OK, muéstrame el resultado.... Ahora, dime tu segundo paso."
-  ```
-  * *Riesgo:* 100% seguro, pero lento y tedioso. Básicamente, volvemos a la ingeniería de prompts manual y perdemos el beneficio de tener un trabajador digital.
+    ```text
+    "OK Agente, dime tu primer paso.... OK, apruebo ese paso, ejecútalo.... OK, muéstrame el resultado.... Ahora, dime tu segundo paso."
+    ```
+    * *Riesgo:* 100% seguro, pero lento y tedioso. Básicamente, volvemos a la ingeniería de prompts manual y perdemos el beneficio de tener un trabajador digital.
 
 **El Buen Enfoque:** El juicio de ingeniería está en diseñar un sistema que sepa cuándo actuar solo y cuándo detenerse para pedir validación humana. Esto nos lleva directamente a nuestra primera estrategia.
 
@@ -167,12 +167,12 @@ Esta es la estrategia de escalabilidad más importante. Ya no pensamos en un sol
 * **Un Agente Individual es un Project Manager (PM) / Worker:** Se enfoca en un proyecto único y bien definido. Recibe un objetivo, aplica el ciclo ReAct, usa sus herramientas y entrega un resultado final.
 * **Un Agente de Agentes es un Director de Programa / Router:** Este es el "Agente Jefe" o "Director". No ejecuta las tareas del día a día, sino que coordina a los "Agentes PM" especializados para alcanzar un objetivo estratégico más grande.
 * **¿Cómo funciona el flujo?**
-  1. **Objetivo Estratégico:** El Router (el Director) recibe la meta: *"Lanzar campaña de nuevo producto"*.
-  2. **Descomposición (Routing):** El Router clasifica las necesidades y asigna tareas a agentes con contextos limpios ("pizarra en blanco"):
-     * Asigna a **Agente Investigador:** *"Analiza el público objetivo y la competencia"*
-     * Asigna a **Agente Creativo:** *"Genera los eslóganes y el contenido visual"*
-     * Asigna a **Agente de Redes:** *"Prepara el calendario de publicaciones"*
-  3. **Síntesis:** El Router recibe los entregables de cada Worker y los integra en el resultado final (la campaña completa).
+    1. **Objetivo Estratégico:** El Router (el Director) recibe la meta: *"Lanzar campaña de nuevo producto"*.
+    2. **Descomposición (Routing):** El Router clasifica las necesidades y asigna tareas a agentes con contextos limpios ("pizarra en blanco"):
+        * Asigna a **Agente Investigador:** *"Analiza el público objetivo y la competencia"*
+        * Asigna a **Agente Creativo:** *"Genera los eslóganes y el contenido visual"*
+        * Asigna a **Agente de Redes:** *"Prepara el calendario de publicaciones"*
+    3. **Síntesis:** El Router recibe los entregables de cada Worker y los integra en el resultado final (la campaña completa).
 * **Beneficio:** El Router (el Director) se encarga de la estrategia de alto nivel. Cada Worker (Agente PM) trabaja con su propio contexto limpio, volviéndose más rápido, barato y preciso en su tarea especializada, evitando la confusión que tendría un solo agente intentando hacerlo todo.
 
 ---
@@ -195,36 +195,36 @@ En este ejemplo, tu objetivo es crear un email de marketing persuasivo.
 Este chat está pre-cargado con el "Método de Prompting en 7 Pasos" (Guía 02).
 
 * 👤 **Usuario (Define el Objetivo):**
-  ```text
-  Quiero un prompt para un email de marketing para un nuevo software de contabilidad. El público son gerentes de finanzas.
-  ```
+    ```text
+    Quiero un prompt para un email de marketing para un nuevo software de contabilidad. El público son gerentes de finanzas.
+    ```
 
 * 💭 **Agente Taller (Razonamiento Estructurado):**
-  ```text
-  El usuario necesita un prompt (Paso 1). Mi trabajo es aplicar los 7 Pasos (Rol, Restricciones, Formato) para construir el prompt óptimo.
-  ```
+    ```text
+    El usuario necesita un prompt (Paso 1). Mi trabajo es aplicar los 7 Pasos (Rol, Restricciones, Formato) para construir el prompt óptimo.
+    ```
 
 * ⚙️ **Agente Taller (Actúa - Genera el Prompt):**
-  ```text
-  Aquí tienes un prompt de "Nivel Arquitecto", optimizado según la Guía 02:
-
-  [INICIO DEL PROMPT GENERADO]
-  Actúa como un experto en redacción de marketing B2B, especializado en el sector financiero. 
-  Tu audiencia son Gerentes de Finanzas con poco tiempo.
-  Tu tarea es redactar un email que presente nuestro nuevo "Software de Contabilidad Quantum".
-
-  <restricciones>
-    1. El tono debe ser profesional, directo y centrado en el ROI.
-    2. El email NO debe exceder las 150 palabras.
-    3. El asunto debe ser corto y persuasivo.
-  </restricciones>
-
-  <formato_requerido>
-    Asunto: [Tu Asunto Aquí]
-    Cuerpo: [Tu Email Aquí]
-  </formato_requerido>  
-  [FIN DEL PROMPT GENERADO]
-  ```
+    ```text
+    Aquí tienes un prompt de "Nivel Arquitecto", optimizado según la Guía 02:
+  
+    [INICIO DEL PROMPT GENERADO]
+    Actúa como un experto en redacción de marketing B2B, especializado en el sector financiero. 
+    Tu audiencia son Gerentes de Finanzas con poco tiempo.
+    Tu tarea es redactar un email que presente nuestro nuevo "Software de Contabilidad Quantum".
+    
+    <restricciones>
+      1. El tono debe ser profesional, directo y centrado en el ROI.
+      2. El email NO debe exceder las 150 palabras.
+      3. El asunto debe ser corto y persuasivo.
+    </restricciones>
+  
+    <formato_requerido>
+      Asunto: [Tu Asunto Aquí]
+      Cuerpo: [Tu Email Aquí]
+    </formato_requerido>  
+    [FIN DEL PROMPT GENERADO]
+    ```
 
 **Paso 2: Usar el "Chat 2" (La Ejecución)**
 

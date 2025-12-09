@@ -33,8 +33,7 @@ Más adelante nos enfocaremos en la **Gobernanza de IA** (el control sobre las *
 Las Políticas del "Arquitecto de la Información":
 
 1. **Catalogación (Metadata):** No puedes gobernar lo que no puedes encontrar. Cada documento en tu "biblioteca" RAG debe tener "etiquetas" (metadata):
-
-   * *Ejemplo:*
+    * *Ejemplo:*
      ```text
      { documento: 'manual\_bcp.pdf', 
        versión: 'v3.1', 
@@ -43,16 +42,16 @@ Las Políticas del "Arquitecto de la Información":
        sensibilidad: 'Confidencial' }
      ```
 2. **Protección y Control de Acceso:** No todos los agentes deben leerlo todo. El acceso a los datos debe cumplir con los marcos legales  sobre protección de datos personales y sensibles (como la Ley N° 19.628 en Chile).
-   * *Política:* El "Agente de Soporte al Cliente" solo puede "leer" (RAG) documentos con la etiqueta:
+    * *Política:* El "Agente de Soporte al Cliente" solo puede "leer" (RAG) documentos con la etiqueta:
      ```text
      { sensibilidad: 'Público' }
      ```
-   * *Política:* El "Agente Legal" solo puede "leer" (RAG) documentos con la etiqueta:
+    * *Política:* El "Agente Legal" solo puede "leer" (RAG) documentos con la etiqueta:
      ```text
      { sensibilidad: 'Confidencial' }
      ```
 3. **Gestión del Ciclo de Vida (Archivado):** Los datos obsoletos son peligrosos; son el combustible de las alucinaciones factuales.  
-   * *Política:*
+    * *Política:*
      ```text
      Cualquier documento con más de X tiempo (ej. 2 años) de antigüedad o que sea reemplazado por una versión nueva debe ser automáticamente archivado (retirado de la biblioteca RAG).
      ```
@@ -64,12 +63,12 @@ Las Políticas del "Arquitecto de la Información":
 "ETL" (Extract, Transform, Load) es un término clásico de la ingeniería de datos. **En esta obra, proponemos adaptar el concepto a "ETL-V" (añadiendo la Vectorización).** Este es el proceso técnico (la "refinería") que convierte tus datos "crudos" (petróleo) en "combustible" RAG (gasolina de avión).
 
 1. **Extract (Extraer):** El proceso de "succionar" los datos crudos de donde viven.  
-   * *Ejemplo:* Conectarse a Google Drive, a una base de datos SQL, a un sitio web (scraping) o a una carpeta de red.  
+    * *Ejemplo:* Conectarse a Google Drive, a una base de datos SQL, a un sitio web (scraping) o a una carpeta de red.  
 2. **Transform (Transformar):** La limpieza. Aquí es donde se aplica la "Gobernanza de Datos".  
-   * *Ejemplo:* Eliminar texto inútil ("Aviso Legal...", pies de página), corregir errores de tipeo, anonimizar datos sensibles (reemplazar "Juan Pérez" por "\[CLIENTE\_1\]").  
-   * *Criterio Ético:* Este es el paso crucial para auditar y mitigar **sesgos** (ej. de género, socioeconómicos) presentes en los datos históricos, evitando que la IA los aprenda y amplifique.  
+    * *Ejemplo:* Eliminar texto inútil ("Aviso Legal...", pies de página), corregir errores de tipeo, anonimizar datos sensibles (reemplazar "Juan Pérez" por "\[CLIENTE\_1\]").  
+    * *Criterio Ético:* Este es el paso crucial para auditar y mitigar **sesgos** (ej. de género, socioeconómicos) presentes en los datos históricos, evitando que la IA los aprenda y amplifique.  
 3. **Load (Cargar):** Cargar el texto limpio en un lugar temporal.  
-   * *Ejemplo:* Guardar el texto limpio en un "área de espera" (Staging Area).  
+    * *Ejemplo:* Guardar el texto limpio en un "área de espera" (Staging Area).  
 4. **Vectorize (Vectorizar):** Este es el paso final de la "refinería". Es el proceso de "Trocear" (chunking) y "Vectorizar" (embedding) el texto limpio, para finalmente cargarlo en la Base de Datos Vectorial (la "biblioteca RAG").
 
 *Implicación Estratégica:* Sin una "Refinería ETL-V" robusta, tu "biblioteca" RAG se llenará de "combustible sucio" (datos basura) y toda tu "fábrica" (agentes) se detendrá.
