@@ -57,7 +57,8 @@ graph LR
     %% Esto obliga a Mermaid a apilar las zonas de arriba a abajo
     Green ~~~ Yellow
     Yellow ~~~ Orange
-    Orange ~~~ Blue
+    Orange ~~~ Red
+    Red ~~~ Blue
 ```
 
 * 🟩 **Zona Verde (Ganadores):** Proyectos con ROI alto, madurez probada y beneficios financieros o físicos inmediatos.
