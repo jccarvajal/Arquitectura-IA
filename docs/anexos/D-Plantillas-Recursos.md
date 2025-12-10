@@ -13,6 +13,7 @@ No está diseñado para "leerse" de principio a fin, sino para "usarse" como ref
 ### Sección 1: Diseño de Prompts y Agentes
 
 **Plantilla 1.1: El "Prompt Maestro" (CRF-R: Contexto, Rol, Formato, Restricciones)**
+
 Esta plantilla es un bloque de texto estructurado, diseñado para ser copiado y pegado directamente en tu editor de código o herramienta de prompting. Es la implementación de la Guía 02.
 
 ```text
@@ -42,6 +43,7 @@ Basa tu respuesta ÚNICAMENTE en el \[Contexto\] proporcionado.
 ```
 
 **Plantilla 1.2: El "Prompt de Sistema" (System Prompt) de Alta Gobernanza**
+
 Esta plantilla es el "contrato" que el Arquitecto establece con el modelo antes de que el usuario interactúe. Implementa los controles de la Guía 09 (Gobernanza) y Guía 15 (Ética) directamente en la capa de instrucciones.
 
 ```text
@@ -82,6 +84,7 @@ Recibirás fragmentos de documentos internos en la sección etiquetada como <CON
 ```
 
 **Plantilla 1.23: Ficha de Diseño de Agente (ReAct)**
+
 Esta ficha sirve como el "plano" de diseño de un agente (Guía 05) antes de construirlo.
 
 | Concepto | Detalle |
@@ -99,6 +102,7 @@ Esta ficha sirve como el "plano" de diseño de un agente (Guía 05) antes de con
 ### Sección 2: Gobernanza y Calidad
 
 **Checklist 2.1: Control de Riesgos de Seguridad (Pre-Lanzamiento)**
+
 Esta tabla debe ser completada por el equipo de desarrollo y gobernanza (Guía 09) antes de pasar a producción.
 
 | Riesgo Mitigado | Control Implementado |
@@ -111,6 +115,7 @@ Esta tabla debe ser completada por el equipo de desarrollo y gobernanza (Guía 0
 | **Aprobación Final de Gobernanza:** | \[Nombre del Responsable\] |
 
 **Plantilla 2.2: Rúbrica de Evaluación de Calidad**
+
 Esta rúbrica (de Guía 10) se usa para calificar las respuestas del "Golden Set" durante las pruebas de QA.
 
 **Prompt ID:** \[Golden-Set-001\] | **Modelo:** \[Ej: GPT-4o\] | **Evaluador:** \[Nombre\] | **Fecha:** \[Fecha\]
@@ -129,6 +134,7 @@ Esta rúbrica (de Guía 10) se usa para calificar las respuestas del "Golden Set
 ### Sección 3: Estrategia y Operaciones
 
 **Matriz 3.1: Decisión de Mercado de LLM**
+
 Esta matriz (de Guía 14) se usa para comparar y seleccionar el modelo de IA (motor) adecuado para un caso de uso específico.
 
 **Caso de Uso:** \[Ej: Chatbot de RAG para consulta de pólizas\]
@@ -143,6 +149,7 @@ Esta matriz (de Guía 14) se usa para comparar y seleccionar el modelo de IA (mo
 **Justificación:** \[Razón principal de la elección (ej: "Mejor balance costo-rendimiento para este RAG").\]
 
 **Matriz 3.2: Decisión Estratégica (Guía 13)**
+
 Un framework de 2x2 para decidir para qué usar la IA en un nuevo proyecto.
 
 | (Eje Y \ Eje X) | **INNOVACIÓN BAJA (Hacer lo mismo)** | **INNOVACIÓN ALTA (Hacer cosas nuevas)** |
