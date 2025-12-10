@@ -4,7 +4,7 @@ Antes de comenzar el viaje, es fundamental alinear nuestras expectativas sobre l
 
 ---
 
-### 1. Sobre el Tono: "Criterio" antes que "Técnica"
+## 1. Sobre el Tono: "Criterio" antes que "Técnica"
 
 El subtítulo promete una guía "práctica". Es crucial definir qué entendemos por "práctica".
 
@@ -16,7 +16,7 @@ Le pedimos que aborde esta lectura no como un manual de instrucciones, sino como
 
 ---
 
-### 2. Sobre la Audiencia: "Arquitectos" y "Profesionales"
+## 2. Sobre la Audiencia: "Arquitectos" y "Profesionales"
 
 Esta obra está escrita principalmente para quienes deben **Decidir, Diseñar y Gobernar** la IA (los "Arquitectos" de la fábrica).
 
@@ -26,7 +26,7 @@ Ambas miradas, la del Arquitecto que diseña y la del Profesional que ejecuta, s
 
 --- 
 
-### 3. Sobre el uso de metáforas: Ciencia Ficción y Mecánica
+## 3. Sobre el uso de metáforas: Ciencia Ficción y Mecánica
 
 A lo largo del texto encontrará dos tipos de herramientas cognitivas para aterrizar conceptos abstractos:
 
@@ -35,7 +35,7 @@ A lo largo del texto encontrará dos tipos de herramientas cognitivas para aterr
 
 ---
 
-### 4. Sobre la Estructura: El Orden de Lectura (El "Por Qué", "Qué" y "Cómo")
+## 4. Sobre la Estructura: El Orden de Lectura (El "Por Qué", "Qué" y "Cómo")
 
 La obra está diseñada para ser un "viaje de aprendizaje" y un "manual de consulta", pero su estructura preliminar es intencional para construir el criterio antes que la técnica.
 
@@ -47,7 +47,7 @@ Este flujo (Por Qué -> Qué -> Cómo) está diseñado para asegurar que, cuando
 
 ---
 
-### 5. Requisitos para el Viaje
+## 5. Requisitos para el Viaje
 
 Para sacar el máximo provecho de esta obra, asumimos tres cosas sobre usted:
 
@@ -57,7 +57,7 @@ Para sacar el máximo provecho de esta obra, asumimos tres cosas sobre usted:
 
 ---
 
-### 6. Sobre la Obsolescencia: Es un "Marco" de fines de 2025
+## 6. Sobre la Obsolescencia: Es un "Marco" de fines de 2025
 
 Esta es la **Versión 1.3 (de Diciembre 2025)**. La tecnología de IA es volátil y evoluciona en ciclos de meses, no de años.
 
@@ -65,7 +65,7 @@ Considere esta obra como un **"marco de pensamiento"** y una **"fotografía"** d
 
 ---
 
-### 7. Sobre la autoría y el uso de IA
+## 7. Sobre la autoría y el uso de IA
 
 Este documento fue desarrollado por Juan Carlos Carvajal, quien es el autor principal y responsable de su contenido, estructura y visión final. Para más información sobre el autor, sus proyectos o para contacto profesional, puede visitar [www.jccarvajal.com](https://www.jccarvajal.com/).
 
