@@ -84,10 +84,7 @@ Basado en la evidencia de este Canvas, el proyecto se califica como:
 * `[ ]` **CONDICIONAL:** Requiere resolver la brecha de datos o ética antes de avanzar. -> *Volver a Formulación.*
 * `[ ]` **NO VIABLE (RECHAZADO):** El riesgo supera al valor o existe una alternativa No-IA mejor. -> *Fin del proceso.*
 
-**Firma del Responsable:** ______________________________
 
-**Fecha del Dictamen:** ______________________________
+**Firma del Responsable:** <span style="border-bottom: 1px solid #000; display: inline-block; width: 200px;"></span>
 
-**Firma del Responsable:** <span style="border-bottom: 1px solid #000; display: inline-block; width: 300px;"></span>
-
-**Fecha del Dictamen:** <span style="border-bottom: 1px solid #000; display: inline-block; width: 150px;"></span>
+**Fecha del Dictamen:** <span style="border-bottom: 1px solid #000; display: inline-block; width: 200px;"></span>
