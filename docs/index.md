@@ -16,6 +16,7 @@ Esta obra no es un libro tradicional; es una **documentación técnica y estrat�
 Mientras el mercado se enfoca en las herramientas ("qué modelo usar"), este repositorio se enfoca en el **criterio de ingeniería y gestión** ("cómo construir sistemas fiables").
 
 El objetivo es proporcionar un **Marco de GRC (Gobernanza, Riesgo y Cumplimiento)** que permita a líderes técnicos y estratégicos:
+
 1.  **Decidir** con base en la viabilidad técnica y el valor de negocio (no en el *hype*).
 2.  **Diseñar** sistemas cognitivos robustos utilizando patrones de ingeniería (RAG, Agentes, CoT).
 3.  **Gobernar** la operación mitigando riesgos de seguridad, alucinaciones y costos.
@@ -135,7 +136,7 @@ Base de conocimiento para alinear equipos y profundizar el criterio.
 ---
 
 ### Changelog
-* **v1.3 (Diciembre 2025):** Evolución a "Arquitectura de IA". Reestructuración modular a 17 Guías, integración del capítulo ROI Financiero, y blindaje conceptual de LOSA y Observabilidad.
+* **v1.3 (Diciembre 2025):** Migración a plataforma MkDocs y diagramas dinámicos. Inclusión de la "Agencia Humana" (Innerarity), riesgos de atrofia cognitiva y consolidación del ROI Financiero.
 * Ver [Historial Completo](./changelog.md).
 
 ### Sugerencias y Mejoras

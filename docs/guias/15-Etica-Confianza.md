@@ -185,6 +185,22 @@ Cuando los "Agentes PM" se vuelven parte del equipo, surgen preguntas legales qu
 
 ---
 
+!!! warning "Caso de Estudio: El Riesgo de la Atrofia Cognitiva"
+    **El Escenario**
+    Un fenómeno reciente observado en el ámbito académico chileno reveló la aparición de "IA-dictos": usuarios que, ante la falta de directrices claras, comenzaron a utilizar la IA no como copiloto, sino como piloto automático. El resultado fue una pérdida de confianza en su propio juicio ("ya no sé pensar sin esto") y la validación ciega de errores.
+
+    **El Diagnóstico desde la Arquitectura**
+    Bajo el marco de *Decidir, Diseñar, Gobernar*, esto representa tres fallos críticos:
+
+    * **Fallo de Gobernanza (Shadow AI):** Al no existir una política institucional de "Uso Aceptable", los usuarios crearon sus propias reglas en la sombra. El silencio institucional no detiene el uso, solo elimina el control.
+    * **Fallo de Diseño (Human-in-the-Loop):** Se eliminó al humano del bucle de validación. En una arquitectura robusta, el humano es el *Quality Gate*. Si el usuario no tiene la competencia para auditar al modelo, el sistema es inseguro.
+    * **Riesgo de Calidad (Perspectiva ISO 9001):** Entregar trabajos hechos por IA sin revisión equivale a generar un producto "no conforme". Se certifica una competencia que no existe, creando una "Deuda Técnica Humana" para el futuro.
+
+    **La Lección para el Arquitecto**
+    > "Nunca despliegues una arquitectura donde la IA tenga más autonomía que la capacidad de auditoría del usuario humano. Si el usuario no puede detectar una alucinación, la herramienta no es un asistente, es un riesgo."
+
+---
+
 #### Conclusión: De Gobernar Máquinas a Liderar Humanos
 
 Las guías anteriores nos enseñaron a construir y gobernar las máquinas. Esta guía define el rol del nuevo trabajador humano operando en esa fábrica.
