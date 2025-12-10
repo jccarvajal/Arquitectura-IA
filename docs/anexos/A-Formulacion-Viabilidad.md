@@ -18,9 +18,11 @@ Su propósito es evitar el "solucionismo tecnológico" y asegurar que solo los p
 
 | Criterio Estratégico | Pregunta Clave | Respuesta / Placeholder | Referencia |
 | :--- | :--- | :--- | :--- |
-| **Dolor del Negocio** | ¿Qué problema raíz estamos resolviendo y cuál es su costo actual (el problema, no la solución)? | `[Describe el problema y su impacto económico/operativo]` | Guía 12 |
-| **Actividad a Transformar** | Describa la tarea humana específica (Flujo ANTES vs DESPUÉS con IA). | *Antes:* `[Ej: Analista lee 100 contratos manualmente]`<br>*Después:* `[Ej: IA pre-filtra riesgos, Analista valida 5 críticos]` | Ficha GobLab |
-| **Tipo de Valor** | ¿Buscamos hacer lo mismo más barato (**Eficiencia/S1**) o hacer algo nuevo que antes era imposible (**Innovación/S2**)? | `[ Eficiencia / Innovación ]` | Guía 13 |
+| **1. El Dolor (Why)** | ¿Qué problema raíz resolvemos y cuál es el costo de no hacer nada? | `[Describe el problema y su impacto económico]` | Guía 01 |
+| **2. La Transformación (What)** | Flujo Operativo: ANTES (Humano) vs DESPUÉS (IA + Humano). | *Antes:* `[Ej: Lee 100 contratos]`<br>*Después:* `[Ej: IA filtra, Humano valida 5]` | Guía 02 |
+| **3. La Zona ROI (Value)** | ¿Dónde cae en el Mapa de Inversión? (Verde, Amarillo, Rojo, Azul). | `[Ej: Zona Verde - Eficiencia Inmediata]` | Guía 12 |
+| **4. Los Datos (RAG)** | ¿Qué conocimiento necesita leer el agente y cuán sensible es? | `[Ej: Manuales técnicos (Público) + Emails (Confidencial)]` | Guía 07/11 |
+| **5. La Gobernanza (LOSA)** | ¿Qué controles (human-in-the-loop) evitarán la atrofia o el error? | `[Ej: Auditoría aleatoria del 10% de las respuestas]` | Guía 09/15 |
 
 ---
 
@@ -78,7 +80,7 @@ Su propósito es evitar el "solucionismo tecnológico" y asegurar que solo los p
 **Decisión del Comité de Gobernanza / Sponsor:**
 Basado en la evidencia de este Canvas, el proyecto se califica como:
 
-* `[ ]` **VIABLE (APROBADO):** El valor es claro, los riesgos están mitigados y los datos están listos. -> *Pasa a Prototipado (Guía 08).*
+* `[ ]` **VIABLE (APROBADO):** El valor es claro, los riesgos están mitigados y los datos están listos. -> *Pasa a Prototipado.*
 * `[ ]` **CONDICIONAL:** Requiere resolver la brecha de datos o ética antes de avanzar. -> *Volver a Formulación.*
 * `[ ]` **NO VIABLE (RECHAZADO):** El riesgo supera al valor o existe una alternativa No-IA mejor. -> *Fin del proceso.*
 
