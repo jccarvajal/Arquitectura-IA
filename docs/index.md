@@ -1,5 +1,5 @@
 # Arquitectura de Inteligencia Artificial
-### Guías para Decidir, Diseñar y Gobernar
+## Guías para Decidir, Diseñar y Gobernar
 
 **Versión 1.3 (Diciembre 2025)**
 
@@ -9,7 +9,7 @@
 
 ---
 
-### Descripción del Proyecto
+## Descripción del Proyecto
 
 Esta obra no es un libro tradicional; es una **documentación técnica y estratégica** diseñada para cerrar la brecha entre la experimentación con Inteligencia Artificial y su implementación productiva en organizaciones.
 
@@ -23,7 +23,7 @@ El objetivo es proporcionar un **Marco de GRC (Gobernanza, Riesgo y Cumplimiento
 
 ---
 
-### Tesis Central: GRC y Sinergia
+## Tesis Central: GRC y Sinergia
 
 La premisa fundamental es que la IA generativa actual opera como un "Sistema 1" (rápido, probabilístico, sin juicio). Para su implementación segura, requiere una arquitectura que delegue la ejecución táctica pero mantenga la responsabilidad estratégica ("Sistema 2") en el operador humano.
 
@@ -31,11 +31,11 @@ Este repositorio propone el principio de **"Delegar, no Abdicar"**, implementado
 
 ---
 
-### Estructura de la Documentación
+## Estructura de la Documentación
 
 El contenido está organizado modularmente siguiendo el ciclo de vida de un proyecto de IA.
 
-#### 🏛️ Introducción
+### 🏛️ Introducción
 Marco conceptual y filosófico.
 
 * [Nota al Lector](./nota-al-lector.md)
@@ -45,7 +45,7 @@ Marco conceptual y filosófico.
 * [Ideas Centrales](./ideas-centrales.md)
   *Resumen ejecutivo de los conceptos clave.*
 
-#### 🧱 Bloque 1: Fundamentos y Mecánica (Guías 1 a 4)
+### 🧱 Bloque 1: Fundamentos y Mecánica (Guías 1 a 4)
 Comprensión de las capacidades y límites del motor.
 
 * [Guía 01: Anatomía de Modelos](./guias/01-Anatomia-Modelos.md)
@@ -57,7 +57,7 @@ Comprensión de las capacidades y límites del motor.
 * [Guía 04: Estrategia de Datos](./guias/04-Estrategia-Datos.md)
   *Gobernanza de la fuente y el pipeline ETL-V.*
 
-#### 🏗️ Bloque 2: Arquitectura y Construcción Avanzada (Guías 5 a 8)
+### 🏗️ Bloque 2: Arquitectura y Construcción Avanzada (Guías 5 a 8)
 Diseño del sistema agente, especialización y validación del prototipo.
 
 * [Guía 05: Ingeniería de Agentes](./guias/05-Ingenieria-Agentes.md)
@@ -69,7 +69,7 @@ Diseño del sistema agente, especialización y validación del prototipo.
 * [Guía 08: Prototipado](./guias/08-Prototipado.md)
   *Metodología del Quick Win y Gobernanza Mínima Viable.*
 
-#### 🎛️ Bloque 3: Operación y GRC (Guías 9 a 12)
+### 🎛️ Bloque 3: Operación y GRC (Guías 9 a 12)
 El paso a producción: seguridad, calidad y monitoreo de la fábrica.
 
 * [Guía 09: Gobernanza](./guias/09-Gobernanza.md)
@@ -81,7 +81,7 @@ El paso a producción: seguridad, calidad y monitoreo de la fábrica.
 * [Guía 12: ROI Financiero](./guias/12-ROI-Financiero.md)
   *Mapa de las Cinco Zonas: Dónde invertir y dónde evitar la destrucción de valor.*
 
-#### 🤝 Bloque 4: Estrategia e Impacto Humano (Guías 13 a 16)
+### 🤝 Bloque 4: Estrategia e Impacto Humano (Guías 13 a 16)
 Decisiones de alto nivel, habilitación de habilidades y alineación de la misión.
 
 * [Guía 13: Estrategia y Valor](./guias/13-Estrategia-Valor.md)
@@ -93,13 +93,13 @@ Decisiones de alto nivel, habilitación de habilidades y alineación de la misi�
 * [Guía 16: Protocolos de Operación Cognitiva](./guias/16-Aprender-A-Pensar.md)
   *De Usuario Pasivo a Operador de Sistema.*
 
-#### 🔭 Bloque 5: Proyección (Guía 17)
+### 🔭 Bloque 5: Proyección (Guía 17)
 Prospección tecnológica.
 
 * [Guía 17: Perspectivas](./guias/17-Perspectivas.md)
   *Web Agéntica   y el rol del Vigilante Estratégico.*
 
-#### 🏁 Conclusión
+### 🏁 Conclusión
 El cierre del ciclo estratégico.
 
 * [Cierre: De la Fundación a la Expansión](./conclusion.md)
@@ -107,9 +107,9 @@ El cierre del ciclo estratégico.
 
 ---
 
-### 🛠️ Anexos y Herramientas (Biblioteca del Arquitecto)
+## 🛠️ Anexos y Herramientas (Biblioteca del Arquitecto)
 
-#### 📋 Estrategia y Gobernanza
+### 📋 Estrategia y Gobernanza
 Herramientas para el "Día 0": Definición y Permisos.
 
 * [Anexo A: Formulación de Proyectos](./anexos/A-Formulacion-Viabilidad.md)
@@ -117,7 +117,7 @@ Herramientas para el "Día 0": Definición y Permisos.
 * [Anexo B: Política Institucional](./anexos/B-Politica-Institucional.md)
   *Marco regulatorio base para el uso responsable de IA.*
 
-#### 📐 Arquitectura y Diseño
+### 📐 Arquitectura y Diseño
 Herramientas para la toma de decisiones técnicas y de compra.
 
 * [Anexo C: Blueprints](./anexos/C-Blueprints.md)
@@ -125,7 +125,7 @@ Herramientas para la toma de decisiones técnicas y de compra.
 * [Anexo D: Plantillas y Recursos](./anexos/D-Plantillas-Recursos.md)
   *Prompts maestros (CRF-R) y rúbricas de evaluación de calidad.*
 
-#### 📚 Referencias y Fundamentos
+### 📚 Referencias y Fundamentos
 Base de conocimiento para alinear equipos y profundizar el criterio.
 
 * [Anexo E: Glosario](./anexos/E-Glosario.md)
@@ -135,13 +135,13 @@ Base de conocimiento para alinear equipos y profundizar el criterio.
 
 ---
 
-### Changelog
+## Changelog
 * **v1.3 (Diciembre 2025):** Migración a plataforma MkDocs y diagramas dinámicos. Inclusión de la "Agencia Humana" (Innerarity), riesgos de atrofia cognitiva y consolidación del ROI Financiero.
 * Ver [Historial Completo](./changelog.md).
 
-### Sugerencias y Mejoras
+## Sugerencias y Mejoras
 Este es un documento vivo. Si encuentras una errata o tienes una sugerencia de mejora, puedes reportarla directamente en el [Repositorio de GitHub](https://github.com/jccarvajal/Arquitectura-IA).
 
-### Licencia
+## Licencia
 El contenido se distribuye bajo licencia **CC BY-NC-ND 4.0**.
 Se autoriza su uso educativo y de referencia profesional. No se permite la modificación ni el uso comercial sin autorización expresa del autor.
