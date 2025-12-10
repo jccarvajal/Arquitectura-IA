@@ -141,10 +141,12 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 * **Tendencia 1: La Explosión de la Multimodalidad (Model Cards y System Cards)**
 
     * **Google DeepMind (2025). "Gemini 3 Pro Model Card".** :material-web: [Web](https://ai.google.dev/gemini-api/docs/models)
-        > :material-arrow-right-bottom: **Por qué leerlo:**  El documento técnico oficial de la arquitectura multimodal nativa y el razonamiento ("Deep Think") de Gemini 3.
+
+        > :material-arrow-right-bottom: **Por qué leerlo:** El documento técnico oficial de la arquitectura multimodal nativa y el razonamiento ("Deep Think") de Gemini 3. 
 
     * **OpenAI (2025). "GPT-5 System Card".** :material-file-pdf-box: [PDF](https://openai.com/index/gpt-5-system-card/)
-        > :material-arrow-right-bottom: **Por qué leerlo:** etalla los riesgos de gobernanza en modelos omnicanal y la mitigación de audio/visión no deseada.
+
+        > :material-arrow-right-bottom: **Por qué leerlo:** Detalla los riesgos de gobernanza en modelos omnicanal y la mitigación de audio/visión no deseada.
 
 ---
 
