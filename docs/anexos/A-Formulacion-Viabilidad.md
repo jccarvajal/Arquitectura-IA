@@ -32,9 +32,9 @@ Su propósito es evitar el "solucionismo tecnológico" y asegurar que solo los p
 
 | Criterio Técnico | Pregunta Clave | Diagnóstico Técnico (Placeholder) | Referencia |
 | :--- | :--- | :--- | :--- |
-| **Disponibilidad y Enlace** | ¿Tenemos acceso y, crucialmente, ¿tienen un **identificador único** (ID) para cruzar distintas fuentes? | `[ No enlazable / Conectable y Limpio ]` | Guía 04 |
-| **Granularidad** | ¿El dato tiene el nivel de detalle necesario para la decisión? | `[ Granularidad Insuficiente / Granularidad Adecuada ]` | Guía 04 |
-| **Complejidad Cognitiva** | ¿Es tarea de S1 (Patrón) o S2 (Juicio/Riesgo Alto)? | `[ Sistema 1 / Sistema 2 ]` | Guía 15 |
+| **Disponibilidad y Enlace** | ¿Tenemos acceso y, crucialmente, ¿tienen un **identificador único** (ID) para cruzar distintas fuentes? | `[No enlazable / Conectable y Limpio]` | Guía 04 |
+| **Granularidad** | ¿El dato tiene el nivel de detalle necesario para la decisión? | `[Granularidad Insuficiente / Granularidad Adecuada]` | Guía 04 |
+| **Complejidad Cognitiva** | ¿Es tarea de S1 (Patrón) o S2 (Juicio/Riesgo Alto)? | `[Sistema 1 / Sistema 2]` | Guía 15 |
 
 ---
 
@@ -59,8 +59,8 @@ Su propósito es evitar el "solucionismo tecnológico" y asegurar que solo los p
 
 | Métrica | Definición / Pregunta Clave | Umbral / Estimación | Referencia |
 | :--- | :--- | :--- | :--- |
-| **Calidad / Golden Set** | ¿Contra qué estándar de verdad (ej. humano o proceso anterior) compararemos a la IA? | `[ KPI Objetivo y Umbral ]` | Guía 10 |
-| **Costo (Tokenomics)** | ¿Cuál es el costo estimado de operación mensual vs. el ahorro proyectado? | `[$ Costo vs. $ Ahorro ]` | Guía 12 |
+| **Calidad / Golden Set** | ¿Contra qué estándar de verdad (ej. humano o proceso anterior) compararemos a la IA? | `[KPI Objetivo y Umbral]` | Guía 10 |
+| **Costo (Tokenomics)** | ¿Cuál es el costo estimado de operación mensual vs. el ahorro proyectado? | `[$ Costo vs. $ Ahorro]` | Guía 12 |
 
 ---
 
@@ -71,7 +71,7 @@ Su propósito es evitar el "solucionismo tecnológico" y asegurar que solo los p
 | Criterio | Pregunta Clave | Plan de Mitigación / Protocolo | Referencia |
 | :--- | :--- | :--- | :--- |
 | **Plan de Retiro** | ¿Cómo se apaga el sistema y se borran los datos vectorizados (RAG) cuando el proyecto termine? | `[Protocolo de borrado seguro]` | Guía 09 |
-| **Resiliencia** | Si el sistema falla, ¿mantenemos la capacidad humana de operar manualmente (Actividad "Antes")? | `[ Simulacro manual trimestral ]` | Guía 15 |
+| **Resiliencia** | Si el sistema falla, ¿mantenemos la capacidad humana de operar manualmente (Actividad "Antes")? | `[Simulacro manual trimestral]` | Guía 15 |
 
 ---
 
