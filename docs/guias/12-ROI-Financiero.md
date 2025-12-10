@@ -14,51 +14,46 @@ Tras una década analizando éxitos, fracasos, regulaciones y *benchmarks* globa
 
 ```mermaid
 graph LR
-    %% CONFIGURACIÓN MAESTRA (Estilo limpio)
-    classDef default font-size:14px,stroke-width:2px;
-
-    Invest(💰 Inversión<br/>en IA) --> Evaluacion{¿Genera<br/>Valor?}
+    Invest([💰 Inversión IA]) --> Evaluacion{¿Genera Valor?}
 
     %% ZONA VERDE
-    Evaluacion -->|Sí| Green(🟩 ZONA VERDE:<br/>Ganadores)
+    Evaluacion -->|Sí, Probado| Green[🟩 ZONA VERDE: Ganadores]
     subgraph Z_Green [Rentabilidad Clara]
         direction TB
-        Green --> G1(Mantenimiento)
-        Green --> G2(Fraude)
-        Green --> G3(Eficiencia)
+        Green --> G1(Mantenimiento Predictivo)
+        Green --> G2(Fraude y Riesgo)
+        Green --> G3(Eficiencia Operativa)
     end
 
     %% ZONA AMARILLA
-    Evaluacion -->|Complejo| Yellow(🟨 ZONA AMARILLA:<br/>Tácticos)
+    Evaluacion -->|Sí, pero complejo| Yellow[🟨 ZONA AMARILLA: Tácticos]
     subgraph Z_Yellow [Depende de Ejecución]
         direction TB
-        Yellow --> Y1(Chatbots)
-        Yellow --> Y2(Triage)
+        Yellow --> Y1(Chatbots Normativos)
+        Yellow --> Y2(Triage Automático)
     end
 
-    %% ZONA RIESGO (NARANJA + ROJA)
-    Evaluacion -->|Riesgo| Orange(🟧 NARANJA:<br/>Vanidosos)
-    Evaluacion -->|Peligro| Red(🟥 ROJA:<br/>Destrucción)
-    subgraph Z_Risk [Riesgo de Valor]
+    %% ZONA NARANJA
+    Evaluacion -->|Marketing| Orange[🟧 ZONA NARANJA: Vanidosos]
+    subgraph Z_Orange [Riesgo: Vanidad]
         direction TB
-        Orange --> O1(Tontos)
-        Red --> R1(Autónomos)
+        Orange --> O1(Chatbots Tontos)
+    end
+
+    %% ZONA ROJA
+    Evaluacion -->|Alto Riesgo| Red[🟥 ZONA ROJA: Destrucción]
+    subgraph Z_Red [Riesgo: Destrucción]
+        direction TB
+        Red --> R1(Decisión Autónoma S2)
     end
 
     %% ZONA AZUL
-    Evaluacion -->|Futuro| Blue(🟦 ZONA AZUL:<br/>Sistémico)
+    Evaluacion -->|Largo Plazo| Blue[🟦 ZONA AZUL: Sistémico]
     subgraph Z_Blue [Habilitadores]
         direction TB
-        Blue --> B1(Datos)
-        Blue --> B2(Auditoría)
+        Blue --> B1(Infraestructura Datos)
+        Blue --> B2(Auditoría / LOSA)
     end
-
-    %% --- TRUCO DE ORDENAMIENTO (ENLACES INVISIBLES) ---
-    %% Esto obliga a Mermaid a apilar las zonas de arriba a abajo
-    Green ~~~ Yellow
-    Yellow ~~~ Orange
-    Orange ~~~ Red
-    Red ~~~ Blue
 ```
 
 * 🟩 **Zona Verde (Ganadores):** Proyectos con ROI alto, madurez probada y beneficios financieros o físicos inmediatos.
