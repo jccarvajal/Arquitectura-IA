@@ -225,7 +225,7 @@ La obra de guías y anexos fue diseñada para los "Arquitectos" y "Directores". 
 * **Ingredientes (El "Stack" de la Obra):** 
     * **Guía 16 (Aprender a Pensar):** Específicamente "Pensamiento Algorítmico" y "Táctica del Abogado del Diablo".  
     * **Guía 02 (Prompts):** Múltiples prompts iterativos (una técnica llamada **Prompt Chaining**).  
-   * **Guía 15 (Sinergia):** Este es un ejemplo puro de "Humano-al-Mando" (Nivel 3).  
+    * **Guía 15 (Sinergia):** Este es un ejemplo puro de "Humano-al-Mando" (Nivel 3).  
 * **El Blueprint (El Flujo de "Pensamiento Algorítmico"):** 
     1. **Prompt 1 (Lluvia de Ideas):** Humano: "Estoy escribiendo un reporte sobre \[TEMA\]. Basado en \[DATOS ADJUNTOS\], dame 5 ángulos de análisis posibles."  
     2. **Prompt 2 (Esquema):** Humano: "Me gusta el ángulo 3 ('Impacto en la eficiencia operativa'). Conviértelo en un esquema detallado de 6 secciones para el reporte."  
@@ -255,11 +255,11 @@ La obra de guías y anexos fue diseñada para los "Arquitectos" y "Directores". 
     * **Guía 07 (Ajuste Fino):** El "adaptador" LoRA entrenado es ahora la Propiedad Intelectual (PI) secreta que se está vendiendo.  
     * **Guía 14 (Modelos):** El modelo open-source subyacente.  
 * **El Blueprint (El Flujo de Arquitectura):** 
-    1. (Industrialización) Crear un endpoint de API seguro para el agente especializado.  
-    2. (Gobernanza) Implementar un "API Gateway" para la autenticación (claves de API por cliente) y "Límites de Tasa" (para prevenir abusos y bucles de costos).  
-    3. (Datos / Gobernanza) Modificar la lógica RAG para que sea "consciente del tenant". La "biblioteca" (Base Vectorial) se filtra automáticamente usando el ID del cliente que hace la llamada.  
-    4. (Industrialización / Gobernanza) Vincular el "Dashboard de Gobernanza" (costos, tokens, latencia) a los sistemas de facturación, monitoreando el rendimiento por cliente.  
-    5. (Ajuste Fino) El "adaptador" de Ajuste Fino es el activo central (la PI) que se protege.  
+    1. **Industrialización:** Crear un endpoint de API seguro para el agente especializado.  
+    2. **Gobernanza:** Implementar un "API Gateway" para la autenticación (claves de API por cliente) y "Límites de Tasa" (para prevenir abusos y bucles de costos).  
+    3. **Datos / Gobernanza:** Modificar la lógica RAG para que sea "consciente del tenant". La "biblioteca" (Base Vectorial) se filtra automáticamente usando el ID del cliente que hace la llamada.  
+    4. **Industrialización / Gobernanza:** Vincular el "Dashboard de Gobernanza" (costos, tokens, latencia) a los sistemas de facturación, monitoreando el rendimiento por cliente.  
+    5. **Ajuste Fino:** El "adaptador" de Ajuste Fino es el activo central (la PI) que se protege.  
 * **La Sinergia (Colaboración):** 
     * **Rol del Agente:** El agente ahora genera valor directo.  
     * **Rol del Humano (Estratega):** La organización ha completado el viaje. La IA ya no es solo una herramienta de eficiencia interna; se ha convertido en un producto de innovación externa, creando un nuevo "Foso Competitivo".
