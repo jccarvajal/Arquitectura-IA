@@ -6,6 +6,7 @@ Esta obra no termina: cambia de fase.
 La “Maestría” en Inteligencia Artificial no es un punto de llegada, sino un movimiento continuo, una destreza cíclica que se afina cada vez que interactuamos con una herramienta cuya naturaleza evoluciona más rápido que nuestras instituciones.
 
 A lo largo del camino, pasaste por cuatro roles:
+
 * **Usuario**, pregunta “¿qué hace esto?”
 * **Arquitecto**, define “qué debe hacer”
 * **Gobernador**, resguarda “qué no debe hacer”
@@ -40,6 +41,7 @@ En manos irresponsables, Protogen genera destrucción.
 En su función original, permite **construcción y expansión**, abriendo rutas y habilitando acceso a nuevos espacios.
 
 La IA actual funciona bajo esa misma lógica:
+
 * no es una mente,
 * es una herramienta,
 * cuyo impacto depende por completo del criterio con que se gobierna.
@@ -55,6 +57,7 @@ Esta obra es un manual para gobernar esa herramienta, nuestro equivalente contem
 
 Las herramientas cambiarán. Los modelos también.
 Pero esta obra no intenta capturar la tecnología de un momento, sino establecer:
+
 * un **criterio duradero**,
 * una **estructura conceptual estable**,
 * un **marco de responsabilidad profesional**,
@@ -79,9 +82,7 @@ La solución es **estructurar la expansión**.
 La Protomolécula podía destruir o abrir rutas según quién la gobernara.
 La IA actual funciona igual: puede amplificar errores, o puede abrir miles de caminos productivos, dependiendo del S2 humano que la dirige.
 
-Esa es la verdadera Expansión:
-no un futuro de máquinas que razonan,
-sino un presente donde comunidades profesionales con criterio, responsabilidad y *skin in the game* logran dirigir herramientas potentes hacia fines valiosos.
+Esa es la verdadera Expansión: no un futuro de máquinas que razonan, sino un presente donde comunidades profesionales con criterio, responsabilidad y *skin in the game* logran dirigir herramientas potentes hacia fines valiosos.
 
 ---
 
@@ -92,6 +93,7 @@ Finalmente, debemos entender que la gobernanza no es un acto pasivo de regulaci�
 Como advierte el filósofo Daniel Innerarity, el riesgo real de la sociedad algorítmica no es que las máquinas se rebelen (superinteligencia), sino que los humanos abdiquen (estupidez artificial). Si aceptamos la "Oferta Tecnológica" (lo que el mercado nos vende) sin contrastarla con nuestra "Demanda Humana" (lo que realmente necesitamos), perdemos nuestra agencia.
 
 Tu rol como Arquitecto es articular esa demanda.
+
 * **La Oferta** dice: "Aquí tienes un modelo que lo hace todo, pero es una caja negra".
 * **La Demanda (Tu Agencia)** responde: "No lo acepto. Exijo explicabilidad o no hay trato".
 
