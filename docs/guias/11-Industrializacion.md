@@ -56,23 +56,26 @@ Una vez que tenemos el modelo (API) y las herramientas, necesitamos un "sistema 
 Existen tres filosofías de orquestación para desplegar Agentes:
 
 **A. Orquestación SaaS / No-Code (El Prototipo Rápido)**
-    * **Ejemplos:** Zapier, Make (ex Integromat).
-    * **Filosofía:** "Velocidad sobre Control". Se alquila la infraestructura para conectar APIs modernas de forma visual.
-    * **Caso de Uso:** Prototipado (Guía 08), MVPs o procesos no críticos donde el costo por ejecución no es relevante.
-    * **Riesgo GRC:** Los datos viajan por servidores de terceros (caja negra). Alta fricción para lógicas complejas y costos que escalan mal.
+
+* **Ejemplos:** Zapier, Make (ex Integromat).
+* **Filosofía:** "Velocidad sobre Control". Se alquila la infraestructura para conectar APIs modernas de forma visual.
+* **Caso de Uso:** Prototipado (Guía 08), MVPs o procesos no críticos donde el costo por ejecución no es relevante.
+* **Riesgo GRC:** Los datos viajan por servidores de terceros (caja negra). Alta fricción para lógicas complejas y costos que escalan mal.
 
 **B. Orquestación Corporativa y RPA (El Puente al Legado)**
-    * **Ejemplos:** UiPath, Microsoft Power Automate, Copilot Studio.
-    * **Filosofía:** "Seguridad y Compatibilidad".
-    * **El Factor RPA:** A diferencia de los otros, herramientas como UiPath permiten la automatización robótica (RPA), interactuando con interfaces de software antiguo (Legacy) que no tienen API, simulando clics y tecleo humano.
-    * **Caso de Uso:** Procesos internos regulados (Banca, Seguros, Gobierno) que dependen de sistemas "Mainframe" o escritorio, donde la identidad y la auditoría son obligatorias.
-    * **Riesgo GRC:** Alto costo de licenciamiento, "Vendor Lock-in" y curvas de aprendizaje pronunciadas.
+
+* **Ejemplos:** UiPath, Microsoft Power Automate, Copilot Studio.
+* **Filosofía:** "Seguridad y Compatibilidad".
+* **El Factor RPA:** A diferencia de los otros, herramientas como UiPath permiten la automatización robótica (RPA), interactuando con interfaces de software antiguo (Legacy) que no tienen API, simulando clics y tecleo humano.
+* **Caso de Uso:** Procesos internos regulados (Banca, Seguros, Gobierno) que dependen de sistemas "Mainframe" o escritorio, donde la identidad y la auditoría son obligatorias.
+* **Riesgo GRC:** Alto costo de licenciamiento, "Vendor Lock-in" y curvas de aprendizaje pronunciadas.
 
 **C. Orquestación de Ingeniería / GenAI Native (La Fábrica Soberana)**
-    * **Ejemplos:** n8n (Self-hosted), Flowise, LangFlow, Python (LangChain).
-    * **Filosofía:** "Soberanía y Lógica Cognitiva". Herramientas diseñadas específicamente para manejar cadenas de razonamiento (Chains) y RAG visualmente o por código.
-    * **Caso de Uso:** *Agentes Industriales.* Procesos de alto volumen, manejo de datos sensibles (PII) o arquitecturas cognitivas complejas.
-    * **Ventaja GRC:** *Soberanía de Datos Total.* Al usar versiones *self-hosted* (alojamiento propio), los datos nunca salen de tu control. Permite inyectar código personalizado para validaciones estrictas (Safety Cases).
+
+* **Ejemplos:** n8n (Self-hosted), Flowise, LangFlow, Python (LangChain).
+* **Filosofía:** "Soberanía y Lógica Cognitiva". Herramientas diseñadas específicamente para manejar cadenas de razonamiento (Chains) y RAG visualmente o por código.
+* **Caso de Uso:** *Agentes Industriales.* Procesos de alto volumen, manejo de datos sensibles (PII) o arquitecturas cognitivas complejas.
+* **Ventaja GRC:** *Soberanía de Datos Total.* Al usar versiones *self-hosted* (alojamiento propio), los datos nunca salen de tu control. Permite inyectar código personalizado para validaciones estrictas (Safety Cases).
 
 > **Nota Técnica: La "Nube" en tu Laptop**
 > Herramientas como **n8n** ofrecen una versión de escritorio (Desktop App). Esto permite al Arquitecto desarrollar y probar flujos complejos con datos confidenciales reales en su propia máquina (Localhost), sin riesgo de fuga, antes de desplegarlos en el servidor de producción seguro.
@@ -89,19 +92,22 @@ Existen tres filosofías de orquestación para desplegar Agentes:
 La facilidad de uso de los orquestadores crea un riesgo de seguridad invisible: el "Shadow AI". Para mitigar la fuga de datos sin frenar la innovación, el Arquitecto debe imponer este protocolo de tres niveles:
 
 **🔴 Nivel Rojo (Prohibido en SaaS/No-Code)**
-    * **Dato:** Información Personal Identificable (PII), Datos Financieros, Secretos Comerciales.
-    * **Regla:** Bajo ninguna circunstancia estos datos pueden transitar por orquestadores públicos (Zapier, Make) en cuentas personales o gratuitas.
-    * **Solución:** Debe usarse **Ingeniería Soberana (n8n Self-hosted)** o **Entorno Corporativo (Power Automate)** donde la auditoría esté garantizada.
+
+* **Dato:** Información Personal Identificable (PII), Datos Financieros, Secretos Comerciales.
+* **Regla:** Bajo ninguna circunstancia estos datos pueden transitar por orquestadores públicos (Zapier, Make) en cuentas personales o gratuitas.
+* **Solución:** Debe usarse **Ingeniería Soberana (n8n Self-hosted)** o **Entorno Corporativo (Power Automate)** donde la auditoría esté garantizada.
 
 **🟡 Nivel Amarillo (Zona de Transición)**
-    * **Dato:** Correos internos no confidenciales, Agendas, Tareas operativas.
-    * **Regla:** Se permite el uso de SaaS (Make/Zapier) solo si se utiliza una **Cuenta de Servicio Empresarial** (Enterprise Plan) gestionada por TI, nunca cuentas personales de Gmail ("Shadow IT").
-    * **Requisito:** La autenticación debe ser vía SSO (Single Sign-On) para revocar el acceso si el empleado deja la empresa.
+
+* **Dato:** Correos internos no confidenciales, Agendas, Tareas operativas.
+* **Regla:** Se permite el uso de SaaS (Make/Zapier) solo si se utiliza una **Cuenta de Servicio Empresarial** (Enterprise Plan) gestionada por TI, nunca cuentas personales de Gmail ("Shadow IT").
+* **Requisito:** La autenticación debe ser vía SSO (Single Sign-On) para revocar el acceso si el empleado deja la empresa.
 
 **🟢 Nivel Verde (Zona de Sandbox)**
-    * **Dato:** Información pública, RSS Feeds, Prototipos con datos sintéticos (falsos).
-    * **Regla:** Libertad total para que los equipos usen herramientas No-Code para experimentar y prototipar.
-    * **Objetivo:** Fomentar la "Alfabetización de Automatización" sin riesgo real.
+
+* **Dato:** Información pública, RSS Feeds, Prototipos con datos sintéticos (falsos).
+* **Regla:** Libertad total para que los equipos usen herramientas No-Code para experimentar y prototipar.
+* **Objetivo:** Fomentar la "Alfabetización de Automatización" sin riesgo real.
 
 > **La Regla de Oro del Agente:** Un Agente nunca debe operar con la identidad de un humano (ej. "juan@empresa.com"). Debe tener su propia **Identidad de Servicio** (ej. "agente-ventas@empresa.com") para que sus acciones sean trazables y auditables en los logs.
 
