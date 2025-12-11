@@ -1,6 +1,6 @@
-## Bloque 1: Fundamentos Técnicos (Cómo funciona)
+# Bloque 1: Fundamentos Técnicos (Cómo funciona)
 
-### Guía 01: Anatomía y Entrenamiento de Modelos Generativos
+## Guía 01: Anatomía y Entrenamiento de Modelos Generativos
 
 Subtítulo: La capa invisible que determina el Riesgo y la Utilidad
 
