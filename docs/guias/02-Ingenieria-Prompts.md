@@ -1,14 +1,14 @@
-### Guía 02: La Guía Definitiva de la Ingeniería de Prompts
+## Guía 02: La Guía Definitiva de la Ingeniería de Prompts
 
 Subtítulo: El Plano del "Arquitecto de Instrucciones"
 
-#### Introducción: De la Instrucción a la Ingeniería
+### Introducción: De la Instrucción a la Ingeniería
 
 La ingeniería de prompts es la disciplina que convierte la conversación con una IA en un proceso de desarrollo controlado y predecible. No buscamos "charlar", buscamos obtener resultados. Esta guía presenta un método completo que combina una estructura robusta con el juicio práctico necesario para aplicarla eficazmente en el mundo real.
 
 ---
 
-#### Conceptos Fundamentales
+### Conceptos Fundamentales
 
 **¿Qué es un LLM (Large Language Model)?**  
 Un LLM es un modelo de inteligencia artificial entrenado con un volumen masivo de texto y datos. Su función principal no es “pensar” o “entender” en el sentido humano, sino calcular la probabilidad de la siguiente palabra más probable en una secuencia, basándose en el contexto que le hemos proporcionado. Ejemplos incluyen los modelos de OpenAI, Google y Anthropic.
@@ -39,7 +39,7 @@ La diferencia en la calidad y especificidad de la respuesta entre ambos ejemplos
 
 ---
 
-#### Parte 1: El Método de Prompting en 7 Pasos
+### Parte 1: El Método de Prompting en 7 Pasos
 
 Este es un marco de trabajo que te guiará desde la idea inicial hasta un resultado pulido y de alta calidad.
 
@@ -190,7 +190,7 @@ No "pruebes cosas al azar". Ajusta tu prompt para cerrar la brecha entre el resu
 
 ---
 
-#### Parte 2: Técnicas Avanzadas de Prompting (Herramientas de Precisión)
+### Parte 2: Técnicas Avanzadas de Prompting (Herramientas de Precisión)
 
 Las siguientes técnicas se integran en el método para resolver problemas más complejos: **Chain-of-Thought**, **Self-Consistency**, **Prompt Chaining** y **Meta-Prompting**.
 
@@ -250,7 +250,7 @@ Las siguientes técnicas se integran en el método para resolver problemas más 
 
 ---
 
-#### Parte 3: Maximizando el Valor: Qué Técnicas Usar en Cada Paso
+### Parte 3: Maximizando el Valor: Qué Técnicas Usar en Cada Paso
 
 Aquí conectamos las técnicas avanzadas con el método de 7 pasos para ver dónde aportan más valor.
 
@@ -281,7 +281,7 @@ Aquí conectamos las técnicas avanzadas con el método de 7 pasos para ver dón
 
 ---
 
-#### Conclusión: De Usuario a Arquitecto de Resultados
+### Conclusión: De Usuario a Arquitecto de Resultados
 
 La ingeniería de prompts te transforma: dejas de ser un usuario que simplemente conversa con una IA, para convertirte en un arquitecto que la dirige con propósito. La maestría en esta disciplina no reside en memorizar trucos, sino en dominar una doble habilidad fundamental:
 
