@@ -129,13 +129,13 @@ La Gobernanza (Guía 09\) fue sobre seguridad (lo que no podemos hacer porque es
 
 La *"Licencia Social"* es la aceptación y confianza que la ciudadanía deposita en la implementación de una tecnología. No se gana solo cumpliendo la ley; se gana con transparencia y demostrando valor público. Si la percepción es que un sistema es opaco, sesgado o engañoso, esa licencia se pierde y el proyecto fracasa, independientemente de su éxito técnico.
 
-> **Profundización: Las 3 Preguntas de la Licencia Social**
-> 
-> Según la guía de *Formulación Ética de Proyectos de Ciencia de Datos* (GobDigital/UAI), la Licencia Social no es un contrato legal, sino la aceptación ciudadana. Para ganarla, tu sistema debe responder satisfactoriamente tres preguntas simples ante la opinión pública (válidas para cualquier país):
-> 
-> 1.  **Qué:** ¿Para qué se usa exactamente mi información?
-> 2.  **Quién:** ¿Quién se beneficia de esto? (¿Solo la institución o también el ciudadano?)
-> 3.  **Cómo:** ¿Están mis datos seguros y puedo pedir que se corrijan?
+!!! info **Profundización: Las 3 Preguntas de la Licencia Social**
+
+    Según la guía de *Formulación Ética de Proyectos de Ciencia de Datos* (GobDigital/UAI), la Licencia Social no es un contrato legal, sino la aceptación ciudadana. Para ganarla, tu sistema debe responder satisfactoriamente tres preguntas simples ante la opinión pública (válidas para cualquier país):
+
+    1.  **Qué:** ¿Para qué se usa exactamente mi información?
+    2.  **Quién:** ¿Quién se beneficia de esto? (¿Solo la institución o también el ciudadano?)
+    3.  **Cómo:** ¿Están mis datos seguros y puedo pedir que se corrijan?
 
 Si tu "Agente" no puede responder estas preguntas en lenguaje claro (Opacidad Analfabeta), perderá la confianza, independientemente de su precisión técnica.
 
@@ -144,7 +144,7 @@ Si tu "Agente" no puede responder estas preguntas en lenguaje claro (Opacidad An
 * **El Problema:** El motor RAG es una "biblioteca". Si los documentos de la biblioteca (ej. revisiones de desempeño de los últimos 20 años) están llenos de sesgos humanos, el "Agente PM de Contratación" aprenderá esos sesgos y los amplificará.  
 * **El Control Ético:** Auditoría de Datos de Origen. Antes de conectar un agente a una base de datos (RAG), se debe realizar una auditoría ética sobre esos datos (un principio clave de la Estrategia de Datos). El agente debe ser instruido para ignorar datos demográficos en la toma de decisiones.
 
-!!! **La Politización de la Arquitectura (Sesgo Intencional)**
+!!! info **La Politización de la Arquitectura (Sesgo Intencional)**
 
     * **El Problema:** A menudo asumimos que el sesgo es un "error" en los datos (un accidente). Sin embargo, casos recientes (como el lanzamiento de **Grok** por xAI o las controversias de Gemini en 2024) demuestran un nuevo fenómeno: el **Sesgo de Diseño**.
     * **El Análisis:** La IA no tiene ideología; tiene dueños. Un modelo es la proyección automatizada del "Sistema 2" (la visión del mundo) de sus creadores sobre un "Sistema 1" (el modelo). La "seguridad" a veces se utiliza como excusa para filtrar visiones del mundo competidoras, o inversamente, la "libertad de expresión" se usa como excusa para eliminar guardarraíles de seguridad.
