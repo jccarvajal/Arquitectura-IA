@@ -28,14 +28,16 @@ Esta guía es el manual para diseñar flujos de **"Aumento Cognitivo"**, gestion
 Para diseñar la sinergia, primero debemos dividir el trabajo. Nos basaremos en el influyente marco conceptual de **Daniel Kahneman**, psicólogo y premio en Ciencias Económicas en memoria de Alfred Nobel. En su obra *Pensar, rápido y despacio*, él divide el pensamiento humano en dos "sistemas":
 
 **Sistema 1: El "Piloto Automático"**
-    * **Qué es:** Es el pensamiento rápido, instintivo y de bajo esfuerzo basado en patrones.  
-    * **Ejemplos Humanos:** Reconocer una cara, clasificar un email como "spam".  
-    * **Rol de la IA:** Este sistema es perfecto para la delegación. Los Agentes de IA son motores de "Sistema 1" sobrealimentados. Pueden resumir 100 PDFs (usando *RAG*, el sistema de recuperación de conocimiento) o encontrar un dato en un segundo.
+
+* **Qué es:** Es el pensamiento rápido, instintivo y de bajo esfuerzo basado en patrones.  
+* **Ejemplos Humanos:** Reconocer una cara, clasificar un email como "spam".  
+* **Rol de la IA:** Este sistema es perfecto para la delegación. Los Agentes de IA son motores de "Sistema 1" sobrealimentados. Pueden resumir 100 PDFs (usando *RAG*, el sistema de recuperación de conocimiento) o encontrar un dato en un segundo.
 
 **Sistema 2: El "Piloto Manual"**
-    * **Qué es:** Es el pensamiento lento, analítico, deliberado y de alto esfuerzo.  
-    * **Ejemplos Humanos:** Definir la estrategia de la compañía, manejar una queja sensible, tener juicio ético sobre una decisión.  
-    * **Rol del Humano:** Este es el nuevo trabajo humano. Es el dominio del juicio crítico, la empatía, la creatividad original y la definición de la "intención" (el "por qué" detrás del "qué").
+
+* **Qué es:** Es el pensamiento lento, analítico, deliberado y de alto esfuerzo.  
+* **Ejemplos Humanos:** Definir la estrategia de la compañía, manejar una queja sensible, tener juicio ético sobre una decisión.  
+* **Rol del Humano:** Este es el nuevo trabajo humano. Es el dominio del juicio crítico, la empatía, la creatividad original y la definición de la "intención" (el "por qué" detrás del "qué").
 
 La **Sinergia Humano-IA** es una arquitectura de trabajo donde el Agente de IA ejecuta el 90% del trabajo de "Sistema 1", liberando al humano para que se concentre el 90% de su tiempo en el "Sistema 2".
 
@@ -113,9 +115,9 @@ A menudo, la IA es percibida por los mandos medios no como una ayuda, sino como 
 * **El Incentivo Perverso:** Si un "Agente PM" hace el trabajo de 5 analistas, el gerente racional teme perder a 5 personas y, por ende, perder estatus y presupuesto.
 * **El Síntoma (Sabotaje Pasivo):** El gerente dirá: "La IA no entiende nuestro negocio", "Es muy arriesgado", o esconderá las ganancias de eficiencia para no sufrir recortes.
 * **La Cura (Realineación de Incentivos):** Como Director de Transformación, debes cambiar la métrica de poder.
-  * *Antigua Métrica:* "Poder = Tamaño del equipo". (Incentiva la burocracia).
-  * *Nueva Métrica:* "Poder = Impacto/Margen por empleado". (Incentiva la eficiencia).
-  * *Acción:* Premia públicamente al gerente que logra *más* resultados con el *mismo* equipo (usando IA para escalar servicios), no al que pide más contrataciones. Solo cuando cambias el incentivo, desactivas el sistema inmunológico.
+    * *Antigua Métrica:* "Poder = Tamaño del equipo". (Incentiva la burocracia).
+    * *Nueva Métrica:* "Poder = Impacto/Margen por empleado". (Incentiva la eficiencia).
+    * *Acción:* Premia públicamente al gerente que logra *más* resultados con el *mismo* equipo (usando IA para escalar servicios), no al que pide más contrataciones. Solo cuando cambias el incentivo, desactivas el sistema inmunológico.
 
 ---
 
@@ -128,7 +130,9 @@ La Gobernanza (Guía 09\) fue sobre seguridad (lo que no podemos hacer porque es
 La *"Licencia Social"* es la aceptación y confianza que la ciudadanía deposita en la implementación de una tecnología. No se gana solo cumpliendo la ley; se gana con transparencia y demostrando valor público. Si la percepción es que un sistema es opaco, sesgado o engañoso, esa licencia se pierde y el proyecto fracasa, independientemente de su éxito técnico.
 
 **Profundización: Las 3 Preguntas de la Licencia Social**
+
 Según la guía de *Formulación Ética de Proyectos de Ciencia de Datos* (GobDigital/UAI), la Licencia Social no es un contrato legal, sino la aceptación ciudadana. Para ganarla, tu sistema debe responder satisfactoriamente tres preguntas simples ante la opinión pública (válidas para cualquier país):
+
 1.  **Qué:** ¿Para qué se usa exactamente mi información?
 2.  **Quién:** ¿Quién se beneficia de esto? (¿Solo la institución o también el ciudadano?)
 3.  **Cómo:** ¿Están mis datos seguros y puedo pedir que se corrijan?

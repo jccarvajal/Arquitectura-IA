@@ -33,11 +33,11 @@ Para decidir qué contratar, no use la intuición. Aplique este algoritmo secuen
 * **Filtro 1: Integración (La Pregunta Técnica)**
     * ¿Necesita que la IA se conecte a otros software (BD, CRM, Excel)?
     * ¿Necesita inyectar conocimiento propietario masivo (RAG)?
-    * *> Si la respuesta es SÍ a cualquiera, está obligado a usar **API**.*
+    * *Si la respuesta es SÍ a cualquiera, está obligado a usar **API**.*
 
 * **Filtro 2: Usuario (La Pregunta Operativa)**
-    * ¿Es para **Aumento Individual**? (Un analista dialogando para inspirarse). -> **Suscripción**.
-    * ¿Es para **Procesos de Fondo**? (Clasificar 1.000 correos a las 3 AM sin humanos). -> **API**.
+    * ¿Es para **Aumento Individual**? (Un analista dialogando para inspirarse). :material-arrow-right: **Suscripción**.
+    * ¿Es para **Procesos de Fondo**? (Clasificar 1.000 correos a las 3 AM sin humanos). :material-arrow-right: **API**.
 
 * **Filtro 3: Financiero (El Quiebre de Tokenomics)**
     * Si ambos son viables, decida por volumen. La Suscripción es rentable para uso humano intensivo diario (costo fijo). La API es rentable para tareas esporádicas o de alto volumen automatizado (costo variable optimizable).
@@ -83,27 +83,30 @@ Como “Jefes de Adquisiciones” de nuestra fábrica de IA, el mercado de “mo
 Este anexo se enfoca en cómo los proveedores "empaquetan" esa arquitectura, con sus límites de costo cuadrático y memoria estática, en distintas estrategias de suministro:
 
 **A. Modelos Propietarios (APIs) \- "Arrendar el Cerebro"**
-    * **Qué es:** Arriendas el poder de cómputo y el modelo a un proveedor.  
-    * **Proveedores:** Google (Gemini), OpenAI (GPT), Anthropic (Claude).  
-    * **Fortaleza:** Acceso inmediato a la máxima potencia y a ventanas de contexto gigantescas (1M+ tokens). Ideal para tareas cognitivas complejas.  
-    * **Riesgo:** Dependencia tecnológica y exposición de datos al proveedor (los datos viajan a su nube). El costo operacional es alto por token.
+
+* **Qué es:** Arriendas el poder de cómputo y el modelo a un proveedor.  
+* **Proveedores:** Google (Gemini), OpenAI (GPT), Anthropic (Claude).  
+* **Fortaleza:** Acceso inmediato a la máxima potencia y a ventanas de contexto gigantescas (1M+ tokens). Ideal para tareas cognitivas complejas.  
+* **Riesgo:** Dependencia tecnológica y exposición de datos al proveedor (los datos viajan a su nube). El costo operacional es alto por token.
 
 **B. Modelos Open-Source / Open-Weigh (Ejecución Local) \- "Comprar la Máquina"**
-    * **Qué es:** Descargas los "pesos" del modelo y lo ejecutas en tu propia infraestructura (on-premise o nube privada). Tienes la máquina, no solo una conexión a ella.
-    * **Proyectos:** Llama (Meta), Mistral/Mixtral, Qwen.  
-    * **Fortaleza:** *Soberanía y transparencia* de los datos ya que nunca salen de tu control (ideal para entornos regulados). Ofrece máximo control para personalización profunda, incluyendo el *Ajuste Fino* para especializar el "cerebro" sin restricciones externas.
-    * **Riesgo:**
-        1. **Costo de Infraestructura:** Requiere hardware GPU dedicado y un equipo de ingeniería capaz de gestionar la *Industrialización* (el proceso de escalar prototipos a producción).
-        2. **Responsabilidad de Seguridad Total:** A diferencia de las APIs, donde el proveedor gestiona la seguridad, aquí el modelo es vulnerable. Las técnicas de seguridad nativas (como el "desaprendizaje" de conceptos dañinos) son inmaduras y pueden revertirse fácilmente con un ajuste fino mínimo. Si no construyes tu propia capa de seguridad (LOSA), el modelo está desprotegido.
+
+* **Qué es:** Descargas los "pesos" del modelo y lo ejecutas en tu propia infraestructura (on-premise o nube privada). Tienes la máquina, no solo una conexión a ella.
+* **Proyectos:** Llama (Meta), Mistral/Mixtral, Qwen.  
+* **Fortaleza:** *Soberanía y transparencia* de los datos ya que nunca salen de tu control (ideal para entornos regulados). Ofrece máximo control para personalización profunda, incluyendo el *Ajuste Fino* para especializar el "cerebro" sin restricciones externas.
+* **Riesgo:**
+    1. **Costo de Infraestructura:** Requiere hardware GPU dedicado y un equipo de ingeniería capaz de gestionar la *Industrialización* (el proceso de escalar prototipos a producción).
+    2. **Responsabilidad de Seguridad Total:** A diferencia de las APIs, donde el proveedor gestiona la seguridad, aquí el modelo es vulnerable. Las técnicas de seguridad nativas (como el "desaprendizaje" de conceptos dañinos) son inmaduras y pueden revertirse fácilmente con un ajuste fino mínimo. Si no construyes tu propia capa de seguridad (LOSA), el modelo está desprotegido.
 
 > **Actualización de Mercado (Nov 2025):** La brecha de capacidad se ha cerrado. Actualmente, los modelos abiertos de vanguardia tienen un retraso de **menos de un año** respecto a los modelos de frontera cerrados.
 > *Implicancia:* La decisión de usar Open-Source ya no implica sacrificar inteligencia. El *trade-off* ha cambiado: ganas potencia y soberanía, pero asumes el 100% de la carga de la ciberseguridad, ya que las salvaguardas del proveedor se pueden desactivar.
 
 **C. Agentes-como-Servicio (AaaS) \- "Contratar al Especialista"**
-    * **Qué es:** Consumes un producto terminado que encapsula el modelo y la arquitectura (como la **Generación Aumentada por Recuperación (RAG)**, el sistema de recuperación de conocimiento).  
-    * **Ejemplos:** Perplexity, Microsoft Copilot, ChatGPT Enterprise.  
-    * **Fortaleza:** Implementación en tiempo récord y soluciones enfocadas (ej. ofimática, investigación). Costo inicial bajo (suscripción).  
-    * **Riesgo:** Flexibilidad técnica baja ("caja negra"). La **Gobernanza** (el control de seguridad y datos) depende 100% del contrato con el proveedor.
+
+* **Qué es:** Consumes un producto terminado que encapsula el modelo y la arquitectura (como la **Generación Aumentada por Recuperación (RAG)**, el sistema de recuperación de conocimiento).  
+* **Ejemplos:** Perplexity, Microsoft Copilot, ChatGPT Enterprise.  
+* **Fortaleza:** Implementación en tiempo récord y soluciones enfocadas (ej. ofimática, investigación). Costo inicial bajo (suscripción).  
+* **Riesgo:** Flexibilidad técnica baja ("caja negra"). La **Gobernanza** (el control de seguridad y datos) depende 100% del contrato con el proveedor.
 
 ---
 
@@ -136,8 +139,8 @@ El "Agente Enrutador" (que puede ser un "Agente Director") es un "cerebro" metac
 5. **Agente Enrutador (Razona):** "Esto es 'complejo' y de 'contexto largo'. Además, los datos son 'sensibles'. Necesito 'Control' total."  
 6. **Agente Enrutador (Actúa):** Llama al modelo Open-Source (Ecosistema B) hosteado localmente para garantizar la soberanía de los datos. 
 
-* **Beneficio:** Obtienes el máximo Rendimiento cuando lo necesitas y el máximo Control y Costo-eficiencia cuando no. Has optimizado el "Triángulo de Adquisición".  
-* **Validación de Mercado (2025):** Esta estrategia de portafolio ("Comprar" o "Arrendar" en lugar de "Construir" todo desde cero) no es solo teórica. Informes de la industria de 2025 (como el "State of AI in Business" del MIT) revelan que las iniciativas de "Comprar" (asociaciones estratégicas) tienen el **doble de tasa de éxito** (aprox. 66%) que las de "Construir" (desarrollo interno) (aprox. 33%).
+**Beneficio:** Obtienes el máximo Rendimiento cuando lo necesitas y el máximo Control y Costo-eficiencia cuando no. Has optimizado el "Triángulo de Adquisición".  
+**Validación de Mercado (2025):** Esta estrategia de portafolio ("Comprar" o "Arrendar" en lugar de "Construir" todo desde cero) no es solo teórica. Informes de la industria de 2025 (como el "State of AI in Business" del MIT) revelan que las iniciativas de "Comprar" (asociaciones estratégicas) tienen el **doble de tasa de éxito** (aprox. 66%) que las de "Construir" (desarrollo interno) (aprox. 33%).
 
 ---
 
