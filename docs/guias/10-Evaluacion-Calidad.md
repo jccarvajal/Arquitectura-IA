@@ -41,18 +41,22 @@ No puedes probar tu sistema "al azar". Necesitas una referencia, una "pista de p
 Para mantener la calidad industrial, debes implementar una tubería (pipeline) que gestione la verdad:
 
 * **A. Cosecha (Harvesting):**
-    ¿De dónde salen las preguntas de prueba? De los **"Casos de Borde"** (Edge Cases) en producción.
-    * *Mecanismo:* Cada vez que un "Humano-en-el-Bucle" (Guía 15) corrige o rechaza una respuesta del agente, ese incidente se captura automáticamente. "Aquí el agente falló".
+
+¿De dónde salen las preguntas de prueba? De los **"Casos de Borde"** (Edge Cases) en producción.
+* *Mecanismo:* Cada vez que un "Humano-en-el-Bucle" (Guía 15) corrige o rechaza una respuesta del agente, ese incidente se captura automáticamente. "Aquí el agente falló".
 
 * **B. Curaduría (Curation - Sistema 2):**
-    Ese fallo capturado no entra sucio al set. Pasa a una bandeja de revisión donde un experto humano (S2) define cuál *debería* haber sido la respuesta correcta.
-    * *Resultado:* Transformamos un error operativo en un activo de aprendizaje ("Ground Truth").
+
+Ese fallo capturado no entra sucio al set. Pasa a una bandeja de revisión donde un experto humano (S2) define cuál *debería* haber sido la respuesta correcta.
+* *Resultado:* Transformamos un error operativo en un activo de aprendizaje ("Ground Truth").
 
 * **C. Inyección (Regression Testing):**
+
     El nuevo caso curado se agrega al Golden Set. La próxima vez que actualices el modelo, se le evaluará contra este nuevo caso difícil.
     * *Objetivo:* Asegurar que el agente **nunca cometa el mismo error dos veces**. Esto se llama "Prueba de Regresión": garantizar que al arreglar algo nuevo, no rompimos algo viejo.
 
 * **D. Retiro (Decommissioning):**
+
     Las preguntas sobre productos descontinuados o leyes derogadas deben ser purgadas automáticamente para no penalizar al agente por estar actualizado.
 
 **3. La Métrica de Cobertura**
@@ -70,17 +74,20 @@ Un Golden Set profesional no solo mide "aciertos", mide **cobertura**.
 La Gobernanza nos exige un "Dashboard de Observabilidad". Esta guía define las métricas clave que deben ir en él, usando el "Triángulo de Calidad".
 
 **A. Eficacia (¿Resuelve la tarea?)**
-    * **Precisión / Facticidad:** ¿La respuesta es correcta? ¿Cuántas veces "alucina"? Esta es la métrica de confianza número uno.  
-    * **Relevancia:** ¿Responde a la intención del usuario o solo a las palabras literales?  
-    * **Consistencia (Tono/Formato):** ¿Sigue las instrucciones del prompt? ¿Entrega el JSON solicitado?
+
+* **Precisión / Facticidad:** ¿La respuesta es correcta? ¿Cuántas veces "alucina"? Esta es la métrica de confianza número uno.  
+* **Relevancia:** ¿Responde a la intención del usuario o solo a las palabras literales?  
+* **Consistencia (Tono/Formato):** ¿Sigue las instrucciones del prompt? ¿Entrega el JSON solicitado?
 
 **B. Eficiencia (¿Cómo lo resuelve?)**
-    * **Costo:** ¿Cuántos tokens (dinero) consume por respuesta? ¿Estamos previniendo el "Bucle de Costos" identificado en la gobernanza?  
-    * **Latencia:** ¿Qué tan rápido responde (en segundos)? Una respuesta perfecta que tarda 30 segundos es inútil en producción.
+
+* **Costo:** ¿Cuántos tokens (dinero) consume por respuesta? ¿Estamos previniendo el "Bucle de Costos" identificado en la gobernanza?  
+* **Latencia:** ¿Qué tan rápido responde (en segundos)? Una respuesta perfecta que tarda 30 segundos es inútil en producción.
 
 **C. Seguridad (¿Es seguro?)**
-    * **Robustez:** ¿Falla si el usuario intenta una "Inyección de Prompt" (un ataque de instrucción oculta)?  
-    * **Contención:** ¿"Fuga" datos confidenciales o PII (Información Personal Identificable)?
+
+* **Robustez:** ¿Falla si el usuario intenta una "Inyección de Prompt" (un ataque de instrucción oculta)?  
+* **Contención:** ¿"Fuga" datos confidenciales o PII (Información Personal Identificable)?
 
 ---
 
