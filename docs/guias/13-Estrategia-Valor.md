@@ -1,10 +1,10 @@
-## Bloque 4: Impacto y Estrategia (Cómo nos afecta)
+# Bloque 4: Impacto y Estrategia (Cómo nos afecta)
 
-### Guía 13: Estrategia y Valor en la Era de la IA
+## Guía 13: Estrategia y Valor en la Era de la IA
 
 Subtítulo: Del "Director de Transformación" al "Director de Estrategia"
 
-#### Introducción: Escapar del Purgatorio de los Pilotos
+### Introducción: Escapar del Purgatorio de los Pilotos
 
 Construir la fábrica es un desafío técnico; hacerla rentable es un desafío de negocio.
 
@@ -16,7 +16,7 @@ La eficiencia (hacer lo mismo más barato) es una trampa gravitacional. El verda
 
 ---
 
-#### El Dilema Central: Eficiencia (Canibalización) vs. Innovación (Oportunidad)
+### El Dilema Central: Eficiencia (Canibalización) vs. Innovación (Oportunidad)
 
 Una vez que la "fábrica" funciona, el "Jefe de Operaciones" tiene dos caminos. Esta distinción es el diferenciador clave del éxito. El mismo sondeo global de 2025 reveló que, si bien el 80% de las empresas establece la "eficiencia" (reducción de costos) como objetivo, las compañías de "alto rendimiento" son aquellas que también establecen objetivos explícitos de "crecimiento e innovación", siendo 3.6 veces más propensas a buscar una transformación fundamental de su negocio.
 
@@ -29,7 +29,7 @@ Mientras que la Eficiencia es un objetivo crucial (especialmente en el sector p�
 
 ---
 
-#### Parte 1: El Fundamento Económico (El "Costo Cero" de la Cognición)
+### Parte 1: El Fundamento Económico (El "Costo Cero" de la Cognición)
 
 El "Director de Estrategia" debe entender que la economía ha cambiado.
 
@@ -42,19 +42,19 @@ El costo marginal del "trabajo de Sistema 1" (tareas tácticas y repetitivas) se
 
 ---
 
-#### Parte 2: Estrategia de Innovación N°1 (La Hiper-Personalización a Escala)
+### Parte 2: Estrategia de Innovación N°1 (La Hiper-Personalización a Escala)
 
 Este es el primer modelo de negocio que habilita la IA.
 
 * **El Problema Antiguo:** La personalización era un lujo. Solo podías dar un servicio "Premium" de alto contacto a tus 10 clientes más importantes.  
 * **La Solución del Agente:** Ahora puedes usar un **"Agente Director"** (un "agente de agentes") combinado con la **Memoria Explícita** (la capacidad del agente de recordar datos de largo plazo) para ofrecer un servicio de conserje personal a un millón de clientes simultáneamente.  
 * **Ejemplo de Negocio:**  
-  * *Un banco (antes):* Daba un asesor de inversiones personal solo a clientes con \>$1M.  
-  * *Un banco (ahora):* Da un "Agente-Asesor-Financiero" a cada cliente. El agente *recuerda* las metas de ahorro del cliente, *analiza* (usando su ventana de contexto) sus gastos en tiempo real y *proactivamente* (actuando como agente) le envía consejos personalizados (ej. "Noté que gastaste menos en restaurantes este mes. ¿Quieres mover esos $50 extra a tu fondo de vacaciones?").
+   * *Un banco (antes):* Daba un asesor de inversiones personal solo a clientes con \>$1M.  
+   * *Un banco (ahora):* Da un "Agente-Asesor-Financiero" a cada cliente. El agente *recuerda* las metas de ahorro del cliente, *analiza* (usando su ventana de contexto) sus gastos en tiempo real y *proactivamente* (actuando como agente) le envía consejos personalizados (ej. "Noté que gastaste menos en restaurantes este mes. ¿Quieres mover esos $50 extra a tu fondo de vacaciones?").
 
 ---
 
-#### Parte 3: Estrategia de Innovación N°2 (El Producto-como-Agente)
+### Parte 3: Estrategia de Innovación N°2 (El Producto-como-Agente)
 
 Este es el segundo modelo de negocio: convertir tu "fábrica" interna en un producto externo.
 
@@ -65,7 +65,7 @@ Este es el segundo modelo de negocio: convertir tu "fábrica" interna en un prod
 
 ---
 
-#### Parte 4: El "Foso" Competitivo (Dónde Reside la Verdadera Ventaja)
+### Parte 4: El "Foso" Competitivo (Dónde Reside la Verdadera Ventaja)
 
 El "Director de Estrategia" debe saber dónde construir su "foso" (moat) para defender su negocio.
 
@@ -90,7 +90,7 @@ El "Director de Estrategia" debe saber dónde construir su "foso" (moat) para de
 
 ---
 
-#### Conclusión: De la Eficiencia a la Dominancia
+### Conclusión: De la Eficiencia a la Dominancia
 
 El viaje de la maestría en IA culmina aquí. El viaje nos llevó de optimizar tareas a optimizar la fábrica, para finalmente darnos cuenta de que el verdadero premio es invalidar el modelo de negocio antiguo.
 

@@ -1,8 +1,8 @@
-### Guia 14: Modelos y Mercado LLM
+## Guia 14: Modelos y Mercado LLM
 
 Subtítulo: Del "Jefe de Adquisiciones" al "Arquitecto de Portafolio"
 
-#### Introducción: La Falacia del "Modelo Único"
+### Introducción: La Falacia del "Modelo Único"
 
 No existe el "mejor modelo". Existe solo el modelo más eficiente para una tarea específica. El error estratégico más común es la "monogamia tecnológica": casarse con un solo proveedor (ej. solo GPT) para todas las tareas.
 
@@ -12,7 +12,7 @@ Esta guía transforma al "Comprador de Software" en un **"Arquitecto de Portafol
 
 ---
 
-#### Concepto Clave: La Arquitectura de Adquisición (Suscripción vs. API)
+### Concepto Clave: La Arquitectura de Adquisición (Suscripción vs. API)
 
 Antes de elegir un proveedor, el Arquitecto debe elegir la modalidad de acceso. Existe una confusión habitual en el mercado al no distinguir entre el **Producto de Consumo** (el coche con chofer) y el **Componente de Ingeniería** (el motor).
 
@@ -44,7 +44,7 @@ Para decidir qué contratar, no use la intuición. Aplique este algoritmo secuen
 
 ---
 
-#### Parte 1: El Pilar Técnico: La Arquitectura Transformer
+### Parte 1: El Pilar Técnico: La Arquitectura Transformer
 
 Antes de analizar el mercado de "motores" (modelos), es crucial entender la arquitectura técnica que define a la generación actual de IA: el **Transformer**.
 
@@ -59,6 +59,7 @@ Es esta capacidad de "ver" y "conectar" el contexto completo de un texto lo que 
 **La Limitación Estratégica**
 
 Sin embargo, esta arquitectura tiene dos implicaciones estratégicas que impactan directamente en el "Triángulo de Adquisición" (Rendimiento, Control, Costo):
+
 1. **Costo de Escalado (Costo):** El mecanismo de auto-atención es computacionalmente intensivo. Su costo y uso de memoria crecen cuadráticamente con la longitud del contexto. Duplicar la longitud de un documento no duplica el costo, sino que lo cuadruplica (o más), lo que encarece la operación a gran escala.
 2. **Naturaleza Estática (Control):** Los Transformers se entrenan en una "foto" masiva del conocimiento (un corpus de datos) y luego se "congelan". No están diseñados para aprender de forma continua o para integrar nueva información después de su entrenamiento, un desafío que exploramos en la Guía 17: Perspectivas.
 
@@ -75,55 +76,52 @@ Sin embargo, esta arquitectura tiene dos implicaciones estratégicas que impacta
 
 ---
 
-#### Parte 2: El Panorama 2025-2026: Los Tres Ecosistemas
+### Parte 2: El Panorama 2025-2026: Los Tres Ecosistemas
 
 Como “Jefes de Adquisiciones” de nuestra fábrica de IA, el mercado de “motores” (LLMs) se ha consolidado en tres ecosistemas claros. Como establecimos en la **Guía 03**, la arquitectura **Transformer** es el motor técnico fundamental que impulsa a la gran mayoría de los modelos en estos ecosistemas (GPT, Llama, Claude, etc.).
 
 Este anexo se enfoca en cómo los proveedores "empaquetan" esa arquitectura, con sus límites de costo cuadrático y memoria estática, en distintas estrategias de suministro:
 
 **A. Modelos Propietarios (APIs) \- "Arrendar el Cerebro"**
-
-* **Qué es:** Arriendas el poder de cómputo y el modelo a un proveedor.  
-* **Proveedores:** Google (Gemini), OpenAI (GPT), Anthropic (Claude).  
-* **Fortaleza:** Acceso inmediato a la máxima potencia y a ventanas de contexto gigantescas (1M+ tokens). Ideal para tareas cognitivas complejas.  
-* **Riesgo:** Dependencia tecnológica y exposición de datos al proveedor (los datos viajan a su nube). El costo operacional es alto por token.
+    * **Qué es:** Arriendas el poder de cómputo y el modelo a un proveedor.  
+    * **Proveedores:** Google (Gemini), OpenAI (GPT), Anthropic (Claude).  
+    * **Fortaleza:** Acceso inmediato a la máxima potencia y a ventanas de contexto gigantescas (1M+ tokens). Ideal para tareas cognitivas complejas.  
+    * **Riesgo:** Dependencia tecnológica y exposición de datos al proveedor (los datos viajan a su nube). El costo operacional es alto por token.
 
 **B. Modelos Open-Source / Open-Weigh (Ejecución Local) \- "Comprar la Máquina"**
-
-* **Qué es:** Descargas los "pesos" del modelo y lo ejecutas en tu propia infraestructura (on-premise o nube privada). Tienes la máquina, no solo una conexión a ella.
-* **Proyectos:** Llama (Meta), Mistral/Mixtral, Qwen.  
-* **Fortaleza:** *Soberanía y transparencia* de los datos ya que nunca salen de tu control (ideal para entornos regulados). Ofrece máximo control para personalización profunda, incluyendo el *Ajuste Fino* para especializar el "cerebro" sin restricciones externas.
-* **Riesgo:**
-    1. **Costo de Infraestructura:** Requiere hardware GPU dedicado y un equipo de ingeniería capaz de gestionar la *Industrialización* (el proceso de escalar prototipos a producción).
-    2. **Responsabilidad de Seguridad Total:** A diferencia de las APIs, donde el proveedor gestiona la seguridad, aquí el modelo es vulnerable. Las técnicas de seguridad nativas (como el "desaprendizaje" de conceptos dañinos) son inmaduras y pueden revertirse fácilmente con un ajuste fino mínimo. Si no construyes tu propia capa de seguridad (LOSA), el modelo está desprotegido.
+    * **Qué es:** Descargas los "pesos" del modelo y lo ejecutas en tu propia infraestructura (on-premise o nube privada). Tienes la máquina, no solo una conexión a ella.
+    * **Proyectos:** Llama (Meta), Mistral/Mixtral, Qwen.  
+    * **Fortaleza:** *Soberanía y transparencia* de los datos ya que nunca salen de tu control (ideal para entornos regulados). Ofrece máximo control para personalización profunda, incluyendo el *Ajuste Fino* para especializar el "cerebro" sin restricciones externas.
+    * **Riesgo:**
+        1. **Costo de Infraestructura:** Requiere hardware GPU dedicado y un equipo de ingeniería capaz de gestionar la *Industrialización* (el proceso de escalar prototipos a producción).
+        2. **Responsabilidad de Seguridad Total:** A diferencia de las APIs, donde el proveedor gestiona la seguridad, aquí el modelo es vulnerable. Las técnicas de seguridad nativas (como el "desaprendizaje" de conceptos dañinos) son inmaduras y pueden revertirse fácilmente con un ajuste fino mínimo. Si no construyes tu propia capa de seguridad (LOSA), el modelo está desprotegido.
 
 > **Actualización de Mercado (Nov 2025):** La brecha de capacidad se ha cerrado. Actualmente, los modelos abiertos de vanguardia tienen un retraso de **menos de un año** respecto a los modelos de frontera cerrados.
 > *Implicancia:* La decisión de usar Open-Source ya no implica sacrificar inteligencia. El *trade-off* ha cambiado: ganas potencia y soberanía, pero asumes el 100% de la carga de la ciberseguridad, ya que las salvaguardas del proveedor se pueden desactivar.
 
 **C. Agentes-como-Servicio (AaaS) \- "Contratar al Especialista"**
-
-* **Qué es:** Consumes un producto terminado que encapsula el modelo y la arquitectura (como la **Generación Aumentada por Recuperación (RAG)**, el sistema de recuperación de conocimiento).  
-* **Ejemplos:** Perplexity, Microsoft Copilot, ChatGPT Enterprise.  
-* **Fortaleza:** Implementación en tiempo récord y soluciones enfocadas (ej. ofimática, investigación). Costo inicial bajo (suscripción).  
-* **Riesgo:** Flexibilidad técnica baja ("caja negra"). La **Gobernanza** (el control de seguridad y datos) depende 100% del contrato con el proveedor.
+    * **Qué es:** Consumes un producto terminado que encapsula el modelo y la arquitectura (como la **Generación Aumentada por Recuperación (RAG)**, el sistema de recuperación de conocimiento).  
+    * **Ejemplos:** Perplexity, Microsoft Copilot, ChatGPT Enterprise.  
+    * **Fortaleza:** Implementación en tiempo récord y soluciones enfocadas (ej. ofimática, investigación). Costo inicial bajo (suscripción).  
+    * **Riesgo:** Flexibilidad técnica baja ("caja negra"). La **Gobernanza** (el control de seguridad y datos) depende 100% del contrato con el proveedor.
 
 ---
 
-#### Parte 3: El "Triángulo de Adquisición"
+### Parte 3: El "Triángulo de Adquisición"
 
 Como "Jefe de Adquisiciones", no puedes tenerlo todo. Cada decisión equilibra tres fuerzas. Hemos reemplazado "Capacidad" por "Control", un término más robusto y estratégico.
 
 1. **Rendimiento (Potencia):** La inteligencia "cruda". Su capacidad para razonar (usando un ciclo de **ReAct** o Razonar-Actuar), escribir código complejo y pasar benchmarks (pruebas de **Evaluación** de calidad).  
 2. **Control (Soberanía):** ¿Qué tanto gobierno tienes sobre el proceso? Esto incluye:  
-   * **Soberanía de Datos:** ¿Dónde residen los datos? ¿Salen de tu nube?  
-   * **Auditoría:** ¿Puedes trazar las decisiones y los logs?  
-   * **Personalización:** ¿Puedes hacer Ajuste Fino al modelo?  
-   * **Seguridad:** ¿Cómo se manejan los riesgos de Gobernanza?  
+    * **Soberanía de Datos:** ¿Dónde residen los datos? ¿Salen de tu nube?  
+    * **Auditoría:** ¿Puedes trazar las decisiones y los logs?  
+    * **Personalización:** ¿Puedes hacer Ajuste Fino al modelo?  
+    * **Seguridad:** ¿Cómo se manejan los riesgos de Gobernanza?  
 3. **Costo (Economía):** El costo total, no solo el precio por token. Incluye el costo de infraestructura (GPUs), licencias y el costo de personal (Industrialización).
 
 ---
 
-#### Parte 4: La Solución Estratégica: El "Agente Enrutador"
+### Parte 4: La Solución Estratégica: El "Agente Enrutador"
 
 El panorama 2025-2026 demuestra que la estrategia ganadora no es elegir un motor, sino construir un portafolio y usar el motor adecuado para cada tarea.
 
@@ -136,13 +134,14 @@ El "Agente Enrutador" (que puede ser un "Agente Director") es un "cerebro" metac
 3. **Agente Enrutador (Actúa):** Llama al motor más eficiente y económico.  
 4. **Llega otra Tarea:** "Analiza las implicaciones de este contrato sensible de 500 páginas."  
 5. **Agente Enrutador (Razona):** "Esto es 'complejo' y de 'contexto largo'. Además, los datos son 'sensibles'. Necesito 'Control' total."  
-6. **Agente Enrutador (Actúa):** Llama al modelo Open-Source (Ecosistema B) hosteado localmente para garantizar la soberanía de los datos.  
+6. **Agente Enrutador (Actúa):** Llama al modelo Open-Source (Ecosistema B) hosteado localmente para garantizar la soberanía de los datos. 
+
 * **Beneficio:** Obtienes el máximo Rendimiento cuando lo necesitas y el máximo Control y Costo-eficiencia cuando no. Has optimizado el "Triángulo de Adquisición".  
 * **Validación de Mercado (2025):** Esta estrategia de portafolio ("Comprar" o "Arrendar" en lugar de "Construir" todo desde cero) no es solo teórica. Informes de la industria de 2025 (como el "State of AI in Business" del MIT) revelan que las iniciativas de "Comprar" (asociaciones estratégicas) tienen el **doble de tasa de éxito** (aprox. 66%) que las de "Construir" (desarrollo interno) (aprox. 33%).
 
 ---
 
-#### Parte 5: Metodología Práctica de Selección (Checklist)
+### Parte 5: Metodología Práctica de Selección (Checklist)
 
 Para diseñar tu portafolio, usa este proceso:
 
@@ -170,7 +169,7 @@ Para diseñar tu portafolio, usa este proceso:
 | ¿Necesitamos customización profunda (Ajuste Fino)? | (Si es SÍ: Requerir Open-Source) |
 | ¿Tenemos capacidad de Industrialización interna? | (Si es NO: Priorizar API o AaaS, o planificar contratación) |
 
-##### Caso de Estudio: Estándares Gubernamentales Avanzados
+#### Caso de Estudio: Estándares Gubernamentales Avanzados
 
 Para operar en un mercado global, el Arquitecto debe adoptar los estándares contractuales más altos disponibles. Analizamos el modelo de la **Directiva N°44** (un estándar gubernamental de referencia en Latam y la OCDE) como un *benchmark* de cómo las organizaciones maduras se protegen legalmente ante proveedores de IA.
 
@@ -184,7 +183,7 @@ Independientemente de su jurisdicción, este marco propone un catálogo de cláu
 
 ---
 
-#### Parte 6: Enfoque Especial: Sector Público y Entornos Regulados
+### Parte 6: Enfoque Especial: Sector Público y Entornos Regulados
 
 Para instituciones públicas o reguladas (finanzas, salud), el factor **Control** (Soberanía de Datos, Auditoría) debe superar casi siempre al Rendimiento.
 
@@ -194,6 +193,6 @@ Para instituciones públicas o reguladas (finanzas, salud), el factor **Control*
 
 ---
 
-#### Conclusión: De Gobernador a Arquitecto de Portafolio
+### Conclusión: De Gobernador a Arquitecto de Portafolio
 
 La maestría no reside en saber qué LLM es "mejor", sino en tener el juicio de ingeniería para diseñar un ecosistema flexible: rendimiento donde importa, Control donde hay riesgo, y Costo donde la escala lo exige. El rol final no es solo gobernar una fábrica; es ser el "Arquitecto del Portafolio de IA".

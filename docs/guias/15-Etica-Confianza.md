@@ -1,8 +1,8 @@
-### Guía 15: Humanidad, Ética y Confianza
+## Guía 15: Humanidad, Ética y Confianza
 
 Subtítulo: Del "Co-Piloto" a la "Dirección de Transformación Humana"
 
-#### Introducción: De Escalar la Fábrica a Escalar a las Personas
+### Introducción: De Escalar la Fábrica a Escalar a las Personas
 
 En las guías anteriores, completamos el viaje de construir y operar nuestra fábrica de IA. Diseñamos el **Prompt** (la instrucción), gestionamos el **Contexto** (la memoria), dirigimos a los **Agentes** (los trabajadores autónomos) y aseguramos la **Gobernanza** (la seguridad) y la **Industrialización** (el escalado técnico). 
 
@@ -12,7 +12,7 @@ Ahora, comienza el verdadero desafío: **Escalar**. Escalar la tecnología es un
 
 ---
 
-#### El Dilema Central: ¿Aumento o Abdicación?
+### El Dilema Central: ¿Aumento o Abdicación?
 
 A medida que los agentes de IA se vuelven más competentes, la tentación es la **Abdicación**: confiar ciegamente, convirtiéndose en un mero "pulsador de botones". Cuando el prototipo tiene éxito, el "Jefe de Operaciones" ve eficiencia. El equipo humano ve reemplazo.
 
@@ -23,27 +23,25 @@ Esta guía es el manual para diseñar flujos de **"Aumento Cognitivo"**, gestion
 
 ---
 
-#### Parte 1: El Principio de Sinergia (Sistema 1 vs. Sistema 2)
+### Parte 1: El Principio de Sinergia (Sistema 1 vs. Sistema 2)
 
 Para diseñar la sinergia, primero debemos dividir el trabajo. Nos basaremos en el influyente marco conceptual de **Daniel Kahneman**, psicólogo y premio en Ciencias Económicas en memoria de Alfred Nobel. En su obra *Pensar, rápido y despacio*, él divide el pensamiento humano en dos "sistemas":
 
 **Sistema 1: El "Piloto Automático"**
-
-* **Qué es:** Es el pensamiento rápido, instintivo y de bajo esfuerzo basado en patrones.  
-* **Ejemplos Humanos:** Reconocer una cara, clasificar un email como "spam".  
-* **Rol de la IA:** Este sistema es perfecto para la delegación. Los Agentes de IA son motores de "Sistema 1" sobrealimentados. Pueden resumir 100 PDFs (usando *RAG*, el sistema de recuperación de conocimiento) o encontrar un dato en un segundo.
+    * **Qué es:** Es el pensamiento rápido, instintivo y de bajo esfuerzo basado en patrones.  
+    * **Ejemplos Humanos:** Reconocer una cara, clasificar un email como "spam".  
+    * **Rol de la IA:** Este sistema es perfecto para la delegación. Los Agentes de IA son motores de "Sistema 1" sobrealimentados. Pueden resumir 100 PDFs (usando *RAG*, el sistema de recuperación de conocimiento) o encontrar un dato en un segundo.
 
 **Sistema 2: El "Piloto Manual"**
-
-* **Qué es:** Es el pensamiento lento, analítico, deliberado y de alto esfuerzo.  
-* **Ejemplos Humanos:** Definir la estrategia de la compañía, manejar una queja sensible, tener juicio ético sobre una decisión.  
-* **Rol del Humano:** Este es el nuevo trabajo humano. Es el dominio del juicio crítico, la empatía, la creatividad original y la definición de la "intención" (el "por qué" detrás del "qué").
+    * **Qué es:** Es el pensamiento lento, analítico, deliberado y de alto esfuerzo.  
+    * **Ejemplos Humanos:** Definir la estrategia de la compañía, manejar una queja sensible, tener juicio ético sobre una decisión.  
+    * **Rol del Humano:** Este es el nuevo trabajo humano. Es el dominio del juicio crítico, la empatía, la creatividad original y la definición de la "intención" (el "por qué" detrás del "qué").
 
 La **Sinergia Humano-IA** es una arquitectura de trabajo donde el Agente de IA ejecuta el 90% del trabajo de "Sistema 1", liberando al humano para que se concentre el 90% de su tiempo en el "Sistema 2".
 
 ---
 
-#### Parte 2: Los 3 Niveles de Sinergia (El Manual de Colaboración)
+### Parte 2: Los 3 Niveles de Sinergia (El Manual de Colaboración)
 
 La "Gobernanza" también consiste en diseñar el nivel correcto de colaboración. Como "Co-Pilotos", podemos elegir tres modos:
 
@@ -80,7 +78,7 @@ Este nivel de sinergia, donde el humano define la "intención estratégica" y el
 
 ---
 
-#### Parte 3: La Gestión del Cambio (La Nueva Ruta de Carrera)
+### Parte 3: La Gestión del Cambio (La Nueva Ruta de Carrera)
 
 El "Agente PM" ha automatizado las tareas del "Analista Junior" (el trabajo de "Sistema 1"). ¿Qué le pasa a esa persona?  
 
@@ -121,7 +119,7 @@ A menudo, la IA es percibida por los mandos medios no como una ayuda, sino como 
 
 ---
 
-#### Parte 4: La Brújula Ética (Las "Líneas Rojas" de la Automatización)
+### Parte 4: La Brújula Ética (Las "Líneas Rojas" de la Automatización)
 
 La Gobernanza (Guía 09\) fue sobre seguridad (lo que no podemos hacer porque es riesgoso). Esta parte es sobre ética (lo que no deberíamos hacer, aunque sea técnicamente posible y seguro).
 
@@ -169,7 +167,7 @@ Si tu "Agente" no puede responder estas preguntas en lenguaje claro (Opacidad An
 
 ---
 
-#### Parte 5: El Nuevo Contrato Social (Responsabilidad y Propiedad)
+### Parte 5: El Nuevo Contrato Social (Responsabilidad y Propiedad)
 
 Cuando los "Agentes PM" se vuelven parte del equipo, surgen preguntas legales que el "Director de Transformación" debe responder.
 
@@ -201,7 +199,7 @@ Cuando los "Agentes PM" se vuelven parte del equipo, surgen preguntas legales qu
 
 ---
 
-#### Conclusión: De Gobernar Máquinas a Liderar Humanos
+### Conclusión: De Gobernar Máquinas a Liderar Humanos
 
 Las guías anteriores nos enseñaron a construir y gobernar las máquinas. Esta guía define el rol del nuevo trabajador humano operando en esa fábrica.
 

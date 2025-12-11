@@ -64,11 +64,12 @@ graph LR
 
 ---
 
-## 1. 🟩 Zona Verde: Los Ganadores del ROI
+### 1. 🟩 Zona Verde: Los Ganadores del ROI
 
 Son iniciativas donde la tecnología es madura y el retorno es tangible. Aquí se encuentra el dinero real. Atacan ineficiencias físicas, financieras o regulatorias concretas. Son aburridos, pero críticos.
 
-### 1.1. Manufactura y Minería (Reducción de Opex)
+#### 1.1. Manufactura y Minería (Reducción de Opex)
+
 El retorno proviene de la continuidad operativa y la reducción de desperdicios físicos.
 
 * **Mantenimiento Predictivo:**
@@ -81,7 +82,8 @@ El retorno proviene de la continuidad operativa y la reducción de desperdicios 
     * *Caso:* **Toyota** implementó agentes para acceder a manuales y datos de reparación complejos.
     * *Ganancia:* Reducción reportada de **10,000 horas-hombre** al año, validando la tesis de eficiencia operativa pura.
 
-### 1.2. Logística y Retail (Capital de Trabajo)
+#### 1.2. Logística y Retail (Capital de Trabajo)
+
 El retorno proviene de la liberación de flujo de caja y protección de márgenes.
 
 * **Pronóstico de Demanda (Demand Forecasting):**
@@ -94,7 +96,8 @@ El retorno proviene de la liberación de flujo de caja y protección de márgene
     * *Caso:* **Carrefour** y **Gazelle** (Real Estate).
     * *Ganancia:* Gazelle redujo el tiempo de generación de contenido de **4 horas a 10 segundos**, y Carrefour produce videos de campaña en semanas en lugar de meses. El ROI proviene de la velocidad de ejecución.
 
-### 1.3. Servicios Financieros (Gestión de Riesgo)
+#### 1.3. Servicios Financieros (Gestión de Riesgo)
+
 El retorno proviene de la mitigación de pérdidas y eficiencia.
 
 * **Detección de Fraude Contextual:**
@@ -107,7 +110,8 @@ El retorno proviene de la mitigación de pérdidas y eficiencia.
     * *Caso:* **ING Bank** implementó chatbots de GenAI para mejorar las respuestas a consultas de clientes, y **Scotiabank** transformó sus operaciones bancarias globales.
     * *Ganancia:* Mejora en la retención de clientes mediante respuestas inmediatas y precisas, reduciendo la fuga hacia la competencia por mala atención.
 
-### 1.4. Sector Público (Eficiencia y Recaudación)
+#### 1.4. Sector Público (Eficiencia y Recaudación)
+
 El retorno se mide en capacidad de ejecución estatal y "valor público".
 
 * **Fiscalización Inteligente en Fronteras:**
@@ -123,7 +127,8 @@ El retorno se mide en capacidad de ejecución estatal y "valor público".
     * *Caso:* **Ministerio de Trabajo de Qatar** (Plataforma "Ouqoul").
     * *Ganancia:* Lanzaron una plataforma impulsada por IA para emparejar automáticamente a graduados con oportunidades de empleo en el sector privado, agilizando la emisión de permisos de trabajo y reduciendo la burocracia estatal.
 
-### 1.5. Salud (Gestión de Capacidad y Vida)
+#### 1.5. Salud (Gestión de Capacidad y Vida)
+
 El retorno se mide en descongestión del sistema, optimización de recursos escasos y resultados clínicos.
 
 * **Priorización Inteligente de Listas de Espera:**
@@ -144,7 +149,7 @@ El retorno se mide en descongestión del sistema, optimización de recursos esca
 
 ---
 
-## 2. 🟨 Zona Amarilla: El Territorio Táctico
+### 2. 🟨 Zona Amarilla: El Territorio Táctico
 
 Tecnología que funciona técnicamente, pero cuyo ROI es condicional. Requieren una **Gobernanza de Datos** impecable y alineación política/organizacional.
 
@@ -166,7 +171,7 @@ Tecnología que funciona técnicamente, pero cuyo ROI es condicional. Requieren 
 
 ---
 
-## 3. 🟧 Zona Naranja: Los Casos Vanidosos
+### 3. 🟧 Zona Naranja: Los Casos Vanidosos
 
 Proyectos impulsados por el marketing o la novedad. No suelen destruir valor financiero directo, pero consumen recursos escasos y erosionan la credibilidad.
 
@@ -182,7 +187,7 @@ Proyectos impulsados por el marketing o la novedad. No suelen destruir valor fin
 
 ---
 
-## 4. 🟥 Zona Roja: La Destrucción de Valor
+### 4. 🟥 Zona Roja: La Destrucción de Valor
 
 Proyectos con una probabilidad de fracaso estructural. Violan principios básicos de economía, ética o gestión de riesgos.
 
@@ -207,7 +212,7 @@ Proyectos con una probabilidad de fracaso estructural. Violan principios básico
 
 ---
 
-## 5. 🔵 Zona Azul: El Valor Sistémico
+### 5. 🔵 Zona Azul: El Valor Sistémico
 
 Esta zona contiene proyectos que **no generan ROI financiero directo**, pero construyen los pilares estratégicos. Son habilitadores.
 
@@ -224,7 +229,7 @@ Esta zona contiene proyectos que **no generan ROI financiero directo**, pero con
 
 ---
 
-## Conclusión: El Patrón del Retorno
+### Conclusión: El Patrón del Retorno
 
 Las organizaciones fracasan frecuentemente porque saltan directo a la **🟥 Zona Roja** (por ignorancia ética/técnica) o se quedan en la **🟧 Zona Naranja** (por vanidad), dejando millones de dólares y vidas salvadas sobre la mesa en la **🟩 Zona Verde**.
 
