@@ -1,8 +1,8 @@
-### Guía 17: Perspectivas y Futuro de la IA
+## Guía 17: Perspectivas y Futuro de la IA
 
 Subtítulo: De "Arquitecto de la Fábrica" a "Vigilante Estratégico"
 
-#### Introducción: Anticipando las Próximas Revoluciones
+### Introducción: Anticipando las Próximas Revoluciones
 
 Hemos llegado al final de nuestro mapa. Construimos los cimientos, ensamblamos la maquinaria, tomamos la sala de control y definimos la estrategia. En la guía anterior (Guía 16), reentrenamos al operador humano para sobrevivir en este nuevo entorno.
 
@@ -12,7 +12,7 @@ Esta guía final cambia nuestro enfoque de la operación (gestionar lo conocido)
 
 ---
 
-#### Parte 1: La Paradoja de la Maestría
+### Parte 1: La Paradoja de la Maestría
 
 El título de esta colección es "Arquitectura de Inteligencia Artificial". Pero, ¿qué significa "maestría" si la tecnología (modelos, arquitecturas, APIs) cambia cada seis meses? 
 
@@ -28,7 +28,7 @@ Esta obra no te enseñó a operar *esta* fábrica; te enseñó a ser un Arquitec
 
 ---
 
-#### Parte 2: El Nuevo Rol Permanente: El "Vigilante Estratégico"
+### Parte 2: El Nuevo Rol Permanente: El "Vigilante Estratégico"
 
 Con la fábrica actual operando y siendo gobernada, el profesional que ha completado esta obra asume un nuevo rol permanente: el "Vigilante Estratégico". 
 
@@ -38,7 +38,7 @@ Tu tarea ya no es solo optimizar la línea de ensamblaje; es detectar la invenci
 
 ---
 
-#### Parte 3: Perspectivas y Tendencias (El "Qué Vigilar")
+### Parte 3: Perspectivas y Tendencias (El "Qué Vigilar")
 
 Como "Vigilante" no solo miras las "actualizaciones". Miras las "disrupciones" que cambian el paradigma. Esto es lo que está en el mapa actual (fines de 2025\) y futuro (más allá de 2026):
 
@@ -94,7 +94,7 @@ Investigaciones recientes (Google Research, NeurIPS 2025) buscan resolver precis
 
 ---
 
-#### La Ambigüedad de la "Inteligencia" (El Espejismo)
+### La Ambigüedad de la "Inteligencia" (El Espejismo)
 
 El "Vigilante Estratégico" debe entender por qué tratamos la "Inteligencia Artificial General" como una especulación. El problema es la palabra "Inteligencia".
 
@@ -108,13 +108,14 @@ Este es el núcleo del problema: **Ni siquiera podemos ponernos de acuerdo en qu
 
 La definición de la industria es un "espejismo" no porque sea errónea, sino porque es *incompleta*. Está construida sobre una base conceptual (la "inteligencia") que es filosófica y científicamente inestable.
 
-**Nota sobre la AGI:** 
-
-Con esta aclaración, nuestra postura operativa se vuelve clara. Escucharás sobre la "Inteligencia Artificial General" (AGI), un sistema de IA hipotético con la capacidad de comprender, aprender y aplicar inteligencia para realizar cualquier tarea intelectual que un humano puede hacer. Para los propósitos de esta guía, orientada al criterio operativo, tratamos eso como una especulación teórica. Nuestro trabajo de Gobernanza y Ética se enfoca en gestionar el impacto real, actual y concreto de las potentes herramientas que sí tenemos.
-
+!!! abstract "Nota sobre la AGI (Inteligencia Artificial General)"
+    Con esta aclaración, nuestra postura operativa se vuelve clara. Escucharás sobre la **"Inteligencia Artificial General" (AGI)**, un sistema de IA hipotético con la capacidad de comprender, aprender y aplicar inteligencia para realizar cualquier tarea intelectual que un humano puede hacer.
+    
+    Para los propósitos de esta guía, orientada al criterio operativo, tratamos eso como una **especulación teórica**. Nuestro trabajo de Gobernanza y Ética se enfoca en gestionar el impacto real, actual y concreto de las potentes herramientas que *sí* tenemos.
+    
 ---
 
-#### Conclusión: El Criterio como Única Constante
+### Conclusión: El Criterio como Única Constante
 
 Las cinco tendencias descritas en esta guía (Multimodalidad, SLMs, Agentes Autónomos, Robótica y Aprendizaje Continuo) son el panorama actual. En 18 meses, esta lista será diferente.
 
