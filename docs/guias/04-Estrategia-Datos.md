@@ -1,8 +1,8 @@
-### Guía 04: La Guía Definitiva de la Estrategia de Datos
+## Guía 04: La Guía Definitiva de la Estrategia de Datos
 
 Subtítulo: Del "Jefe de Operaciones" al "Arquitecto de la Información"
 
-#### Introducción: La Calidad del Combustible determina la Vida del Motor
+### Introducción: La Calidad del Combustible determina la Vida del Motor
 
 Un motor de Ferrari con gasolina sucia no gana carreras; se rompe. En la Inteligencia Artificial, los datos no son un simple "insumo" administrativo; son el único activo estratégico que tu competencia no puede alquilar.
 
@@ -12,7 +12,7 @@ Esta guía transforma el rol de "gestor de archivos" al de **"Arquitecto de Info
 
 ---
 
-#### El Dilema Central: "Basura Entra, Basura Sale" (Garbage In, Garbage Out)
+### El Dilema Central: "Basura Entra, Basura Sale" (Garbage In, Garbage Out)
 
 Este es el principio de hierro de la IA. Un agente con un "cerebro" de nivel genio es inútil si su "biblioteca" de memoria, el sistema **RAG (Generación Aumentada por Recuperación)** que le da conocimiento externo, está llena de documentos desactualizados, contradictorios, irrelevantes o incorrectos.
 
@@ -23,7 +23,7 @@ El "Arquitecto de la Información" no es un rol de IA; es un rol de Gobernanza d
 
 ---
 
-#### Parte 1: La Gobernanza de Datos (El "Pre-Juego" de la Gobernanza de IA)
+### Parte 1: La Gobernanza de Datos (El "Pre-Juego" de la Gobernanza de IA)
 
 Más adelante nos enfocaremos en la **Gobernanza de IA** (el control sobre las *acciones* del agente). En esta guía, nos enfocamos en controlar la *fuente* (el "qué sabe").
 
@@ -58,7 +58,7 @@ Las Políticas del "Arquitecto de la Información":
 
 ---
 
-#### Parte 2: El Pipeline "ETL-V" (La Refinería de Combustible)
+### Parte 2: El Pipeline "ETL-V" (La Refinería de Combustible)
 
 "ETL" (Extract, Transform, Load) es un término clásico de la ingeniería de datos. **En esta obra, proponemos adaptar el concepto a "ETL-V" (añadiendo la Vectorización).** Este es el proceso técnico (la "refinería") que convierte tus datos "crudos" (petróleo) en "combustible" RAG (gasolina de avión).
 
@@ -75,7 +75,7 @@ Las Políticas del "Arquitecto de la Información":
 
 ---
 
-#### Parte 3: Estrategias de Fuente (El Portafolio de Combustible)
+### Parte 3: Estrategias de Fuente (El Portafolio de Combustible)
 
 El "Arquitecto de la Información" debe decidir qué combustible usar.
 
@@ -103,7 +103,7 @@ El "Arquitecto de la Información" debe decidir qué combustible usar.
 * **Ventaja:** Puedes crear "combustible" perfectamente limpio y formateado para tareas donde no tienes datos del mundo real.  
 * **Desventaja:** Riesgo de "endogamia". Si usas una IA para entrenar a otra IA, corres el riesgo de que ambas aprendan y amplifiquen los mismos errores o sesgos.
 
-##### Herramienta de Diagnóstico: Matriz de Madurez de Datos
+#### Herramienta de Diagnóstico: Matriz de Madurez de Datos
 
 Antes de inyectar datos a tu motor RAG, debes evaluar su madurez. Basado en la metodología de *Data Science for Social Good* (adaptada por el **Laboratorio de Gobierno de Chile y la UAI**), evalúa tus fuentes de datos en estas dimensiones universales:
 
@@ -116,7 +116,7 @@ Antes de inyectar datos a tu motor RAG, debes evaluar su madurez. Basado en la m
 
 ---
 
-#### Conclusión: El Socio Crítico de la Fábrica
+### Conclusión: El Socio Crítico de la Fábrica
 
 La maestría en IA demuestra que el director de estrategia y el director de operaciones tienen un socio silencioso pero crítico: el "Arquitecto de la Información".
 

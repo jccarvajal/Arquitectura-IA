@@ -1,10 +1,10 @@
-## Bloque 2: Ingeniería y Construcción (Cómo se hace)
+# Bloque 2: Ingeniería y Construcción (Cómo se hace)
 
-### Guía 05: La Guía Definitiva de la Ingeniería de Agentes de IA
+## Guía 05: La Guía Definitiva de la Ingeniería de Agentes de IA
 
 Subtítulo: Del "Arquitecto de Instrucciones" al "Director de Programa"
 
-#### Introducción: La Parálisis del Oráculo y el Fin del Chatbot
+### Introducción: La Parálisis del Oráculo y el Fin del Chatbot
 
 En las guías anteriores, definimos la *instrucción* (Guía 02) y la *memoria* (Guía 03). Hemos construido un erudito encadenado: una IA que sabe mucho y recuerda todo, pero no puede hacer nada.
 
@@ -19,7 +19,7 @@ En esta guía, rompemos el cristal. Dejamos de pedir respuestas para empezar a e
 
 ---
 
-#### Conceptos Fundamentales
+### Conceptos Fundamentales
 
 **1\. La Anatomía de la Agencia (Cerebro + Manos)**
 
@@ -124,7 +124,7 @@ Las herramientas son funciones de código (APIs, scripts Python) que conectan el
 
 ---
 
-#### El Dilema Central: La "Correa" del Agente (Autonomía vs. Control)
+### El Dilema Central: La "Correa" del Agente (Autonomía vs. Control)
 
 Aquí reside el verdadero arte de la ingeniería. El *trade-off* ya no es solo costo vs. latencia, sino **Autonomía vs. Seguridad**.
 
@@ -146,13 +146,14 @@ Aquí reside el verdadero arte de la ingeniería. El *trade-off* ya no es solo c
 
 ---
 
-#### Estrategias Fundamentales de Ingeniería de Agentes
+### Estrategias Fundamentales de Ingeniería de Agentes
 
 Estas son las técnicas para dirigir a nuestros nuevos “trabajadores digitales” sin causar un desastre. A continuación, revisaremos tres estrategias fundamentales: *El Agente con "Humano-en-el-Bucle"*, *La Orquesta de Agentes (El Director de Programa)* y *El Agente Especializado (El Flujo de "Auto-Prompting")*.
 
 ---
 
-#### Estrategia 1: El Agente con "Humano-en-el-Bucle" (Human-in-the-Loop)
+### Estrategia 1: El Agente con "Humano-en-el-Bucle" (Human-in-the-Loop)
+
 Esta es la solución más práctica y segura al dilema de la "correa".
 
 * **¿Qué es?** Es diseñar un agente que tiene "puntos de control" obligatorios. El agente ejecuta sus ciclos ReAct (Razonar-Actuar-Observar) de forma autónoma, excepto en acciones críticas.  
@@ -161,7 +162,8 @@ Esta es la solución más práctica y segura al dilema de la "correa".
 
 ---
 
-#### Estrategia 2: La Orquesta de Agentes (Router y Workers)
+### Estrategia 2: La Orquesta de Agentes (Router y Workers)
+
 Esta es la estrategia de escalabilidad más importante. Ya no pensamos en un solo agente que lo hace todo. Pensamos en un equipo de especialistas. En la arquitectura moderna, esto se conoce como el patrón **Router-Worker** (Enrutador-Trabajador).
 
 * **Un Agente Individual es un Project Manager (PM) / Worker:** Se enfoca en un proyecto único y bien definido. Recibe un objetivo, aplica el ciclo ReAct, usa sus herramientas y entrega un resultado final.
@@ -177,7 +179,7 @@ Esta es la estrategia de escalabilidad más importante. Ya no pensamos en un sol
 
 ---
 
-#### Estrategia 3: El Agente Especializado (El Flujo de "Auto-Prompting")
+### Estrategia 3: El Agente Especializado (El Flujo de "Auto-Prompting")
 
 Este es uno de los puntos de partida más simples y poderosos, que se conecta directamente con el concepto de **Meta-Prompting** (usar la IA para ayudarte a crear prompts).
 
@@ -240,7 +242,7 @@ Copias ese prompt generado y lo pegas en un chat nuevo. El Agente Ejecutor, al r
 
 ---
 
-#### Conclusión: De Arquitecto de Sistemas a Director de Orquesta
+### Conclusión: De Arquitecto de Sistemas a Director de Orquesta
 
 La evolución de nuestra maestría en IA ha sido un viaje de abstracción:
 
@@ -252,7 +254,7 @@ Al dominar la dirección de agentes, dejas de construir soluciones para empezar 
 
 ---
 
-#### Nota del Arquitecto: La Frontera de la Web Agéntica
+### Nota del Arquitecto: La Frontera de la Web Agéntica
 
 Lo que has aprendido en esta guía es cómo orquestar agentes dentro de tu propia infraestructura (tu "Intranet de Agentes"). Sin embargo, la frontera se está rompiendo rápidamente.
 

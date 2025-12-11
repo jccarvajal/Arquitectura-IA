@@ -1,8 +1,8 @@
-### Guía 03: La Guía Definitiva de la Ingeniería de Contexto y Memoria
+## Guía 03: La Guía Definitiva de la Ingeniería de Contexto y Memoria
 
 Subtítulo: Resolviendo la "Brecha de Aprendizaje" de la IA
 
-#### Introducción: La Amnesia Estática y el Costo del Olvido
+### Introducción: La Amnesia Estática y el Costo del Olvido
 
 La inteligencia sin memoria es ruido. El modelo más avanzado del mundo es inútil si olvida quién eres o qué le pediste hace tres turnos de conversación.
 
@@ -18,7 +18,7 @@ Esta guía, al definir las arquitecturas de memoria como **RAG** (la "biblioteca
 
 ---
 
-#### Conceptos Fundamentales (El Problema)
+### Conceptos Fundamentales (El Problema)
 
 **1\. ¿Qué es la "Ventana de Contexto"?**
 
@@ -46,7 +46,7 @@ Este es el problema central que la ingeniería de contexto resuelve. Es lo que o
 
 ---
 
-#### El Dilema Central (El Criterio del Trade-off)
+### El Dilema Central (El Criterio del Trade-off)
 
 En la ingeniería de contexto, no hay soluciones mágicas, solo *trade-offs* ("compensaciones") que debemos gestionar como arquitectos.
 
@@ -62,7 +62,7 @@ El criterio del arquitecto se basa en balancear estas tres variables:
 
 ---
 
-#### Parte 1: El Pilar Técnico (La Causa del Problema)
+### Parte 1: El Pilar Técnico (La Causa del Problema)
 
 Para dominar la ingeniería de contexto, es crucial entender la arquitectura que define la era actual de la IA: el **Transformer**. Esta arquitectura tiene dos límites fundamentales que definen todo el campo de la ingeniería de contexto y memoria:
 
@@ -80,7 +80,7 @@ Los Transformers son **estáticos**; están "congelados" en el tiempo después d
 
 ---
 
-#### Parte 2: El Criterio del Arquitecto (Cuándo Usar Qué Arquitectura)
+### Parte 2: El Criterio del Arquitecto (Cuándo Usar Qué Arquitectura)
 
 Dado el dilema anterior, el trabajo del arquitecto es elegir la estrategia correcta para la tarea. No existe una "arquitectura única"; existe un portafolio de soluciones para diferentes problemas.
 
@@ -99,7 +99,7 @@ Dado el dilema anterior, el trabajo del arquitecto es elegir la estrategia corre
 
 ---
 
-#### Parte 3: Arquitecturas Fundamentales (El Manual de Soluciones)
+### Parte 3: Arquitecturas Fundamentales (El Manual de Soluciones)
 
 Aquí detallamos el "cómo" de las arquitecturas que seleccionamos en la Parte 2.
 
@@ -194,7 +194,7 @@ Esta es la estrategia de contexto más avanzada: "divide y vencerás". En lugar 
 
 ---
 
-#### Conclusión: De Arquitecto de Prompts a Arquitecto de Sistemas
+### Conclusión: De Arquitecto de Prompts a Arquitecto de Sistemas
 
 La ingeniería de prompts (Guía 02) te transforma de usuario a arquitecto de instrucciones. La Ingeniería de Contexto y Memoria te da el siguiente ascenso: de Arquitecto de Prompts a Arquitecto de Sistemas de IA.
 
