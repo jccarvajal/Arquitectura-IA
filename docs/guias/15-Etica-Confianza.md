@@ -129,7 +129,7 @@ La Gobernanza (Guía 09\) fue sobre seguridad (lo que no podemos hacer porque es
 
 La *"Licencia Social"* es la aceptación y confianza que la ciudadanía deposita en la implementación de una tecnología. No se gana solo cumpliendo la ley; se gana con transparencia y demostrando valor público. Si la percepción es que un sistema es opaco, sesgado o engañoso, esa licencia se pierde y el proyecto fracasa, independientemente de su éxito técnico.
 
-!!! info **Profundización: Las 3 Preguntas de la Licencia Social**
+!!! abstract **Profundización: Las 3 Preguntas de la Licencia Social**
 
     Según la guía de *Formulación Ética de Proyectos de Ciencia de Datos* (GobDigital/UAI), la Licencia Social no es un contrato legal, sino la aceptación ciudadana. Para ganarla, tu sistema debe responder satisfactoriamente tres preguntas simples ante la opinión pública (válidas para cualquier país):
 
