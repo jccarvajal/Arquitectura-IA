@@ -1,4 +1,4 @@
-## Guía 15: Humanidad, Ética y Confianza
+## Guía 15: Ética, Soberanía y Confianza
 
 Subtítulo: Del "Co-Piloto" a la "Dirección de Transformación Humana"
 
@@ -169,7 +169,55 @@ Si tu "Agente" no puede responder estas preguntas en lenguaje claro (Opacidad An
 
 ---
 
-### Parte 5: El Nuevo Contrato Social (Responsabilidad y Propiedad)
+### Parte 5: La Nueva Estrategia: Soberanía y Alineación
+
+Hasta hace poco, la ética en IA se centraba en evitar el racismo o el sexismo en las respuestas. Hoy, el debate ha mutado hacia la **geopolítica y la supervivencia operativa**.
+
+En un mundo donde la "neutralidad algorítmica" ha desaparecido, elegir un modelo no es solo una decisión técnica sobre qué tan inteligente es, sino una decisión estratégica sobre **qué valores, restricciones y riesgos legales** estás importando a tu organización.
+
+#### El Espectro de Alineación: ¿Safety o Utility?
+
+Todos los modelos pasan por un proceso de *Fine-Tuning* y RLHF (Refuerzo Humano) que define su "personalidad". Esto crea una tensión inevitable entre **Seguridad** (evitar daños) y **Utilidad** (obedecer instrucciones).
+
+Debes elegir tu modelo según el perfil de riesgo de tu caso de uso:
+
+* **Modelos "Corporativos / Safety-First"** (Ej. Claude, Gemini, GPT-4)
+    * **Filosofía:** Priorizan la seguridad de marca y la "constitucionalidad". Tienen filtros estrictos contra discursos de odio, temas sensibles o instrucciones peligrosas.
+    * **El Riesgo:** Tienen una tasa más alta de **"Falsas Negativas"** (se niegan a responder preguntas inocuas por exceso de celo) y pueden exhibir un sesgo ideológico marcado ("Woke AI").
+    * **Uso ideal:** Chatbots de atención al cliente, generación de contenido público, entornos corporativos estrictos.
+
+* **Modelos "Libertarios / Raw"** (Ej. Grok, Mistral, Llama - versiones base)
+    * **Filosofía:** Priorizan la obediencia al usuario y la libertad de expresión. Tienen menos barreras de contención.
+    * **El Riesgo:** Pueden generar contenido tóxico, ofensivo o peligroso si no se controlan. Transfieren la responsabilidad ética al usuario.
+    * **Uso ideal:** Análisis de datos internos, investigación, escritura creativa sin censura, tareas complejas donde los filtros de seguridad bloquean el razonamiento.
+
+#### La Soberanía Técnica: Protección contra el "Apagón"
+
+El mayor riesgo ético para una empresa hoy no es solo que la IA diga algo incorrecto, sino que la IA **deje de estar disponible** por una decisión política externa.
+
+Si tu producto depende 100% de una API cerrada (como OpenAI o Anthropic) alojada en EE.UU., estás sujeto a:
+1.  **Cambios regulatorios:** Órdenes ejecutivas o leyes (como la *AI Act* europea o decretos presidenciales en EE.UU.) que obliguen a cambiar el comportamiento del modelo de la noche a la mañana.
+2.  **Filtrado de datos:** Que tus datos confidenciales viajen a jurisdicciones extranjeras.
+
+**La Estrategia de "Open Weights" (Pesos Abiertos)**
+Para infraestructuras críticas o gubernamentales, la única ética viable es la **Soberanía**. Esto implica utilizar modelos de **Pesos Abiertos** (como Llama de Meta o Mistral) alojados en servidores propios (*On-Premise*).
+
+> **Regla de Oro:** Si tienes los pesos del modelo en tu servidor, nadie puede cambiar su alineación, censurarlo o apagarlo remotamente. Tienes el control total del "cerebro" de tu operación.
+
+**Matriz de Decisión: Ética y Estrategia**
+
+Utiliza este cuadro para seleccionar la arquitectura correcta según tu necesidad de soberanía:
+
+| Caso de Uso | Prioridad | Tipo de Modelo Recomendado | Despliegue |
+| :--- | :--- | :--- | :--- |
+| **Atención al Cliente** | Seguridad de Marca y Tono Amable | **Safety-First** (Claude, GPT-4) | API (SaaS) |
+| **Análisis de Datos Sensibles** | Privacidad y Soberanía de Datos | **Open Weights** (Llama 3, Mistral) | Local / VPC Privada |
+| **Creatividad / Investigación** | Libertad y Cero Censura | **Raw / Uncensored** | Local / API Permisiva |
+| **Gobierno / Defensa** | Seguridad Nacional e Independencia | **Sovereign AI** (Entrenado localmente) | Infraestructura Propia (Air-gapped) |
+
+---
+
+### Parte 6: El Nuevo Contrato Social (Responsabilidad y Propiedad)
 
 Cuando los "Agentes PM" se vuelven parte del equipo, surgen preguntas legales que el "Director de Transformación" debe responder.
 
