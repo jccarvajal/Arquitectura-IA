@@ -52,59 +52,26 @@ Tres pensadores contemporáneos, desde la psicología, la filosofía y la teorí
 
 ## 3. El veredicto de quienes la estudian, la critican y la construyen
 
-Esta evaluación no proviene de un pesimismo externo ni de un rechazo ludita, sino de una convergencia poco común entre quienes analizan, cuestionan y desarrollan esta misma tecnología.
+Esta evaluación no proviene de un pesimismo externo, sino de una convergencia entre quienes analizan, cuestionan y desarrollan esta tecnología.
 
-### I. Los Críticos Técnicos
-*La ciencia detrás de la ilusión.*
+!!! abstract "Críticos técnicos — Imitación sin comprensión"
+    Lingüistas y científicos cognitivos subrayan que estos modelos imitan estadísticamente.
 
-Lingüistas y científicos cognitivos subrayan que, aunque el resultado parezca humano, el proceso es puramente estadístico. Estos modelos *imitan sin comprender*.
+    * **Emily Bender** y **Gary Marcus** los describen como *“Loros Estocásticos”*: máquinas de imitación, no de entendimiento.
 
-* **Emily Bender** (Lingüista computacional) y **Gary Marcus** (Científico cognitivo).
-  Ambos coinciden en una definición que desmitifica la supuesta "inteligencia":
-  > Describen a los modelos como **“Loros Estocásticos”**: entidades formidables en la imitación probabilística, pero vacías de entendimiento semántico o intención.
+!!! abstract "Constructores escépticos — Los arquitectos dudan"
+    Los pioneros del aprendizaje profundo señalan las grietas en los cimientos.
 
-### II. Los Constructores Escépticos
-*Los arquitectos que dudan de su propia obra.*
+    * **Yann LeCun** (Premio Turing) subraya que carecen de razonamiento, planificación y modelos del mundo.
+    * **Geoffrey Hinton** (Premio Turing) advierte sobre riesgos profundos que aún no comprendemos del todo.
 
-No son observadores pasivos; son los padres de la disciplina quienes ahora levantan la mano para señalar las grietas en los cimientos.
+!!! abstract "Líderes institucionales — El dilema de la contención"
+    Quienes dirigen las empresas más potentes hablan de control.
 
-* **Yann LeCun** (Premio Turing, Meta AI).
-  Pionero del aprendizaje profundo, es tajante sobre las limitaciones actuales: subraya que los modelos carecen de **razonamiento real, planificación y modelos del mundo** físicos; sin esto, la inteligencia es solo una fachada.
-
-* **Geoffrey Hinton** (Premio Turing, "Padrino de la IA").
-  Su escepticismo es existencial. Dejó su posición en Google no para jubilarse, sino para tener la libertad de advertir sobre **riesgos profundos** y emergentes que, según admite, ni siquiera los creadores comprenden del todo.
-
-### III. Los Líderes Institucionales
-*El dilema de la gobernanza.*
-
-Quienes dirigen las empresas más potentes del sector ya no hablan solo de código, sino de contención.
-
-* **Dario Amodei** (CEO de Anthropic).
-  Sostiene que la capacidad técnica ha superado nuestra capacidad de gestión, definiendo la **gobernanza** como *“el problema central”* de la década.
-
-* **Mustafa Suleyman** (Cofundador de DeepMind, CEO Microsoft AI).
-  Define la tensión actual como el **Problema de la Contención**: la brecha crítica entre la velocidad exponencial de la tecnología y la velocidad lineal de las instituciones humanas para controlarla.
+    * **Dario Amodei** (Anthropic) sostiene que la gobernanza es *“el problema central”*.
+    * **Mustafa Suleyman** (Microsoft AI) denomina el *Problema de la Contención* a la tensión entre capacidad tecnológica y control humano.
 
 **Este no es un discurso pesimista. Es realismo técnico.**
-
----
-
-## 3. El veredicto de quienes la estudian, la critican y la construyen
-
-Esta evaluación no proviene de un pesimismo externo, sino de una convergencia técnica.
-
-!!! failure "Críticos técnicos: Imitación sin comprensión"
-    Lingüistas y científicos cognitivos subrayan que estos modelos imitan estadísticamente.
-    
-    * **Emily Bender** y **Gary Marcus** los describen como *"Loros Estocásticos"*: máquinas de imitación, no de entendimiento.
-
-!!! warning "Constructores escépticos: Los arquitectos dudan"
-    * **Yann LeCun** (Meta AI) subraya que carecen de razonamiento y modelos del mundo.
-    * **Geoffrey Hinton** advierte sobre riesgos profundos que aún no comprendemos.
-
-!!! quote "Líderes institucionales: El problema de la contención"
-    * **Dario Amodei** (Anthropic) ve la gobernanza como *"el problema central"*.
-    * **Mustafa Suleyman** (Microsoft AI) define el *"Problema de la Contención"* entre capacidad tecnológica y control humano.
 
 ---
 
