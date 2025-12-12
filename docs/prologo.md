@@ -52,28 +52,40 @@ Tres pensadores contemporáneos, desde la psicología, la filosofía y la teorí
 
 ## 3. El veredicto de quienes la estudian, la critican y la construyen
 
-Esta evaluación no proviene de un pesimismo externo, sino de una convergencia entre quienes analizan, cuestionan y desarrollan esta tecnología.
+Esta evaluación no proviene de un pesimismo externo ni de un rechazo ludita, sino de una convergencia poco común entre quienes analizan, cuestionan y desarrollan esta misma tecnología.
 
-### Críticos técnicos
+### I. Los Críticos Técnicos
+*La ciencia detrás de la ilusión.*
 
-Lingüistas y científicos cognitivos subrayan que estos modelos *imitan sin comprender*.
+Lingüistas y científicos cognitivos subrayan que, aunque el resultado parezca humano, el proceso es puramente estadístico. Estos modelos *imitan sin comprender*.
 
-* **Emily Bender**, lingüista especializada en modelos de lenguaje, y
-* **Gary Marcus**, científico cognitivo y crítico del deep learning,
+* **Emily Bender** (Lingüista computacional) y **Gary Marcus** (Científico cognitivo).
+  Ambos coinciden en una definición que desmitifica la supuesta "inteligencia":
+  > Describen a los modelos como **“Loros Estocásticos”**: entidades formidables en la imitación probabilística, pero vacías de entendimiento semántico o intención.
 
-los describen como *“loros estocásticos”*: máquinas de imitación, no de entendimiento.
+### II. Los Constructores Escépticos
+*Los arquitectos que dudan de su propia obra.*
 
-### Constructores escépticos
+No son observadores pasivos; son los padres de la disciplina quienes ahora levantan la mano para señalar las grietas en los cimientos.
 
-* **Yann LeCun**, Premio Turing y pionero del aprendizaje profundo, subraya que los modelos actuales carecen de razonamiento, planificación y modelos del mundo.
-* **Geoffrey Hinton**, también Premio Turing y figura central del deep learning, dejó su posición industrial para advertir sobre riesgos profundos que aún no comprendemos del todo.
+* **Yann LeCun** (Premio Turing, Meta AI).
+  Pionero del aprendizaje profundo, es tajante sobre las limitaciones actuales: subraya que los modelos carecen de **razonamiento real, planificación y modelos del mundo** físicos; sin esto, la inteligencia es solo una fachada.
 
-### Líderes institucionales
+* **Geoffrey Hinton** (Premio Turing, "Padrino de la IA").
+  Su escepticismo es existencial. Dejó su posición en Google no para jubilarse, sino para tener la libertad de advertir sobre **riesgos profundos** y emergentes que, según admite, ni siquiera los creadores comprenden del todo.
 
-* **Dario Amodei**, CEO de Anthropic, sostiene que la gobernanza es *“el problema central”*.
-* **Mustafa Suleyman**, cofundador de DeepMind y líder de Microsoft AI, denomina el *Problema de la Contención* a la tensión entre capacidad tecnológica y capacidad humana de control.
+### III. Los Líderes Institucionales
+*El dilema de la gobernanza.*
 
-Este no es un discurso pesimista. Es realismo técnico.
+Quienes dirigen las empresas más potentes del sector ya no hablan solo de código, sino de contención.
+
+* **Dario Amodei** (CEO de Anthropic).
+  Sostiene que la capacidad técnica ha superado nuestra capacidad de gestión, definiendo la **gobernanza** como *“el problema central”* de la década.
+
+* **Mustafa Suleyman** (Cofundador de DeepMind, CEO Microsoft AI).
+  Define la tensión actual como el **Problema de la Contención**: la brecha crítica entre la velocidad exponencial de la tecnología y la velocidad lineal de las instituciones humanas para controlarla.
+
+**Este no es un discurso pesimista. Es realismo técnico.**
 
 ---
 
