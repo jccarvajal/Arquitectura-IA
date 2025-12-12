@@ -20,7 +20,7 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
     * **Por qué leerlo:** Documento legal clave que marca el fin de la neutralidad técnica. Oficializa la postura de la **"IA Anti-Woke"**, redefiniendo los filtros de seguridad (safety) como sesgo ideológico y estableciendo las bases políticas para la fragmentación de la IA.
 
 * **Amodei, D. (2023). "Oversight of A.I.: Principles for Regulation". U.S. Senate Judiciary Subcommittee Testimony.** [[PDF]](https://www.judiciary.senate.gov/imo/media/doc/2023-07-26_-_testimony_-_amodei.pdf)
-    * **Por qué leerlo:** Testimonio escrito oficial donde el CEO de Anthropic detalla ante el Senado por qué la gobernanza —y no solo la capacidad técnica— es el "problema central". Aquí expone los riesgos de corto (biológicos) y largo plazo (autonomía) citados en tu prólogo.
+    * **Por qué leerlo:** Testimonio escrito oficial donde el CEO de Anthropic detalla ante el Senado por qué la gobernanza, y no solo la capacidad técnica, es el "problema central". Aquí expone los riesgos de corto (biológicos) y largo plazo (autonomía) citados en tu prólogo.
 
 ---
 
