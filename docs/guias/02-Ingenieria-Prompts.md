@@ -87,31 +87,25 @@ Si tienes un formato o estilo muy específico en mente, no lo describas; muéstr
     * *Uso:* Tareas generales, creativas o de conocimiento común.
     * *Riesgo:* Mayor variabilidad y alucinación. Confías 100% en el entrenamiento del modelo.
     * *Ejemplo de Zero-Shot:*
-      ```text
-      Actúa como un historiador literario especializado en el Siglo de Oro español. Redacta una respuesta de 150 palabras explicando quién escribió 'Don Quijote'.
-      ```
+      > Actúa como un historiador literario especializado en el Siglo de Oro español. Redacta una respuesta de 150 palabras explicando quién escribió 'Don Quijote'.
 
 * **One-Shot (1 Ejemplo):** Le das un caso ideal para anclar el formato.
     * *Uso:* Cuando necesitas una estructura específica (ej. un JSON).
     * *Ventaja:* *Anclaje Rápido*. Asegura el formato deseado inmediatamente con un costo de tokens mínimo, evitando la ambigüedad del Zero-Shot.
     * *Ejemplo de One-Shot:*
-      ```text
-      Quiero crear resúmenes de libros con este estilo: 'Libro: El Principito. Idea Clave: Lo esencial es invisible a los ojos; las relaciones y el amor son más importantes que las apariencias.' Ahora, genera un resumen con el mismo estilo para el libro 'Cien años de soledad'.
-      ```
+      > Quiero crear resúmenes de libros con este estilo: 'Libro: El Principito. Idea Clave: Lo esencial es invisible a los ojos; las relaciones y el amor son más importantes que las apariencias.' Ahora, genera un resumen con el mismo estilo para el libro 'Cien años de soledad'.
 
 * **Few-Shot (3+ Ejemplos):** La técnica reina de la fiabilidad. Le das múltiples casos de "Input -> Output Ideal".
     * *Uso:* Tareas complejas de clasificación o tono de marca.
     * *Ventaja:* Reduce drásticamente las alucinaciones sin necesidad de re-entrenar el modelo.
     * *Ejemplo de Few-Shot:*
-      ```text
-      Quiero clasificar la urgencia de correos. Aprende de estos ejemplos:
-      
-      1. "El servidor se cayó" -> ALTA
-      2. "¿Podemos reunirnos mañana?" -> MEDIA
-      3. "Gracias por la info" -> BAJA
-      
-      Ahora clasifica este: "El sistema está lento." ->
-      ```
+      > Quiero clasificar la urgencia de correos. Aprende de estos ejemplos:
+      >
+      > 1. "El servidor se cayó" -> ALTA
+      > 2. "¿Podemos reunirnos mañana?" -> MEDIA
+      > 3. "Gracias por la info" -> BAJA
+      >
+      > Ahora clasifica este: "El sistema está lento." ->
 
 **Paso 5: Incorpora Técnicas Avanzadas (Estratégicamente)**  
 Aquí es donde potencias tu prompt para tareas complejas que requieren razonamiento, creatividad o precisión, pero solo cuando la tarea lo justifica. Más sobre esto en la siguiente sección.
