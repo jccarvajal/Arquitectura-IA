@@ -16,42 +16,37 @@ Esta obra rechaza ambas ilusiones y propone un marco profesional para evitar la 
 
 Tres pensadores contemporáneos, desde la psicología, la filosofía y la teoría del riesgo, ofrecen un marco indispensable para comprender qué es, y qué no es, la IA actual.
 
-### Daniel Kahneman — El mapa cognitivo
+!!! abstract "Daniel Kahneman — El mapa cognitivo"
+    En *Pensar, rápido y despacio*, **Daniel Kahneman**, psicólogo y premio en Ciencias Económicas en memoria de Alfred Nobel, distingue dos modos fundamentales de pensamiento:
 
-En *Pensar, rápido y despacio*, **Daniel Kahneman**, psicólogo y premio en Ciencias Económicas en memoria de Alfred Nobel, distingue dos modos fundamentales de pensamiento:
+    * **Sistema 1 (S1):** rápido, intuitivo, basado en patrones.
+    * **Sistema 2 (S2):** lento, deliberado, lógico y analítico.
 
-* **Sistema 1 (S1):** rápido, intuitivo, basado en patrones.
-* **Sistema 2 (S2):** lento, deliberado, lógico y analítico.
+    Los modelos generativos actuales se comportan como **S1 ampliado**, no como S2 emergente.
 
-Los modelos generativos actuales se comportan como **S1 ampliado**, no como S2 emergente.
+!!! abstract "Hubert Dreyfus — La comprensión no es cálculo"
+    **Hubert Dreyfus**, filósofo y uno de los críticos más influyentes de la IA desde la fenomenología, sostuvo que la inteligencia humana no opera como una máquina simbólica ni estadística. Para él, comprender no es manipular datos: es *habitar* el mundo.
 
-### Hubert Dreyfus — La comprensión no es cálculo
+    De acuerdo con Dreyfus, la IA actual carece de:
 
-**Hubert Dreyfus**, filósofo y uno de los críticos más influyentes de la IA desde la fenomenología, sostuvo que la inteligencia humana no opera como una máquina simbólica ni estadística.
-Para él, comprender no es manipular datos: es *habitar* el mundo.
+    * intencionalidad,
+    * experiencia vivida,
+    * percepción encarnada,
+    * contexto situado,
+    * y consecuencias por actuar.
 
-De acuerdo con Dreyfus, la IA actual carece de:
+    Por eso puede producir lenguaje perfecto sin entenderlo: Tiene **sintaxis sin semántica**. Imitación sin comprensión. S1 sin S2.
 
-* intencionalidad,
-* experiencia vivida,
-* percepción encarnada,
-* contexto situado,
-* y consecuencias por actuar.
+!!! abstract "Nassim Taleb — Fragilidad, antifragilidad y riesgo sin consecuencias"
+    **Nassim Nicholas Taleb**, teórico del riesgo, aporta tres ideas clave.
 
-Por eso puede producir lenguaje perfecto sin entenderlo: 
-Tiene **sintaxis sin semántica**. Imitación sin comprensión. S1 sin S2.
+    * La IA generativa es **frágil**: funciona bien en condiciones conocidas, pero falla ante escenarios inesperados.
+    * No es **antifrágil**, porque no mejora mediante estrés real: aprende de datos pasados, no de consecuencias.
+    * Y carece de **skin in the game (jugarse la piel)**: no asume pérdidas por sus errores.
 
-### Nassim Taleb — Fragilidad, antifragilidad y riesgo sin consecuencias
+    Puede generar *basura elocuente*, respuestas fluidas pero incorrectas, sin experimentar costo alguno.
 
-**Nassim Nicholas Taleb**, teórico del riesgo, aporta tres ideas clave.
-
-* La IA generativa es **frágil**: funciona bien en condiciones conocidas, pero falla ante escenarios inesperados.
-* No es **antifrágil**, porque no mejora mediante estrés real: aprende de datos pasados, no de consecuencias.
-* Y carece de **skin in the game (jugarse la piel)**: no asume pérdidas por sus errores.
-
-Puede generar *basura elocuente*, respuestas fluidas pero incorrectas, sin experimentar costo alguno.
-
-Esa combinación de fragilidad, ausencia de antifragilidad y falta de responsabilidad crea condiciones ideales para **cisnes negros**: fallos raros pero de impacto desproporcionado, amplificados por la falsa sensación de certeza que el propio sistema produce.
+    Esa combinación de fragilidad, ausencia de antifragilidad y falta de responsabilidad crea condiciones ideales para **cisnes negros**: fallos raros pero de impacto desproporcionado, amplificados por la falsa sensación de certeza que el propio sistema produce.
 
 ---
 
