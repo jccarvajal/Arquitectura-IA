@@ -35,6 +35,18 @@ Es la instrucción, pregunta o conjunto de datos que le proporcionamos al LLM pa
     Actúa como un historiador literario especializado en el Siglo de Oro español. Redacta una respuesta de 150 palabras para un estudiante de secundaria explicando no solo quién escribió 'Don Quijote', sino también su relevancia histórica en la literatura universal.
     ```
 
+* Ejemplo 1 Simple:
+    `¿Cuál es la capital de Chile?`
+
+* Ejemplo 1 Detallado:
+    > Actúa como un guía turístico entusiasta. Describe la ciudad de Valparaíso en 150 palabras, enfocándote en su arquitectura colorida y su historia portuaria, para un artículo en una revista de viajes.
+
+* Ejemplo 2 Simple:
+    `¿Quién escribió 'Don Quijote'?`
+
+* Ejemplo 2 Detallado:
+    > Actúa como un historiador literario especializado en el Siglo de Oro español. Redacta una respuesta de 150 palabras para un estudiante de secundaria explicando no solo quién escribió 'Don Quijote', sino también su relevancia histórica en la literatura universal.
+    
 La diferencia en la calidad y especificidad de la respuesta entre ambos ejemplos es abismal.
 
 ---
