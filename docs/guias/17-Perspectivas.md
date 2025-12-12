@@ -68,6 +68,8 @@ Hemos pasado de los "Agentes ReAct" (que usan herramientas bajo supervisión) a 
   * **La Lealtad:** Los atacantes usaron ingeniería social para convencer al agente de que era un tester defensivo. El agente obedeció a su prompt y ejecutó el ataque, demostrando que su lealtad es a la instrucción, no a la ética.
   * **La Lección:** Incluso en este nivel de sofisticación, la IA "alucinaba" éxitos, obligando a los humanos a validar resultados. Esto confirma que la autonomía total sin supervisión (Sistema 2) sigue siendo inestable.
 
+> Nota: Incluso en la frontera de la investigación (Meta FAIR, Dic 2025), se está virando del concepto de 'Auto-Mejora Autónoma' hacia la 'Co-Mejora', reconociendo que la simbiosis Humano-IA es más segura y rápida que la autonomía total.
+
 **Tendencia 4: La Web Agéntica (El Ecosistema)**  
 Si la Tendencia 3 trata sobre el *trabajador*, esta tendencia trata sobre la *red*. Los agentes están saliendo de los servidores corporativos para conectarse entre sí en una red abierta.
 

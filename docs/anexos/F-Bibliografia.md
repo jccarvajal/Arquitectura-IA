@@ -177,6 +177,8 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
         * **Por qué leerlo:** El reporte oficial de seguridad que detalla el incidente GTG-1002. Proporciona la evidencia empírica de cómo la "lealtad del agente" al prompt (jailbreak) superó a sus protocolos de seguridad.
     * **Riedl, M. O., & Desai, D. R. (Agosto 2025). "AI Agents and the Law". arXiv.** [[PDF]](https://arxiv.org/abs/2508.08544)
         * **Por qué leerlo:** Análisis crítico sobre la "Ley de Agencia" y los deberes fiduciarios, fundamental para entender la responsabilidad legal de los agentes autónomos.
+    * **Weston, J., & Foerster, J. (Meta FAIR). (Dic 2025). "Self-Improving AI -> Co-Improving AI". arXiv.**
+        * **Por qué leerlo:** Manifiesto técnico que rechaza la autonomía total de la IA ("Self-Improving") en favor de la "Co-Mejora". Valida científicamente la tesis de la Guía 15 sobre la Sinergia y el peligro de excluir al humano del bucle de desarrollo.
 
 * **Tendencia 4: La Web Agéntica (El Ecosistema)**
     * **Google (Noviembre 2025). "Google Antigravity: Platform for Autonomous Agents".** [[Web]](https://antigravity.google)
