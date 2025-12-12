@@ -111,7 +111,7 @@ Si tienes un formato o estilo muy específico en mente, no lo describas; muéstr
 Aquí es donde potencias tu prompt para tareas complejas que requieren razonamiento, creatividad o precisión, pero solo cuando la tarea lo justifica. Más sobre esto en la siguiente sección.
 
 * **Ejemplo (usando Chain-of-Thought):**
-    > Un agricultor tiene 150 metros de valla para cercar un terreno rectangular. Quiere maximizar el área. ¿Cuáles deben ser las dimensiones del terreno? Explica tu razonamiento paso a paso antes de dar la respuesta final.
+  > Un agricultor tiene 150 metros de valla para cercar un terreno rectangular. Quiere maximizar el área. ¿Cuáles deben ser las dimensiones del terreno? Explica tu razonamiento paso a paso antes de dar la respuesta final.
 
 **Paso 6: Evalúa y Valida (En Dos Niveles)**  
 Una vez que recibes la respuesta, revísala críticamente. La confianza ciega en un LLM es un error de principiante. ¿Cumple con el objetivo del Paso 1? ¿Respetó el rol, las restricciones y el formato? ¿La información es factualmente correcta? Los LLM pueden "alucinar" (inventar datos). Siempre verifica la información importante. La validación es un proceso dual.
@@ -157,7 +157,7 @@ Las siguientes técnicas se integran en el método para resolver problemas más 
 * **¿Por qué funciona?** Reduce la probabilidad de obtener una respuesta incorrecta o sesgada al explorar múltiples "caminos de razonamiento". Es útil para la creatividad y la resolución de problemas ambiguos.  
 * **Ejemplo 1:**
   > Genera 3 eslóganes diferentes para una nueva marca de café orgánico. Luego, evalúa cuál de los tres es más memorable y por qué.
-  **Ejemplo 2:**
+* **Ejemplo 2:**
   > Genera 3 titulares distintos para un artículo sobre el teletrabajo. Luego, indica cuál es el más persuasivo y justifica tu elección.
   
 **3. Prompt Chaining (Encadenamiento de Prompts)**
@@ -180,7 +180,7 @@ Las siguientes técnicas se integran en el método para resolver problemas más 
     * *¿Cuándo usarlo?:* Para tareas complejas, ambiguas o cuando necesitas crear una plantilla de prompt robusta y reutilizable.  
     * *¿Cuándo evitarlo?:* Es redundante e ineficiente para tareas simples y directas. No necesitas un meta-prompt para preguntar la capital de un país.  
 * **Ejemplo:**
-    > Estoy tratando de obtener una explicación de la física cuántica para principiantes. Crea un prompt óptimo que le darías a un LLM como tú para generar una explicación clara, precisa y con analogías fáciles de entender.
+  > Estoy tratando de obtener una explicación de la física cuántica para principiantes. Crea un prompt óptimo que le darías a un LLM como tú para generar una explicación clara, precisa y con analogías fáciles de entender.
     
 ---
 
