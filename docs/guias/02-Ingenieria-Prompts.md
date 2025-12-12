@@ -18,17 +18,13 @@ Un LLM es un modelo de inteligencia artificial entrenado con un volumen masivo d
 **¿Qué es un Prompt?**  
 Es la instrucción, pregunta o conjunto de datos que le proporcionamos al LLM para que genere una respuesta. Puede ser cualquier cosa, desde una simple pregunta hasta un documento complejo.
 
-* Ejemplo 1 Simple:
-
-    > ¿Cuál es la capital de Chile?
+* Ejemplo 1 Simple: `¿Cuál es la capital de Chile?`
 
 * Ejemplo 1 Detallado:
 
     > Actúa como un guía turístico entusiasta. Describe la ciudad de Valparaíso en 150 palabras, enfocándote en su arquitectura colorida y su historia portuaria, para un artículo en una revista de viajes.
 
-* Ejemplo 2 Simple:
-
-    > ¿Quién escribió 'Don Quijote'?
+* Ejemplo 2 Simple: `¿Quién escribió 'Don Quijote'?`
 
 * Ejemplo 2 Detallado:
 
@@ -46,72 +42,43 @@ Este es un marco de trabajo que te guiará desde la idea inicial hasta un result
 Antes de escribir, define con precisión qué resultado necesitas y cómo medirás su éxito.
 
 * **El Objetivo:** ¿Qué quieres lograr?
-    * *Mal Objetivo:*
-    ```text
-    Necesito un resumen de un artículo.
-    ```
+    * *Mal Objetivo:* `Necesito un resumen de un artículo.`
     * *Buen Objetivo:*
-    ```text
-    Necesito un resumen ejecutivo de 250 palabras del siguiente artículo [texto], enfocado en los tres hallazgos clave y sus implicaciones para nuestro equipo de marketing.
-    ```
-* **Las Métricas:** Un objetivo profesional incluye criterios de aceptación medibles. Sin ellos, la iteración es subjetiva e infinita.
+    > Necesito un resumen ejecutivo de 250 palabras del siguiente artículo [texto], enfocado en los tres hallazgos clave y sus implicaciones para nuestro equipo de marketing.
+
+* **Las Métricas:** Un objetivo profesional incluye criterios de aceptación medibles.
     * *Ejemplos de Métricas:*
-        * **Precisión:**
-        ```text
-        La respuesta debe incluir 5 cifras exactas del informe, sin errores.
-        ```
-        * **Formato:**
-        ```text
-        La salida debe ser un objeto JSON que valide contra este esquema.
-        ```
-        * **Estilo:**
-        ```text
-        El texto debe obtener una puntuación de legibilidad superior a 70 en la escala Flesch.
-        ```
-        * **Contenido:**
-        ```text
-        Debe mencionar obligatoriamente las palabras clave: 'sostenibilidad', 'logística' y 'optimización'.
-        ```
+        * **Precisión:** "La respuesta debe incluir 5 cifras exactas del informe, sin errores."
+        * **Formato:** "La salida debe ser un objeto JSON que valide contra este esquema."
+        * **Estilo:** "El texto debe obtener una puntuación de legibilidad superior a 70 en la escala Flesch."
+        * **Contenido:** "Debe mencionar obligatoriamente las palabras clave: 'sostenibilidad', 'logística' y 'optimización'."
 
-**Paso 2: Asigna un Rol (Role Play) y Contexto**  
-Dale al LLM una "personalidad" o un rol de experto. Esto acota su conocimiento y define el tono, estilo y perspectiva de la respuesta.
+**Paso 2: Asigna un Rol (Role Play) y Contexto** Dale al LLM una "personalidad" o un rol de experto. Esto acota su conocimiento y define el tono, estilo y perspectiva de la respuesta.
 
-* **Ejemplo Sin Rol:**
-  ```text
-  Explica la fotosíntesis.
-  ```
+* **Ejemplo Sin Rol:** `Explica la fotosíntesis.`
 * **Ejemplo Con Rol:**
-  ```text
-  Eres un biólogo y profesor apasionado. Explica el proceso de la fotosíntesis a niños de 10 años, usando una analogía con una fábrica de comida para plantas.
-  ```
+  > Eres un biólogo y profesor apasionado. Explica el proceso de la fotosíntesis a niños de 10 años, usando una analogía con una fábrica de comida para plantas.
 
-**Paso 3: Añade Instrucciones y Restricciones (El "Cómo")**  
-Aquí es donde defines el "cómo". Sé explícito sobre el formato, la estructura, la extensión, las prohibiciones y el estilo que deseas.
+**Paso 3: Añade Instrucciones y Restricciones (El "Cómo")** Aquí es donde defines el "cómo". Sé explícito sobre el formato, la estructura, la extensión, las prohibiciones y el estilo que deseas.
 
-* **Ejemplo Poca Instrucción:**
-  ```text
-  Dame ideas para un negocio.
-  ```
+* **Ejemplo Poca Instrucción:** `Dame ideas para un negocio.`
 * **Ejemplo Instrucción Detallada:**
-  ```text
-  Genera una lista con 5 ideas de negocios online con baja inversión inicial. 
-  Para cada idea, incluye: 
-  1) Nombre de la idea, 
-  2) Público objetivo, 
-  3) Un primer paso para validarla. 
-  Presenta el resultado en formato de tabla.
-  ```
+  > Genera una lista con 5 ideas de negocios online con baja inversión inicial. 
+  > Para cada idea, incluye: 
+  > 1) Nombre de la idea, 
+  > 2) Público objetivo, 
+  > 3) Un primer paso para validarla. 
+  > Presenta el resultado en formato de tabla.
 
-> **La Síntesis Estructural: El Marco CRF-R**
->
-> Para aplicar los pasos 1, 2 y 3 con rigor de ingeniería en cada interacción, en esta obra utilizamos el acrónimo estándar **CRF-R**. Esta es la estructura que define a un "Prompt Maestro" (ver plantilla en **Anexo D**):
->
-> 1.  **C - Contexto:** (Del Paso 1). La situación, los datos de entrada y el "para qué".
-> 2.  **R - Rol:** (Del Paso 2). La *persona* que debe adoptar la IA.
-> 3.  **F - Formato:** (Del Paso 3). La estructura exacta de la salida (Tabla, JSON, Email).
-> 4.  **R - Restricciones:** (Del Paso 3). Las líneas rojas y lo que NO debe hacer.
->
-> *Nota del Arquitecto: Si su prompt tiene estos 4 componentes definidos explícitamente, ha reducido la probabilidad de error (alucinación o formato incorrecto) en un 80%.*
+!!! abstract "La Síntesis Estructural: El Marco CRF-R"
+    Para aplicar los pasos 1, 2 y 3 con rigor de ingeniería en cada interacción, en esta obra utilizamos el acrónimo estándar **CRF-R**. Esta es la estructura que define a un "Prompt Maestro" (ver plantilla en **Anexo D**):
+
+    1.  **C - Contexto:** (Del Paso 1). La situación, los datos de entrada y el "para qué".
+    2.  **R - Rol:** (Del Paso 2). La *persona* que debe adoptar la IA.
+    3.  **F - Formato:** (Del Paso 3). La estructura exacta de la salida (Tabla, JSON, Email).
+    4.  **R - Restricciones:** (Del Paso 3). Las líneas rojas y lo que NO debe hacer.
+
+    *Nota del Arquitecto: Si su prompt tiene estos 4 componentes definidos explícitamente, ha reducido la probabilidad de error (alucinación o formato incorrecto) en un 80%.*
 
 **Paso 4: Usa Ejemplos y Referencias (La Estrategia "Few-Shot")**
 Si tienes un formato o estilo muy específico en mente, no lo describas; muéstralo. En ingeniería, distinguimos tres niveles de control según la cantidad de ejemplos (o "disparos/shots") que le damos al modelo:
