@@ -33,6 +33,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** El proceso de re-entrenar un modelo de IA preexistente (como Llama 3) usando un conjunto de datos más pequeño y específico. No le enseña nuevo conocimiento, sino que ajusta su comportamiento, tono, estilo o su habilidad para realizar una tarea muy específica.  
 * **Referencia Principal:** Guía 07 (Ajuste Fino).
 
+**Alineación Nacional (National Alignment)**
+
+* **Definición:** Variante geopolítica del problema de alineación técnica. Se refiere al ajuste (*fine-tuning*) de los modelos de IA no solo para que sean seguros, sino para que sus respuestas validen la **narrativa histórica, política e ideológica** del Estado que los regula, creando una "verdad" local en lugar de global.
+* **Referencia Principal:** Prólogo (La Fractura Geopolítica).
+
 **Alucinación (Hallucination)**
 
 * **Definición:** Un riesgo operacional crítico donde el LLM genera información que es factualmente incorrecta, inventada o contradictoria, pero la presenta con total confianza y elocuencia. Es una "mentira" no intencional.  
@@ -268,6 +273,16 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** La frontera actual del Deep Learning. A diferencia de la IA tradicional que solo analiza o clasifica datos existentes, la GenAI puede **crear** contenido nuevo (texto, código, imágenes) basándose en los patrones aprendidos durante su entrenamiento.
 * **Referencia Principal:** Guía 01 (Anatomía de Modelos).
 
+**IA Soberana (Sovereign AI)**
+
+* **Definición:** Estrategia mediante la cual una nación desarrolla y controla su propia **infraestructura de inteligencia artificial** (centros de datos, modelos fundacionales y datos de entrenamiento). El objetivo es garantizar que la tecnología se alinee con sus leyes y valores culturales, reduciendo la dependencia crítica de potencias extranjeras.
+* **Referencia Principal:** Prólogo (La Fractura Geopolítica).
+
+**IA Woke / Anti-Woke (Woke / Anti-Woke AI)**
+
+* **Definición:** Términos politizados para describir los **filtros de seguridad** (RLHF). La etiqueta "IA Woke" critica modelos que priorizan la diversidad sobre la precisión factual. La "IA Anti-Woke" busca eliminar estos filtros bajo la premisa de la **neutralidad**, a menudo permitiendo discursos que otros modelos bloquearían por seguridad.
+* **Referencia Principal:** Prólogo, Guía 15 (Ética y Sesgos).
+
 **Industrialización (Industrialization)**
 
 * **Definición:** El proceso de llevar un prototipo de IA funcional a un sistema de nivel de producción: escalable, confiable, monitoreado y mantenible.
@@ -462,6 +477,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** Métrica de calidad que mide la habilidad del agente para gestionar la ambigüedad haciendo preguntas aclaratorias.
 * **Referencia Principal:** Guía 09 (Gobernanza).
+
+**Problema de la Contención (The Containment Problem)**
+
+* **Definición:** Concepto acuñado por Mustafa Suleyman. Describe la dificultad extrema de mantener el control sobre tecnologías que se vuelven exponencialmente más baratas, potentes y omnipresentes. Define la brecha crítica entre la velocidad de la **capacidad tecnológica** y la lentitud de la **capacidad humana** de regulación.
+* **Referencia Principal:** Prólogo (Líderes Institucionales).
 
 **Procedencia (de Memoria)**
 
