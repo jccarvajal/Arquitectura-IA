@@ -20,7 +20,7 @@ Es la instrucción, pregunta o conjunto de datos que le proporcionamos al LLM pa
 
 * Ejemplo 1 Simple:
 
-    `¿Cuál es la capital de Chile?`
+    > ¿Cuál es la capital de Chile?
 
 * Ejemplo 1 Detallado:
 
@@ -28,7 +28,7 @@ Es la instrucción, pregunta o conjunto de datos que le proporcionamos al LLM pa
 
 * Ejemplo 2 Simple:
 
-    `¿Quién escribió 'Don Quijote'?`
+    > ¿Quién escribió 'Don Quijote'?
 
 * Ejemplo 2 Detallado:
 
