@@ -71,7 +71,7 @@ Esta evaluación no proviene de un pesimismo externo, sino de una convergencia e
     * **Dario Amodei** (Anthropic) sostiene que la gobernanza es *“el problema central”*.
     * **Mustafa Suleyman** (Microsoft AI) denomina el *Problema de la Contención* a la tensión entre capacidad tecnológica y control humano.
 
-!!! abstract "La Fractura Geopolítica — El fin de la neutralidad"
+!!! warning "La Fractura Geopolítica — El fin de la neutralidad"
     La batalla ha trascendido el código para convertirse en una cuestión de soberanía nacional.
 
     * **Sovereign AI (IA Soberana):** Países y bloques (EE.UU., China, UE, Sur Global) compiten por construir modelos que validen sus propias leyes, cultura y visión política.
