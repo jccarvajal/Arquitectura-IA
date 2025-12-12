@@ -107,6 +107,30 @@ La industria ha estandarizado la transparencia en dos documentos clave. Para rea
 **La Fórmula de Auditoría:**
 > **Viabilidad Técnica (Model Card) + Seguridad Operativa (System Card) = Aprobación de Despliegue**
 
+!!! abstract "Model Card (Ficha del Motor)"
+    **Documenta la Fase 1 (Pre-entrenamiento).**
+    Es el "Manual de Especificaciones Técnicas" del motor. Nos dice qué tan potente es el modelo en bruto, antes de ser alineado para seguridad.
+
+    * **Objetivo:** Evaluar si el modelo tiene la capacidad intelectual y física para la tarea.
+    * **Datos Críticos que Contiene:**
+        * **Arquitectura y Parámetros:** El tamaño real del modelo (ej. 70B, 8x22B MoE) que determina el costo de hosting.
+        * **Fecha de Corte (Cut-off date):** El día exacto en que el modelo "dejó de aprender" del mundo. Vital para saber si conoce leyes o eventos recientes.
+        * **Ventana de Contexto:** La capacidad de memoria a corto plazo (ej. 128k tokens).
+        * **Benchmarks de Razonamiento:** Puntajes en pruebas estandarizadas (MMLU, HumanEval) que demuestran su capacidad lógica y de codificación.
+    * **Uso en GRC:** Determina la **Viabilidad Técnica** y el **Costo de Infraestructura**.
+
+!!! abstract "System Card (Ficha de Seguridad)"
+    **Documenta la Fase 2 (Post-entrenamiento).**
+    Es el "Informe de Seguridad y Riesgos". Nos dice cómo se comporta el modelo ante usuarios adversarios y qué controles tiene activados.
+
+    * **Objetivo:** Evaluar si es seguro exponer este modelo a empleados o ciudadanos.
+    * **Datos Críticos que Contiene:**
+        * **Metodología de Alineación:** Detalles sobre cómo se aplicó RLHF o RLAIF para filtrar toxicidad.
+        * **Resultados de Red Teaming:** Reportes de ataques simulados (ej. intentos de crear armas biológicas o ciberataques) y cómo el modelo se defendió.
+        * **Tasas de Rechazo (Refusal Rates):** Estadísticas sobre cuántas veces el modelo se niega a responder (útil para detectar si es "demasiado puritano").
+        * **Mitigación de Sesgos:** Pruebas específicas sobre estereotipos de género, raza o cultura.
+    * **Uso en GRC:** Determina el **Cumplimiento Normativo**, la **Ética** y la **Seguridad Operativa**.
+
 #### 🔍 A. Model Card (Ficha del Motor)
 **Documenta la Fase 1 (Pre-entrenamiento).**
 Es el "Manual de Especificaciones Técnicas" del motor. Nos dice qué tan potente es el modelo en bruto, antes de ser alineado para seguridad.
