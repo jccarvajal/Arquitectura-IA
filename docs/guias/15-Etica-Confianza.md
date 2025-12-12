@@ -183,7 +183,7 @@ Debes elegir tu modelo según el perfil de riesgo de tu caso de uso:
 
 * **Modelos "Corporativos / Safety-First"** (Ej. Claude, Gemini, GPT-4)
     * **Filosofía:** Priorizan la seguridad de marca y la "constitucionalidad". Tienen filtros estrictos contra discursos de odio, temas sensibles o instrucciones peligrosas.
-    * **El Riesgo:** Tienen una tasa más alta de **"Falsas Negativas"** (se niegan a responder preguntas inocuas por exceso de celo) y pueden exhibir un sesgo ideológico marcado ("Woke AI").
+    * **El Riesgo:** Tienen una tasa más alta de **"Falsos Negativos"** (se niegan a responder preguntas inocuas por exceso de celo) y pueden exhibir un sesgo ideológico marcado ("Woke AI").
     * **Uso ideal:** Chatbots de atención al cliente, generación de contenido público, entornos corporativos estrictos.
 
 * **Modelos "Libertarios / Raw"** (Ej. Grok, Mistral, Llama - versiones base)
