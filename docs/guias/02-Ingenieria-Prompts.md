@@ -111,41 +111,29 @@ Si tienes un formato o estilo muy específico en mente, no lo describas; muéstr
 Aquí es donde potencias tu prompt para tareas complejas que requieren razonamiento, creatividad o precisión, pero solo cuando la tarea lo justifica. Más sobre esto en la siguiente sección.
 
 * **Ejemplo (usando Chain-of-Thought):**
-    ```text
-    Un agricultor tiene 150 metros de valla para cercar un terreno rectangular. Quiere maximizar el área. ¿Cuáles deben ser las dimensiones del terreno? Explica tu razonamiento paso a paso antes de dar la respuesta final.
-    ```
+    > Un agricultor tiene 150 metros de valla para cercar un terreno rectangular. Quiere maximizar el área. ¿Cuáles deben ser las dimensiones del terreno? Explica tu razonamiento paso a paso antes de dar la respuesta final.
 
 **Paso 6: Evalúa y Valida (En Dos Niveles)**  
 Una vez que recibes la respuesta, revísala críticamente. La confianza ciega en un LLM es un error de principiante. ¿Cumple con el objetivo del Paso 1? ¿Respetó el rol, las restricciones y el formato? ¿La información es factualmente correcta? Los LLM pueden "alucinar" (inventar datos). Siempre verifica la información importante. La validación es un proceso dual.
 
-1. **Validación Interna (Calidad y Coherencia):** Usa el propio LLM como un primer filtro. Utiliza autocrítica y self-consistency para mejorar la coherencia, claridad y lógica interna de la respuesta.  
-    * *Prompt de Ejemplo 1:* 
-      ```text
-      Revisa la respuesta anterior. ¿Es el tono adecuado para un inversor? ¿Hay ambigüedades? Propón una versión corregida.
-      ```
-    * *Prompt de Ejemplo 2:* 
-      ```text
-      Revisa la respuesta anterior que me diste. ¿Contiene alguna afirmación que pueda ser ambigua o factualmente incorrecta? Si es así, corrigela y proporciona una versión mejorada.
-      ``` 
+1. **Validación Interna (Calidad y Coherencia):** Usa el propio LLM como un primer filtro. Utiliza autocrítica y self-consistency para mejorar la coherencia, claridad y lógica interna de la respuesta.   
+    * *Prompt de Ejemplo 1:*
+      > Revisa la respuesta anterior. ¿Es el tono adecuado para un inversor? ¿Hay ambigüedades? Propón una versión corregida.
+    * *Prompt de Ejemplo 2:*
+      > Revisa la respuesta anterior que me diste. ¿Contiene alguna afirmación que pueda ser ambigua o factualmente incorrecta? Si es así, corrigela y proporciona una versión mejorada.
+
 2. **Validación Externa (La Sabiduría Práctica):** Advertencia: Ninguna técnica de Prompting sustituye la verificación humana. Para cualquier información crítica (financiera, médica, legal, de seguridad), la validación externa contra fuentes fiables no es opcional, es obligatoria. Las técnicas internas reducen errores, pero no garantizan la veracidad. El desarrollo de este juicio crítico es un pilar de la alfabetización cognitiva.
 
 **Paso 7: Itera con Intención**  
 No "pruebes cosas al azar". Ajusta tu prompt para cerrar la brecha entre el resultado obtenido y las métricas de éxito que definiste en el Paso 1\. Un objetivo bien definido no solo establece la intención, sino que también contiene los criterios de aceptación de la respuesta.
 
-* **Ejemplo de Iteración Dirigida:**  
-    * *V1:*
-    ```text
-    Escribe un email para invitar a un cliente a un webinar.
-    ```  
+* **Ejemplo de Iteración Dirigida:** 
+    * *V1:* `Escribe un email para invitar a un cliente a un webinar.`
     * *Resultado V1:* El email generado es demasiado largo (300 palabras). Métrica Fallida: Límite de 150 palabras.  
-    * *Ajuste en V2:* Añadir la restricción explícita:
-    ```text
-    La longitud total del email no debe superar las 150 palabras.
-    ```
-    * *V2 (Iteración):* (Respuesta mucho más específica y útil)
-    ```text
-    Eres un experto en marketing B2B. Escribe un email persuasivo de 150 palabras para invitar a un cliente potencial (gerente de TI) a un webinar sobre ciberseguridad. El tono debe ser profesional pero cercano. Incluye un llamado a la acción claro para registrarse.
-    ```
+    * *Ajuste en V2:* Añadir la restricción explícita: "La longitud total del email no debe superar las 150 palabras."
+    * *V2 (Iteración):*
+    > Eres un experto en marketing B2B. Escribe un email persuasivo de 150 palabras para invitar a un cliente potencial (gerente de TI) a un webinar sobre ciberseguridad. El tono debe ser profesional pero cercano. Incluye un llamado a la acción claro para registrarse.
+
 * **Recomendación Práctica Refinada:** Al definir tu objetivo en el Paso 1, incluye métricas de éxito claras. Por ejemplo: Precisión Factual, Adherencia al Estilo, Relevancia, Formato. La iteración del Paso 7 no es para que la respuesta "se sienta mejor", sino para cerrar la brecha entre la respuesta actual y estos criterios predefinidos, un proceso clave en la evaluación de calidad.
 
 ---
@@ -154,49 +142,37 @@ No "pruebes cosas al azar". Ajusta tu prompt para cerrar la brecha entre el resu
 
 Las siguientes técnicas se integran en el método para resolver problemas más complejos: **Chain-of-Thought**, **Self-Consistency**, **Prompt Chaining** y **Meta-Prompting**.
 
-**1\. Chain-of-Thought (CoT, Cadena de Pensamiento)**
+**1. Chain-of-Thought (CoT, Cadena de Pensamiento)**
 
 * **¿Qué es?** Pedirle explícitamente al modelo que "piense paso a paso" o que explique su razonamiento antes de llegar a la conclusión. Este es un concepto fundamental en el diseño de cómo "piensan" los sistemas de IA.  
 * **¿Por qué funciona?** Fuerza al modelo a seguir un proceso lógico en lugar de saltar a una conclusión, lo que aumenta drásticamente la precisión en problemas matemáticos, lógicos y de razonamiento complejo.  
 * **Ejemplo:** 
-  ```text
-  Resuelve este acertijo lógico: [acertijo]. Muestra tu cadena de pensamiento, deduciendo cada conclusión paso a paso antes de presentar la solución final.
-  ``` 
+  > Resuelve este acertijo lógico: [acertijo]. Muestra tu cadena de pensamiento, deduciendo cada conclusión paso a paso antes de presentar la solución final.
 * **Ideal para:** Modelos de frontera muy capaces (como los modelos más potentes del mercado) en tareas de lógica, matemáticas y planificación.  
 * **Menos efectivo en:** Modelos más pequeños, que pueden imitar el formato del razonamiento sin una lógica real. Para ellos, es mejor usar Prompt Chaining.
 
-**2\. Self-Consistency (Autoconsistencia)**
+**2. Self-Consistency (Autoconsistencia)**
 
 * **¿Qué es?** En lugar de pedir una sola respuesta, se le pide al modelo que genere varias respuestas diferentes para el mismo prompt y luego, a menudo, se le pide que elija la mejor o se elige manualmente. Aumenta la fiabilidad y la creatividad.  
 * **¿Por qué funciona?** Reduce la probabilidad de obtener una respuesta incorrecta o sesgada al explorar múltiples "caminos de razonamiento". Es útil para la creatividad y la resolución de problemas ambiguos.  
 * **Ejemplo 1:**
-  ```text
-  Genera 3 eslóganes diferentes para una nueva marca de café orgánico. Luego, evalúa cuál de los tres es más memorable y por qué.
-  ```
-* **Ejemplo 2:**
-  ```text
-  Genera 3 titulares distintos para un artículo sobre el teletrabajo. Luego, indica cuál es el más persuasivo y justifica tu elección.
-  ```
-
-**3\. Prompt Chaining (Encadenamiento de Prompts)**
+  > Genera 3 eslóganes diferentes para una nueva marca de café orgánico. Luego, evalúa cuál de los tres es más memorable y por qué.
+  **Ejemplo 2:**
+  > Genera 3 titulares distintos para un artículo sobre el teletrabajo. Luego, indica cuál es el más persuasivo y justifica tu elección.
+  
+**3. Prompt Chaining (Encadenamiento de Prompts)**
 
 * **¿Qué es?** Dividir una tarea grande y compleja en una secuencia de prompts más pequeños y manejables. La salida de un prompt se convierte en la entrada (o parte del contexto) del siguiente. Es la base conceptual de cómo funcionan los agentes de IA.  
 * **¿Por qué funciona?** Es ideal para proyectos grandes (escribir un informe, desarrollar una aplicación simple). Mantiene el contexto (un desafío clave en tareas largas), reduce errores y permite un mayor control sobre el proceso.  
 * **Ejemplo Secuencial:**  
     * *Prompt 1:* 
-    ```text
-    Crea un esquema detallado para un artículo de blog titulado 'Los 5 beneficios de la inteligencia artificial en el marketing'.
-    ```
+    > Crea un esquema detallado para un artículo de blog titulado 'Los 5 beneficios de la inteligencia artificial en el marketing'.
     * *Prompt 2:*
-    ```text
-    Usando el punto 1 del esquema anterior, escribe la introducción del artículo (aproximadamente 150 palabras).
-    ``` 
+    > Usando el punto 1 del esquema anterior, escribe la introducción del artículo (aproximadamente 150 palabras).
     * *Prompt 3:* 
-    ```text
-    Ahora, desarrolla el punto 2 del esquema...
-    ```
-
-**4\. Meta-Prompting**
+    > Ahora, desarrolla el punto 2 del esquema...
+    
+**4. Meta-Prompting**
 
 * **¿Qué es?** Usar al LLM para que te ayude a crear o mejorar tus propios prompts. Es como tener un consultor de ingeniería de prompts integrado.  
 * **¿Por qué funciona?** El modelo ha sido entrenado con inmensos volúmenes de texto y entiende las estructuras que funcionan mejor para él. Puede ayudarte a refinar tus ideas.  
@@ -204,10 +180,8 @@ Las siguientes técnicas se integran en el método para resolver problemas más 
     * *¿Cuándo usarlo?:* Para tareas complejas, ambiguas o cuando necesitas crear una plantilla de prompt robusta y reutilizable.  
     * *¿Cuándo evitarlo?:* Es redundante e ineficiente para tareas simples y directas. No necesitas un meta-prompt para preguntar la capital de un país.  
 * **Ejemplo:**
-    ```text
-    Estoy tratando de obtener una explicación de la física cuántica para principiantes. Crea un prompt óptimo que le darías a un LLM como tú para generar una explicación clara, precisa y con analogías fáciles de entender.
-    ```
-
+    > Estoy tratando de obtener una explicación de la física cuántica para principiantes. Crea un prompt óptimo que le darías a un LLM como tú para generar una explicación clara, precisa y con analogías fáciles de entender.
+    
 ---
 
 ### Parte 3: Maximizando el Valor: Qué Técnicas Usar en Cada Paso
@@ -216,9 +190,7 @@ Aquí conectamos las técnicas avanzadas con el método de 7 pasos para ver dón
 
 * **Paso 1 (Objetivo):**  
     * **Técnica de más valor: Meta-Prompting.** Si tu objetivo es difuso, puedes pedirle al LLM que te ayude a clarificarlo.
-    ```text
-    Quiero escribir algo sobre IA, pero no estoy seguro del enfoque. Sugiere 3 objetivos claros y específicos para un artículo dirigido a dueños de pequeñas empresas.
-    ```
+      > Quiero escribir algo sobre IA, pero no estoy seguro del enfoque. Sugiere 3 objetivos claros y específicos para un artículo dirigido a dueños de pequeñas empresas.
 * **Paso 2 (Rol) y Paso 3 (Instrucciones):**  
     * Estas fases dependen más de la claridad y especificidad del usuario que de una técnica avanzada. La clave es ser directo y no dejar espacio a la ambigüedad.  
 * **Paso 4 (Ejemplos \- Few-Shot):**  
@@ -228,17 +200,13 @@ Aquí conectamos las técnicas avanzadas con el método de 7 pasos para ver dón
     * **Técnica de más valor: Self-Consistency.** Si la tarea es creativa o subjetiva (escribir textos de marketing, generar ideas), pedir múltiples variantes aquí es la mejor estrategia.  
 * **Paso 6 (Evalúa y Valida):**  
     * **Técnica de más valor: Meta-Prompting (en modo autocritica).** Pedirle al modelo que evalúe su propia respuesta es una forma rápida y eficaz de detectar errores o debilidades.
-    ```text
-    Analiza la respuesta anterior. ¿Es el tono adecuado para el público objetivo? ¿Hay alguna frase que podría sonar confusa? Propón mejoras.
-    ```
+      > Analiza la respuesta anterior. ¿Es el tono adecuado para el público objetivo? ¿Hay alguna frase que podría sonar confusa? Propón mejoras.
     * **Técnica de más valor: Self-Consistency.** Al comparar las diferentes salidas generadas, puedes evaluar cuál cumple mejor el objetivo inicial.  
 * **Paso 7 (Itera con Intención):**
     * **Técnica de más valor: Prompt Chaining.** Si un prompt monolítico y complejo falla repetidamente, la mejor forma de iterar es descomponerlo en una cadena de prompts más simples. Esto te da control granular sobre cada parte del proceso.  
     * **Técnica de más valor: Meta-Prompting.** Si estás atascado, pregúntale al modelo:
-    ```text
-    Mi prompt anterior [pegar prompt] no está funcionando. Generó [describir salida no deseada]. ¿Cómo puedo refinar mi prompt para obtener [describir resultado deseado]?
-    ```
-
+      > Mi prompt anterior [pegar prompt] no está funcionando. Generó [describir salida no deseada]. ¿Cómo puedo refinar mi prompt para obtener [describir resultado deseado]?
+    
 ---
 
 ### Conclusión: De Usuario a Arquitecto de Resultados
