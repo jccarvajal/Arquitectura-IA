@@ -89,6 +89,25 @@ Quienes dirigen las empresas más potentes del sector ya no hablan solo de códi
 
 ---
 
+## 3. El veredicto de quienes la estudian, la critican y la construyen
+
+Esta evaluación no proviene de un pesimismo externo, sino de una convergencia técnica.
+
+!!! failure "Críticos técnicos: Imitación sin comprensión"
+    Lingüistas y científicos cognitivos subrayan que estos modelos imitan estadísticamente.
+    
+    * **Emily Bender** y **Gary Marcus** los describen como *"Loros Estocásticos"*: máquinas de imitación, no de entendimiento.
+
+!!! warning "Constructores escépticos: Los arquitectos dudan"
+    * **Yann LeCun** (Meta AI) subraya que carecen de razonamiento y modelos del mundo.
+    * **Geoffrey Hinton** advierte sobre riesgos profundos que aún no comprendemos.
+
+!!! quote "Líderes institucionales: El problema de la contención"
+    * **Dario Amodei** (Anthropic) ve la gobernanza como *"el problema central"*.
+    * **Mustafa Suleyman** (Microsoft AI) define el *"Problema de la Contención"* entre capacidad tecnológica y control humano.
+
+---
+
 ## 4. De la Fundación a la Expansión
 
 Entre la utopía de *La Cultura* y la advertencia de *Dune* existe un camino razonable.
