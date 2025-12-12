@@ -196,6 +196,7 @@ Debes elegir tu modelo según el perfil de riesgo de tu caso de uso:
 El mayor riesgo ético para una empresa hoy no es solo que la IA diga algo incorrecto, sino que la IA **deje de estar disponible** por una decisión política externa.
 
 Si tu producto depende 100% de una API cerrada (como OpenAI o Anthropic) alojada en EE.UU., estás sujeto a:
+
 1.  **Cambios regulatorios:** Órdenes ejecutivas o leyes (como la *AI Act* europea o decretos presidenciales en EE.UU.) que obliguen a cambiar el comportamiento del modelo de la noche a la mañana.
 2.  **Filtrado de datos:** Que tus datos confidenciales viajen a jurisdicciones extranjeras.
 
