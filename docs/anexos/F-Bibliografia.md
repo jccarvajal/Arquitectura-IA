@@ -8,6 +8,22 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 
 ---
 
+### Sobre el Prólogo: Geopolítica, Crítica y Seguridad
+
+* **Suleyman, M. & Bhaskar, M. (2023). "The Coming Wave: Technology, Power, and the Twenty-first Century's Greatest Dilemma". Crown.** [[Web]](https://www.thecomingwave.com/)
+    * **Por qué leerlo:** Es la obra que define el **"Problema de la Contención"** citado en el Prólogo. Suleyman (fundador de DeepMind y Microsoft AI) argumenta por qué la brecha entre la velocidad tecnológica y la regulación política es el mayor riesgo del siglo.
+
+* **Bender, E. M., Gebru, T., et al. (2021). "On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?". FAccT '21.** [[PDF]](https://dl.acm.org/doi/pdf/10.1145/3442188.3445922)
+    * **Por qué leerlo:** Es el *paper* académico de referencia para los **Críticos Técnicos**. Acuña el término **"Loros Estocásticos"**, explicando formalmente por qué la fluidez gramatical de los LLM no implica comprensión semántica ni intención.
+
+* **Executive Office of the President. (2025). "Executive Order on Preventing Woke AI in the Federal Government". The White House.** [[Web]](https://www.whitehouse.gov/)
+    * **Por qué leerlo:** Documento legal clave que marca el fin de la neutralidad técnica. Oficializa la postura de la **"IA Anti-Woke"**, redefiniendo los filtros de seguridad (safety) como sesgo ideológico y estableciendo las bases políticas para la fragmentación de la IA.
+
+* **Amodei, D. (2023). "Oversight of A.I.: Rules for Artificial Intelligence". U.S. Senate Testimony.** [[PDF]](https://www.judiciary.senate.gov/)
+    * **Por qué leerlo:** Testimonio esencial para entender la postura de los **Líderes Institucionales**. El CEO de Anthropic detalla por qué la gobernanza —y no solo la capacidad técnica— es el "problema central" para evitar riesgos catastróficos.
+
+---
+
 ### Sobre el Bloque 1: Los Fundamentos
 
 *(Ingeniería de Prompts, Contexto y Datos)*
