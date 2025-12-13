@@ -80,8 +80,8 @@ Este fenómeno ocurre cuando el supervisor humano, al ver que el agente opera de
 * **Metáfora:** El Agente es un "Director de División" (un "Agente de Agentes").  
 * **Flujo:** El humano solo define la "Intención Estratégica" (el Prompt, pero a nivel de misión).  
 * **Interacción:**  
-  * *Humano (Estratega):* "Nuestro objetivo este trimestre es reducir la fuga de clientes en un 5%. Tiene un presupuesto de $1.000."  
-  * *Agente Director:* "Entendido." (Activa autónomamente a otros agentes para analizar, diseñar y ejecutar la campaña).  
+    * *Humano (Estratega):* "Nuestro objetivo este trimestre es reducir la fuga de clientes en un 5%. Tiene un presupuesto de $1.000."  
+    * *Agente Director:* "Entendido." (Activa autónomamente a otros agentes para analizar, diseñar y ejecutar la campaña).  
 * **Cuándo Usar:** Tareas estratégicas complejas donde el "cómo" es menos importante que el "qué".
 
 Este nivel de sinergia, donde el humano define la "intención estratégica" y el agente la ejecuta, es precisamente lo que el sondeo global de 2025 identifica como la mentalidad de las empresas de "alto rendimiento". Estas organizaciones son 3.6 veces más propensas que sus pares a usar la IA para una "transformación fundamental" de su negocio, en lugar de solo mejoras incrementales. Su éxito se correlaciona directamente con líderes senior que demuestran un fuerte "compromiso y propiedad" de las iniciativas de IA, definiendo objetivos de "crecimiento e innovación" que los agentes autónomos deben perseguir.
