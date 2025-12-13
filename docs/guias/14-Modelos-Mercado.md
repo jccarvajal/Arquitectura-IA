@@ -50,7 +50,7 @@ Antes de analizar el mercado de "motores" (modelos), es crucial entender la arqu
 
 Presentada en 2017 por Google, esta arquitectura es el motor detrás de casi todos los modelos que dominan el panorama 2025-2026, incluyendo las familias GPT (OpenAI), Gemini (Google), Claude (Anthropic) y los principales modelos open-source como Llama (Meta) y Mistral.
 
-**¿Qué es y por qué domina?**
+#### ¿Qué es y por qué domina?
 
 El Transformer resolvió el problema de cómo "entender" secuencias de texto a gran escala. Su innovación clave es el mecanismo de **"auto-atención" (self-attention)**, que permite al modelo sopesar la importancia de diferentes palabras en una oración, sin importar qué tan lejos estén unas de otras.
 
@@ -58,7 +58,7 @@ Es esta capacidad de "ver" y "conectar" el contexto completo de un texto lo que 
 
 **La Limitación Estratégica**
 
-Sin embargo, esta arquitectura tiene dos implicaciones estratégicas que impactan directamente en el "Triángulo de Adquisición" (Rendimiento, Control, Costo):
+:   Sin embargo, esta arquitectura tiene dos implicaciones estratégicas que impactan directamente en el "Triángulo de Adquisición" (Rendimiento, Control, Costo):
 
 1. **Costo de Escalado (Costo):** El mecanismo de auto-atención es computacionalmente intensivo. Su costo y uso de memoria crecen cuadráticamente con la longitud del contexto. Duplicar la longitud de un documento no duplica el costo, sino que lo cuadruplica (o más), lo que encarece la operación a gran escala.
 2. **Naturaleza Estática (Control):** Los Transformers se entrenan en una "foto" masiva del conocimiento (un corpus de datos) y luego se "congelan". No están diseñados para aprender de forma continua o para integrar nueva información después de su entrenamiento, un desafío que exploramos en la Guía 17: Perspectivas.
@@ -99,9 +99,10 @@ Este anexo se enfoca en cómo los proveedores "empaquetan" esa arquitectura, con
     1. **Costo de Infraestructura:** Requiere hardware GPU dedicado y un equipo de ingeniería capaz de gestionar la *Industrialización* (el proceso de escalar prototipos a producción).
     2. **Responsabilidad de Seguridad Total:** A diferencia de las APIs, donde el proveedor gestiona la seguridad, aquí el modelo es vulnerable. Las técnicas de seguridad nativas (como el "desaprendizaje" de conceptos dañinos) son inmaduras y pueden revertirse fácilmente con un ajuste fino mínimo. Si no construyes tu propia capa de seguridad (LOSA), el modelo está desprotegido.
 
-> **Actualización de Mercado (Nov 2025):** La brecha de capacidad se ha cerrado. Actualmente, los modelos abiertos de vanguardia tienen un retraso de **menos de un año** respecto a los modelos de frontera cerrados.
-> 
-> *Implicancia:* La decisión de usar Open-Source ya no implica sacrificar inteligencia. El *trade-off* ha cambiado: ganas potencia y soberanía, pero asumes el 100% de la carga de la ciberseguridad, ya que las salvaguardas del proveedor se pueden desactivar.
+!!! abstract "Actualización de Mercado (Nov 2025)"
+    La brecha de capacidad se ha cerrado. Actualmente, los modelos abiertos de vanguardia tienen un retraso de **menos de un año** respecto a los modelos de frontera cerrados.
+
+    *Implicancia:* La decisión de usar Open-Source ya no implica sacrificar inteligencia. El *trade-off* ha cambiado: ganas potencia y soberanía, pero asumes el 100% de la carga de la ciberseguridad, ya que las salvaguardas del proveedor se pueden desactivar.
 
 **C. Agentes-como-Servicio (AaaS) \- "Contratar al Especialista"**
 
@@ -141,8 +142,9 @@ El "Agente Enrutador" (que puede ser un "Agente Director") es un "cerebro" metac
 5. **Agente Enrutador (Razona):** "Esto es 'complejo' y de 'contexto largo'. Además, los datos son 'sensibles'. Necesito 'Control' total."  
 6. **Agente Enrutador (Actúa):** Llama al modelo Open-Source (Ecosistema B) hosteado localmente para garantizar la soberanía de los datos. 
 
-**Beneficio:** Obtienes el máximo Rendimiento cuando lo necesitas y el máximo Control y Costo-eficiencia cuando no. Has optimizado el "Triángulo de Adquisición".  
-**Validación de Mercado (2025):** Esta estrategia de portafolio ("Comprar" o "Arrendar" en lugar de "Construir" todo desde cero) no es solo teórica. Informes de la industria de 2025 (como el "State of AI in Business" del MIT) revelan que las iniciativas de "Comprar" (asociaciones estratégicas) tienen el **doble de tasa de éxito** (aprox. 66%) que las de "Construir" (desarrollo interno) (aprox. 33%).
+**Beneficio:** Obtienes el máximo Rendimiento cuando lo necesitas y el máximo Control y Costo-eficiencia cuando no. Has optimizado el "Triángulo de Adquisición". 
+
+> **Validación de Mercado (2025):** Esta estrategia de portafolio ("Comprar" o "Arrendar" en lugar de "Construir" todo desde cero) no es solo teórica. Informes de la industria de 2025 (como el "State of AI in Business" del MIT) revelan que las iniciativas de "Comprar" (asociaciones estratégicas) tienen el **doble de tasa de éxito** (aprox. 66%) que las de "Construir" (desarrollo interno) (aprox. 33%).
 
 ---
 
