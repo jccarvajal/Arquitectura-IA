@@ -56,6 +56,50 @@ graph LR
     end
 ```
 
+```mermaid
+graph LR
+    Invest([💰 Inversión IA]) --> Evaluacion{¿Genera Valor?}
+
+    %% ZONA AZUL
+    Evaluacion -->|Largo Plazo| Blue[🟦 ZONA AZUL: Sistémico]
+    subgraph Z_Blue [Habilitadores]
+        direction TB
+        Blue --> B1(Infraestructura Datos)
+        Blue --> B2(Auditoría / LOSA)
+    end
+    
+    %% ZONA ROJA
+    Evaluacion -->|Alto Riesgo| Red[🟥 ZONA ROJA: Destrucción]
+    subgraph Z_Red [Riesgo: Destrucción]
+        direction TB
+        Red --> R1(Decisión Autónoma S2)
+    end
+
+    %% ZONA NARANJA
+    Evaluacion -->|Marketing| Orange[🟧 ZONA NARANJA: Vanidosos]
+    subgraph Z_Orange [Riesgo: Vanidad]
+        direction TB
+        Orange --> O1(Chatbots Tontos)
+    end
+
+    %% ZONA AMARILLA
+    Evaluacion -->|Sí, pero complejo| Yellow[🟨 ZONA AMARILLA: Tácticos]
+    subgraph Z_Yellow [Depende de Ejecución]
+        direction TB
+        Yellow --> Y1(Chatbots Normativos)
+        Yellow --> Y2(Triage Automático)
+    end
+
+    %% ZONA VERDE
+    Evaluacion -->|Sí, Probado| Green[🟩 ZONA VERDE: Ganadores]
+    subgraph Z_Green [Rentabilidad Clara]
+        direction TB
+        Green --> G1(Mantenimiento Predictivo)
+        Green --> G2(Fraude y Riesgo)
+        Green --> G3(Eficiencia Operativa)
+    end
+```
+
 * 🟩 **Zona Verde (Ganadores):** Proyectos con ROI alto, madurez probada y beneficios financieros o físicos inmediatos.
 * 🟨 **Zona Amarilla (Tácticos):** ROI positivo pero condicional; depende de la calidad de los datos y la disciplina en la ejecución.
 * 🟧 **Zona Naranja (Vanidosos):** Proyectos que no destruyen la empresa, pero queman presupuesto y credibilidad.
