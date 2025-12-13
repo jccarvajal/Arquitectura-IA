@@ -193,9 +193,11 @@ En este ejemplo, tu objetivo es crear un email de marketing persuasivo.
 Este chat está pre-cargado con el "Método de Prompting en 7 Pasos" (Guía 02).
 
 * 👤 **Usuario (Define el Objetivo):**
+    
     `Quiero un prompt para un email de marketing para un nuevo software de contabilidad. El público son gerentes de finanzas.`
 
 * 💭 **Agente Taller (Razonamiento Estructurado):**
+    
     `El usuario necesita un prompt (Paso 1). Mi trabajo es aplicar los 7 Pasos (Rol, Restricciones, Formato) para construir el prompt óptimo.`
 
 * ⚙️ **Agente Taller (Actúa - Genera el Prompt):**
