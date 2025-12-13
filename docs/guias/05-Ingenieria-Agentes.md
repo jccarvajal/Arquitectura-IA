@@ -125,6 +125,7 @@ Las herramientas son funciones de código (APIs, scripts Python) que conectan el
 Aquí reside el verdadero arte de la ingeniería. El *trade-off* ya no es solo costo vs. latencia, sino **Autonomía vs. Seguridad**.
 
 * **Correa Suelta (Autonomía Total):**
+
     `"OK Agente, aquí tienes $100 y mi tarjeta de crédito. Reserva el mejor viaje."`
     
     * *Riesgo Antiguo (Alucinación):* Poderoso, pero aterrador. El agente podría reservar el hotel equivocado o enviar un email vergonzoso.
@@ -132,6 +133,7 @@ Aquí reside el verdadero arte de la ingeniería. El *trade-off* ya no es solo c
     * *Mitigación:* Aquí es donde implementamos **"Circuit Breakers"** (límites duros de iteración, ej. `max_steps=15`) para cortar la ejecución forzosamente.
 
 * **Correa Corta (Control Total):**
+    
     `"OK Agente, dime tu primer paso.... OK, apruebo ese paso, ejecútalo.... OK, muéstrame el resultado.... Ahora, dime tu segundo paso."`
     
     * *Riesgo:* 100% seguro, pero lento y tedioso. Básicamente, volvemos a la ingeniería de prompts manual y perdemos el beneficio de tener un trabajador digital.
@@ -191,33 +193,29 @@ En este ejemplo, tu objetivo es crear un email de marketing persuasivo.
 Este chat está pre-cargado con el "Método de Prompting en 7 Pasos" (Guía 02).
 
 * 👤 **Usuario (Define el Objetivo):**
-    ```text
-    Quiero un prompt para un email de marketing para un nuevo software de contabilidad. El público son gerentes de finanzas.
-    ```
+    `Quiero un prompt para un email de marketing para un nuevo software de contabilidad. El público son gerentes de finanzas.`
 
 * 💭 **Agente Taller (Razonamiento Estructurado):**
-    ```text
-    El usuario necesita un prompt (Paso 1). Mi trabajo es aplicar los 7 Pasos (Rol, Restricciones, Formato) para construir el prompt óptimo.
-    ```
+    `El usuario necesita un prompt (Paso 1). Mi trabajo es aplicar los 7 Pasos (Rol, Restricciones, Formato) para construir el prompt óptimo.`
 
 * ⚙️ **Agente Taller (Actúa - Genera el Prompt):**
-    ```text
-    Aquí tienes un prompt de "Nivel Arquitecto", optimizado según la Guía 02:
-  
+    ```yaml
+    mensaje: "Aquí tienes un prompt de 'Nivel Arquitecto', optimizado según la Guía 02:"
+    prompt_generado: |
     [INICIO DEL PROMPT GENERADO]
     Actúa como un experto en redacción de marketing B2B, especializado en el sector financiero. 
     Tu audiencia son Gerentes de Finanzas con poco tiempo.
     Tu tarea es redactar un email que presente nuestro nuevo "Software de Contabilidad Quantum".
-    
+
     <restricciones>
-      1. El tono debe ser profesional, directo y centrado en el ROI.
-      2. El email NO debe exceder las 150 palabras.
-      3. El asunto debe ser corto y persuasivo.
+        1. El tono debe ser profesional, directo y centrado en el ROI.
+        2. El email NO debe exceder las 150 palabras.
+        3. El asunto debe ser corto y persuasivo.
     </restricciones>
-  
+
     <formato_requerido>
-      Asunto: [Tu Asunto Aquí]
-      Cuerpo: [Tu Email Aquí]
+        Asunto: [Tu Asunto Aquí]
+        Cuerpo: [Tu Email Aquí]
     </formato_requerido>  
     [FIN DEL PROMPT GENERADO]
     ```
