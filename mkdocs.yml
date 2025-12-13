@@ -37,6 +37,7 @@ theme:
 markdown_extensions:
   - admonition
   - pymdownx.details
+  - def_list
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
