@@ -146,45 +146,33 @@ Si RAG es la biblioteca (estática), la Memoria es el "bloc de notas" (dinámico
 Para que la memoria sea dinámica, el agente debe tener permiso para usarla. Bajo el patrón "Memory-as-a-Tool", el agente utiliza su **Ciclo de Razonar-Actuar (ReAct)** para decidir cuándo leer o escribir en su "bloc de notas":
 
 1.  **El Usuario da Información (Lunes):**
-    * 👤 Usuario:
-      ```text
-      Mi proyecto clave se llama 'Alfa' y la fecha límite es el 15 de noviembre.
-      ```
-    * 💭 Agente (Razona):
-      ```text
-      Dato fáctico importante para el futuro. Debo usar mi herramienta `escribir_nota`.
-      ```
+    * 👤 Usuario: 
+        `Mi proyecto clave se llama 'Alfa' y la fecha límite es el 15 de noviembre.`
+    * 💭 Agente (Razona): 
+        `Dato fáctico importante para el futuro. Debo usar mi herramienta "escribir_nota".`
     * ⚙️ Agente (Actúa):
-      ```yaml
-      acción: escribir_nota
-      argumentos:
-        llave: proyecto_alfa
-        valor: "2025-11-15"
-      ```
+        ```yaml
+        acción: escribir_nota
+        argumentos:
+          llave: proyecto_alfa
+          valor: "2025-11-15"
+        ```
 
 2.  **El Usuario Pregunta (Martes, Pizarra Limpia):**
-    * 👤 Usuario:
-      ```text
-      ¿Cuánto falta para la entrega del proyecto 'Alfa'?
-      ```
+    * 👤 Usuario: 
+        `¿Cuánto falta para la entrega del proyecto 'Alfa'?`
     * 💭 Agente (Razona): 
-      ```text
-      No sé qué es 'Alfa' en mi contexto actual. Antes de responder, debo revisar mi bloc de notas.
-      ```
+        `No sé qué es 'Alfa' en mi contexto actual. Antes de responder, debo revisar mi bloc de notas.`
     * ⚙️ Agente (Actúa):
-      ```yaml
-      acción: leer_nota
-      argumentos:
-        llave: proyecto_alfa
-      ```
+        ```yaml
+        acción: leer_nota
+        argumentos:
+          llave: proyecto_alfa
+        ```
     * 💭 Agente (Observa):
-      ```text
-      Resultado: {"deadline": "2025-11-15"}
-      ```
+        `Resultado: {"deadline": "2025-11-15"}`
     * 💬 Agente (Responde):
-      ```text
-      "Según mis notas, faltan 22 días para el proyecto 'Alfa'."
-      ```
+        `"Según mis notas, faltan 22 días para el proyecto 'Alfa'."`
 
 **Solución 4. Arquitecturas de Agentes (Los "Sub-Agentes")**
 
