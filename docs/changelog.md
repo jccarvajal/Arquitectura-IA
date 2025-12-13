@@ -6,22 +6,29 @@ Este documento registra todas las modificaciones estructurales, técnicas y conc
 
 ## Versión 1.3 (Diciembre 2025)
 
-**Motivo:** Consolidación del concepto de "Agencia Humana" y actualización mayor de infraestructura. Migración a plataforma de documentación técnica (MkDocs) y validación filosófica post-lanzamiento (Innerarity).
+**Motivo:** Consolidación del concepto de "Agencia Humana", integración del marco de **Soberanía y Geopolítica**, y actualización mayor de infraestructura (Migración a MkDocs). Se establece la tesis central de la gobernanza como ingeniería.
+
+### Actualizaciones Estratégicas (Geopolítica y Soberanía)
+* **Tesis Central de Gobernanza (Guía 15):** Se incorporó explícitamente la definición fundacional del enfoque GRC del libro: *"La gobernanza no es burocracia legal, es ingeniería de control"*, moviendo el foco de la normativa documental a la arquitectura de sistemas.
+* **Prólogo (La Fractura Geopolítica):** Nueva sección "El Veredicto" que analiza el fin de la neutralidad técnica y la competencia entre bloques de IA (Woke vs. Anti-Woke).
+* **Guía 15 (Reingeniería):** Renombrada a *"Ética, Soberanía y Confianza"*.
+    * **Nueva Parte 5:** Se añadió "Estrategia: Soberanía y Alineación", introduciendo la **Matriz de Decisión** para elegir entre modelos SaaS (Safety-First) y Open Weights (Soberanos) según el riesgo de censura y ubicación de datos.
+    * **Riesgo 2.1:** Se profundizó en la "Politización de la Arquitectura" y el sesgo de diseño.
 
 ### Actualizaciones Conceptuales (La Capa de Agencia)
-
 * **Conclusión (Nueva Sección):** Se añadió "La Construcción de la Agencia", integrando la visión de Daniel Innerarity sobre la gobernanza como un acto de negociación entre oferta tecnológica y demanda humana.
-* **Guía 15 (Nuevo Riesgo):** Se incorporó la "Politización de la Arquitectura" (Riesgo 2.1), abordando el sesgo intencional de diseño (Caso Grok) y la no-neutralidad de los modelos.
-* **Bibliografía Blindada:** Inclusión de referencias críticas sobre teoría política de la IA en el Anexo F.
+* **Glosario Expandido:** Nuevos términos críticos: *IA Soberana (Sovereign AI)*, *Alineación Nacional*, *Problema de la Contención* y *Abdicación vs. Aumento*.
 
 ### Actualizaciones de Infraestructura y Visualización
-
-* **Migración a MkDocs:** El repositorio migró de Jekyll a **MkDocs (Material Theme)** para mejorar la navegación, la búsqueda y la experiencia de lectura técnica.
+* **Migración a MkDocs:** El repositorio migró de Jekyll a MkDocs (Material Theme) para mejorar la navegación, la búsqueda y la experiencia de lectura técnica.
 * **Diagramas Vivos (Mermaid.js):** Se reemplazaron descripciones estáticas por diagramas de código renderizados en tiempo real para conceptos críticos:
-    * **Ciclo ReAct** (Guía 05).
-    * **Arquitectura RAG vs Fine-Tuning** (Guía 07).
-    * **Arquitectura LOSA** (Guía 09).
-    * **Mapa de ROI** (Guía 12).
+    * Ciclo ReAct (Guía 05).
+    * Arquitectura RAG vs Fine-Tuning (Guía 07).
+    * Arquitectura LOSA (Guía 09).
+    * Mapa de ROI (Guía 12).
+
+### Referencias y Documentación
+* **Bibliografía Blindada:** Nuevo bloque de referencias sobre **Geopolítica y Seguridad** (Anexo F), incluyendo órdenes ejecutivas recientes (2025), *papers* académicos (Loros Estocásticos) y literatura de estrategia (Suleyman/Amodei).
 
 ---
 
