@@ -183,11 +183,12 @@ Para diseñar tu portafolio, usa este proceso:
 
 Para operar en un mercado global, el Arquitecto debe adoptar los estándares contractuales más altos disponibles. Analizamos el modelo de la **Directiva N°44** (un estándar gubernamental de referencia en Latam y la OCDE) como un *benchmark* de cómo las organizaciones maduras se protegen legalmente ante proveedores de IA.
 
-Independientemente de su jurisdicción, este marco propone un catálogo de cláusulas universales que cualquier empresa debería replicar en sus contratos:
+!!! abstract "Nota del Arquitecto: Cláusulas Contractuales Blindadas (Benchmark 2025)"
+    Independientemente de su jurisdicción, este marco propone 3 cláusulas universales que usted debe exigir a cualquier proveedor de IA para proteger su IP:
 
-* **Cláusula de "Caja Negra" (Explicabilidad):** Exigir al proveedor mecanismos técnicos que permitan comprender *por qué* el modelo llegó a una decisión. La norma es no aceptar modelos opacos (Black Box) para decisiones críticas de negocio.
-* **Propiedad Intelectual del "Fine-Tuning":** Definir explícitamente la propiedad de los pesos neuronales. Si usted paga por el entrenamiento, los pesos resultantes ("el cerebro ajustado") deben ser suyos, no del proveedor.
-* **Evaluación de Impacto (DPIA):** Exigir una "Evaluación de Impacto en Protección de Datos" antes de la adjudicación, para mapear riesgos de privacidad antes de escribir código.
+    1.  **Contra la "Caja Negra" (Explicabilidad):** Exigir al proveedor mecanismos técnicos que permitan trazar *por qué* el modelo llegó a una decisión crítica. La norma es no aceptar modelos opacos (Black Box) para decisiones críticas de negocios.
+    2.  **Propiedad Intelectual del "Fine-Tuning" (IP):** Definir explícitamente que los "pesos neuronales" resultantes de un ajuste fino le pertenecen a usted. *Si usted pagó el entrenamiento, el "cerebro" es suyo, no del proveedor.*
+    3.  **Evaluación de Impacto (DPIA):** Exigir un mapeo de riesgos de privacidad y sesgos *antes* de la adjudicación, no durante el desarrollo.
 
 **Herramienta:** Aunque este es un documento de origen público (Bases Tipo de Ciencia de Datos), su estructura técnica actúa como un estándar de referencia internacional para definir SLAs (Niveles de Servicio), perfiles de equipo e hitos de pago aplicables a cualquier industria privada.
 
