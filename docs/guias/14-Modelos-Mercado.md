@@ -52,13 +52,13 @@ Presentada en 2017 por Google, esta arquitectura es el motor detrás de casi tod
 
 **¿Qué es y por qué domina?**
 
-: El Transformer resolvió el problema de cómo "entender" secuencias de texto a gran escala. Su innovación clave es el mecanismo de **"auto-atención" (self-attention)**, que permite al modelo sopesar la importancia de diferentes palabras en una oración, sin importar qué tan lejos estén unas de otras.
+El Transformer resolvió el problema de cómo "entender" secuencias de texto a gran escala. Su innovación clave es el mecanismo de **"auto-atención" (self-attention)**, que permite al modelo sopesar la importancia de diferentes palabras en una oración, sin importar qué tan lejos estén unas de otras.
 
 Es esta capacidad de "ver" y "conectar" el contexto completo de un texto lo que les da su poder para razonar, traducir y generar lenguaje con coherencia.
 
 **La Limitación Estratégica**
 
-: Sin embargo, esta arquitectura tiene dos implicaciones estratégicas que impactan directamente en el "Triángulo de Adquisición" (Rendimiento, Control, Costo):
+Sin embargo, esta arquitectura tiene dos implicaciones estratégicas que impactan directamente en el "Triángulo de Adquisición" (Rendimiento, Control, Costo):
 
 1. **Costo de Escalado (Costo):** El mecanismo de auto-atención es computacionalmente intensivo. Su costo y uso de memoria crecen cuadráticamente con la longitud del contexto. Duplicar la longitud de un documento no duplica el costo, sino que lo cuadruplica (o más), lo que encarece la operación a gran escala.
 2. **Naturaleza Estática (Control):** Los Transformers se entrenan en una "foto" masiva del conocimiento (un corpus de datos) y luego se "congelan". No están diseñados para aprender de forma continua o para integrar nueva información después de su entrenamiento, un desafío que exploramos en la Guía 17: Perspectivas.
