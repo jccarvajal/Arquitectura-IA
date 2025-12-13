@@ -8,7 +8,9 @@ En las guías anteriores, completamos el viaje de construir y operar nuestra fá
 
 Hasta ahora, nuestra metáfora ha sido la de un "Director" o "Gobernador": un humano externo al sistema que da órdenes y monitorea. Esta guía rompe esa barrera. El objetivo ya no es cómo delegamos tareas, sino cómo nos fusionamos con la IA. Dejamos de ser "Directores de Orquesta" y nos convertimos en "Socios Cognitivos" o "Co-Pilotos Estratégicos".
 
-Ahora, comienza el verdadero desafío: **Escalar**. Escalar la tecnología es un problema técnico. Escalar a las personas es un desafío de liderazgo, cultura y **Riesgo**. Esta guía es el manual para la *'Gestión del Cambio'* y para definir el pilar del **Cumplimiento** ético de nuestro marco *GRC*.
+Ahora, comienza el verdadero desafío: **Escalar**. Escalar la tecnología es un problema técnico. Escalar a las personas es un desafío de liderazgo, cultura y **Riesgo**. Esta guía es el manual para la *'Gestión del Cambio'* y para definir el pilar del **Cumplimiento** ético y geopolítico de nuestro marco *GRC*.
+
+Para este enfoque, estableceremos una premisa fundamental: **La gobernanza no es burocracia legal, es ingeniería de control.** No buscaremos "cumplir normas" mediante documentos estáticos, sino diseñar arquitecturas y mecanismos (como la validación humana o la soberanía de infraestructura) donde la seguridad y la ética sean propiedades inevitables del sistema, no solo buenas intenciones.
 
 ---
 
