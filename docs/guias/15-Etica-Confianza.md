@@ -116,6 +116,8 @@ Respuesta: Su valor ha cambiado. Su trabajo ya no es hacer tareas de Sistema 1, 
 
 #### La Resistencia Inmunológica: Gestión del Sabotaje
 
+La implementación de agentes autónomos a menudo choca con una barrera invisible que no aparece en los diagramas de arquitectura técnica. Las organizaciones poseen mecanismos de defensa diseñados para proteger el *status quo*, y es vital entender que este rechazo rara vez es malicioso; es una respuesta racional a una estructura de incentivos obsoleta.
+
 !!! abstract "Nota del Arquitecto: El Incentivo Perverso del Middle-Management"
     El mayor enemigo de la implementación no es técnico, es político. En la economía corporativa tradicional, el poder de un gerente se mide por su *headcount* (cuántas personas tiene a cargo).
     
