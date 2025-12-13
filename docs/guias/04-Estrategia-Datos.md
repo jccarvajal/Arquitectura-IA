@@ -44,12 +44,20 @@ Las Políticas del "Arquitecto de la Información":
         }
 2. **Protección y Control de Acceso:** No todos los agentes deben leerlo todo. El acceso a los datos debe cumplir con los marcos legales  sobre protección de datos personales y sensibles (como la Ley N° 19.628 en Chile).
     * *Política:* El "Agente de Soporte al Cliente" solo puede "leer" (RAG) documentos con la etiqueta:
-        `{ sensibilidad: 'Público' }`
+        ```json
+        { sensibilidad: 'Público' }
+        ```
     * *Política:* El "Agente Legal" solo puede "leer" (RAG) documentos con la etiqueta:
-        `{ sensibilidad: 'Confidencial' }`
+        ```json 
+        { sensibilidad: 'Confidencial' }
+        ```
 3. **Gestión del Ciclo de Vida (Archivado):** Los datos obsoletos son peligrosos; son el combustible de las alucinaciones factuales.  
-    * *Política:*
-        `Cualquier documento con más de X tiempo (ej. 2 años) de antigüedad o que sea reemplazado por una versión nueva debe ser automáticamente archivado (retirado de la biblioteca RAG).`
+    * *Regla de Automatización:*
+        ```python
+        # Si el documento tiene más de 2 años (730 días), se archiva.
+        if (fecha_actual - documento.fecha) > 730:
+            sistema.archivar_documento(documento.id)
+        ```
 
 ---
 
@@ -74,25 +82,27 @@ Las Políticas del "Arquitecto de la Información":
 
 El "Arquitecto de la Información" debe decidir qué combustible usar.
 
-**1. Datos Internos (El "Petróleo Crudo" Propietario)**
+**1\. Datos Internos (El "Petróleo Crudo" Propietario)**
 
 * **Qué es:** Tus PDFs, emails, bases de datos SQL, transcripciones de Zoom.  
 * **Ventaja:** Es tu "foso" competitivo (tu ventaja estratégica). Nadie más los tiene.  
 * **Desventaja:** Están sucios. Son caóticos, desorganizados y llenos de opiniones (no solo hechos). Requieren el pipeline "ETL-V" más costoso.
 
-**2. Datos Externos / Premium (El "Combustible Refinado")**
+**2\. Datos Externos / Premium (El "Combustible Refinado")**
 
 * **Qué es:** Pagar por acceso a bases de datos curadas y limpias.  
 * **Ejemplo:** Pagar una suscripción a una API legal (LexisNexis), una base de datos financiera (Bloomberg) o un repositorio científico (Elsevier).  
 * **Ventaja:** Datos limpios, estructurados y actualizados al minuto. Ahorras 100% del costo de "ETL".  
 * **Desventaja:** No es propietario. Tu competencia puede (y probablemente lo hace) comprar el mismo combustible.
 
-**3. Datos Sintéticos (El "Combustible de Laboratorio")**
+**3\. Datos Sintéticos (El "Combustible de Laboratorio")**
 
 * **Qué es:** Usar una IA (ej. un modelo potente) para generar los datos que necesitas.  
 * **El Caso de Uso:** Es la fuente de datos para el **Ajuste Fino (Fine-Tuning)**, el proceso de re-entrenar el "cerebro" del modelo para que adquiera una habilidad o estilo específico.  
 * **Ejemplo:** No tienes 1.000 emails de "Voz de Marca". Le pides a un modelo potente:
-    `Actúa como el agente de soporte perfecto. Ahora, genera 1.000 ejemplos de cómo responderías a estas 1.000 quejas de clientes.`
+  ```text
+  Actúa como el agente de soporte perfecto. Ahora, genera 1.000 ejemplos de cómo responderías a estas 1.000 quejas de clientes.
+  ```
 * **Ventaja:** Puedes crear "combustible" perfectamente limpio y formateado para tareas donde no tienes datos del mundo real.  
 * **Desventaja:** Riesgo de "endogamia". Si usas una IA para entrenar a otra IA, corres el riesgo de que ambas aprendan y amplifiquen los mismos errores o sesgos.
 
