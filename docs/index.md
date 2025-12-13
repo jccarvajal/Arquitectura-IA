@@ -137,10 +137,10 @@ Base de conocimiento para alinear equipos y profundizar el criterio.
 
 ## Changelog
 * **v1.3 (Diciembre 2025):** Actualización mayor de arquitectura y gobernanza. 
-    * **Tesis de Ingeniería:** Consolidación del enfoque GRC como "Ingeniería de Control" sobre la burocracia normativa.
-    * **Soberanía y Geopolítica:** Nuevas guías sobre la no-neutralidad de los modelos, IA Soberana y riesgos de politización técnica.
-    * **Agencia Humana:** Integración de la visión de Daniel Innerarity sobre el aumento cognitivo.
-    * **Infraestructura:** Migración a MkDocs y despliegue de diagramas dinámicos (Mermaid.js).
+    * *Tesis de Ingeniería:* Consolidación del enfoque GRC como "Ingeniería de Control" sobre la burocracia normativa.
+    * *Soberanía y Geopolítica:* Nuevas guías sobre la no-neutralidad de los modelos, IA Soberana y riesgos de politización técnica.
+    * *Agencia Humana:* Integración de la visión de Daniel Innerarity sobre el aumento cognitivo.
+    * *Infraestructura:* Migración a MkDocs y despliegue de diagramas dinámicos (Mermaid.js).
 * Ver [Historial Completo](./changelog.md).
 
 ## Sugerencias y Mejoras
