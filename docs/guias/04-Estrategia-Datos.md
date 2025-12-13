@@ -42,6 +42,7 @@ Las Políticas del "Arquitecto de la Información":
         "propietario": "gerencia_riesgos",
         "clasificacion": "confidencial"
         }
+        ```
 2. **Protección y Control de Acceso:** No todos los agentes deben leerlo todo. El acceso a los datos debe cumplir con los marcos legales  sobre protección de datos personales y sensibles (como la Ley N° 19.628 en Chile).
     * *Política:* El "Agente de Soporte al Cliente" solo puede "leer" (RAG) documentos con la etiqueta:
         ```json
