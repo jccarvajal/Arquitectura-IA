@@ -65,6 +65,12 @@ Este principio de validación no es solo una sugerencia ética; es una de las pr
 * **Interacción:** El humano supervisa pasivamente el "Dashboard de Gobernanza". Solo interviene si recibe una alerta.  
 * **Cuándo Usar:** Tareas de riesgo medio que necesitan escalar (ej. clasificar 10.000 tickets, monitorear redes sociales).
 
+!!! warning "Riesgo Operativo: La Complacencia de la Automatización"
+    Aunque este nivel escala bien, introduce un riesgo crítico: **el humano deja de prestar atención**.
+    
+    Si el agente funciona bien el 99% del tiempo, el supervisor humano pierde la capacidad de detectar el error del 1%. El modelo de "alerta" asume peligrosamente que el agente sabe que se equivocó, lo cual es falso en la mayoría de las alucinaciones.
+    *Mitigación:* Implementar auditorías aleatorias ("Spot Checks") obligatorias, incluso si el sistema no reporta errores.
+
 Aunque este nivel es ideal para escalar tareas de riesgo medio, su implementación es compleja. Los informes de la industria se centran en el éxito del Nivel 1 (validación activa)  porque el Nivel 2 introduce un riesgo operacional significativo conocido como la "complacencia de la automatización".
 
 Este fenómeno ocurre cuando el supervisor humano, al ver que el agente opera de forma autónoma con éxito, reduce su atención y confía ciegamente en el sistema. Esto anula el propósito del control, ya que el humano pierde la capacidad de detectar errores sutiles. El modelo de "alerta" también depende peligrosamente de que el propio agente sea capaz de identificar su propio fallo, lo cual es una suposición arriesgada, dado que el principal riesgo de la IA es la "inexactitud" (o alucinación), que ocurre precisamente porque el agente no sabe que está equivocado.
@@ -110,16 +116,15 @@ Respuesta: Su valor ha cambiado. Su trabajo ya no es hacer tareas de Sistema 1, 
 
 #### La Resistencia Inmunológica: Gestión del Sabotaje
 
-El mayor enemigo de la implementación no es técnico, es político. Las organizaciones tienen un "sistema inmunológico" diseñado para proteger el *status quo*.
-
-A menudo, la IA es percibida por los mandos medios no como una ayuda, sino como una amenaza a su poder. En la economía tradicional corporativa, el poder de un gerente se mide por su *headcount* (cuántas personas tiene a cargo) y su presupuesto.
-
-* **El Incentivo Perverso:** Si un "Agente PM" hace el trabajo de 5 analistas, el gerente racional teme perder a 5 personas y, por ende, perder estatus y presupuesto.
-* **El Síntoma (Sabotaje Pasivo):** El gerente dirá: "La IA no entiende nuestro negocio", "Es muy arriesgado", o esconderá las ganancias de eficiencia para no sufrir recortes.
-* **La Cura (Realineación de Incentivos):** Como Director de Transformación, debes cambiar la métrica de poder.
-    * *Antigua Métrica:* "Poder = Tamaño del equipo". (Incentiva la burocracia).
-    * *Nueva Métrica:* "Poder = Impacto/Margen por empleado". (Incentiva la eficiencia).
-    * *Acción:* Premia públicamente al gerente que logra *más* resultados con el *mismo* equipo (usando IA para escalar servicios), no al que pide más contrataciones. Solo cuando cambias el incentivo, desactivas el sistema inmunológico.
+!!! abstract "Nota del Arquitecto: El Incentivo Perverso del Middle-Management"
+    El mayor enemigo de la implementación no es técnico, es político. En la economía corporativa tradicional, el poder de un gerente se mide por su *headcount* (cuántas personas tiene a cargo).
+    
+    * **El Problema:** Si un "Agente PM" hace el trabajo de 5 analistas, el gerente racional teme perder presupuesto y estatus. Esto genera **sabotaje pasivo**.
+    * **La Cura:** Debes cambiar la métrica de poder.
+        * *Antigua:* "Poder = Tamaño del equipo".
+        * *Nueva:* "Poder = Impacto/Margen por empleado".
+    
+    Premia públicamente al gerente que logra *más* resultados con el *mismo* equipo gracias a la IA, no al que pide más contrataciones. Solo cuando cambias el incentivo, desactivas el sistema inmunológico.
 
 ---
 
@@ -205,7 +210,8 @@ Si tu producto depende 100% de una API cerrada (como OpenAI o Anthropic) alojada
 **La Estrategia de "Open Weights" (Pesos Abiertos)**
 Para infraestructuras críticas o gubernamentales, la única ética viable es la **Soberanía**. Esto implica utilizar modelos de **Pesos Abiertos** (como Llama de Meta o Mistral) alojados en servidores propios (*On-Premise*).
 
-> **Regla de Oro:** Si tienes los pesos del modelo en tu servidor, nadie puede cambiar su alineación, censurarlo o apagarlo remotamente. Tienes el control total del "cerebro" de tu operación.
+!!! tip "La Regla de Oro de la Soberanía"
+    Si tienes los **pesos** del modelo en tu servidor, nadie puede cambiar su alineación, censurarlo o apagarlo remotamente. Tienes el control total del "cerebro" de tu operación.
 
 **Matriz de Decisión: Ética y Estrategia**
 
