@@ -1,0 +1,2278 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Guías para Decidir, Diseñar y Gobernar sistemas de IA.">
+      
+      
+        <meta name="author" content="Juan Carlos Carvajal">
+      
+      
+        <link rel="canonical" href="https://ia.jccarvajal.com/guias/02-Ingenieria-Prompts/">
+      
+      
+        <link rel="prev" href="../01-Anatomia-Modelos/">
+      
+      
+        <link rel="next" href="../03-Contexto-Memoria/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Guía 02 - Prompts - Arquitectura de Inteligencia Artificial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#guia-02-la-guia-definitiva-de-la-ingenieria-de-prompts" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Arquitectura de Inteligencia Artificial" class="md-header__button md-logo" aria-label="Arquitectura de Inteligencia Artificial" data-md-component="logo">
+      
+  <img src="../../assets/images/portada.jpeg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Arquitectura de Inteligencia Artificial
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Guía 02 - Prompts
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../nota-al-lector/" class="md-tabs__link">
+          
+  
+  
+  Introducción
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../01-Anatomia-Modelos/" class="md-tabs__link">
+          
+  
+  
+  Bloque 1 - Fundamentos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../05-Ingenieria-Agentes/" class="md-tabs__link">
+          
+  
+  
+  Bloque 2 - Construcción
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../09-Gobernanza/" class="md-tabs__link">
+          
+  
+  
+  Bloque 3 - Operación
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../13-Estrategia-Valor/" class="md-tabs__link">
+          
+  
+  
+  Bloque 4 - Estrategia
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../17-Perspectivas/" class="md-tabs__link">
+          
+  
+  
+  Bloque 5 - Futuro
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../conclusion/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Conclusión
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../anexos/A-Formulacion-Viabilidad/" class="md-tabs__link">
+          
+  
+  
+  Anexos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../changelog/" class="md-tabs__link">
+          
+  
+  
+  Acerca de
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Arquitectura de Inteligencia Artificial" class="md-nav__button md-logo" aria-label="Arquitectura de Inteligencia Artificial" data-md-component="logo">
+      
+  <img src="../../assets/images/portada.jpeg" alt="logo">
+
+    </a>
+    Arquitectura de Inteligencia Artificial
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Introducción
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nota-al-lector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nota al Lector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prologo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prólogo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ideas-centrales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ideas Centrales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloque 1 - Fundamentos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bloque 1 - Fundamentos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-Anatomia-Modelos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 01 - Anatomía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 02 - Prompts
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 02 - Prompts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#guia-02-la-guia-definitiva-de-la-ingenieria-de-prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guía 02: La Guía Definitiva de la Ingeniería de Prompts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Guía 02: La Guía Definitiva de la Ingeniería de Prompts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduccion-de-la-instruccion-a-la-ingenieria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introducción: De la Instrucción a la Ingeniería
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conceptos-fundamentales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conceptos Fundamentales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-1-el-metodo-de-prompting-en-7-pasos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 1: El Método de Prompting en 7 Pasos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-2-tecnicas-avanzadas-de-prompting-herramientas-de-precision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 2: Técnicas Avanzadas de Prompting (Herramientas de Precisión)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-3-maximizando-el-valor-que-tecnicas-usar-en-cada-paso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 3: Maximizando el Valor: Qué Técnicas Usar en Cada Paso
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion-de-usuario-a-arquitecto-de-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusión: De Usuario a Arquitecto de Resultados
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-Contexto-Memoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 03 - Contexto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-Estrategia-Datos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 04 - Datos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloque 2 - Construcción
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bloque 2 - Construcción
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-Ingenieria-Agentes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 05 - Agentes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-Sistemas-Cognitivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 06 - Cognición
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-Fine-Tuning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 07 - Fine-Tuning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-Prototipado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 08 - Prototipado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloque 3 - Operación
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bloque 3 - Operación
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-Gobernanza/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 09 - Gobernanza
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-Evaluacion-Calidad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 10 - QA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-Industrializacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 11 - Industrialización
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-ROI-Financiero/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 12 - ROI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloque 4 - Estrategia
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bloque 4 - Estrategia
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-Estrategia-Valor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 13 - Valor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-Modelos-Mercado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 14 - Modelos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-Etica-Confianza/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 15 - Ética
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-Aprender-A-Pensar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 16 - Operación Cognitiva
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloque 5 - Futuro
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bloque 5 - Futuro
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-Perspectivas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 17 - Perspectivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conclusion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conclusión
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Anexos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexos/A-Formulacion-Viabilidad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A - Formulación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexos/B-Politica-Institucional/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    B - Política
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexos/C-Blueprints/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C - Blueprints
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexos/D-Plantillas-Recursos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D - Plantillas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexos/E-Glosario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    E - Glosario
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexos/F-Bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    F - Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Acerca de
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Acerca de
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Guía 02 - Prompts</h1>
+
+<h2 id="guia-02-la-guia-definitiva-de-la-ingenieria-de-prompts">Guía 02: La Guía Definitiva de la Ingeniería de Prompts<a class="headerlink" href="#guia-02-la-guia-definitiva-de-la-ingenieria-de-prompts" title="Permanent link">&para;</a></h2>
+<p>Subtítulo: El Plano del "Arquitecto de Instrucciones"</p>
+<h3 id="introduccion-de-la-instruccion-a-la-ingenieria">Introducción: De la Instrucción a la Ingeniería<a class="headerlink" href="#introduccion-de-la-instruccion-a-la-ingenieria" title="Permanent link">&para;</a></h3>
+<p>La ingeniería de prompts es la disciplina que convierte la conversación con una IA en un proceso de desarrollo controlado y predecible. No buscamos "charlar", buscamos obtener resultados. Esta guía presenta un método completo que combina una estructura robusta con el juicio práctico necesario para aplicarla eficazmente en el mundo real.</p>
+<hr />
+<h3 id="conceptos-fundamentales">Conceptos Fundamentales<a class="headerlink" href="#conceptos-fundamentales" title="Permanent link">&para;</a></h3>
+<p><strong>¿Qué es un LLM (Large Language Model)?</strong><br />
+Un LLM es un modelo de inteligencia artificial entrenado con un volumen masivo de texto y datos. Su función principal no es “pensar” o “entender” en el sentido humano, sino calcular la probabilidad de la siguiente palabra más probable en una secuencia, basándose en el contexto que le hemos proporcionado. Ejemplos incluyen los modelos de OpenAI, Google y Anthropic.</p>
+<ul>
+<li><strong>Implicación clave:</strong> Como se basan en la probabilidad y el contexto, la calidad de la respuesta depende directamente de la calidad de la instrucción inicial (el prompt).</li>
+</ul>
+<p><strong>¿Qué es un Prompt?</strong><br />
+Es la instrucción, pregunta o conjunto de datos que le proporcionamos al LLM para que genere una respuesta. Puede ser cualquier cosa, desde una simple pregunta hasta un documento complejo.</p>
+<ul>
+<li>
+<p>Ejemplo 1 Simple: <code>¿Cuál es la capital de Chile?</code></p>
+</li>
+<li>
+<p>Ejemplo 1 Detallado:</p>
+<blockquote>
+<p>Actúa como un guía turístico entusiasta. Describe la ciudad de Valparaíso en 150 palabras, enfocándote en su arquitectura colorida y su historia portuaria, para un artículo en una revista de viajes.</p>
+</blockquote>
+</li>
+<li>
+<p>Ejemplo 2 Simple: <code>¿Quién escribió 'Don Quijote'?</code></p>
+</li>
+<li>
+<p>Ejemplo 2 Detallado:</p>
+<blockquote>
+<p>Actúa como un historiador literario especializado en el Siglo de Oro español. Redacta una respuesta de 150 palabras para un estudiante de secundaria explicando no solo quién escribió 'Don Quijote', sino también su relevancia histórica en la literatura universal.</p>
+</blockquote>
+</li>
+</ul>
+<p>La diferencia en la calidad y especificidad de la respuesta entre ambos ejemplos es abismal.</p>
+<hr />
+<h3 id="parte-1-el-metodo-de-prompting-en-7-pasos">Parte 1: El Método de Prompting en 7 Pasos<a class="headerlink" href="#parte-1-el-metodo-de-prompting-en-7-pasos" title="Permanent link">&para;</a></h3>
+<p>Este es un marco de trabajo que te guiará desde la idea inicial hasta un resultado pulido y de alta calidad.</p>
+<p><strong>Paso 1: Define el Objetivo y las Métricas de Éxito (El "Para Qué")</strong>
+Antes de escribir, define con precisión qué resultado necesitas y cómo medirás su éxito.</p>
+<ul>
+<li>
+<p><strong>El Objetivo:</strong> ¿Qué quieres lograr?</p>
+<ul>
+<li><em>Mal Objetivo:</em> <code>Necesito un resumen de un artículo.</code></li>
+<li><em>Buen Objetivo:</em><blockquote>
+<p>Necesito un resumen ejecutivo de 250 palabras del siguiente artículo [texto], enfocado en los tres hallazgos clave y sus implicaciones para nuestro equipo de marketing.</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Las Métricas:</strong> Un objetivo profesional incluye criterios de aceptación medibles.</p>
+<ul>
+<li><em>Ejemplos de Métricas:</em><ul>
+<li><strong>Precisión:</strong> "La respuesta debe incluir 5 cifras exactas del informe, sin errores."</li>
+<li><strong>Formato:</strong> "La salida debe ser un objeto JSON que valide contra este esquema."</li>
+<li><strong>Estilo:</strong> "El texto debe obtener una puntuación de legibilidad superior a 70 en la escala Flesch."</li>
+<li><strong>Contenido:</strong> "Debe mencionar obligatoriamente las palabras clave: 'sostenibilidad', 'logística' y 'optimización'."</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Paso 2: Asigna un Rol (Role Play) y Contexto</strong> Dale al LLM una "personalidad" o un rol de experto. Esto acota su conocimiento y define el tono, estilo y perspectiva de la respuesta.</p>
+<ul>
+<li><strong>Ejemplo Sin Rol:</strong> <code>Explica la fotosíntesis.</code></li>
+<li><strong>Ejemplo Con Rol:</strong><blockquote>
+<p>Eres un biólogo y profesor apasionado. Explica el proceso de la fotosíntesis a niños de 10 años, usando una analogía con una fábrica de comida para plantas.</p>
+</blockquote>
+</li>
+</ul>
+<p><strong>Paso 3: Añade Instrucciones y Restricciones (El "Cómo")</strong> Aquí es donde defines el "cómo". Sé explícito sobre el formato, la estructura, la extensión, las prohibiciones y el estilo que deseas.</p>
+<ul>
+<li><strong>Ejemplo Poca Instrucción:</strong> <code>Dame ideas para un negocio.</code></li>
+<li><strong>Ejemplo Instrucción Detallada:</strong><blockquote>
+<p>Genera una lista con 5 ideas de negocios online con baja inversión inicial. 
+Para cada idea, incluye: 
+1) Nombre de la idea, 
+2) Público objetivo, 
+3) Un primer paso para validarla. 
+Presenta el resultado en formato de tabla.</p>
+</blockquote>
+</li>
+</ul>
+<div class="admonition abstract">
+<p class="admonition-title">La Síntesis Estructural: El Marco CRF-R</p>
+<p>Para aplicar los pasos 1, 2 y 3 con rigor de ingeniería en cada interacción, en esta obra utilizamos el acrónimo estándar <strong>CRF-R</strong>. Esta es la estructura que define a un "Prompt Maestro" (ver plantilla en <strong>Anexo D</strong>):</p>
+<ol>
+<li><strong>C - Contexto:</strong> (Del Paso 1). La situación, los datos de entrada y el "para qué".</li>
+<li><strong>R - Rol:</strong> (Del Paso 2). La <em>persona</em> que debe adoptar la IA.</li>
+<li><strong>F - Formato:</strong> (Del Paso 3). La estructura exacta de la salida (Tabla, JSON, Email).</li>
+<li><strong>R - Restricciones:</strong> (Del Paso 3). Las líneas rojas y lo que NO debe hacer.</li>
+</ol>
+<p><em>Nota del Arquitecto: Si su prompt tiene estos 4 componentes definidos explícitamente, ha reducido la probabilidad de error (alucinación o formato incorrecto) en un 80%.</em></p>
+</div>
+<p><strong>Paso 4: Usa Ejemplos y Referencias (La Estrategia "Few-Shot")</strong>
+Si tienes un formato o estilo muy específico en mente, no lo describas; muéstralo. En ingeniería, distinguimos tres niveles de control según la cantidad de ejemplos (o "disparos/shots") que le damos al modelo:</p>
+<ul>
+<li>
+<p><strong>Zero-Shot (0 Ejemplos):</strong> Le pides al modelo que actúe "en frío".</p>
+<ul>
+<li><em>Uso:</em> Tareas generales, creativas o de conocimiento común.</li>
+<li><em>Riesgo:</em> Mayor variabilidad y alucinación. Confías 100% en el entrenamiento del modelo.</li>
+<li><em>Ejemplo de Zero-Shot:</em><blockquote>
+<p>Actúa como un historiador literario especializado en el Siglo de Oro español. Redacta una respuesta de 150 palabras explicando quién escribió 'Don Quijote'.</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>One-Shot (1 Ejemplo):</strong> Le das un caso ideal para anclar el formato.</p>
+<ul>
+<li><em>Uso:</em> Cuando necesitas una estructura específica (ej. un JSON).</li>
+<li><em>Ventaja:</em> <em>Anclaje Rápido</em>. Asegura el formato deseado inmediatamente con un costo de tokens mínimo, evitando la ambigüedad del Zero-Shot.</li>
+<li><em>Ejemplo de One-Shot:</em><blockquote>
+<p>Quiero crear resúmenes de libros con este estilo: 'Libro: El Principito. Idea Clave: Lo esencial es invisible a los ojos; las relaciones y el amor son más importantes que las apariencias.' Ahora, genera un resumen con el mismo estilo para el libro 'Cien años de soledad'.</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Few-Shot (3+ Ejemplos):</strong> La técnica reina de la fiabilidad. Le das múltiples casos de "Input -&gt; Output Ideal".</p>
+<ul>
+<li><em>Uso:</em> Tareas complejas de clasificación o tono de marca.</li>
+<li><em>Ventaja:</em> Reduce drásticamente las alucinaciones sin necesidad de re-entrenar el modelo.</li>
+<li><em>Ejemplo de Few-Shot:</em><blockquote>
+<p>Quiero clasificar la urgencia de correos. Aprende de estos ejemplos:</p>
+<ol>
+<li>"El servidor se cayó" -&gt; ALTA</li>
+<li>"¿Podemos reunirnos mañana?" -&gt; MEDIA</li>
+<li>"Gracias por la info" -&gt; BAJA</li>
+</ol>
+<p>Ahora clasifica este: "El sistema está lento." -&gt;</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Paso 5: Incorpora Técnicas Avanzadas (Estratégicamente)</strong><br />
+Aquí es donde potencias tu prompt para tareas complejas que requieren razonamiento, creatividad o precisión, pero solo cuando la tarea lo justifica. Más sobre esto en la siguiente sección.</p>
+<ul>
+<li><strong>Ejemplo (usando Chain-of-Thought):</strong><blockquote>
+<p>Un agricultor tiene 150 metros de valla para cercar un terreno rectangular. Quiere maximizar el área. ¿Cuáles deben ser las dimensiones del terreno? Explica tu razonamiento paso a paso antes de dar la respuesta final.</p>
+</blockquote>
+</li>
+</ul>
+<p><strong>Paso 6: Evalúa y Valida (En Dos Niveles)</strong><br />
+Una vez que recibes la respuesta, revísala críticamente. La confianza ciega en un LLM es un error de principiante. ¿Cumple con el objetivo del Paso 1? ¿Respetó el rol, las restricciones y el formato? ¿La información es factualmente correcta? Los LLM pueden "alucinar" (inventar datos). Siempre verifica la información importante. La validación es un proceso dual.</p>
+<ol>
+<li>
+<p><strong>Validación Interna (Calidad y Coherencia):</strong> Usa el propio LLM como un primer filtro. Utiliza autocrítica y self-consistency para mejorar la coherencia, claridad y lógica interna de la respuesta.   </p>
+<ul>
+<li><em>Prompt de Ejemplo 1:</em><blockquote>
+<p>Revisa la respuesta anterior. ¿Es el tono adecuado para un inversor? ¿Hay ambigüedades? Propón una versión corregida.</p>
+</blockquote>
+</li>
+<li><em>Prompt de Ejemplo 2:</em><blockquote>
+<p>Revisa la respuesta anterior que me diste. ¿Contiene alguna afirmación que pueda ser ambigua o factualmente incorrecta? Si es así, corrigela y proporciona una versión mejorada.</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Validación Externa (La Sabiduría Práctica):</strong> Advertencia: Ninguna técnica de Prompting sustituye la verificación humana. Para cualquier información crítica (financiera, médica, legal, de seguridad), la validación externa contra fuentes fiables no es opcional, es obligatoria. Las técnicas internas reducen errores, pero no garantizan la veracidad. El desarrollo de este juicio crítico es un pilar de la alfabetización cognitiva.</p>
+</li>
+</ol>
+<p><strong>Paso 7: Itera con Intención</strong><br />
+No "pruebes cosas al azar". Ajusta tu prompt para cerrar la brecha entre el resultado obtenido y las métricas de éxito que definiste en el Paso 1. Un objetivo bien definido no solo establece la intención, sino que también contiene los criterios de aceptación de la respuesta.</p>
+<ul>
+<li>
+<p><strong>Ejemplo de Iteración Dirigida:</strong> </p>
+<ul>
+<li><em>V1:</em> <code>Escribe un email para invitar a un cliente a un webinar.</code></li>
+<li><em>Resultado V1:</em> El email generado es demasiado largo (300 palabras). Métrica Fallida: Límite de 150 palabras.  </li>
+<li><em>Ajuste en V2:</em> Añadir la restricción explícita: "La longitud total del email no debe superar las 150 palabras."</li>
+<li><em>V2 (Iteración):</em><blockquote>
+<p>Eres un experto en marketing B2B. Escribe un email persuasivo de 150 palabras para invitar a un cliente potencial (gerente de TI) a un webinar sobre ciberseguridad. El tono debe ser profesional pero cercano. Incluye un llamado a la acción claro para registrarse.</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Recomendación Práctica Refinada:</strong> Al definir tu objetivo en el Paso 1, incluye métricas de éxito claras. Por ejemplo: Precisión Factual, Adherencia al Estilo, Relevancia, Formato. La iteración del Paso 7 no es para que la respuesta "se sienta mejor", sino para cerrar la brecha entre la respuesta actual y estos criterios predefinidos, un proceso clave en la evaluación de calidad.</p>
+</li>
+</ul>
+<hr />
+<h3 id="parte-2-tecnicas-avanzadas-de-prompting-herramientas-de-precision">Parte 2: Técnicas Avanzadas de Prompting (Herramientas de Precisión)<a class="headerlink" href="#parte-2-tecnicas-avanzadas-de-prompting-herramientas-de-precision" title="Permanent link">&para;</a></h3>
+<p>Las siguientes técnicas se integran en el método para resolver problemas más complejos: <strong>Chain-of-Thought</strong>, <strong>Self-Consistency</strong>, <strong>Prompt Chaining</strong> y <strong>Meta-Prompting</strong>.</p>
+<p><strong>1. Chain-of-Thought (CoT, Cadena de Pensamiento)</strong></p>
+<ul>
+<li><strong>¿Qué es?</strong> Pedirle explícitamente al modelo que "piense paso a paso" o que explique su razonamiento antes de llegar a la conclusión. Este es un concepto fundamental en el diseño de cómo "piensan" los sistemas de IA.  </li>
+<li><strong>¿Por qué funciona?</strong> Fuerza al modelo a seguir un proceso lógico en lugar de saltar a una conclusión, lo que aumenta drásticamente la precisión en problemas matemáticos, lógicos y de razonamiento complejo.  </li>
+<li><strong>Ejemplo:</strong> <blockquote>
+<p>Resuelve este acertijo lógico: [acertijo]. Muestra tu cadena de pensamiento, deduciendo cada conclusión paso a paso antes de presentar la solución final.</p>
+</blockquote>
+</li>
+<li><strong>Ideal para:</strong> Modelos de frontera muy capaces (como los modelos más potentes del mercado) en tareas de lógica, matemáticas y planificación.  </li>
+<li><strong>Menos efectivo en:</strong> Modelos más pequeños, que pueden imitar el formato del razonamiento sin una lógica real. Para ellos, es mejor usar Prompt Chaining.</li>
+</ul>
+<p><strong>2. Self-Consistency (Autoconsistencia)</strong></p>
+<ul>
+<li><strong>¿Qué es?</strong> En lugar de pedir una sola respuesta, se le pide al modelo que genere varias respuestas diferentes para el mismo prompt y luego, a menudo, se le pide que elija la mejor o se elige manualmente. Aumenta la fiabilidad y la creatividad.  </li>
+<li><strong>¿Por qué funciona?</strong> Reduce la probabilidad de obtener una respuesta incorrecta o sesgada al explorar múltiples "caminos de razonamiento". Es útil para la creatividad y la resolución de problemas ambiguos.  </li>
+<li><strong>Ejemplo 1:</strong><blockquote>
+<p>Genera 3 eslóganes diferentes para una nueva marca de café orgánico. Luego, evalúa cuál de los tres es más memorable y por qué.</p>
+</blockquote>
+</li>
+<li><strong>Ejemplo 2:</strong><blockquote>
+<p>Genera 3 titulares distintos para un artículo sobre el teletrabajo. Luego, indica cuál es el más persuasivo y justifica tu elección.</p>
+</blockquote>
+</li>
+</ul>
+<p><strong>3. Prompt Chaining (Encadenamiento de Prompts)</strong></p>
+<ul>
+<li><strong>¿Qué es?</strong> Dividir una tarea grande y compleja en una secuencia de prompts más pequeños y manejables. La salida de un prompt se convierte en la entrada (o parte del contexto) del siguiente. Es la base conceptual de cómo funcionan los agentes de IA.  </li>
+<li><strong>¿Por qué funciona?</strong> Es ideal para proyectos grandes (escribir un informe, desarrollar una aplicación simple). Mantiene el contexto (un desafío clave en tareas largas), reduce errores y permite un mayor control sobre el proceso.  </li>
+<li><strong>Ejemplo Secuencial:</strong>  <ul>
+<li><em>Prompt 1:</em> <blockquote>
+<p>Crea un esquema detallado para un artículo de blog titulado 'Los 5 beneficios de la inteligencia artificial en el marketing'.</p>
+</blockquote>
+</li>
+<li><em>Prompt 2:</em><blockquote>
+<p>Usando el punto 1 del esquema anterior, escribe la introducción del artículo (aproximadamente 150 palabras).</p>
+</blockquote>
+</li>
+<li><em>Prompt 3:</em> <blockquote>
+<p>Ahora, desarrolla el punto 2 del esquema...</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>4. Meta-Prompting</strong></p>
+<ul>
+<li><strong>¿Qué es?</strong> Usar al LLM para que te ayude a crear o mejorar tus propios prompts. Es como tener un consultor de ingeniería de prompts integrado.  </li>
+<li><strong>¿Por qué funciona?</strong> El modelo ha sido entrenado con inmensos volúmenes de texto y entiende las estructuras que funcionan mejor para él. Puede ayudarte a refinar tus ideas.  </li>
+<li><strong>Uso Estratégico (La Sabiduría Práctica):</strong>  <ul>
+<li><em>¿Cuándo usarlo?:</em> Para tareas complejas, ambiguas o cuando necesitas crear una plantilla de prompt robusta y reutilizable.  </li>
+<li><em>¿Cuándo evitarlo?:</em> Es redundante e ineficiente para tareas simples y directas. No necesitas un meta-prompt para preguntar la capital de un país.  </li>
+</ul>
+</li>
+<li><strong>Ejemplo:</strong><blockquote>
+<p>Estoy tratando de obtener una explicación de la física cuántica para principiantes. Crea un prompt óptimo que le darías a un LLM como tú para generar una explicación clara, precisa y con analogías fáciles de entender.</p>
+</blockquote>
+</li>
+</ul>
+<hr />
+<h3 id="parte-3-maximizando-el-valor-que-tecnicas-usar-en-cada-paso">Parte 3: Maximizando el Valor: Qué Técnicas Usar en Cada Paso<a class="headerlink" href="#parte-3-maximizando-el-valor-que-tecnicas-usar-en-cada-paso" title="Permanent link">&para;</a></h3>
+<p>Aquí conectamos las técnicas avanzadas con el método de 7 pasos para ver dónde aportan más valor.</p>
+<ul>
+<li><strong>Paso 1 (Objetivo):</strong>  <ul>
+<li><strong>Técnica de más valor: Meta-Prompting.</strong> Si tu objetivo es difuso, puedes pedirle al LLM que te ayude a clarificarlo.<blockquote>
+<p>Quiero escribir algo sobre IA, pero no estoy seguro del enfoque. Sugiere 3 objetivos claros y específicos para un artículo dirigido a dueños de pequeñas empresas.</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><strong>Paso 2 (Rol) y Paso 3 (Instrucciones):</strong>  <ul>
+<li>Estas fases dependen más de la claridad y especificidad del usuario que de una técnica avanzada. La clave es ser directo y no dejar espacio a la ambigüedad.  </li>
+</ul>
+</li>
+<li><strong>Paso 4 (Ejemplos - Few-Shot):</strong>  <ul>
+<li>Este paso es una técnica en sí misma. Es la base para guiar al modelo hacia un resultado estilísticamente consistente.  </li>
+</ul>
+</li>
+<li><strong>Paso 5 (Incorporar Técnicas Avanzadas):</strong>  <ul>
+<li><strong>Técnica de más valor: Chain-of-Thought (CoT).</strong> Este es el lugar natural para usar CoT cuando la tarea implica lógica, cálculo o deducción.  </li>
+<li><strong>Técnica de más valor: Self-Consistency.</strong> Si la tarea es creativa o subjetiva (escribir textos de marketing, generar ideas), pedir múltiples variantes aquí es la mejor estrategia.  </li>
+</ul>
+</li>
+<li><strong>Paso 6 (Evalúa y Valida):</strong>  <ul>
+<li><strong>Técnica de más valor: Meta-Prompting (en modo autocritica).</strong> Pedirle al modelo que evalúe su propia respuesta es una forma rápida y eficaz de detectar errores o debilidades.<blockquote>
+<p>Analiza la respuesta anterior. ¿Es el tono adecuado para el público objetivo? ¿Hay alguna frase que podría sonar confusa? Propón mejoras.</p>
+</blockquote>
+</li>
+<li><strong>Técnica de más valor: Self-Consistency.</strong> Al comparar las diferentes salidas generadas, puedes evaluar cuál cumple mejor el objetivo inicial.  </li>
+</ul>
+</li>
+<li><strong>Paso 7 (Itera con Intención):</strong><ul>
+<li><strong>Técnica de más valor: Prompt Chaining.</strong> Si un prompt monolítico y complejo falla repetidamente, la mejor forma de iterar es descomponerlo en una cadena de prompts más simples. Esto te da control granular sobre cada parte del proceso.  </li>
+<li><strong>Técnica de más valor: Meta-Prompting.</strong> Si estás atascado, pregúntale al modelo:<blockquote>
+<p>Mi prompt anterior [pegar prompt] no está funcionando. Generó [describir salida no deseada]. ¿Cómo puedo refinar mi prompt para obtener [describir resultado deseado]?</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3 id="conclusion-de-usuario-a-arquitecto-de-resultados">Conclusión: De Usuario a Arquitecto de Resultados<a class="headerlink" href="#conclusion-de-usuario-a-arquitecto-de-resultados" title="Permanent link">&para;</a></h3>
+<p>La ingeniería de prompts te transforma: dejas de ser un usuario que simplemente conversa con una IA, para convertirte en un arquitecto que la dirige con propósito. La maestría en esta disciplina no reside en memorizar trucos, sino en dominar una doble habilidad fundamental:</p>
+<ol>
+<li><strong>La Ciencia (El Método):</strong> Aplicar con disciplina la estructura de los 7 pasos para construir un resultado predecible, controlado y de alta calidad.  </li>
+<li><strong>El Arte (El Juicio):</strong> Saber qué herramienta usar, en qué contexto y, crucialmente, cuándo aplicar el escepticismo crítico para validar la información y refinar el enfoque.</li>
+</ol>
+<p>Este juicio es la habilidad central que desarrollaremos en este marco. Esta guía te entrega el mapa para dominar ambas facetas. Al hacerlo, dejas de buscar respuestas para empezar a construir soluciones. Recuerda: el verdadero poder no reside en la IA, sino en la habilidad humana para guiarla con maestría.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="../01-Anatomia-Modelos/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Guía 01 - Anatomía">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Guía 01 - Anatomía
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../03-Contexto-Memoria/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Guía 03 - Contexto">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                Guía 03 - Contexto
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Juan Carlos Carvajal - Licencia CC BY-NC-ND 4.0
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy", "toc.integrate"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
