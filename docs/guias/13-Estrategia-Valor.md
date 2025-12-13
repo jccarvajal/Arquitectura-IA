@@ -67,10 +67,16 @@ Este es el segundo modelo de negocio: convertir tu "fábrica" interna en un prod
 
 ### Parte 4: El "Foso" Competitivo (Dónde Reside la Verdadera Ventaja)
 
-El "Director de Estrategia" debe saber dónde construir su "foso" (moat) para defender su negocio.
+El "Director de Estrategia" debe saber dónde construir su **Foso Económico** (*Moat*).
 
-* **El Espejismo:** La ventaja es el "motor" LLM.  
-* **La Realidad:** Falso. Tu competencia puede arrendar el mismo "motor" mañana. La ventaja competitiva real y defendible no es el motor; es la fábrica que construiste y los datos que la alimentan.
+En estrategia de negocios, un "foso" es algo extremadamente positivo. Es la metáfora de un castillo medieval: una barrera profunda y ancha llena de agua que protege tu fortaleza (tu negocio) de los ataques de los invasores (tu competencia).
+
+Tener un "Foso Ancho" significa que, aunque tu competencia quiera copiarte, no puede cruzar. Sin un foso, tu innovación es solo una ventaja temporal; con un foso, es una **ventaja sostenible**.
+
+* **El Espejismo:** Creer que tu foso es el "motor" LLM (GPT-4, Claude).
+* **La Realidad:** Eso no es un foso, es una *commodity*. Tu competencia puede arrendar el mismo "motor" mañana por el mismo precio. Si tu única ventaja es el modelo, no tienes foso.
+
+La ventaja competitiva real y defendible reside en la infraestructura que rodea al modelo:
 
 **El Foso 1: Tu Framework GRC (Gobernanza, Riesgo y Cumplimiento)**
 

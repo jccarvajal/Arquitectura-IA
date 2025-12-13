@@ -65,6 +65,7 @@ Sin embargo, esta arquitectura tiene dos implicaciones estratégicas que impacta
 
 > **Nota del Arquitecto (Actualización de Industria 2025):**
 > La industria ha validado oficialmente el cambio de paradigma de "Chatbots" a "Agentes". El reporte *101 Real-World Gen AI Use Cases* (Google Cloud, Oct 2025) clasifica el mercado ya no por modelos, sino por **6 Tipos de Agentes**:
+> 
 > 1.  **Customer Agents:** (Nuestro Blueprint 1).
 > 2.  **Employee Agents:** (Nuestros Agentes PM de productividad).
 > 3.  **Creative Agents:** (Nuestros Co-Pilotos de Marketing).
@@ -99,6 +100,7 @@ Este anexo se enfoca en cómo los proveedores "empaquetan" esa arquitectura, con
     2. **Responsabilidad de Seguridad Total:** A diferencia de las APIs, donde el proveedor gestiona la seguridad, aquí el modelo es vulnerable. Las técnicas de seguridad nativas (como el "desaprendizaje" de conceptos dañinos) son inmaduras y pueden revertirse fácilmente con un ajuste fino mínimo. Si no construyes tu propia capa de seguridad (LOSA), el modelo está desprotegido.
 
 > **Actualización de Mercado (Nov 2025):** La brecha de capacidad se ha cerrado. Actualmente, los modelos abiertos de vanguardia tienen un retraso de **menos de un año** respecto a los modelos de frontera cerrados.
+> 
 > *Implicancia:* La decisión de usar Open-Source ya no implica sacrificar inteligencia. El *trade-off* ha cambiado: ganas potencia y soberanía, pero asumes el 100% de la carga de la ciberseguridad, ya que las salvaguardas del proveedor se pueden desactivar.
 
 **C. Agentes-como-Servicio (AaaS) \- "Contratar al Especialista"**
