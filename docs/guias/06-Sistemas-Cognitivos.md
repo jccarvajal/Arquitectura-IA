@@ -54,9 +54,7 @@ Para que un agente "piense", debemos darle un "Manual de Procedimientos" (un pat
 * **Cuándo usarlo:** Casi siempre. Es la arquitectura fundamental para cualquier agente que deba interactuar con el mundo exterior.
 * **Ejemplo Práctico (Ciclo):**
     * *Input:*
-        ```text
-        Recomiéndame un restaurante italiano cerca de la oficina.
-        ```
+        `Recomiéndame un restaurante italiano cerca de la oficina.`
     * *Ciclo 1:*
         * *Reason (Pensamiento):* "Necesito la ubicación de la oficina y una lista de restaurantes. Usaré la herramienta `get_office_location`."
         * *Act (Acción):*
