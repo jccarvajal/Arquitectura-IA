@@ -63,17 +63,17 @@ Sin embargo, esta arquitectura tiene dos implicaciones estratégicas que impacta
 1. **Costo de Escalado (Costo):** El mecanismo de auto-atención es computacionalmente intensivo. Su costo y uso de memoria crecen cuadráticamente con la longitud del contexto. Duplicar la longitud de un documento no duplica el costo, sino que lo cuadruplica (o más), lo que encarece la operación a gran escala.
 2. **Naturaleza Estática (Control):** Los Transformers se entrenan en una "foto" masiva del conocimiento (un corpus de datos) y luego se "congelan". No están diseñados para aprender de forma continua o para integrar nueva información después de su entrenamiento, un desafío que exploramos en la Guía 17: Perspectivas.
 
-> **Nota del Arquitecto (Actualización de Industria 2025):**
-> La industria ha validado oficialmente el cambio de paradigma de "Chatbots" a "Agentes". El reporte *101 Real-World Gen AI Use Cases* (Google Cloud, Oct 2025) clasifica el mercado ya no por modelos, sino por **6 Tipos de Agentes**:
-> 
-> 1.  **Customer Agents:** (Nuestro Blueprint 1).
-> 2.  **Employee Agents:** (Nuestros Agentes PM de productividad).
-> 3.  **Creative Agents:** (Nuestros Co-Pilotos de Marketing).
-> 4.  **Data Agents:** (Nuestros Agentes de Gobernanza y RAG).
-> 5.  **Code Agents:** (Nuestros Co-Pilotos de Desarrollo).
-> 6.  **Security Agents:** (Nuestros componentes de arquitectura LOSA).
->
-> *Implicancia:* La estrategia de "Agente Enrutador" propuesta en esta guía es la única capaz de orquestar estos 6 tipos de especialistas en un solo portafolio coherente.
+!!! abstract "Nota del Arquitecto (Actualización de Industria 2025)"
+    La industria ha validado oficialmente el cambio de paradigma de "Chatbots" a "Agentes". El reporte *101 Real-World Gen AI Use Cases* (Google Cloud, Oct 2025) clasifica el mercado ya no por modelos, sino por **6 Tipos de Agentes**:
+    
+    1.  **Customer Agents:** (Nuestro Blueprint 1).
+    2.  **Employee Agents:** (Nuestros Agentes PM de productividad).
+    3.  **Creative Agents:** (Nuestros Co-Pilotos de Marketing).
+    4.  **Data Agents:** (Nuestros Agentes de Gobernanza y RAG).
+    5.  **Code Agents:** (Nuestros Co-Pilotos de Desarrollo).
+    6.  **Security Agents:** (Nuestros componentes de arquitectura LOSA).
+    
+    *Implicancia:* La estrategia de "Agente Enrutador" propuesta en esta guía es la única capaz de orquestar estos 6 tipos de especialistas en un solo portafolio coherente.
 
 ---
 
