@@ -136,7 +136,7 @@ Base de conocimiento para alinear equipos y profundizar el criterio.
 ---
 
 ## Changelog
-* **v1.3 (Diciembre 2025):** Consolidción de la tesis de gobernanza como "Ingeniería de Control" frente a la burocracia normativa. Esta versión integra la estrategia de Soberanía y Geopolítica (no-neutralidad), la visión de Daniel Innerarity sobre la "Agencia Humana" y profundiza en los riesgos de politización técnica y atrofia cognitiva. Migración a plataforma MkDocs y diagramas Mermaid.js.
+* **v1.3 (Diciembre 2025):** Consolidación de la tesis de gobernanza como "Ingeniería de Control" frente a la burocracia normativa. Esta versión integra la estrategia de Soberanía y Geopolítica (no-neutralidad), la visión de Daniel Innerarity sobre la "Agencia Humana" y profundiza en los riesgos de politización técnica y atrofia cognitiva. Migración a plataforma MkDocs y diagramas Mermaid.js.
 * Ver [Historial Completo](./changelog.md).
 
 ## Sugerencias y Mejoras
