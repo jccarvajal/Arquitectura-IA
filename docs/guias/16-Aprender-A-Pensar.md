@@ -20,17 +20,13 @@ El primer fallo operativo es tratar a la IA como un oráculo ("pedir"). El Opera
 
 **1. Modo Pasivo (Error):**
 
-```text
-¿Cuáles fueron las ventas del trimestre?
-```
+`¿Cuáles fueron las ventas del trimestre?`
 
 *Diagnóstico:* Abdicación de contexto. El usuario acepta el output sin validación. Riesgo alto de alucinación métrica.
 
 **2. Modo Operador (Comando):**
 
-```text
-Actúa como analista financiero (Rol). Procesa los datos del Q3 adjuntos (Contexto). Ejecuta un análisis comparativo contra el Q2 e identifica la varianza negativa en los top 3 productos (Tarea). Genera una hipótesis de causalidad basada en el mercado X (Lógica). Formatea la salida como reporte ejecutivo (Formato).
-```
+`Actúa como analista financiero (Rol). Procesa los datos del Q3 adjuntos (Contexto). Ejecuta un análisis comparativo contra el Q2 e identifica la varianza negativa en los top 3 productos (Tarea). Genera una hipótesis de causalidad basada en el mercado X (Lógica). Formatea la salida como reporte ejecutivo (Formato).`
 
 *Resultado:* Ejecución dirigida. El humano define los parámetros de éxito; la máquina ejecuta el procesamiento.
 
@@ -57,15 +53,11 @@ Esta es la competencia técnica cumbre del Co-Piloto. Es la **capacidad de desco
 
 **Problema Complejo:**
 
-```text
-Necesito preparar mi evaluación de desempeño trimestral.
-```
+`Necesito preparar mi evaluación de desempeño trimestral.`
 
 **A. Usuario Pasivo (Fallo):**
 
-```text
-Escríbeme una autoevaluación.
-```
+`Escríbeme una autoevaluación.`
 
 *Resultado:* Texto genérico, inutilizable y detectable como IA.
 

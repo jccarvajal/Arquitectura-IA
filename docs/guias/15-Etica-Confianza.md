@@ -167,7 +167,14 @@ Si tu "Agente" no puede responder estas preguntas en lenguaje claro (Opacidad An
 
 * **El Problema:** Un "Agente Director" analiza los datos de rendimiento y decide, basado en métricas, que un empleado debe ser despedido.  
 * **El Control Ético:** "Líneas Rojas" Infranqueables. Ciertas decisiones nunca pueden ser delegadas a un agente, ni siquiera a Nivel 2 ("Supervisión"). Requieren siempre Nivel 1 ("Validación") o Nivel 0 (El humano hace el 100% de la decisión).  
-* **Ejemplos de "Líneas Rojas":** Decisiones de contratación o despido; evaluaciones de desempeño formales; diagnósticos médicos; o cualquier decisión con impacto legal, físico o que termine una relación.
+
+!!! failure "Líneas Rojas: Prohibición Absoluta de Automatización"
+    Bajo ninguna circunstancia se debe delegar a una IA (incluso con supervisión) decisiones que alteren la vida de las personas:
+    
+    1.  Contratación o Despido de personal.
+    2.  Evaluaciones de Desempeño formales.
+    3.  Diagnósticos Médicos o Psicológicos.
+    4.  Sentencias Judiciales o Sanciones Legales.
 
 **Riesgo 5: La Huella Invisible (Impacto Ambiental y ESG)**
 
@@ -234,13 +241,15 @@ Cuando los "Agentes PM" se vuelven parte del equipo, surgen preguntas legales qu
 
 **Problema 1: De la Propiedad Intelectual (PI)**
 
-* **La Pregunta:** Un humano (Co-Piloto) usa un "Agente PM" para generar el código de un nuevo producto. ¿De quién es la Propiedad Intelectual?  
-* **La Política de Gobernanza:** La política de la empresa debe ser explicita: "Toda Propiedad Intelectual generada usando herramientas de IA de la empresa, por empleados de la empresa, durante el horario de la empresa, es propiedad 100% de la empresa."
+* **La Pregunta:** Un humano usa un "Agente PM" para generar código. ¿De quién es el resultado?
+* **La Política de Gobernanza:**
+    > "Toda Propiedad Intelectual generada utilizando herramientas de IA corporativas, por empleados de la empresa y durante el horario laboral, se considerará **propiedad exclusiva de la empresa**, indistintamente del nivel de autonomía del agente utilizado."
 
 **Problema 2: De la "Caja Negra" (Auditabilidad)**
 
-* **La Pregunta:** Un "Agente Director" optimiza la logística y causa una pérdida de $1M. ¿Cómo "interrogamos" al agente?  
-* **La Política de Gobernanza:** La *Observabilidad* (de la Guía 11) no es solo técnica, es un requisito legal. El "Dashboard de Gobernanza" debe registrar obligatoriamente el "rastro de pensamiento" (el log del Ciclo ReAct) de cada agente. Debemos ser capaces de reconstruir la cadena de razonamiento.
+* **La Pregunta:** Un agente causa una pérdida financiera. ¿Cómo lo auditamos?
+* **La Política de Gobernanza:**
+    > "Es requisito mandatorio de cumplimiento que todo Agente autónomo opere conectado a un sistema de **Observabilidad (Logging)** que registre la 'Cadena de Pensamiento' (Input -> Razonamiento -> Tool -> Output). No se autoriza el despliegue de agentes opacos en producción."
 
 ---
 

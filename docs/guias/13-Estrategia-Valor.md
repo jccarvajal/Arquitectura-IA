@@ -33,8 +33,11 @@ Mientras que la Eficiencia es un objetivo crucial (especialmente en el sector p�
 
 El "Director de Estrategia" debe entender que la economía ha cambiado.
 
-* **Antes:** Una tarea cognitiva (analizar un contrato, redactar un informe) tenía un costo humano significativo (ej. 1 hora, $100).  
-* **Ahora (con Agentes):** El costo de esa misma tarea (un agente usando un **motor** LLM) se acerca a $0.01 y 1 segundo.
+!!! abstract "El Cambio de Paradigma Económico"
+    * **Antes (Economía Humana):** Una tarea cognitiva (ej. analizar un contrato) tenía un costo marginal alto ($100) y era difícil de escalar.
+    * **Ahora (Economía de Agentes):** El costo de esa misma tarea ("inteligencia de Sistema 1") se acerca a **cero** ($0.01) y tiene escalabilidad infinita.
+    
+    *Implicación:* Si sigues cobrando por "horas-hombre" en tareas que la IA hace por centavos, tu modelo de negocio está obsoleto.
 
 El costo marginal del "trabajo de Sistema 1" (tareas tácticas y repetitivas) se está desplomando a cero.
 
@@ -73,8 +76,9 @@ En estrategia de negocios, un "foso" es algo extremadamente positivo. Es la met�
 
 Tener un "Foso Ancho" significa que, aunque tu competencia quiera copiarte, no puede cruzar. Sin un foso, tu innovación es solo una ventaja temporal; con un foso, es una **ventaja sostenible**.
 
-* **El Espejismo:** Creer que tu foso es el "motor" LLM (GPT-4, Claude).
-* **La Realidad:** Eso no es un foso, es una *commodity*. Tu competencia puede arrendar el mismo "motor" mañana por el mismo precio. Si tu única ventaja es el modelo, no tienes foso.
+!!! warning "La Trampa del Modelo (Commodity)"
+    * **El Espejismo:** Creer que tu ventaja competitiva es usar el "mejor modelo" (ej. GPT-5).
+    * **La Realidad:** El motor es una *commodity*. Tu competencia puede arrendar el mismo modelo mañana por el mismo precio. **Si tu única ventaja es el modelo, no tienes foso.**
 
 La ventaja competitiva real y defendible reside en la infraestructura que rodea al modelo:
 
