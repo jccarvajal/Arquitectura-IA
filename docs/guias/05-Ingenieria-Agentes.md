@@ -125,17 +125,15 @@ Las herramientas son funciones de código (APIs, scripts Python) que conectan el
 Aquí reside el verdadero arte de la ingeniería. El *trade-off* ya no es solo costo vs. latencia, sino **Autonomía vs. Seguridad**.
 
 * **Correa Suelta (Autonomía Total):**
-    ```text
-    "OK Agente, aquí tienes $100 y mi tarjeta de crédito. Reserva el mejor viaje."
-    ```
+    `"OK Agente, aquí tienes $100 y mi tarjeta de crédito. Reserva el mejor viaje."`
+    
     * *Riesgo Antiguo (Alucinación):* Poderoso, pero aterrador. El agente podría reservar el hotel equivocado o enviar un email vergonzoso.
     * *Riesgo Moderno (Bucle Infinito):* Con los nuevos modelos persistentes, el agente podría entrar en un bucle tratando de encontrar el "vuelo perfecto" eternamente, gastando presupuesto y recursos sin detenerse.
     * *Mitigación:* Aquí es donde implementamos **"Circuit Breakers"** (límites duros de iteración, ej. `max_steps=15`) para cortar la ejecución forzosamente.
 
 * **Correa Corta (Control Total):**
-    ```text
-    "OK Agente, dime tu primer paso.... OK, apruebo ese paso, ejecútalo.... OK, muéstrame el resultado.... Ahora, dime tu segundo paso."
-    ```
+    `"OK Agente, dime tu primer paso.... OK, apruebo ese paso, ejecútalo.... OK, muéstrame el resultado.... Ahora, dime tu segundo paso."`
+    
     * *Riesgo:* 100% seguro, pero lento y tedioso. Básicamente, volvemos a la ingeniería de prompts manual y perdemos el beneficio de tener un trabajador digital.
 
 **El Buen Enfoque:** El juicio de ingeniería está en diseñar un sistema que sepa cuándo actuar solo y cuándo detenerse para pedir validación humana. Esto nos lleva directamente a nuestra primera estrategia.
