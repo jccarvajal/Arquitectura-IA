@@ -6,29 +6,31 @@ Subtítulo: Manual de Reentrenamiento: De Usuario Pasivo a Operador de Sistema
 
 En la guía anterior, definimos la nueva relación laboral. Pero esa relación tiene un enemigo silencioso.
 
-La IA ha democratizado la sintaxis perfecta. Hoy, un interno y un vicepresidente pueden generar el mismo memo impecable en segundos. Esto crea una nueva amenaza invisible: la **Basura Elocuente**.
-
-Antes, la incompetencia se notaba en la mala redacción o la falta de datos. Ahora, el error viene envuelto en prosa de nivel Nobel y confianza estadística absoluta.
-
-Este no es un capítulo de *soft skills*. Es una **disciplina de supervivencia profesional**. Se trata de instalar un "Sistema Inmunológico Intelectual" capaz de auditar a una máquina que miente mejor que cualquier humano. En esta nueva economía, tu valor ya no reside en producir respuestas, sino en tener el criterio implacable para interrogarlas.
+!!! warning "La Nueva Amenaza: Basura Elocuente"
+    La IA ha democratizado la sintaxis perfecta. Hoy, la incompetencia ya no se nota en la mala redacción; el error viene envuelto en prosa de nivel Nobel y confianza estadística absoluta.
+    
+    Este no es un capítulo de *soft skills*. Es una **disciplina de supervivencia profesional**. Se trata de instalar un "Sistema Inmunológico Intelectual" capaz de auditar a una máquina que miente mejor que cualquier humano. En esta nueva economía, tu valor ya no reside en producir respuestas, sino en tener el criterio implacable para interrogarlas.
 
 ---
 
 ### Parte 1: El Protocolo de Interacción: De la Petición al Comando
 
-El primer fallo operativo es tratar a la IA como un oráculo ("pedir"). El Operador competente la trata como un subsistema de procesamiento ("instruir").
+El primer fallo operativo es tratar a la IA como un oráculo. El Operador la trata como un subsistema.
 
-**1. Modo Pasivo (Error):**
+!!! failure "Modo Pasivo (El Error)"
+    `¿Cuáles fueron las ventas del trimestre?`
+    
+    * **Diagnóstico:** Abdicación de contexto. El usuario acepta el output sin validación. Riesgo alto de alucinación métrica.
 
-`¿Cuáles fueron las ventas del trimestre?`
-
-*Diagnóstico:* Abdicación de contexto. El usuario acepta el output sin validación. Riesgo alto de alucinación métrica.
-
-**2. Modo Operador (Comando):**
-
-`Actúa como analista financiero (Rol). Procesa los datos del Q3 adjuntos (Contexto). Ejecuta un análisis comparativo contra el Q2 e identifica la varianza negativa en los top 3 productos (Tarea). Genera una hipótesis de causalidad basada en el mercado X (Lógica). Formatea la salida como reporte ejecutivo (Formato).`
-
-*Resultado:* Ejecución dirigida. El humano define los parámetros de éxito; la máquina ejecuta el procesamiento.
+!!! success "Modo Operador (El Comando)"
+    ```yaml
+    Rol: Analista Financiero
+    Contexto: "Procesa los datos del Q3 adjuntos [DATA]"
+    Tarea: "Ejecuta análisis comparativo vs Q2. Identifica varianza negativa en Top 3 productos."
+    Lógica: "Genera hipótesis de causalidad basada en Mercado X."
+    Formato: Reporte Ejecutivo
+    ```
+    * **Resultado:** Ejecución dirigida. El humano define los parámetros de éxito; la máquina ejecuta el procesamiento.
 
 ---
 
@@ -38,10 +40,17 @@ En la economía pre-IA, el activo era el "Conocimiento Retenido" (base de datos 
 
 El nuevo valor del humano es la **Capacidad de Auditoría**:
 
-* **Interrogatorio:** La habilidad de formular el *prompt* que expone las debilidades del modelo.
-* **Contextualización:** La inyección de lógica de negocio que el modelo desconoce.
-* **Detección de Anomalías:** El juicio para identificar cuándo una respuesta "lógica" es, de hecho, absurda en el mundo real.
-* **Integridad:** La aplicación del *hard-stop* ético.
+> **Interrogatorio**
+> La habilidad de formular el *prompt* que expone las debilidades del modelo (Red Teaming).
+
+> **Contextualización**
+> La inyección de lógica de negocio y "sentido común" que el modelo desconoce por estar congelado en el tiempo.
+
+> **Detección de Anomalías**
+> El juicio para identificar cuándo una respuesta "lógica" y bien redactada es, de hecho, absurda en el mundo real.
+
+> **Integridad**
+> La aplicación del *hard-stop* ético ante una solución técnicamente viable pero moralmente inaceptable.
 
 Tu función operativa deja de ser "responder"; ahora es "certificar la respuesta".
 
