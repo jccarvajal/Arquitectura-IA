@@ -57,9 +57,7 @@ En la arquitectura moderna (2025), exigimos lo que llamamos el **"Patrón de Pen
 Así es como se ve la traza de un agente moderno:
 
 * 👤 Usuario:
-    ```text
-    Busca el pronóstico del clima de hoy en Valparaíso y envíame un resumen por email.
-    ```
+    `Busca el pronóstico del clima de hoy en Valparaíso y envíame un resumen por email.`
 
 * El agente ahora debe "razonar" y "actuar" en un bucle:
 
@@ -80,7 +78,7 @@ Así es como se ve la traza de un agente moderno:
           ciudad: Valparaíso
         ```
     * 💭 Agente (Observación):
-        ```text
+        ```json
         { 'max': '18C', 'min': '11C', 'estado': 'Nublado' }
         ```
     * El bucle continúa porque el objetivo final no está cumplido
@@ -103,16 +101,14 @@ Así es como se ve la traza de un agente moderno:
           cuerpo: "Clima de hoy en Valparaíso: 18C, nublado."
         ```
     * 💭 Agente (Observación):
-        ```text
+        ```json
         { 'status': 'enviado' }
         ```
     * El bucle se detiene.
 
     *Respuesta Final al Usuario:*
     * 💬 Agente (Responde):
-        ```text
-        Listo. El clima en Valparaíso es de 18C, parcialmente nublado. Te he enviado el resumen.
-        ```
+        `Listo. El clima en Valparaíso es de 18C, parcialmente nublado. Te he enviado el resumen.`
 
 > **Nota de Arquitectura:** Independientemente del modelo (OpenAI, Gemini, Claude), la arquitectura robusta exige que el agente "muestre su trabajo". Separar el razonamiento (`<pensamiento>`) de la acción final es vital para la auditoría y depuración.
 
