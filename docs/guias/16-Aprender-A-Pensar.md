@@ -159,7 +159,7 @@ prompt: "Despliega el log de 'Chain-of-Thought'. ¿Qué variables pesaste para r
 **Objetivo:** Mantener la responsabilidad humana sobre la decisión algorítmica.
 
 ---
-#### SOP para el Desarrollador: Gobernanza de Código
+### SOP para el Desarrollador: Gobernanza de Código
 
 * **Nuevo Rol:** Arquitecto de Seguridad y Sistemas.
 * **Misión:** Supervisar la generación de código masiva, asumiendo que todo output es inseguro por defecto.
