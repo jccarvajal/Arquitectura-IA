@@ -208,3 +208,12 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
         * **Por qué leerlo:** Es el paper de referencia para las arquitecturas **no-Transformers** (SSMs) que resuelven el **Costo Cuadrático** (Guía 03), permitiendo eficiencia a escala y costo lineal.
     * **Behrouz, A., et al. (2025). "Nested Learning: The Illusion of Deep Learning Architectures".** [[Web]](https://research.google/blog/introducing-nested-learning-a-new-ml-paradigm-for-continual-learning/)
         * **Por qué leerlo:** Aborda el segundo límite del Transformer (Guía 03): la **Amnesia Estática**. Introduce el paradigma del "Aprendizaje Anidado" y prototipos capaces de auto-modificación, clave para el "Vigilante Estratégico".
+
+### Conclusión: De la Fundación a la Expansión
+
+* **Lanier, J. (2010). "You Are Not a Gadget: A Manifesto". Knopf.** [[Web]](http://www.jaronlanier.com/gadget.html)
+    * **Por qué leerlo:** Respalda la sección de "Construcción de la Agencia". Lanier, pionero de la realidad virtual, argumenta contra el "reduccionismo computacional" (tratar a los humanos como bases de datos) y defiende que la tecnología debe diseñarse para expandir la libertad humana, no para encerrarla en menús predefinidos por algoritmos ("Lock-in").
+* **Pratchett, T. (1996). "Hogfather" (Discworld Series). Victor Gollancz.** [[Web]](https://www.terrypratchettbooks.com/books/hogfather/)
+    * **Por qué leerlo:** Fuente de la cita central de la Conclusión: *"La estupidez real siempre vence a la inteligencia artificial"*. Pratchett satiriza brillantemente la falacia de la "superinteligencia" tecnológica frente a la irracionalidad humana, complementando literariamente la tesis de la "Estupidez Artificial" de Innerarity.
+* **Wiener, N. (1950). "The Human Use of Human Beings: Cybernetics and Society". Houghton Mifflin.** [[Web]](https://mitpress.mit.edu/9780262730396/the-human-use-of-human-beings/)
+    * **Por qué leerlo:** El padre de la cibernética predijo hace 75 años el dilema central de esta conclusión. Su advertencia es el axioma final del Arquitecto: *"Si utilizamos, para lograr nuestros fines, una agencia mecánica cuya operación no podemos interferir eficazmente... será mejor que estemos muy seguros de que el propósito introducido en la máquina es el propósito que realmente deseamos"*.

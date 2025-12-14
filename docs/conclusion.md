@@ -1,4 +1,4 @@
-# Conclusión de la Obra: De la Fundación a la Expansión
+# Conclusión: De la Fundación a la Expansión
 
 ## 1. Cierre de Ciclo: De Usuario a Vigilante
 
@@ -104,7 +104,15 @@ Gobernar es tener la capacidad de decir "no" al menú por defecto. La verdadera 
 
 ---
 
-## 7. Epílogo: Rutas que se Mantienen Abiertas
+### 7. La Advertencia de los Fundadores
+
+No enfrentamos un dilema nuevo, sino una deuda técnica histórica. Ya en 1950, **Norbert Wiener**, el padre de la cibernética, nos advirtió sobre el peligro de delegar propósitos en sistemas que no comparten nuestros valores. Su axioma resuena hoy con urgencia profética: *"Si utilizamos una agencia mecánica cuya operación no podemos interferir eficazmente... será mejor que estemos muy seguros de que el propósito introducido en la máquina es el propósito que realmente deseamos"*.
+
+El riesgo no es la rebelión de las máquinas, sino la abdicación humana. Como argumenta **Jaron Lanier**, el peligro es el "Lock-in": que reduzcamos nuestra infinita variabilidad humana para encajar en los menús predefinidos por el algoritmo, convirtiéndonos nosotros mismos en *gadgets* predecibles. El Arquitecto de IA no solo construye sistemas; construye la resistencia contra esa reducción. Nuestra responsabilidad final es rechazar el menú por defecto y escribir, con pulso firme, nuestros propios propósitos.
+
+---
+
+## 8. Epílogo: Rutas que se Mantienen Abiertas
 
 Tu trabajo, desde ahora, no es solo usar IA. Es sostener un marco. Un estándar. Una vigilancia.
 
