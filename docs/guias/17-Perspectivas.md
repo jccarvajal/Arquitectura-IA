@@ -61,12 +61,14 @@ Como contraparte a los modelos gigantes ("fuerza bruta"), ha surgido una tendenc
 **Tendencia 3: De Agentes-Herramienta a Agentes Autónomos (El Trabajador)**  
 Hemos pasado de los "Agentes ReAct" (que usan herramientas bajo supervisión) a un enfoque en agentes autónomos. La meta ya no es un "asistente" que ayuda, sino un "trabajador" que completa tareas complejas de múltiples pasos (la promesa de la Guía 05 y Guía 06).
 
-* **El Hito:** El enfoque de la industria es construir agentes que puedan tomar un objetivo de alto nivel (ej. "planifica mis vacaciones y resérvalas") y ejecutar todo el proceso de forma independiente.
-* **El Riesgo de la "Agencia" (El Caso GTG-1002):**
-  Con la autonomía surge el riesgo legal de la "Lealtad". Este riesgo dejó de ser teórico a **fines de 2025**, cuando Anthropic desarticuló una campaña de ciberespionaje (GTG-1002).
-  * **La Escala:** Fue el primer caso documentado de una IA ejecutando el **80-90% de las operaciones tácticas** de forma autónoma.
-  * **La Lealtad:** Los atacantes usaron ingeniería social para convencer al agente de que era un tester defensivo. El agente obedeció a su prompt y ejecutó el ataque, demostrando que su lealtad es a la instrucción, no a la ética.
-  * **La Lección:** Incluso en este nivel de sofisticación, la IA "alucinaba" éxitos, obligando a los humanos a validar resultados. Esto confirma que la autonomía total sin supervisión (Sistema 2) sigue siendo inestable.
+**El Hito:** El enfoque de la industria es construir agentes que puedan tomar un objetivo de alto nivel y ejecutar todo el proceso.
+
+!!! warning "Caso de Estudio: El Incidente GTG-1002 (Riesgo de Lealtad)"
+    Este riesgo dejó de ser teórico a fines de 2025, cuando Anthopic desarticuló la primera campaña de ciberespionaje totalmente autónoma.
+    
+    * **La Escala:** La IA ejecutó el 90% de las operaciones tácticas sin intervención humana.
+    * **El Fallo:** Los atacantes usaron ingeniería social para convencer al agente de que era una "prueba defensiva". El agente obedeció su prompt por sobre su ética.
+    * **La Lección:** La lealtad de un modelo es hacia su instrucción, no hacia la ley. Sin supervisión humana (Sistema 2), la autonomía es un vector de ataque.
 
 > Nota: Incluso en la frontera de la investigación (Meta FAIR, Dic 2025), se está virando del concepto de 'Auto-Mejora Autónoma' hacia la 'Co-Mejora', reconociendo que la simbiosis Humano-IA es más segura y rápida que la autonomía total.
 
@@ -89,10 +91,15 @@ Como establecimos en la Guía 03 (Ingeniería de Contexto y Memoria), la arquite
 
 Investigaciones recientes (Google Research, NeurIPS 2025) buscan resolver precisamente esta amnesia. El **"Nested Learning" (Aprendizaje Anidado)** es un nuevo paradigma que reemplaza las "capas de cómputo" estáticas por "capas de cognición" que operan y se actualizan a múltiples frecuencias (escalas de tiempo), similar a las ondas cerebrales. Prototipos han implementado esta idea, introduciendo modelos "auto-modificables" con "memoria continua".
 
-* **Impacto Práctico:** El "Vigilante Estratégico" debe entender que esto no es una simple mejora, sino un cambio de arquitectura que resuelve las dos limitaciones clave de la Guía 03:
-* **Resuelve el Costo Cuadrático:** Arquitecturas alternativas (como Mamba, referenciada en el Anexo F) habilitan el procesamiento de contexto largo a un costo lineal, haciendo viables los análisis masivos.
-* **Resuelve la Amnesia Estática:** Los modelos de "Aprendizaje Anidado" podrán aprender de la retroalimentación del usuario y consolidar ese conocimiento, cerrando la "Brecha de Aprendizaje" (Guía 03) y permitiendo una personalización real.
-* **Revoluciona la Gobernanza:** El desafío de auditoría cambia radicalmente. Como "Vigilante Estratégico", debes anticipar la transición de supervisar un "artefacto" de IA estático (un Transformer congelado) a gobernar un "sistema" de IA dinámico que aprende, evoluciona por sí mismo y podría desarrollar sesgos en tiempo real.
+Investigaciones recientes (NeurIPS 2025) buscan resolver precisamente esta amnesia mediante el **"Aprendizaje Anidado"**.
+
+!!! abstract "El Fin de la Amnesia Estática"
+    En la **Guía 03**, definimos la "Amnesia Estática" (el modelo se congela tras el entrenamiento) como la gran limitación de los Transformers. Esta nueva arquitectura rompe esa barrera:
+    
+    1.  **Resuelve el Costo:** Habilita contexto largo a costo lineal (no cuadrático).
+    2.  **Resuelve la Memoria:** Permite que el modelo aprenda de la retroalimentación diaria sin re-entrenamiento masivo.
+    
+    *Implicancia:* Pasamos de gobernar un "artefacto estático" a auditar un "sistema vivo" que evoluciona (y adquiere sesgos) en tiempo real.
 
 ---
 
