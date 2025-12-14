@@ -1,4 +1,4 @@
-# Prólogo: Fundación
+as# Prólogo: Fundación
 
 ## 1. El espectro de la imaginación: de la utopía a la distopía
 
@@ -51,7 +51,7 @@ Cuatro pensadores contemporáneos, desde la psicología, la filosofía, la teor�
     Esa combinación de fragilidad, ausencia de antifragilidad y falta de responsabilidad crea condiciones ideales para **cisnes negros**: fallos raros pero de impacto desproporcionado, amplificados por la falsa sensación de certeza que el propio sistema produce.
 
 !!! abstract "Daniel Innerarity — La Estupidez Artificial"
-    El filósofo político advierte que la complejidad del mundo no se resuelve delegando el juicio a una caja negra.
+    **Daniel Innerarity**, filósofo político, advierte que la complejidad del mundo no se resuelve delegando el juicio a una caja negra.
 
     * **La Tesis:** El riesgo real no es la *Superinteligencia* (que las máquinas se rebelen), sino la **Estupidez Artificial** (que los humanos abdiquen por pereza cognitiva).
     * **La Agencia:** La tecnología debe servir para gestionar la complejidad, no para reducirla.
