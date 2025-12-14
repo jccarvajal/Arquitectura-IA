@@ -14,9 +14,9 @@ Esta obra rechaza ambas ilusiones y propone un marco profesional para evitar la 
 
 ---
 
-## 2. Tres lentes para entender la IA que realmente tenemos
+## 2. Cuatro lentes para entender la IA que realmente tenemos
 
-Tres pensadores contemporáneos, desde la psicología, la filosofía y la teoría del riesgo, ofrecen un marco indispensable para comprender qué es, y qué no es, la IA actual.
+Cuatro pensadores contemporáneos, desde la psicología, la filosofía, la teoría del riesgo y la política, ofrecen el marco indispensable para comprender qué es, y qué no es, la IA actual.
 
 !!! abstract "Daniel Kahneman — El mapa cognitivo"
     En *Pensar, rápido y despacio*, **Daniel Kahneman**, psicólogo y premio en Ciencias Económicas en memoria de Alfred Nobel, distingue dos modos fundamentales de pensamiento:
@@ -50,6 +50,14 @@ Tres pensadores contemporáneos, desde la psicología, la filosofía y la teorí
 
     Esa combinación de fragilidad, ausencia de antifragilidad y falta de responsabilidad crea condiciones ideales para **cisnes negros**: fallos raros pero de impacto desproporcionado, amplificados por la falsa sensación de certeza que el propio sistema produce.
 
+!!! abstract "Daniel Innerarity — La Estupidez Artificial"
+    El filósofo político advierte que la complejidad del mundo no se resuelve delegando el juicio a una caja negra.
+
+    * **La Tesis:** El riesgo real no es la *Superinteligencia* (que las máquinas se rebelen), sino la **Estupidez Artificial** (que los humanos abdiquen por pereza cognitiva).
+    * **La Agencia:** La tecnología debe servir para gestionar la complejidad, no para reducirla.
+
+    **El Veredicto:** Si aceptamos las respuestas de la IA sin crítica (abdicación), perdemos nuestra agencia política y nos convertimos en sujetos pasivos de un sistema que no comprendemos.
+    
 ---
 
 ## 3. El veredicto de quienes la estudian, la critican y la construyen
