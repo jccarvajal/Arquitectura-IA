@@ -6,7 +6,14 @@ Subtítulo: Del "Director de Orquesta" al "Gobernador de Sistemas de IA"
 
 ### Introducción: La Arquitectura del Control
 
-Un motor potente sin frenos no es un vehículo; es un arma. Al pasar del laboratorio al mundo real, la prioridad del Arquitecto cambia drásticamente: ya no importa solo *qué puede hacer* el modelo, sino *qué podemos impedir que haga*.
+Un motor potente sin frenos no es un vehículo; es un arma. Al pasar del laboratorio al mundo real, la prioridad del Arquitecto cambia drásticamente.
+
+!!! abstract "Definición de Industria: El Estándar GRC"
+    Según Amazon Web Services (AWS), el enfoque **GRC (Gobernanza, Riesgo y Cumplimiento)** se define como:
+    
+    > *"Una forma estructurada de lograr que las tecnologías de la información se ajusten a los objetivos empresariales, a la vez que se gestionan los riesgos y se cumplen las regulaciones."*
+    
+    Mientras que en la Nube el GRC protege servidores y redes, en esta obra adaptamos el concepto para proteger **decisiones y cognición**.
 
 La "magia" de la IA se disipa rápido ante una inyección de prompt exitosa o una fuga de datos masiva. Aquí es donde termina la experimentación y comienza la **Gobernanza**.
 
