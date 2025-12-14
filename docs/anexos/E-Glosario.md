@@ -53,6 +53,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** Un término conceptual propio de esta obra para describir la limitación fundamental de la arquitectura Transformer. Es la incapacidad estructural del modelo para consolidar nueva información (aprendida de las interacciones) en su memoria a largo plazo (los pesos del modelo) después de que finaliza su entrenamiento.
 * **Referencia Principal:** Guía 03 (Contexto y Memoria), Guía 17 (Perspectivas).
 
+**Antifragilidad (Antifragility)**
+
+* **Definición:** Concepto de Nassim Taleb. Propiedad de los sistemas que se benefician del desorden y el estrés. En esta obra, se argumenta que la IA actual **no** es antifrágil porque aprende de datos estáticos pasados y no mejora estructuralmente con el estrés del error en tiempo real.
+* **Referencia Principal:** Prólogo (Fundación).
+
 **API (Application Programming Interface)**
 
 * **Definición:** Mecanismo de código que permite que dos sistemas de software se comuniquen. En la arquitectura de IA, es la vía para acceder al modelo de forma programática. A diferencia de un Chatbot (orientado al consumo), la API permite el control total sobre los parámetros de inferencia, la inyección del *System Prompt* y la integración en flujos de trabajo automatizados (Agentes).
@@ -68,6 +73,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** El objetivo de las arquitecturas de próxima generación (como "Nested Learning"). Es la capacidad de un modelo de IA para aprender continuamente de nuevas interacciones y datos sin sufrir un "olvido catastrófico" (olvidar lo que sabía antes). Es la solución a la "Amnesia Estática".
 * **Referencia Principal:** Guía 17 (Perspectivas).
 
+**Atrofia Cognitiva (Cognitive Atrophy)**
+
+* **Definición:** El deterioro de la capacidad humana para pensar críticamente o realizar tareas debido a la dependencia excesiva de la asistencia de la IA. Es el riesgo a largo plazo de la abdicación y la pérdida de la "Agencia".
+* **Referencia Principal:** Guía 15 (Ética), Anexo A (Formulación).
+
 **Auto-Modificable (Self-Modifying)**
 
 * **Definición:** Una característica clave de los modelos de Aprendizaje Anidado. Es la capacidad del sistema para aprender y modificar su propio algoritmo de actualización, en lugar de depender de una regla de aprendizaje fija.
@@ -77,6 +87,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** Es el mecanismo fundamental de la **Agencia**. Se refiere a la capacidad de un agente autónomo para generar sus propias instrucciones internas o "pensamientos" (dentro de un bucle como *ReAct*) para decidir el siguiente paso a tomar sin intervención humana. Es la IA diciéndose a sí misma qué hacer a continuación para cumplir un objetivo.
 * **Referencia Principal:** Guía 05 (Ingeniería de Agentes), Guía 17 (Perspectivas).
+
+**Base de Datos Vectorial (Vector Database)**
+
+* **Definición:** Tipo de base de datos optimizada para almacenar y consultar vectores (embeddings) en lugar de filas o documentos tradicionales. Es la infraestructura crítica que hace posible la memoria RAG al permitir búsquedas por similitud semántica.
+* **Referencia Principal:** Guía 03 (Contexto), Guía 11 (Industrialización).
 
 **Basura Elocuente (Eloquent Bullshit)**
 
@@ -123,6 +138,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** Mecanismo de seguridad en la arquitectura LOSA que detiene forzosamente la ejecución de un agente si detecta anomalías críticas, como un bucle de costos, un intento de inyección o una desviación del comportamiento esperado.
 * **Referencia Principal:** Guía 09 (Gobernanza), Guía 05 (Ingeniería de Agentes).
 
+**Cisne Negro (Black Swan)**
+
+* **Definición:** Evento altamente improbable, de impacto masivo y que se racionaliza retrospectivamente. La combinación de fragilidad técnica y falta de consecuencias en la IA crea el escenario perfecto para generar Cisnes Negros operacionales.
+* **Referencia Principal:** Prólogo (Fundación).
+
 **Co-Piloto Estratégico**
 
 * **Definición:** El rol humano evolucionado en la sinergia Humano-IA. El Co-Piloto no es un "usuario" pasivo que "pide" tareas, sino un "operador" activo que "instruye", "valida" y "audita" a la IA, usando su criterio de "Sistema 2" para dirigir la herramienta.
@@ -168,6 +188,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** Estrategia de seguridad que implementa múltiples capas de protección independientes (en entrenamiento, despliegue y monitoreo) para que el fallo de una no comprometa todo el sistema. Es el principio rector técnico de la arquitectura LOSA validado por estándares internacionales en 2025.
 * **Referencia Principal:** Guía 09 (Gobernanza).
 
+**Delimitadores (Delimiters)**
+
+* **Definición:** Técnica de seguridad en Prompting (ej. usar `###`, `"""` o `<datos>`) para separar visual y lógicamente las instrucciones del sistema de los datos del usuario dentro del prompt, ayudando a prevenir la Inyección de Prompts.
+* **Referencia Principal:** Guía 08 (Prototipado), Guía 09 (Gobernanza).
+
 **Divulgación (Disclosure)**
 
 * **Definición:** Un principio legal y técnico para Agentes Autónomos. Requiere que el agente se identifique transparentemente como una IA y revele ante Terceros a quién representa (quién es su "Principal").
@@ -197,6 +222,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** El plan maestro para la adquisición, almacenamiento, limpieza, seguridad y (crucialmente) vectorización de los datos propietarios. Define el "combustible" que alimentará a los sistemas RAG.
 * **Referencia Principal:** Guía 04 (Estrategia de Datos).
+
+**Estupidez Artificial**
+
+* **Definición:** Concepto del filósofo Daniel Innerarity. El riesgo opuesto y más real que la "Superinteligencia": no que las máquinas se vuelvan demasiado listas, sino que los humanos abdiquen de su juicio y se vuelvan estúpidos al confiar ciegamente en algoritmos opacos.
+* **Referencia Principal:** Prólogo, Conclusión.
 
 **ETL-V**
 
@@ -298,6 +328,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** La disciplina técnica de ensamblar dinámicamente *toda* la información necesaria (instrucciones, herramientas, RAG, memoria y sesión) dentro de la ventana de contexto de un LLM.
 * **Referencia Principal:** Guía 03 (Contexto y Memoria).
 
+**Ingeniería de Flujo (Flow Engineering)**
+
+* **Definición:** La competencia técnica de descomponer un problema complejo en una secuencia de pasos lógicos (algoritmo) que un agente de IA pueda ejecutar. Es la evolución del prompting simple hacia el diseño de procesos robustos.
+* **Referencia Principal:** Guía 16 (Aprender a Pensar).
+
 **Ingeniería de Prompts (Prompt Engineering)**
 
 * **Definición:** La disciplina de diseñar y estructurar instrucciones (prompts) de manera clara y precisa para obtener respuestas controladas.
@@ -378,6 +413,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** Medida de la capacidad de una organización para utilizar sus datos de manera efectiva. Se evalúa en dimensiones como accesibilidad, integración, calidad y privacidad. Un bajo nivel de madurez impide el despliegue seguro de agentes de IA.
 * **Referencia Principal:** Guía 04 (Estrategia de Datos).
 
+**MCP (Model Context Protocol)**
+
+* **Definición:** Estándar técnico emergente (2025) que permite conectar asistentes de IA a sistemas de datos de manera universal. Es la "tubería" fundamental que habilita la interoperabilidad en la Web Agéntica, permitiendo que agentes de distintos proveedores negocien entre sí.
+* **Referencia Principal:** Guía 05 (Agentes), Guía 17 (Perspectivas).
+
 **Memoria (vs. RAG)**
 
 * **Definición:** Distinción arquitectónica clave. **RAG** es el "bibliotecario" (hechos externos estáticos), la **Memoria** es el "asistente personal" (contexto del usuario dinámico).
@@ -402,6 +442,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** Documento técnico que reporta las capacidades de la Fase 1 (Pre-Entrenamiento) de un modelo. Detalla la arquitectura, parámetros, fecha de corte de conocimientos y benchmarks de rendimiento puro. Es esencial para evaluar la viabilidad técnica.
 * **Referencia Principal:** Guía 01 (Anatomía de Modelos).
+
+**Modelo de Mundo (World Model)**
+
+* **Definición:** Una arquitectura de IA teórica (como JEPA) que no solo predice la siguiente palabra estadística, sino que aprende una representación interna de cómo funciona el mundo físico (causa y efecto), permitiendo planificación y razonamiento real.
+* **Referencia Principal:** Guía 17 (Perspectivas).
 
 **Modelos Open-Source (Ejecución Local)**
 
@@ -583,6 +628,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** Término normativo (CPLT/Ley 21.180) que engloba cualquier sistema tecnológico (incluyendo IA, pero también reglas simples o Excel complejos) que ayude, asista, apoye o reemplace la toma de decisiones de un órgano administrativo. Es la unidad de medida para la Transparencia Algorítmica.
 * **Referencia Principal:** Guía 09 (Gobernanza), Anexo B (Política).
 
+**Self-Consistency (Autoconsistencia)**
+
+* **Definición:** Técnica avanzada de prompting donde se le pide al modelo que genere múltiples respuestas independientes para la misma pregunta y luego seleccione la más consistente o frecuente. Aumenta drásticamente la fiabilidad en tareas de razonamiento lógico.
+* **Referencia Principal:** Guía 02 (Ingeniería de Prompts).
+
 **Self-Prompting**
 
 * **Definición:** En esta obra, se refiere específicamente a la **Estrategia del Agente Especializado** (o flujo de "Auto-Prompting"). Es la técnica de utilizar una instancia de IA (un "Chat Taller") para redactar el prompt perfecto que luego será ejecutado por otra instancia (el "Chat Ejecutor"). Es el acto de "prepararse a uno mismo" el contexto antes de actuar.
@@ -622,6 +672,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** Metáfora para describir la resistencia natural de una organización al cambio. Se manifiesta cuando mandos medios sabotean iniciativas de innovación (como la IA) para proteger su estatus, presupuesto o headcount existente.
 * **Referencia Principal:** Guía 15 (Ética y Confianza).
+
+**Skin in the Game (Jugarse la Piel)**
+
+* **Definición:** Principio ético y de riesgo (Taleb). La idea de que quien toma una decisión debe asumir las consecuencias si esta sale mal. La IA carece intrínsecamente de esto (no sufre si se equivoca), por lo que nunca debe tener la autoridad final sobre decisiones de impacto.
+* **Referencia Principal:** Prólogo, Guía 15 (Ética).
 
 **SLA (Service Level Agreement)**
 

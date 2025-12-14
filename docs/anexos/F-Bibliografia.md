@@ -12,16 +12,20 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 
 * **Suleyman, M. & Bhaskar, M. (2023). "The Coming Wave: Technology, Power, and the Twenty-first Century's Greatest Dilemma". Crown.** [[Web]](https://www.thecomingwave.com/)
     * **Por qué leerlo:** Es la obra que define el **"Problema de la Contención"** citado en el Prólogo. Suleyman (fundador de DeepMind y Microsoft AI) argumenta por qué la brecha entre la velocidad tecnológica y la regulación política es el mayor riesgo del siglo.
-
 * **Bender, E. M., Gebru, T., et al. (2021). "On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?". FAccT '21.** [[PDF]](https://dl.acm.org/doi/pdf/10.1145/3442188.3445922)
     * **Por qué leerlo:** Es el *paper* académico de referencia para los **Críticos Técnicos**. Acuña el término **"Loros Estocásticos"**, explicando formalmente por qué la fluidez gramatical de los LLM no implica comprensión semántica ni intención.
-
 * **Executive Office of the President. (2025). "Executive Order 14319: Preventing Woke AI in the Federal Government". The White House.** [[Web]](https://www.whitehouse.gov/presidential-actions/2025/07/preventing-woke-ai-in-the-federal-government/)
     * **Por qué leerlo:** Documento legal clave que marca el fin de la neutralidad técnica. Oficializa la postura de la **"IA Anti-Woke"**, redefiniendo los filtros de seguridad (safety) como sesgo ideológico y estableciendo las bases políticas para la fragmentación de la IA.
-
 * **Amodei, D. (2023). "Oversight of A.I.: Principles for Regulation". U.S. Senate Judiciary Subcommittee Testimony.** [[PDF]](https://www.judiciary.senate.gov/imo/media/doc/2023-07-26_-_testimony_-_amodei.pdf)
     * **Por qué leerlo:** Testimonio escrito oficial donde el CEO de Anthropic detalla ante el Senado por qué la gobernanza, y no solo la capacidad técnica, es el "problema central". Aquí expone los riesgos de corto (biológicos) y largo plazo (autonomía) citados en tu prólogo.
-
+* **Asimov, I. (1951-1953). "The Foundation Trilogy". Gnome Press.** [[Web]](https://www.penguinrandomhouse.com/series/FOU/foundation/)
+    * **Por qué leerlo:** La trilogía que estructura este libro. Plantea la tesis central de la gobernanza: ante el colapso, la salida no es la fuerza, sino el diseño de un sistema de previsión y preservación del conocimiento (una "Fundación").
+* **Banks, I. M. (1988). "The Player of Games" (The Culture Series). Macmillan.** [[Web]](https://www.goodreads.com/book/show/1260577.The_Player_of_Games)
+    * **Por qué leerlo:** La referencia para la "Utopía del Hype". Retrata una sociedad post-escasez administrada por IAs benévolas ("Mentes") que gestionan la complejidad por nosotros, planteando la pregunta incómoda sobre si en ese paraíso el humano conserva alguna agencia real o es solo una ficha de juego.
+* **Corey, J. S. A. (2011-2021). "The Expanse" (Complete Series). Orbit.** [[Web]](https://www.hachettebookgroup.com/series/the-expanse/)
+    * **Por qué leerlo:** Fuente de la metáfora central de la Conclusión ("La Protomolécula"). La saga completa ilustra el ciclo de vida de la tecnología: desde el caos inicial de una herramienta opaca en manos irresponsables (*Protogen*), hasta su eventual domesticación para abrir nuevas rutas (*Los Anillos*) hacia la expansión humana.
+* **Herbert, F. (1965). "Dune". Chilton Books.** [[Web]](https://dunenovels.com/)
+    * **Por qué leerlo:** Origen del concepto de la "Yihad Butleriana". Es la advertencia definitiva contra la **Atrofia Cognitiva**: describe una humanidad que colapsó no porque las máquinas la atacaran, sino porque delegó tanto su pensamiento que perdió su capacidad de decidir.
 ---
 
 ### Sobre el Bloque 1: Los Fundamentos
@@ -102,7 +106,10 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
     * **Por qué leerlo:** Es un estudio clave que demuestra cómo la **sintaxis** puede anular la **semántica**, creando una nueva vulnerabilidad de seguridad que permite *bypass* (saltarse) las negativas éticas del modelo (*jailbreaks*). Es la prueba científica de que la seguridad no puede delegarse al LLM, justificando la arquitectura **LOSA** y el **Monitoreo de CoT** (Guía 09, 11).
 * **UiPath (2024). "The Future of Automation: Integrating GenAI with RPA". Whitepaper.** [[Web]](https://www.uipath.com/resources/whitepapers)
     * **Por qué leerlo:** Fundamenta la necesidad técnica de mantener herramientas de RPA (robots que hacen clics) para conectar la IA moderna con la infraestructura bancaria y gubernamental antigua ("Legacy") que no tiene APIs.
-
+* **Amazon Web Services (AWS). (s.f.). "¿Qué es el enfoque de gobernanza, riesgo y cumplimiento (GRC)?".** [[Web]](https://aws.amazon.com/es/what-is/grc/)
+    * **Por qué leerlo:** Es la fuente de la definición estándar de industria citada en la **Guía 09**. Establece la base para entender GRC no como burocracia, sino como la herramienta de ingeniería para alinear TI con los objetivos de negocio.
+* **Gobierno de Chile. (2019). "Ley N° 21.180 sobre Transformación Digital del Estado".** [[Web]](https://www.bcn.cl/leychile/navegar?idNorma=1138505)
+    * **Por qué leerlo:** Marco jurídico que habilita el procedimiento administrativo electrónico. Es la referencia legal para la definición de **SDA (Sistema de Decisión Automatizada)** en el Glosario y la base para la interoperabilidad de datos en el sector público.
 ---
 
 ### Sobre el Bloque 4: El Impacto

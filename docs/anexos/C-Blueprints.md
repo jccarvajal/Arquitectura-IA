@@ -63,8 +63,8 @@ La obra de guías y anexos fue diseñada para los "Arquitectos" y "Directores". 
     * **Rol del Agente:** Maneja el 100% del trabajo de "Sistema 1".  
     * **Rol del Humano (Validador):** El humano es elevado de "tomador de tickets" a "experto en escalaciones". Ya no responde 500 reseteos de contraseña. Ahora maneja las 50 quejas sensibles y complejas que el agente le escaló, que es trabajo puro de "Sistema 2" (empatía y resolución de problemas).
 
-> **✅ Validación de Mercado (Caso Real 2025):**
-> El reporte de Google Cloud *101 Real-World Gen AI Use Cases* confirma este modelo con el caso de **Mercari** (Marketplace), que implementó un asistente de servicio proyectando un **500% de ROI**, y **LUXGEN** (Automotriz), que redujo la carga humana en un **30%** usando agentes en LINE para responder preguntas frecuentes. Tu diseño coincide con el estándar de la industria.
+!!! success "✅ Validación de Mercado (Caso Real 2025)"
+    El reporte de Google Cloud *101 Real-World Gen AI Use Cases* confirma este modelo con el caso de **Mercari** (Marketplace), que implementó un asistente de servicio proyectando un **500% de ROI**, y **LUXGEN**, que redujo la carga humana en un **30%**. Tu diseño coincide con el estándar de la industria.
 
 ---
 
@@ -106,8 +106,8 @@ La obra de guías y anexos fue diseñada para los "Arquitectos" y "Directores". 
         * *Antes:* Pasaba 80 horas buscando las cláusulas.  
         * *Ahora:* Pasa 4 horas revisando el dashboard de JSON que el agente produjo. Se enfoca solo en los 150 contratos que el agente marcó como riesgo\_detectado: "Alto". Es trabajo puro de "Sistema 2".
 
-> **✅ Validación de Mercado (Caso Real 2025):**
-> La firma **Freshfields** validó este enfoque utilizando IA para "Dynamic Due Diligence", automatizando revisiones legales masivas y repetitivas. Asimismo, **Fluna** logró un **92% de precisión** automatizando el análisis y redacción de contratos, confirmando que la especialización del agente (S2) es viable y segura en entornos corporativos.
+!!! success "✅ Validación de Mercado (Caso Real 2025)"
+    La firma **Freshfields** validó este enfoque utilizando IA para "Dynamic Due Diligence", automatizando revisiones legales masivas y repetitivas. Asimismo, **Fluna** logró un **92% de precisión** automatizando el análisis y redacción de contratos, confirmando que la especialización del agente (S2) es viable y segura en entornos corporativos.
 
 ---
 
@@ -146,8 +146,8 @@ La obra de guías y anexos fue diseñada para los "Arquitectos" y "Directores". 
     * **Rol del Agente:** El "Director de Programa" ejecutó días de trabajo de "Sistema 1" (investigar, crear borradores) en minutos, usando el portafolio de motores más eficiente.  
     * **Rol del Humano (Director de MKT):** Opera 100% en "Sistema 2". El agente hizo todo el "trabajo de campo". El humano aplica su juicio estratégico para elegir el mejor eslogan y aprobar el plan.
 
-> **✅ Validación de Mercado (Caso Real 2025):**
-> El gigante de publicidad **WPP** integró Gemini en su sistema operativo de marketing (WPP Open) para permitir que sus equipos creativos generen conceptos y campañas a una velocidad sin precedentes, validando el modelo de "Co-Piloto Creativo" y "Agente de Estrategia" a escala global.
+!!! success "✅ Validación de Mercado (Caso Real 2025)"
+    El gigante de publicidad **WPP** integró Gemini en su sistema operativo de marketing (WPP Open) para permitir que sus equipos creativos generen conceptos y campañas a una velocidad sin precedentes, validando el modelo de "Co-Piloto Creativo" y "Agente de Estrategia" a escala global.
 
 ---
 
@@ -185,8 +185,8 @@ La obra de guías y anexos fue diseñada para los "Arquitectos" y "Directores". 
         * *Antes:* Realizaba auditorías aleatorias trimestrales.  
         * *Ahora:* Llega en la mañana, revisa el "Dashboard de Gobernanza" que el agente pobló, y toma decisiones de "Sistema 2" (ej. "Autorizo la purga de los 820 chunks obsoletos").
 
-> **✅ Validación de Mercado (Caso Real 2025):**
-> La necesidad crítica de este agente es validada por **Geotab**, que procesa miles de millones de puntos de datos diarios para optimización en tiempo real, y **Prewave**, que utiliza agentes para el monitoreo continuo de riesgos en la cadena de suministro y cumplimiento ESG.
+!!! success "✅ Validación de Mercado (Caso Real 2025)"
+    La necesidad crítica de este agente es validada por **Geotab**, que procesa miles de millones de puntos de datos diarios para optimización en tiempo real, y **Prewave**, que utiliza agentes para el monitoreo continuo de riesgos en la cadena de suministro y cumplimiento ESG.
 
 ---
 
@@ -213,8 +213,8 @@ La obra de guías y anexos fue diseñada para los "Arquitectos" y "Directores". 
     * **Rol del Agente:** Actúa como un "multiplicador de experiencia humana".  
     * **Rol del Humano (Validador):** El humano usa su juicio de "Sistema 2" no para escribir 1.000 ejemplos (tarea de Sistema 1), sino para validar 1.000 ejemplos (tarea de Sistema 2), asegurando la calidad del "combustible" de datos.
 
-> **✅ Validación de Mercado (Caso Real 2025):**
-> Este enfoque es validado por **BMW Group**, que desarrolló *SORDI.ai* (Synthetic Object Recognition Dataset for Industries), una herramienta que genera miles de imágenes sintéticas (gemelos digitales) para entrenar a sus modelos de visión artificial sin necesidad de capturar fotos reales en la fábrica. Asimismo, **Gretel.ai** ha validado el modelo de negocio de generar datos sintéticos "privados" para desbloquear el entrenamiento de modelos en sectores regulados (salud/finanzas).
+!!! success "✅ Validación de Mercado (Caso Real 2025)"
+    Este enfoque es validado por **BMW Group**, que desarrolló *SORDI.ai* (Synthetic Object Recognition Dataset for Industries), una herramienta que genera miles de imágenes sintéticas (gemelos digitales) para entrenar a sus modelos de visión artificial sin necesidad de capturar fotos reales en la fábrica. Asimismo, **Gretel.ai** ha validado el modelo de negocio de generar datos sintéticos "privados" para desbloquear el entrenamiento de modelos en sectores regulados (salud/finanzas).
 
 ---
 
@@ -237,8 +237,8 @@ La obra de guías y anexos fue diseñada para los "Arquitectos" y "Directores". 
     * **Rol del Agente:** Actúa como un "multiplicador de cognición". Maneja la "velocidad" táctica de la escritura y provee una perspectiva externa instantánea.  
     * **Rol del Humano (Co-Piloto):** El humano opera 100% en "Sistema 2". No delega la tarea, sino que dirige la tarea en cada paso. El producto final es significativamente mejor que el que cualquiera de los dos (humano o IA) podría haber creado por separado.
 
-> **✅ Validación de Mercado (Caso Real 2025):**
-> El impacto de este co-piloto es confirmado por **Kraft Heinz**, que logró reducir drásticamente los tiempos de producción de campañas creativas utilizando flujos iterativos Humano-IA sobre Vertex AI. De igual forma, **Carrefour** utiliza un "Marketing Bot" que actúa como co-piloto para generar videos y descripciones de productos en tiempo récord, validando que la IA no reemplaza al creativo, sino que acelera su iteración (Sinergia).
+!!! success "✅ Validación de Mercado (Caso Real 2025)"
+    El impacto de este co-piloto es confirmado por **Kraft Heinz**, que logró reducir drásticamente los tiempos de producción de campañas creativas utilizando flujos iterativos Humano-IA sobre Vertex AI. De igual forma, **Carrefour** utiliza un "Marketing Bot" que actúa como co-piloto para generar videos y descripciones de productos en tiempo récord, validando que la IA no reemplaza al creativo, sino que acelera su iteración (Sinergia).
 
 ---
 
@@ -264,5 +264,6 @@ La obra de guías y anexos fue diseñada para los "Arquitectos" y "Directores". 
     * **Rol del Agente:** El agente ahora genera valor directo.  
     * **Rol del Humano (Estratega):** La organización ha completado el viaje. La IA ya no es solo una herramienta de eficiencia interna; se ha convertido en un producto de innovación externa, creando un nuevo "Foso Competitivo".
 
-> **✅ Validación de Mercado (Caso Real 2025):**
-> La transición de "Herramienta Interna" a "Producto Vendible" es validada por **Moveo.AI**, que construyó su plataforma de agentes de experiencia del cliente (CX) sobre la infraestructura de Vertex AI, convirtiendo la capacidad técnica en un producto SaaS. Del mismo modo, **Sutherland** transformó sus operaciones de BPO (outsourcing) integrando agentes cognitivos para la banca y salud, pasando de vender "horas-hombre" a vender "resultados automatizados", tal como propone este blueprint.
+!!! success "✅ Validación de Mercado (Caso Real 2025)"
+    La transición de "Herramienta Interna" a "Producto Vendible" es validada por **Moveo.AI**, que construyó su plataforma de agentes de experiencia del cliente (CX) sobre la infraestructura de Vertex AI, convirtiendo la capacidad técnica en un producto SaaS. Del mismo modo, **Sutherland** transformó sus operaciones de BPO (outsourcing) integrando agentes cognitivos para la banca y salud, pasando de vender "horas-hombre" a vender "resultados automatizados", tal como propone este blueprint.
+    
