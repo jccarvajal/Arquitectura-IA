@@ -40,21 +40,10 @@ En la economía pre-IA, el activo era el "Conocimiento Retenido" (base de datos 
 
 El nuevo valor del humano es la **Capacidad de Auditoría**:
 
-> **Interrogatorio**
->
-> La habilidad de formular el *prompt* que expone las debilidades del modelo (Red Teaming).
-
-> **Contextualización**
->
-> La inyección de lógica de negocio y "sentido común" que el modelo desconoce por estar congelado en el tiempo.
-
-> **Detección de Anomalías**
->
-> El juicio para identificar cuándo una respuesta "lógica" y bien redactada es, de hecho, absurda en el mundo real.
-
-> **Integridad**
-> 
-> La aplicación del *hard-stop* ético ante una solución técnicamente viable pero moralmente inaceptable.
+* **Interrogatorio:** La habilidad de formular el *prompt* que expone las debilidades del modelo (Red Teaming).
+* **Contextualización:** La inyección de lógica de negocio y "sentido común" que el modelo desconoce por estar congelado en el tiempo.
+* **Detección de Anomalías:** El juicio para identificar cuándo una respuesta "lógica" y bien redactada es, de hecho, absurda en el mundo real.
+* **Integridad:** La aplicación del *hard-stop* ético ante una solución técnicamente viable pero moralmente inaceptable.
 
 Tu función operativa deja de ser "responder"; ahora es "certificar la respuesta".
 
@@ -81,13 +70,7 @@ Este profesional no está "usando" IA; está **programando** un flujo de trabajo
 
 ---
 
-### Parte 4: Procedimientos Operativos Estándar (SOP) por Rol
-
-A continuación, se definen los protocolos de ejecución para los roles críticos. Ya no es "colaboración"; es operación integrada.
-
----
-
-### SOP para el Analista: Protocolo de Validación
+### Parte 4: SOP para el Analista (Protocolo de Validación)
 
 * **Nuevo Rol:** Auditor de Salida (Quality Assurance).
 * **Misión:** Si el Agente RAG procesa 1000 documentos en segundos, tu trabajo es detectar el único error que destruye la tesis.
@@ -124,7 +107,7 @@ prompt: |
 
 ---
 
-### SOP para el Gerente: Definición de Intención
+### Parte 5: SOP para el Gerente (Definición de Intención)
 
 * **Nuevo Rol:** Orquestador de Recursos.
 * **Misión:** Dejar de micro-gestionar tareas (S1) y empezar a definir estados finales (S2).
@@ -162,7 +145,8 @@ prompt: |
 **Objetivo:** Mantener la responsabilidad humana sobre la decisión algorítmica.
 
 ---
-### SOP para el Desarrollador: Gobernanza de Código
+
+### Parte 6: SOP para el Desarrollador (Gobernanza de Código)
 
 * **Nuevo Rol:** Arquitecto de Seguridad y Sistemas.
 * **Misión:** Supervisar la generación de código masiva, asumiendo que todo output es inseguro por defecto.
