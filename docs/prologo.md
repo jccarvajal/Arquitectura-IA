@@ -2,7 +2,7 @@
 
 ## 1. El espectro de la imaginación: de la utopía a la distopía
 
-<img src="assets/images/the-culture-dune.png" alt="La Cultura - Duna" width="500">
+![La Cultura - Duna](assets/images/the-culture-dune.png){ width="500" }
 
 La forma en que imaginamos la Inteligencia Artificial condiciona la manera en que la adoptamos, la gobernamos y la tememos. Mucho antes de la actual explosión de modelos generativos, la IA ya existía como narrativa cultural: como promesa, advertencia y espejo de nuestras aspiraciones. Ese imaginario no es accesorio: traza los límites de lo posible y revela los riesgos de nuestra relación con la tecnología.
 
