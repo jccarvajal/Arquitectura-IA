@@ -41,15 +41,19 @@ En la economía pre-IA, el activo era el "Conocimiento Retenido" (base de datos 
 El nuevo valor del humano es la **Capacidad de Auditoría**:
 
 > **Interrogatorio**
+
 > La habilidad de formular el *prompt* que expone las debilidades del modelo (Red Teaming).
 
 > **Contextualización**
+
 > La inyección de lógica de negocio y "sentido común" que el modelo desconoce por estar congelado en el tiempo.
 
 > **Detección de Anomalías**
+
 > El juicio para identificar cuándo una respuesta "lógica" y bien redactada es, de hecho, absurda en el mundo real.
 
 > **Integridad**
+
 > La aplicación del *hard-stop* ético ante una solución técnicamente viable pero moralmente inaceptable.
 
 Tu función operativa deja de ser "responder"; ahora es "certificar la respuesta".
@@ -85,22 +89,38 @@ Este profesional no está "usando" IA; está **programando** un flujo de trabajo
 
 A continuación, se definen los protocolos de ejecución para los roles críticos. Ya no es "colaboración"; es operación integrada.
 
+---
+
 ### SOP para el Analista: Protocolo de Validación
 
 * **Nuevo Rol:** Auditor de Salida (Quality Assurance).
 * **Misión:** Si el Agente RAG procesa 1000 documentos en segundos, tu trabajo es detectar el único error que destruye la tesis.
 
+---
+
 **Táctica A: El "Red Team" Cognitivo**
 
-* **Procedimiento:** Nunca acepte la primera inferencia. Fuerce al modelo a atacar su propia lógica.
-* **Comando:** *"Identifica 3 puntos débiles en tu análisis anterior. Asume que la premisa es falsa y genera el contra-argumento."*
-* **Objetivo:** Revelar alucinaciones de lógica y sesgos de confirmación.
+**Procedimiento:** Nunca acepte la primera inferencia. Fuerce al modelo a atacar su propia lógica.
+
+**Comando:**
+```yaml
+prompt: "Identifica 3 puntos débiles en tu análisis anterior. Asume que la premisa es falsa y genera el contra-argumento."
+```
+
+**Objetivo:** Revelar alucinaciones de lógica y sesgos de confirmación.
+
+---
 
 **Táctica B: Anclaje de Evidencia (Grounding)**
 
-* **Procedimiento:** Prohibición estricta de datos sin referencia.
-* **Comando:** *"Detente. Para el dato [X], cita el documento y la página exacta del corpus RAG. Si no existe la cita, elimina el dato."*
-* **Objetivo:** Auditoría de facticidad en tiempo real.
+**Procedimiento:** Prohibición estricta de datos sin referencia.
+
+**Comando:**
+```yaml
+prompt: "Detente. Para el dato [X], cita el documento y la página exacta del corpus RAG. Si no existe la cita, elimina el dato."
+```
+
+**Objetivo:** Auditoría de facticidad en tiempo real.
 
 ---
 
@@ -109,35 +129,63 @@ A continuación, se definen los protocolos de ejecución para los roles crítico
 * **Nuevo Rol:** Orquestador de Recursos.
 * **Misión:** Dejar de micro-gestionar tareas (S1) y empezar a definir estados finales (S2).
 
+---
+
 **Táctica A: Programación de Objetivos**
 
-* **Procedimiento:** No asigne tareas; asigne misiones con restricciones de recursos.
-* **Comando:** *"Agente-Director, la misión es 'reducir el churn en 5%'. Presupuesto: $50. Herramientas autorizadas: Lectura de Tickets y Redacción de Borradores. Ejecuta plan."*
-* **Objetivo:** Maximizar la autonomía del agente dentro de límites de gobernanza.
+**Procedimiento:** No asigne tareas; asigne misiones con restricciones de recursos.
 
-**Táctica B: Auditoría de "Caja Negra"**
+**Comando:**
+```yaml
+misión: "Reducir el churn en 5%"
+presupuesto: "$50.00"
+herramientas_autorizadas: ["Lectura de Tickets", "Redacción de Borradores"]
+instrucción: "Ejecuta plan bajo estas restricciones."
+```
 
-* **Procedimiento:** Ante una decisión automatizada, exija la traza de razonamiento.
-* **Comando:** *"Despliega el log de 'Chain-of-Thought'. ¿Qué variables pesaste para recomendar esta decisión? ¿Qué datos descartaste?"*
-* **Objetivo:** Mantener la responsabilidad humana sobre la decisión algorítmica.
+**Objetivo:** Maximizar la autonomía del agente dentro de límites de gobernanza.
 
 ---
 
-### SOP para el Desarrollador: Gobernanza de Código
+**Táctica B: Auditoría de "Caja Negra"**
+
+**Procedimiento:** Ante una decisión automatizada, exija la traza de razonamiento.
+
+**Comando:**
+```yaml
+prompt: "Despliega el log de 'Chain-of-Thought'. ¿Qué variables pesaste para recomendar esta decisión? ¿Qué datos descartaste?"
+```
+
+**Objetivo:** Mantener la responsabilidad humana sobre la decisión algorítmica.
+
+---
+#### SOP para el Desarrollador: Gobernanza de Código
 
 * **Nuevo Rol:** Arquitecto de Seguridad y Sistemas.
 * **Misión:** Supervisar la generación de código masiva, asumiendo que todo output es inseguro por defecto.
 
+---
+
 **Táctica A: Cuarentena de Código**
 
-* **Procedimiento:** Tratar todo código generado por IA como "código hostil" hasta su validación.
-* **Acción:** Revisión obligatoria de dependencias alucinadas y vulnerabilidades de inyección antes del commit.
+**Procedimiento:** Tratar todo código generado por IA como "código hostil" hasta su validación.
+
+**Acción:**
+> Revisión obligatoria de dependencias alucinadas y vulnerabilidades de inyección antes del commit.
+
+---
 
 **Táctica B: Inyección de Contexto Técnico (RAG Manual)**
 
-* **Procedimiento:** No permitir que el agente "adivine" la arquitectura.
-* **Comando:** *"Ingesta estas 3 clases base y la documentación de nuestra API interna. Genera la función X cumpliendo estrictamente estos patrones."*
-* **Objetivo:** Reducir la deuda técnica por código genérico no adaptado.
+**Procedimiento:** No permitir que el agente "adivine" la arquitectura.
+
+**Comando:**
+```yaml
+contexto: "Ingesta estas 3 clases base y la documentación de nuestra API interna."
+tarea: "Genera la función X cumpliendo estrictamente estos patrones."
+```
+
+**Objetivo:** Reducir la deuda técnica por código genérico no adaptado.
 
 ---
 
