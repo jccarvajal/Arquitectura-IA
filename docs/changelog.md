@@ -1,62 +1,42 @@
 # Historial de Versiones
 
-Este documento registra todas las modificaciones estructurales, técnicas y conceptuales realizadas en el libro **"Arquitectura de Inteligencia Artificial: Guías para Decidir, Diseñar y Gobernar"**
+Este documento registra todas las modificaciones estructurales, técnicas y conceptuales realizadas en el libro **"Arquitectura de Inteligencia Artificial: Guías para Decidir, Diseñar y Gobernar"**.
 
 ---
 
-## Versión 1.3 (Diciembre 2025)
+# Versión 1.3 (Diciembre 2025)
 
-**Motivo:** Consolidación del concepto de "Agencia Humana", integración del marco de **Soberanía y Geopolítica**, y actualización mayor de infraestructura (Migración a MkDocs). Se establece la tesis central de la gobernanza como ingeniería.
+**Motivo:** Consolidación de la tesis de gobernanza como **"Ingeniería de Control"** frente a la burocracia normativa. Esta versión integra la estrategia de **Soberanía y Geopolítica** (no-neutralidad), la visión de **Agencia Humana** (Innerarity) y profundiza en los riesgos de **politización técnica** y **atrofia cognitiva**. Incluye fundamentación histórica (Wiener/Lanier), literaria (Pratchett), mejoras en Anexos y migración técnica a plataforma **MkDocs** con diagramas **Mermaid.js**.
 
-### Actualizaciones Estratégicas (Geopolítica y Soberanía)
-* **Tesis Central de Gobernanza (Guía 15):** Se incorporó explícitamente la definición fundacional del enfoque GRC del libro: *"La gobernanza no es burocracia legal, es ingeniería de control"*, moviendo el foco de la normativa documental a la arquitectura de sistemas.
-* **Prólogo (La Fractura Geopolítica):** Nueva sección "El Veredicto" que analiza el fin de la neutralidad técnica y la competencia entre bloques de IA (Woke vs. Anti-Woke).
-* **Guía 15 (Reingeniería):** Renombrada a *"Ética, Soberanía y Confianza"*.
-    * **Nueva Parte 5:** Se añadió "Estrategia: Soberanía y Alineación", introduciendo la **Matriz de Decisión** para elegir entre modelos SaaS (Safety-First) y Open Weights (Soberanos) según el riesgo de censura y ubicación de datos.
-    * **Riesgo 2.1:** Se profundizó en la "Politización de la Arquitectura" y el sesgo de diseño.
+### Actualizaciones Estratégicas y Filosóficas
+* **Tesis Central (Guía 15 y Conclusión):** Se estableció el axioma de la "Agencia Humana" frente al "Lock-in", integrando la **"Advertencia de los Fundadores"** (Norbert Wiener y Jaron Lanier) para conectar la ingeniería moderna con la cibernética clásica.
+* **Prólogo (Marco Narrativo):** Nueva estructura basada en las cuatro metáforas de futuros: Utopía (*La Cultura*), Distopía (*Dune*), Caos (*The Expanse*) y Estructura (*Fundación*).
+* **Geopolítica (Guía 15):** Inclusión de la **Matriz de Decisión** (SaaS vs. Open Weights) y análisis de la fractura geopolítica (Woke vs. Anti-Woke) y la politización de la arquitectura.
 
-### Actualizaciones Conceptuales (La Capa de Agencia)
-* **Conclusión (Nueva Sección):** Se añadió "La Construcción de la Agencia", integrando la visión de Daniel Innerarity sobre la gobernanza como un acto de negociación entre oferta tecnológica y demanda humana.
-* **Glosario Expandido:** Nuevos términos críticos: *IA Soberana (Sovereign AI)*, *Alineación Nacional*, *Problema de la Contención* y *Abdicación vs. Aumento*.
+### Actualizaciones de Referencias y Bibliografía
+* **Anexo F (Bibliografía):** Expansión mayor para incluir:
+    * **Sección Literaria:** Reseñas técnicas de obras de ciencia ficción (Asimov, Banks, Corey, Herbert) como marcos de gobernanza.
+    * **Sección Filosófica:** Inclusión de Terry Pratchett (*Hogfather*) y Norbert Wiener (*Cybernetics*) para respaldar la conclusión.
+* **Glosario (Anexo E):** Inclusión de términos emergentes como **Web Agéntica**, **XAI (Explicabilidad Funcional)** y **Lealtad Agéntica**.
 
-### Actualizaciones de Infraestructura y Visualización
-* **Migración a MkDocs:** El repositorio migró de Jekyll a MkDocs (Material Theme) para mejorar la navegación, la búsqueda y la experiencia de lectura técnica.
-* **Diagramas Vivos (Mermaid.js):** Se reemplazaron descripciones estáticas por diagramas de código renderizados en tiempo real para conceptos críticos:
-    * Ciclo ReAct (Guía 05).
-    * Arquitectura RAG vs Fine-Tuning (Guía 07).
-    * Arquitectura LOSA (Guía 09).
-    * Mapa de ROI (Guía 12).
-
-### Referencias y Documentación
-* **Bibliografía Blindada:** Nuevo bloque de referencias sobre **Geopolítica y Seguridad** (Anexo F), incluyendo órdenes ejecutivas recientes (2025), *papers* académicos (Loros Estocásticos) y literatura de estrategia (Suleyman/Amodei).
+### Mejoras Técnicas y de Usabilidad
+* **Infraestructura:** Migración completa del manuscrito a formato **MkDocs** e implementación de diagramas de arquitectura mediante **Mermaid.js**.
+* **Anexo A (Formulación):** Adición del bloque de **Dictamen Final (Triage)** para formalizar la decisión de viabilidad.
+* **Anexo B (Política):** Inclusión de la **Guía de Adaptación** (`!!! tip`) con diccionario de términos para el sector privado y contexto internacional.
+* **Anexo C (Blueprints):** Adición de bloques de **Validación de Mercado** (`!!! success`) con casos reales 2025.
+* **Anexo D (Plantillas):** Migración de bloques de texto a `markdown` para facilitar el copiado directo de prompts.
 
 ---
 
 ## Versión 1.2 (Noviembre 2025)
 
-**Motivo:** Evolución a un estándar de arquitectura corporativa. Cambio de nombre a **"Arquitectura de IA"** para reflejar el enfoque en diseño y gobernanza de sistemas. Integración de estándares internacionales de seguridad (UK Safety Report 2025).
+**Motivo:** Estandarización de conceptos de "Agencia" y refinamiento de la "Ingeniería de Agentes".
 
-### Cambios Estructurales y de Arquitectura
-
-* **Cambio de Nombre:** El título principal de la obra fue cambiado de *"Inteligencia Artificial Aplicada"* a **"Arquitectura de Inteligencia Artificial"**.
-* **Reestructuración Modular:** El sistema de Guías fue reordenado y ampliado a **17 Guías** y **6 Anexos (A-F)**.
-* **Nuevas Guías Clave:** Se crearon las guías de **ROI Financiero** (Guía 12), **Ajuste Fino** (Guía 07) y **Anatomía de Modelos** (Guía 01).
-
-### Actualizaciones de Seguridad y Gobernanza (Nov 2025)
-
-* **Validación de LOSA:** Se alineó la arquitectura LOSA con el estándar global de **"Defensa en Profundidad"** (Defence-in-Depth) citado en el reporte de seguridad del Reino Unido.
-* **Nuevos Vectores de Riesgo:** Se incorporó el **Envenenamiento de Datos (Data Poisoning)** en la Guía 09, citando la vulnerabilidad crítica ante inserciones mínimas (250 documentos).
-* **Estándar de Auditoría:** Se adoptó el concepto de **"Safety Cases"** (Casos de Seguridad) en el Anexo A y Guía 01 como el estándar para justificar despliegues seguros.
-* **Observabilidad:** Se refinó el monitoreo para incluir la auditoría de **"Cadena de Pensamiento" (CoT)** en la Guía 11.
-
-### Actualizaciones de Ética y Estrategia
-
-* **Sostenibilidad (Green AI):** Se añadió en la Guía 15 el riesgo de impacto ambiental y la responsabilidad ESG en la selección de modelos.
-* **Gestión del Cambio:** Se incorporó la sección de **"Resistencia Inmunológica"** y gestión del sabotaje interno en la Guía 15.
-* **Portabilidad:** Se añadió la estrategia de **"Prompt-as-Code"** y desacople de proveedores en la Guía 11 para mitigar el *Vendor Lock-in*.
+### Cambios Técnicos
+* **Guía 05 (Agentes):** Formalización del ciclo **ReAct** (Razonar + Actuar) como estándar de arquitectura. Diferenciación explícita entre "Chatbot" y "Agente".
+* **Guía 14 (Modelos):** Introducción de la **Estrategia de Portafolio** (Triángulo de Adquisición) y la métrica de *Token-Economics* en la Guía 01 para mitigar el *Vendor Lock-in*.
 
 ### Mejoras Didácticas y de Formato
-
 * **Mapa del Territorio:** Inclusión del diagrama conceptual **IA > ML > DL > GenAI** en la Guía 01.
 * **Marco CRF-R:** Se insertó explícitamente la síntesis del método de prompting (Contexto, Rol, Formato, Restricciones) en la Guía 02.
 * **Sanitización:** Corrección de formatos en bloques de código para asegurar compatibilidad visual en móviles y editores Markdown.
@@ -68,13 +48,11 @@ Este documento registra todas las modificaciones estructurales, técnicas y conc
 **Motivo:** Transición a un marco de pensamiento estratégico completo. Consolidación del enfoque GRC.
 
 ### Cambios Estratégicos
-
 * **Tesis Central:** El enfoque del libro se centró explícitamente en **GRC (Gobernanza, Riesgo y Cumplimiento)**.
 * **Ingeniería de Contexto:** Se elevó el concepto de "Ingeniería de Prompts" a una disciplina de gestión de memoria y contexto.
 * **Límites del Transformer:** Definición explícita del **Costo Cuadrático** y la **Amnesia Estática** como limitantes estructurales.
 
 ### Gobernanza y Responsabilidad
-
 * **Arquitectura LOSA:** Introducción inicial de la capa *middleware* de seguridad.
 * **Roles de Gobernanza:** Definición de "Dueño del Sistema" y "Monitor de Cumplimiento" en la Política Institucional (Anexo B).
 
@@ -84,5 +62,5 @@ Este documento registra todas las modificaciones estructurales, técnicas y conc
 
 **Motivo:** Publicación inicial del borrador de contenidos.
 
-* **Lanzamiento:** Publicación del libro en dominio personalizado.
-* **Contenido Base:** Principios de "Delegar, No Abdicar" y gestión de riesgos del sector público.
+* **Lanzamiento:** Publicación del libro con la estructura de 17 guías y 6 anexos.
+* **Enfoque:** Guías técnicas para la implementación de LLMs en entornos corporativos.
