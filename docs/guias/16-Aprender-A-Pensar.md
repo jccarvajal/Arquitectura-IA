@@ -52,7 +52,8 @@ El nuevo valor del humano es la **Capacidad de Auditoría**:
 >
 > El juicio para identificar cuándo una respuesta "lógica" y bien redactada es, de hecho, absurda en el mundo real.
 
-> **Integridad** 
+> **Integridad**
+> 
 > La aplicación del *hard-stop* ético ante una solución técnicamente viable pero moralmente inaceptable.
 
 Tu función operativa deja de ser "responder"; ahora es "certificar la respuesta".
@@ -99,7 +100,9 @@ A continuación, se definen los protocolos de ejecución para los roles crítico
 
 **Comando:**
 ```yaml
-prompt: "Identifica 3 puntos débiles en tu análisis anterior. Asume que la premisa es falsa y genera el contra-argumento."
+prompt: |
+  Identifica 3 puntos débiles en tu análisis anterior.
+  Asume que la premisa es falsa y genera el contra-argumento.
 ```
 
 **Objetivo:** Revelar alucinaciones de lógica y sesgos de confirmación.
@@ -112,7 +115,9 @@ prompt: "Identifica 3 puntos débiles en tu análisis anterior. Asume que la pre
 
 **Comando:**
 ```yaml
-prompt: "Detente. Para el dato [X], cita el documento y la página exacta del corpus RAG. Si no existe la cita, elimina el dato."
+prompt: |
+  Detente. Para el dato [X], cita el documento y la página exacta.
+  Si no existe la cita en el corpus RAG, elimina el dato.
 ```
 
 **Objetivo:** Auditoría de facticidad en tiempo real.
@@ -148,7 +153,10 @@ instrucción: "Ejecuta plan bajo estas restricciones."
 
 **Comando:**
 ```yaml
-prompt: "Despliega el log de 'Chain-of-Thought'. ¿Qué variables pesaste para recomendar esta decisión? ¿Qué datos descartaste?"
+prompt: |
+  Despliega el log de 'Chain-of-Thought'.
+  ¿Qué variables pesaste para recomendar esta decisión?
+  ¿Qué datos específicos descartaste en el proceso?
 ```
 
 **Objetivo:** Mantener la responsabilidad humana sobre la decisión algorítmica.
@@ -176,8 +184,12 @@ prompt: "Despliega el log de 'Chain-of-Thought'. ¿Qué variables pesaste para r
 
 **Comando:**
 ```yaml
-contexto: "Ingesta estas 3 clases base y la documentación de nuestra API interna."
-tarea: "Genera la función X cumpliendo estrictamente estos patrones."
+contexto: |
+  Ingesta estas 3 clases base
+  y la documentación de nuestra API interna.
+tarea: |
+  Genera la función X cumpliendo estrictamente
+  estos patrones de diseño.
 ```
 
 **Objetivo:** Reducir la deuda técnica por código genérico no adaptado.
