@@ -158,7 +158,13 @@ prompt: |
 **Procedimiento:** Tratar todo código generado por IA como "código hostil" hasta su validación.
 
 **Acción:**
-> Revisión obligatoria de dependencias alucinadas y vulnerabilidades de inyección antes del commit.
+```yaml
+protocolo: |
+  Revisión obligatoria de dependencias alucinadas
+  y vulnerabilidades de inyección antes del commit.
+```
+
+**Objetivo:** Seguridad por defecto (Zero Trust).
 
 ---
 
