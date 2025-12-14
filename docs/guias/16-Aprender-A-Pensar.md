@@ -41,19 +41,19 @@ En la economía pre-IA, el activo era el "Conocimiento Retenido" (base de datos 
 El nuevo valor del humano es la **Capacidad de Auditoría**:
 
 > **Interrogatorio**
-
+>
 > La habilidad de formular el *prompt* que expone las debilidades del modelo (Red Teaming).
 
 > **Contextualización**
-
+>
 > La inyección de lógica de negocio y "sentido común" que el modelo desconoce por estar congelado en el tiempo.
 
 > **Detección de Anomalías**
-
+>
 > El juicio para identificar cuándo una respuesta "lógica" y bien redactada es, de hecho, absurda en el mundo real.
 
 > **Integridad**
-
+>
 > La aplicación del *hard-stop* ético ante una solución técnicamente viable pero moralmente inaceptable.
 
 Tu función operativa deja de ser "responder"; ahora es "certificar la respuesta".
