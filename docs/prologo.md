@@ -85,7 +85,7 @@ Esta evaluación no proviene de un pesimismo externo, sino de una convergencia e
 
 ## 4. De la Fundación a la Expansión
 
-<img src="assets/images/foundation-the-expanse.png" alt="Fundación - The Expanse" width="500">
+![Fundación - The Expanse](assets/images/foundation-the-expanse.png){ width="500" }
 
 Entre la utopía de *La Cultura* y la advertencia de *Dune* existe un camino razonable.
 Ese camino lo anticipó Isaac Asimov en *Fundación*: crear estructuras conceptuales que permitan **gobernar la incertidumbre durante transiciones profundas**.
