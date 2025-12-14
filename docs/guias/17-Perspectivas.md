@@ -1,3 +1,5 @@
+# Bloque 5: La Expansión (Cómo nos proyectamos)
+
 ## Guía 17: Perspectivas y Futuro de la IA
 
 Subtítulo: De "Arquitecto de la Fábrica" a "Vigilante Estratégico"
@@ -87,12 +89,11 @@ La IA sale de la pantalla. Nuestra "fábrica" ha sido puramente digital. La pró
 * **El Cerebro Físico (AMI y Modelos de Mundo):** El desafío no es el hardware, sino la cognición física. Iniciativas como la nueva startup **AMI** de Yann LeCun (anunciada a fines de 2025) buscan crear "Modelos de Mundo": IAs que no solo predicen texto, sino que **entienden la física, la causa y el efecto**, permitiendo planificar acciones complejas en el mundo real que los LLMs actuales no pueden comprender.
 * **El Cierre Filosófico:** Curiosamente, esta iniciativa parece ser la respuesta técnica a la crítica filosófica de **Hubert Dreyfus** (ver Prólogo). Si Dreyfus argumentaba que la IA fallaba por carecer de "percepción encarnada" y no saber "habitar el mundo", los "Modelos de Mundo" buscan precisamente dotar a la máquina de esa comprensión física y causal, cerrando la brecha entre manipular símbolos y entender la realidad.
 
-**Tendencia 6: Más Allá del Transformer, La Era del "Aprendizaje Continuo"**  
+**Tendencia 6: Más Allá del Transformer, La Era del "Aprendizaje Continuo"** 
+
 Como establecimos en la Guía 03 (Ingeniería de Contexto y Memoria), la arquitectura Transformer define la generación actual de IA, pero su naturaleza es fundamentalmente estática. Allí definimos su limitación clave como la "Amnesia Estática": los modelos se "congelan" y no pueden consolidar nuevo conocimiento en su memoria a largo plazo.
 
-Investigaciones recientes (Google Research, NeurIPS 2025) buscan resolver precisamente esta amnesia. El **"Nested Learning" (Aprendizaje Anidado)** es un nuevo paradigma que reemplaza las "capas de cómputo" estáticas por "capas de cognición" que operan y se actualizan a múltiples frecuencias (escalas de tiempo), similar a las ondas cerebrales. Prototipos han implementado esta idea, introduciendo modelos "auto-modificables" con "memoria continua".
-
-Investigaciones recientes (NeurIPS 2025) buscan resolver precisamente esta amnesia mediante el **"Aprendizaje Anidado"**.
+Investigaciones recientes (Google Research, NeurIPS 2025) buscan resolver precisamente esta amnesia. El **"Nested Learning" (Aprendizaje Anidado)** es un nuevo paradigma que reemplaza las "capas de cómputo" estáticas por "capas de cognición" que operan y se actualizan a múltiples frecuencias (escalas de tiempo), similar a las ondas cerebrales.
 
 !!! abstract "El Fin de la Amnesia Estática"
     En la **Guía 03**, definimos la "Amnesia Estática" (el modelo se congela tras el entrenamiento) como la gran limitación de los Transformers. Esta nueva arquitectura rompe esa barrera:

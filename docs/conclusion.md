@@ -42,12 +42,11 @@ En su función original, permite **construcción y expansión**, abriendo rutas 
 
 La IA actual funciona bajo esa misma lógica:
 
-* no es una mente,
-* es una herramienta,
-* cuyo impacto depende por completo del criterio con que se gobierna.
+* No es una mente, es una **herramienta**,
+* Su impacto depende por completo del **Gobernador** (tú).
 
-Usada sin cuidado, la IA genera fragilidad: basura elocuente, errores opacos y decisiones sin responsabilidad.
-Gobernada con rigor, en cambio, se convierte en una herramienta que fortalece procesos, mejora la calidad decisional y amplía la capacidad humana para diseñar, analizar y ejecutar.
+Usada sin cuidado, la IA genera *fragilidad* (basura elocuente, errores opacos y decisiones sin responsabilidad).
+Gobernada con rigor, en cambio, habilita la *Expansion* se convierte en una herramienta que fortalece procesos, mejora la calidad decisional y amplía la capacidad humana para diseñar, analizar y ejecutar.
 
 Esta obra es un manual para gobernar esa herramienta, nuestro equivalente contemporáneo de la Protomolécula, con criterio profesional.
 
