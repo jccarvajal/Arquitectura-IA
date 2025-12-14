@@ -2,6 +2,8 @@
 
 ## 1. El espectro de la imaginación: de la utopía a la distopía
 
+<img src="assets/images/the-culture-dune.png" alt="La Cultura - Duna" width="500">
+
 La forma en que imaginamos la Inteligencia Artificial condiciona la manera en que la adoptamos, la gobernamos y la tememos. Mucho antes de la actual explosión de modelos generativos, la IA ya existía como narrativa cultural: como promesa, advertencia y espejo de nuestras aspiraciones. Ese imaginario no es accesorio: traza los límites de lo posible y revela los riesgos de nuestra relación con la tecnología.
 
 En un extremo se encuentra la **utopía del hype**, una visión muy presente en Silicon Valley. Su equivalente literario podría ser *La Cultura* de Iain M. Banks: sociedades post-escasez administradas por “Mentes” benevolentes que asumen todas las decisiones complejas.
@@ -82,6 +84,8 @@ Esta evaluación no proviene de un pesimismo externo, sino de una convergencia e
 ---
 
 ## 4. De la Fundación a la Expansión
+
+<img src="assets/images/foundation-the-expanse.png" alt="Fundación - The Expanse" width="500">
 
 Entre la utopía de *La Cultura* y la advertencia de *Dune* existe un camino razonable.
 Ese camino lo anticipó Isaac Asimov en *Fundación*: crear estructuras conceptuales que permitan **gobernar la incertidumbre durante transiciones profundas**.
