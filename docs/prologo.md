@@ -1,4 +1,4 @@
-as# Prólogo: Fundación
+# Prólogo: Fundación
 
 ## 1. El espectro de la imaginación: de la utopía a la distopía
 
