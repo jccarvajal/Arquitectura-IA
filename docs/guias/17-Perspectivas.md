@@ -30,11 +30,12 @@ Esta obra no te enseñó a operar *esta* fábrica; te enseñó a ser un Arquitec
 
 ### Parte 2: El Nuevo Rol Permanente: El "Vigilante Estratégico"
 
-Con la fábrica actual operando y siendo gobernada, el profesional que ha completado esta obra asume un nuevo rol permanente: el "Vigilante Estratégico". 
+Con la fábrica actual operando y siendo gobernada, el profesional que ha completado esta obra asume un nuevo rol permanente.
 
-Este rol consiste en escanear el futuro, no por curiosidad, sino como una función de negocio crítica. El "Vigilante" debe ser la persona en la organización (especialmente en un servicio público) que proporciona respuestas informadas a la pregunta más difícil: "¿Qué viene después, y cómo nos preparamos?"  
-
-Tu tarea ya no es solo optimizar la línea de ensamblaje; es detectar la invención que hará que toda tu línea de ensamblaje sea irrelevante.
+!!! abstract "Definición: El Vigilante Estratégico"
+    Este rol consiste en escanear el futuro, no por curiosidad, sino como una función de negocio crítica. El "Vigilante" debe ser la persona en la organización que proporciona respuestas informadas a la pregunta más difícil: *"¿Qué viene después, y cómo nos preparamos?"*
+    
+    Tu tarea ya no es solo optimizar la línea de ensamblaje; es detectar la invención que hará que toda tu línea de ensamblaje sea irrelevante.
 
 ---
 

@@ -89,37 +89,34 @@ Existen tres filosofías de orquestación para desplegar Agentes:
 
 ### Parte 3: Protocolo de Gobernanza (La Regla de los Tres Semáforos)
 
-La facilidad de uso de los orquestadores crea un riesgo de seguridad invisible: el "Shadow AI". Para mitigar la fuga de datos sin frenar la innovación, el Arquitecto debe imponer este protocolo de tres niveles:
+La facilidad de uso de los orquestadores crea un riesgo de seguridad invisible: el "Shadow AI". Para mitigar la fuga de datos sin frenar la innovación, el Arquitecto debe imponer este protocolo:
 
-**🔴 Nivel Rojo (Prohibido en SaaS/No-Code)**
+!!! failure "🔴 Nivel Rojo (Prohibido en SaaS/No-Code)"
+    * **Dato:** Información Personal Identificable (PII), Datos Financieros, Secretos Comerciales.
+    * **Regla:** Bajo ninguna circunstancia estos datos pueden transitar por orquestadores públicos (Zapier, Make) en cuentas personales o gratuitas.
+    * **Solución:** Debe usarse **Ingeniería Soberana (n8n Self-hosted)** o **Entorno Corporativo (Power Automate)** donde la auditoría esté garantizada.
 
-* **Dato:** Información Personal Identificable (PII), Datos Financieros, Secretos Comerciales.
-* **Regla:** Bajo ninguna circunstancia estos datos pueden transitar por orquestadores públicos (Zapier, Make) en cuentas personales o gratuitas.
-* **Solución:** Debe usarse **Ingeniería Soberana (n8n Self-hosted)** o **Entorno Corporativo (Power Automate)** donde la auditoría esté garantizada.
+!!! warning "🟡 Nivel Amarillo (Zona de Transición)"
+    * **Dato:** Correos internos no confidenciales, Agendas, Tareas operativas.
+    * **Regla:** Se permite el uso de SaaS (Make/Zapier) solo si se utiliza una **Cuenta de Servicio Empresarial** (Enterprise Plan) gestionada por TI, nunca cuentas personales de Gmail ("Shadow IT").
+    * **Requisito:** La autenticación debe ser vía SSO (Single Sign-On) para revocar el acceso si el empleado deja la empresa.
 
-**🟡 Nivel Amarillo (Zona de Transición)**
-
-* **Dato:** Correos internos no confidenciales, Agendas, Tareas operativas.
-* **Regla:** Se permite el uso de SaaS (Make/Zapier) solo si se utiliza una **Cuenta de Servicio Empresarial** (Enterprise Plan) gestionada por TI, nunca cuentas personales de Gmail ("Shadow IT").
-* **Requisito:** La autenticación debe ser vía SSO (Single Sign-On) para revocar el acceso si el empleado deja la empresa.
-
-**🟢 Nivel Verde (Zona de Sandbox)**
-
-* **Dato:** Información pública, RSS Feeds, Prototipos con datos sintéticos (falsos).
-* **Regla:** Libertad total para que los equipos usen herramientas No-Code para experimentar y prototipar.
-* **Objetivo:** Fomentar la "Alfabetización de Automatización" sin riesgo real.
+!!! success "🟢 Nivel Verde (Zona de Sandbox)"
+    * **Dato:** Información pública, RSS Feeds, Prototipos con datos sintéticos.
+    * **Regla:** Libertad total para usar herramientas No-Code para experimentar y fomentar la alfabetización digital.
+    * **Objetivo:** Fomentar la "Alfabetización de Automatización" sin riesgo real.
 
 > **La Regla de Oro del Agente:** Un Agente nunca debe operar con la identidad de un humano (ej. "juan@empresa.com"). Debe tener su propia **Identidad de Servicio** (ej. "agente-ventas@empresa.com") para que sus acciones sean trazables y auditables en los logs.
 
 ---
 
-> **⚠️ La Trampa de la Usabilidad: El "Síndrome del Atajo"**
->
-> A menudo, los usuarios perciben herramientas como Zapier o Make como simples "Atajos del iPhone" para el trabajo. Esta percepción es peligrosa.
-> * **En un iPhone:** La automatización ocurre en tu dispositivo (privado).
-> * **En Zapier/SaaS:** La automatización ocurre copiando tus datos a un servidor externo (público).
->
-> El trabajo del Arquitecto es recordar al equipo que, aunque la interfaz parezca un juguete, **la responsabilidad legal es industrial**. Un "atajo" mal configurado puede exfiltrar 10.000 correos de clientes en segundos.
+!!! bug "La Trampa de la Usabilidad: El Síndrome del Atajo"
+    A menudo, los usuarios perciben herramientas como Zapier como simples "Atajos del iPhone". Esta percepción es peligrosa.
+    
+    * **En un iPhone:** La automatización ocurre en tu dispositivo (privado).
+    * **En Zapier/SaaS:** La automatización ocurre copiando tus datos a un servidor externo (público).
+    
+    El trabajo del Arquitecto es recordar que, aunque la interfaz parezca un juguete, **la responsabilidad legal es industrial**. Un "atajo" mal configurado puede exfiltrar 10.000 correos de clientes en segundos.
 
 ---
 
