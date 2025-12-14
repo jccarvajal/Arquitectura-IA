@@ -37,18 +37,6 @@ Esta política aplica a:
 
 #### Definición de “Sistema de IA”
 
-Para efectos de esta política, un **Sistema de IA** es:
-
-> “Cualquier tecnología que usa datos para hacer inferencias y generar resultados, como predicciones, recomendaciones, clasificaciones o contenidos, con un grado de autonomía.”
-
-Incluye:
-modelos de machine learning, IA generativa, sistemas predictivos, agentes autónomos, modelos embebidos, herramientas RAG.
-
-Excluye:
-fórmulas de hojas de cálculo, automatizaciones basadas en reglas fijas, dashboards de BI sin inferencia.
-
-#### Definición de “Sistema de IA”
-
 Para efectos de esta política, se adopta la siguiente definición operativa:
 
 !!! abstract "Definición: Sistema de IA"
