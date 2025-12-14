@@ -91,7 +91,7 @@ Finalmente, debemos entender que la gobernanza no es un acto pasivo de regulaci�
 
 > *"La estupidez real siempre vence a la inteligencia artificial."*
 
-Esta sátira es hoy una realidad técnica. El filósofo Daniel Innerarity lo formaliza advirtiendo que el riesgo real de la sociedad algorítmica no es que las máquinas se rebelen (superinteligencia), sino que los humanos abdiquen (**estupidez artificial**).
+Esta sátira es hoy una realidad técnica. El filósofo **Daniel Innerarity** lo formaliza advirtiendo que el riesgo real de la sociedad algorítmica no es que las máquinas se rebelen (superinteligencia), sino que los humanos abdiquen (**estupidez artificial**).
 
 Si aceptamos la "Oferta Tecnológica" (lo que el mercado nos vende) sin contrastarla con nuestra "Demanda Humana" (lo que realmente necesitamos), perdemos nuestra agencia.
 
