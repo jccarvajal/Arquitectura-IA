@@ -122,7 +122,7 @@ La definición de la industria es un "espejismo" no porque sea errónea, sino po
 !!! abstract "Nota sobre la AGI (Inteligencia Artificial General)"
     Escucharás hablar de la **"Inteligencia Artificial General" (AGI)**, un sistema de IA hipotético con la capacidad de comprender, aprender y aplicar inteligencia para realizar cualquier tarea intelectual que un humano puede hacer.
     
-    Para los propósitos de esta arquitectura, tratamos eso como una **especulación teórica**, no como un riesgo operativo inminente. El mandato del Vigilante es gestionar el impacto real, actual y concreto de las herramientas estadísticas que *sí* tenemos.
+    Para los propósitos de esta obra, tratamos eso como una **especulación teórica**, no como un riesgo operativo inminente. El mandato del Vigilante es gestionar el impacto real, actual y concreto de las herramientas estadísticas que *sí* tenemos.
 
 ---
 
