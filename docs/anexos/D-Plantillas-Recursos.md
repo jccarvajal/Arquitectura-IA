@@ -16,7 +16,7 @@ No está diseñado para "leerse" de principio a fin, sino para "usarse" como ref
 
 Esta plantilla es un bloque de texto estructurado, diseñado para ser copiado y pegado directamente en tu editor de código o herramienta de prompting. Es la implementación de la Guía 02.
 
-```text
+```markdown
 # PLANTILLA DE PROMPT MAESTRO (CRF-R)
 #
 ### 1\. CONTEXTO (El "Por qué" y "Para qué")
@@ -46,7 +46,7 @@ Basa tu respuesta ÚNICAMENTE en el \[Contexto\] proporcionado.
 
 Esta plantilla es el "contrato" que el Arquitecto establece con el modelo antes de que el usuario interactúe. Implementa los controles de la Guía 09 (Gobernanza) y Guía 15 (Ética) directamente en la capa de instrucciones.
 
-```text
+```markdown
 ### INICIO DE SYSTEM PROMPT ###
 
 # 1. ROL E IDENTIDAD

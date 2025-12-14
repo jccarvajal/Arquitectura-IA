@@ -163,16 +163,18 @@ Su vigencia comienza desde la fecha de aprobación formal.
 
 ---
 
-### Guía de Adaptación: Contexto Internacional y Sector Privado
+!!! tip "Guía de Adaptación: Contexto Internacional y Sector Privado"
+    **Nota para el Arquitecto Global:**
+    Esta política utiliza como **benchmark** el estándar del Consejo para la Transparencia (CPLT) de Chile. Si opera en otra jurisdicción (Latam, España, Global), utilice estos principios como referencia de "Estado del Arte", reemplazando las citas legales por sus equivalentes locales (ej. GDPR en Europa, LGPD en Brasil, Ley 1581 en Colombia).
 
-**Nota para el Arquitecto Global:** Esta política utiliza como **benchmark** (punto de referencia) el estándar del Consejo para la Transparencia (CPLT) de Chile, reconocido por su rigor en transparencia algorítmica. Si opera en otra jurisdicción (Latam, España, Global), utilice estos principios como referencia de "Estado del Arte", reemplazando las citas legales por sus equivalentes locales (ej. GDPR en Europa, LGPD en Brasil, Ley 1581 en Colombia).
+    **Diccionario de Adaptación (Privado / Público):**
+    Si implementa esto en una empresa privada, reemplace los conceptos así:
+    
+    * **"Interés Público"** :material-arrow-right: léase **"Confianza del Cliente y Reputación de Marca"**.
+    * **"Probidad Administrativa"** :material-arrow-right: léase **"Ética Corporativa y Cumplimiento ESG"**.
+    * **"Transparencia Activa"** :material-arrow-right: léase **"Divulgación Responsable (Responsible Disclosure)"**.
+    * **"Sujeto Obligado"** :material-arrow-right: léase **"Responsable del Tratamiento de Datos"**.
 
-**Adaptación de Conceptos:**
-Si esta política se implementa en una empresa privada o en una jurisdicción distinta, reemplace los conceptos de la siguiente manera para mantener el espíritu del estándar sin la rigidez administrativa local:
+    *El objetivo es mantener el rigor del estándar público, pero con el lenguaje del negocio.*
 
-* **"Interés Público"** → se lee como **"Confianza del Cliente y Reputación de Marca"**.
-* **"Probidad Administrativa"** → se lee como **"Ética Corporativa y Cumplimiento ESG"**.
-* **"Transparencia Activa"** → se lee como **"Divulgación Responsable (Responsible Disclosure)"**.
-* **"Sujeto Obligado"** → se lee como **"Responsable del Tratamiento de Datos"**.
-
-*Nota Final:* Aunque normas específicas como la Ley 20.285 (Chile) son locales, la tendencia regulatoria hacia la **Protección de Datos** y la **Explicabilidad de la IA** es universal. Adoptar este estándar hoy adelanta el cumplimiento regulatorio de mañana en cualquier mercado.
+    **Nota Final:** Aunque normas específicas como la Ley 20.285 (Chile) son locales, la tendencia regulatoria hacia la **Protección de Datos** y la **Explicabilidad de la IA** es universal. Adoptar este estándar hoy adelanta el cumplimiento regulatorio de mañana en cualquier mercado.

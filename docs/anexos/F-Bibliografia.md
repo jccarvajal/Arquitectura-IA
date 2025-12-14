@@ -28,7 +28,7 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
     * **Por qué leerlo:** Origen del concepto de la "Yihad Butleriana". Es la advertencia definitiva contra la **Atrofia Cognitiva**: describe una humanidad que colapsó no porque las máquinas la atacaran, sino porque delegó tanto su pensamiento que perdió su capacidad de decidir.
 ---
 
-### Sobre el Bloque 1: Los Fundamentos
+### Bloque 1: Los Fundamentos
 
 *(Ingeniería de Prompts, Contexto y Datos)*
 
@@ -55,7 +55,7 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
   
 ---
 
-### Sobre el Bloque 2: La Construcción
+### Bloque 2: La Construcción
 
 *(Ingeniería de Agentes, Sistemas Cognitivos y Prototipado)*
 
@@ -74,7 +74,7 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 
 ---
 
-### Sobre el Bloque 3: La Operación
+### Bloque 3: La Operación
 
 *(Gobernanza, Evaluación e Industrialización)*
 
@@ -112,7 +112,7 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
     * **Por qué leerlo:** Marco jurídico que habilita el procedimiento administrativo electrónico. Es la referencia legal para la definición de **SDA (Sistema de Decisión Automatizada)** en el Glosario y la base para la interoperabilidad de datos en el sector público.
 ---
 
-### Sobre el Bloque 4: El Impacto
+### Bloque 4: El Impacto
 
 *(Humanidad, Ética, Estrategia y Valor)*
 
@@ -155,7 +155,7 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
   
 ---
 
-### Sobre el Bloque 5: La Expansión
+### Bloque 5: La Expansión
 
 *(Perspectivas, Futuro y el Rol del "Vigilante Estratégico")*
 
