@@ -36,19 +36,18 @@ El mayor error operativo es tratar a la IA como un "mago" (un oráculo infalible
 2. **"Cero Confianza en Respuestas 'Crudas'":** Ninguna salida de un LLM que tenga implicaciones legales, médicas, financieras, de código o de reputación, debe usarse "en crudo", esto es, copiar y pegar.  
 3. **"La Habilidad Clave es la Validación":** La nueva habilidad de alto valor no es la generación de contenido, es la validación y curación de ese contenido. El "Estado del Arte" del humano es el juicio crítico.
 
-### El Estándar de Transparencia: Obligación Pública, Oportunidad Privada
+!!! abstract "Referencia: El Estándar de Transparencia (CPLT 2025)"
+    El Consejo para la Transparencia ha publicado la *Guía de Adopción de Transparencia Algorítmica*. La aplicación varía según tu rol:
 
-El Consejo para la Transparencia (CPLT) de Chile ha publicado la *Guía de Adopción de Transparencia Algorítmica (2025)*. La aplicación de este estándar varía según tu sector:
+    * **Sector Público (Mandatorio):** Si eres un "Sujeto Obligado" (Ministerio, Municipio), esto es un deber. Debes publicar el inventario de tus sistemas (SDA) en Transparencia Activa.
+    * **Sector Privado (Estratégico):** No estás obligado por ley, pero es la vía rápida para ganar la **Licencia Social**. Diferénciate publicando estas fichas para generar confianza.
 
-* **Sector Público (Mandatorio):** Si eres un "Sujeto Obligado" (Ministerio, Municipio, Servicio), esta transparencia es un deber. Debes publicar el inventario de tus sistemas (SDA) en el sitio de Transparencia Activa.
-* **Sector Privado (Estratégico):** No estás obligado por ley, pero adoptar este estándar voluntariamente es la vía más rápida para ganar la **Licencia Social**. Diferénciate de la competencia publicando una versión simplificada de estas fichas para generar confianza en tus clientes.
-
-**La Taxonomía del CPLT (Modelo de Referencia):**
-Para cumplir (o liderar), estructura la información de tus agentes en tres niveles:
-
-1.  **Inventario:** ¿Qué sistemas existen? (Nombre, versión, proveedor).
-2.  **Uso:** ¿En qué servicio o producto impactan al usuario?
-3.  **Lógica (Caja Blanca):** Explicación en lenguaje claro de cómo funciona el sistema y qué datos usa, sin revelar secretos comerciales.
+    **La Taxonomía del CPLT (Modelo de Referencia):**
+    Para cumplir (o liderar), estructura la información de tus agentes en tres niveles:
+    
+    1.  **Inventario:** ¿Qué sistemas existen? (Nombre, versión, proveedor).
+    2.  **Uso:** ¿En qué servicio o producto impactan al usuario?
+    3.  **Lógica (Caja Blanca):** Explicación en lenguaje claro de cómo funciona y qué datos usa (sin revelar secretos comerciales).
 
 ---
 
