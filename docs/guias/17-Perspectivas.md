@@ -103,7 +103,7 @@ Investigaciones recientes (NeurIPS 2025) buscan resolver precisamente esta amnes
 
 ---
 
-### La Ambigüedad de la "Inteligencia" (El Espejismo)
+### Parte 4: La Ambigüedad de la "Inteligencia" (El Espejismo)
 
 El "Vigilante Estratégico" debe entender por qué tratamos la "Inteligencia Artificial General" como una especulación. El problema es la palabra "Inteligencia".
 
