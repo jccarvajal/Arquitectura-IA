@@ -120,10 +120,10 @@ Este es el núcleo del problema: **Ni siquiera podemos ponernos de acuerdo en qu
 La definición de la industria es un "espejismo" no porque sea errónea, sino porque es *incompleta*. Está construida sobre una base conceptual (la "inteligencia") que es filosófica y científicamente inestable.
 
 !!! abstract "Nota sobre la AGI (Inteligencia Artificial General)"
-    Definimos la **"Inteligencia Artificial General" (AGI)** como un sistema de IA hipotético con la capacidad de comprender, aprender y aplicar inteligencia para realizar cualquier tarea intelectual que un humano puede hacer.
+    Escucharás hablar de la **"Inteligencia Artificial General" (AGI)**, un sistema de IA hipotético con la capacidad de comprender, aprender y aplicar inteligencia para realizar cualquier tarea intelectual que un humano puede hacer.
     
-    Para los propósitos de esta guía, orientada al criterio operativo, tratamos eso como una **especulación teórica**. Nuestro trabajo de Gobernanza y Ética se enfoca en gestionar el impacto real, actual y concreto de las potentes herramientas que *sí* tenemos.
-    
+    Para los propósitos de esta arquitectura, tratamos eso como una **especulación teórica**, no como un riesgo operativo inminente. El mandato del Vigilante es gestionar el impacto real, actual y concreto de las herramientas estadísticas que *sí* tenemos.
+
 ---
 
 ### Conclusión: El Criterio como Única Constante
