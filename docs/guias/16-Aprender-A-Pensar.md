@@ -52,8 +52,7 @@ El nuevo valor del humano es la **Capacidad de Auditoría**:
 >
 > El juicio para identificar cuándo una respuesta "lógica" y bien redactada es, de hecho, absurda en el mundo real.
 
-> **Integridad**
->
+> **Integridad** 
 > La aplicación del *hard-stop* ético ante una solución técnicamente viable pero moralmente inaceptable.
 
 Tu función operativa deja de ser "responder"; ahora es "certificar la respuesta".
@@ -64,22 +63,18 @@ Tu función operativa deja de ser "responder"; ahora es "certificar la respuesta
 
 Esta es la competencia técnica cumbre del Co-Piloto. Es la **capacidad de descomponer un problema complejo** en una secuencia de instrucciones ejecutables, replicando la lógica de un Arquitecto de Software.
 
-**Problema Complejo:**
+**Problema Complejo:** `Necesito preparar mi evaluación de desempeño trimestral.`
 
-`Necesito preparar mi evaluación de desempeño trimestral.`
-
-**A. Usuario Pasivo (Fallo):**
-
-`Escríbeme una autoevaluación.`
+**A. Usuario Pasivo (Fallo):** `Escríbeme una autoevaluación.`
 
 *Resultado:* Texto genérico, inutilizable y detectable como IA.
 
 **B. Operador (Diseño de Algoritmo):**
 
-1.  **Fase 1 (Inyección de Contexto):** "Ingesta mis objetivos del Q3 [Datos]. Confirma lectura."
-2.  **Fase 2 (Extracción de Evidencia):** "De este listado de proyectos [Datos], extrae las 3 acciones de mayor impacto por objetivo."
-3.  **Fase 3 (Correlación):** "Cruza acciones con resultados. Calcula el delta de cumplimiento."
-4.  **Fase 4 (Síntesis):** "Genera el reporte final usando el formato 'Situación-Acción-Resultado'."
+1.  **Fase 1 (Inyección de Contexto):** `Ingesta mis objetivos del Q3 [Datos]. Confirma lectura.`
+2.  **Fase 2 (Extracción de Evidencia):** `De este listado de proyectos [Datos], extrae las 3 acciones de mayor impacto por objetivo.`
+3.  **Fase 3 (Correlación):** `Cruza acciones con resultados. Calcula el delta de cumplimiento.`
+4.  **Fase 4 (Síntesis):** `Genera el reporte final usando el formato 'Situación-Acción-Resultado'.`
 
 Este profesional no está "usando" IA; está **programando** un flujo de trabajo cognitivo en lenguaje natural.
 
