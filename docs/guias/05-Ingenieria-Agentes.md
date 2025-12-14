@@ -236,6 +236,13 @@ Copias ese prompt generado y lo pegas en un chat nuevo. El Agente Ejecutor, al r
 
 ---
 
+!!! abstract "Nota del Arquitecto: La Frontera de la Web Agéntica"
+    Lo que has aprendido aquí es orquestación interna ("Intranet de Agentes"). Sin embargo, protocolos como **MCP** están permitiendo que los agentes salgan de tu servidor para negociar con agentes externos en la **"Web Agéntica"**.
+    
+    *El riesgo:* Este salto a la interoperabilidad abierta introduce vectores de ataque de "Lealtad" que exploramos en la **Guía 17**.
+
+---
+
 ### Conclusión: De Arquitecto de Sistemas a Director de Orquesta
 
 La evolución de nuestra maestría en IA ha sido un viaje de abstracción:
@@ -245,13 +252,3 @@ La evolución de nuestra maestría en IA ha sido un viaje de abstracción:
 3. **Ingeniería de Agentes:** Ahora, eres un Director de Orquesta (o Director de Programa). Tu trabajo ya no es tocar los instrumentos (escribir el prompt) ni gestionar el escenario (el contexto). Tu trabajo es definir la partitura (el objetivo final) y coordinar a tus músicos (los bucles) para que ejecuten la sinfonía de forma autónoma.
 
 Al dominar la dirección de agentes, dejas de construir soluciones para empezar a orquestar resultados.
-
----
-
-### Nota del Arquitecto: La Frontera de la Web Agéntica
-
-Lo que has aprendido en esta guía es cómo orquestar agentes dentro de tu propia infraestructura (tu "Intranet de Agentes"). Sin embargo, la frontera se está rompiendo rápidamente.
-
-Protocolos emergentes como *MCP (Model Context Protocol)* o *NANDA (Networked AI Agents in Decentralized Architecture)* están permitiendo que estos agentes salgan de tu servidor para negociar con agentes de otras organizaciones en la **"Web Agéntica"**. Este salto de una orquestación interna controlada a una interoperabilidad externa abierta introduce riesgos masivos de "Lealtad" y "Seguridad" que exploraremos en profundidad en la **Guía 17: Perspectivas y Futuro**.
-
-Por ahora, domina la orquestación interna. Es el requisito previo para sobrevivir en la web abierta que viene.

@@ -6,9 +6,12 @@ Subtítulo: Del "Jefe de Operaciones" al "Arquitecto de la Información"
 
 Un motor de Ferrari con gasolina sucia no gana carreras; se rompe. En la Inteligencia Artificial, los datos no son un simple "insumo" administrativo; son el único activo estratégico que tu competencia no puede alquilar.
 
-El principio de hierro de esta ingeniería es brutal: **"Basura Entra, Basura Elocuente Sale"**. Un agente alimentado con manuales obsoletos no comete errores obvios; miente con autoridad y citas falsas.
+!!! warning "El Principio de Hierro: GIGO"
+    **"Basura Entra, Basura Elocuente Sale" (Garbage In, Eloquent Garbage Out).**
+    
+    Un agente alimentado con manuales obsoletos no comete errores obvios; miente con autoridad y citas falsas. Si no controlas la fuente (el "combustible"), la Gobernanza de la IA es imposible.
 
-Esta guía transforma el rol de "gestor de archivos" al de **"Arquitecto de Información"**. Si no controlas la fuente (el "combustible"), la Gobernanza de la IA es imposible.
+Esta guía transforma el rol de "gestor de archivos" al de **"Arquitecto de Información"**. Su trabajo es asegurar la calidad del combustible *antes* de que entre al motor.
 
 ---
 

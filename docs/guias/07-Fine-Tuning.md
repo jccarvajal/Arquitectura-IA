@@ -59,7 +59,9 @@ graph TD
 | **Cuándo Usarlo** | 1\. Cuando los datos cambian constantemente (noticias, reportes). 2\. Cuando necesitas citar fuentes exactas (legal, médico). 3\. Cuando los datos son hechos (ej. "Normativa Interna"). | 1\. Cuando quieres que la IA suene como tú (Voz de Marca). 2\. Cuando quieres que razone de una forma específica (ej. "como un abogado"). 3\. Cuando quieres que formatee la salida siempre igual (ej. un JSON complejo). |
 | **Ejemplo** | "Usa este PDF (RAG) para decirme qué es el BCP." | "Te he entrenado (Ajuste Fino) con 500 emails míos. Ahora, escribe como yo." |
 
-**La Regla de Oro:** Si quieres que la IA **sepa** algo, usa RAG. Si quieres que **sea** algo, usa Ajuste Fino.
+!!! tip "La Regla de Oro de la Arquitectura"
+    * Si quieres que la IA **SEPA** algo (datos, hechos), usa **RAG**.
+    * Si quieres que la IA **SEA** algo (tono, estilo, habilidad), usa **Ajuste Fino**.
 
 ---
 
