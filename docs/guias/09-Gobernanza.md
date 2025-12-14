@@ -211,6 +211,7 @@ graph TD
 > **Validación de Estándar Global:** La arquitectura LOSA es la implementación técnica del principio de **"Defensa en Profundidad" (Defence-in-Depth)**. Reportes internacionales de seguridad de IA (2025) concluyen que ningún control único es infalible; la seguridad requiere múltiples capas redundantes (entrenamiento, despliegue y monitoreo) para que, si una falla, las otras contengan el riesgo.
 
 Los modelos avanzados generan tres clases de riesgo que esta capa mitiga:
+
 1. **Riesgos de Entrada:** Prompts maliciosos, engañosos o manipulados (*prompt injection*, *jailbreaks*).
 2. **Riesgos de Proceso:** Inferencias incorrectas, acciones no autorizadas, errores de razonamiento o activación indebida de herramientas.
 3. **Riesgos de Salida:** Alucinaciones, filtración de datos, recomendaciones inseguras o violaciones normativas.
