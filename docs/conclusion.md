@@ -104,7 +104,7 @@ Gobernar es tener la capacidad de decir "no" al menú por defecto. La verdadera 
 
 ---
 
-### 7. La Advertencia de los Fundadores
+## 7. La Advertencia de los Fundadores
 
 No enfrentamos un dilema nuevo, sino una deuda técnica histórica. Ya en 1950, **Norbert Wiener**, el padre de la cibernética, nos advirtió sobre el peligro de delegar propósitos en sistemas que no comparten nuestros valores. Su axioma resuena hoy con urgencia profética: *"Si utilizamos una agencia mecánica cuya operación no podemos interferir eficazmente... será mejor que estemos muy seguros de que el propósito introducido en la máquina es el propósito que realmente deseamos"*.
 
