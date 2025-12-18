@@ -27,6 +27,7 @@ El "Director de Operaciones" gestiona este *trade-off* entre innovar rápido (ag
     
     **El Principio del Adaptador Universal:**
     La arquitectura industrial debe incluir una **"Capa de Traducción" (Router)**.
+
     * Tus sistemas internos no deben hablar el "idioma" de un modelo específico. Deben hablar un idioma neutro estándar.
     * El "Router" traduce ese idioma neutro al proveedor que sea más eficiente hoy.
     
@@ -221,6 +222,7 @@ Esto mantiene al humano alerta (Sistema 2) al reducir el volumen de ruido, enfoc
     Antes de activar la Observabilidad, debemos asegurar el Despliegue. Nunca lances un agente con permisos de escritura (enviar emails, borrar archivos) directamente en modo activo.
     
     **La Regla del Modo Silencio:**
+    
     1.  **Configuración:** El agente opera con datos reales, pero sus herramientas están en "Mute".
     2.  **Evidencia:** En lugar de ejecutar `enviar_email()`, el sistema registra en el log: *"ACCIÓN BLOQUEADA: Habría enviado este email..."*.
     3.  **Validación:** Solo cuando la tasa de acierto en el simulacro es del 99.9% (sin alucinaciones), se retira el seguro.
@@ -240,12 +242,14 @@ La Observabilidad Ampliada no es un simple cambio de nombre; es un cambio de pro
     Las herramientas tradicionales te dicen si el servidor está lento (Latencia). Eso es insuficiente. Un agente puede responder rápido y sin errores técnicos, mientras le miente al cliente.
     
     La Industrialización requiere monitorear la **"Cadena de Pensamiento" (Chain of Thought)**:
+
     * **Detecta la duda:** Configura alertas por **"Incertidumbre Semántica"**. Si el agente da vueltas en círculos, se contradice en su razonamiento interno o muestra baja confianza estadística, el sistema debe levantar una bandera roja *antes* de que esa confusión llegue al usuario.
 
 !!! money "Riesgo de Éxito: La Trampa de la Escala Lineal"
     En el software tradicional, agregar 10.000 usuarios cuesta poco. En la IA, agregar 10.000 usuarios significa pagar por cada palabra que cada uno genera. El éxito puede llevarte a la quiebra si no optimizas.
     
     **El Principio de Eficiencia:**
+
     * **Compresión de Prompts:** Tu pipeline debe eliminar palabras innecesarias de las instrucciones para ahorrar tokens.
     * **Caching Semántico:** Si 500 usuarios preguntan lo mismo, la IA solo debe "pensarlo" (gastar dinero) una vez. Las otras 499 veces debe entregar la respuesta guardada en memoria (gratis).
 

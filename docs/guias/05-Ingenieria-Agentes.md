@@ -143,6 +143,7 @@ Las herramientas son funciones de código (APIs, scripts Python) que conectan el
     
     **El Principio de la Reversibilidad Activa:**
     Para cada herramienta con efectos secundarios (ej. `reservar_vuelo`), el agente debe tener acceso a una **Herramienta Compensatoria** (ej. `cancelar_reserva`).
+    
     * **Diseño Robusto:** En tu prompt de sistema, instruye al agente: *"Si fallas en el paso 2, estás obligado a ejecutar la herramienta de compensación del paso 1 para dejar el sistema en su estado original".*
 
 ---

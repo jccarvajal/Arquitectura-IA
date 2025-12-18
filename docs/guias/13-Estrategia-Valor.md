@@ -74,9 +74,9 @@ Este es el primer modelo de negocio que habilita la IA.
 
 * **El Problema Antiguo:** La personalización era un lujo. Solo podías dar un servicio "Premium" de alto contacto a tus 10 clientes más importantes.  
 * **La Solución del Agente:** Ahora puedes usar un **"Agente Director"** (un "agente de agentes") combinado con la **Memoria Explícita** (la capacidad del agente de recordar datos de largo plazo) para ofrecer un servicio de conserje personal a un millón de clientes simultáneamente.  
-* **Ejemplo de Negocio:**  
-   * *Un banco (antes):* Daba un asesor de inversiones personal solo a clientes con \>$1M.  
-   * *Un banco (ahora):* Da un "Agente-Asesor-Financiero" a cada cliente. El agente *recuerda* las metas de ahorro del cliente, *analiza* (usando su ventana de contexto) sus gastos en tiempo real y *proactivamente* (actuando como agente) le envía consejos personalizados (ej. "Noté que gastaste menos en restaurantes este mes. ¿Quieres mover esos $50 extra a tu fondo de vacaciones?").
+* **Ejemplo de Negocio:** 
+    * *Un banco (antes):* Daba un asesor de inversiones personal solo a clientes con \>$1M.  
+    * *Un banco (ahora):* Da un "Agente-Asesor-Financiero" a cada cliente. El agente *recuerda* las metas de ahorro del cliente, *analiza* (usando su ventana de contexto) sus gastos en tiempo real y *proactivamente* (actuando como agente) le envía consejos personalizados (ej. "Noté que gastaste menos en restaurantes este mes. ¿Quieres mover esos $50 extra a tu fondo de vacaciones?").
 
 ---
 

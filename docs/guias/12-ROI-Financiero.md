@@ -83,6 +83,7 @@ Son iniciativas donde la tecnología es madura y el retorno es tangible. Aquí s
     
     **La Heurística de Viabilidad:**
     Si tu arquitectura requiere que un humano revise o corrija más del **5% al 10%** de las transacciones totales para que el sistema sea seguro, el proyecto probablemente **no es viable económicamente**.
+    
     * Si el humano debe revisar el 50%, no tienes una IA; tienes un borrador caro.
     * El objetivo de la ingeniería es reducir esa tasa de intervención a <1% (manejo de excepciones) para que la economía de escala funcione.
 

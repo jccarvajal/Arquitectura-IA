@@ -20,7 +20,8 @@ Tu rol aquí es el de "Especialista de Motores". No estás usando el motor, lo e
     
     * **La Realidad Técnica:** El Fine-Tuning ajusta el "estilo" y el "formato" (el *cómo* habla), no la "información factual" (el *qué* sabe).
     * **El Riesgo:** Si intentas "enseñar" datos vía Fine-Tuning, el modelo sufrirá **alucinaciones graves** (inventará datos que suenan plausibles).
-    * **La Ley:** * Para **Conocimiento** (Hechos, Precios, Leyes) -> Usa **RAG**.
+    * **La Ley:**
+        * Para **Conocimiento** (Hechos, Precios, Leyes) -> Usa **RAG**.
         * Para **Comportamiento** (Tono, Formato JSON, Estilo) -> Usa **Fine-Tuning**.
 
 ---

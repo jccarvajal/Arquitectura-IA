@@ -158,6 +158,7 @@ El "Agente Enrutador" (que puede ser un "Agente Director") es un "cerebro" metac
     Usar un Agente Enrutador añade un "peaje" de tiempo a cada interacción (el tiempo que tarda en decidir a dónde enviar el prompt).
     
     **Regla de Diseño:** El Enrutador nunca debe ser un modelo pesado (como GPT-4 u Opus).
+    
     * Usa modelos **Flash/Haiku** o incluso modelos de clasificación clásicos (BERT) para esta capa.
     * El "portero" debe ser rápido; el "experto" puede ser lento.
 

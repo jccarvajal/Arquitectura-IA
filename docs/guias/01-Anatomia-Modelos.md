@@ -16,6 +16,7 @@ Los modelos generativos modernos (como Gemini 3, GPT-5 o Llama 4) no son bases d
     En la ingeniería tradicional (vía código), `si X entonces Y`. El resultado es 100% predecible.
     
     En la Anatomía de un LLM, esto desaparece. Al ser un motor probabilístico, el mismo *input* puede generar diferentes *outputs* (según la "Temperatura").
+    
     * **La Implicancia de Seguridad:** Nunca puedes "programar" una restricción de seguridad perfecta en un modelo (ej. "Nunca reveles esto"). Solo puedes bajar la probabilidad de que falle. Por eso, la seguridad real requiere capas externas (LOSA), no solo instrucciones internas.
 
 Este anexo describe el ciclo de vida técnico que transforma terabytes de texto crudo en un asistente capaz de seguir instrucciones. El objetivo es que el arquitecto decida en función de **criterio de ingeniería**, no de intuición ni del *hype* del mercado.

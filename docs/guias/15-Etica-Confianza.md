@@ -16,6 +16,7 @@ Para este enfoque, estableceremos una premisa fundamental: **La gobernanza no es
     Existe un peligro latente al escalar equipos potenciados por IA: confundir "Output" con "Competencia".
     
     Si un empleado junior usa un agente experto para generar código o contratos que él mismo no podría escribir ni auditar, se genera una **Competencia Ficticia**.
+
     * **El Problema:** La organización cree que tiene capacidad Senior, pero solo tiene capacidad de "pulsar botones". En 5 años, cuando los Seniors actuales se retiren, nadie tendrá el criterio necesario para entrenar o corregir a la IA.
     * **El Principio de Formación:** La IA debe usarse para **acelerar** al experto, nunca para **reemplazar** el aprendizaje del novato. El junior debe demostrar que puede hacer la tarea manualmente antes de recibir permiso para automatizarla.
 
@@ -24,6 +25,7 @@ Para este enfoque, estableceremos una premisa fundamental: **La gobernanza no es
     
     **La Regla del "Modo Manual":**
     Para evitar la atrofia operativa, instituye el **"Simulacro de Desconexión"** (trimestral).
+    
     * Durante 4 horas, los sistemas de IA críticos se apagan.
     * El equipo humano debe operar los procesos manualmente.
     
