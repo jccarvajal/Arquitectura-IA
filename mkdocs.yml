@@ -90,4 +90,7 @@ nav:
     - Glosario: referencias/Glosario.md
     - Bibliografía: referencias/Bibliografia.md
   - Acerca de:
-    - Changelog: changelog.md
+    - Autor: acerca/autor.md
+    - Licencia: LICENCE.md
+    - Cómo Contribuir: acerca/contribuir.md
+    - Historial (Changelog): changelog.md
