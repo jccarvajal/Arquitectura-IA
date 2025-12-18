@@ -14,6 +14,7 @@ Mi enfoque combina la ingeniería de sistemas robustos con la gobernanza estrat�
 
 ### Conecta conmigo
 
+* 🌐 **Web Personal:** [www.jccarvajal.com](https://www.jccarvajal.com/)
 * 💼 **LinkedIn:** [linkedin.com/in/jccarvajal](https://www.linkedin.com/in/jccarvajal)
 * 🐙 **GitHub:** [github.com/jccarvajal](https://github.com/jccarvajal)
 * 🦋 **Bluesky:** [@jccarvajal.com](https://bsky.app/profile/jccarvajal.com)
