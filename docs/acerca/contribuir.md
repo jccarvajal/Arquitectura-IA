@@ -8,11 +8,13 @@ Si eres un arquitecto de software, ingeniero de datos, oficial de cumplimiento o
 
 ### 1. Reporte de Erratas y Bugs
 Si encuentras un error técnico, un enlace roto o una imprecisión conceptual:
+
 * Abre un **Issue** en GitHub describiendo el error.
 * Si es algo simple (ortografía), puedes hacer un **Pull Request** directo.
 
 ### 2. Sugerencias de Contenido
 ¿Crees que falta una guía sobre un tema crítico (ej. *Vision Models*, *Audio Agents*)?
+
 * Abre una discusión en la pestaña **Discussions** del repositorio.
 * Propón el esquema de la nueva guía siguiendo la estructura estándar: *Decidir, Diseñar, Gobernar*.
 
@@ -21,6 +23,7 @@ El ecosistema de modelos (GPT, Claude, Llama) cambia mensualmente. Si detectas q
 
 ## Estilo y Formato
 Para mantener la coherencia del "Manual del Arquitecto":
+
 * **Tono:** Profesional, directo y agnóstico a proveedores (siempre que sea posible).
 * **Formato:** Markdown estándar. Usa las cajas de alerta (`!!! tip`, `!!! warning`) para resaltar conceptos clave.
 * **Filosofía:** Prioriza siempre la seguridad y la viabilidad sobre el *hype*.
