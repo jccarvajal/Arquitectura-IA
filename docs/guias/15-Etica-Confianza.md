@@ -177,6 +177,14 @@ Si tu "Agente" no puede responder estas preguntas en lenguaje claro (Opacidad An
     * **El Control Ético:** **Auditoría de Alineación.** Como "Vigilante Estratégico", debes evaluar no solo qué sabe el modelo, sino *a quién sirve* su arquitectura.
         * *Acción:* Al elegir un modelo para tareas sensibles (educación, noticias, política), no asumas neutralidad. Realiza pruebas de *Red Teaming* ideológico para detectar si el modelo tiene una "agenda" oculta que pueda comprometer la reputación de tu organización.
 
+!!! info "Caso de Estudio: La Ingeniería del Sesgo (Gemini vs. Grok)"
+    Para entender el "Sesgo de Diseño", analicemos los dos polos opuestos de 2024 que definieron esta era:
+    
+    * **El Caso Gemini (La Sobre-Corrección):** Google instruyó explícitamente a su modelo para maximizar la diversidad racial ("Safety"). El resultado fue un fallo donde el modelo se negaba a generar imágenes históricas de vikingos o padres fundadores que fueran blancos, distorsionando la historia por cumplir una directriz de ingeniería inyectada.
+    * **El Caso Grok (La Contra-Cultura):** xAI diseñó su modelo con un "Modo Rebelde" para burlarse de la corrección política ("Anti-Woke"). Su sarcasmo no es una propiedad emergente de los datos, sino una "personalidad" inyectada por sus desarrolladores para atraer a un nicho ideológico específico.
+    
+    **Lección:** El modelo no es neutral; tiene la ideología de quien firma el cheque de su alineación.
+
 **Riesgo 3: Engaño (Deception)**
 
 * **El Problema:** Un "Agente PM" de servicio al cliente es tan bueno que el cliente cree que está hablando con un humano empático.  
