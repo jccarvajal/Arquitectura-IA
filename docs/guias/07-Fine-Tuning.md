@@ -15,6 +15,14 @@ RAG es darle libros a un estudiante. **Ajuste Fino (Fine-Tuning)** es enviarlo a
 
 Tu rol aquí es el de "Especialista de Motores". No estás usando el motor, lo estás modificando.
 
+!!! danger "Corrección Crítica: Fine-Tuning NO es para Conocimiento"
+    Existe un mito peligroso: "Haré Fine-Tuning con mis manuales PDF para que la IA sepa mis reglas". **ESTO ES UN ERROR TÉCNICO GRAVE.**
+    
+    * **La Realidad Técnica:** El Fine-Tuning ajusta el "estilo" y el "formato" (el *cómo* habla), no la "información factual" (el *qué* sabe).
+    * **El Riesgo:** Si intentas "enseñar" datos vía Fine-Tuning, el modelo sufrirá **alucinaciones graves** (inventará datos que suenan plausibles).
+    * **La Ley:** * Para **Conocimiento** (Hechos, Precios, Leyes) -> Usa **RAG**.
+        * Para **Comportamiento** (Tono, Formato JSON, Estilo) -> Usa **Fine-Tuning**.
+
 ---
 
 ### El Dilema Central: ¿Cuándo Usar RAG vs. Cuándo Usar "Fine-Tuning"?
@@ -62,6 +70,11 @@ graph TD
 !!! tip "La Regla de Oro de la Arquitectura"
     * Si quieres que la IA **SEPA** algo (datos, hechos), usa **RAG**.
     * Si quieres que la IA **SEA** algo (tono, estilo, habilidad), usa **Ajuste Fino**.
+
+!!! warning "El Costo Oculto: La Curaduría de Datos"
+    El costo principal del Fine-Tuning no es el cómputo (GPU), es la **Curaduría Humana**.
+    
+    Para que un modelo pequeño supere a uno gigante, necesitas miles de ejemplos de entrenamiento **perfectos** (Golden Dataset). Si tus ejemplos tienen errores, el modelo amplificará esos errores. Preparar este dataset suele costar 10 veces más en horas-hombre que el alquiler de la infraestructura técnica.
 
 ---
 

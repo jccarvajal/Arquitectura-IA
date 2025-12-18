@@ -62,6 +62,14 @@ Su propósito es evitar el "solucionismo tecnológico" y asegurar que solo los p
 | **Calidad / Golden Set** | ¿Contra qué estándar de verdad (ej. humano o proceso anterior) compararemos a la IA? | `[KPI Objetivo y Umbral]` | Guía 10 |
 | **Costo (Tokenomics)** | ¿Cuál es el costo estimado de operación mensual vs. el ahorro proyectado? | `[$ Costo vs. $ Ahorro]` | Guía 12 |
 
+!!! failure "Criterio de Rechazo Automático (Hard Veto)"
+    Para evitar discusiones subjetivas en el comité, se aplica la siguiente regla financiera de corte:
+    
+    **La Regla del 50%:**
+    > *Si el Costo Proyectado por Transacción de la IA (incluyendo revisión humana) supera el **50%** del Costo Actual del proceso puramente humano, el proyecto se **RECHAZA AUTOMÁTICAMENTE**.*
+    
+    No buscamos márgenes marginales. Si la tecnología no puede reducir el costo unitario al menos a la mitad, el riesgo de implementación no justifica la inversión.
+
 ---
 
 ### Sección 5: Ciclo de Vida y Salida (El "Final")

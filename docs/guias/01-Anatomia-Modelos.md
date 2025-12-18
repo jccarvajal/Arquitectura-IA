@@ -12,6 +12,12 @@ Este pensamiento mágico es peligroso para un Arquitecto. Si no entiendes los l�
 
 Los modelos generativos modernos (como Gemini 3, GPT-5 o Llama 4) no son bases de conocimiento ni sistemas de razonamiento lógico en sentido humano: son **motores probabilísticos de predicción**, moldeados a través de múltiples fases de entrenamiento.
 
+!!! shield "Advertencia de Anatomía: El Fin del Determinismo"
+    En la ingeniería tradicional (vía código), `si X entonces Y`. El resultado es 100% predecible.
+    
+    En la Anatomía de un LLM, esto desaparece. Al ser un motor probabilístico, el mismo *input* puede generar diferentes *outputs* (según la "Temperatura").
+    * **La Implicancia de Seguridad:** Nunca puedes "programar" una restricción de seguridad perfecta en un modelo (ej. "Nunca reveles esto"). Solo puedes bajar la probabilidad de que falle. Por eso, la seguridad real requiere capas externas (LOSA), no solo instrucciones internas.
+
 Este anexo describe el ciclo de vida técnico que transforma terabytes de texto crudo en un asistente capaz de seguir instrucciones. El objetivo es que el arquitecto decida en función de **criterio de ingeniería**, no de intuición ni del *hype* del mercado.
 
 ---
@@ -130,6 +136,12 @@ La industria ha estandarizado la transparencia en dos documentos clave. Para rea
         * **Tasas de Rechazo (Refusal Rates):** Estadísticas sobre cuántas veces el modelo se niega a responder (útil para detectar si es "demasiado puritano").
         * **Mitigación de Sesgos:** Pruebas específicas sobre estereotipos de género, raza o cultura.
     * **Uso en GRC:** Determina el **Cumplimiento Normativo**, la **Ética** y la **Seguridad Operativa**.
+
+!!! money "La Física del Dinero: Parámetros y Costos"
+    Existe una correlación directa entre la "Inteligencia" (Número de Parámetros) y el "Costo" (Dinero y Latencia).
+    
+    * **La Trampa:** Usar un modelo de 70 Billones de parámetros (70B) para una tarea que un modelo de 8B puede resolver, es quemar dinero.
+    * **El Principio de Eficiencia:** La maestría anatómica no es usar el cerebro más grande; es usar el cerebro más pequeño posible que sea capaz de realizar la tarea con la calidad mínima aceptable.
 
 ---
 

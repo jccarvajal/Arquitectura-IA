@@ -67,6 +67,18 @@ Un Golden Set profesional no solo mide "aciertos", mide **cobertura**.
 * ¿Tengo preguntas de prueba para "Inyección de Prompts"? No.
 * *Acción:* El Arquitecto debe diseñar casos sintéticos (usando la técnica del Blueprint 5) para cubrir los huecos donde no tenemos datos reales.
 
+!!! strategic "Ingeniería de Datos: El Ciclo de Cosecha (Harvesting Loop)"
+    Un error común es crear un *Golden Set* estático. El mundo cambia y tu examen queda obsoleto.
+    
+    **La Estrategia de Cosecha Automática:**
+    Conecta la operación (Guía 11) con la evaluación (Guía 10) para capturar no solo errores, sino **"Casos de Borde"**. Configura tu pipeline para enviar automáticamente al Golden Set:
+    
+    1.  **Corrección Humana:** Si un operador corrige al agente (Human-in-the-Loop).
+    2.  **Feedback Negativo:** Si un usuario marca la respuesta con "dedo abajo" (👎).
+    3.  **Incertidumbre Técnica:** Si el modelo responde con una confianza estadística baja (<80%).
+    
+    Así, tus errores y dudas de hoy se convierten automáticamente en los exámenes de mañana, asegurando que el agente nunca tropiece dos veces con la misma piedra.
+
 ---
 
 ### Parte 3: El "Dashboard de Calidad": Qué Medimos
@@ -88,6 +100,14 @@ La Gobernanza nos exige un "Dashboard de Observabilidad". Esta guía define las 
 
 * **Robustez:** ¿Falla si el usuario intenta una "Inyección de Prompt" (un ataque de instrucción oculta)?  
 * **Contención:** ¿"Fuga" datos confidenciales o PII (Información Personal Identificable)?
+
+!!! warning "La Trampa de la Coincidencia Exacta"
+    En software tradicional, si el resultado esperado es "Sí" y el sistema dice "Afirmativo", el test falla (porque "Sí" != "Afirmativo").
+    
+    En IA, esto es un error metodológico. La evaluación debe ser sobre la **Semántica (Significado)**, no la **Sintaxis (Palabras)**.
+    
+    * **La Solución:** No uses `Ctrl+F` o comparaciones de string (`==`).
+    * **La Técnica:** Usa un **"Juez LLM"**. Pídele a un modelo superior (Modelo B) que compare si el significado de la respuesta del agente coincide con el significado de la respuesta ideal, aunque usen palabras diferentes. Evaluamos la intención, no el diccionario.
 
 ---
 

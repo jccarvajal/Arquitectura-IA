@@ -44,6 +44,12 @@ Este es el problema central que la ingeniería de contexto resuelve. Es lo que o
 * **El Síntoma:** La IA empieza a "olvidar" instrucciones clave, se vuelve repetitiva o da respuestas irrelevantes.
 * **Las Causas:** El "Punto Ciego" (la IA ignora la información "perdida en el medio" de una conversación larga) y el "Ruido" (la IA se "marea" al no poder distinguir la señal de la cháchara).
 
+!!! danger "Regla de Oro: La Memoria es Pública para el Modelo"
+    Nunca pongas credenciales, contraseñas, API Keys o datos personales no encriptados (PII) directamente en la Ventana de Contexto o en el Prompt de Sistema.
+    
+    * **El Riesgo:** Si el modelo sufre una "alucinación" o un ataque de inyección, puede "vomitar" (leak) todo lo que está en su memoria inmediata hacia el usuario final.
+    * **La Práctica:** Los secretos se manejan en variables de entorno del servidor, nunca en el texto que lee la IA.
+
 ---
 
 ### El Dilema Central (El Criterio del Trade-off)

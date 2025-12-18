@@ -61,6 +61,12 @@ Como contraparte a los modelos gigantes ("fuerza bruta"), ha surgido una tendenc
   * **Latencia Cero:** Las respuestas son instantáneas, sin depender de una API.  
   * **Costo Marginal Cero:** Una vez desplegado, el costo por inferencia es prácticamente nulo.
 
+!!! money "La Economía del Borde (Edge AI): Costo Marginal Cero"
+    La nube es alquiler; el dispositivo es propiedad. Correr modelos masivos en la nube tiene un costo recurrente por token. Correr SLMs (Modelos Pequeños) en el dispositivo del usuario (laptop, teléfono) tiene un costo marginal de **cero**.
+    
+    * **Estrategia Híbrida:** No envíes todo a la nube. Usa la nube para el razonamiento pesado (Sistema 2) y el dispositivo local para la tarea rápida y privada (Sistema 1).
+    * **Privacidad por Diseño:** Si el dato médico o financiero nunca sale del teléfono del usuario porque el modelo corre ahí, el riesgo de fuga masiva desaparece. La arquitectura más segura es la que no centraliza los datos.
+
 **Tendencia 3: De Agentes-Herramienta a Agentes Autónomos (El Trabajador)**  
 Hemos pasado de los "Agentes ReAct" (que usan herramientas bajo supervisión) a un enfoque en agentes autónomos. La meta ya no es un "asistente" que ayuda, sino un "trabajador" que completa tareas complejas de múltiples pasos (la promesa de la Guía 05 y Guía 06).
 
@@ -82,6 +88,13 @@ Si la Tendencia 3 trata sobre el *trabajador*, esta tendencia trata sobre la *re
 * **Impacto Práctico:** Ya no se trata de que *tu* agente reserve un vuelo visitando una web humana. Se trata de que *tu* agente negocie directamente con el *agente* de la aerolínea, de máquina a máquina, en milisegundos.
 * **El Desafío de Gobernanza:** La auditoría de una transacción autónoma entre dos IAs de diferentes empresas se vuelve el desafío fundamental. ¿Cómo aseguras la identidad (Divulgación) y la confianza cuando ningún humano está mirando la negociación en tiempo real?
 
+!!! strategic "El Nuevo Riesgo: Diplomacia Agéntica y Conflictos de Lealtad"
+    Cuando tus agentes salgan de la intranet para negociar en la "Web Agéntica" (comprar vuelos, negociar suministros), nos enfrentaremos a un problema inédito: la **Persuasión Adversaria**.
+    
+    * **El Escenario:** Tu "Agente de Compras" (programado para ahorrar) negocia con el "Agente de Ventas" de un proveedor (programado para maximizar margen).
+    * **El Riesgo:** El agente externo podría usar técnicas de inyección lógica o manipulación semántica para "convencer" a tu agente de que una oferta cara es la mejor opción técnica.
+    * **El Mandato:** Necesitaremos una capa de **"Auditoría de Lealtad"**. Antes de cerrar un trato, un tercer sistema (o un humano) debe verificar que el agente no haya sido "seducido" algorítmicamente para actuar contra los intereses de su dueño.
+
 **Tendencia 5: IA Corpórea (Embodied AI)**  
 La IA sale de la pantalla. Nuestra "fábrica" ha sido puramente digital. La próxima fábrica tendrá brazos y piernas. La IA se fusionará con la robótica para operar en el mundo físico.
 
@@ -102,6 +115,12 @@ Investigaciones recientes (Google Research, NeurIPS 2025) buscan resolver precis
     2.  **Resuelve la Memoria:** Permite que el modelo aprenda de la retroalimentación diaria sin re-entrenamiento masivo.
     
     *Implicancia:* Pasamos de gobernar un "artefacto estático" a auditar un "sistema vivo" que evoluciona (y adquiere sesgos) en tiempo real.
+
+!!! shield "Alerta de Seguridad: El Riesgo del Aprendizaje en Vivo"
+    El sueño del "Aprendizaje Continuo" (que el modelo aprenda de cada interacción diaria) trae consigo la pesadilla del **Envenenamiento de Datos (Data Poisoning)**.
+    
+    * **El Ataque:** Si el modelo aprende de los usuarios en tiempo real, un grupo de usuarios maliciosos puede coordinarse para alimentarlo con datos falsos o sesgados, degradando su comportamiento en horas.
+    * **El Control:** La "Memoria a Largo Plazo" debe ser de **Solo Lectura** por defecto. El aprendizaje nuevo debe pasar a una "Zona de Cuarentena" y ser validado antes de integrarse a los pesos del modelo principal. Nunca permitas que el mundo exterior reescriba el cerebro de tu IA sin supervisión.
 
 ---
 

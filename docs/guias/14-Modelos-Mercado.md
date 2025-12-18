@@ -10,6 +10,16 @@ El mercado de 2025 es un ecosistema fragmentado de especialistas: modelos propie
 
 Esta guía transforma al "Comprador de Software" en un **"Arquitecto de Portafolio"**. Aprenderemos a optimizar el **Triángulo de Adquisición** (Rendimiento, Control, Costo) implementando un **Agente Enrutador** que orquesta múltiples cerebros según la necesidad del momento.
 
+!!! strategic "El Cuarto Vértice: La Portabilidad (Exit Strategy)"
+    Al Triángulo de Adquisición (Rendimiento, Control, Costo) debemos añadir un factor de veto: la **Portabilidad**.
+    
+    Antes de casarte con un modelo, pregúntate: **"¿Qué tan difícil es divorciarse?"**
+    
+    * **Baja Portabilidad:** Modelos que usan formatos propietarios o "Asssitants API" cerrados. Si te vas, pierdes tu lógica.
+    * **Alta Portabilidad:** Modelos que aceptan prompts estándar y devuelven JSON estándar. Si te vas, solo cambias la dirección de la API.
+    
+    **Principio de Soberanía:** Nunca construyas tu lógica de negocio principal en un formato que solo un proveedor puede leer.
+
 ---
 
 ### Concepto Clave: La Arquitectura de Adquisición (Suscripción vs. API)
@@ -144,6 +154,13 @@ El "Agente Enrutador" (que puede ser un "Agente Director") es un "cerebro" metac
 
 **Beneficio:** Obtienes el máximo Rendimiento cuando lo necesitas y el máximo Control y Costo-eficiencia cuando no. Has optimizado el "Triángulo de Adquisición". 
 
+!!! tip "Optimización de Latencia: El Costo del Semáforo"
+    Usar un Agente Enrutador añade un "peaje" de tiempo a cada interacción (el tiempo que tarda en decidir a dónde enviar el prompt).
+    
+    **Regla de Diseño:** El Enrutador nunca debe ser un modelo pesado (como GPT-4 u Opus).
+    * Usa modelos **Flash/Haiku** o incluso modelos de clasificación clásicos (BERT) para esta capa.
+    * El "portero" debe ser rápido; el "experto" puede ser lento.
+
 !!! abstract "Nota del Arquitecto: Validación de Mercado (MIT 2025)"
     Esta estrategia de portafolio ("Comprar" o "Arrendar" en lugar de "Construir" todo desde cero) no es solo teórica. 
     
@@ -169,6 +186,13 @@ Para diseñar tu portafolio, usa este proceso:
 | **Costo Inicial** | Bajo. | Alto (Hardware GPU, equipo). | Bajo (Suscripción). |
 | **Costo Operacional** | Alto (Pago por token a escala). | Medio (Infraestructura, soporte). | Fijo/Variable (Licencia). |
 | **Flexibilidad Técnica** | Media (Prompting, RAG). | Alta (Ajuste Fino, RAG, modificación). | Baja ("Caja negra"). |
+
+**Criterio de Desempate: La Transparencia Documental**
+
+Si dos modelos tienen rendimiento similar, elige siempre el que tenga mejor documentación técnica (System Card).
+
+* Un modelo "Caja Negra" sin documentación de entrenamiento es un riesgo de *Compliance* futuro.
+* Un modelo con "Pesos Abiertos" o documentación transparente te permite auditar por qué falló, algo invaluable cuando **la auditoría de seguridad** te pida explicaciones.
 
 **Checklist Rápido de Decisión**
 

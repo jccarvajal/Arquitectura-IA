@@ -1,4 +1,4 @@
-## Anexo F: Bibliografía Fundamental
+## Bibliografía Fundamental
 
 Subtítulo: Lecturas Clave para el Arquitecto y el Vigilante Estratégico
 
@@ -86,6 +86,10 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
     * **Por qué leerlo:** Proporciona el fundamento técnico para la "Evaluación Asistida por IA" (el **"LLM Juez"**), un concepto central de la **Guía 10: Evaluación**.
 * **Google. (2024). "Secure AI Framework (SAIF)".** [[Web]](https://safety.google/cybersecurity-advancements/saif/)
     * **Por qué leerlo:** Marco de seguridad fundamental que aborda la protección de la IA en la infraestructura y el producto. Respaldo conceptual para la Gobernanza (Guía 09).
+* **Greshake, K., et al. (2023). "Not what you’ve signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection".** [[PDF]](https://arxiv.org/abs/2302.12173)
+    * **Por qué leerlo:** Es el *paper* que descubrió y definió la **Inyección Indirecta de Prompts**. Demuestra técnicamente cómo un atacante puede secuestrar un agente sin hablar con él, simplemente escondiendo instrucciones en los datos que el agente lee (ej. una web o un PDF). Es la lectura obligatoria para justificar la "Cuarentena de Datos" de la Guía 09.
+* **NIST. (2023). "Artificial Intelligence Risk Management Framework (AI RMF 1.0)". U.S. Department of Commerce.** [[Web]](https://www.nist.gov/itl/ai-risk-management-framework)
+    * **Por qué leerlo:** Mientras la ISO 42001 es el estándar de gestión, el NIST AI RMF es el estándar técnico de facto para mapear, medir y gestionar riesgos específicos de IA. Es la herramienta operativa esencial para ejecutar la estrategia GRC definida en esta obra.
 * **ISO/IEC. (2023). "ISO/IEC 42001:2023 Information technology — Artificial intelligence — Management system".** [[Web]](https://www.iso.org/standard/81230.html)
     * **Por qué leerlo:** Es el primer estándar internacional certificable para sistemas de gestión de IA. Referencia técnica definitiva para operacionalizar el marco GRC.
 * **Huyen, Chip (2024). "AI Engineering".** [[Web]](https://www.oreilly.com/library/view/ai-engineering/9781098166298/)
@@ -110,6 +114,7 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
     * **Por qué leerlo:** Es la fuente de la definición estándar de industria citada en la **Guía 09**. Establece la base para entender GRC no como burocracia, sino como la herramienta de ingeniería para alinear TI con los objetivos de negocio.
 * **Gobierno de Chile. (2019). "Ley N° 21.180 sobre Transformación Digital del Estado".** [[Web]](https://www.bcn.cl/leychile/navegar?idNorma=1138505)
     * **Por qué leerlo:** Marco jurídico que habilita el procedimiento administrativo electrónico. Es la referencia legal para la definición de **SDA (Sistema de Decisión Automatizada)** en el Glosario y la base para la interoperabilidad de datos en el sector público.
+
 ---
 
 ### Bloque 4: El Impacto
@@ -128,6 +133,8 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
     * **Por qué leerlo:** Define **Fragilidad** y **Skin in the Game** (Prólogo). Esencial para entender el riesgo de sistemas sin consecuencias.
 * **Heath, C., & Heath, D. (2010). "Switch: How to Change Things When Change Is Hard".** [[Web]](https://heathbrothers.com/books/switch/)
     * **Por qué leerlo:** Manual práctico para la **gestión del cambio**, esencial para ejecutar la Guía 15 y gestionar la resistencia cultural.
+* **Parasuraman, R., & Manzey, D. H. (2010). "Complacency and Bias in Human Interaction with Automation: A Chronic State of Reliability". Human Factors.** [[Web]](https://journals.sagepub.com/doi/10.1177/0018720810376055)
+    * **Por qué leerlo:** Es la investigación científica fundamental que explica por qué los humanos dejan de auditar a las máquinas cuando estas funcionan bien la mayor parte del tiempo. Provee la base psicológica para la **"Deuda Técnica Humana"** y justifica la necesidad de los "Simulacros de Desconexión" de la Guía 15.
 * **Gobierno de Chile (BID Lab, UAI). (2022). "Guía Formulación ética de proyectos de ciencia de datos".** [[Web]](https://goblab.uai.cl/guia-formulacion-etica-de-proyectos-de-ciencia-de-datos/)
     * **Por qué leerlo:** Marco legal para la ética de datos, definiendo **"Opacidad"** y **"Licencia Social"**.
 * **Angwin, J., et al. (2016). "Machine Bias". ProPublica.** [[Web]](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing)
@@ -152,7 +159,7 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
     * **Por qué leerlo:** Marco de referencia esencial para la Guía 15. Define operacionalmente la "Licencia Social", la proporcionalidad en el uso de IA y los protocolos para mitigar sesgos en datos administrativos.
 * **Innerarity, D. (2023). "Una teoría crítica de la inteligencia artificial". Galaxia Gutenberg.** [[Web]](https://www.galaxiagutenberg.com/libros/una-teoria-critica-de-la-inteligencia-artificial/)
     * **Por qué leerlo:** Es la base filosófica de la **"Construcción de la Agencia"** (Conclusión). Innerarity argumenta que la IA no es una inteligencia que compite con la humana, sino una herramienta de gestión de la complejidad, y que el verdadero peligro es la "abdicación" del juicio humano frente al cálculo algorítmico.
-  
+
 ---
 
 ### Bloque 5: La Expansión

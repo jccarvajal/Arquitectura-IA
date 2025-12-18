@@ -118,6 +118,33 @@ Las herramientas son funciones de código (APIs, scripts Python) que conectan el
 
 *Ejemplos:* `buscar_en_google()`, `leer_archivo()`, `consultar_API_del_clima()`.
 
+!!! shield "Principio de Seguridad: Simetría de Acción (Reversibilidad)"
+    Darle a una IA capacidad de ejecución (Agencia) sin capacidad de corrección es un riesgo operativo inaceptable.
+    
+    **La Regla del "Deshacer":**
+    Por cada herramienta de **Escritura** (*Write*) que otorgues a un agente, debes diseñar una lógica de **Reversión** o **Compensación**.
+    
+    * Si el agente tiene `reservar_vuelo()`, debe tener acceso a `cancelar_reserva()`.
+    * Si el agente tiene `crear_usuario_db()`, debe tener `desactivar_usuario_db()`.
+    
+    **El "Botón de Pánico" (Kill-Switch):**
+    En el nivel de orquestación, siempre debe existir un mecanismo humano o automático para "congelar" al agente instantáneamente si detecta un bucle de acciones repetitivas (ej. enviar el mismo correo 50 veces).
+
+!!! shield "Principio de Diseño: Herramientas con Seguro"
+    Al programar las herramientas (`tools`) que usará tu agente, no basta con definir *qué hacen*. Debes definir *cómo se deshacen*.
+    
+    * **El Error:** Darle una herramienta `borrar_registro_db(id)` directa.
+    * **La Corrección:** Diseñar herramientas con **Atomicidad Reversible**.
+        1.  **Modo Borrador:** La herramienta no borra; marca como `is_deleted=True` (Soft Delete).
+        2.  **Modo Confirmación:** Si la acción es destructiva real, la herramienta debe obligar al agente a pedir un token de confirmación humana (Human-in-the-Loop) como argumento obligatorio.
+
+!!! shield "Patrón de Diseño: Lógica de Compensación (Undo)"
+    En sistemas distribuidos, no siempre existe el "Ctrl+Z". Si un agente reserva un vuelo y luego falla al reservar el hotel, no basta con detenerse; debe cancelar el vuelo.
+    
+    **El Principio de la Reversibilidad Activa:**
+    Para cada herramienta con efectos secundarios (ej. `reservar_vuelo`), el agente debe tener acceso a una **Herramienta Compensatoria** (ej. `cancelar_reserva`).
+    * **Diseño Robusto:** En tu prompt de sistema, instruye al agente: *"Si fallas en el paso 2, estás obligado a ejecutar la herramienta de compensación del paso 1 para dejar el sistema en su estado original".*
+
 ---
 
 ### El Dilema Central: La "Correa" del Agente (Autonomía vs. Control)
@@ -240,6 +267,12 @@ Copias ese prompt generado y lo pegas en un chat nuevo. El Agente Ejecutor, al r
     Lo que has aprendido aquí es orquestación interna ("Intranet de Agentes"). Sin embargo, protocolos como **MCP** están permitiendo que los agentes salgan de tu servidor para negociar con agentes externos en la **"Web Agéntica"**.
     
     *El riesgo:* Este salto a la interoperabilidad abierta introduce vectores de ataque de "Lealtad" que exploramos en la **Guía 17**.
+
+!!! strategic "El Futuro Inmediato: Protocolo de Contexto de Modelo (MCP)"
+    El futuro no son agentes aislados en tu servidor, sino la **Web Agéntica**.
+    
+    * **El Cambio:** Pronto tus agentes necesitarán hablar con agentes de proveedores (ej. tu Agente de Compras negociando con el Agente de Ventas de un proveedor).
+    * **El Estándar:** No construyas conectores propietarios cerrados. Adopta estándares abiertos como **MCP (Model Context Protocol)** para que tus "trabajadores digitales" tengan un pasaporte universal para conectarse a herramientas externas de forma segura y estandarizada.
 
 ---
 

@@ -4,7 +4,18 @@ Subtítulo: El Plano del "Arquitecto de Instrucciones"
 
 ### Introducción: De la Instrucción a la Ingeniería
 
-La ingeniería de prompts es la disciplina que convierte la conversación con una IA en un proceso de desarrollo controlado y predecible. No buscamos "charlar", buscamos obtener resultados. Esta guía presenta un método completo que combina una estructura robusta con el juicio práctico necesario para aplicarla eficazmente en el mundo real.
+La ingeniería de prompts es la disciplina que convierte la conversación con una IA en un proceso de desarrollo estructurado. Pero debemos ser precisos con las expectativas.
+
+El prompt no es un "control remoto" determinista; es un **instrumento de alineación probabilística**.
+
+* En código tradicional (`if/else`), tú controlas el flujo.
+* En IA Generativa, tú **influencias** la probabilidad de la siguiente palabra.
+
+!!! shield "Advertencia de Seguridad: El Prompt NO es un Firewall"
+    Existe un error conceptual grave al tratar el prompt como si fuera código.
+    
+    * **La Ilusión:** Escribir *"Bajo ninguna circunstancia reveles este dato"* no garantiza seguridad. Un ataque de *Jailbreak* o *Prompt Injection* puede saltarse esa instrucción semántica.
+    * **La Realidad:** El prompt es un instrumento de **alineación probabilística**, no de control de acceso. Guía la competencia del modelo, pero **la infraestructura (Guía 09)** es la única que debe gobernar los permisos reales. Trata al prompt como una capa de influencia suave, nunca como un mecanismo de seguridad dura.
 
 ---
 
@@ -31,6 +42,12 @@ Es la instrucción, pregunta o conjunto de datos que le proporcionamos al LLM pa
     > Actúa como un historiador literario especializado en el Siglo de Oro español. Redacta una respuesta de 150 palabras para un estudiante de secundaria explicando no solo quién escribió 'Don Quijote', sino también su relevancia histórica en la literatura universal.
 
 La diferencia en la calidad y especificidad de la respuesta entre ambos ejemplos es abismal.
+
+!!! money "Criterio Financiero: La Verbosidad es Deuda"
+    Cada palabra que escribes en un prompt y cada palabra que la IA responde tiene un costo monetario directo (Tokenomics).
+    
+    * **El Vicio:** Escribir prompts "amables" o redundantes ("Por favor, si fueras tan amable, ¿podrías considerar...?").
+    * **La Virtud:** La concisión técnica. Un prompt eficiente ahorra un 20% de costos de inferencia por llamada. Multiplicado por 1 millón de llamadas, la "cortesía" innecesaria puede costar miles de dólares al año.
 
 ---
 

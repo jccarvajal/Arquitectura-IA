@@ -11,6 +11,12 @@ En la guía anterior, definimos la nueva relación laboral. Pero esa relación t
     
     Este no es un capítulo de *soft skills*. Es una **disciplina de supervivencia profesional**. Se trata de instalar un "Sistema Inmunológico Intelectual" capaz de auditar a una máquina que miente mejor que cualquier humano. En esta nueva economía, tu valor ya no reside en producir respuestas, sino en tener el criterio implacable para interrogarlas.
 
+!!! tip "La Paradoja de la Competencia: Saber Hacer para Poder Mandar"
+    Existe una regla de oro para evitar la "Atrofia Cognitiva": **Nunca delegues a la IA una tarea que no seas capaz de auditar manualmente.**
+    
+    * **El Riesgo:** Si usas la IA para escribir código o contratos que tú mismo no entiendes, pierdes la capacidad de distinguir una genialidad de un error catastrófico. Te vuelves rehén de la máquina.
+    * **El Mandato:** El "Comandante" debe ser un maestro artesano. Usamos la IA para ir más rápido, no para saltarnos el aprendizaje. Si no puedes explicar *por qué* la respuesta de la IA es correcta, no tienes permiso para usarla.
+
 ---
 
 ### Parte 1: El Protocolo de Interacción: De la Petición al Comando
@@ -151,6 +157,12 @@ prompt: |
 * **Nuevo Rol:** Arquitecto de Seguridad y Sistemas.
 * **Misión:** Supervisar la generación de código masiva, asumiendo que todo output es inseguro por defecto.
 
+!!! shield "Principio de Seguridad: El Código Generado es Código de Terceros"
+    Trata cualquier bloque de código generado por un LLM con la misma desconfianza que tratarías un script descargado de un foro anónimo de internet.
+    
+    * **La Regla del Commit:** Prohibido hacer *commit* de código generado que no haya sido leído y entendido línea por línea.
+    * **El Peligro de las Librerías Fantasma:** Los modelos a menudo alucinan importaciones de paquetes que no existen (`import libreria_falsa`). Si un atacante crea un paquete real con ese nombre, tu sistema ejecutará malware. **Verifica siempre la existencia oficial de cada dependencia sugerida.**
+
 ---
 
 **Táctica A: Cuarentena de Código**
@@ -182,8 +194,6 @@ tarea: |
   estos patrones de diseño.
 ```
 
-**Objetivo:** Reducir la deuda técnica por código genérico no adaptado.
-
 ---
 
 ### Conclusión: De Operador a Comandante
@@ -191,3 +201,18 @@ tarea: |
 El reentrenamiento cognitivo no es opcional. Es el requisito de entrada para la nueva economía.
 
 Esta guía cierra la brecha de habilidades humanas. Mientras la **Guía 11** industrializó la máquina, esta guía industrializa al operador. Dejamos atrás la ingenuidad del "usuario" para asumir la responsabilidad del "Comandante": el único en la sala capaz de distinguir entre una verdad procesada y una mentira perfecta.
+
+!!! danger "El Axioma de la Responsabilidad (Accountability)"
+    Recuerda siempre: **La IA propone, el humano dispone y la ley impone.**
+    
+    Cuando presionas "Enviar", "Publicar" o "Desplegar", la IA desaparece de la ecuación legal. Solo queda tu nombre en el registro. Tú no eres solo el operador del sistema; eres su póliza de seguro y su responsable penal. La validación no es un paso técnico; es el acto de aceptar esa responsabilidad.
+
+!!! money "Perspectiva de Carrera: La Teoría del Seguro"
+    El DTT plantea la pregunta definitiva: *"Si la IA piensa gratis, ¿por qué me pagarían a mí?"*
+    
+    **La Respuesta Económica:**
+    En la era de la IA, el salario humano deja de ser un pago por **Producción** (generar texto/código) y se convierte en una **Prima de Riesgo (Insurance Premium)**.
+    
+    * **El cambio:** La máquina produce el activo (el contrato, el código). Tú cobras por **absorber el pasivo** (el riesgo de que esté mal).
+    * **Tu valor:** No te pagan por escribir el plan en 5 segundos; te pagan por poner tu firma, tu licencia y tu patrimonio reputacional en la línea para certificar que el plan es seguro.
+    * **Corolario:** Mientras más riesgo seas capaz de auditar y asumir, más alto será tu valor de mercado. Los "productores" serán baratos; los "garantes" serán caros.

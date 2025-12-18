@@ -24,6 +24,14 @@ Es la pieza que conecta la estrategia (las Guías) con la ejecución, y forma pa
 
 La obra de guías y anexos fue diseñada para los "Arquitectos" y "Directores". Este anexo es la práctica: el "Portafolio del Arquitecto". Estos son los planos que un "Ingeniero de Prototipos" o un "Director de Industrialización" usaría. A continuación, se presentan varios blueprints que aumentan en complejidad. Este portafolio no es exhaustivo y está diseñado para crecer.
 
+!!! danger "Alerta de Seguridad: Gestión de Credenciales (API Keys)"
+    **NUNCA escribas credenciales en el código del agente o en el prompt.**
+    
+    En los ejemplos de Blueprints, verás referencias a herramientas. En producción, estas herramientas deben autenticarse mediante **Variables de Entorno** (`os.environ['API_KEY']`) o gestores de secretos en la nube (AWS Secrets Manager, Azure Key Vault).
+    
+    * **Riesgo:** Si pones la clave en el prompt ("Usa la clave 1234"), el modelo podría "alucinarla" y revelársela al usuario en el chat.
+    * **Regla:** El modelo usa la herramienta, pero **nunca ve** la credencial que la hace funcionar.
+
 ---
 
 ### Blueprint 1: El "Agente de Soporte al Cliente" (PM Interno)
@@ -181,7 +189,7 @@ La obra de guías y anexos fue diseñada para los "Arquitectos" y "Directores". 
         * *Razona:* "Auditoría finalizada. Volviendo a modo inactivo."  
 * **La Sinergia (Colaboración):** 
     * **Rol del Agente:** Ejecuta una tarea de auditoría de "Sistema 1" que ningún humano podría hacer a esa escala (revisar millones de "chunks" de vectores diariamente).  
-    * **Rol del Humano (Gobernador de Datos / CISO):** El humano es elevado de "auditor manual" a "estratega de gobernanza".  
+    * **Rol del Humano (Gobernador de Datos / Responsable de Seguridad):** El humano es elevado de "auditor manual" a "estratega de gobernanza".
         * *Antes:* Realizaba auditorías aleatorias trimestrales.  
         * *Ahora:* Llega en la mañana, revisa el "Dashboard de Gobernanza" que el agente pobló, y toma decisiones de "Sistema 2" (ej. "Autorizo la purga de los 820 chunks obsoletos").
 

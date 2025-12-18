@@ -34,11 +34,21 @@ Antes de escribir una línea de código, debes encontrar la "playa" correcta par
 
 **El Filtro del "Quick Win":**  
 
-Tu prototipo debe pasar este filtro de 3 preguntas:
+Tu prototipo debe pasar este filtro de 4 preguntas:
 
 1. **¿Es un problema de "Sistema 1"?** ¿Es una tarea repetitiva, de bajo juicio y basada en patrones (como leer, resumir, clasificar)? Sí.  
 2. **¿El riesgo de "alucinación" es manejable?** "Alucinación" es cuando la IA inventa un dato. Si el agente se equivoca en el resumen, ¿es vergonzoso (manejable) o es catastrófico (ilegal/financiero)? Para un primer prototipo, debe ser manejable.  
 3. **¿El ROI es obvio?** ¿Podemos medir el éxito en "horas-hombre ahorradas" o "tareas completadas"? Sí.
+
+!!! tip "El Cuarto Filtro: La Economía Unitaria (Unit Economics)"
+    No basta con que la IA pueda hacer el trabajo. Para que un prototipo sea sostenible, debe responder una pregunta crítica: **"¿Cuesta menos la solución que el problema?"**
+    
+    Antes de aprobar el desarrollo, calcula la **Economía Unitaria**:
+    
+    1.  **Costo del Problema:** (Tiempo actual del empleado x Sueldo por hora).
+    2.  **Costo de la Solución:** (Tokens de entrada + Tokens de salida + Costo del tiempo humano de revisión).
+    
+    Si usas un modelo gigante y costoso para una tarea trivial (ej. clasificar spam), podrías estar gastando $0.05 en una tarea que manualmente costaba $0.01. **El prototipo debe ser rentable por unidad, no solo eficiente en tiempo.**
 
 ---
 
@@ -50,6 +60,14 @@ Ya tenemos el "qué" (el caso de uso). Ahora definimos el "cómo" mínimo. No co
 
 * **Decisión:** No necesitas el "motor" más potente y caro del mercado.  
 * **Elección de Prototipo:** Elige el modelo más rápido y barato que pueda hacer el trabajo (ej. Claude 3.5 Haiku, Gemini Flash). Optimiza para costo y velocidad.
+
+!!! warning "Advertencia de Arquitectura: La Trampa de la Dependencia"
+    Un error estratégico común es diseñar tu prototipo basándote exclusivamente en las "funciones mágicas" propietarias de un solo proveedor (ej. funciones que solo existen en ChatGPT).
+    
+    Si ese proveedor cambia sus precios, sus políticas o su modelo mañana, tu prototipo deja de funcionar.
+    
+    **El Principio de Neutralidad:** Diseña tu lógica (tu prompt) para que sea lo más universal posible. Piensa en el modelo como una "batería intercambiable": hoy usas la Marca A porque es la más eficiente, pero tu sistema debe estar listo para cambiar a la Marca B si las condiciones del mercado cambian, sin necesidad de reescribir todo el sistema.
+
 
 **2\. La "Memoria" (Vector DB):**
 
@@ -111,10 +129,13 @@ Esta "Gobernanza Mínima Viable" es, en la práctica, la versión 1.0 de lo que 
 * El agente no envía el reporte final. Lo escribe en un borrador (ej. un Google Doc).  
 * El humano (el gerente) lo lee a las 8 AM, lo valida con su juicio crítico ("Sistema 2") y él mismo presiona "enviar".
 
-**3\. Control de Costos (Interruptor):**
+**3\. Control de Costos: El "Presupuesto de Misión" (El Taxímetro)**
 
-* Implementa un **"Circuit Breaker"** básico (un interruptor automático).  
-* "Si el agente intenta leer más de 1.000 emails (limite duro) o si su tarea dura más de 5 minutos, mátalo y envía una alerta de error."
+* **El Riesgo:** Un agente autónomo confundido es como un taxi con el motor encendido esperando eternamente. Si entra en un bucle infinito, el "taxímetro" (los tokens) sigue corriendo, generando una factura masiva en minutos.
+* **La Lógica de Control:** No le des a la IA una tarjeta de crédito ilimitada. Dale una tarjeta prepago para cada tarea.
+* **Implementación Lógica:** Define un **"Presupuesto Máximo por Ejecución"**.
+    * *Incorrecto:* "Intenta resolver esto hasta que termines."
+    * *Correcto:* "Tienes un presupuesto de 15 ciclos (o $0.50 USD) para resolver esto. Si llegas a ese límite y no has terminado, detente inmediatamente y reporta fallo."
 
 ---
 
@@ -133,6 +154,13 @@ Ya tienes tu prototipo seguro (v1). Ahora debes probar su valor.
 * **Al inicio:** El primer mes, el humano valida el reporte (**Humano-en-el-Bucle (Human-in-the-Loop)**).  
 * **¿Cuándo escalar?:** Cuando la "Métrica de Calidad" muestra que el agente acierta el 99% de las veces, puedes escalar.  
 * **Escalado (v2):** Pasas de "Humano-en-el-Bucle" (Validación) a **"Humano-sobre-el-Bucle" (Human-on-the-Loop)** (Supervisión). El agente ahora envía el reporte automáticamente (preparando para la Industrialización), y el humano solo recibe una alerta si algo falla.
+
+!!! danger "La Regla de la Responsabilidad Final"
+    Al escalar de "Validación" (Humano revisa todo) a "Supervisión" (Humano revisa solo alertas), debemos recordar un principio operativo inquebrantable:
+    
+    **La IA nunca es responsable legalmente. La responsabilidad siempre recae en el operador humano.**
+    
+    Si el sistema opera en "piloto automático" y comete un error grave, la culpa no es del "algoritmo"; es del humano que decidió dejar de auditar. Automatizar la tarea no significa automatizar la responsabilidad. Cuando el sistema actúa, lo hace bajo la firma y riesgo del operador a cargo.
 
 ---
 

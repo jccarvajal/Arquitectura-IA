@@ -10,6 +10,16 @@ La Inteligencia Artificial no es magia: es una decisión de inversión. Y toda d
 
 Tras una década analizando éxitos, fracasos, regulaciones y *benchmarks* globales, los proyectos de IA caen sistemáticamente en un patrón universal. Ese patrón es el **Mapa de las Cinco Zonas**, un marco para priorizar inversiones, evitar trampas y maximizar el retorno público o privado.
 
+!!! money "El Criterio Financiero: Economía Unitaria (Unit Economics)"
+    El error financiero más común es mirar el presupuesto total ("Tenemos $50k para el piloto") en lugar del costo unitario.
+    
+    Para aprobar un proyecto, debes calcular el margen de la tarea individual:
+    
+    1.  **Costo Humano Actual:** ¿Cuánto cuesta hoy responder *un* email? (Ej. $2.50 USD en tiempo).
+    2.  **Costo IA Proyectado:** ¿Cuánto cuesta la inferencia + la revisión humana? (Ej. $0.15 USD).
+    
+    **Regla de Oro:** Si el costo de la IA (sumando la supervisión humana necesaria) se acerca al costo del humano actual, el proyecto se cancela. La tecnología es irrelevante si el margen no mejora drásticamente.
+
 ### El Mapa de las Cinco Zonas
 
 ```mermaid
@@ -67,6 +77,14 @@ graph LR
 ### 1. 🟩 Zona Verde: Los Ganadores del ROI
 
 Son iniciativas donde la tecnología es madura y el retorno es tangible. Aquí se encuentra el dinero real. Atacan ineficiencias físicas, financieras o regulatorias concretas. Son aburridos, pero críticos.
+
+!!! warning "La Regla del 5%: El Límite de la Supervisión"
+    El "Humano-en-el-Bucle" es necesario, pero costoso. ¿Cuánto es demasiado?
+    
+    **La Heurística de Viabilidad:**
+    Si tu arquitectura requiere que un humano revise o corrija más del **5% al 10%** de las transacciones totales para que el sistema sea seguro, el proyecto probablemente **no es viable económicamente**.
+    * Si el humano debe revisar el 50%, no tienes una IA; tienes un borrador caro.
+    * El objetivo de la ingeniería es reducir esa tasa de intervención a <1% (manejo de excepciones) para que la economía de escala funcione.
 
 #### 1.1. Manufactura y Minería (Reducción de Opex)
 
@@ -209,6 +227,12 @@ Proyectos con una probabilidad de fracaso estructural. Violan principios básico
 * **Evaluación Automatizada de Funcionarios:**
     * *Error:* Predecir el desempeño o "riesgo" de empleados públicos con IA.
     * *Consecuencia:* Conflictos sindicales, desmoralización y litigios laborales.
+
+!!! danger "La Trampa de la Complejidad Financiera"
+    La Zona Roja no es solo para proyectos ilegales o no éticos. También incluye proyectos **técnicamente viables pero financieramente ruinosos**.
+    
+    * **El Caso Típico:** Usar un modelo de razonamiento masivo (ej. o1 o Claude Opus) para una tarea de volumen trivial (ej. clasificar millones de filas de Excel).
+    * **El Resultado:** El proyecto funciona perfecto técnicamente, pero la factura de la nube supera el beneficio del negocio. Eso es destrucción de valor pura.
 
 ---
 

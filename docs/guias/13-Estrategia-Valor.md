@@ -27,6 +27,29 @@ Una vez que la "fábrica" funciona, el "Jefe de Operaciones" tiene dos caminos. 
 
 Mientras que la Eficiencia es un objetivo crucial (especialmente en el sector público), la Innovación es el motor de la transformación.
 
+!!! strategic "Advertencia de Soberanía: El Riesgo del Inquilino"
+    Existe una realidad incómoda para la estrategia: **"Si no eres dueño de los pesos del modelo, no eres dueño de tu destino."**
+
+    Construir toda tu estrategia sobre una API cerrada (SaaS) es construir tu fábrica en terreno alquilado. El dueño del terreno (el proveedor de IA) puede subir el alquiler, cambiar las reglas o desalojarte (deprecar el modelo) sin aviso.
+    
+    **El Mandato de Soberanía:**
+    Para procesos críticos que constituyen tu núcleo de negocio (*Core Business*), la estrategia a largo plazo debe ser migrar hacia **Modelos de Pesos Abiertos (Open Weights)** alojados en infraestructura propia. Usa APIs para experimentar (velocidad), pero busca la soberanía para operar (control).
+
+!!! money "La Ley del Techo de la Eficiencia"
+    Existe una verdad financiera ineludible: **"No puedes ahorrarte el camino hacia el crecimiento."**
+
+    * **La Trampa:** Usar la IA solo para "Eficiencia" (reducir costos) tiene un techo matemático: el costo nunca puede ser menor a cero.
+    * **La Estrategia:** El valor real de la IA es la "Innovación" (Generación de Ingresos), que teóricamente no tiene techo.
+    
+    **Regla de Portafolio:** Si el 100% de tus proyectos de IA son de ahorro de costos (Zona Verde), tu empresa se está encogiendo, no transformando. Debes reinvertir esos ahorros en apuestas de crecimiento (Zona Azul/Innovación).
+
+!!! money "Regla Financiera: La Cascada de Innovación"
+    La innovación no es un gasto; es una reinversión de ahorros.
+    
+    * **La Restricción:** No se aprobará presupuesto nuevo (CapEx) para proyectos especulativos de "Transformación" (Cuadrante 2).
+    * **El Mecanismo:** Debes ejecutar primero los proyectos de "Eficiencia" (Cuadrante 1: Soporte, Automatización). El dinero real ahorrado allí es la **única fuente de financiamiento** permitida para construir los "Agentes de Producto".
+    * **El Mandato:** Si el Cuadrante 1 no genera caja, el Cuadrante 2 no existe.
+
 ---
 
 ### Parte 1: El Fundamento Económico (El "Costo Cero" de la Cognición)

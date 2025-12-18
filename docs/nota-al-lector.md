@@ -59,7 +59,7 @@ Para sacar el máximo provecho de esta obra, asumimos tres cosas sobre usted:
 
 ## 6. Sobre la Obsolescencia: Es un "Marco" de fines de 2025
 
-Esta es la **Versión 1.3 (de Diciembre 2025)**. La tecnología de IA es volátil y evoluciona en ciclos de meses, no de años.
+Esta es la **Versión 1.4 (de Diciembre 2025)**. La tecnología de IA es volátil y evoluciona en ciclos de meses, no de años.
 
 Considere esta obra como un **"marco de pensamiento"** y una **"fotografía"** del panorama actual, no como un manual estático. El objetivo no es entregar reglas fijas, sino un criterio duradero para gestionar la evolución tecnológica.
 

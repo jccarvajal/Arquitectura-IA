@@ -89,6 +89,24 @@ Para que un agente "piense", debemos darle un "Manual de Procedimientos" (un pat
 * **Metáfora:** El "Auditor de Calidad" al final de la línea de ensamblaje que revisa el producto y, si encuentra un defecto, lo devuelve para su corrección.  
 * **Cuándo usarlo:** Para tareas que requieren alta precisión y fiabilidad (ej. generación de código, redacción de contratos, análisis financieros).
 
+!!! tip "Requisito de Auditoría: La Legibilidad del Pensamiento"
+    El patrón *Chain-of-Thought* (CoT) no es solo para que la IA razone mejor; es para que el humano pueda auditarla.
+    
+    **La Regla de Transparencia:**
+    Diseña tu prompt de sistema para que el agente imprima su razonamiento en un bloque separado (ej. `<pensamiento>...</pensamiento>`) antes de dar la respuesta final.
+
+    * Si la respuesta es mala pero el pensamiento es lógico, el problema es falta de contexto (Guía 03).
+    * Si el pensamiento es ilógico, el problema es el modelo o el prompt (Guía 02).
+    
+    Sin pensamiento visible, corregir a un agente es adivinar.
+
+!!! warning "Restricción de Ingeniería: Costo y Latencia (La Regla del Batch)"
+    Los patrones avanzados como *Tree of Thoughts* (ToT) o *Reflexion* no solo triplican el consumo de tokens (Dinero), sino que aumentan la latencia exponencialmente (Tiempo).
+    
+    * **La Prohibición de UX:** Jamás uses ToT en interfaces de chat en tiempo real. El usuario no esperará 45 segundos por una respuesta.
+    * **El Caso de Uso:** Reserva estos patrones exclusivamente para procesos **Offline** o **Batch Jobs** (ej. análisis nocturno de contratos) donde la profundidad del razonamiento vale más que la velocidad de respuesta.
+    * **Regla de Escalamiento:** Empieza siempre con *Direct Shot*. Solo escala a *Chain of Thought* si fallas, y a *Agentes* si hay incertidumbre. La "inteligencia excesiva" es un error de arquitectura.
+
 ---
 
 ### Parte 3: Metacognición: El "Jefe de Taller" (Agente Enrutador)

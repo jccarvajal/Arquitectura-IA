@@ -1,7 +1,7 @@
 # Arquitectura de Inteligencia Artificial
 ## Guías para Decidir, Diseñar y Gobernar
 
-**Versión 1.3 (Diciembre 2025)**
+**Versión 1.4 (Diciembre 2025)**
 
 **Autor:** [Juan Carlos Carvajal](https://www.jccarvajal.com/)
 
@@ -19,7 +19,7 @@ El objetivo es proporcionar un **Marco de GRC (Gobernanza, Riesgo y Cumplimiento
 
 1.  **Decidir** con base en la viabilidad técnica y el valor de negocio (no en el *hype*).
 2.  **Diseñar** sistemas cognitivos robustos utilizando patrones de ingeniería (RAG, Agentes, CoT).
-3.  **Gobernar** la operación mitigando riesgos de seguridad, alucinaciones y costos.
+3.  **Gobernar** la operación mitigando riesgos de seguridad, alucinaciones y asegurando la rentabilidad.
 
 ---
 
@@ -125,18 +125,20 @@ Herramientas para la toma de decisiones técnicas y de compra.
 * [Anexo D: Plantillas y Recursos](./anexos/D-Plantillas-Recursos.md)
   *Prompts maestros (CRF-R) y rúbricas de evaluación de calidad.*
 
-### Referencias y Fundamentos
+---
+
+## Referencias y Fundamentos
 Base de conocimiento para alinear equipos y profundizar el criterio.
 
-* [Anexo E: Glosario](./anexos/E-Glosario.md)
+* [Glosario](./referencias/Glosario.md)
   *Definiciones unificadas para evitar la ambigüedad conceptual.*
-* [Anexo F: Bibliografía](./anexos/F-Bibliografia.md)
+* [Bibliografía](./referencias/Bibliografia.md)
   *Papers fundacionales y reportes de industria (2017-2025).*
 
 ---
 
 ## Changelog
-* **v1.3 (Diciembre 2025):** Consolidación de la tesis de gobernanza como **"Ingeniería de Control"**. Esta versión integra la estrategia de **Soberanía y Geopolítica**, la "Advertencia de los Fundadores" (Wiener/Lanier) y la visión de **Agencia Humana** (Innerarity). Incluye migración técnica a **MkDocs**, diagramas **Mermaid.js** y un rediseño completo de los Anexos para mayor usabilidad.
+* **v1.4 (Diciembre 2025):** "Hardened Edition". Transformación del marco a un estándar industrial viable tras auditorías de roles clave (CISO, CFO, CTO, DTT). Integra parches críticos de **Seguridad** (Simetría de Acción), **Finanzas** (Veto de Costos) y **Talento** (Teoría del Seguro), junto con una reestructuración de la arquitectura de información (Referencias vs. Herramientas).
 * Ver [Historial Completo](./changelog.md).
 
 ## Sugerencias y Mejoras

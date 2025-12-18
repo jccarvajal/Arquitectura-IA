@@ -4,27 +4,50 @@ Este documento registra todas las modificaciones estructurales, técnicas y conc
 
 ---
 
-# Versión 1.3 (Diciembre 2025)
+# Versión 1.4 (Diciembre 2025) - "Hardened Edition"
 
-**Motivo:** Consolidación de la tesis de gobernanza como **"Ingeniería de Control"** frente a la burocracia normativa. Esta versión integra la estrategia de **Soberanía y Geopolítica** (no-neutralidad), la visión de **Agencia Humana** (Innerarity) y profundiza en los riesgos de **politización técnica** y **atrofia cognitiva**. Incluye fundamentación histórica (Wiener/Lanier), literaria (Pratchett), mejoras en Anexos y migración técnica a plataforma **MkDocs** con diagramas **Mermaid.js**.
+**Motivo:** Endurecimiento industrial del marco GRC tras auditorías simuladas de roles clave (CISO, CFO, CTO, DTT). Esta versión transforma la arquitectura de "teóricamente correcta" a "financiera y operacionalmente viable", aplicando parches críticos de seguridad, rentabilidad y cultura. Se reestructura la jerarquía de contenidos separando las Herramientas (Anexos) de las Referencias Teóricas.
+
+### 🛡️ Seguridad y Gobernanza (Auditado por CISO)
+* **Guía 02 (Prompts):** Se redefinió el prompt como instrumento de *Alineación Probabilística*, eliminando la falacia de seguridad dura.
+* **Guía 04 (Datos):** Nuevo protocolo de **"Esterilización de Documentos"** para mitigar ataques de *Inyección Indirecta* en RAG.
+* **Guía 05 (Agentes):** Implementación del **"Principio de Simetría de Acción"**. Obligatoriedad de funciones de reversión (*Undo*) y *Kill-Switch* para herramientas de escritura.
+* **Anexo C (Blueprints):** Alerta crítica sobre gestión de credenciales y prohibición de *hardcoded secrets*.
+
+### 💰 Finanzas y Estrategia (Auditado por CFO)
+* **Guía 13 (Estrategia):** **"Regla de Autofinanciamiento"**. La innovación (Transformación) solo puede financiarse con los ahorros de la eficiencia (Soporte).
+* **Guía 11 (Industrialización):** **"Política de Purga de Logs"**. Retención máxima de 30 días para trazas de razonamiento (CoT) para control de costos.
+* **Anexo A (Viabilidad):** **"Veto Automático del 50%"**. Rechazo inmediato de proyectos cuyo costo unitario IA supere la mitad del costo humano.
+* **Glosario:** Redefinición financiera de **"Aumento"** (más output, mismo headcount) vs. **"Abdicación"**.
+
+### 🏗️ Ingeniería y Operaciones (Auditado por CTO)
+* **Guía 06 (Sistemas Cognitivos):** Restricción de latencia para *Tree of Thoughts* (ToT). Prohibido en tiempo real; exclusivo para procesos *Batch*.
+* **Guía 14 (Modelos):** Optimización del **Agente Enrutador** mediante modelos ligeros (Flash/Haiku) para reducir latencia inicial.
+* **Guía 10 (Calidad):** Estrategia de **"Cosecha Automática"** (Harvesting). El Golden Set se actualiza capturando *Edge Cases*, feedback negativo y baja confianza.
+
+### 🧠 Cultura y Talento (Auditado por DTT)
+* **Guía 15 (Ética):** Protocolos de **"Simulacro de Desconexión"** para combatir la atrofia cognitiva.
+* **Guía 16 (Operación):** **"Teoría del Seguro"**. Redefinición del salario humano como una *Prima de Riesgo* por la responsabilidad legal, no por la producción.
+* **Carrera Técnica:** Definición de roles de transición (Validador -> Entrenador -> Diseñador de Flujos).
+
+### 📚 Cambios Estructurales
+* **Jerarquía de Referencias:** El Glosario y la Bibliografía pierden la etiqueta de "Anexo" y se mueven a su propia categoría (`/referencias`) para distinguirlos de las herramientas operativas.
+
+---
+
+## Versión 1.3 (Diciembre 2025)
+
+**Motivo:** Consolidación de la tesis de gobernanza como **"Ingeniería de Control"**. Esta versión integra la estrategia de **Soberanía y Geopolítica**, la visión de **Agencia Humana** (Innerarity) y profundiza en los riesgos de politización técnica.
 
 ### Actualizaciones Estratégicas y Filosóficas
-* **Tesis Central (Guía 15 y Conclusión):** Se estableció el axioma de la "Agencia Humana" frente al "Lock-in", integrando la **"Advertencia de los Fundadores"** (Norbert Wiener y Jaron Lanier) para conectar la ingeniería moderna con la cibernética clásica.
-* **Prólogo (Marco Narrativo):** Nueva estructura basada en las cuatro metáforas de futuros: Utopía (*La Cultura*), Distopía (*Dune*), Caos (*The Expanse*) y Estructura (*Fundación*).
-* **Geopolítica (Guía 15):** Inclusión de la **Matriz de Decisión** (SaaS vs. Open Weights) y análisis de la fractura geopolítica (Woke vs. Anti-Woke) y la politización de la arquitectura.
+* **Tesis Central (Guía 15 y Conclusión):** Se estableció el axioma de la "Agencia Humana" integrando la **"Advertencia de los Fundadores"** (Wiener/Lanier).
+* **Prólogo:** Nueva estructura basada en las cuatro metáforas de futuros (Utopía, Distopía, Caos, Estructura).
+* **Geopolítica:** Inclusión de la **Matriz de Decisión** (SaaS vs. Open Weights).
 
-### Actualizaciones de Referencias y Bibliografía
-* **Anexo F (Bibliografía):** Expansión mayor para incluir:
-    * **Sección Literaria:** Reseñas técnicas de obras de ciencia ficción (Asimov, Banks, Corey, Herbert) como marcos de gobernanza.
-    * **Sección Filosófica:** Inclusión de Terry Pratchett (*Hogfather*) y Norbert Wiener (*Cybernetics*) para respaldar la conclusión.
-* **Glosario (Anexo E):** Inclusión de términos emergentes como **Web Agéntica**, **XAI (Explicabilidad Funcional)** y **Lealtad Agéntica**.
-
-### Mejoras Técnicas y de Usabilidad
-* **Infraestructura:** Migración completa del manuscrito a formato **MkDocs** e implementación de diagramas de arquitectura mediante **Mermaid.js**.
-* **Anexo A (Formulación):** Adición del bloque de **Dictamen Final (Triage)** para formalizar la decisión de viabilidad.
-* **Anexo B (Política):** Inclusión de la **Guía de Adaptación** (`!!! tip`) con diccionario de términos para el sector privado y contexto internacional.
-* **Anexo C (Blueprints):** Adición de bloques de **Validación de Mercado** (`!!! success`) con casos reales 2025.
-* **Anexo D (Plantillas):** Migración de bloques de texto a `markdown` para facilitar el copiado directo de prompts.
+### Mejoras Técnicas
+* **Infraestructura:** Migración completa a **MkDocs** e implementación de diagramas **Mermaid.js**.
+* **Anexo A:** Adición del bloque de **Dictamen Final (Triage)**.
+* **Anexo D:** Migración de prompts a bloques de código copiables.
 
 ---
 
@@ -33,28 +56,19 @@ Este documento registra todas las modificaciones estructurales, técnicas y conc
 **Motivo:** Estandarización de conceptos de "Agencia" y refinamiento de la "Ingeniería de Agentes".
 
 ### Cambios Técnicos
-* **Guía 05 (Agentes):** Formalización del ciclo **ReAct** (Razonar + Actuar) como estándar de arquitectura. Diferenciación explícita entre "Chatbot" y "Agente".
-* **Guía 14 (Modelos):** Introducción de la **Estrategia de Portafolio** (Triángulo de Adquisición) y la métrica de *Token-Economics* en la Guía 01 para mitigar el *Vendor Lock-in*.
-
-### Mejoras Didácticas y de Formato
-* **Mapa del Territorio:** Inclusión del diagrama conceptual **IA > ML > DL > GenAI** en la Guía 01.
-* **Marco CRF-R:** Se insertó explícitamente la síntesis del método de prompting (Contexto, Rol, Formato, Restricciones) en la Guía 02.
-* **Sanitización:** Corrección de formatos en bloques de código para asegurar compatibilidad visual en móviles y editores Markdown.
+* **Guía 05 (Agentes):** Formalización del ciclo **ReAct** (Razonar + Actuar).
+* **Guía 14 (Modelos):** Introducción de la **Estrategia de Portafolio** y métricas de *Token-Economics*.
 
 ---
 
 ## Versión 1.1 (Noviembre 2025)
 
-**Motivo:** Transición a un marco de pensamiento estratégico completo. Consolidación del enfoque GRC.
+**Motivo:** Transición a un marco de pensamiento estratégico completo (GRC).
 
 ### Cambios Estratégicos
-* **Tesis Central:** El enfoque del libro se centró explícitamente en **GRC (Gobernanza, Riesgo y Cumplimiento)**.
-* **Ingeniería de Contexto:** Se elevó el concepto de "Ingeniería de Prompts" a una disciplina de gestión de memoria y contexto.
-* **Límites del Transformer:** Definición explícita del **Costo Cuadrático** y la **Amnesia Estática** como limitantes estructurales.
-
-### Gobernanza y Responsabilidad
-* **Arquitectura LOSA:** Introducción inicial de la capa *middleware* de seguridad.
-* **Roles de Gobernanza:** Definición de "Dueño del Sistema" y "Monitor de Cumplimiento" en la Política Institucional (Anexo B).
+* **Tesis Central:** Enfoque explícito en **GRC (Gobernanza, Riesgo y Cumplimiento)**.
+* **Ingeniería de Contexto:** Elevación del Prompting a gestión de memoria.
+* **Límites:** Definición del **Costo Cuadrático** y la **Amnesia Estática**.
 
 ---
 
@@ -62,5 +76,4 @@ Este documento registra todas las modificaciones estructurales, técnicas y conc
 
 **Motivo:** Publicación inicial del borrador de contenidos.
 
-* **Lanzamiento:** Publicación del libro con la estructura de 17 guías y 6 anexos.
-* **Enfoque:** Guías técnicas para la implementación de LLMs en entornos corporativos.
+* **Lanzamiento:** Publicación del libro con la estructura base de 17 guías y 6 anexos.
