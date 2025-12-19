@@ -43,9 +43,9 @@ Mientras que la Eficiencia es un objetivo crucial (especialmente en el sector p�
     
     **Regla de Portafolio:** Si el 100% de tus proyectos de IA son de ahorro de costos (Zona Verde), tu empresa se está encogiendo, no transformando. Debes reinvertir esos ahorros en apuestas de crecimiento (Zona Azul/Innovación).
 
-!!! money "Regla Financiera: La Cascada de Innovación"
-    La innovación no es un gasto; es una reinversión de ahorros.
-    
+!!! money "Regla de Autofinanciamiento"
+    No solicites presupuesto nuevo para Innovación (Transformación); tu mandato es capturarlo de los ahorros generados en Eficiencia (Soporte). Si los proyectos de ahorro no generan caja real, la innovación no tiene fuente de financiamiento permitida.
+
     * **La Restricción:** No se aprobará presupuesto nuevo (CapEx) para proyectos especulativos de "Transformación" (Cuadrante 2).
     * **El Mecanismo:** Debes ejecutar primero los proyectos de "Eficiencia" (Cuadrante 1: Soporte, Automatización). El dinero real ahorrado allí es la **única fuente de financiamiento** permitida para construir los "Agentes de Producto".
     * **El Mandato:** Si el Cuadrante 1 no genera caja, el Cuadrante 2 no existe.

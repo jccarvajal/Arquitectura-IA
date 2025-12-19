@@ -253,6 +253,9 @@ La Observabilidad Ampliada no es un simple cambio de nombre; es un cambio de pro
     * **Compresión de Prompts:** Tu pipeline debe eliminar palabras innecesarias de las instrucciones para ahorrar tokens.
     * **Caching Semántico:** Si 500 usuarios preguntan lo mismo, la IA solo debe "pensarlo" (gastar dinero) una vez. Las otras 499 veces debe entregar la respuesta guardada en memoria (gratis).
 
+!!! danger "El Interruptor Financiero (Budget Circuit Breaker)"
+    La regla es estricta: Configura un límite duro (*Hard Cap*) a nivel de API. Si una sesión supera los **$5.00 USD**, el sistema debe matar el proceso automáticamente. No esperes a la auditoría mensual.
+
 ---
 
 ### Conclusión: De Ingeniero a Director de Ecosistema

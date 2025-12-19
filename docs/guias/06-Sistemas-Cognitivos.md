@@ -49,9 +49,10 @@ Para que un agente "piense", debemos darle un "Manual de Procedimientos" (un pat
 
 **B. ReAct (Reason \+ Act): El "Detective con Herramientas"**
 
-* **Qué es:** El pilar de los agentes modernos. El modelo genera un "Pensamiento" (Reason) sobre lo que necesita hacer y qué "Herramienta" (Act), una API o función externa, debe usar. Luego "Observa" el resultado de la herramienta y repite el ciclo. Es el motor fundamental de los agentes.
+* **Qué es:** Como establecimos en la **Guía 05**, el ciclo ReAct es el pilar de la agencia moderna. Se basa en un bucle donde el modelo genera un **Pensamiento** (Reason) sobre su objetivo, ejecuta una **Acción** (Act) mediante una herramienta externa y luego **Observa** el resultado para ajustar su siguiente paso. Es el mecanismo que transforma una IA pasiva en un trabajador capaz de interactuar con el mundo real.
 * **Metáfora:** Un detective que, en lugar de adivinar, usa activamente sus herramientas (lupa, teléfono, base de datos de huellas).
 * **Cuándo usarlo:** Casi siempre. Es la arquitectura fundamental para cualquier agente que deba interactuar con el mundo exterior.
+
 * **Ejemplo Práctico (Ciclo):**
     * *Input:*
         `Recomiéndame un restaurante italiano cerca de la oficina.`
