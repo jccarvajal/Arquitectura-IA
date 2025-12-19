@@ -18,6 +18,8 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
     * **Por qué leerlo:** Documento legal clave que marca el fin de la neutralidad técnica. Oficializa la postura de la **"IA Anti-Woke"**, redefiniendo los filtros de seguridad (safety) como sesgo ideológico y estableciendo las bases políticas para la fragmentación de la IA.
 * **Amodei, D. (2023). "Oversight of A.I.: Principles for Regulation". U.S. Senate Judiciary Subcommittee Testimony.** [[PDF]](https://www.judiciary.senate.gov/imo/media/doc/2023-07-26_-_testimony_-_amodei.pdf)
     * **Por qué leerlo:** Testimonio escrito oficial donde el CEO de Anthropic detalla ante el Senado por qué la gobernanza, y no solo la capacidad técnica, es el "problema central". Aquí expone los riesgos de corto (biológicos) y largo plazo (autonomía) citados en tu prólogo.
+* **Innerarity, D. (2025). "Una teoría crítica de la inteligencia artificial". Galaxia Gutenberg.** [[Web]](https://www.galaxiagutenberg.com/libros/una-teoria-critica-de-la-inteligencia-artificial/)
+    * **Por qué leerlo:** Es la base filosófica de la **"Construcción de la Agencia"** (Conclusión). Innerarity argumenta que la IA no es una inteligencia que compite con la humana, sino una herramienta de gestión de la complejidad, y que el verdadero peligro es la "abdicación" del juicio humano frente al cálculo algorítmico.
 * **Asimov, I. (1951-1953). "The Foundation Trilogy". Gnome Press.** [[Web]](https://www.penguinrandomhouse.com/series/FOU/foundation/)
     * **Por qué leerlo:** La trilogía que estructura este libro. Plantea la tesis central de la gobernanza: ante el colapso, la salida no es la fuerza, sino el diseño de un sistema de previsión y preservación del conocimiento (una "Fundación").
 * **Banks, I. M. (1988). "The Player of Games" (The Culture Series). Macmillan.** [[Web]](https://www.goodreads.com/book/show/1260577.The_Player_of_Games)
@@ -26,6 +28,7 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
     * **Por qué leerlo:** Fuente de la metáfora central de la Conclusión ("La Protomolécula"). La saga completa ilustra el ciclo de vida de la tecnología: desde el caos inicial de una herramienta opaca en manos irresponsables (*Protogen*), hasta su eventual domesticación para abrir nuevas rutas (*Los Anillos*) hacia la expansión humana.
 * **Herbert, F. (1965). "Dune". Chilton Books.** [[Web]](https://dunenovels.com/)
     * **Por qué leerlo:** Origen del concepto de la "Yihad Butleriana". Es la advertencia definitiva contra la **Atrofia Cognitiva**: describe una humanidad que colapsó no porque las máquinas la atacaran, sino porque delegó tanto su pensamiento que perdió su capacidad de decidir.
+
 ---
 
 ### Bloque 1: Los Fundamentos
@@ -157,8 +160,6 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
     * **Por qué leerlo:** Un modelo robusto para la contratación de tecnología (Guía 14). Ofrece cláusulas tipo para proteger la propiedad intelectual, exigir explicabilidad ("caja blanca") y definir niveles de servicio (SLA) en proyectos de IA.
 * **División de Gobierno Digital & UAI. (2022). "Guía de Formulación Ética de Proyectos de Ciencia de Datos".** [[Web]](h[ttps://digital.gob.cl](https://goblab.uai.cl/guia-formulacion-etica-de-proyectos-de-ciencia-de-datos/))
     * **Por qué leerlo:** Marco de referencia esencial para la Guía 15. Define operacionalmente la "Licencia Social", la proporcionalidad en el uso de IA y los protocolos para mitigar sesgos en datos administrativos.
-* **Innerarity, D. (2023). "Una teoría crítica de la inteligencia artificial". Galaxia Gutenberg.** [[Web]](https://www.galaxiagutenberg.com/libros/una-teoria-critica-de-la-inteligencia-artificial/)
-    * **Por qué leerlo:** Es la base filosófica de la **"Construcción de la Agencia"** (Conclusión). Innerarity argumenta que la IA no es una inteligencia que compite con la humana, sino una herramienta de gestión de la complejidad, y que el verdadero peligro es la "abdicación" del juicio humano frente al cálculo algorítmico.
 
 ---
 
