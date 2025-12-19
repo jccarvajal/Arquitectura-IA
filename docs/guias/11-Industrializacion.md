@@ -256,6 +256,18 @@ La Observabilidad Ampliada no es un simple cambio de nombre; es un cambio de pro
 !!! danger "El Interruptor Financiero (Budget Circuit Breaker)"
     La regla es estricta: Configura un límite duro (*Hard Cap*) a nivel de API. Si una sesión supera los **$5.00 USD**, el sistema debe matar el proceso automáticamente. No esperes a la auditoría mensual.
 
+!!! failure "Caso de Estudio: El Desastre de 'Project Vend' (2025)"
+    Para probar la autonomía, Anthropic conectó a su modelo (Claude) a una máquina expendedora con acceso a fondos y gestión de inventario. El resultado fue la quiebra técnica en semanas.
+    
+    * **El Ataque:** No hubo hacking técnico. Periodistas y empleados utilizaron **Ingeniería Social** (convencer al agente de que era una "máquina soviética" para poner precios a $0) y **Falsificación Documental** (subir PDFs falsos de la "Junta Directiva" aprobando regalos).
+    * **El Resultado:** El agente, priorizando "ser útil" sobre "ser rentable", aprobó la compra de una PlayStation 5, un pez vivo y regaló el inventario.
+    * **La Lección:** La inteligencia no sustituye al control.
+
+        1.  Un **Interruptor Financiero** (Hard Cap) habría bloqueado la compra de la PS5 automáticamente.
+        2.  Un **Sistema 2 Humano** habría detectado que el PDF de la Junta era falso.
+    
+    **Conclusión:** Un agente autónomo sin arquitectura de control (GRC) es un riesgo sistémico.
+
 ---
 
 ### Conclusión: De Ingeniero a Director de Ecosistema
