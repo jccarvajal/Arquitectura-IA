@@ -26,6 +26,4 @@ Este es un resumen legible por humanos y no sustituye el texto legal de la licen
 
 Para ver los términos completos, visite el siguiente enlace:
 
-http://creativecommons.org/licenses/by-nc-nd/4.0/
-
-[[http://creativecommons.org/licenses/by-nc-nd/4.0/)]](http://creativecommons.org/licenses/by-nc-nd/4.0/)
+[http://creativecommons.org/licenses/by-nc-nd/4.0/)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
