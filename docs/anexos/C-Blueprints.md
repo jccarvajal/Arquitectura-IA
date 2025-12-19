@@ -219,7 +219,7 @@ La obra de guías y anexos fue diseñada para los "Arquitectos" y "Directores". 
     5. **Ciclo:** Los 17 aprobados se añaden al set de entrenamiento. El proceso se repite hasta alcanzar los 1.000 ejemplos.  
 * **La Sinergia (Colaboración):** 
     * **Rol del Agente:** Actúa como un "multiplicador de experiencia humana".  
-    * **Rol del Humano (Validador):** El humano usa su juicio de "Sistema 2" no para escribir 1.000 ejemplos (tarea de Sistema 1), sino para validar 1.000 ejemplos (tarea de Sistema 2), asegurando la calidad del "combustible" de datos.
+    * **Rol del Humano (Validador):** El humano usa su juicio de "Sistema 2" no para escribir 1.000 ejemplos (tarea de Sistema 1), sino para validar 1.000 ejemplos, asegurando la calidad del "combustible" de datos.
 
 !!! success "✅ Validación de Mercado (Caso Real 2025)"
     Este enfoque es validado por **BMW Group**, que desarrolló *SORDI.ai* (Synthetic Object Recognition Dataset for Industries), una herramienta que genera miles de imágenes sintéticas (gemelos digitales) para entrenar a sus modelos de visión artificial sin necesidad de capturar fotos reales en la fábrica. Asimismo, **Gretel.ai** ha validado el modelo de negocio de generar datos sintéticos "privados" para desbloquear el entrenamiento de modelos en sectores regulados (salud/finanzas).
