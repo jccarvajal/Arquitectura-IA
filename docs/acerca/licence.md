@@ -7,6 +7,7 @@ Esta obra está bajo una Licencia Creative Commons Atribución-NoComercial-SinDe
 ## Resumen de la Licencia
 
 Usted es libre de:
+
 - **Compartir:** Copiar y redistribuir el material en cualquier medio o formato.
 
 Bajo los siguientes términos:
@@ -21,6 +22,8 @@ Bajo los siguientes términos:
 
 ## Aviso Importante
 
-Este es un resumen legible por humanos y no sustituye el texto legal de la licencia. Para ver los términos completos, visite el siguiente enlace:
+Este es un resumen legible por humanos y no sustituye el texto legal de la licencia. 
+
+Para ver los términos completos, visite el siguiente enlace:
 
 http://creativecommons.org/licenses/by-nc-nd/4.0/
