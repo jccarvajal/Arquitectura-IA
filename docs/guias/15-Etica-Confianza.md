@@ -308,7 +308,7 @@ Cuando los "Agentes PM" se vuelven parte del equipo, surgen preguntas legales qu
 
 Las guías anteriores nos enseñaron a construir y gobernar las máquinas. Esta guía define el rol del nuevo trabajador humano operando en esa fábrica.
 
-La IA no es un reemplazo para los humanos. Es un filtro que elimina el trabajo de bajo valor (Sistema 1\) para forzarnos a ser mejores en el trabajo de alto valor (Sistema 2).
+La IA no es un reemplazo para los humanos. Es un filtro que elimina el trabajo de bajo valor (Sistema 1) para forzarnos a ser mejores en el trabajo de alto valor (Sistema 2).
 
 El futuro de la maestría en IA no es Humano vs. Máquina. Es Humano (Sistema 2: Estrategia y Juicio) \+ Máquina (Sistema 1: Tácticas y Ejecución).
 

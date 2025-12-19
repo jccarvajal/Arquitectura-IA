@@ -63,8 +63,8 @@ Como contraparte a los modelos gigantes ("fuerza bruta"), ha surgido una tendenc
 
 !!! money "La Economía del Borde (Edge AI): Costo Marginal Cero"
     La nube es alquiler; el dispositivo es propiedad. Correr modelos masivos en la nube tiene un costo recurrente por token. Correr SLMs (Modelos Pequeños) en el dispositivo del usuario (laptop, teléfono) tiene un costo marginal de **cero**.
-    
-    * **Estrategia Híbrida:** No envíes todo a la nube. Usa la nube para el razonamiento pesado (Sistema 2) y el dispositivo local para la tarea rápida y privada (Sistema 1).
+
+    * **Estrategia Híbrida:** No envíes todo a la nube. Usa la nube para la **Inferencia de Alta Complejidad** (modelos masivos) y el dispositivo local para la **Inferencia de Baja Latencia** (tareas rápidas y privadas).
     * **Privacidad por Diseño:** Si el dato médico o financiero nunca sale del teléfono del usuario porque el modelo corre ahí, el riesgo de fuga masiva desaparece. La arquitectura más segura es la que no centraliza los datos.
 
 **Tendencia 3: De Agentes-Herramienta a Agentes Autónomos (El Trabajador)**  

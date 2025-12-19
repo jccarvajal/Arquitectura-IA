@@ -47,7 +47,7 @@ Para mantener la calidad industrial, debes implementar una tubería (pipeline) q
 
 * **B. Curaduría (Curation - Sistema 2):**
 
-    Ese fallo capturado no entra sucio al set. Pasa a una bandeja de revisión donde un experto humano (S2) define cuál *debería* haber sido la respuesta correcta.
+    Ese fallo capturado no entra sucio al set. Pasa a una bandeja de revisión donde un experto humano (Sistema 2) define cuál *debería* haber sido la respuesta correcta.
     * *Resultado:* Transformamos un error operativo en un activo de aprendizaje ("Ground Truth").
 
 * **C. Inyección (Regression Testing):**

@@ -49,7 +49,7 @@ Los modelos no procesan palabras, sino **tokens** (fragmentos numéricos).
 #### B. Ventana de Contexto y Atención
 La atención permite al modelo relacionar conceptos distantes para mantener coherencia narrativa y lógica.
 
-* **Implicancia de Diseño:** La calidad del razonamiento (lo que en esta obra definimos como “Sistema 2”) está limitada por la fidelidad del mecanismo de atención y por el tamaño de la ventana de contexto. Contextos saturados degradan la capacidad instruccional (*Lost in the Middle phenomenon*).
+* **Implicancia de Diseño:** La calidad del razonamiento está limitada por la fidelidad del mecanismo de atención y por el tamaño de la ventana de contexto. Contextos saturados degradan la capacidad instruccional (*Lost in the Middle phenomenon*).
 
 ---
 
