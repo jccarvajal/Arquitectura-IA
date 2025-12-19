@@ -6,26 +6,26 @@ Este documento registra todas las modificaciones estructurales, técnicas y conc
 
 # Versión 1.4 (Diciembre 2025) - "Hardened Edition"
 
-**Motivo:** Endurecimiento industrial del marco GRC tras auditorías simuladas de roles clave (CISO, CFO, CTO, DTT). Esta versión transforma la arquitectura de "teóricamente correcta" a "financiera y operacionalmente viable", aplicando parches críticos de seguridad, rentabilidad y cultura. Se reestructura la jerarquía de contenidos separando las Herramientas (Anexos) de las Referencias Teóricas.
+**Motivo:** Endurecimiento industrial del marco GRC. Esta versión transforma la arquitectura de "teóricamente correcta" a "financiera y operacionalmente viable", aplicando parches críticos de seguridad, rentabilidad y cultura. Se reestructura la jerarquía de contenidos separando las Herramientas (Anexos) de las Referencias Teóricas.
 
-### 🛡️ Seguridad y Gobernanza (Auditado por CISO)
+### 🛡️ Seguridad y Gobernanza
 * **Guía 02 (Prompts):** Se redefinió el prompt como instrumento de *Alineación Probabilística*, eliminando la falacia de seguridad dura.
 * **Guía 04 (Datos):** Nuevo protocolo de **"Esterilización de Documentos"** para mitigar ataques de *Inyección Indirecta* en RAG.
 * **Guía 05 (Agentes):** Implementación del **"Principio de Simetría de Acción"**. Obligatoriedad de funciones de reversión (*Undo*) y *Kill-Switch* para herramientas de escritura.
 * **Anexo C (Blueprints):** Alerta crítica sobre gestión de credenciales y prohibición de *hardcoded secrets*.
 
-### 💰 Finanzas y Estrategia (Auditado por CFO)
+### 💰 Finanzas y Estrategia
 * **Guía 13 (Estrategia):** **"Regla de Autofinanciamiento"**. La innovación (Transformación) solo puede financiarse con los ahorros de la eficiencia (Soporte).
 * **Guía 11 (Industrialización):** **"Política de Purga de Logs"**. Retención máxima de 30 días para trazas de razonamiento (CoT) para control de costos.
 * **Anexo A (Viabilidad):** **"Veto Automático del 50%"**. Rechazo inmediato de proyectos cuyo costo unitario IA supere la mitad del costo humano.
 * **Glosario:** Redefinición financiera de **"Aumento"** (más output, mismo headcount) vs. **"Abdicación"**.
 
-### 🏗️ Ingeniería y Operaciones (Auditado por CTO)
+### 🏗️ Ingeniería y Operaciones
 * **Guía 06 (Sistemas Cognitivos):** Restricción de latencia para *Tree of Thoughts* (ToT). Prohibido en tiempo real; exclusivo para procesos *Batch*.
 * **Guía 14 (Modelos):** Optimización del **Agente Enrutador** mediante modelos ligeros (Flash/Haiku) para reducir latencia inicial.
 * **Guía 10 (Calidad):** Estrategia de **"Cosecha Automática"** (Harvesting). El Golden Set se actualiza capturando *Edge Cases*, feedback negativo y baja confianza.
 
-### 🧠 Cultura y Talento (Auditado por DTT)
+### 🧠 Cultura y Talento
 * **Guía 15 (Ética):** Protocolos de **"Simulacro de Desconexión"** para combatir la atrofia cognitiva.
 * **Guía 16 (Operación):** **"Teoría del Seguro"**. Redefinición del salario humano como una *Prima de Riesgo* por la responsabilidad legal, no por la producción.
 * **Carrera Técnica:** Definición de roles de transición (Validador -> Entrenador -> Diseñador de Flujos).

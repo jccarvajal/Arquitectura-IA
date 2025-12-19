@@ -138,7 +138,7 @@ Base de conocimiento para alinear equipos y profundizar el criterio.
 ---
 
 ## Changelog
-* **v1.4 (Diciembre 2025):** "Hardened Edition". Transformación del marco a un estándar industrial viable tras auditorías de roles clave (CISO, CFO, CTO, DTT). Integra parches críticos de **Seguridad** (Simetría de Acción), **Finanzas** (Veto de Costos) y **Talento** (Teoría del Seguro), junto con una reestructuración de la arquitectura de información (Referencias vs. Herramientas).
+* **v1.4 (Diciembre 2025):** "Hardened Edition". Transformación del marco a un estándar industrial viable. Integra parches críticos de **Seguridad** (Simetría de Acción), **Finanzas** (Veto de Costos) y **Talento** (Teoría del Seguro), junto con una reestructuración de la arquitectura de información (Referencias vs. Herramientas).
 * Ver [Historial Completo](./changelog.md).
 
 ## Sugerencias y Mejoras
