@@ -117,6 +117,8 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
     * **Por qué leerlo:** Es la fuente de la definición estándar de industria citada en la **Guía 09**. Establece la base para entender GRC no como burocracia, sino como la herramienta de ingeniería para alinear TI con los objetivos de negocio.
 * **Gobierno de Chile. (2019). "Ley N° 21.180 sobre Transformación Digital del Estado".** [[Web]](https://www.bcn.cl/leychile/navegar?idNorma=1138505)
     * **Por qué leerlo:** Marco jurídico que habilita el procedimiento administrativo electrónico. Es la referencia legal para la definición de **SDA (Sistema de Decisión Automatizada)** en el Glosario y la base para la interoperabilidad de datos en el sector público.
+* **Stern, J. (2025). "We Put an AI Vending Machine in Our Office. It Gave Away Everything". The Wall Street Journal.** [[Web]](https://www.wsj.com/tech/ai/anthropic-claude-ai-vending-machine-agent-b7e84e34)
+    * **Por qué leerlo:** Es la validación empírica de la tesis de Gobernanza (GRC) de esta obra. El caso "Project Vend" demuestra cómo la ingeniería social puede quebrar financieramente a un agente autónomo en cuestión de semanas, justificando la necesidad imperativa del **Interruptor Financiero** (Guía 11) y la supervisión humana (**Sistema 2**) antes de otorgar autonomía de gasto.
 
 ---
 
