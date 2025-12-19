@@ -1,22 +1,26 @@
-Creative Commons Atribución-NoComercial-SinObrasDerivadas 4.0 Internacional (CC BY-NC-ND 4.0)
+# LICENCIA
 
-Esta obra está licenciada bajo la Licencia Creative Commons Atribución-NoComercial-SinObrasDerivadas 4.0 Internacional.
+Esta obra está bajo una Licencia Creative Commons Atribución-NoComercial-SinDerivadas 4.0 Internacional (CC BY-NC-ND 4.0).
 
-Para ver una copia de esta licencia, visite:
-http://creativecommons.org/licenses/by-nc-nd/4.0/
+---
 
--------------------------------------------------------------------------------
-
-Resumen legible por humanos (y no un sustituto de la licencia):
+## Resumen de la Licencia
 
 Usted es libre de:
-
-    Compartir — copiar y redistribuir el material en cualquier medio o formato.
+- **Compartir:** Copiar y redistribuir el material en cualquier medio o formato.
 
 Bajo los siguientes términos:
 
-    Atribución — Debe dar crédito de manera adecuada, brindar un enlace a la licencia, e indicar si se han realizado cambios. Puede hacerlo en cualquier forma razonable, pero no de forma tal que sugiera que usted o su uso tienen el apoyo de la licenciante.
+1. **Atribución (BY):** Debe dar crédito de manera adecuada, brindar un enlace a la licencia e indicar si se han realizado cambios. Puede hacerlo en cualquier forma razonable, pero no de forma tal que sugiera que usted o su uso tienen el apoyo de la licenciante.
 
-    NoComercial — No puede utilizar el material para una finalidad comercial.
+2. **NoComercial (NC):** No puede utilizar el material para una finalidad comercial.
 
-    SinObrasDerivadas — Si remezcla, transforma o crea a partir del material, no puede distribuir el material modificado.
+3. **SinObrasDerivadas (ND):** Si remezcla, transforma o crea a partir del material, no puede distribuir el material modificado.
+
+---
+
+## Aviso Importante
+
+Este es un resumen legible por humanos y no sustituye el texto legal de la licencia. Para ver los términos completos, visite el siguiente enlace:
+
+http://creativecommons.org/licenses/by-nc-nd/4.0/
