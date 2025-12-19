@@ -92,6 +92,8 @@ Su propósito es evitar el "solucionismo tecnológico" y asegurar que solo los p
     * `[ ]` **CONDICIONAL:** Requiere resolver la brecha de datos o ética. -> *Volver a Formulación.*
     * `[ ]` **NO VIABLE (RECHAZADO):** El riesgo supera al valor. -> *Fin del proceso.*
     
-    **Firma del Responsable:** <span style="border-bottom: 1px solid #000; display: inline-block; width: 200px;"></span>
+    **Responsable de la Evaluación:** __________________________
 
-    **Fecha del Dictamen:** <span style="border-bottom: 1px solid #000; display: inline-block; width: 200px;"></span>
+    **Firma del Arquitecto de IA:** __________________________
+
+    **Fecha de Aprobación:** __________________________
