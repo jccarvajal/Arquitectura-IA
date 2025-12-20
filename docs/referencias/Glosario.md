@@ -30,6 +30,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** Una estrategia de adquisición donde se "contrata al especialista". Es un producto de IA terminado (ej. Perplexity, Copilot) que se consume vía suscripción, ofreciendo rápida implementación a cambio de baja flexibilidad técnica.
 * **Referencia Principal:** Guía 14 (Modelos y Mercado).
 
+**AIMS (Artificial Intelligence Management System)**
+
+* **Definición:** Sistema de Gestión de Inteligencia Artificial. Es el marco organizacional exigido por la norma ISO/IEC 42001 para gestionar procesos, riesgos y oportunidades de la IA de forma sistemática.
+* **Referencia Principal:** Anexo E (Gobernanza Global).
+
 **Ajuste Fino (Fine-Tuning)**
 
 * **Definición:** El proceso de re-entrenar un modelo de IA preexistente (como Llama 3) usando un conjunto de datos más pequeño y específico. No le enseña nuevo conocimiento, sino que ajusta su comportamiento, tono, estilo o su habilidad para realizar una tarea muy específica.  
@@ -215,6 +220,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** La métrica financiera definitiva para aprobar un proyecto de IA. A diferencia de la *Tokenomics* (que mide el costo técnico), esta mide la rentabilidad del negocio: compara el costo total de la tarea asistida por IA (inferencia + revisión humana) contra el costo de la tarea manual original. Si el margen no mejora, el proyecto es inviable.
 * **Referencia Principal:** Guía 12 (ROI Financiero).
 
+**Efecto Bruselas (Brussels Effect)**
+
+* **Definición:** Fenómeno mediante el cual las regulaciones de la Unión Europea (como el EU AI Act) se convierten en el estándar *de facto* para las empresas globales que desean operar en mercados internacionales o garantizar su resiliencia legal.
+* **Referencia Principal:** Anexo F (Marco Regulatorio EU).
+
 **Entrenamiento (Training)**
 
 * **Definición:** La fase inicial y masiva del ciclo de vida de un modelo (Guía 01), donde el LLM aprende patrones a partir de terabytes de datos. Es distinto a la Inferencia y al Ajuste Fino.
@@ -230,6 +240,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** Marco de criterios corporativos que mide la sostenibilidad. En IA, el factor 'E' (Ambiental) vigila el consumo energético de los modelos, y el 'S' (Social) vigila el sesgo y el impacto laboral.
 * **Referencia Principal:** Guía 15 (Ética y Confianza).
 
+**Esterilización de Documentos**
+
+* **Definición:** Protocolo de seguridad que consiste en limpiar y despojar a los archivos de elementos potencialmente maliciosos (scripts ocultos, instrucciones de inyección) antes de que sean procesados por un motor RAG.
+* **Referencia Principal:** Guía 04 (Estrategia de Datos).
+
 **Estrategia de Datos (Data Strategy)**
 
 * **Definición:** El plan maestro para la adquisición, almacenamiento, limpieza, seguridad y (crucialmente) vectorización de los datos propietarios. Define el "combustible" que alimentará a los sistemas RAG.
@@ -244,6 +259,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** Adaptación propia del estándar de ingeniería de datos (ETL). Pipeline que Extrae, Transforma, Carga y **Vectoriza** los datos para alimentar la memoria RAG de la IA.
 * **Referencia Principal:** Guía 04 (Estrategia de Datos).
+
+**EU AI Act**
+
+* **Definición:** Ley de Inteligencia Artificial de la Unión Europea. Es la primera regulación integral del mundo que clasifica los sistemas de IA según su nivel de riesgo para los derechos y la seguridad.
+* **Referencia Principal:** Anexo F (Marco Regulatorio EU).
 
 **Evaluación de Impacto Algorítmico (EIA)**
 
@@ -369,6 +389,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** Referencia técnica usada para explicar la *Inyección de Prompts*. Así como la inyección SQL manipula una base de datos a través de código malicioso en un formulario, la inyección de prompts manipula un LLM a través de instrucciones ocultas en el lenguaje natural.
 * **Referencia Principal:** Guía 09 (Gobernanza).
+
+**ISO/IEC 42001**
+
+* **Definición:** Estándar internacional que especifica los requisitos para establecer, implementar, mantener y mejorar continuamente un Sistema de Gestión de IA (AIMS) en las organizaciones.
+* **Referencia Principal:** Anexo E (Gobernanza Global).
 
 **Jailbreak (Fuga de Cárcel)**
 
@@ -504,6 +529,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** La capacidad de procesar texto, imágenes, audio y video simultáneamente.
 * **Referencia Principal:** Guía 17 (Perspectivas), Guía 03 (Contexto y Memoria).
+
+**NIST AI RMF (Risk Management Framework)**
+
+* **Definición:** Marco de gestión de riesgos de IA desarrollado por el Instituto Nacional de Estándares y Tecnología de EE. UU. Se enfoca en cuatro funciones: Gobernar, Mapear, Medir y Gestionar.
+* **Referencia Principal:** Anexo E (Gobernanza Global).
 
 **Observabilidad Ampliada (Expanded Observability)**
 
@@ -684,6 +714,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** Uso de sistemas, dispositivos o software (como cuentas de Zapier o ChatGPT personales) dentro de una organización sin la aprobación explícita del departamento de TI. Representa un riesgo crítico de fuga de datos y falta de gobernanza.
 * **Referencia Principal:** Guía 11 (Industrialización), Guía 09 (Gobernanza).
+
+**Simetría de Acción**
+
+* **Definición:** Principio de diseño que exige que toda acción ejecutada por un agente autónomo sea reversible. Implementa la obligatoriedad de funciones de "Deshacer" (*Undo*) y un "Interruptor de Emergencia" (*Kill-Switch*).
+* **Referencia Principal:** Guía 05 (Agentes), Guía 11 (Industrialización).
 
 **Sinergia Humano-IA (Human-AI Synergy)**
 

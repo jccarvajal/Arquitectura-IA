@@ -25,6 +25,11 @@ Ya no se trata solo de qué podemos construir, sino de cómo operamos, mantenemo
 
 Nuestro rol evoluciona de "Director" a "Gobernador de Sistemas de IA". Definiremos la **Arquitectura LOSA**, el middleware de seguridad indispensable para operar en entornos hostiles.
 
+!!! gear "Gobernanza Internacional"
+    Para organizaciones que buscan certificación o cumplimiento global, esta guía se complementa con:
+    * **Anexo E:** Mapeo operativo de la **ISO/IEC 42001** y el **NIST AI RMF**.
+    * **Anexo F:** Clasificación de riesgos según el **EU AI Act**.
+
 ---
 
 ### Parte 1: La Filosofía de Uso (El Manual de Gobierno)

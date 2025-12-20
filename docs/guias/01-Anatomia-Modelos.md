@@ -183,6 +183,7 @@ Buscamos responder: *¿Es seguro desplegar este modelo ante usuarios o empleados
 
 * **Conclusión Técnica:** `[Viable / No Viable]`
 * **Conclusión Normativa:** `[Cumple / No Cumple]`
+* **Transparencia Normativa:** ¿Cuenta el modelo con una *System Card* o Reporte de Transparencia compatible con la ISO/IEC 42001? (ver Anexo E). `[Si / No]`
 
 **Recomendación Final:** `[ ] APROBAR | [ ] APROBAR CON CONDICIONES | [ ] NO APROBAR`
 

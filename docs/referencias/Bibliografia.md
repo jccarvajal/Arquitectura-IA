@@ -92,9 +92,9 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
 * **Greshake, K., et al. (2023). "Not what you’ve signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection".** [[PDF]](https://arxiv.org/abs/2302.12173)
     * **Por qué leerlo:** Es el *paper* que descubrió y definió la **Inyección Indirecta de Prompts**. Demuestra técnicamente cómo un atacante puede secuestrar un agente sin hablar con él, simplemente escondiendo instrucciones en los datos que el agente lee (ej. una web o un PDF). Es la lectura obligatoria para justificar la "Cuarentena de Datos" de la Guía 09.
 * **NIST. (2023). "Artificial Intelligence Risk Management Framework (AI RMF 1.0)". U.S. Department of Commerce.** [[Web]](https://www.nist.gov/itl/ai-risk-management-framework)
-    * **Por qué leerlo:** Mientras la ISO 42001 es el estándar de gestión, el NIST AI RMF es el estándar técnico de facto para mapear, medir y gestionar riesgos específicos de IA. Es la herramienta operativa esencial para ejecutar la estrategia GRC definida en esta obra.
+    * **Por qué leerlo:** Proporciona el marco operativo de "Gobernar, Mapear, Medir y Gestionar" utilizado para el mapeo técnico de este libro. Es la guía esencial para la industrialización y la gestión de riesgos en entornos corporativos.
 * **ISO/IEC. (2023). "ISO/IEC 42001:2023 Information technology — Artificial intelligence — Management system".** [[Web]](https://www.iso.org/standard/81230.html)
-    * **Por qué leerlo:** Es el primer estándar internacional certificable para sistemas de gestión de IA. Referencia técnica definitiva para operacionalizar el marco GRC.
+    * **Por qué leerlo:** Es el primer estándar internacional certificable para sistemas de gestión de IA. Referencia técnica definitiva para operacionalizar el marco GRC (Anexo E, Guia 09).
 * **Huyen, Chip (2024). "AI Engineering".** [[Web]](https://www.oreilly.com/library/view/ai-engineering/9781098166298/)
     * **Por qué leerlo:** Complemento técnico directo de esta obra. Detalla la implementación de ingeniería para Agentes, RAG y "Guardrails" en producción.
 * **Kartakis, S., et al. (Noviembre 2025). "Prototype to Production".** [[Web]](https://www.kaggle.com/whitepaper-prototype-to-production)
@@ -119,6 +119,8 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
     * **Por qué leerlo:** Marco jurídico que habilita el procedimiento administrativo electrónico. Es la referencia legal para la definición de **SDA (Sistema de Decisión Automatizada)** en el Glosario y la base para la interoperabilidad de datos en el sector público.
 * **Stern, J. (2025). "We Put an AI Vending Machine in Our Office. It Gave Away Everything". The Wall Street Journal.** [[Web]](https://www.wsj.com/tech/ai/anthropic-claude-ai-vending-machine-agent-b7e84e34)
     * **Por qué leerlo:** Es la validación empírica de la tesis de Gobernanza (GRC) de esta obra. El caso "Project Vend" demuestra cómo la ingeniería social puede quebrar financieramente a un agente autónomo en cuestión de semanas, justificando la necesidad imperativa del **Interruptor Financiero** (Guía 11) y la supervisión humana (**Sistema 2**) antes de otorgar autonomía de gasto.
+* **Stathakis, A. (2024). "Artificial Intelligence Risk Management as a Service". LinkedIn.**
+    * **Por qué leerlo:** Proporciona una validación industrial actual sobre la implementación de la **ISO 42001**, conectando la teoría del riesgo con la necesidad operativa de servicios de gestión y auditoría continua de IA.
 
 ---
 
@@ -150,6 +152,8 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
     * **Por qué leerlo:** Define el concepto de **"Licencia Social"**, requisito ético central de la Guía 15. Establece que la confianza no es un estado permanente, sino un permiso que se renueva continuamente mediante la transparencia y el valor compartido.
 * **Gobierno de Chile. (2012). "Ley N° 20.609 que establece medidas contra la discriminación".** [[Web]](https://www.bcn.cl/leychile/navegar?idNorma=1042092)
     * **Por qué leerlo:** Proporciona la definición legal de **"discriminación arbitraria"**.
+* **European Parliament (2024). "Regulation (EU) 2024/1689 laying down harmonised rules on artificial intelligence (Artificial Intelligence Act)".** [[Web]](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+    * **Por qué leerlo:** Es la fuente legal del **Anexo F**. Define el estándar de cumplimiento global ("Efecto Bruselas") y la clasificación de riesgos que determina el nivel de supervisión humana requerida para cada sistema.
 * **Unión Europea. (2024). "Reglamento de Inteligencia Artificial (AI Act)".** [[Web]](https://artificialintelligenceact.eu/)
     * **Por qué leerlo:** Primer marco regulatorio integral que convierte la Gobernanza y Evaluación en obligaciones legales.
 * **Strubell, E., Ganesh, A., & McCallum, A. (2019). "Energy and Policy Considerations for Deep Learning in NLP".** [[PDF]](https://arxiv.org/abs/1906.02243)

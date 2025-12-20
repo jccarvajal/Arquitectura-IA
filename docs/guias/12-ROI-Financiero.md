@@ -72,6 +72,8 @@ graph LR
 * 🟥 **Zona Roja (Destrucción de Valor):** Inversiones con una tasa de fracaso estructural inaceptable.
 * 🔵 **Zona Azul (Valor Sistémico):** Proyectos que no generan ROI financiero directo, pero construyen capacidad, soberanía y confianza a largo plazo.
 
+* **Nota de Riesgo:** Los proyectos en la **Zona Verde (Ganadores)** suelen ser de "Riesgo Mínimo o Limitado". Los proyectos que toquen la **Zona Roja (Destrucción de Valor)** a menudo coinciden con las prohibiciones de "Riesgo Inaceptable" del **Anexo F**.
+
 ---
 
 ### 1. 🟩 Zona Verde: Los Ganadores del ROI
