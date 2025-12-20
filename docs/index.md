@@ -125,6 +125,14 @@ Herramientas para la toma de decisiones técnicas y de compra.
 * [Anexo D: Plantillas y Recursos](./anexos/D-Plantillas-Recursos.md)
   *Prompts maestros (CRF-R) y rúbricas de evaluación de calidad.*
 
+### Estándares y Cumplimiento
+Marcos internacionales para certificación y resiliencia legal.
+
+* [Anexo E: Gobernanza Global](./anexos/E-Gobernanza-Global.md)
+  *Mapeo de controles ISO/IEC 42001 y NIST AI RMF para auditoría y certificación.*
+* [Anexo F: Marco Regulatorio EU](./anexos/F-Marco-Regulatorio-EU.md)
+  *Guía de clasificación de riesgos y obligaciones legales (Efecto Bruselas).*
+
 ---
 
 ## Referencias y Fundamentos
