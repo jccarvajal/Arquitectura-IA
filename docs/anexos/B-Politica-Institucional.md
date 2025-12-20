@@ -1,4 +1,3 @@
-
 ## Anexo B: Política Institucional de Uso Responsable de Inteligencia Artificial
 
 *Plantilla Marco para Organizaciones Públicas y Privadas*
