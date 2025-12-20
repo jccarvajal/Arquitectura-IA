@@ -30,6 +30,13 @@ Nuestro rol evoluciona de "Director" a "Gobernador de Sistemas de IA". Definirem
     * **Anexo E:** Mapeo operativo de la **ISO/IEC 42001** y el **NIST AI RMF**.
     * **Anexo F:** Clasificación de riesgos según el **EU AI Act**.
 
+#### La Evolución: De Cumplimiento a Gobernanza de Ciclo de Vida
+
+La madurez en la gestión de IA exige abandonar el cumplimiento basado en documentos estáticos. La arquitectura de este libro propone una **Gobernanza de Ciclo de Vida**, donde los sistemas se gestionan como activos de producción con riesgos medibles en tiempo real.
+
+!!! quote "Principio de Controles Integrados (Built-in)"
+    Para mantener la velocidad, los controles no deben ser "añadidos" tras el desarrollo, sino "construidos" dentro de los pipelines de entrega. La seguridad y la validación deben ocurrir automáticamente en cada cambio de versión (Ver el Baseline en la Guía 11).
+
 ---
 
 ### Parte 1: La Filosofía de Uso (El Manual de Gobierno)

@@ -210,6 +210,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** Un principio legal y técnico para Agentes Autónomos. Requiere que el agente se identifique transparentemente como una IA y revele ante Terceros a quién representa (quién es su "Principal").
 * **Referencia Principal:** Guía 17 (Perspectivas), Anexo F (Bibliografía).
 
+**DORA (Digital Operational Resilience Act)**
+
+* **Definición:** Reglamento de la UE que eleva los estándares de resiliencia operativa digital para el sector financiero, incluyendo la supervisión estricta de terceros proveedores de servicios TIC (incluyendo IA).
+* **Referencia Principal:** Anexo F (Marco Regulatorio EU).
+
 **Drift (Deriva del Modelo)**
 
 * **Definición:** El deterioro gradual del rendimiento de un sistema de IA en producción. Puede ser *Data Drift* (los datos del mundo real cambian y el modelo queda obsoleto) o *Model Drift* (el proveedor actualiza el modelo base y cambia su comportamiento, rompiendo los prompts existentes).
@@ -530,6 +535,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** La capacidad de procesar texto, imágenes, audio y video simultáneamente.
 * **Referencia Principal:** Guía 17 (Perspectivas), Guía 03 (Contexto y Memoria).
 
+**NIS2 (Network and Information Security Directive)**
+
+* **Definición:** Directiva europea que expande las obligaciones de gestión de riesgos de ciberseguridad y reporte de incidentes a través de sectores críticos y cadenas de suministro.
+* **Referencia Principal:** Anexo F (Marco Regulatorio EU).
+
 **NIST AI RMF (Risk Management Framework)**
 
 * **Definición:** Marco de gestión de riesgos de IA desarrollado por el Instituto Nacional de Estándares y Tecnología de EE. UU. Se enfoca en cuatro funciones: Gobernar, Mapear, Medir y Gestionar.
@@ -544,6 +554,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** El "sistema nervioso" de una arquitectura de Agentes. Es el software encargado de recibir el input, llamar al modelo (API), gestionar la memoria, ejecutar herramientas externas y devolver el resultado. Puede ser No-Code (ej. Zapier) o basado en código (ej. Python/LangChain).
 * **Referencia Principal:** Guía 11 (Industrialización).
+
+**OWASP LLM Top 10**
+
+* **Definición:** Proyecto que identifica las diez vulnerabilidades más críticas en aplicaciones que utilizan LLMs (ej: Inyección de Prompts, Inyección Indirecta). Es el estándar para diseñar controles de seguridad en la capa de aplicaciones.
+* **Referencia Principal:** Guía 09 (Gobernanza).
 
 **Patrones de Razonamiento (Reasoning Patterns)**
 
@@ -754,6 +769,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** El nivel más alto de control estratégico. Implica no solo ejecutar el modelo localmente, sino poseer legal y técnicamente los archivos del modelo (pesos). Es la única garantía contra que un proveedor externo "apague" o "censure" la inteligencia de tu organización.
 * **Referencia Principal:** Guía 13 (Estrategia), Guía 14 (Modelos).
+
+**SR 11-7 (Supervisory Guidance on Model Risk Management)**
+
+* **Definición:** Guía del Sistema de la Reserva Federal de EE. UU. que establece estándares para la gobernanza, validación y control de modelos matemáticos y estadísticos a lo largo de su ciclo de vida.
+* **Referencia Principal:** Anexo E (Gobernanza Global).
 
 **System Card (Ficha de Seguridad)**
 

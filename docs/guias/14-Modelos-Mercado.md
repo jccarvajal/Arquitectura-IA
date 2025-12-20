@@ -231,6 +231,20 @@ Para instituciones públicas o reguladas (finanzas, salud), el factor **Control*
 2. **Exigir Transparencia y Auditoría:** Exigir documentación técnica clara y la capacidad de auditar los procesos y los logs.  
 3. **Contratar con Cláusulas de Gobernanza:** Al usar APIs (Ecosistema A) o AaaS (Ecosistema C), incluir cláusulas contractuales específicas sobre residencia de datos, trazabilidad y retención de logs.
 
+#### Resiliencia Operativa y Riesgo de Concentración
+
+La elección de un modelo no es solo una decisión de rendimiento; es una decisión de continuidad de negocio. En marcos de alta exigencia (como **DORA** o **SR 11-7**), la dependencia absoluta de un único proveedor de modelo fundacional se considera un **riesgo de concentración operativa** que debe ser mitigado.
+
+Para que su arquitectura sea resiliente, su estrategia de salida debe incluir:
+
+* **Mapeo de Dependencias Críticas:** Identificar qué procesos de negocio se detendrían si el endpoint del modelo falla o si el proveedor cambia sus políticas de uso.
+* **Contratos con Derechos de Auditoría:** Asegurar que los acuerdos de nivel de servicio (SLA) permitan la transparencia necesaria para auditorías de cumplimiento y gestión de incidentes.
+* **Portabilidad de la "Fábrica de Prompts":** Mantener una separación lógica entre las instrucciones (prompts) y el motor de ejecución, facilitando la migración a modelos alternativos (ej. de GPT-4 a Claude o Llama) sin reconstruir toda la lógica de negocio.
+* **Pruebas de Continuidad:** Realizar simulacros periódicos de "conmutación por error" (*failover*) hacia modelos secundarios o locales para validar que los agentes sigan operando bajo condiciones de degradación del servicio principal.
+
+!!! tip "El 'Seguro' de la Soberanía"
+    Poseer los pesos de un modelo (Soberanía de Pesos) o ejecutar SLMs localmente no es solo una medida de costo, es la **garantía de resiliencia definitiva** ante cambios geopolíticos o regulatorios que puedan afectar el suministro de inteligencia vía API.
+
 ---
 
 ### Conclusión: De Gobernador a Arquitecto de Portafolio

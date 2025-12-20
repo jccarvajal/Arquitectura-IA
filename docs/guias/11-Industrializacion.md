@@ -205,6 +205,24 @@ Es el panel de control en tiempo real de tu "fábrica" de IA. Es la única forma
     * **Ventana de Auditoría:** Los logs de razonamiento se retienen por un máximo de **30 días** (para debugging y auditoría inmediata).
     * **Acción:** Pasado ese periodo, si no hay incidentes de seguridad marcados, los logs deben ser eliminados o archivados en almacenamiento frío (Cold Storage) de bajo costo. No somos una biblioteca digital; somos una fábrica eficiente.
 
+#### Arquitectura de Resiliencia Operativa (Madurez Industrial)
+
+El paso final de la industrialización no es técnico, es estructural. Para que un agente sea considerado un activo de producción, debe transicionar de una revisión estática a una **Gobernanza de Ciclo de Vida Continuo**. 
+
+Bajo este paradigma, los controles no se "añaden" al final, sino que son **"Built-in por Diseño"**, integrados en el pipeline de entrega para garantizar que la IA sea tan segura y resiliente como cualquier otro sistema crítico de la organización.
+
+**El Octágono de Control Industrial:**
+
+1. **Trazabilidad de la Autoridad:** Definición de roles (producto, seguridad, legal) y "puertas de aprobación" basadas en el nivel de riesgo del caso de uso.
+2. **Inmutabilidad y Reversibilidad:** Control de versiones estricto para prompts y modelos, con capacidad de reversión (*rollback*) inmediata si se detectan desviaciones en el comportamiento.
+3. **Integridad de la Fuente y Privacidad:** Protocolos de procedencia de datos y técnicas de minimización que aseguren el cumplimiento de marcos de resiliencia (como DORA o GDPR).
+4. **Blindaje de Capa de Aplicación:** Implementación de defensas técnicas contra inyección de instrucciones y manipulación de salidas, alineadas con el estándar industrial **OWASP Top 10 para LLMs**.
+5. **Vigilancia de la Salud Cognitiva:** Sistemas de alerta temprana para detectar la deriva del modelo (*drift*), la degradación de la calidad de respuesta o cambios en los patrones de amenaza.
+6. **Soberanía y Gestión de Terceros:** Evaluación de la cadena de suministro de modelos y diseño de estrategias de salida (*exit strategies*) para mitigar el riesgo de dependencia excesiva de un solo proveedor.
+7. **Protocolos de Contención de Incidentes:** Playbooks de respuesta específicos para fallos de IA, que cubran desde alucinaciones masivas hasta la fuga accidental de datos sensibles.
+8. **Auditoría y Evidencia Automatizada:** Generación de registros de telemetría y "Fichas de Seguridad" (*System Cards*) listas para procesos de certificación y cumplimiento (ISO 42001).
+
+
 #### Gestión de la Fatiga Humana: El Muestreo de Riesgo
 
 La validación humana ("Human-in-the-Loop") no escala linealmente. Si obligas a un humano a aprobar el 100% de las transacciones, crearás un cuello de botella o, peor aún, **Fatiga de Alertas** (el humano aprobará sin leer).

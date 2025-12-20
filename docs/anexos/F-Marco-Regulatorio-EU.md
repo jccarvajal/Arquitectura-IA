@@ -29,6 +29,8 @@ La **EU AI Act** codifica legalmente la necesidad de evitar la **abdicación del
 * **Gobernanza de Datos (Art. 10):** Valida la **Guía 04**, exigiendo que los datos de entrenamiento sean pertinentes, representativos y libres de errores sistémicos.
 * **Transparencia:** Refuerza la necesidad de una **IA Explicable (XAI)** para que el operador pueda validar el resultado antes de actuar.
 
+> **Resiliencia y Terceros:** La supervisión de proveedores críticos bajo marcos como **DORA** significa que la gobernanza ya no es opcional. Las organizaciones ahora "importan" sus obligaciones regulatorias en sus contratos con proveedores de IA, exigiendo derechos de auditoría, acceso a datos y planes de salida auditados.
+
 ---
 
 ### 4. Resumen para el Arquitecto: El "Compliance" como Ventaja
