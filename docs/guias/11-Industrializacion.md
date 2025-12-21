@@ -174,7 +174,6 @@ Bajo este paradigma, los controles dejan de ser "requisitos de última hora" par
 
 Siguiendo la lógica de una **Línea Base de Control (Practical Baseline)** para servicios de misión crítica, el despliegue de un agente queda condicionado al cumplimiento de dimensiones fundamentales de resiliencia. A continuación, se presenta el desglose de los **20 Pilares Atómicos**: controles independientes, verificables y documentados, diseñados para satisfacer las exigencias de los marcos de gobernanza global más rigurosos, como la **ISO/IEC 42001** y el **EU AI Act**.
 
-
 1.  **Vigilancia Humana (Oversight):** Supervisión activa del sistema durante su operación.
     * *Ancla:* **ISO 42001 (A.9.3)** / **EU AI Act (Art. 14)**.
     * *Dimensión*: Agencia y Control Humano
