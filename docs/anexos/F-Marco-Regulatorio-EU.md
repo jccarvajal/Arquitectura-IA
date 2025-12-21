@@ -40,4 +40,4 @@ La **EU AI Act** codifica legalmente la necesidad de evitar la **abdicación del
 3.  **Seguridad Operativa:** La obligatoriedad de controles técnicos para mitigar alucinaciones y sesgos.
 
 !!! tip "Recomendación Estratégica"
-    Si su proyecto califica como de **Alto Riesgo**, la aplicación del **Checklist de Juicio Humano** (Sección 6 del Anexo A) es la evidencia técnica que protege a la organización ante auditorías regulatorias.
+    Si tu proyecto califica como de **Alto Riesgo**, la aplicación del **Checklist de Juicio Humano** (Sección 6 del Anexo A) es la evidencia técnica que protege a la organización ante auditorías regulatorias.
