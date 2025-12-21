@@ -174,14 +174,14 @@ Bajo este paradigma, los controles dejan de ser "requisitos de última hora" par
 
 Siguiendo la lógica de una **Línea Base de Control (Practical Baseline)** para servicios de misión crítica, el despliegue de un agente queda condicionado al cumplimiento de dimensiones fundamentales de resiliencia. A continuación, se presenta el desglose de los **20 Pilares Atómicos**: controles independientes, verificables y documentados, diseñados para satisfacer las exigencias de los marcos de gobernanza global más rigurosos, como la **ISO/IEC 42001** y el **EU AI Act**.
 
-**🛡️ Dimensión 1: Agencia y Control Humano**
+🛡️ Dimensión 1: Agencia y Control Humano
 
 1.  **Vigilancia Humana (Oversight):** Supervisión activa del sistema durante su operación.
     * *Ancla:* **ISO 42001 (A.9.3)** / **EU AI Act (Art. 14)**.
 2.  **Capacidad de Anulación (Override):** Existencia de un "freno de mano" para ignorar o detener la IA.
     * *Ancla:* **ISO 42001 (A.9.3)** / **NIST AI RMF (Safe)**.
 
-**🏗️ Dimensión 2: Integridad Técnica y Despliegue**
+🏗️ Dimensión 2: Integridad Técnica y Despliegue
 
 3.  **Inmutabilidad (Prompt-as-Code):** Control de versiones estricto para las instrucciones de negocio.
     * *Ancla:* **ISO 42001 (A.6.2.3)** / **ISO 42001 (A.8.4)**.
@@ -212,6 +212,7 @@ Siguiendo la lógica de una **Línea Base de Control (Practical Baseline)** para
     * *Ancla:* **ISO 42001 (A.7.2)** / **EU AI Act (Art. 10)**.
 
 **🔒 Dimensión 6: Datos y Privacidad**
+
 12. **Procedencia de Datos (Provenance):** Rastro auditable del origen de la información utilizada (RAG).
     * *Ancla:* **ISO 42001 (A.7.4 - Adquisición)** / **GDPR**.
 13. **Minimización de Contexto:** Envío de los datos mínimos estrictos para proteger la privacidad.
