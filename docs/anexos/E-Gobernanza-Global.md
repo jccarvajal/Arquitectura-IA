@@ -13,7 +13,7 @@ La implementación de las guías de este libro permite a las organizaciones alin
 
 ### 2. Matriz de Correspondencia Operativa (Certificación v1.4)
 
-Esta matriz detalla cómo los componentes de la "Hardened Edition" cumplen con los requisitos operativos de cumplimiento global.
+Esta matriz detalla cómo los componentes cumplen con los requisitos operativos de cumplimiento global.
 
 | Función NIST | Control ISO 42001 | Implementación en la Obra | Evidencia para Auditoría |
 | :--- | :--- | :--- | :--- |
@@ -58,7 +58,7 @@ La norma **ISO/IEC 42001** establece los requisitos para un **Sistema de Gestió
 
 #### 3.2. NIST AI RMF: El Ciclo de Confianza y Fiabilidad
 
-El marco del **NIST (AI Risk Management Framework 1.0)** se centra en cultivar una **IA Digna de Confianza** (*Trustworthy AI*) a lo largo de todo el ciclo de vida. Para el NIST, la confianza no es un sentimiento, sino una propiedad técnica que se mide a través de siete características clave que nuestra arquitectura "Hardened" garantiza:
+El marco del **NIST (AI Risk Management Framework 1.0)** se centra en cultivar una **IA Digna de Confianza** (*Trustworthy AI*) a lo largo de todo el ciclo de vida. Para el NIST, la confianza no es un sentimiento, sino una propiedad técnica que se mide a través de siete características clave que nuestra arquitectura garantiza:
 
 1. **Válida y Fiable (Valid & Reliable):** 
     Se asegura mediante el rigor del **Laboratorio de QA**, el monitoreo de la deriva cognitiva (**Drift**) y el uso del **Golden Set**. Este control verifica que el sistema responda con precisión estadística y consistencia semántica antes y durante la producción, mitigando la **Falta de Fiabilidad**.
