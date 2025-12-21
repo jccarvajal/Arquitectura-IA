@@ -166,26 +166,57 @@ La facilidad de uso de los orquestadores crea un riesgo de seguridad invisible: 
     
     El trabajo del Arquitecto es recordar que, aunque la interfaz parezca un juguete, **la responsabilidad legal es industrial**. Un "atajo" mal configurado puede exfiltrar 10.000 correos de clientes en segundos.
 
-#### Arquitectura de Resiliencia Operativa (Madurez Industrial)
+### Parte 5: Línea Base de Control Industrial: Componentes Atómicos
 
 El paso final de la industrialización no es técnico, es estructural. Para que un agente sea considerado un activo de producción, debe transicionar de una revisión estática a una **Gobernanza de Ciclo de Vida Continuo**. 
 
 Bajo este paradigma, los controles no se "añaden" al final, sino que son **"Built-in por Diseño"**, integrados en el pipeline de entrega para garantizar que la IA sea tan segura y resiliente como cualquier otro sistema crítico de la organización.
 
-**El Octágono de Control Industrial:**
+Siguiendo el estándar de una línea base de control práctica para servicios críticos, un agente de IA solo se considera apto para producción cuando cumple con estos pilares fundamentales de resiliencia:
 
-1. **Trazabilidad de la Autoridad:** Definición de roles (producto, seguridad, legal) y "puertas de aprobación" basadas en el nivel de riesgo del caso de uso.
-2. **Inmutabilidad y Reversibilidad:** Control de versiones estricto para prompts y modelos, con capacidad de reversión (*rollback*) inmediata si se detectan desviaciones en el comportamiento.
-3. **Integridad de la Fuente y Privacidad:** Protocolos de procedencia de datos y técnicas de minimización que aseguren el cumplimiento de marcos de resiliencia (como DORA o GDPR).
-4. **Blindaje de Capa de Aplicación:** Implementación de defensas técnicas contra inyección de instrucciones y manipulación de salidas, alineadas con el estándar industrial **OWASP Top 10 para LLMs**.
-5. **Vigilancia de la Salud Cognitiva:** Sistemas de alerta temprana para detectar la deriva del modelo (*drift*), la degradación de la calidad de respuesta o cambios en los patrones de amenaza.
-6. **Soberanía y Gestión de Terceros:** Evaluación de la cadena de suministro de modelos y diseño de estrategias de salida (*exit strategies*) para mitigar el riesgo de dependencia excesiva de un solo proveedor.
-7. **Protocolos de Contención de Incidentes:** Playbooks de respuesta específicos para fallos de IA, que cubran desde alucinaciones masivas hasta la fuga accidental de datos sensibles.
-8. **Auditoría y Evidencia Automatizada:** Generación de registros de telemetría y "Fichas de Seguridad" (*System Cards*) listas para procesos de certificación y cumplimiento (ISO 42001).
+Para una gobernanza sin ambigüedades, estos son los pilares individuales que deben verificarse de forma independiente en el pipeline de producción.
+
+**Dimensión 1: Agencia y Control Humano**
+1. **Vigilancia Humana (Oversight):** Monitoreo activo por parte de una persona durante la operación del sistema.
+2. **Capacidad de Anulación (Override):** Existencia de un "freno de mano" técnico que permita al humano ignorar o revertir la acción de la IA.
+
+#### Dimensión 2: Integridad Técnica y Despliegue
+3. **Inmutabilidad (Prompt-as-Code):** Garantía de que la instrucción que guía al modelo no puede ser alterada sin pasar por un proceso de versionado.
+4. **Reversibilidad (Rollback):** Capacidad de volver a la versión estable anterior (instrucción o modelo) en segundos ante un fallo.
+
+#### Dimensión 3: Estrategia y Sostenibilidad
+5. **Sovereignty (Soberanía de Pesos):** Decisión estratégica sobre dónde reside la inteligencia (Open Weights vs SaaS) para evitar el secuestro tecnológico.
+6. **Hard Caps Financieros (Token Limits):** Límites físicos de gasto que bloquean la API al alcanzar un presupuesto, evitando el "Denial of Wallet".
+
+#### Dimensión 4: Seguridad y Protección Adversaria
+7. **Robustez Adversaria (Injections):** Defensas específicas contra ataques de inyección de instrucciones (directas e indirectas).
+8. **Blindaje de Salida (Guardrails):** Filtros técnicos que validan que la respuesta no contenga código malicioso, PII o contenido no permitido.
+
+#### Dimensión 5: Inteligencia y Calidad
+9. **Fidelidad y QA Semántico:** Verificación constante de que el modelo responde basándose en los datos proporcionados (evitando alucinaciones).
+10. **Monitoreo de Deriva (Drift):** Detección de cambios en el comportamiento del modelo a lo largo del tiempo debido a actualizaciones del proveedor o cambios en la distribución de datos.
+11. **Gestión de Sesgos (Bias Control):** Evaluación activa para detectar desviaciones discriminatorias o injustas en las respuestas.
+
+#### Dimensión 6: Datos y Privacidad
+12. **Procedencia de Datos (Provenance):** Rastro auditable del origen de la información utilizada para el entrenamiento o el RAG.
+13. **Minimización de Contexto:** Técnica de "esterilización" que asegura que solo viajen los datos estrictamente necesarios, protegiendo la privacidad.
+
+#### Dimensión 7: Resiliencia y Operaciones
+14. **Playbooks de Incidentes:** Protocolos escritos de qué hacer cuando el sistema "falla de forma extraña" (fallos cognitivos).
+15. **Contención Operativa:** Capacidad de aislar el sistema del resto de la infraestructura si se detecta un comportamiento anómalo.
+
+#### Dimensión 8: Transparencia y Auditoría
+16. **Notificación de IA (Disclosure):** Indicadores claros para el usuario final de que está interactuando con un sistema automatizado.
+17. **Explicabilidad Cognitiva (CoT):** Registro del "razonamiento" interno del agente para entender el porqué de una decisión.
+18. **Telemetría y Logging Forense:** Registro inmutable de cada transacción para auditorías posteriores a un incidente.
+
+#### Dimensión 9: Cumplimiento Legal
+19. **Expediente Técnico de Conformidad:** Documentación preparada que detalla cómo se diseñó el sistema para cumplir con la normativa.
+20. **Registro y Marcado CE:** Cumplimiento de los trámites legales ante las autoridades (como exige el EU AI Act para sistemas de Alto Riesgo).
 
 ---
 
-### Parte 5: La Observabilidad Ampliada (La Gobernanza a Escala Industrial)
+### Parte 6: La Observabilidad Ampliada (La Gobernanza a Escala Industrial)
 
 No puedes 'gobernar' lo que no puedes 'ver'. La **Observabilidad Ampliada** es la implementación técnica del Riesgo y Cumplimiento (el R y C de GRC) en el entorno de producción de IA. Es la evolución de las prácticas de monitoreo tradicionales (CPU, red, memoria) para incluir los nuevos desafíos del sistema cognitivo.
 
