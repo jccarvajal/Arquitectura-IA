@@ -115,7 +115,7 @@ La ventaja competitiva real y defendible reside en la infraestructura que rodea 
 * **La Ventaja:** Tu competencia puede arrendar el mejor "motor", pero no tiene acceso a tus datos.  
 * **Tu Foso:** Tu "biblioteca" **RAG** (los datos de tus clientes, tus manuales de servicio, tus 30 años de reportes legales, gobernados por tu **Estrategia de Datos**) es 100% propietaria. Tu agente es más inteligente no porque su "cerebro" (LLM) sea mejor, sino porque su "biblioteca" (RAG) es exclusiva.
 
-**El Foso 3: Los Datos de Sinergia**
+**El Foso 3: Los Datos de Sinergia Humano-IA**
 
 * **La Ventaja:** Este es el foso más profundo. Tu competencia tiene agentes y tiene datos RAG. Pero tú has implementado la **Sinergia Humano-IA**.  
 * **El Activo Estratégico:** El "log" de cómo tus **"Validadores"** humanos corrigen las respuestas de tus agentes (el "feedback de Sistema 2") es el set de entrenamiento más valioso del mundo.  
