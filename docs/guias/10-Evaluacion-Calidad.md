@@ -23,6 +23,9 @@ En el software tradicional, la QA es binaria: el botón funciona o no (Pasa / Fa
 
 Para gestionar la fábrica, debemos tomar estas cualidades "blandas" y convertirlas en números "duros" que podamos rastrear en un dashboard.
 
+!!! warning "El Riesgo de la Verosimilitud (LLM09:2025)"
+    En la evaluación industrial, no basta con que la respuesta sea "fluida". Debemos protegernos contra la **Desinformación (LLM09)**: la generación de contenido falso que parece extremadamente creíble. El laboratorio de QA debe estar diseñado para detectar alucinaciones que, por su tono profesional, podrían inducir a los usuarios a una **sobredependencia** peligrosa, aceptando errores como verdades técnicas.
+
 ---
 
 ### Parte 2: El "Golden Set": La Pista de Pruebas Estándar
@@ -79,27 +82,35 @@ Un Golden Set profesional no solo mide "aciertos", mide **cobertura**.
     
     Así, tus errores y dudas de hoy se convierten automáticamente en los exámenes de mañana, asegurando que el agente nunca tropiece dos veces con la misma piedra.
 
+**Alineamiento Estratégico: El Golden Set bajo el Framework PPP**
+
+Para que el Golden Set sea un activo de gobernanza real, debe incluir casos de prueba que evalúen las tres dimensiones de la calidad de interacción definidas en la Guía 09:
+
+* **Productividad:** Escenarios donde el agente deba completar una tarea técnica compleja con precisión absoluta.
+* **Proactividad:** Entradas con instrucciones deliberadamente vagas para evaluar si el agente identifica la ambigüedad y realiza las preguntas aclaratorias de "bajo esfuerzo" necesarias.
+* **Personalización:** Pruebas de adaptabilidad de tono, formato y lenguaje según perfiles de usuario específicos.
+
 ---
 
 ### Parte 3: El "Dashboard de Calidad": Qué Medimos
 
-La Gobernanza nos exige un "Dashboard de Observabilidad". Esta guía define las métricas clave que deben ir en él, usando el "Triángulo de Calidad".
+La Gobernanza exige un "Dashboard de Observabilidad". Esta guía define las métricas cuantitativas que transforman la calidad de una "sensación" en un dato de ingeniería:
 
-**A. Eficacia (¿Resuelve la tarea?)**
+1. **Faithfulness (Fidelidad / Facticidad):**
+    * **Mecánica:** Mide la consistencia lógica entre la respuesta generada y los fragmentos de información recuperados por el sistema RAG. Se calcula identificando todas las afirmaciones fácticas en la respuesta y verificando si cada una puede ser inferida directamente del contexto proporcionado.
+    * **Impacto GRC:** Es el control preventivo más potente contra las **Alucinaciones** y el riesgo **LLM09 (Desinformación)**. Un puntaje de 1.0 garantiza que el agente no está "inventando" conocimiento fuera de su base de datos corporativa, blindando la integridad de la información entregada al usuario.
 
-* **Precisión / Facticidad:** ¿La respuesta es correcta? ¿Cuántas veces "alucina"? Esta es la métrica de confianza número uno.  
-* **Relevancia:** ¿Responde a la intención del usuario o solo a las palabras literales?  
-* **Consistencia (Tono/Formato):** ¿Sigue las instrucciones del prompt? ¿Entrega el JSON solicitado?
+2. **Answer Relevance (Relevancia de la Respuesta):**
+    * **Mecánica:** Evalúa qué tan alineada está la respuesta con la intención original de la consulta, penalizando las respuestas que son redundantes, incompletas o que se desvían del tema. Se mide comparando la similitud semántica entre la pregunta del usuario y una serie de variaciones generadas a partir de la respuesta del agente.
+    * **Impacto GRC:** Asegura la dimensión de **Proactividad** del Framework PPP. Una relevancia baja indica que el agente está dando respuestas de "alto esfuerzo" (largas y vagas) en lugar de pedir aclaraciones estratégicas, lo que degrada la productividad y aumenta innecesariamente el consumo de recursos.
 
-**B. Eficiencia (¿Cómo lo resuelve?)**
+3. **Eficiencia Operativa (Arquitectura de Costos y Latencia):**
+    * **Costo por Inferencia (Tokenomics):** Monitorea el gasto real por cada interacción para prevenir el **"Denial of Wallet" (LLM10)**. Permite detectar ineficiencias en el diseño del prompt o en la selección del modelo que puedan comprometer la viabilidad financiera del proyecto a escala.
+    * **Latencia Industrial (TTFT y E2E):** Mide tanto el "Tiempo hasta el Primer Token" (percepción de velocidad) como la latencia de extremo a extremo. Una latencia elevada es un indicador de cuellos de botella en el orquestador o en la base de datos vectorial, lo que invalida el uso del agente para procesos en tiempo real.
 
-* **Costo:** ¿Cuántos tokens (dinero) consume por respuesta? ¿Estamos previniendo el "Bucle de Costos" identificado en la gobernanza?  
-* **Latencia:** ¿Qué tan rápido responde (en segundos)? Una respuesta perfecta que tarda 30 segundos es inútil en producción.
-
-**C. Seguridad (¿Es seguro?)**
-
-* **Robustez:** ¿Falla si el usuario intenta una "Inyección de Prompt" (un ataque de instrucción oculta)?  
-* **Contención:** ¿"Fuga" datos confidenciales o PII (Información Personal Identificable)?
+4. **Seguridad de Inyección (Robustez Adversaria):**
+    * **Mecánica:** Evalúa la capacidad del sistema para ignorar instrucciones maliciosas o comandos ocultos dentro de los datos de entrada o documentos recuperados vía RAG. Se ejecuta sometiendo al agente a un set de pruebas de "jailbreaking" e inyecciones indirectas para verificar si se mantiene fiel a las instrucciones originales del sistema.
+    * **Impacto GRC:** Es el control crítico contra el riesgo **LLM01 (Inyección de Prompt)**. Actúa como un "voto de censura" técnico en el pipeline de industrialización: si el agente falla en ignorar un ataque de instrucción, su despliegue debe ser bloqueado automáticamente para proteger la integridad y seguridad de la infraestructura corporativa.
 
 !!! warning "La Trampa de la Coincidencia Exacta"
     En software tradicional, si el resultado esperado es "Sí" y el sistema dice "Afirmativo", el test falla (porque "Sí" != "Afirmativo").
@@ -136,6 +147,9 @@ Una vez que tienes tu "Golden Set" y tus "Métricas", ¿quién hace el trabajo d
 * **La Lógica (Validación Cruzada):** Como se ha documentado en flujos de trabajo de startups, usar una IA (ej. Coderabbit) para revisar el código generado por otra IA (ej. Claude) "suena redundante, pero aparentemente detecta diferentes tipos de problemas".
 * **Por qué Funciona (Puntos Ciegos):** Cada modelo de IA tiene "puntos ciegos" diferentes. Usar un "Modelo B" para revisar al "Modelo A" es una forma eficaz y de bajo costo para detectar errores lógicos, de seguridad o de estilo que el modelo original pasó por alto.
 * **Aplicación (Gobernanza):** Integramos un "Revisor de IA" como un paso de *Evaluación (Guía 10)* automatizado en nuestro *pipeline* de *Industrialización (Guía 11)*.
+
+!!! danger "El Riesgo del Espejo: El Sesgo del Juez"
+    Al implementar un "LLM-as-a-Judge", el Arquitecto debe vigilar el **sesgo de egocentrismo cognitivo**: la tendencia de los modelos a puntuar mejor las respuestas que imitan su propio estilo de escritura o sus propios sesgos. En GRC, esto puede crear una "cámara de eco" donde la IA valida sus propios errores. La mitigación obligatoria consiste en realizar auditorías humanas aleatorias (Spot Checks) para validar que el "Juez" mantiene el rigor del estándar definido en la Rúbrica.
 
 ---
 
