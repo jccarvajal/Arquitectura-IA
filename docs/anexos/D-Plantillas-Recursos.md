@@ -156,3 +156,39 @@ Un framework de 2x2 para decidir para qué usar la IA en un nuevo proyecto.
 | :--- | :--- | :--- |
 | **EFICIENCIA ALTA (Hacerlo más barato/rápido)** | **Cuadrante 1: Optimización de Procesos.**<br>Descripción: Usar IA para automatizar tareas repetitivas y reducir costos.<br>Ejemplos: Clasificación de emails, resúmenes automáticos, transcripción de reuniones. | **Cuadrante 2: Transformación de Negocio.**<br>Descripción: Usar la eficiencia de la IA (costo marginal cero) para crear nuevos modelos de negocio o servicios que antes eran inviables.<br>Ejemplos: Hiper-personalización a escala (Guía 12), Producto-como-Agente (Blueprint 7). |
 | **EFICIENCIA BAJA (Hacerlo al mismo costo/velocidad)** | **Cuadrante 3: Experimentación (PoC).**<br>Descripción: Proyectos de bajo impacto para desarrollar habilidades internas sin un ROI claro.<br>EjemplOS: Un bot de Slack interno para diversión, pruebas de concepto desechables. | **Cuadrante 4: Investigación y Desarrollo (I+D).**<br>Descripción: Proyectos de alto costo/esfuerzo para crear capacidades completamente nuevas. El ROI no es inmediato.<br>Ejemplos: Desarrollar un "Agente Director" (Blueprint 3) o un modelo con Ajuste Fino (Guía 07) por primera vez. |
+
+---
+
+### Sección 4: Gobernanza e Industrialización
+
+**Herramienta 4.1: Checklist de Auditoría Rápida (Línea Base de los 20 Pilares)**
+
+Esta herramienta es el "filtro de seguridad" final antes del paso a producción. Está diseñada para ser copiada y completada para cada agente o sistema de IA, sirviendo como evidencia técnica de cumplimiento ante auditorías (ISO 42001) o procesos de certificación (EU AI Act).
+
+| ID | Control / Pilar de Resiliencia | Estado (P/F/NA) | Ancla Técnica / Regulatoria |
+| :--- | :--- | :--- | :--- |
+| **01** | **Vigilancia Humana:** ¿Existe supervisión activa asignada? | [ ] | ISO 42001 (A.9.3) / EU AI Act |
+| **02** | **Capacidad de Anulación:** ¿Funciona el botón de *Override*? | [ ] | ISO 42001 (A.9.3) / NIST (Safe) |
+| **03** | **Inmutabilidad:** ¿Los prompts están bajo control de PaC? | [ ] | ISO 42001 (A.6.2.3) |
+| **04** | **Reversibilidad:** ¿Capacidad de *Rollback* en < 1 minuto? | [ ] | DORA / NIST (Resilient) |
+| **05** | **Soberanía:** ¿Existe un plan de salida para el proveedor? | [ ] | ISO 42001 (A.11.1) / DORA |
+| **06** | **Hard Caps:** ¿Límites físicos de gasto activos (Tokens)? | [ ] | OWASP LLM10 / ISO 42001 |
+| **07** | **Robustez Inyección:** ¿Supera el test de inyección de prompts? | [ ] | OWASP LLM01 / NIST (Secure) |
+| **08** | **Guardrails:** ¿Los filtros bloquean PII y código malicioso? | [ ] | OWASP LLM02 / ISO 42001 |
+| **09** | **Fidelidad Semántica:** ¿Se valida que no hay alucinaciones? | [ ] | NIST (Valid) / ISO 42001 |
+| **10** | **Monitoreo Drift:** ¿Existen alertas de degradación de calidad? | [ ] | ISO 42001 (A.10.2) |
+| **11** | **Control de Sesgos:** ¿Se evaluó la equidad en las respuestas? | [ ] | EU AI Act (Art. 10) / NIST |
+| **12** | **Procedencia Datos:** ¿El origen del RAG es auditable? | [ ] | ISO 42001 (A.7.4) / GDPR |
+| **13** | **Minimización:** ¿Se "esteriliza" el contexto enviado? | [ ] | GDPR / ISO 42001 (A.7) |
+| **14** | **Playbook Incidentes:** ¿Existe manual para fallos cognitivos? | [ ] | DORA / ISO 42001 (A.10) |
+| **15** | **Contención:** ¿Se puede aislar el agente ante compromiso? | [ ] | DORA / ISO 42001 (A.8.4) |
+| **16** | **Notificación IA:** ¿El usuario sabe que habla con una IA? | [ ] | EU AI Act (Art. 52) |
+| **17** | **Explicabilidad:** ¿Se registra el *Chain of Thought* (CoT)? | [ ] | NIST (Explainable) / ISO 42001 |
+| **18** | **Logging Forense:** ¿Los registros son inmutables y completos? | [ ] | EU AI Act (Art. 12) / ISO 42001 |
+| **19** | **Expediente Técnico:** ¿Documentación de diseño finalizada? | [ ] | EU AI Act / ISO 42001 |
+| **20** | **Marcado CE:** ¿El sistema cumple con el registro legal? | [ ] | EU AI Act (Conformidad) |
+
+**Instrucciones de Uso:**
+1. **Evaluación:** Para cada proyecto, marcar con una "P" (Pasa), "F" (Falla) o "NA" (No Aplica).
+2. **Bloqueo de Producción:** Si los puntos **01, 02, 06, 07 y 13** están en estado "F", el despliegue queda automáticamente denegado hasta su subsanación.
+3. **Registro:** Copiar este checklist completo y adjuntarlo al expediente de industrialización del proyecto.

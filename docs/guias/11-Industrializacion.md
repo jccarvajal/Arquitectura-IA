@@ -156,8 +156,6 @@ La facilidad de uso de los orquestadores crea un riesgo de seguridad invisible: 
 
 > **La Regla de Oro del Agente:** Un Agente nunca debe operar con la identidad de un humano (ej. "juan@empresa.com"). Debe tener su propia **Identidad de Servicio** (ej. "agente-ventas@empresa.com") para que sus acciones sean trazables y auditables en los logs.
 
----
-
 !!! bug "La Trampa de la Usabilidad: El Síndrome del Atajo"
     A menudo, los usuarios perciben herramientas como Zapier como simples "Atajos del iPhone". Esta percepción es peligrosa.
     
@@ -166,13 +164,15 @@ La facilidad de uso de los orquestadores crea un riesgo de seguridad invisible: 
     
     El trabajo del Arquitecto es recordar que, aunque la interfaz parezca un juguete, **la responsabilidad legal es industrial**. Un "atajo" mal configurado puede exfiltrar 10.000 correos de clientes en segundos.
 
+---
+
 ### Parte 5: Línea Base de Control Industrial: Componentes Atómicos
 
-El paso final de la industrialización no es técnico, es estructural. Para que un agente sea considerado un activo de producción, debe transicionar de una revisión estática a una **Gobernanza de Ciclo de Vida Continuo**. 
+La culminación de la industrialización trasciende lo puramente técnico para volverse estructural. Para que un agente de IA deje de ser una prueba de concepto y se consolide como un **activo de producción legítimo**, debe abandonar la lógica de las revisiones estáticas y transicionar hacia una **Gobernanza de Ciclo de Vida Continuo**.
 
-Bajo este paradigma, los controles no se "añaden" al final, sino que son **"Built-in por Diseño"**, integrados en el pipeline de entrega para garantizar que la IA sea tan segura y resiliente como cualquier otro sistema crítico de la organización.
+Bajo este paradigma, los controles dejan de ser "requisitos de última hora" para convertirse en componentes **"Built-in por Diseño"**. Estos se integran directamente en el *pipeline* de entrega, garantizando que la IA sea tan segura, previsible y resiliente como cualquier otro sistema crítico de la infraestructura organizacional.
 
-Siguiendo el estándar de una línea base de control práctica para servicios críticos, un agente de IA solo se considera apto para producción cuando cumple con estos pilares fundamentales de resiliencia:
+Siguiendo la lógica de una **Línea Base de Control (Practical Baseline)** para servicios de misión crítica, el despliegue de un agente queda condicionado al cumplimiento de dimensiones fundamentales de resiliencia. A continuación, se presenta el desglose de los **20 Pilares Atómicos**: controles independientes, verificables y documentados, diseñados para satisfacer las exigencias de los marcos de gobernanza global más rigurosos, como la **ISO/IEC 42001** y el **EU AI Act**.
 
 #### 🛡️ Dimensión 1: Agencia y Control Humano
 1.  **Vigilancia Humana (Oversight):** Supervisión activa del sistema durante su operación.
@@ -279,7 +279,7 @@ Es el panel de control en tiempo real de tu "fábrica" de IA. Es la única forma
     * **Ventana de Auditoría:** Los logs de razonamiento se retienen por un máximo de **30 días** (para debugging y auditoría inmediata).
     * **Acción:** Pasado ese periodo, si no hay incidentes de seguridad marcados, los logs deben ser eliminados o archivados en almacenamiento frío (Cold Storage) de bajo costo. No somos una biblioteca digital; somos una fábrica eficiente.
 
-#### Gestión de la Fatiga Humana: El Muestreo de Riesgo
+### Parte 7: La Gestión de la Fatiga Humana (Muestreo de Riesgo)
 
 La validación humana ("Human-in-the-Loop") no escala linealmente. Si obligas a un humano a aprobar el 100% de las transacciones, crearás un cuello de botella o, peor aún, **Fatiga de Alertas** (el humano aprobará sin leer).
 
