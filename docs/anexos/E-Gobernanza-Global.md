@@ -91,4 +91,4 @@ Al enfrentar un proceso de auditoría o debida diligencia (*Due Diligence*), el 
     Logs que demuestran la capacidad efectiva de control humano, como la activación de **Circuit Breakers** o el uso del **"Retraso de Pánico"**.
 
 !!! success "Hacia un Estándar de Confianza"
-    Alinear su fábrica de IA con la ISO 42001 y el NIST RMF no es un acto burocrático; es la garantía de que su arquitectura es **robusta, ética y comercialmente viable** ante los reguladores y clientes globales más exigentes.
+    Alinear tu fábrica de IA con la ISO 42001 y el NIST RMF no es un acto burocrático; es la garantía de que tu arquitectura es **robusta, ética y comercialmente viable** ante los reguladores y clientes globales más exigentes.
