@@ -30,6 +30,15 @@ Este documento registra todas las modificaciones estructurales, técnicas y conc
 * **Guía 16 (Operación):** **"Teoría del Seguro"**. Redefinición del salario humano como una *Prima de Riesgo* por la responsabilidad legal, no por la producción.
 * **Carrera Técnica:** Definición de roles de transición (Validador -> Entrenador -> Diseñador de Flujos).
 
+### 🏗️ Refinamiento de Marco de Trabajo (GRC)
+* **Guía 01 (Anatomía):** Inclusión del concepto de **"Soberanía de Pesos"** frente a modelos propietarios.
+* **Guía 10 (Evaluación):** Formalización de la **Tríada RAG** (Faithfulness, Relevance) y la técnica del **Juez LLM** para evaluaciones semánticas no literales.
+* **Guía 11 (Industrialización):** Introducción del **"Octágono de Control Industrial"** como checklist final para el paso a producción.
+
+### 🌐 Cumplimiento y Estándares Globales (Anexos)
+* **Anexo E (ISO/NIST):** Expansión total del mapeo operativo para **ISO/IEC 42001:2023** (cláusulas 4, 6, 8 y 9) y alineación con las **7 características de confianza** del **NIST AI RMF 1.0**.
+* **Anexo F (EU AI Act):** Detalle de la clasificación de riesgos (Inaceptable, Alto, Limitado, Mínimo) y requisitos para la obtención del **Marcado CE** en sistemas de IA de alto riesgo.
+
 ### 📚 Cambios Estructurales
 * **Jerarquía de Referencias:** El Glosario y la Bibliografía pierden la etiqueta de "Anexo" y se mueven a su propia categoría (`/referencias`) para distinguirlos de las herramientas operativas.
 

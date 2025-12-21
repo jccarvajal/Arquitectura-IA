@@ -79,7 +79,7 @@ La solución no es acelerar sin control, ni frenar por temor.
 La solución es **estructurar la expansión**.
 
 La Protomolécula podía destruir o abrir rutas según quién la gobernara.
-La IA actual funciona igual: puede amplificar errores, o puede abrir miles de caminos productivos, dependiendo del S2 humano que la dirige.
+La IA actual funciona igual: puede amplificar errores, o puede abrir miles de caminos productivos, dependiendo del Sistema 2 humano que la dirige.
 
 Esa es la verdadera Expansión: no un futuro de máquinas que razonan, sino un presente donde comunidades profesionales con criterio, responsabilidad y *skin in the game* logran dirigir herramientas potentes hacia fines valiosos.
 

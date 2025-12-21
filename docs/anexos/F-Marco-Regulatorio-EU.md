@@ -35,7 +35,7 @@ Sistemas con un riesgo menor pero que exigen informar claramente al usuario fina
 * **Deepfakes:** El contenido generado o manipulado debe estar etiquetado como artificial.
 
 #### 2.4. Riesgo Mínimo o Nulo
-La mayoría de las aplicaciones actuales (filtros de spam, recomendaciones de inventario, videojuegos). No tienen obligaciones legales específicas bajo el reglamento.
+La mayoría de las aplicaciones actuales (filtros de spam, recomendaciones de inventario, videojuegos) no tienen obligaciones legales específicas bajo el reglamento.
 
 ---
 
