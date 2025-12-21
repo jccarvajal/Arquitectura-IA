@@ -174,45 +174,63 @@ Bajo este paradigma, los controles no se "añaden" al final, sino que son **"Bui
 
 Siguiendo el estándar de una línea base de control práctica para servicios críticos, un agente de IA solo se considera apto para producción cuando cumple con estos pilares fundamentales de resiliencia:
 
-Para una gobernanza sin ambigüedades, estos son los pilares individuales que deben verificarse de forma independiente en el pipeline de producción.
+#### 🛡️ Dimensión 1: Agencia y Control Humano
+1.  **Vigilancia Humana (Oversight):** Supervisión activa del sistema durante su operación.
+    * *Ancla:* **ISO 42001 (A.9.3)** / **EU AI Act (Art. 14)**.
+2.  **Capacidad de Anulación (Override):** Existencia de un "freno de mano" para ignorar o detener la IA.
+    * *Ancla:* **ISO 42001 (A.9.3)** / **NIST AI RMF (Safe)**.
 
-**Dimensión 1: Agencia y Control Humano**
-1. **Vigilancia Humana (Oversight):** Monitoreo activo por parte de una persona durante la operación del sistema.
-2. **Capacidad de Anulación (Override):** Existencia de un "freno de mano" técnico que permita al humano ignorar o revertir la acción de la IA.
+#### 🏗️ Dimensión 2: Integridad Técnica y Despliegue
+3.  **Inmutabilidad (Prompt-as-Code):** Control de versiones estricto para las instrucciones de negocio.
+    * *Ancla:* **ISO 42001 (A.6.2.3)** / **ISO 42001 (A.8.4)**.
+4.  **Reversibilidad (Rollback):** Capacidad de restaurar la versión estable anterior de forma inmediata.
+    * *Ancla:* **ISO 42001 (A.8.4)** / **DORA** / **NIST AI RMF**.
 
-#### Dimensión 2: Integridad Técnica y Despliegue
-3. **Inmutabilidad (Prompt-as-Code):** Garantía de que la instrucción que guía al modelo no puede ser alterada sin pasar por un proceso de versionado.
-4. **Reversibilidad (Rollback):** Capacidad de volver a la versión estable anterior (instrucción o modelo) en segundos ante un fallo.
+#### 💰 Dimensión 3: Estrategia y Sostenibilidad
+5.  **Soberanía de Pesos (Exit Strategy):** Mitigación del riesgo de dependencia de proveedores (SaaS vs Local).
+    * *Ancla:* **ISO 42001 (A.11.1 - Terceros)** / **DORA**.
+6.  **Hard Caps Financieros (Token Limits):** Límites físicos de gasto para evitar el "Denial of Wallet".
+    * *Ancla:* **ISO 42001 (A.4 - Recursos)** / **OWASP LLM10**.
 
-#### Dimensión 3: Estrategia y Sostenibilidad
-5. **Sovereignty (Soberanía de Pesos):** Decisión estratégica sobre dónde reside la inteligencia (Open Weights vs SaaS) para evitar el secuestro tecnológico.
-6. **Hard Caps Financieros (Token Limits):** Límites físicos de gasto que bloquean la API al alcanzar un presupuesto, evitando el "Denial of Wallet".
+#### ⚔️ Dimensión 4: Seguridad y Protección Adversaria
+7.  **Robustez contra Inyecciones:** Defensas técnicas contra manipulación de instrucciones (Prompt Injection).
+    * *Ancla:* **ISO 42001 (A.8.2)** / **OWASP LLM01** / **NIST AI RMF**.
+8.  **Blindaje de Salida (Guardrails):** Filtros para prevenir fugas de datos o respuestas inseguras.
+    * *Ancla:* **ISO 42001 (A.8.2)** / **OWASP LLM02**.
 
-#### Dimensión 4: Seguridad y Protección Adversaria
-7. **Robustez Adversaria (Injections):** Defensas específicas contra ataques de inyección de instrucciones (directas e indirectas).
-8. **Blindaje de Salida (Guardrails):** Filtros técnicos que validan que la respuesta no contenga código malicioso, PII o contenido no permitido.
+#### 🧠 Dimensión 5: Inteligencia y Calidad
+9.  **Fidelidad Semántica (RAG QA):** Validación de que las respuestas se basan únicamente en la fuente.
+    * *Ancla:* **ISO 42001 (A.6.2.4 - Verificación)** / **NIST AI RMF**.
+10. **Monitoreo de Deriva (Drift):** Detección de la degradación del modelo base con el tiempo.
+    * *Ancla:* **ISO 42001 (A.10.2)** / **ISO 42001 (A.6.2.4)**.
+11. **Gestión de Sesgos (Bias Control):** Evaluación activa de equidad y justicia en los resultados.
+    * *Ancla:* **ISO 42001 (A.7.2)** / **EU AI Act (Art. 10)**.
 
-#### Dimensión 5: Inteligencia y Calidad
-9. **Fidelidad y QA Semántico:** Verificación constante de que el modelo responde basándose en los datos proporcionados (evitando alucinaciones).
-10. **Monitoreo de Deriva (Drift):** Detección de cambios en el comportamiento del modelo a lo largo del tiempo debido a actualizaciones del proveedor o cambios en la distribución de datos.
-11. **Gestión de Sesgos (Bias Control):** Evaluación activa para detectar desviaciones discriminatorias o injustas en las respuestas.
+#### 🔒 Dimensión 6: Datos y Privacidad
+12. **Procedencia de Datos (Provenance):** Rastro auditable del origen de la información utilizada (RAG).
+    * *Ancla:* **ISO 42001 (A.7.4 - Adquisición)** / **GDPR**.
+13. **Minimización de Contexto:** Envío de los datos mínimos estrictos para proteger la privacidad.
+    * *Ancla:* **ISO 42001 (A.7)** / **GDPR**.
 
-#### Dimensión 6: Datos y Privacidad
-12. **Procedencia de Datos (Provenance):** Rastro auditable del origen de la información utilizada para el entrenamiento o el RAG.
-13. **Minimización de Contexto:** Técnica de "esterilización" que asegura que solo viajen los datos estrictamente necesarios, protegiendo la privacidad.
+#### 🚑 Dimensión 7: Resiliencia y Operaciones
+14. **Playbooks de Incidentes Cognitivos:** Protocolos para fallos de lógica o comportamiento anómalo.
+    * *Ancla:* **ISO 42001 (A.10)** / **DORA**.
+15. **Contención Operativa (Isolation):** Capacidad de desconectar el agente ante un compromiso técnico.
+    * *Ancla:* **ISO 42001 (A.8.4)** / **DORA**.
 
-#### Dimensión 7: Resiliencia y Operaciones
-14. **Playbooks de Incidentes:** Protocolos escritos de qué hacer cuando el sistema "falla de forma extraña" (fallos cognitivos).
-15. **Contención Operativa:** Capacidad de aislar el sistema del resto de la infraestructura si se detecta un comportamiento anómalo.
+#### 📢 Dimensión 8: Transparencia y Auditoría
+16. **Notificación de IA (Disclosure):** Informar al usuario que está interactuando con una máquina.
+    * *Ancla:* **ISO 42001 (A.9.4)** / **EU AI Act (Art. 52)**.
+17. **Explicabilidad (Chain of Thought):** Registro del razonamiento para auditoría forense.
+    * *Ancla:* **ISO 42001 (A.9.4)** / **NIST AI RMF (Explainable)**.
+18. **Logging Forense:** Registro inmutable de transacciones para análisis post-incidente.
+    * *Ancla:* **ISO 42001 (A.10.2)** / **ISO 42001 (A.6.2.8)**.
 
-#### Dimensión 8: Transparencia y Auditoría
-16. **Notificación de IA (Disclosure):** Indicadores claros para el usuario final de que está interactuando con un sistema automatizado.
-17. **Explicabilidad Cognitiva (CoT):** Registro del "razonamiento" interno del agente para entender el porqué de una decisión.
-18. **Telemetría y Logging Forense:** Registro inmutable de cada transacción para auditorías posteriores a un incidente.
-
-#### Dimensión 9: Cumplimiento Legal
-19. **Expediente Técnico de Conformidad:** Documentación preparada que detalla cómo se diseñó el sistema para cumplir con la normativa.
-20. **Registro y Marcado CE:** Cumplimiento de los trámites legales ante las autoridades (como exige el EU AI Act para sistemas de Alto Riesgo).
+#### ⚖️ Dimensión 9: Cumplimiento Legal
+19. **Expediente Técnico de Conformidad:** Documentación completa del diseño, riesgos y controles.
+    * *Ancla:* **ISO 42001 (Cláusula 8.2)** / **EU AI Act**.
+20. **Registro y Marcado CE:** Validación de seguridad y registro ante autoridades competentes.
+    * *Ancla:* **ISO 42001 (Cláusula 4.2 - Stakeholders)** / **EU AI Act**.
 
 ---
 
