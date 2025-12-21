@@ -55,17 +55,11 @@ markdown_extensions:
 plugins:
   - search # Importante mantenerlo para que funcione el buscador del sitio web
   - with-pdf:
-      author: Juan Carlos Carvajal
+      author: "Juan Carlos Carvajal"
       copyright: "2025"
-      title: "Arquitectura de Inteligencia Artificial: Guías para Decidir, Diseñar y Gobernar"
-      cover: true
-      back_cover: true
-      toc_title: "Índice de Contenidos"
-      order_by: nav  # Esto asegura que siga el orden de tus guías y anexos
-      output_path: pdf/libro_completo_v1.4.pdf
+      cover_title: "Arquitectura de IA: Guías para Decidir, Diseñar y Gobernar"
+      output_path: "libro_ia_v1.4_hardened.pdf"
       enabled_if_env: ENABLE_PDF_EXPORT
-      custom_template_path: templates # Opcional, para personalizar el diseño
-      css_style: docs/css/pdf_styles.css  # Vincular el CSS para que las tablas se vean perfectas
 
 # Mapa del Sitio (Estructura de Archivos)
 nav:

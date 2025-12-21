@@ -166,7 +166,7 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
     * **Por qué leerlo:** Es la validación empírica definitiva del manuscrito. Confirma la transición de Chatbots a Agentes, valida los Blueprints de Soporte, Legal y Datos con casos de éxito reales (Toyota, Mercari, Freshfields) y respalda el modelo de ROI de la Guía 12 con cifras auditadas.
 * **Dirección de Compras y Contratación Pública (ChileCompra). (Dic 2023). "Directiva N°44: Recomendaciones para la adquisición de proyectos de Ciencia de Datos e IA".** [[PDF]](https://www.chilecompra.cl/wp-content/uploads/2023/12/Directiva-Recomendaciones-proyectos-Ciencia-Datos-IA.pdf)
     * **Por qué leerlo:** Un modelo robusto para la contratación de tecnología (Guía 14). Ofrece cláusulas tipo para proteger la propiedad intelectual, exigir explicabilidad ("caja blanca") y definir niveles de servicio (SLA) en proyectos de IA.
-* **División de Gobierno Digital & UAI. (2022). "Guía de Formulación Ética de Proyectos de Ciencia de Datos".** [[Web]](h[ttps://digital.gob.cl](https://goblab.uai.cl/guia-formulacion-etica-de-proyectos-de-ciencia-de-datos/))
+* **División de Gobierno Digital & UAI. (2022). "Guía de Formulación Ética de Proyectos de Ciencia de Datos".** [[Web]](https://goblab.uai.cl/guia-formulacion-etica-de-proyectos-de-ciencia-de-datos/)
     * **Por qué leerlo:** Marco de referencia esencial para la Guía 15. Define operacionalmente la "Licencia Social", la proporcionalidad en el uso de IA y los protocolos para mitigar sesgos en datos administrativos.
 
 ---
