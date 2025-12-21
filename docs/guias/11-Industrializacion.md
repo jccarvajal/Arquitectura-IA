@@ -174,31 +174,31 @@ Bajo este paradigma, los controles dejan de ser "requisitos de última hora" par
 
 Siguiendo la lógica de una **Línea Base de Control (Practical Baseline)** para servicios de misión crítica, el despliegue de un agente queda condicionado al cumplimiento de dimensiones fundamentales de resiliencia. A continuación, se presenta el desglose de los **20 Pilares Atómicos**: controles independientes, verificables y documentados, diseñados para satisfacer las exigencias de los marcos de gobernanza global más rigurosos, como la **ISO/IEC 42001** y el **EU AI Act**.
 
-#### 🛡️ Dimensión 1: Agencia y Control Humano
+**🛡️ Dimensión 1: Agencia y Control Humano**
 1.  **Vigilancia Humana (Oversight):** Supervisión activa del sistema durante su operación.
     * *Ancla:* **ISO 42001 (A.9.3)** / **EU AI Act (Art. 14)**.
 2.  **Capacidad de Anulación (Override):** Existencia de un "freno de mano" para ignorar o detener la IA.
     * *Ancla:* **ISO 42001 (A.9.3)** / **NIST AI RMF (Safe)**.
 
-#### 🏗️ Dimensión 2: Integridad Técnica y Despliegue
+**🏗️ Dimensión 2: Integridad Técnica y Despliegue**
 3.  **Inmutabilidad (Prompt-as-Code):** Control de versiones estricto para las instrucciones de negocio.
     * *Ancla:* **ISO 42001 (A.6.2.3)** / **ISO 42001 (A.8.4)**.
 4.  **Reversibilidad (Rollback):** Capacidad de restaurar la versión estable anterior de forma inmediata.
     * *Ancla:* **ISO 42001 (A.8.4)** / **DORA** / **NIST AI RMF**.
 
-#### 💰 Dimensión 3: Estrategia y Sostenibilidad
+**💰 Dimensión 3: Estrategia y Sostenibilidad**
 5.  **Soberanía de Pesos (Exit Strategy):** Mitigación del riesgo de dependencia de proveedores (SaaS vs Local).
     * *Ancla:* **ISO 42001 (A.11.1 - Terceros)** / **DORA**.
 6.  **Hard Caps Financieros (Token Limits):** Límites físicos de gasto para evitar el "Denial of Wallet".
     * *Ancla:* **ISO 42001 (A.4 - Recursos)** / **OWASP LLM10**.
 
-#### ⚔️ Dimensión 4: Seguridad y Protección Adversaria
+**⚔️ Dimensión 4: Seguridad y Protección Adversaria**
 7.  **Robustez contra Inyecciones:** Defensas técnicas contra manipulación de instrucciones (Prompt Injection).
     * *Ancla:* **ISO 42001 (A.8.2)** / **OWASP LLM01** / **NIST AI RMF**.
 8.  **Blindaje de Salida (Guardrails):** Filtros para prevenir fugas de datos o respuestas inseguras.
     * *Ancla:* **ISO 42001 (A.8.2)** / **OWASP LLM02**.
 
-#### 🧠 Dimensión 5: Inteligencia y Calidad
+**🧠 Dimensión 5: Inteligencia y Calidad**
 9.  **Fidelidad Semántica (RAG QA):** Validación de que las respuestas se basan únicamente en la fuente.
     * *Ancla:* **ISO 42001 (A.6.2.4 - Verificación)** / **NIST AI RMF**.
 10. **Monitoreo de Deriva (Drift):** Detección de la degradación del modelo base con el tiempo.
@@ -206,19 +206,19 @@ Siguiendo la lógica de una **Línea Base de Control (Practical Baseline)** para
 11. **Gestión de Sesgos (Bias Control):** Evaluación activa de equidad y justicia en los resultados.
     * *Ancla:* **ISO 42001 (A.7.2)** / **EU AI Act (Art. 10)**.
 
-#### 🔒 Dimensión 6: Datos y Privacidad
+**🔒 Dimensión 6: Datos y Privacidad**
 12. **Procedencia de Datos (Provenance):** Rastro auditable del origen de la información utilizada (RAG).
     * *Ancla:* **ISO 42001 (A.7.4 - Adquisición)** / **GDPR**.
 13. **Minimización de Contexto:** Envío de los datos mínimos estrictos para proteger la privacidad.
     * *Ancla:* **ISO 42001 (A.7)** / **GDPR**.
 
-#### 🚑 Dimensión 7: Resiliencia y Operaciones
+**🚑 Dimensión 7: Resiliencia y Operaciones**
 14. **Playbooks de Incidentes Cognitivos:** Protocolos para fallos de lógica o comportamiento anómalo.
     * *Ancla:* **ISO 42001 (A.10)** / **DORA**.
 15. **Contención Operativa (Isolation):** Capacidad de desconectar el agente ante un compromiso técnico.
     * *Ancla:* **ISO 42001 (A.8.4)** / **DORA**.
 
-#### 📢 Dimensión 8: Transparencia y Auditoría
+**📢 Dimensión 8: Transparencia y Auditoría**
 16. **Notificación de IA (Disclosure):** Informar al usuario que está interactuando con una máquina.
     * *Ancla:* **ISO 42001 (A.9.4)** / **EU AI Act (Art. 52)**.
 17. **Explicabilidad (Chain of Thought):** Registro del razonamiento para auditoría forense.
@@ -226,7 +226,7 @@ Siguiendo la lógica de una **Línea Base de Control (Practical Baseline)** para
 18. **Logging Forense:** Registro inmutable de transacciones para análisis post-incidente.
     * *Ancla:* **ISO 42001 (A.10.2)** / **ISO 42001 (A.6.2.8)**.
 
-#### ⚖️ Dimensión 9: Cumplimiento Legal
+**⚖️ Dimensión 9: Cumplimiento Legal**
 19. **Expediente Técnico de Conformidad:** Documentación completa del diseño, riesgos y controles.
     * *Ancla:* **ISO 42001 (Cláusula 8.2)** / **EU AI Act**.
 20. **Registro y Marcado CE:** Validación de seguridad y registro ante autoridades competentes.
