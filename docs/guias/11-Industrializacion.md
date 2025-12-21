@@ -271,8 +271,10 @@ La Observabilidad Ampliada no es un simple cambio de nombre; es un cambio de pro
     * **Compresión de Prompts:** Tu pipeline debe eliminar palabras innecesarias de las instrucciones para ahorrar tokens.
     * **Caching Semántico:** Si 500 usuarios preguntan lo mismo, la IA solo debe "pensarlo" (gastar dinero) una vez. Las otras 499 veces debe entregar la respuesta guardada en memoria (gratis).
 
-!!! danger "El Interruptor Financiero (Budget Circuit Breaker)"
-    La regla es estricta: Configura un límite duro (*Hard Cap*) a nivel de API. Si una sesión supera los **$5.00 USD**, el sistema debe matar el proceso automáticamente. No esperes a la auditoría mensual.
+!!! danger "El Interruptor Financiero: Defensa contra LLM10 (Consumo Ilimitado)"
+    Para mitigar el riesgo de **"Denegación de Cartera" (Denial of Wallet)** identificado por el estándar OWASP 2025, la regla es estricta: Configura un límite duro (*Hard Cap*) a nivel de API. 
+    
+    Si una sesión o un agente en bucle supera los **$5.00 USD**, el sistema debe matar el proceso automáticamente. No es una medida de ahorro; es un control de seguridad obligatorio para evitar el agotamiento de recursos financieros y técnicos.
 
 !!! failure "Caso de Estudio: El Desastre de 'Project Vend' (2025)"
     Para probar la autonomía, Anthropic conectó a su modelo (Claude) a una máquina expendedora con acceso a fondos y gestión de inventario. El resultado fue la quiebra técnica en semanas.

@@ -121,6 +121,8 @@ Este anexo no es una lista exhaustiva, sino un conjunto curado de lecturas funda
     * **Por qué leerlo:** Es la validación empírica de la tesis de Gobernanza (GRC) de esta obra. El caso "Project Vend" demuestra cómo la ingeniería social puede quebrar financieramente a un agente autónomo en cuestión de semanas, justificando la necesidad imperativa del **Interruptor Financiero** (Guía 11) y la supervisión humana (**Sistema 2**) antes de otorgar autonomía de gasto.
 * **OWASP (2025). "Top 10 for Large Language Model Applications".** [[Web]](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
     * **Por qué leerlo:** Es la referencia técnica para operativizar los riesgos de seguridad en LLMs, enumerando fallos como el manejo inseguro de outputs y el envenenamiento de datos, claves para la arquitectura LOSA de este libro.
+* **OWASP Foundation (2025). "Top 10 para Aplicaciones de Modelos de Lenguaje Grandes (LLM), Versión 2025".** [[Web]](https://genai.owasp.org/resource/top-10-2025-de-riesgos-y-mitigaciones-para-llms-y-aplicaciones-de-ia-generativa/)
+    * **Por qué leerlo:** Es el documento de referencia técnica para cualquier auditoría de seguridad en IA. Detalla escenarios de ataque reales (como el bypass de filtros multilingües o ataques multimodales) y proporciona estrategias de mitigación prácticas para desarrolladores y arquitectos.
 
 ---
 

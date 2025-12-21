@@ -75,7 +75,24 @@ El mayor error operativo es tratar a la IA como un "mago" (un oráculo infalible
 
 ---
 
-### Parte 2: El Nuevo Perímetro de Ciberseguridad de IA
+### Parte 2: El Estándar de Seguridad Técnica (OWASP Top 10 LLM: 2025)
+
+Para que la sinergia entre el Sistema 1 (IA) e Inteligencia Humana sea segura, el Arquitecto debe asegurar que la infraestructura sea resiliente ante las diez vulnerabilidades críticas identificadas por la comunidad global de seguridad en su actualización de 2025. Ningún agente debe operar sin controles específicos para estos riesgos:
+
+1. **LLM01: Inyección de Prompt:** Manipulación del comportamiento del modelo mediante entradas directas o fuentes externas (inyección indirecta) para eludir reglas de seguridad.
+2. **LLM02: Divulgación de Información Sensible:** Exposición involuntaria de datos personales (PII), secretos comerciales o algoritmos propietarios en las salidas del modelo.
+3. **LLM03: Cadena de Suministro:** Riesgos en componentes de terceros, modelos preentrenados o adaptadores LoRA que pueden comprometer la integridad del sistema.
+4. **LLM04: Envenenamiento de Datos y Modelo:** Manipulación maliciosa de los datos de entrenamiento o del proceso de ajuste fino para introducir sesgos o "agentes durmientes".
+5. **LLM05: Manejo Inadecuado de la Salida:** Validación y saneamiento insuficientes de las respuestas antes de que sean procesadas por otros componentes del sistema.
+6. **LLM06: Agencia Excesiva:** Otorgar demasiada autonomía, funciones o permisos a un agente para realizar acciones de alto impacto sin supervisión humana efectiva.
+7. **LLM07: Filtración de Prompts de Sistema:** Descubrimiento de instrucciones maestras o secretos internos que no fueron protegidos adecuadamente en el prompt de sistema.
+8. **LLM08: Debilidades de Vector:** Vulnerabilidades en la generación y recuperación de embeddings que pueden permitir el acceso no autorizado o la manipulación de datos en RAG.
+9. **LLM09: Desinformación:** Generación de contenido falso que parece creíble, agravado por la tendencia del usuario a confiar ciegamente en la IA (sobredependencia).
+10.**LLM10: Consumo Ilimitado:** Ingerencia excesiva y descontrolada que puede llevar a la denegación de servicio (DoS) o a la ruina financiera por costos imprevistos (Denial of Wallet).
+
+---
+
+### Parte 3: El Nuevo Perímetro de Ciberseguridad de IA
 
 En el Prototipado, le dimos "manos y pies" (Herramientas) a nuestros agentes. Ahora, como "Gobernador", debemos entender que el "perímetro de ataque" ha cambiado.
 
@@ -189,7 +206,7 @@ La ciberseguridad tradicional se preocupaba por *firewalls* y *redes*. La *Ciber
 
 ---
 
-### Parte 3: La Arquitectura de la Confianza (LOSA)
+### Parte 4: La Arquitectura de la Confianza (LOSA)
 
 Si la Gobernanza es el "qué" estratégico, la **LOSA (Layer of Safety & Alignment)** es el "cómo" técnico. Es la arquitectura que envuelve al modelo y a sus agentes, actuando como una capa desacoplada de seguridad, control y alineamiento que protege a la organización incluso cuando el modelo subyacente es opaco, no determinista o evoluciona con el tiempo.
 
@@ -320,7 +337,28 @@ Esta arquitectura es indispensable porque permite controlar la IA sin modificar 
 
 ---
 
-### Parte 4: El Framework PPP: Gobernanza de la Calidad de Interacción
+### Parte 5: El Pilar de la Gobernanza (Observabilidad Ampliada)
+
+No puedes "gobernar" lo que no puedes "ver". Muchos sistemas de IA son percibidos como "cajas negras", un problema conocido como **Opacidad**: la incapacidad de entender cómo un sistema llega a un resultado. Para combatir la opacidad, la **Observabilidad Ampliada**, la capacidad técnica de monitorear el sistema a través de métricas y registros de eventos (logs), es el pilar central de la gobernanza.
+
+Es el panel de control en tiempo real de tu "fábrica" de IA. Es la única forma de saber si tus agentes están operando de forma segura y eficiente.
+
+**El "Dashboard de Gobernanza" (Qué Monitorear):**
+
+1. **Métricas de Seguridad:**  
+    * **Alertas de Inyección:** ¿Cuántos "Intentos de Inyección" fueron detectados y bloqueados?  
+    * **Tasa de "Fallo de Alucinación":** ¿Cuántas veces un agente intentó una acción que fue bloqueada por un "Humano-en-el-Bucle"?  
+    * **Tasa de "Negación de Fuga":** ¿Cuántas veces el agente se rehusó exitosamente a filtrar sus instrucciones de sistema?  
+    * **Uso de "IA en la Sombra":** ¿Cuántas alertas de red por acceso a herramientas públicas no autorizadas se generaron?  
+
+2. **Métricas de Costos y Operaciones:**  
+    * **Costo por Agente / Tarea:** ¿Qué "Agente PM" me está costando más dinero?  
+    * **Tasa de "Ciclos Excesivos":** ¿Cuántos agentes necesitaron más de 10 ciclos? (Indicador de prompt ineficiente).  
+    * **Latencia (Velocidad):** ¿Cuánto se demora en promedio el agente?
+
+---
+
+### Parte 6: El Framework PPP: Gobernanza de la Calidad de Interacción
 
 La Gobernanza (la "Sala de Control") no solo debe mitigar los riesgos obvios (costos, seguridad, alucinaciones). Debe ir más allá y gobernar activamente la *calidad de la interacción con el usuario*.
 
@@ -340,27 +378,6 @@ Investigaciones recientes (Sun, et al., 2025) demuestran que el éxito de un age
 
 * **Definición:** La habilidad del agente para adaptar su estilo de interacción (tono, formato, lenguaje) a las preferencias del usuario.
 * **Métrica de Gobernanza:** Debemos medir la **"tasa de seguimiento de preferencias"**. Un agente que es productivo pero molesto (baja personalización) fallará en la adopción. La Gobernanza debe asegurar que el agente se adapte al usuario, y no al revés.
-
----
-
-### Parte 5: El Pilar de la Gobernanza (Observabilidad Ampliada)
-
-No puedes "gobernar" lo que no puedes "ver". Muchos sistemas de IA son percibidos como "cajas negras", un problema conocido como **Opacidad**: la incapacidad de entender cómo un sistema llega a un resultado. Para combatir la opacidad, la **Observabilidad Ampliada**, la capacidad técnica de monitorear el sistema a través de métricas y registros de eventos (logs), es el pilar central de la gobernanza.
-
-Es el panel de control en tiempo real de tu "fábrica" de IA. Es la única forma de saber si tus agentes están operando de forma segura y eficiente.
-
-**El "Dashboard de Gobernanza" (Qué Monitorear):**
-
-1. **Métricas de Seguridad:**  
-    * **Alertas de Inyección:** ¿Cuántos "Intentos de Inyección" fueron detectados y bloqueados?  
-    * **Tasa de "Fallo de Alucinación":** ¿Cuántas veces un agente intentó una acción que fue bloqueada por un "Humano-en-el-Bucle"?  
-    * **Tasa de "Negación de Fuga":** ¿Cuántas veces el agente se rehusó exitosamente a filtrar sus instrucciones de sistema?  
-    * **Uso de "IA en la Sombra":** ¿Cuántas alertas de red por acceso a herramientas públicas no autorizadas se generaron?  
-
-2. **Métricas de Costos y Operaciones:**  
-    * **Costo por Agente / Tarea:** ¿Qué "Agente PM" me está costando más dinero?  
-    * **Tasa de "Ciclos Excesivos":** ¿Cuántos agentes necesitaron más de 10 ciclos? (Indicador de prompt ineficiente).  
-    * **Latencia (Velocidad):** ¿Cuánto se demora en promedio el agente?
 
 ---
 

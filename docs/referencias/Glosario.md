@@ -555,10 +555,10 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** El "sistema nervioso" de una arquitectura de Agentes. Es el software encargado de recibir el input, llamar al modelo (API), gestionar la memoria, ejecutar herramientas externas y devolver el resultado. Puede ser No-Code (ej. Zapier) o basado en código (ej. Python/LangChain).
 * **Referencia Principal:** Guía 11 (Industrialización).
 
-**OWASP LLM Top 10**
+**OWASP LLM Top 10 (Versión 2025)**
 
-* **Definición:** Proyecto que identifica las diez vulnerabilidades más críticas en aplicaciones que utilizan LLMs (ej: Inyección de Prompts, Inyección Indirecta). Es el estándar para diseñar controles de seguridad en la capa de aplicaciones.
-* **Referencia Principal:** Guía 09 (Gobernanza).
+* **Definición:** El estándar internacional de ciberseguridad que identifica los diez riesgos más críticos para las aplicaciones de IA Generativa. La versión 2025 introduce actualizaciones clave sobre la "Agencia Excesiva", la "Filtración de Prompts de Sistema" y expande la denegación de servicio al concepto de "Consumo Ilimitado" (riesgo financiero y de recursos).
+* **Referencia Principal:** Guía 09 (Gobernanza), Guía 11 (Industrialización).
 
 **Patrones de Razonamiento (Reasoning Patterns)**
 
