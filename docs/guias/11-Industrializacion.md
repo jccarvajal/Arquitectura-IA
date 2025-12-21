@@ -91,14 +91,51 @@ Existen tres filosofías de orquestación para desplegar Agentes:
 > **Nota Técnica: La "Nube" en tu Laptop**
 > Herramientas como **n8n** ofrecen una versión de escritorio (Desktop App). Esto permite al Arquitecto desarrollar y probar flujos complejos con datos confidenciales reales en su propia máquina (Localhost), sin riesgo de fuga, antes de desplegarlos en el servidor de producción seguro.
 
-> **Criterio del Arquitecto:**
-> * ¿Sistemas modernos con API? Use **A** (Rápido) o **C** (Robusto).
-> * ¿Sistemas viejos sin API (Pantalla verde, SAP antiguo)? Está obligado a usar **B (UiPath/RPA)**.
-> * ¿Datos confidenciales o alto volumen? Prefiera **C (Ingeniería Soberana)** para evitar costos por tarea y fuga de datos.
+> **Criterio del Arquitecto: Selección del Orquestador**
+>
+> * **Integración Nativa (API First):** Si el ecosistema es moderno, priorice **A** para velocidad de salida al mercado (*Time-to-Market*) o **C** para control total y escalabilidad de ingeniería.
+> * **Infraestructura Legacy (UI-Driven):** En entornos con sistemas antiguos (Pantalla verde, SAP Legacy) que requieren interacción con la interfaz de usuario, la automatización robótica (**B - RPA**) es el puente obligatorio de integración.
+> * **Soberanía y Escala:** Para el procesamiento de datos sensibles o volúmenes masivos, la **Ingeniería Soberana (C)** es el estándar de oro para eliminar el riesgo de exfiltración y optimizar la economía unitaria del sistema.
+
+> **Criterio del Arquitecto: Residencia y Jurisdicción Legal**
+>
+> La decisión de orquestar en la nube (SaaS) o en servidores propios (Self-hosted) trasciende lo técnico; es un imperativo de **Cumplimiento y Residencia de Datos (GRC)**. 
+>
+> Bajo marcos de alta exigencia como **GDPR**, **DORA** o el **EU AI Act**, la ubicación física del procesamiento define la validez legal del sistema completo. La orquestación soberana garantiza que la "frontera de datos" coincida con la "frontera legal", blindando la estrategia de portafolio y asegurando la continuidad del negocio ante cambios regulatorios o geopolíticos.
 
 ---
 
-### Parte 3: Protocolo de Gobernanza (La Regla de los Tres Semáforos)
+### Parte 3: "Prompt-as-Code" (La Gobernanza del Plano)
+
+Este es el núcleo de las Operaciones de IA. En el prototipo, un prompt es un texto que cambias. En producción, un prompt es la "lógica de negocio" central de tu fábrica. Si lo cambias y lo rompes, rompes la fábrica. Debes tratar los prompts como software.
+
+**1\. Control de Versiones (Git):**
+
+* **El Problema:** El "Entrenador de Agentes" (un rol de supervisión humana) "mejora" un prompt el lunes y, sin querer, reduce su precisión en un 30% el martes.  
+* **La Solución:** Todos los prompts del sistema se almacenan en un repositorio (como Git). Cada cambio queda registrado, es revisado (Pull Request) y se puede "revertir" (rollback) al instante si falla.
+* **Auditoría Forense:** El versionado no es solo una cuestión de orden técnico, sino un requisito de cumplimiento crítico. Si un agente "alucina" y causa un daño legal o financiero, el "Gobernador" debe tener la capacidad de realizar una auditoría forense inmediata. Esto implica demostrar con precisión de milisegundo qué versión exacta del prompt (el "plano cognitivo") estaba activa en el momento del incidente para deslindar responsabilidades.
+
+**2\. Pruebas (Testing) de Prompts:**
+
+* **Problema:** ¿Cómo sabes si un nuevo prompt es realmente mejor?  
+* **La Solución:** Creas un "set de pruebas" (basado en el *"Golden Set"* de evaluación de calidad). Es un lote de 100 entradas de ejemplo (ej. 100 emails difíciles) y las “respuestas ideales” (o "ground truth", lo que debería responder).
+* **Prueba Unitaria:** Antes de desplegar un nuevo prompt, lo "corres" contra el set de pruebas y mides su tasa de éxito. (Ej: "El Prompt v1.1 tuvo un 90% de éxito. El v1.2 tuvo un 95%. Aprobado para desplegar").
+
+**3\. Despliegue Continuo (CI/CD):**
+
+* **El Problema:** ¿Cómo actualizas a los 1.000 agentes "PM" en producción con el nuevo prompt (v1.2) sin detener la fábrica?  
+* **La Solución:** Un pipeline de CI/CD. Al aprobar el cambio en Git, el sistema automáticamente "despliega" el nuevo prompt, quizás primero a un 1% de los agentes ("Canary deployment") y, si todo va bien, al 100%.
+
+**4\. Portabilidad (Desacople del Proveedor):**
+
+* **El Problema (Vendor Lock-in):** Si escribes tus prompts y tu código dependiendo de funciones propietarias exclusivas de un proveedor (ej. las "Assistants API" de OpenAI o formatos muy específicos de Anthropic), quedas secuestrado. Si ese proveedor sube precios o cambia sus términos, reescribir toda tu fábrica será costosísimo.
+* **La Solución:** **Abstracción de Ingeniería.**
+    * *Diseño Agnóstico:* Escribe los prompts en un formato estándar (Markdown puro) y usa una capa de software intermedia (frameworks como LangChain o tu propio "Enrutador") para traducir ese estándar al modelo de turno.
+    * *Beneficio:* Tu propiedad intelectual es el prompt agnóstico, no la implementación específica. Esto te da la libertad de cambiar de GPT-5 a Claude 4 o a Llama 3 con un solo cambio de configuración, sin detener la operación.
+
+---
+
+### Parte 4: Protocolo de Gobernanza (La Regla de los Tres Semáforos)
 
 La facilidad de uso de los orquestadores crea un riesgo de seguridad invisible: el "Shadow AI". Para mitigar la fuga de datos sin frenar la innovación, el Arquitecto debe imponer este protocolo:
 
@@ -129,34 +166,22 @@ La facilidad de uso de los orquestadores crea un riesgo de seguridad invisible: 
     
     El trabajo del Arquitecto es recordar que, aunque la interfaz parezca un juguete, **la responsabilidad legal es industrial**. Un "atajo" mal configurado puede exfiltrar 10.000 correos de clientes en segundos.
 
----
+#### Arquitectura de Resiliencia Operativa (Madurez Industrial)
 
-### Parte 4: "Prompt-as-Code" (La Gobernanza del Plano)
+El paso final de la industrialización no es técnico, es estructural. Para que un agente sea considerado un activo de producción, debe transicionar de una revisión estática a una **Gobernanza de Ciclo de Vida Continuo**. 
 
-Este es el núcleo de las Operaciones de IA. En el prototipo, un prompt es un texto que cambias. En producción, un prompt es la "lógica de negocio" central de tu fábrica. Si lo cambias y lo rompes, rompes la fábrica. Debes tratar los prompts como software.
+Bajo este paradigma, los controles no se "añaden" al final, sino que son **"Built-in por Diseño"**, integrados en el pipeline de entrega para garantizar que la IA sea tan segura y resiliente como cualquier otro sistema crítico de la organización.
 
-**1\. Control de Versiones (Git):**
+**El Octágono de Control Industrial:**
 
-* **El Problema:** El "Entrenador de Agentes" (un rol de supervisión humana) "mejora" un prompt el lunes y, sin querer, reduce su precisión en un 30% el martes.  
-* **La Solución:** Todos los prompts del sistema se almacenan en un repositorio (como Git). Cada cambio queda registrado, es revisado (Pull Request) y se puede "revertir" (rollback) al instante si falla.
-
-**2\. Pruebas (Testing) de Prompts:**
-
-* **Problema:** ¿Cómo sabes si un nuevo prompt es realmente mejor?  
-* **La Solución:** Creas un "set de pruebas" (basado en el *"Golden Set"* de evaluación de calidad). Es un lote de 100 entradas de ejemplo (ej. 100 emails difíciles) y las “respuestas ideales” (o "ground truth", lo que debería responder).
-* **Prueba Unitaria:** Antes de desplegar un nuevo prompt, lo "corres" contra el set de pruebas y mides su tasa de éxito. (Ej: "El Prompt v1.1 tuvo un 90% de éxito. El v1.2 tuvo un 95%. Aprobado para desplegar").
-
-**3\. Despliegue Continuo (CI/CD):**
-
-* **El Problema:** ¿Cómo actualizas a los 1.000 agentes "PM" en producción con el nuevo prompt (v1.2) sin detener la fábrica?  
-* **La Solución:** Un pipeline de CI/CD. Al aprobar el cambio en Git, el sistema automáticamente "despliega" el nuevo prompt, quizás primero a un 1% de los agentes ("Canary deployment") y, si todo va bien, al 100%.
-
-**4\. Portabilidad (Desacople del Proveedor):**
-
-* **El Problema (Vendor Lock-in):** Si escribes tus prompts y tu código dependiendo de funciones propietarias exclusivas de un proveedor (ej. las "Assistants API" de OpenAI o formatos muy específicos de Anthropic), quedas secuestrado. Si ese proveedor sube precios o cambia sus términos, reescribir toda tu fábrica será costosísimo.
-* **La Solución:** **Abstracción de Ingeniería.**
-    * *Diseño Agnóstico:* Escribe los prompts en un formato estándar (Markdown puro) y usa una capa de software intermedia (frameworks como LangChain o tu propio "Enrutador") para traducir ese estándar al modelo de turno.
-    * *Beneficio:* Tu propiedad intelectual es el prompt agnóstico, no la implementación específica. Esto te da la libertad de cambiar de GPT-5 a Claude 4 o a Llama 3 con un solo cambio de configuración, sin detener la operación.
+1. **Trazabilidad de la Autoridad:** Definición de roles (producto, seguridad, legal) y "puertas de aprobación" basadas en el nivel de riesgo del caso de uso.
+2. **Inmutabilidad y Reversibilidad:** Control de versiones estricto para prompts y modelos, con capacidad de reversión (*rollback*) inmediata si se detectan desviaciones en el comportamiento.
+3. **Integridad de la Fuente y Privacidad:** Protocolos de procedencia de datos y técnicas de minimización que aseguren el cumplimiento de marcos de resiliencia (como DORA o GDPR).
+4. **Blindaje de Capa de Aplicación:** Implementación de defensas técnicas contra inyección de instrucciones y manipulación de salidas, alineadas con el estándar industrial **OWASP Top 10 para LLMs**.
+5. **Vigilancia de la Salud Cognitiva:** Sistemas de alerta temprana para detectar la deriva del modelo (*drift*), la degradación de la calidad de respuesta o cambios en los patrones de amenaza.
+6. **Soberanía y Gestión de Terceros:** Evaluación de la cadena de suministro de modelos y diseño de estrategias de salida (*exit strategies*) para mitigar el riesgo de dependencia excesiva de un solo proveedor.
+7. **Protocolos de Contención de Incidentes:** Playbooks de respuesta específicos para fallos de IA, que cubran desde alucinaciones masivas hasta la fuga accidental de datos sensibles.
+8. **Auditoría y Evidencia Automatizada:** Generación de registros de telemetría y "Fichas de Seguridad" (*System Cards*) listas para procesos de certificación y cumplimiento (ISO 42001).
 
 ---
 
@@ -204,24 +229,6 @@ Es el panel de control en tiempo real de tu "fábrica" de IA. Es la única forma
     
     * **Ventana de Auditoría:** Los logs de razonamiento se retienen por un máximo de **30 días** (para debugging y auditoría inmediata).
     * **Acción:** Pasado ese periodo, si no hay incidentes de seguridad marcados, los logs deben ser eliminados o archivados en almacenamiento frío (Cold Storage) de bajo costo. No somos una biblioteca digital; somos una fábrica eficiente.
-
-#### Arquitectura de Resiliencia Operativa (Madurez Industrial)
-
-El paso final de la industrialización no es técnico, es estructural. Para que un agente sea considerado un activo de producción, debe transicionar de una revisión estática a una **Gobernanza de Ciclo de Vida Continuo**. 
-
-Bajo este paradigma, los controles no se "añaden" al final, sino que son **"Built-in por Diseño"**, integrados en el pipeline de entrega para garantizar que la IA sea tan segura y resiliente como cualquier otro sistema crítico de la organización.
-
-**El Octágono de Control Industrial:**
-
-1. **Trazabilidad de la Autoridad:** Definición de roles (producto, seguridad, legal) y "puertas de aprobación" basadas en el nivel de riesgo del caso de uso.
-2. **Inmutabilidad y Reversibilidad:** Control de versiones estricto para prompts y modelos, con capacidad de reversión (*rollback*) inmediata si se detectan desviaciones en el comportamiento.
-3. **Integridad de la Fuente y Privacidad:** Protocolos de procedencia de datos y técnicas de minimización que aseguren el cumplimiento de marcos de resiliencia (como DORA o GDPR).
-4. **Blindaje de Capa de Aplicación:** Implementación de defensas técnicas contra inyección de instrucciones y manipulación de salidas, alineadas con el estándar industrial **OWASP Top 10 para LLMs**.
-5. **Vigilancia de la Salud Cognitiva:** Sistemas de alerta temprana para detectar la deriva del modelo (*drift*), la degradación de la calidad de respuesta o cambios en los patrones de amenaza.
-6. **Soberanía y Gestión de Terceros:** Evaluación de la cadena de suministro de modelos y diseño de estrategias de salida (*exit strategies*) para mitigar el riesgo de dependencia excesiva de un solo proveedor.
-7. **Protocolos de Contención de Incidentes:** Playbooks de respuesta específicos para fallos de IA, que cubran desde alucinaciones masivas hasta la fuga accidental de datos sensibles.
-8. **Auditoría y Evidencia Automatizada:** Generación de registros de telemetría y "Fichas de Seguridad" (*System Cards*) listas para procesos de certificación y cumplimiento (ISO 42001).
-
 
 #### Gestión de la Fatiga Humana: El Muestreo de Riesgo
 
