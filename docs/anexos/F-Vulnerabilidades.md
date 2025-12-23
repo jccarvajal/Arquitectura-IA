@@ -1,6 +1,7 @@
 # Anexo F: Atlas de Vulnerabilidades Lógicas y Resiliencia del Sistema
 
 ## 1. Introducción: La IA como Sistema Probabilístico
+
 La seguridad de una arquitectura de IA no se limita a la protección de datos o al cifrado de red. En esta **v1.5**, establecemos que el lenguaje y la lógica formal son **vectores de ataque críticos**. Un sistema resiliente debe ser capaz de procesar *inputs* maliciosos, persuasivos o erróneos sin degradar su **Fidelidad Semántica** ni perder su **Soberanía Operativa**.
 
 Este Atlas consolida las debilidades detectadas hasta finales de 2025, clasificándolas en cuatro dimensiones de riesgo.
