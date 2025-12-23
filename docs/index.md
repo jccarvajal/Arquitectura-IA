@@ -128,9 +128,9 @@ Herramientas para la toma de decisiones técnicas y de compra.
 ### Control, Auditoría y Resiliencia
 Metodologías para el blindaje lógico y la protección del criterio humano ante la automatización.
 
-* [Anexo E: Manual de Resiliencia Cognitiva y Soberanía del Criterio](./anexos/E-Soberania-Criterio.md)
+* [Anexo E: Soberanía del Criterio](./anexos/E-Soberania-Criterio.md)
   *Metodología para evitar la atrofia profesional y ejercicios de "Gimnasia de Auditoría" (Sistema 2).*
-* [Anexo F: Atlas de Vulnerabilidades Lógicas y Resiliencia del Sistema](./anexos/F-Vulnerabilidades.md)
+* [Anexo F: Vulnerabilidades Lógicas](./anexos/F-Vulnerabilidades.md)
   *Catálogo de falacias argumentativas, fallas sintéticas y vectores de manipulación semántica (Hardening).*
 
 ### Estándares y Cumplimiento
