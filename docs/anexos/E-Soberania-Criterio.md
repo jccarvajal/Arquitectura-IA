@@ -1,6 +1,6 @@
 # Anexo E: Manual de Resiliencia Cognitiva y Soberanía del Criterio
 
-## El Antídoto contra la Atrofia Profesional en la Era de la Automatización (v1.5)
+## El Antídoto contra la Atrofia Profesional en la Era de la Automatización
 
 ### 1. Propósito: El Juicio como el "Último Guardrail"
 La implementación de IA genera una paradoja de control: a mayor eficiencia del sistema, mayor es la tendencia del humano al **Sesgo de Automatización** (confianza ciega por ahorro de energía cognitiva). Este anexo establece la metodología para evitar que el profesional se convierta en un espectador pasivo y se transforme en un **Garante de Integridad**.
