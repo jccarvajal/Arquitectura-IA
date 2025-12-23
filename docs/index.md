@@ -125,12 +125,20 @@ Herramientas para la toma de decisiones técnicas y de compra.
 * [Anexo D: Plantillas y Recursos](./anexos/D-Plantillas-Recursos.md)
   *Prompts maestros (CRF-R) y rúbricas de evaluación de calidad.*
 
+### Control, Auditoría y Resiliencia
+Metodologías para el blindaje lógico y la protección del criterio humano ante la automatización.
+
+* [Anexo E: Manual de Resiliencia Cognitiva y Soberanía del Criterio](./anexos/E-Soberania-Criterio.md)
+  *Metodología para evitar la atrofia profesional y ejercicios de "Gimnasia de Auditoría" (Sistema 2).*
+* [Anexo F: Atlas de Vulnerabilidades Lógicas y Resiliencia del Sistema](./anexos/F-Vulnerabilidades.md)
+  *Catálogo de falacias argumentativas, fallas sintéticas y vectores de manipulación semántica (Hardening).*
+
 ### Estándares y Cumplimiento
 Marcos internacionales para certificación y resiliencia legal.
 
-* [Anexo E: Gobernanza Global](./anexos/E-Gobernanza-Global.md)
+* [Anexo G: Gobernanza Global](./anexos/E-Gobernanza-Global.md)
   *Mapeo de controles ISO/IEC 42001 y NIST AI RMF para auditoría y certificación.*
-* [Anexo F: Marco Regulatorio EU](./anexos/F-Marco-Regulatorio-EU.md)
+* [Anexo H: Marco Regulatorio EU](./anexos/F-Marco-Regulatorio-EU.md)
   *Guía de clasificación de riesgos y obligaciones legales (Efecto Bruselas).*
 
 ---
