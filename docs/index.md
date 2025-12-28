@@ -129,9 +129,9 @@ Herramientas para la toma de decisiones técnicas y de compra.
 Metodologías para el blindaje lógico y la protección del criterio humano ante la automatización.
 
 * [Anexo E: Soberanía del Criterio](./anexos/E-Soberania-Criterio.md)
-  *Metodología para evitar la atrofia profesional y ejercicios de "Gimnasia de Auditoría" (Sistema 2).*
+  *Metodología para evitar la atrofia profesional y ejercicios para el Sistema 2.*
 * [Anexo F: Vulnerabilidades Lógicas](./anexos/F-Vulnerabilidades.md)
-  *Catálogo de falacias argumentativas, fallas sintéticas y vectores de manipulación semántica (Hardening).*
+  *Catálogo de falacias argumentativas, fallas sintéticas y vectores de manipulación semántica.*
 
 ### Estándares y Cumplimiento
 Marcos internacionales para certificación y resiliencia legal.
