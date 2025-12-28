@@ -54,12 +54,6 @@ markdown_extensions:
 # Sección de Plugins  
 plugins:
   - search # Importante mantenerlo para que funcione el buscador del sitio web
-#  - with-pdf:
-      author: "Juan Carlos Carvajal"
-      copyright: "2025"
-      cover_title: "Arquitectura de IA: Guías para Decidir, Diseñar y Gobernar"
-      output_path: "libro_ia_v1.4_hardened.pdf"
-      enabled_if_env: ENABLE_PDF_EXPORT
 
 # Mapa del Sitio (Estructura de Archivos)
 nav:
