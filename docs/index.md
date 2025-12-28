@@ -136,9 +136,9 @@ Metodologías para el blindaje lógico y la protección del criterio humano ante
 ### Estándares y Cumplimiento
 Marcos internacionales para certificación y resiliencia legal.
 
-* [Anexo G: Gobernanza Global](./anexos/E-Gobernanza-Global.md)
+* [Anexo G: Gobernanza Global](./anexos/G-Gobernanza-Global.md)
   *Mapeo de controles ISO/IEC 42001 y NIST AI RMF para auditoría y certificación.*
-* [Anexo H: Marco Regulatorio EU](./anexos/F-Marco-Regulatorio-EU.md)
+* [Anexo H: Marco Regulatorio EU](./anexos/H-Marco-Regulatorio-EU.md)
   *Guía de clasificación de riesgos y obligaciones legales (Efecto Bruselas).*
 
 ---
