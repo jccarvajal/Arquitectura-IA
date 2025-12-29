@@ -232,8 +232,10 @@ Las siguientes técnicas se integran en el método para resolver problemas más 
 * **Ejemplo secuencial básico:**  
     **Prompt 1 – Planificación**  
     > Analiza el siguiente problema y genera un esquema de solución en pasos claros: [problema].
+
     **Prompt 2 – Ejecución**  
     > Usando el paso 1 del esquema anterior, desarrolla la solución detallada correspondiente.
+
     **Prompt 3 – Revisión**  
     > Revisa la solución anterior. Identifica errores, supuestos implícitos o mejoras posibles.
 
