@@ -173,7 +173,9 @@ Las siguientes técnicas se integran en el método para resolver problemas más 
     En modelos de frontera modernos, el razonamiento suele ocurrir **internamente**, incluso cuando no se expone paso a paso. En muchos casos, **pedir explícitamente la cadena de pensamiento puede degradar el resultado** o generar razonamientos simulados. Por ello, una práctica más robusta es pedir al modelo que *razone internamente* y entregue **solo la respuesta final estructurada**.
 
 * **Ejemplo (enfoque recomendado):**  
+ 
     > Resuelve el siguiente acertijo lógico: [acertijo].  
+ 
     > Razona cuidadosamente antes de responder y entrega **solo la solución final**, junto con los supuestos clave utilizados.
 
 * **Ideal para:**  
@@ -222,12 +224,10 @@ Las siguientes técnicas se integran en el método para resolver problemas más 
 **3. Prompt Chaining (Encadenamiento de Prompts)**
 
 * **¿Qué es?**  
-    Prompt Chaining es la técnica de **descomponer una tarea compleja en una secuencia ordenada de prompts más simples**, donde la salida de un paso se convierte en la entrada (total o parcial) del siguiente.  
-    No se trata de “hablar más con la IA”, sino de **diseñar un flujo de razonamiento controlado**.
+    Prompt Chaining es la técnica de **descomponer una tarea compleja en una secuencia ordenada de prompts más simples**, donde la salida de un paso se convierte en la entrada (total o parcial) del siguiente. No se trata de “hablar más con la IA”, sino de **diseñar un flujo de razonamiento controlado**.
 
 * **Por qué es una técnica estructural (no cosmética):**  
-    Los LLM tienen límites claros de contexto, atención y coherencia en tareas largas. Un prompt monolítico intenta forzar todo el razonamiento en una sola inferencia.  
-    Prompt Chaining reconoce esta limitación y la transforma en una ventaja: **externaliza el razonamiento en etapas explícitas**.
+    Los LLM tienen límites claros de contexto, atención y coherencia en tareas largas. Un prompt monolítico intenta forzar todo el razonamiento en una sola inferencia. Prompt Chaining reconoce esta limitación y la transforma en una ventaja: **externaliza el razonamiento en etapas explícitas**.
 
 * **Diferencia clave respecto a Chain-of-Thought:** 
     - **Chain-of-Thought:** El razonamiento ocurre *dentro* de una sola respuesta del modelo (opaco y no siempre fiable).  
@@ -275,12 +275,10 @@ Las siguientes técnicas se integran en el método para resolver problemas más 
 **4. Meta-Prompting (Diseño de Prompts con IA)**
 
 * **¿Qué es?**  
-    Meta-Prompting es la técnica de **usar un LLM para diseñar, evaluar o refinar prompts**, en lugar de pedirle directamente la tarea final.  
-    En otras palabras: no le pides *la respuesta*, le pides *el plano de la pregunta correcta*.
+    Meta-Prompting es la técnica de **usar un LLM para diseñar, evaluar o refinar prompts**, en lugar de pedirle directamente la tarea final. En otras palabras: no le pides *la respuesta*, le pides *el plano de la pregunta correcta*.
 
 * **Cambio de paradigma:**  
-    El usuario deja de interactuar con la IA como un consumidor de respuestas y pasa a hacerlo como un **diseñador de interfaces cognitivas**.  
-    El foco ya no está en “qué quiero que responda”, sino en **cómo debe ser el prompt para producir respuestas fiables, repetibles y alineadas al objetivo**.
+    El usuario deja de interactuar con la IA como un consumidor de respuestas y pasa a hacerlo como un **diseñador de interfaces cognitivas**. El foco ya no está en “qué quiero que responda”, sino en **cómo debe ser el prompt para producir respuestas fiables, repetibles y alineadas al objetivo**.
 
 * **Por qué funciona:**  
     Los LLM han sido entrenados con enormes volúmenes de texto que incluyen:
@@ -319,9 +317,7 @@ Las siguientes técnicas se integran en el método para resolver problemas más 
     - detección de supuestos implícitos
 
 * **Advertencia crítica:**  
-    Meta-Prompting **no sustituye el criterio humano**.  
-    Un LLM puede optimizar la forma, pero **no valida la intención estratégica ni el contexto político, legal o ético**.  
-    El riesgo es aceptar un prompt “bien escrito” que esté mal alineado con los objetivos reales de la organización.
+    Meta-Prompting **no sustituye el criterio humano**. Un LLM puede optimizar la forma, pero **no valida la intención estratégica ni el contexto político, legal o ético**. El riesgo es aceptar un prompt “bien escrito” que esté mal alineado con los objetivos reales de la organización.
 
 * **Patrón recomendado de uso:**
     1. El humano define el **objetivo real y el contexto**
@@ -341,8 +337,7 @@ Las siguientes técnicas se integran en el método para resolver problemas más 
     - Casos donde el costo de tokens supera el valor del refinamiento
 
 * **Nota del Arquitecto:**  
-    Cuando Meta-Prompting se usa de forma sistemática, el activo estratégico deja de ser el modelo y pasa a ser el **repositorio de prompts validados**.  
-    Esto convierte al prompting en **capital intelectual**, no en habilidad individual.
+    Cuando Meta-Prompting se usa de forma sistemática, el activo estratégico deja de ser el modelo y pasa a ser el **repositorio de prompts validados**. Esto convierte al prompting en **capital intelectual**, no en habilidad individual.
 
 ---
 
