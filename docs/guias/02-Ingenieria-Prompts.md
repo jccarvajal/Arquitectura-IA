@@ -281,9 +281,10 @@ Las siguientes técnicas se integran en el método para resolver problemas más 
     - guías
     - documentación técnica
     - ejemplos de buenas y malas preguntas  
+    
     Esto les permite **reconocer patrones de prompts eficaces** y proponer estructuras más claras de las que un humano suele formular de forma intuitiva.
 
-* **Ejemplo básico:**
+* **Ejemplo básico:**  
     > Necesito un prompt para obtener un resumen técnico de un informe financiero, dirigido a un directorio, con foco en riesgos y decisiones.  
     > Diseña un prompt óptimo que incluya rol, formato, restricciones y métricas de calidad.
 
