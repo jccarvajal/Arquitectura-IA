@@ -9,7 +9,7 @@ Un motor de Ferrari con gasolina sucia no gana carreras; se rompe. En la Intelig
 !!! warning "El Principio de Hierro: GIGO"
     **"Basura Entra, Basura Elocuente Sale" (Garbage In, Eloquent Garbage Out).**
     
-    Un agente alimentado con manuales obsoletos no comete errores obvios; miente con autoridad y citas falsas. Si no controlas la fuente (el "combustible"), la Gobernanza de la IA es imposible.
+    Un agente alimentado con manuales obsoletos no comete errores obvios; produce información incorrecta con alta confianza y citas falsas. Si no controlas la fuente, la Gobernanza de la IA es imposible.
 
 Esta guía transforma el rol de "gestor de archivos" al de **"Arquitecto de Información"**. Su trabajo es asegurar la calidad del combustible *antes* de que entre al motor.
 
@@ -22,7 +22,7 @@ Este es el principio de hierro de la IA. Un agente con un "cerebro" de nivel gen
 * **El Riesgo (Fábrica Contaminada):** Tu agente RAG "lee" un manual de producto de 2019 (sin que tú lo sepas) y le da al cliente información obsoleta. El agente no "alucinó"; citó perfectamente la fuente incorrecta.  
 * **El Objetivo (Fábrica Limpia):** El agente tiene acceso únicamente a datos "curados": verificados, actualizados y relevantes.
 
-El "Arquitecto de la Información" no es un rol de IA; es un rol de Gobernanza de Datos. Su trabajo es asegurar la calidad del combustible *antes* de que entre al motor.
+El "Arquitecto de la Información" no es un rol de IA; es un rol de Gobernanza de Datos. 
 
 !!! shield "La Amenaza Invisible: Datos Hostiles (Data Poisoning)"
     No solo debes preocuparte de que los datos sean inexactos (calidad), sino de que sean **maliciosos** (seguridad).
@@ -61,7 +61,7 @@ Las Políticas del "Arquitecto de la Información":
         ```json 
         { sensibilidad: 'Confidencial' }
         ```
-3. **Gestión del Ciclo de Vida (Archivado):** Los datos obsoletos son peligrosos; son el combustible de las alucinaciones factuales.  
+3. **Gestión del Ciclo de Vida (Archivado):** Los datos obsoletos son peligrosos; son la base informacional de las alucinaciones factuales.  
     * *Regla de Automatización:*
         ```python
         # Si el documento tiene más de 2 años (730 días), se archiva.
@@ -73,7 +73,7 @@ Las Políticas del "Arquitecto de la Información":
 
 ### Parte 2: El Pipeline "ETL-V" (La Refinería de Combustible)
 
-"ETL" (Extract, Transform, Load) es un término clásico de la ingeniería de datos. **En esta obra, proponemos adaptar el concepto a "ETL-V" (añadiendo la Vectorización).** Este es el proceso técnico (la "refinería") que convierte tus datos "crudos" (petróleo) en "combustible" RAG (gasolina de avión).
+"ETL" (Extract, Transform, Load) es un término clásico de la ingeniería de datos. **En esta obra, proponemos adaptar el concepto a "ETL-V" (añadiendo la Vectorización).** Este es el proceso técnico (pipeline ETL-V) que transforma datos crudos en conocimiento consultable vía RAG.
 
 1. **Extract (Extraer):** El proceso de "succionar" los datos crudos de donde viven.  
     * *Ejemplo:* Conectarse a Google Drive, a una base de datos SQL, a un sitio web (scraping) o a una carpeta de red.  
@@ -84,7 +84,7 @@ Las Políticas del "Arquitecto de la Información":
     * *Ejemplo:* Guardar el texto limpio en un "área de espera" (Staging Area).  
 4. **Vectorize (Vectorizar):** Este es el paso final de la "refinería". Es el proceso de "Trocear" (chunking) y "Vectorizar" (embedding) el texto limpio, para finalmente cargarlo en la Base de Datos Vectorial (la "biblioteca RAG").
 
-*Implicación Estratégica:* Sin una "Refinería ETL-V" robusta, tu "biblioteca" RAG se llenará de "combustible sucio" (datos basura) y toda tu "fábrica" (agentes) se detendrá.
+*Implicación Estratégica:* Sin una "Refinería ETL-V" robusta, tu "biblioteca" RAG se llenará de "combustible sucio" (datos no curados / no confiables) y toda tu "fábrica" (agentes) se detendrá.
 
 #### Protocolo de Seguridad: Esterilización de Documentos
 
@@ -101,24 +101,24 @@ Un atacante puede enviar un PDF (currículum, factura) con texto oculto (blanco 
 
 ---
 
-### Parte 3: Estrategias de Fuente (El Portafolio de Combustible)
+### Parte 3: Estrategias de Fuente (Portafolio de Fuentes de Datos)
 
-El "Arquitecto de la Información" debe decidir qué combustible usar.
+El "Arquitecto de la Información" debe decidir qué datos de entrada usar.
 
-**1\. Datos Internos (El "Petróleo Crudo" Propietario)**
+**1. Datos Internos (Fuente Propietaria Primaria)**
 
 * **Qué es:** Tus PDFs, emails, bases de datos SQL, transcripciones de Zoom.  
 * **Ventaja:** Es tu "foso" competitivo (tu ventaja estratégica). Nadie más los tiene.  
 * **Desventaja:** Están sucios. Son caóticos, desorganizados y llenos de opiniones (no solo hechos). Requieren el pipeline "ETL-V" más costoso.
 
-**2\. Datos Externos / Premium (El "Combustible Refinado")**
+**2. Datos Externos / Premium (Fuente Curada de Terceros)**
 
 * **Qué es:** Pagar por acceso a bases de datos curadas y limpias.  
 * **Ejemplo:** Pagar una suscripción a una API legal (LexisNexis), una base de datos financiera (Bloomberg) o un repositorio científico (Elsevier).  
 * **Ventaja:** Datos limpios, estructurados y actualizados al minuto. Ahorras 100% del costo de "ETL".  
-* **Desventaja:** No es propietario. Tu competencia puede (y probablemente lo hace) comprar el mismo combustible.
+* **Desventaja:** No es propietario. Tu competencia puede (y probablemente lo hace) acceder exactamente a las mismas fuentes de datos externas.
 
-**3\. Datos Sintéticos (El "Combustible de Laboratorio")**
+**3. Datos Sintéticos (Fuente Generada Artificialmente)**
 
 * **Qué es:** Usar una IA (ej. un modelo potente) para generar los datos que necesitas.  
 * **El Caso de Uso:** Es la fuente de datos para el **Ajuste Fino (Fine-Tuning)**, el proceso de re-entrenar el "cerebro" del modelo para que adquiera una habilidad o estilo específico.  
@@ -126,7 +126,7 @@ El "Arquitecto de la Información" debe decidir qué combustible usar.
 
     `Actúa como el agente de soporte perfecto. Ahora, genera 1.000 ejemplos de cómo responderías a estas 1.000 quejas de clientes.`
 
-* **Ventaja:** Puedes crear "combustible" perfectamente limpio y formateado para tareas donde no tienes datos del mundo real.  
+* **Ventaja:** Puedes crear *datos sintéticos perfectamente limpios y formateados* para tareas donde no tienes datos del mundo real.
 * **Desventaja:** Riesgo de "endogamia". Si usas una IA para entrenar a otra IA, corres el riesgo de que ambas aprendan y amplifiquen los mismos errores o sesgos.
 
 #### Herramienta de Diagnóstico: Matriz de Madurez de Datos
