@@ -16,6 +16,8 @@ La "Brecha de Aprendizaje" que frustra a las empresas no es culpa del modelo, es
 
 Esta guía, al definir las arquitecturas de memoria como **RAG** (la "biblioteca externa") y la **Memoria Explícita** (el "bloc de notas" del agente), proporciona la solución técnica directa a la "Brecha de Aprendizaje".
 
+> Esta sección presenta un mapa de arquitecturas. No se espera que el lector implemente todas, sino que comprenda cuándo cada una es apropiada.
+
 ---
 
 ### Conceptos Fundamentales (El Problema)
@@ -140,7 +142,7 @@ Esta fase ocurre en tiempo real, cada vez que el usuario hace una pregunta. Es e
 
 **Solución 3. Gestión de Memoria Explícita (El "Asistente Personal")**
 
-Si RAG es la biblioteca (estática), la Memoria es el "bloc de notas" (dinámico) personal del agente.
+Si RAG es la biblioteca (estática), la memoria explicita es el "bloc de notas" (dinámico) personal del agente. La memoria no modifica los pesos del modelo; solo modifica el contexto futuro.
 
 * **La Metáfora:** Es un **Asistente Personal** (Google, 2025). El asistente *te conoce a ti* (contexto del usuario) y recuerda tus preferencias.
 * **Cómo Funciona (El Proceso ETL de Memoria):**
@@ -150,6 +152,8 @@ Si RAG es la biblioteca (estática), la Memoria es el "bloc de notas" (dinámico
 **Ejemplo Práctico: Memoria como Herramienta (Memory-as-a-Tool)**
 
 Para que la memoria sea dinámica, el agente debe tener permiso para usarla. Bajo el patrón "Memory-as-a-Tool", el agente utiliza su **Ciclo de Razonar-Actuar (ReAct)** para decidir cuándo leer o escribir en su "bloc de notas":
+
+> ReAct (Reason + Act): patrón donde el agente razona antes de decidir usar una herramienta.
 
 1.  **El Usuario da Información (Lunes):**
     * 👤 Usuario: 
