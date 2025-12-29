@@ -25,30 +25,49 @@ El "Ingeniero Jefe de Prototipos" busca lo opuesto: el "Quick Win" (Victoria Rá
 
 ### Parte 1: Identificar el Caso de Uso (La Elección del Piloto)
 
-Antes de escribir una línea de código, debes encontrar la "playa" correcta para desembarcar.
+Antes de escribir una sola línea de código, el trabajo crítico no es técnico, es **estratégico**: elegir correctamente el primer caso de uso. Implementar IA no es un asalto frontal; es un **desembarco controlado**. Debes encontrar la “playa” correcta.
 
-* **Mal Caso de Uso:** "Un agente que reemplace a todo el departamento de servicio al cliente."  
-    * *(Riesgo altísimo, complejo, "hervir el océano").*  
-* **Buen Caso de Uso:** "Un agente, un sistema que razona y actúa, que lea los 1.000 emails de 'contacto@empresa.com' cada noche y genere un reporte de 10 bullets para el gerente a las 8 AM."  
-    * *(Definido, bajo riesgo, alto valor de ahorro de tiempo).*
+* **Mal Caso de Uso:**  
+    *“Un agente que reemplace a todo el departamento de servicio al cliente.”*  
+    *(Ambición excesiva, múltiples dependencias, alto riesgo operativo y reputacional. Es el clásico error de “hervir el océano”).*
 
-**El Filtro del "Quick Win":**  
+* **Buen Caso de Uso:**  
+    *“Un agente —un sistema que razona y actúa— que lea los 1.000 correos de `contacto@empresa.com` cada noche y genere un reporte ejecutivo de 10 bullets para el gerente a las 8:00 AM.”*  
+    *(Objetivo acotado, riesgo bajo, impacto claro y ahorro inmediato de tiempo humano).*
 
-Tu prototipo debe pasar este filtro de 4 preguntas:
+El **Ingeniero Jefe de Prototipos** no busca el caso más impresionante, sino el que permita **demostrar valor real con el menor riesgo posible**.
 
-1. **¿Es un problema de "Sistema 1"?** ¿Es una tarea repetitiva, de bajo juicio y basada en patrones (como leer, resumir, clasificar)? Sí.  
-2. **¿El riesgo de "alucinación" es manejable?** "Alucinación" es cuando la IA inventa un dato. Si el agente se equivoca en el resumen, ¿es vergonzoso (manejable) o es catastrófico (ilegal/financiero)? Para un primer prototipo, debe ser manejable.  
-3. **¿El ROI es obvio?** ¿Podemos medir el éxito en "horas-hombre ahorradas" o "tareas completadas"? Sí.
+---
+
+**El Filtro del “Quick Win”**
+
+Todo prototipo candidato debe superar este filtro de preguntas clave. Si falla en una de ellas, no es un buen piloto.
+
+1. **¿Es un problema de “Sistema 1”?**  
+    ¿La tarea es repetitiva, basada en patrones y de bajo juicio humano (leer, resumir, clasificar, agrupar)?  
+    *Si requiere criterio experto constante o decisiones legales, no es un buen punto de partida.*
+
+2. **¿El riesgo de alucinación es manejable?**  
+    Una alucinación ocurre cuando la IA inventa un dato. Si el agente se equivoca, ¿el impacto es corregible (vergonzoso pero reversible) o es catastrófico (legal, financiero, regulatorio)?  
+    *Para un primer prototipo, el error debe ser tolerable y detectable.*
+
+3. **¿El ROI es obvio y medible?**  
+    ¿Puedes medir el éxito en métricas simples como *horas-hombre ahorradas*, *tareas automatizadas* o *tiempo de respuesta reducido*?  
+    *Si no puedes medir el beneficio, no podrás defender la inversión.*
 
 !!! tip "El Cuarto Filtro: La Economía Unitaria (Unit Economics)"
-    No basta con que la IA pueda hacer el trabajo. Para que un prototipo sea sostenible, debe responder una pregunta crítica: **"¿Cuesta menos la solución que el problema?"**
+    No basta con que la IA **pueda** hacer el trabajo. Para que un prototipo sea sostenible, debe responder una pregunta crítica:  
+    **“¿Cuesta menos la solución que el problema?”**
     
-    Antes de aprobar el desarrollo, calcula la **Economía Unitaria**:
+    Antes de aprobar el desarrollo, calcula explícitamente la **Economía Unitaria**:
     
-    1.  **Costo del Problema:** (Tiempo actual del empleado x Sueldo por hora).
-    2.  **Costo de la Solución:** (Tokens de entrada + Tokens de salida + Costo del tiempo humano de revisión).
+    1. **Costo del Problema:**  
+       (Tiempo actual del empleado × Sueldo por hora).
+    2. **Costo de la Solución:**  
+       (Tokens de entrada + Tokens de salida + Costo del tiempo humano de revisión).
     
-    Si usas un modelo gigante y costoso para una tarea trivial (ej. clasificar spam), podrías estar gastando $0.05 en una tarea que manualmente costaba $0.01. **El prototipo debe ser rentable por unidad, no solo eficiente en tiempo.**
+    Si usas un modelo grande y costoso para una tarea trivial (por ejemplo, clasificar spam), podrías estar gastando **$0.05 USD** en una tarea que manualmente costaba **$0.01 USD**.  
+    **El prototipo debe ser rentable por unidad, no solo eficiente en tiempo.**
 
 ---
 
@@ -141,7 +160,7 @@ Esta "Gobernanza Mínima Viable" es, en la práctica, la versión 1.0 de lo que 
 
 ### Parte 5: Medir y Escalar (El Ciclo de "Gobernanza")
 
-Ya tienes tu prototipo seguro (v1). Ahora debes probar su valor.
+Ya tienes tu prototipo seguro. Ahora debes probar su valor.
 
 **1\. Medir (El "Dashboard" v1):**
 

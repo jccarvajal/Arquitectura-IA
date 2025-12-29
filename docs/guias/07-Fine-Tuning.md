@@ -11,7 +11,7 @@ Pero, ¿qué pasa cuando quieres cambiar el *comportamiento*? ¿Qué pasa cuando
 RAG es darle libros a un estudiante. **Ajuste Fino (Fine-Tuning)** es enviarlo a la universidad durante cuatro años. Esta guía es el manual para cuando la instrucción no basta y necesitas modificar la estructura misma del "cerebro" para especializar la habilidad.
 
 * **RAG:** Es darle a un agente genérico un libro de medicina para que lo lea.  
-* **Ajuste Fino:** Es tomar a un agente genérico y mandarlo a la facultad de medicina durante 6 meses hasta que *piense* como un médico.
+* **Ajuste Fino:** Es tomar a un agente genérico y mandarlo a la facultad de medicina durante 6 meses hasta que razone operativamente como un médico
 
 Tu rol aquí es el de "Especialista de Motores". No estás usando el motor, lo estás modificando.
 
@@ -109,6 +109,8 @@ graph TD
     2. **Entrenar:** Haces "ajuste fino" a un modelo potente con este set de datos masivo.  
     3. **Resultado:** El modelo desarrolla nuevos "caminos neuronales" para el razonamiento legal.  
 * **El "Stack" Híbrido (La Mejor Solución):** Ahora combinas ambas técnicas. Usas **RAG** para inyectar los hechos específicos del *nuevo* caso, y el **Ajuste Fino** se encarga de que el modelo razone sobre esos hechos como un abogado experto.
+
+> Nota Técnica: Esto no implica razonamiento consciente, sino una redistribución estadística de patrones que favorecen ciertos estilos de análisis jurídico.
 
 ---
 

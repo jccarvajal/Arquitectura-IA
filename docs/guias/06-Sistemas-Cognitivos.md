@@ -46,6 +46,7 @@ Para que un agente "piense", debemos darle un "Manual de Procedimientos" (un pat
     1. Juan empieza con 5 manzanas.  
     2. Regala 2 a Ana, le quedan 5−2=3 manzanas.  
     3. Compra 3 manzanas más, ahora tiene 3+3=6 manzanas. Respuesta final: 6\.
+> **Nota Técnica:** El CoT no implica razonamiento consciente; es un patrón de estructuración verbal que reduce errores al forzar una secuencia explícita.
 
 **B. ReAct (Reason \+ Act): El "Detective con Herramientas"**
 
@@ -94,12 +95,14 @@ Para que un agente "piense", debemos darle un "Manual de Procedimientos" (un pat
     El patrón *Chain-of-Thought* (CoT) no es solo para que la IA razone mejor; es para que el humano pueda auditarla.
     
     **La Regla de Transparencia:**
-    Diseña tu prompt de sistema para que el agente imprima su razonamiento en un bloque separado (ej. `<pensamiento>...</pensamiento>`) antes de dar la respuesta final.
+    Diseña tu prompt de sistema para que el agente genere su razonamiento en un bloque separado (ej. `<pensamiento>...</pensamiento>`) **en contextos de desarrollo, auditoría o depuración**, antes de ejecutar herramientas o emitir la respuesta final.
 
     * Si la respuesta es mala pero el pensamiento es lógico, el problema es falta de contexto (Guía 03).
     * Si el pensamiento es ilógico, el problema es el modelo o el prompt (Guía 02).
     
     Sin pensamiento visible, corregir a un agente es adivinar.
+
+    En producción, este razonamiento debe capturarse como **telemetría interna** (logs, trazas), no exponerse al usuario.
 
 !!! warning "Restricción de Ingeniería: Costo y Latencia (La Regla del Batch)"
     Los patrones avanzados como *Tree of Thoughts* (ToT) o *Reflexion* no solo triplican el consumo de tokens (Dinero), sino que aumentan la latencia exponencialmente (Tiempo).
