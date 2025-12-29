@@ -197,7 +197,7 @@ Las siguientes técnicas se integran en el método para resolver problemas más 
     > Genera 3 respuestas independientes a la siguiente pregunta: [pregunta].  
     > Luego, compara las respuestas, identifica puntos comunes y discrepancias, y propone una versión final consolidada, explicando brevemente el criterio de selección.
 
-* **Ejemplo (modo creativo):**. 
+* **Ejemplo (modo creativo):**  
     > Genera 3 enfoques distintos para este problema: [problema].  
     > Evalúa fortalezas y debilidades de cada uno y selecciona el más adecuado según este criterio: [criterio].
 
@@ -217,7 +217,7 @@ Las siguientes técnicas se integran en el método para resolver problemas más 
 
 **3. Prompt Chaining (Encadenamiento de Prompts)**
 
-* **¿Qué es?** 
+* **¿Qué es?**  
     Prompt Chaining es la técnica de **descomponer una tarea compleja en una secuencia ordenada de prompts más simples**, donde la salida de un paso se convierte en la entrada (total o parcial) del siguiente.  
     No se trata de “hablar más con la IA”, sino de **diseñar un flujo de razonamiento controlado**.
 
@@ -229,12 +229,12 @@ Las siguientes técnicas se integran en el método para resolver problemas más 
     - **Chain-of-Thought:** El razonamiento ocurre *dentro* de una sola respuesta del modelo (opaco y no siempre fiable).  
     - **Prompt Chaining:** El razonamiento ocurre *entre* múltiples llamadas explícitas (observable, controlable y auditable).
 
-* **Ejemplo secuencial básico:**
-    **Prompt 1 – Planificación**
+* **Ejemplo secuencial básico:**  
+    **Prompt 1 – Planificación**  
     > Analiza el siguiente problema y genera un esquema de solución en pasos claros: [problema].
-    **Prompt 2 – Ejecución**
+    **Prompt 2 – Ejecución**  
     > Usando el paso 1 del esquema anterior, desarrolla la solución detallada correspondiente.
-    **Prompt 3 – Revisión**
+    **Prompt 3 – Revisión**  
     > Revisa la solución anterior. Identifica errores, supuestos implícitos o mejoras posibles.
 
 * **Ventaja operativa clave:**  
