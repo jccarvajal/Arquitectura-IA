@@ -167,6 +167,8 @@ Las siguientes técnicas se integran en el método para resolver problemas más 
 * **¿Por qué funciona?**  
     En tareas de lógica, matemáticas y planificación, guiar al modelo hacia un razonamiento estructurado **reduce los atajos heurísticos** y mejora la calidad de la respuesta final. Sin embargo, es crucial entender que el **razonamiento interno del modelo y el razonamiento que verbaliza no siempre son lo mismo**.
 
+> **Nota crítica:** El modelo no “razona”; el Chain-of-Thought solo reduce la probabilidad de saltos espurios al forzar una secuencia verbal coherente. No introduce razonamiento simbólico ni comprensión causal real.
+
 * **Nota operativa clave (2025):**  
     En modelos de frontera modernos, el razonamiento suele ocurrir **internamente**, incluso cuando no se expone paso a paso. En muchos casos, **pedir explícitamente la cadena de pensamiento puede degradar el resultado** o generar razonamientos simulados. Por ello, una práctica más robusta es pedir al modelo que *razone internamente* y entregue **solo la respuesta final estructurada**.
 
@@ -353,7 +355,12 @@ Aquí conectamos las técnicas avanzadas con el método de 7 pasos para ver dón
     * **Técnica de más valor: Prompt Chaining.** Si un prompt monolítico y complejo falla repetidamente, la mejor forma de iterar es descomponerlo en una cadena de prompts más simples. Esto te da control granular sobre cada parte del proceso.  
     * **Técnica de más valor: Meta-Prompting.** Si estás atascado, pregúntale al modelo:
       > Mi prompt anterior [pegar prompt] no está funcionando. Generó [describir salida no deseada]. ¿Cómo puedo refinar mi prompt para obtener [describir resultado deseado]?
-    
+
+> **Nota de Transición Arquitectónica**  
+> Muchas técnicas avanzadas de prompting (Guía 02) son, en la práctica, implementaciones manuales de lo que luego se automatiza mediante arquitecturas de agentes.  
+>  
+> Comprender estas técnicas no es un fin en sí mismo, sino el prerrequisito conceptual para diseñar, auditar y gobernar sistemas de IA más complejos.
+
 ---
 
 ### Conclusión: De Usuario a Arquitecto de Resultados

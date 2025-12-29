@@ -19,6 +19,11 @@ Esta guía transforma el rol de "gestor de archivos" al de **"Arquitecto de Info
 
 Este es el principio de hierro de la IA. Un agente con un "cerebro" de nivel genio es inútil si su "biblioteca" de memoria, el sistema **RAG (Generación Aumentada por Recuperación)** que le da conocimiento externo, está llena de documentos desactualizados, contradictorios, irrelevantes o incorrectos.
 
+> **Aclaración Crítica: Qué es (y qué no es) RAG**  
+> RAG es una arquitectura de **recuperación de conocimiento externo** que actúa como **fuente de evidencia**, no como memoria ni como aprendizaje.  
+>  
+> El modelo no “recuerda” ni “aprende” al usar RAG; simplemente consulta documentos externos en tiempo de inferencia y los utiliza como contexto para generar una respuesta, lo que permite **trazabilidad y control de la fuente**.
+
 * **El Riesgo (Fábrica Contaminada):** Tu agente RAG "lee" un manual de producto de 2019 (sin que tú lo sepas) y le da al cliente información obsoleta. El agente no "alucinó"; citó perfectamente la fuente incorrecta.  
 * **El Objetivo (Fábrica Limpia):** El agente tiene acceso únicamente a datos "curados": verificados, actualizados y relevantes.
 
