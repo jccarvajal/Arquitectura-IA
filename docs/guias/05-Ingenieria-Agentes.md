@@ -207,6 +207,11 @@ Esta es la solución más práctica y segura al dilema de la "correa".
 
 ### Estrategia 2: La Orquesta de Agentes (Router y Workers)
 
+> **Definición Operativa**  
+> En este libro, usaremos el término **“Agente PM”** para referirnos a un **agente autónomo especializado en una tarea delimitada**, responsable de ejecutar un objetivo concreto de principio a fin.
+>
+> No es un coordinador global ni un orquestador; opera como un *Project Manager táctico*, no estratégico.
+
 Esta es la estrategia de escalabilidad más importante. Ya no pensamos en un solo agente que lo hace todo. Pensamos en un equipo de especialistas. En la arquitectura moderna, esto se conoce como el patrón **Router-Worker** (Enrutador-Trabajador).
 
 * **Un Agente Individual es un Project Manager (PM) / Worker:** Se enfoca en un proyecto único y bien definido. Recibe un objetivo, aplica el ciclo ReAct, usa sus herramientas y entrega un resultado final.

@@ -35,6 +35,12 @@ Esta guía se enfoca en diseñar al "Jefe de Taller".
 
 Para que un agente "piense", debemos darle un "Manual de Procedimientos" (un patrón de razonamiento). Estos son los patrones más cruciales que debes diseñar:
 
+> **Nota de Continuidad (Guía 05 → Guía 06)**  
+> Como se estableció en la **Guía 05**, el *Pensamiento Visible* no representa un razonamiento interno real ni consciente.  
+> Es un **artefacto de ingeniería** diseñado para reducir acciones erráticas y permitir auditoría, depuración y control del comportamiento del agente.
+>
+> En esta guía, lo utilizamos exclusivamente como **herramienta operativa** para estructurar y evaluar patrones de razonamiento como *Chain-of-Thought*.
+
 **A. Chain of Thought (CoT): La "Línea de Ensamblaje"**
 
 * **Qué es:** El patrón más básico. Forzamos al modelo a "pensar paso a paso" antes de dar la respuesta final.  
@@ -50,7 +56,7 @@ Para que un agente "piense", debemos darle un "Manual de Procedimientos" (un pat
 
 **B. ReAct (Reason \+ Act): El "Detective con Herramientas"**
 
-* **Qué es:** Como establecimos en la **Guía 05**, el ciclo ReAct es el pilar de la agencia moderna. Se basa en un bucle donde el modelo genera un **Pensamiento** (Reason) sobre su objetivo, ejecuta una **Acción** (Act) mediante una herramienta externa y luego **Observa** el resultado para ajustar su siguiente paso. Es el mecanismo que transforma una IA pasiva en un trabajador capaz de interactuar con el mundo real.
+* **Qué es:** Como se estableció en la **Guía 05**, ReAct es el pilar de la agencia moderna. Allí lo introdujimos como una **arquitectura operativa** que permite a un agente razonar, actuar y observar en un bucle continuo. En esta guía, ReAct se analiza desde otra capa: como el **patrón cognitivo mínimo** que conecta razonamiento deliberado con acción en el mundo real.
 * **Metáfora:** Un detective que, en lugar de adivinar, usa activamente sus herramientas (lupa, teléfono, base de datos de huellas).
 * **Cuándo usarlo:** Casi siempre. Es la arquitectura fundamental para cualquier agente que deba interactuar con el mundo exterior.
 
