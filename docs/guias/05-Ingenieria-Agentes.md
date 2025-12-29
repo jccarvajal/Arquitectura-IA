@@ -21,7 +21,11 @@ En esta guía, rompemos el cristal. Dejamos de pedir respuestas para empezar a e
 
 ### Conceptos Fundamentales
 
-**1\. La Anatomía de la Agencia (Cerebro + Manos)**
+**1. ¿Qué entendemos por Agencia?**
+
+**Agencia:** La capacidad de un sistema de IA de **iniciar, encadenar y ejecutar acciones en el mundo** para cumplir un objetivo, más allá de generar texto.
+
+**2. La Anatomía de la Agencia (Cerebro + Manos)**
 
 Para lograr este salto de "conversar" a "trabajar", dejamos de tratar al LLM como el producto final y lo convertimos en un componente de un sistema mayor. Arquitectónicamente, un Agente se distingue por tener componentes que un Chatbot no tiene:
 
@@ -29,7 +33,7 @@ Para lograr este salto de "conversar" a "trabajar", dejamos de tratar al LLM com
 * **Las Manos (Herramientas/Tools):** Son funciones de código (APIs, scripts Python) que conectan al cerebro con el mundo exterior (buscar en Google, leer archivos, enviar emails). Sin herramientas, la IA es un "cerebro en un frasco".
 * **El Corazón (El Bucle):** A diferencia de un chat que responde y se detiene, un agente opera en un ciclo continuo hasta cumplir su objetivo.
 
-**2\. El "Motor" del Agente: El Ciclo ReAct (Razonar \+ Actuar)**
+**3. El "Motor" del Agente: El Ciclo ReAct (Razonar \+ Actuar)**
 
 Esto es lo más importante. Un agente no solo da una respuesta y se detiene. Opera en un bucle (loop) hasta que cumple el objetivo. Este ciclo se conoce comúnmente como **ReAct**, un patrón que combina el Razonamiento (Reason) con la Acción (Act).
 
@@ -52,7 +56,22 @@ graph TD
     Decide -->|Sí| Final(💬 Respuesta Final)
 ```
 
-En la arquitectura moderna (2025), exigimos lo que llamamos el **"Patrón de Pensamiento Visible"**. No queremos que el agente actúe a ciegas; queremos ver su lógica estructurada antes de que toque una herramienta.
+En la arquitectura moderna (2025), exigimos lo que llamamos el **"Patrón de Pensamiento Visible"**.  
+No queremos que el agente actúe a ciegas; queremos que su lógica estructurada sea evaluable **antes** de ejecutar una herramienta.
+
+!!! info "Aclaración Crítica: Pensamiento Visible ≠ Pensamiento Cognitivo"
+    El agente no “razona” en un sentido humano ni consciente.  
+    El **Pensamiento Visible** (Chain-of-Thought, `<pensamiento>`) es un **artefacto de ingeniería**, no una verdad cognitiva.
+
+    Su función es:
+    * Reducir acciones erráticas al forzar una secuencia verbal coherente.
+    * Disminuir saltos espurios en tareas multi-paso.
+    * Permitir **auditoría, depuración y control** del comportamiento del agente.
+    * Hacer explícitas las decisiones **antes** de ejecutar herramientas.
+
+    **Regla Operativa:**  
+    El razonamiento estructurado **NO debe exponerse al usuario final en producción**.  
+    Debe tratarse como **telemetría interna** (logs, trazas de auditoría o modos de depuración controlados).
 
 Así es como se ve la traza de un agente moderno:
 
