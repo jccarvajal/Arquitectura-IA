@@ -167,7 +167,7 @@ Las siguientes técnicas se integran en el método para resolver problemas más 
 * **¿Por qué funciona?**  
     En tareas de lógica, matemáticas y planificación, guiar al modelo hacia un razonamiento estructurado **reduce los atajos heurísticos** y mejora la calidad de la respuesta final. Sin embargo, es crucial entender que el **razonamiento interno del modelo y el razonamiento que verbaliza no siempre son lo mismo**.
 
-> **Nota crítica:** El modelo no “razona”; el Chain-of-Thought solo reduce la probabilidad de saltos espurios al forzar una secuencia verbal coherente. No introduce razonamiento simbólico ni comprensión causal real.
+    > **Nota crítica:** El modelo no “razona”; el Chain-of-Thought solo reduce la probabilidad de saltos espurios al forzar una secuencia verbal coherente. No introduce razonamiento simbólico ni comprensión causal real.
 
 * **Nota operativa clave (2025):**  
     En modelos de frontera modernos, el razonamiento suele ocurrir **internamente**, incluso cuando no se expone paso a paso. En muchos casos, **pedir explícitamente la cadena de pensamiento puede degradar el resultado** o generar razonamientos simulados. Por ello, una práctica más robusta es pedir al modelo que *razone internamente* y entregue **solo la respuesta final estructurada**.
@@ -193,11 +193,11 @@ Las siguientes técnicas se integran en el método para resolver problemas más 
 * **Advertencia conceptual clave:**  
     Self-Consistency **no convierte una respuesta en verdadera**. Solo aumenta la *robustez relativa* frente a errores puntuales, sesgos de muestreo o malas inicializaciones. Si todas las respuestas se basan en una premisa incorrecta, la autoconsistencia solo producirá un error consistente.
 
-* **Ejemplo (modo evaluación interna):**
+* **Ejemplo (modo evaluación interna):**  
     > Genera 3 respuestas independientes a la siguiente pregunta: [pregunta].  
     > Luego, compara las respuestas, identifica puntos comunes y discrepancias, y propone una versión final consolidada, explicando brevemente el criterio de selección.
 
-* **Ejemplo (modo creativo):**
+* **Ejemplo (modo creativo):**. 
     > Genera 3 enfoques distintos para este problema: [problema].  
     > Evalúa fortalezas y debilidades de cada uno y selecciona el más adecuado según este criterio: [criterio].
 
