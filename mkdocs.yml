@@ -51,6 +51,10 @@ markdown_extensions:
       permalink: true
       toc_depth: 3
 
+# Activación de Mermaid (Material for MkDocs)
+extra_javascript:
+  - https://unpkg.com/mermaid/dist/mermaid.min.js
+
 # Sección de Plugins  
 plugins:
   - search # Importante mantenerlo para que funcione el buscador del sitio web
