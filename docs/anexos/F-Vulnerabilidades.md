@@ -2,7 +2,7 @@
 
 ## 1. Introducción: La IA como Sistema Probabilístico
 
-La seguridad de una arquitectura de IA no se limita a la protección de datos o al cifrado de red. En esta **v1.5**, establecemos que el lenguaje y la lógica formal son **vectores de ataque críticos**. Un sistema resiliente debe ser capaz de procesar *inputs* maliciosos, persuasivos o erróneos sin degradar su **Fidelidad Semántica** ni perder su **Soberanía Operativa**.
+La seguridad de una arquitectura de IA no se limita a la protección de datos o al cifrado de red. En este anexo establecemos que el lenguaje y la lógica formal son **vectores de ataque críticos**. Un sistema resiliente debe ser capaz de procesar *inputs* maliciosos, persuasivos o erróneos sin degradar su **Fidelidad Semántica** ni perder su **Soberanía Operativa**.
 
 Este Atlas consolida las debilidades detectadas hasta finales de 2025, clasificándolas en cuatro dimensiones de riesgo.
 
@@ -27,7 +27,7 @@ A continuación, se detallan las cuatro familias de fallos que todo arquitecto y
 
 ## 3. Matriz de Intersección: Vulnerabilidades vs. Pilares de Control
 
-Para asegurar una arquitectura *Hardened*, cada vulnerabilidad debe estar mapeada a uno de los **20 Pilares de Control** de esta guía:
+Para asegurar una arquitectura de seguridad, cada vulnerabilidad debe estar mapeada a uno de los **20 Pilares de Control** de esta guía:
 
 
 
@@ -69,6 +69,6 @@ Ninguna instancia de IA o Agente Autónomo debe pasar a producción sin un certi
 
 ## 6. Conclusión: La IA como Entidad Lógica-Formal
 
-La elocuencia de la IA es, paradójicamente, su característica más peligrosa para el mundo de GRC. Un sistema que no identifica una falacia es un sistema cuya gobernanza puede ser "disuelta" mediante la persuasión. La robustez en la **v1.5** exige que la IA sea un **lógico formal** antes que un asistente conversacional.
+La elocuencia de la IA es, paradójicamente, su característica más peligrosa para el mundo de GRC. Un sistema que no identifica una falacia es un sistema cuya gobernanza puede ser "disuelta" mediante la persuasión. La robustez exige que la IA sea un **lógico formal** antes que un asistente conversacional.
 
 > "La verdadera seguridad industrial de la IA no reside en su capacidad de procesar datos, sino en su capacidad de resistir la manipulación de quienes los proveen."

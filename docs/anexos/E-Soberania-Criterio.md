@@ -41,10 +41,12 @@ Ejercicios diseñados para forzar la fricción entre la respuesta de la máquina
 ---
 
 ### 4. Métricas de Gobernanza Cognitiva
-El juicio debe ser medible para ser gobernado. Se proponen dos indicadores clave para la v1.5:
+El juicio debe ser medible para ser gobernado. Se proponen dos indicadores clave:
 
 1. **Tasa de Desafío Efectivo (TDE):** Porcentaje de outputs de IA que fueron corregidos, refinados o rechazados por un humano.
+
    * *Alerta:* Una TDE de 0% indica **Atrofia Cognitiva** o complacencia crítica del equipo.
+
 2. **Sustitución de CoT (Chain of Thought):** Ejercicio donde el profesional escribe su razonamiento **antes** de mirar el de la IA. La brecha entre ambos es la medida del aprendizaje práctico real.
 
 ---
@@ -62,4 +64,4 @@ El juicio debe ser medible para ser gobernado. Se proponen dos indicadores clave
 ### 6. Reflexión Final: La Soberanía de Wiener y Lanier
 Como se advirtió en los fundamentos de esta obra, el éxito de una arquitectura de IA no se mide por cuánto trabajo hace la máquina, sino por qué tan capaces son los humanos de **desafiar sus resultados**. 
 
-> "La verdadera seguridad industrial (*Hardened Edition*) no reside exclusivamente en el código, sino en un humano con el criterio suficiente para decir: **Esto no tiene sentido**."
+> "La verdadera seguridad industrial no reside exclusivamente en el código, sino en un humano con el criterio suficiente para decir: **Esto no tiene sentido**."
