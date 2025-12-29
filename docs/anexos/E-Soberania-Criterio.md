@@ -45,7 +45,7 @@ El juicio debe ser medible para ser gobernado. Se proponen dos indicadores clave
 
 1. **Tasa de Desafío Efectivo (TDE):** Porcentaje de outputs de IA que fueron corregidos, refinados o rechazados por un humano.
 
-   * *Alerta:* Una TDE de 0% indica **Atrofia Cognitiva** o complacencia crítica del equipo.
+    * *Alerta:* Una TDE de 0% indica **Atrofia Cognitiva** o complacencia crítica del equipo.
 
 2. **Sustitución de CoT (Chain of Thought):** Ejercicio donde el profesional escribe su razonamiento **antes** de mirar el de la IA. La brecha entre ambos es la medida del aprendizaje práctico real.
 
