@@ -230,6 +230,7 @@ Las siguientes técnicas se integran en el método para resolver problemas más 
     - **Prompt Chaining:** El razonamiento ocurre *entre* múltiples llamadas explícitas (observable, controlable y auditable).
 
 * **Ejemplo secuencial básico:**  
+
     **Prompt 1 – Planificación**  
     > Analiza el siguiente problema y genera un esquema de solución en pasos claros: [problema].  
 
