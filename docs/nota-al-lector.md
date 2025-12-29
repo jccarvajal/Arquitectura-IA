@@ -53,15 +53,15 @@ Para sacar el máximo provecho de esta obra, asumimos tres cosas sobre ti:
 
 1. **Disposición Activa:** No es una lectura pasiva. Requiere voluntad para reflexionar sobre arquitectura de sistemas y gestión de riesgos, más allá de la simple operación.
 2. **Uso de Léxico Preciso:** Usaremos términos específicos (*Basura Elocuente, Lealtad Agéntica*) definidos en el **Glosario**. Son herramientas necesarias para nombrar nuevos problemas.
-3. **Acceso a Herramientas:** Los ejercicios prácticos (*Blueprints*) están diseñados para modelos de capacidad media-alta (nivel GPT-5, Claude 4 o Gemini 3). Modelos antiguos podrían no ejecutar las estrategias correctamente.
+3. **Acceso a Herramientas:** Los ejercicios prácticos (*Blueprints*) están diseñados para modelos de frontera (frontier models) o equivalentes de última generación. Modelos antiguos podrían no ejecutar las estrategias correctamente.
 
 ---
 
-## 6. Sobre la Obsolescencia: Es un "Marco" de fines de 2025
+## 6. Sobre la Obsolescencia: Es un "Marco" de su Tiempo
 
-Esta es la **Versión 1.4 (de Diciembre 2025)**. La tecnología de IA es volátil y evoluciona en ciclos de meses, no de años.
+La tecnología de IA es volátil y evoluciona en ciclos de meses, no de años.
 
-Considera esta obra como un **"marco de pensamiento"** y una **"fotografía"** del panorama actual, no como un manual estático. El objetivo no es entregar reglas fijas, sino un criterio duradero para gestionar la evolución tecnológica.
+Considera esta obra como un **marco de pensamiento** y una **fotografía** de su contexto técnico, no como un manual estático. El objetivo no es entregar reglas fijas, sino un criterio duradero para gestionar la evolución tecnológica.
 
 ---
 

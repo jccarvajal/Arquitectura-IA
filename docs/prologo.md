@@ -24,7 +24,7 @@ Cuatro pensadores contemporáneos, desde la psicología, la filosofía, la teor�
     * **Sistema 1 (S1):** rápido, intuitivo, basado en patrones.
     * **Sistema 2 (S2):** lento, deliberado, lógico y analítico.
 
-    Los modelos generativos actuales se comportan como **S1 ampliado**, no como S2 emergente.
+    Los modelos generativos actuales se comportan funcionalmente como **S1 ampliado**, no como S2 emergente.
 
 !!! abstract "Hubert Dreyfus — La comprensión no es cálculo"
     **Hubert Dreyfus**, filósofo y uno de los críticos más influyentes de la IA desde la fenomenología, sostuvo que la inteligencia humana no opera como una máquina simbólica ni estadística. Para él, comprender no es manipular datos: es *habitar* el mundo.
@@ -42,8 +42,8 @@ Cuatro pensadores contemporáneos, desde la psicología, la filosofía, la teor�
 !!! abstract "Nassim Taleb — Fragilidad, antifragilidad y riesgo sin consecuencias"
     **Nassim Nicholas Taleb**, teórico del riesgo, aporta tres ideas clave.
 
-    * La IA generativa es **frágil**: funciona bien en condiciones conocidas, pero falla ante escenarios inesperados.
-    * No es **antifrágil**, porque no mejora mediante estrés real: aprende de datos pasados, no de consecuencias.
+    * La IA generativa operacional es **frágil**: funciona bien en condiciones conocidas, pero falla ante escenarios inesperados.
+    * No es **antifrágil**, porque no mejora mediante estrés real en operación: aprende de datos pasados, no de consecuencias.
     * Y carece de **skin in the game (jugarse la piel)**: no asume pérdidas por sus errores.
 
     Puede generar *basura elocuente*, respuestas fluidas pero incorrectas, sin experimentar costo alguno.
@@ -73,7 +73,7 @@ Esta evaluación no proviene de un pesimismo externo, sino de una convergencia e
     Los pioneros del aprendizaje profundo señalan las grietas en los cimientos.
 
     * **Yann LeCun** (Premio Turing) subraya que carecen de razonamiento, planificación y modelos del mundo.
-    * **Geoffrey Hinton** (Premio Turing) advierte sobre riesgos profundos que aún no comprendemos del todo.
+    * **Geoffrey Hinton** (Premio Turing) advierte sobre riesgos profundos, aun reconociendo avances genuinos.
 
 !!! abstract "Líderes institucionales — El dilema de la contención"
     Quienes dirigen las empresas más potentes hablan de control.
@@ -108,6 +108,6 @@ La saga nos muestra los dos únicos destinos que esta herramienta habilita, depe
 
 2. **La Expansión (La Oportunidad):** Sin embargo, la función original de la *Protomolécula* era permitir la construcción y expansión, **abriendo nuevas rutas**. La IA actual (nuestra "Protomolécula") funciona igual.
 
-Esta obra es un manual para evitar el destino de *Protogen* mediante la implementación de una *Fundación* de GRC. Argumentamos que la verdadera **Expansión**, la ampliación de la capacidad humana, solo se alcanza cuando el criterio (GRC) y el juicio humano (S2) dirigen la herramienta.
+Esta obra es un marco para evitar el destino de *Protogen* mediante la implementación de una *Fundación* de GRC. Argumentamos que la verdadera **Expansión**, la ampliación de la capacidad humana, solo se alcanza cuando el criterio (GRC) y el juicio humano (S2) dirigen la herramienta.
 
 **La expansión real no vendrá de la máquina, sino del juicio humano que la dirige.**

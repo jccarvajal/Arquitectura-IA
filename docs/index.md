@@ -154,7 +154,7 @@ Base de conocimiento para alinear equipos y profundizar el criterio.
 ---
 
 ## Changelog
-* **v1.4 (Diciembre 2025):** "Hardened Edition". Transformación del marco a un estándar industrial viable. Integra parches críticos de **Seguridad** (Simetría de Acción), **Finanzas** (Veto de Costos) y **Talento** (Teoría del Seguro), junto con una reestructuración de la arquitectura de información (Referencias vs. Herramientas). Se agregan anexos de cumplimiento y estándares globales (ISO/IEC 42001:2023, NIST AI RMF 1.0 y EU AI Act)
+* **v1.4 (Diciembre 2025):** Transformación del marco a un estándar industrial viable. Integra parches críticos de **Seguridad** (Simetría de Acción), **Finanzas** (Veto de Costos) y **Talento** (Teoría del Seguro), junto con una reestructuración de la arquitectura de información (Referencias vs. Herramientas). Se agregan anexos de cumplimiento y estándares globales (ISO/IEC 42001:2023, NIST AI RMF 1.0 y EU AI Act)
 * Ver [Historial Completo](./changelog.md).
 
 ## Sugerencias y Mejoras

@@ -233,7 +233,7 @@ Debes elegir tu modelo según el perfil de riesgo de tu caso de uso:
 
 * **Modelos "Libertarios / Raw"** (Ej. Grok, Mistral, Llama - versiones base)
     * **Filosofía:** Priorizan la obediencia al usuario y la libertad de expresión. Tienen menos barreras de contención.
-    * **El Riesgo:** Pueden generar contenido tóxico, ofensivo o peligroso si no se controlan. Transfieren la responsabilidad ética al usuario.
+    * **El Riesgo:** Pueden generar contenido tóxico, ofensivo o peligroso si no se controlan. Transfieren la responsabilidad ética al integrador.
     * **Uso ideal:** Análisis de datos internos, investigación, escritura creativa sin censura, tareas complejas donde los filtros de seguridad bloquean el razonamiento.
 
 #### La Soberanía Técnica: Protección contra el "Apagón"
@@ -250,6 +250,10 @@ Para infraestructuras críticas o gubernamentales, la única ética viable es la
 
 !!! tip "La Regla de Oro de la Soberanía"
     Si tienes los **pesos** del modelo en tu servidor, nadie puede cambiar su alineación, censurarlo o apagarlo remotamente. Tienes el control total del "cerebro" de tu operación.
+
+> Principio de Alineación Estratégica
+> 
+> En contextos críticos, el riesgo no es que un modelo tenga una alineación ideológica específica, sino que esa alineación pueda cambiar por decisiones externas ajenas a la estrategia, el gobierno y el apetito de riesgo de la organización.
 
 **Matriz de Decisión: Ética y Estrategia**
 
