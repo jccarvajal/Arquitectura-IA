@@ -194,11 +194,15 @@ Las siguientes técnicas se integran en el método para resolver problemas más 
     Self-Consistency **no convierte una respuesta en verdadera**. Solo aumenta la *robustez relativa* frente a errores puntuales, sesgos de muestreo o malas inicializaciones. Si todas las respuestas se basan en una premisa incorrecta, la autoconsistencia solo producirá un error consistente.
 
 * **Ejemplo (modo evaluación interna):**  
+
     > Genera 3 respuestas independientes a la siguiente pregunta: [pregunta].  
+
     > Luego, compara las respuestas, identifica puntos comunes y discrepancias, y propone una versión final consolidada, explicando brevemente el criterio de selección.
 
 * **Ejemplo (modo creativo):**  
+
     > Genera 3 enfoques distintos para este problema: [problema].  
+
     > Evalúa fortalezas y debilidades de cada uno y selecciona el más adecuado según este criterio: [criterio].
 
 * **Costo y trade-off operativo:**  
@@ -288,7 +292,9 @@ Las siguientes técnicas se integran en el método para resolver problemas más 
     Esto les permite **reconocer patrones de prompts eficaces** y proponer estructuras más claras de las que un humano suele formular de forma intuitiva.
 
 * **Ejemplo básico:**  
+
     > Necesito un prompt para obtener un resumen técnico de un informe financiero, dirigido a un directorio, con foco en riesgos y decisiones.  
+
     > Diseña un prompt óptimo que incluya rol, formato, restricciones y métricas de calidad.
 
 * **Uso avanzado: estandarización organizacional**  
@@ -298,8 +304,11 @@ Las siguientes técnicas se integran en el método para resolver problemas más 
     - **estándares de calidad cognitiva**
 
     Ejemplo:
+
     > Analiza este prompt utilizado por nuestro equipo: [prompt].  
+
     > Identifica ambigüedades, riesgos de alucinación y mejoras posibles.  
+
     > Propón una versión estandarizada siguiendo el marco CRF-R.
 
 * **Meta-Prompting como herramienta de control de calidad:**  
