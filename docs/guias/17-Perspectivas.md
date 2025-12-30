@@ -20,7 +20,7 @@ El título de esta colección es "Arquitectura de Inteligencia Artificial". Pero
 
 La paradoja es que la maestría no reside en conocer las herramientas actuales, como **RAG** (el sistema para recuperar conocimiento externo) o los **Agentes ReAct** (el motor de razonamiento y acción). Esas son solo las primeras herramientas que aprendimos a usar. 
 
-La verdadera maestría, el objetivo de esta obra, fue desarrollar un marco de pensamiento y un criterio duradero.
+La verdadera maestría, el objetivo de esta obra, fue desarrollar un marco de pensamiento y un criterio duradero: la capacidad humana de evaluar, limitar y asumir responsabilidad por sistemas cognitivos que no comprenden el mundo.
 
 * La **Gobernanza** (Guía 09\) no es solo para LLMs; es un marco para gestionar cualquier tecnología impredecible.  
 * El **Diseño Cognitivo** (Guía 06\) no es solo sobre Agentes ReAct; es la disciplina de diseñar procesos de pensamiento autónomos.  

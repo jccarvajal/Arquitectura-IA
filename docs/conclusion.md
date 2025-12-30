@@ -16,6 +16,8 @@ Este trayecto no es decorativo: es la estructura profesional que evita convertir
 
 Gobernar la IA es evitar ese destino.
 
+> Nota: A lo largo de esta obra, llamamos criterio a aquello que atraviesa todos los roles: la capacidad humana de juzgar, limitar y asumir responsabilidad frente a sistemas más rápidos que nosotros.
+
 ---
 
 ## 2. La Inteligencia que Tenemos: Un S1 Ampliado
@@ -48,7 +50,7 @@ La IA actual funciona bajo esa misma lógica:
 Usada sin cuidado, la IA genera *fragilidad* (basura elocuente, errores opacos y decisiones sin responsabilidad).
 Gobernada con rigor, en cambio, habilita la *Expansion* se convierte en una herramienta que fortalece procesos, mejora la calidad decisional y amplía la capacidad humana para diseñar, analizar y ejecutar.
 
-Esta obra es un manual para gobernar esa herramienta, nuestro equivalente contemporáneo de la Protomolécula, con criterio profesional.
+Esta obra es un manual para gobernar esa herramienta, nuestro equivalente contemporáneo de la Protomolécula, con juicio profesional.
 
 ---
 
@@ -57,7 +59,7 @@ Esta obra es un manual para gobernar esa herramienta, nuestro equivalente contem
 Las herramientas cambiarán. Los modelos también.
 Pero esta obra no intenta capturar la tecnología de un momento, sino establecer:
 
-* un **criterio duradero**,
+* un **juicio profesional duradero**,
 * una **estructura conceptual estable**,
 * un **marco de responsabilidad profesional**,
 * y un **modo de pensar**.
