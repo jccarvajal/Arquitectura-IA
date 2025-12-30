@@ -53,11 +53,12 @@ El juicio debe ser medible para ser gobernado. Se proponen dos indicadores clave
 
 ### 5. Rúbrica de Madurez en el Juicio Profesional (RMJP)
 
-| Dimensión | Nivel 1: Atrofia (Riesgo) | Nivel 2: Pasivo | Nivel 3: Activo | Nivel 4: Soberano (Experto) |
+| Dimensión | Nivel 1: Atrofia (Riesgo Alto) | Nivel 2: Pasivo (Cumplimiento) | Nivel 3: Activo (Analítico) | Nivel 4: Soberano (Experto GRC) |
 | :--- | :--- | :--- | :--- | :--- |
-| **Detección** | No detecta errores; asume verdad. | Detecta errores obvios únicamente. | Identifica el 90% de las fallas lógicas. | Ajusta Guardrails tras detectar la falla. |
-| **Uso Sistema 2** | Acepta por ahorro de energía. | Revisa sin cuestionar la lógica. | Compara lógica propia vs la de IA. | Desafía proactivamente buscando falacias. |
-| **Soberanía** | Delegación total: "La IA dijo". | El humano es un sello de goma. | Firma tras triangulación exhaustiva. | Capaz de activar el Kill-Switch de inmediato. |
+| **Detección de Alucinaciones** | No detecta errores; asume que el output es verdad técnica. | Detecta errores obvios, pero pasa por alto inconsistencias sutiles. | Identifica el 90% de las fallas y las traza hasta la fuente (**Pilar 12**). | Detecta la falla y propone ajustes inmediatos en los **Guardrails (Pilar 8)**. |
+| **Uso del Sistema 2** | Acepta la primera respuesta por ahorro de tiempo (Sesgo de automatización). | Revisa el output pero no cuestiona la lógica subyacente de la IA. | Ejecuta la "Sustitución de CoT"; compara su lógica con la de la máquina. | Desafía proactivamente el razonamiento de la IA buscando falacias (**Anexo F**). |
+| **Responsabilidad (Accountability)** | "La IA lo dijo". Delegación total de la responsabilidad. | "Revisado por IA". El humano actúa como un sello de goma. | "Validado por humano". Firma solo tras triangulación exhaustiva. | **Soberanía Total:** Capaz de rechazar el output y activar el **Kill-Switch** si el riesgo supera el beneficio. |
+| **Manejo de Crisis** | Entra en parálisis ante una falla del sistema. | Sigue el manual de incidentes de forma mecánica sin entender el impacto. | Ejecuta el **Playbook (Pilar 14)** y contiene el radio de explosión (**Pilar 15**). | Lidera la recuperación estratégica y ajusta el modelo de gobernanza post-incidente. |
 
 ---
 
