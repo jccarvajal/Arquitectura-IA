@@ -33,7 +33,7 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 **AIMS (Artificial Intelligence Management System)**
 
 * **Definición:** Sistema de Gestión de Inteligencia Artificial. Es el marco organizacional exigido por la norma ISO/IEC 42001 para gestionar procesos, riesgos y oportunidades de la IA de forma sistemática.
-* **Referencia Principal:** Anexo E (Gobernanza Global).
+* **Referencia Principal:** Anexo I (Gobernanza Global).
 
 **Ajuste Fino (Fine-Tuning)**
 
@@ -208,12 +208,12 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 **Divulgación (Disclosure)**
 
 * **Definición:** Un principio legal y técnico para Agentes Autónomos. Requiere que el agente se identifique transparentemente como una IA y revele ante Terceros a quién representa (quién es su "Principal").
-* **Referencia Principal:** Guía 17 (Perspectivas), Anexo F (Bibliografía).
+* **Referencia Principal:** Guía 17 (Perspectivas).
 
 **DORA (Digital Operational Resilience Act)**
 
 * **Definición:** Reglamento de la UE que eleva los estándares de resiliencia operativa digital para el sector financiero, incluyendo la supervisión estricta de terceros proveedores de servicios TIC (incluyendo IA).
-* **Referencia Principal:** Anexo F (Marco Regulatorio EU).
+* **Referencia Principal:** Anexo J (Marco Regulatorio EU).
 
 **Drift (Deriva del Modelo)**
 
@@ -228,7 +228,7 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 **Efecto Bruselas (Brussels Effect)**
 
 * **Definición:** Fenómeno mediante el cual las regulaciones de la Unión Europea (como el EU AI Act) se convierten en el estándar *de facto* para las empresas globales que desean operar en mercados internacionales o garantizar su resiliencia legal.
-* **Referencia Principal:** Anexo F (Marco Regulatorio EU).
+* **Referencia Principal:** Anexo J (Marco Regulatorio EU).
 
 **Entrenamiento (Training)**
 
@@ -268,7 +268,7 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 **EU AI Act**
 
 * **Definición:** Ley de Inteligencia Artificial de la Unión Europea. Es la primera regulación integral del mundo que clasifica los sistemas de IA según su nivel de riesgo para los derechos y la seguridad.
-* **Referencia Principal:** Anexo F (Marco Regulatorio EU).
+* **Referencia Principal:** Anexo J (Marco Regulatorio EU).
 
 **Evaluación de Impacto Algorítmico (EIA)**
 
@@ -398,7 +398,7 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 **ISO/IEC 42001**
 
 * **Definición:** Estándar internacional que especifica los requisitos para establecer, implementar, mantener y mejorar continuamente un Sistema de Gestión de IA (AIMS) en las organizaciones.
-* **Referencia Principal:** Anexo E (Gobernanza Global).
+* **Referencia Principal:** Anexo G (Gobernanza Global).
 
 **Jailbreak (Fuga de Cárcel)**
 
@@ -418,7 +418,7 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 **Ley de Agencia (Agency Law)**
 
 * **Definición:** El marco legal que regula las relaciones donde una persona (Agente) actúa en nombre de otra (Principal). Referencia crítica para la responsabilidad de la IA.
-* **Referencia Principal:** Anexo F (Bibliografía).
+* **Referencia Principal:** Guía 17 (Perspectivas).
 
 **Licencia Social (Social License)**
 
@@ -538,12 +538,12 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 **NIS2 (Network and Information Security Directive)**
 
 * **Definición:** Directiva europea que expande las obligaciones de gestión de riesgos de ciberseguridad y reporte de incidentes a través de sectores críticos y cadenas de suministro.
-* **Referencia Principal:** Anexo F (Marco Regulatorio EU).
+* **Referencia Principal:** Anexo J (Marco Regulatorio EU).
 
 **NIST AI RMF (Risk Management Framework)**
 
 * **Definición:** Marco de gestión de riesgos de IA desarrollado por el Instituto Nacional de Estándares y Tecnología de EE. UU. Se enfoca en cuatro funciones: Gobernar, Mapear, Medir y Gestionar.
-* **Referencia Principal:** Anexo E (Gobernanza Global).
+* **Referencia Principal:** Anexo I (Gobernanza Global).
 
 **Observabilidad Ampliada (Expanded Observability)**
 
@@ -773,7 +773,7 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 **SR 11-7 (Supervisory Guidance on Model Risk Management)**
 
 * **Definición:** Guía del Sistema de la Reserva Federal de EE. UU. que establece estándares para la gobernanza, validación y control de modelos matemáticos y estadísticos a lo largo de su ciclo de vida.
-* **Referencia Principal:** Anexo E (Gobernanza Global).
+* **Referencia Principal:** Anexo I (Gobernanza Global).
 
 **System Card (Ficha de Seguridad)**
 
