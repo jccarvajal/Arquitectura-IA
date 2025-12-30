@@ -12,7 +12,7 @@ Aquí tienes el "resumen ejecutivo" de la obra. Si solo tienes 5 minutos, lee es
 "El LLM es el motor. La maestría consiste en entender la anatomía, el hardware y el ciclo ML (Training-Inference) para definir los límites físicos de su aplicación."
 
 * **Guía 02 (Ingeniería de Prompts):** 
-"El prompt no es una pregunta, es un instrumento de control. La maestría consiste en 'diseñar' una instrucción (CRF-R) que no deje espacio para el error."  
+"El prompt no es una pregunta, es un instrumento de control. La maestría consiste en 'diseñar' una instrucción (CRF-R) que reduzca sistemáticamente el espacio para el error."  
 
 * **Guía 03 (Contexto y Memoria):** 
 "El ‘contexto’ es la memoria de la IA, y es finita. La maestría consiste en no pedirle que recuerde lo que su arquitectura (el Transformer) la obliga a olvidar (Amnesia Estática)."
@@ -37,7 +37,7 @@ Aquí tienes el "resumen ejecutivo" de la obra. Si solo tienes 5 minutos, lee es
 ### Bloque 3: Operación y Gobernanza (Cómo se gestiona)
 
 * **Guía 09 (Gobernanza):** 
-"La 'gobernanza' es el pilar de GRC. Es la 'sala de control' que gestiona el nuevo perímetro de ciberseguridad mediante la arquitectura LOSA."
+"La 'gobernanza' es el pilar operativo de GRC. Es la 'sala de control' que gestiona el nuevo perímetro de ciberseguridad mediante la arquitectura LOSA."
 
 * **Guía 10 (Evaluación y QA):** 
 "Si no puedes medirlo, no puedes gobernarlo. La maestría consiste en mover la calidad de una 'sensación' subjetiva a una 'métrica' objetiva (Golden Set Vivo)."  
@@ -60,7 +60,7 @@ Aquí tienes el "resumen ejecutivo" de la obra. Si solo tienes 5 minutos, lee es
 "La confianza es el pilar. La maestría consiste en entender que la 'ética' es compliance: saber dónde están las Líneas Rojas (Decisiones Irreversibles) y cómo aplicar la Licencia Social."
 
 * **Guía 16 (Aprender a Pensar con IA):** 
-"La IA es un Sistema 1 (táctico); la 'basura cognitiva entra, basura elocuente sale'. La maestría consiste en que el humano se convierta en un 'co-piloto' cuyo valor es el criterio (Pensamiento Algorítmico)."
+"La IA es un Sistema 1 (táctico); la 'basura cognitiva entra, basura elocuente sale'. La maestría consiste en que el humano se convierta en un 'co-piloto' cuyo valor no es producir, sino auditar y decidir (criterio, pensamiento algorítmico).”
 
 ### Bloque 5: La Expansión (Cómo nos proyectamos)
 
