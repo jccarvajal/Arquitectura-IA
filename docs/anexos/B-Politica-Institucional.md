@@ -85,6 +85,7 @@ Todo uso de IA se regirá por los siguientes principios:
 * **Antifragilidad y Gestión del Riesgo:**
   La IA no debe introducir fragilidad sistémica.
   Se evaluarán riesgos de errores catastróficos, acumulativos o de difícil detección.
+  Esto incluye mecanismos de detección temprana de fallas, retroalimentación y revisión periódica de impactos.
 
 * **Trazabilidad y Auditabilidad:**
   Todos los procesos que incluyan IA deben permitir reconstruir decisiones, verificar fuentes y auditar resultados.
@@ -131,7 +132,7 @@ Para asegurar la gobernanza efectiva y la implementación de esta política, se 
   Responsable del ciclo de vida del sistema de IA, documentación, trazabilidad y cumplimiento de esta política.
 
 * **Monitor de Cumplimiento:**
-  Audita el cumplimiento de la política, verifica que los sistemas estén registrados y que existan evidencias de supervisión.
+  Audita el cumplimiento de la política, verifica que los sistemas estén registrados y que existan evidencias de supervisión. Este rol puede recaer en la función de auditoría interna, compliance o riesgo, según la estructura organizacional.
 
 * **Usuarios Finales:**
   Actúan como validadores y responsables de revisar, corregir y reportar resultados generados por IA. Deben reportar incidentes y cumplir esta política.

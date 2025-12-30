@@ -89,7 +89,7 @@ Su propósito es evitar el "solucionismo tecnológico" y asegurar que solo los p
 
 | Criterio de Juicio | Pregunta Crítica de Validación | Referencia |
 | :--- | :--- | :--- |
-| **Explicabilidad** | ¿Podemos explicar la lógica del resultado sin recurrir a la frase "es una caja negra"? ¿Es auditable el razonamiento (CoT)? | Guía 09, 14 |
+| **Explicabilidad** | ¿Podemos explicar la lógica del resultado sin recurrir a la frase "es una caja negra"? ¿Es auditable la lógica del resultado mediante evidencia de razonamiento y trazabilidad? | Guía 09, 14 |
 | **No-Abdicación** | ¿Se ha definido el punto exacto donde el humano debe "firmar" la decisión antes de una acción irreversible? | Guía 15, 16 |
 | **Amnesia Estática** | ¿La arquitectura de memoria (RAG/Memoria Explícita) es suficiente para que el agente no "olvide" el contexto crítico? | Guía 03 |
 | **Skin in the Game** | ¿El responsable (Sponsor) está dispuesto a asumir el pasivo legal y reputacional si el Sistema 1 comete un error grave? | Guía 16, Concl. |
