@@ -95,20 +95,18 @@ Existen tres filosofías de orquestación para desplegar Agentes:
 * **Caso de Uso:** *Agentes Industriales.* Procesos de alto volumen, manejo de datos sensibles (PII) o arquitecturas cognitivas complejas.
 * **Ventaja GRC:** *Soberanía de Datos Total.* Al usar versiones *self-hosted* (alojamiento propio), los datos nunca salen de tu control. Permite inyectar código personalizado para validaciones estrictas (Safety Cases).
 
-> **Nota Técnica: La "Nube" en tu Laptop**
-> Herramientas como **n8n** ofrecen una versión de escritorio (Desktop App). Esto permite al Arquitecto desarrollar y probar flujos complejos con datos confidenciales reales en su propia máquina (Localhost), sin riesgo de fuga, antes de desplegarlos en el servidor de producción seguro.
+!!! info "Nota Técnica: La 'Nube' en tu Laptop"
+    Herramientas como **n8n** ofrecen una versión de escritorio (Desktop App). Esto permite al Arquitecto desarrollar y probar flujos complejos con datos confidenciales reales en su propia máquina (Localhost), sin riesgo de fuga, antes de desplegarlos en el servidor de producción seguro.
 
-> **Criterio del Arquitecto: Selección del Orquestador**
->
-> * **Integración Nativa (API First):** Si el ecosistema es moderno, priorice **A** para velocidad de salida al mercado (*Time-to-Market*) o **C** para control total y escalabilidad de ingeniería.
-> * **Infraestructura Legacy (UI-Driven):** En entornos con sistemas antiguos (Pantalla verde, SAP Legacy) que requieren interacción con la interfaz de usuario, la automatización robótica (**B - RPA**) es el puente obligatorio de integración.
-> * **Soberanía y Escala:** Para el procesamiento de datos sensibles o volúmenes masivos, la **Ingeniería Soberana (C)** es el estándar de oro para eliminar el riesgo de exfiltración y optimizar la economía unitaria del sistema.
+!!! abstract "Criterio del Arquitecto: Selección del Orquestador"
+    * **Integración Nativa (API First):** Si el ecosistema es moderno, priorice **A** para velocidad de salida al mercado (*Time-to-Market*) o **C** para control total y escalabilidad de ingeniería.
+    * **Infraestructura Legacy (UI-Driven):** En entornos con sistemas antiguos (Pantalla verde, SAP Legacy) que requieren interacción con la interfaz de usuario, la automatización robótica (**B - RPA**) es el puente obligatorio de integración.
+    * **Soberanía y Escala:** Para el procesamiento de datos sensibles o volúmenes masivos, la **Ingeniería Soberana (C)** es el estándar de oro para eliminar el riesgo de exfiltración y optimizar la economía unitaria del sistema.
 
-> **Criterio del Arquitecto: Residencia y Jurisdicción Legal**
->
-> La decisión de orquestar en la nube (SaaS) o en servidores propios (Self-hosted) trasciende lo técnico; es un imperativo de **Cumplimiento y Residencia de Datos (GRC)**. 
->
-> Bajo marcos de alta exigencia como **GDPR**, **DORA** o el **EU AI Act**, la ubicación física del procesamiento define la validez legal del sistema completo. La orquestación soberana garantiza que la "frontera de datos" coincida con la "frontera legal", blindando la estrategia de portafolio y asegurando la continuidad del negocio ante cambios regulatorios o geopolíticos.
+!!! warning "Criterio del Arquitecto: Residencia y Jurisdicción Legal"
+    La decisión de orquestar en la nube (SaaS) o en servidores propios (Self-hosted) trasciende lo técnico; es un imperativo de **Cumplimiento y Residencia de Datos (GRC)**. 
+    
+    Bajo marcos de alta exigencia como **GDPR**, **DORA** o el **EU AI Act**, la ubicación física del procesamiento define la validez legal del sistema completo. La orquestación soberana garantiza que la "frontera de datos" coincida con la "frontera legal", blindando la estrategia de portafolio y asegurando la continuidad del negocio ante cambios regulatorios o geopolíticos.
 
 ---
 

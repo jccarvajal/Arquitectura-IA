@@ -70,12 +70,12 @@ Es esta capacidad de "ver" y "conectar" el contexto completo de un texto lo que 
 
 Sin embargo, esta arquitectura tiene dos implicaciones estratégicas que impactan directamente en el "Triángulo de Adquisición" (Rendimiento, Control, Costo):
 
-1. **Costo de Escalado (Costo):** El mecanismo de auto-atención es computacionalmente intensivo y representa el principal límite económico para la operación a gran escala.
+* **Costo de Escalado (Costo):** El mecanismo de auto-atención es computacionalmente intensivo y representa el principal límite económico para la operación a gran escala.
 
 !!! info "Recapitulando: La Tiranía del Costo Cuadrático"
     En la arquitectura Transformer, el costo y uso de memoria no crecen de forma lineal, sino **cuadrática (O(n²))** respecto a la longitud del contexto. Esto significa que duplicar la longitud de un documento no duplica el costo, sino que lo **cuadruplica** (o más). Procesar documentos legales masivos en una sola ventana puede destruir el margen operativo si no se gestiona con criterio. (Ver Guía 03).
 
-2. **Naturaleza Estática (Control):** Los Transformers se entrenan en una "foto" masiva del conocimiento (un corpus de datos) y luego se "congelan". No están diseñados para aprender de forma continua o para integrar nueva información después de su entrenamiento, un desafío que exploramos en la Guía 17: Perspectivas.
+* **Naturaleza Estática (Control):** Los Transformers se entrenan en una "foto" masiva del conocimiento (un corpus de datos) y luego se "congelan". No están diseñados para aprender de forma continua o para integrar nueva información después de su entrenamiento, un desafío que exploramos en la Guía 17: Perspectivas.
 
 !!! abstract "Nota del Arquitecto: El Giro hacia los Agentes (2025)"
     La industria ha validado oficialmente el cambio de paradigma de "Chatbots" a "Agentes". El reporte *101 Real-World Gen AI Use Cases* (Google Cloud, Oct 2025) clasifica el mercado ya no por modelos, sino por **6 Tipos de Agentes**:

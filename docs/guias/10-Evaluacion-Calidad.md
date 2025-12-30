@@ -46,16 +46,19 @@ Para mantener la calidad industrial, debes implementar una tubería (pipeline) q
 * **A. Cosecha (Harvesting):**
 
     ¿De dónde salen las preguntas de prueba? De los **"Casos de Borde"** (Edge Cases) en producción.
+
     * *Mecanismo:* Cada vez que un "Humano-en-el-Bucle" (Guía 15) corrige o rechaza una respuesta del agente, ese incidente se captura automáticamente. "Aquí el agente falló".
 
 * **B. Curaduría (Curation - Sistema 2):**
 
     Ese fallo capturado no entra sucio al set. Pasa a una bandeja de revisión donde un experto humano (Sistema 2) define cuál *debería* haber sido la respuesta correcta.
+
     * *Resultado:* Transformamos un error operativo en un activo de aprendizaje ("Ground Truth").
 
 * **C. Inyección (Regression Testing):**
 
     El nuevo caso curado se agrega al Golden Set. La próxima vez que actualices el modelo, se le evaluará contra este nuevo caso difícil.
+    
     * *Objetivo:* Asegurar que el agente **nunca cometa el mismo error dos veces**. Esto se llama "Prueba de Regresión": garantizar que al arreglar algo nuevo, no rompimos algo viejo.
 
 * **D. Retiro (Decommissioning):**

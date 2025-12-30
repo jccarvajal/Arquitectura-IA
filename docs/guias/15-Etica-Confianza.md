@@ -80,18 +80,20 @@ Este es el **estándar de oro de la gobernanza**.
 * **Metáfora:** El agente es un *Asistente Junior*.  
 * **Flujo:** El agente ejecuta la tarea y **se detiene antes de la acción final**.  
 * **Interacción:**  
+
     > *Agente:* “He preparado el borrador / cálculo / respuesta.”  
     >  
     > *Agente:* “¿Aprueba usted [Enviar / Ejecutar / Modificar]?”  
+
 * **Rol Humano:** Validar, corregir o abortar.  
-* **Cuándo Usar:**  
-    Acciones de **alto riesgo o irreversibles**, por ejemplo:
+* **Cuándo Usar:** Acciones de **alto riesgo o irreversibles**, por ejemplo:
     - Gastar dinero  
     - Comunicarse con clientes o reguladores  
     - Modificar datos productivos  
     - Tomar decisiones legales, financieras o reputacionales  
 
 Este principio no es solo una recomendación ética; es una **práctica de alto impacto en resultados**.  
+
 Los estudios de la industria (2025) muestran que las organizaciones de *alto rendimiento* en IA son significativamente más propensas a contar con **procesos explícitos que definen cuándo la salida del modelo requiere validación humana**.
 
 Este es el modelo de la **inteligencia híbrida efectiva**: la IA realiza el trabajo cognitivo intensivo y el humano conserva el juicio final.
@@ -102,10 +104,8 @@ Este nivel permite escalar, pero **introduce riesgo operativo real**.
 
 * **Metáfora:** El agente es un *Jefe de Turno* autónomo.  
 * **Flujo:** El agente ejecuta tareas de extremo a extremo sin intervención humana directa.  
-* **Interacción:**  
-    El humano **no valida cada acción**, sino que supervisa un **Dashboard de Gobernanza** y actúa solo ante alertas.  
-* **Cuándo Usar:**  
-    Tareas de **riesgo medio y alto volumen**, como:
+* **Interacción:** El humano **no valida cada acción**, sino que supervisa un **Dashboard de Gobernanza** y actúa solo ante alertas.  
+* **Cuándo Usar:** Tareas de **riesgo medio y alto volumen**, como:
     - Clasificación masiva de tickets  
     - Moderación de contenido  
     - Monitoreo de eventos o redes sociales  
@@ -128,9 +128,9 @@ Por esta razón, la industria ha avanzado más rápido en el **Nivel 1** que en 
 Este es el nivel **más avanzado** y el más exigente en liderazgo.
 
 * **Metáfora:** El agente es un *Director de División* (un **Agente de Agentes**).  
-* **Flujo:**  
-    El humano define la **Intención Estratégica**; el agente decide el *cómo*.  
+* **Flujo:** El humano define la **Intención Estratégica**; el agente decide el *cómo*.  
 * **Interacción típica:**  
+
     > *Humano (Estratega):*  
     > “Este trimestre debemos reducir la fuga de clientes en un 5%.  
     > Presupuesto máximo: $1.000.”  
@@ -138,8 +138,8 @@ Este es el nivel **más avanzado** y el más exigente en liderazgo.
     > *Agente Director:*  
     > “Entendido.”  
     > *(Activa agentes de análisis, diseño y ejecución para cumplir la misión)*  
-* **Cuándo Usar:**  
-    Problemas **estratégicos complejos**, donde:
+
+* **Cuándo Usar:** Problemas **estratégicos complejos**, donde:
     - El objetivo importa más que el método  
     - Existen múltiples caminos posibles  
     - Se requiere coordinación de varios agentes especializados  
@@ -325,12 +325,14 @@ Cuando los "Agentes PM" se vuelven parte del equipo, surgen preguntas legales qu
 
 * **La Pregunta:** Un humano usa un "Agente PM" para generar código. ¿De quién es el resultado?
 * **La Política de Gobernanza:**
+
     > "Toda Propiedad Intelectual generada utilizando herramientas de IA corporativas, por empleados de la empresa y durante el horario laboral, se considerará **propiedad exclusiva de la empresa**, indistintamente del nivel de autonomía del agente utilizado."
 
 **Problema 2: De la "Caja Negra" (Auditabilidad)**
 
 * **La Pregunta:** Un agente causa una pérdida financiera. ¿Cómo lo auditamos?
 * **La Política de Gobernanza:**
+
     > "Es requisito mandatorio de cumplimiento que todo Agente autónomo opere conectado a un sistema de **Observabilidad (Logging)** que registre la 'Cadena de Pensamiento' (Input -> Razonamiento -> Tool -> Output). No se autoriza el despliegue de agentes opacos en producción."
 
 ---
