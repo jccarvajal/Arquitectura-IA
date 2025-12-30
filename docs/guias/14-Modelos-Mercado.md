@@ -106,6 +106,8 @@ Este anexo se enfoca en cómo los proveedores "empaquetan" esa arquitectura, con
 
 **B. Modelos Open-Source / Open-Weigh (Ejecución Local) \- "Comprar la Máquina"**
 
+> **Nota Técnica:** Modelos Open-Source / Open-Weights: En este documento usamos ambos términos de forma operativa para referirnos a modelos cuyos pesos pueden ser ejecutados localmente, independientemente de su licencia exacta.
+
 * **Qué es:** Descargas los "pesos" del modelo y lo ejecutas en tu propia infraestructura (on-premise o nube privada). Tienes la máquina, no solo una conexión a ella.
 * **Proyectos:** Llama (Meta), Mistral/Mixtral, Qwen.  
 * **Fortaleza:** *Soberanía y transparencia* de los datos ya que nunca salen de tu control (ideal para entornos regulados). Ofrece máximo control para personalización profunda, incluyendo el *Ajuste Fino* para especializar el "cerebro" sin restricciones externas.
@@ -147,7 +149,7 @@ El panorama 2025-2026 demuestra que la estrategia ganadora no es elegir un motor
 
 ¿Cómo se implementa esto? Con la arquitectura de **Diseño Cognitivo** más avanzada: el **Agente Enrutador**.
 
-El "Agente Enrutador" (que puede ser un "Agente Director") es un "cerebro" metacognitivo que gestiona el portafolio.
+El "Agente Enrutador" (que puede implementarse como un Agente Director, cuando además coordina flujos complejos) es un “cerebro” metacognitivo que gestiona el portafolio.
 
 1. **Llega una Tarea:** "Resume este email de 2 líneas."  
 2. **Agente Enrutador (Razona):** "Esto es una tarea 'simple' y 'corta'. No necesito al caro GPT-4o. Usaré un modelo del Ecosistema B (Open-Source) o una API barata (Haiku)."  
@@ -155,6 +157,8 @@ El "Agente Enrutador" (que puede ser un "Agente Director") es un "cerebro" metac
 4. **Llega otra Tarea:** "Analiza las implicaciones de este contrato sensible de 500 páginas."  
 5. **Agente Enrutador (Razona):** "Esto es 'complejo' y de 'contexto largo'. Además, los datos son 'sensibles'. Necesito 'Control' total."  
 6. **Agente Enrutador (Actúa):** Llama al modelo Open-Source (Ecosistema B) hosteado localmente para garantizar la soberanía de los datos. 
+
+> Nota: ReAct no implica razonamiento humano; es un patrón de diseño que estructura la secuencia Razón → Acción → Observación para reducir errores operativos.
 
 **Beneficio:** Obtienes el máximo Rendimiento cuando lo necesitas y el máximo Control y Costo-eficiencia cuando no. Has optimizado el "Triángulo de Adquisición". 
 
@@ -225,7 +229,7 @@ Para operar en un mercado global, el Arquitecto debe adoptar los estándares con
 
 ### Parte 6: Enfoque Especial: Sector Público y Entornos Regulados
 
-Para instituciones públicas o reguladas (finanzas, salud), el factor **Control** (Soberanía de Datos, Auditoría) debe superar casi siempre al Rendimiento.
+Para instituciones públicas o reguladas (finanzas, salud), el factor **Control** (Soberanía de Datos, Auditoría) debe superar casi siempre al Rendimiento. En estos entornos, el riesgo técnico se traduce directamente en riesgo institucional y político.
 
 1. **Priorizar Soberanía de Datos:** Favorecer soluciones locales (Open-Source) para cualquier información crítica o sensible.  
 2. **Exigir Transparencia y Auditoría:** Exigir documentación técnica clara y la capacidad de auditar los procesos y los logs.  

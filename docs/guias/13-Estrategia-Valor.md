@@ -119,7 +119,10 @@ Este es el segundo modelo de negocio habilitado por la IA: **externalizar tu fá
 
 * **El Resultado:**  
     Tu departamento de IA deja de ser un **centro de costos** y se transforma en una **Unidad de Negocio**.  
-    Has entrado al mercado de **Agentes-como-Servicio (AaaS)**, no compitiendo con los proveedores de modelos, sino **compitiendo con consultoras, BPOs y software vertical tradicional**, ofreciendo una alternativa más rápida, más barata y gobernada desde el diseño.
+    Has entrado al mercado de **Agentes-como-Servicio (AaaS)**, no compitiendo en "nichos verticales" con los proveedores de modelos, sino **compitiendo con consultoras, BPOs y software vertical tradicional**, ofreciendo una alternativa más rápida, más barata y gobernada desde el diseño.
+
+> Nichos verticales:
+> Mercados especializados donde el valor no proviene del modelo base, sino de la integración profunda de datos propietarios, reglas regulatorias, procesos reales y supervisión humana, creando agentes que resuelven problemas específicos de una industria o jurisdicción determinada.
 
 ---
 
