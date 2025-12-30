@@ -300,9 +300,8 @@ Para infraestructuras críticas o gubernamentales, la única ética viable es la
 !!! tip "La Regla de Oro de la Soberanía"
     Si tienes los **pesos** del modelo en tu servidor, nadie puede cambiar su alineación, censurarlo o apagarlo remotamente. Tienes el control total del "cerebro" de tu operación.
 
-> Principio de Alineación Estratégica
-> 
-> En contextos críticos, el riesgo no es que un modelo tenga una alineación ideológica específica, sino que esa alineación pueda cambiar por decisiones externas ajenas a la estrategia, el gobierno y el apetito de riesgo de la organización.
+!!! abstract "Principio de Alineación Estratégica"
+    En contextos de alta criticidad, el riesgo no es que un modelo posea una alineación ideológica específica, sino que dicha alineación pueda ser alterada por decisiones externas ajenas a la estrategia, la gobernanza y el apetito de riesgo definido por la organización.
 
 **Matriz de Decisión: Ética y Estrategia**
 
