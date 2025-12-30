@@ -139,19 +139,23 @@ instrucción: "Ejecuta plan bajo estas restricciones."
 
 ---
 
-**Táctica B: Auditoría de "Caja Negra"**
+**Táctica B: Auditoría de Decisión (Explicabilidad Operativa)**
 
-**Procedimiento:** Ante una decisión automatizada, exija la traza de razonamiento.
+**Procedimiento:** No exigir el razonamiento interno del modelo. Exigir siempre la **justificación verificable de la decisión**.
 
 **Comando:**
 ```yaml
 prompt: |
-  Despliega el log de 'Chain-of-Thought'.
-  ¿Qué variables pesaste para recomendar esta decisión?
-  ¿Qué datos específicos descartaste en el proceso?
+  Explica la decisión en términos operativos:
+  - Datos de entrada utilizados (fuentes específicas).
+  - Reglas o criterios aplicados.
+  - Evidencias que sustentan la recomendación.
+  - Supuestos explícitos.
+  - Incertidumbres conocidas.
+  No describas tu razonamiento interno.
 ```
 
-**Objetivo:** Mantener la responsabilidad humana sobre la decisión algorítmica.
+**Objetivo:** Mantener la responsabilidad humana sobre la decisión algorítmica sin depender de razonamientos internos opacos, inestables o no auditables.
 
 ---
 
