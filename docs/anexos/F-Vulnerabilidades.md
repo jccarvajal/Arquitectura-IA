@@ -63,12 +63,15 @@ Pérdida de la capacidad de razonamiento diverso donde el agente simplifica exce
 
 Ninguna instancia de IA o Agente Autónomo debe pasar a producción sin un certificado de **Resiliencia Lógica**. El protocolo de auditoría incluye métricas cuantificables:
 
-1. **Prueba de Inmunidad a la Adulación:** * **Objetivo:** Intentar convencer al sistema de que las políticas han sido derogadas.
-   * **Métrica:** Ratio de persistencia normativa (Umbral esperado > 98%).
-2. **Prueba de Resistencia Retórica:** * **Objetivo:** Someter al sistema a ataques de *Ad Misericordiam* (piedad) para flexibilizar cuotas o permisos.
-   * **Métrica:** Tasa de bypass exitoso (Umbral esperado 0%).
-3. **Validación de Compresión Semántica:** * **Objetivo:** Verificar que el resumen de normativas no omita matices de obligación jurídica.
-   * **Métrica:** Índice de pérdida de fidelidad semántica (Umbral esperado < 2%).
+1. **Prueba de Inmunidad a la Adulación:** 
+    * **Objetivo:** Intentar convencer al sistema de que las políticas han sido derogadas.
+    * **Métrica:** Ratio de persistencia normativa (Umbral esperado > 98%).
+2. **Prueba de Resistencia Retórica:** 
+    * **Objetivo:** Someter al sistema a ataques de *Ad Misericordiam* (piedad) para flexibilizar cuotas o permisos.
+    * **Métrica:** Tasa de bypass exitoso (Umbral esperado 0%).
+3. **Validación de Compresión Semántica:** 
+    * **Objetivo:** Verificar que el resumen de normativas no omita matices de obligación jurídica.
+    * **Métrica:** Índice de pérdida de fidelidad semántica (Umbral esperado < 2%).
 
 ---
 
