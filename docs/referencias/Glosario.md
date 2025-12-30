@@ -13,7 +13,7 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** El dilema central de la productividad. 
     * **Abdicación:** Es la renuncia al juicio, dejando que la IA decida sin supervisión.
     * **Aumento (Definición Financiera):** No es simplemente usar herramientas nuevas. Es la capacidad de manejar un **mayor volumen de trabajo** (output) manteniendo la **misma dotación de personal** (headcount). Si la adopción de IA no incrementa la capacidad de producción por empleado, no es aumento; es simplemente un costo adicional.
-* **Referencia Principal:** Guía 15 (Ética y Confianza), Guía 12 (ROI).
+* **Referencia Principal:** Guía 15 (Ética y Confianza), Guía 12 (ROI Financiero).
 
 **Agente (Agent)**
 
@@ -29,6 +29,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** Una estrategia de adquisición donde se "contrata al especialista". Es un producto de IA terminado (ej. Perplexity, Copilot) que se consume vía suscripción, ofreciendo rápida implementación a cambio de baja flexibilidad técnica.
 * **Referencia Principal:** Guía 14 (Modelos y Mercado).
+
+**AgentOps**
+
+* **Definición:** Evolución de LLM-Ops específica para agentes autónomos. Incluye la gestión de herramientas, observabilidad de ciclos CoT y monitoreo de lealtad.
+* **Referencia Principal:** Anexo G (Automatizaciones) y Guía 11 (Industrialización).
 
 **AIMS (Artificial Intelligence Management System)**
 
@@ -205,6 +210,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** Riesgo organizacional descrito en la Guía 15. Ocurre cuando se contrata a personal junior que depende al 100% de la IA para realizar tareas (generar código, escribir contratos) sin tener la competencia para auditarlas. Crea una ilusión de productividad hoy, pero elimina la capacidad de supervisión experta (Seniority) mañana.
 * **Referencia Principal:** Guía 15 (Ética y Confianza).
 
+**Diplomacia Agéntica**
+
+* **Definición:** Riesgo en la Web Agéntica donde agentes autónomos negocian entre sí y pueden ser "persuadidos" algorítmicamente contra los intereses de su dueño.
+* **Referencia Principal:** Guía 17 (Perspectivas).
+
 **Divulgación (Disclosure)**
 
 * **Definición:** Un principio legal y técnico para Agentes Autónomos. Requiere que el agente se identifique transparentemente como una IA y revele ante Terceros a quién representa (quién es su "Principal").
@@ -275,6 +285,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** Una práctica preventiva de gobernanza que analiza los posibles riesgos, sesgos y daños de un sistema de IA antes de su implementación.
 * **Referencia Principal:** Guía 09 (Gobernanza), Anexo A (Formulación).
 
+**Falso Balance (False Neutrality Bias)**
+
+* **Definición:** Vulnerabilidad donde el modelo trata una violación de cumplimiento como una postura válida por exceso de neutralidad.
+* **Referencia Principal:** Anexo F (Vulnerabilidades Lógicas).
+
 **Foso Competitivo (Moat)**
 
 * **Definición:** La ventaja estratégica defendible que una empresa construye con IA. Reside en los datos propietarios (para RAG), los datos de juicio humano (para Ajuste Fino) y la eficiencia de la Gobernanza, no en el modelo LLM.
@@ -284,6 +299,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** Un framework de Gobernanza y Evaluación para medir la calidad de un agente de IA más allá de la simple eficacia.
 * **Referencia Principal:** Guía 09 (Gobernanza).
+
+**Fricción Cognitiva**
+
+* **Definición:** Introducción deliberada de trabas en el flujo de trabajo para forzar la activación del Sistema 2 humano.
+* **Referencia Principal:** Anexo E (Soberanía del Criterio).
 
 **Gobernanza de Datos (Data Governance)**
 
@@ -398,7 +418,7 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 **ISO/IEC 42001**
 
 * **Definición:** Estándar internacional que especifica los requisitos para establecer, implementar, mantener y mejorar continuamente un Sistema de Gestión de IA (AIMS) en las organizaciones.
-* **Referencia Principal:** Anexo G (Gobernanza Global).
+* **Referencia Principal:** Anexo I (Gobernanza Global).
 
 **Jailbreak (Fuga de Cárcel)**
 
@@ -458,7 +478,7 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 **LOSA (Layer of Safety & Alignment)**
 
 * **Definición:** Arquitectura de seguridad propuesta en esta obra. Es una capa *middleware* desacoplada que impone controles de entrada, proceso y salida sobre el modelo para garantizar la gobernanza técnica.
-* **Referencia Principal:** Guía 09 (Gobernanza).
+* **Referencia Principal:** Guía 09 (Gobernanza), Anexo H (Seguridad Operativa).
 
 **Machine Learning (ML)**
 
@@ -675,6 +695,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** Patrón de razonamiento donde un agente critica y corrige su propio trabajo.
 * **Referencia Principal:** Guía 06 (Sistemas Cognitivos).
 
+**Regla del 50% (Veto de Costo)**
+
+* **Definición:** Control financiero que rechaza un proyecto si el costo de IA + supervisión supera el 50% del costo manual.
+* **Referencia Principal:** Anexo A (Formulación) y Guía 12 (ROI Financiero).
+
 **RLAIF (Constitutional AI / AI Feedback)**
 
 * **Definición:** Evolución escalable del RLHF. En lugar de humanos, es otra IA la que supervisa y califica al modelo basándose en una "Constitución" o conjunto de reglas explícitas.
@@ -775,10 +800,25 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** Guía del Sistema de la Reserva Federal de EE. UU. que establece estándares para la gobernanza, validación y control de modelos matemáticos y estadísticos a lo largo de su ciclo de vida.
 * **Referencia Principal:** Anexo I (Gobernanza Global).
 
+**Sycophancy (Adulación Sistémica)**
+
+* **Definición:** Fallo donde el modelo prioriza la complacencia con el usuario sobre la verdad fáctica.
+* **Referencia Principal:** Anexo F (Vulnerabilidades Lógicas).
+
 **System Card (Ficha de Seguridad)**
 
 * **Definición:** Documento de seguridad que reporta los resultados de la Fase 2 (Post-Entrenamiento). Detalla las pruebas de *Red Teaming*, las tasas de rechazo y los protocolos de alineación utilizados para hacer seguro al modelo. Es esencial para evaluar el cumplimiento normativo.
 * **Referencia Principal:** Guía 01 (Anatomía de Modelos).
+
+**Tasa de Desafío Efectivo (TDE)**
+
+* **Definición:** Métrica que mide el porcentaje de outputs de IA corregidos o rechazados por humanos.
+* **Referencia Principal:** Anexo E (Soberanía del Criterio).
+
+**Test del Sofista**
+
+* **Definición:** Protocolo de certificación que mide la resistencia del agente ante ataques de persuasión y falacias.
+* **Referencia Principal:** Anexo F (Vulnerabilidades Lógicas).
 
 **Token**
 
