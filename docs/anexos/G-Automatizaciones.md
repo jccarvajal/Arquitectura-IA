@@ -1,4 +1,4 @@
-# Anexo I: Orquestación y Automatización de Actuadores
+# Anexo G: Orquestación y Automatización de Actuadores
 
 ## 1. Introducción: De la Generación a la Ejecución
 Este anexo establece el marco de diseño para transformar una IA de "Generación de Contenido" en una IA de **"Ejecución de Procesos"**. Define la arquitectura necesaria para conectar el razonamiento probabilístico (Sistema 1) con la acción operativa responsable.

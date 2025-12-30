@@ -1,4 +1,4 @@
-# Anexo F: Clasificación de Riesgos según el EU AI Act
+# Anexo J: Clasificación de Riesgos según el EU AI Act
 
 ### 1. Introducción: El Enfoque basado en Riesgos
 

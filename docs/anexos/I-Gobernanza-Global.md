@@ -1,4 +1,4 @@
-# Anexo E: Mapeo de Gobernanza Global (ISO/IEC 42001 y NIST AI RMF)
+# Anexo I: Mapeo de Gobernanza Global (ISO/IEC 42001 y NIST AI RMF)
 
 ### 1. Introducción: El Andamiaje de la Certificación
 
