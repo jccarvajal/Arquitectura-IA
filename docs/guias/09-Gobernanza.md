@@ -17,7 +17,9 @@ Un motor potente sin frenos no es un vehículo; es un arma. Al pasar del laborat
 
 La "magia" de la IA se disipa rápido ante una inyección de prompt exitosa o una fuga de datos masiva. Aquí es donde termina la experimentación y comienza la **Gobernanza**.
 
-Ya no se trata solo de qué podemos construir, sino de cómo operamos, mantenemos y protegemos lo que hemos construido. Esta guía establece el marco de **GRC (Gobernanza, Riesgo y Cumplimiento)** no como burocracia, sino como la "Sala de Control" necesaria para la maestría:
+Ya no se trata solo de qué podemos construir, sino de cómo operamos, mantenemos y protegemos lo que hemos construido. La seguridad técnica es solo **una dimensión** de la Gobernanza. Gobernar IA implica también definir políticas de uso, límites económicos, mecanismos de supervisión humana y criterios de calidad de interacción.
+
+Esta guía establece el marco de **GRC (Gobernanza, Riesgo y Cumplimiento)** no como burocracia, sino como la "Sala de Control" necesaria para la maestría:
 
 * **Gobernanza:** Es el "qué" estratégico y la "sala de control" (Parte 1, 3, 4).
 * **Riesgo:** Es el "por qué" y la gestión de amenazas técnicas (Parte 2).
@@ -73,6 +75,9 @@ El mayor error operativo es tratar a la IA como un "mago" (un oráculo infalible
 * **La Regla:** Nunca otorgues permisos de escritura (ej. `enviar_email`, `borrar_archivo`, `transferir_fondos`) sin un mecanismo de seguridad temporal.
 * **El Control:** Implementa siempre un **"Retraso de Pánico"**. El agente "envía" el correo, pero el sistema lo retiene en una bandeja de salida por 10 minutos. Esto da al humano una ventana de tiempo para abortar la acción si detecta un error. Si no hay botón de deshacer, no debe haber permiso de autonomía completa.
 
+> **Principio Rector:**  
+> Toda IA en producción debe ser tratada operativamente como una **herramienta asistida**, nunca como una autoridad autónoma.
+
 ---
 
 ### Parte 2: El Estándar de Seguridad Técnica (OWASP Top 10 LLM: 2025)
@@ -84,7 +89,7 @@ Para que la sinergia entre el Sistema 1 (IA) e Inteligencia Humana sea segura, e
 3. **LLM03: Cadena de Suministro:** Riesgos en componentes de terceros, modelos preentrenados o adaptadores LoRA que pueden comprometer la integridad del sistema.
 4. **LLM04: Envenenamiento de Datos y Modelo:** Manipulación maliciosa de los datos de entrenamiento o del proceso de ajuste fino para introducir sesgos o "agentes durmientes".
 5. **LLM05: Manejo Inadecuado de la Salida:** Validación y saneamiento insuficientes de las respuestas antes de que sean procesadas por otros componentes del sistema.
-6. **LLM06: Agencia Excesiva:** Otorgar demasiada autonomía, funciones o permisos a un agente para realizar acciones de alto impacto sin supervisión humana efectiva.
+6. **LLM06: Agencia Excesiva:** Otorgar demasiada autonomía, funciones o permisos a un agente para realizar acciones de alto impacto sin supervisión humana efectiva (ver principios de diseño de agentes en Guía 05).
 7. **LLM07: Filtración de Prompts de Sistema:** Descubrimiento de instrucciones maestras o secretos internos que no fueron protegidos adecuadamente en el prompt de sistema.
 8. **LLM08: Debilidades de Vector:** Vulnerabilidades en la generación y recuperación de embeddings que pueden permitir el acceso no autorizado o la manipulación de datos en RAG.
 9. **LLM09: Desinformación:** Generación de contenido falso que parece creíble, agravado por la tendencia del usuario a confiar ciegamente en la IA (sobredependencia).
@@ -213,6 +218,8 @@ Si la Gobernanza es el "qué" estratégico, la **LOSA (Layer of Safety & Alignme
 A diferencia de los enfoques ingenuos que esperan que un agente "decida ser seguro", la LOSA impone la seguridad desde fuera. Es un middleware explícito: una envolvente de control que gobierna todas las entradas, decisiones intermedias y salidas del sistema de IA.
 
 Los "guardrails", "circuit breakers" y los puntos de "Validación Humana" no son conceptos abstractos, sino componentes de software que residen dentro de esta arquitectura. A esta capa arquitectónica de seguridad, que la industria suele implementar mediante diversos filtros dispersos, la denominaremos formalmente LOSA para unificar su gestión.
+
+La LOSA es el punto donde las decisiones humanas de Gobernanza se traducen en controles técnicos ejecutables.
 
 ```mermaid
 graph TD
@@ -378,6 +385,8 @@ Investigaciones recientes (Sun, et al., 2025) demuestran que el éxito de un age
 
 * **Definición:** La habilidad del agente para adaptar su estilo de interacción (tono, formato, lenguaje) a las preferencias del usuario.
 * **Métrica de Gobernanza:** Debemos medir la **"tasa de seguimiento de preferencias"**. Un agente que es productivo pero molesto (baja personalización) fallará en la adopción. La Gobernanza debe asegurar que el agente se adapte al usuario, y no al revés.
+
+El framework PPP no reemplaza la Gobernanza GRC; la complementa, asegurando que un sistema seguro y conforme también sea útil, adoptado y sostenible.
 
 ---
 

@@ -62,6 +62,8 @@ Para mantener la calidad industrial, debes implementar una tubería (pipeline) q
 
     Las preguntas sobre productos descontinuados o leyes derogadas deben ser purgadas automáticamente para no penalizar al agente por estar actualizado.
 
+Este pipeline de evaluación se conecta directamente con los pipelines de despliegue y control de cambios descritos en la Guía 11.
+
 **3. La Métrica de Cobertura**
 
 Un Golden Set profesional no solo mide "aciertos", mide **cobertura**.
@@ -159,7 +161,7 @@ La evaluación no es solo algo que haces *antes* de la Industrialización. Es al
 
 El concepto de *"Humano-en-el-Bucle" (Human-in-the-Loop)*, que es un pilar de la gobernanza y la colaboración humana, es simplemente evaluación en tiempo real.
 
-El *"Humano-en-el-Bucle"* no es un usuario pasivo. Es un "Auditor de Calidad" que aplica la Rúbrica de Evaluación a las salidas del agente antes de que estas lleguen al cliente final o activen un proceso crítico. Es la implementación del patrón "Reflexion" (el agente que se autocorrige, Guia 05), pero con un humano en el bucle de auditoría.
+El *"Humano-en-el-Bucle"* no es un usuario pasivo. Es un "Auditor de Calidad" que aplica la Rúbrica de Evaluación a las salidas del agente antes de que estas lleguen al cliente final o activen un proceso crítico. Es conceptualmente análogo al patrón "Reflexion" (Guía 05), pero trasladado fuera del agente: la corrección ya no ocurre solo a nivel cognitivo interno, sino como un control explícito de gobernanza humana.
 
 ---
 

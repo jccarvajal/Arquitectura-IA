@@ -39,23 +39,30 @@ El "Director de Operaciones" gestiona este *trade-off* entre innovar rápido (ag
 
 El "Stack" del Prototipo era gratuito y local. El "Stack" de Producción es empresarial y está en la nube.
 
-**1\. Escalando el Contexto (RAG y Datos)**
+**1. Escalando el Contexto (RAG y Datos)**
 
-* **Prototipo:** Un archivo PDF y una base de datos vectorial gratuita (como ChromaDB) en tu laptop.  
+* **Prototipo:** Un archivo PDF y una base de datos vectorial gratuita (como ChromaDB) en tu laptop.
+
 * **Producción:** Un pipeline de datos automatizado (una *Estrategia de Datos* industrial). Necesitas una arquitectura que:  
     * Ingeste automáticamente nuevos documentos (ej. un "observador" que detecta nuevos archivos y aplica el pipeline "ETL-V" de limpieza y vectorización).  
     * Use una Base de Datos Vectorial empresarial (ej. Pinecone, Weaviate, o las versiones Cloud) diseñada para manejar miles de millones de vectores y consultas de baja latencia. Esto es fundamental para la *Generación Aumentada por Recuperación (RAG)*, el sistema que da conocimiento externo a la IA.
 
-**2\. Escalando los Agentes**
+**2. Escalando los Agentes**
 
 * **Prototipo:** Un script de Python que ejecutas manualmente.  
-* **Producción:** Un "Servicio de Agente" (Microservicio). Cada "Agente PM" (ej. "Agente-Clasificador-de-Emails") se "dockeriza" (empaqueta) y se despliega como su propia API interna.  
-    * **Alta Disponibilidad:** Se ejecutan en plataformas de orquestación (como Kubernetes) para asegurar que, si un agente "muere", el sistema levante uno nuevo automáticamente. Ya no es un script, es un servicio 24/7.
 
-**3\. Escalando los Motores (LLM)**
+* **Producción:** Un **Servicio de Agente** (Microservicio). Cada **Agente PM**, entendido según la definición de la Guía 05 como un **agente autónomo especializado en una tarea delimitada**, se "dockeriza" (empaqueta) y se despliega como su propia API interna (ej. *"Agente-Clasificador-de-Emails"*, *"Agente-Extractor-de-Contratos"*).
+
+    * **Alta Disponibilidad:** Estos servicios se ejecutan en plataformas de orquestación (como Kubernetes) para asegurar que, si un agente "muere", el sistema levante uno nuevo automáticamente. Ya no es un script, es un servicio 24/7.
+
+    * **Nota de Arquitectura:** Cuando un proceso requiere coordinar múltiples tareas o secuencias complejas, esa lógica **no se implementa dentro de un Agente PM**, sino en una **capa superior de orquestación** (workflows, colas, pipelines o servicios de control). El Agente PM mantiene siempre una **responsabilidad única, concreta y acotada**.
+
+**3. Escalando los Motores (LLM)**
 
 * **Prototipo:** Una sola clave de API (ej. de Claude Haiku) pegada en el código.  
-* **Producción:** Se implementa el *"Agente Enrutador"* como un servicio central. Este es un "cerebro" metacognitivo que gestiona un portafolio de modelos de IA.  
+
+* **Producción:** Se implementa el *"Agente Enrutador"* como un servicio central. Este es un componente metacognitivo que gestiona un portafolio de modelos de IA.
+
     * **Gestión de Carga:** El "Enrutador" balancea la carga entre múltiples modelos (Gemini, Claude, GPT) y gestiona las claves de API de forma segura (Vaults), optimizando el "Triángulo de Adquisición" (Costo, Velocidad, Potencia) en tiempo real.
 
 ---
@@ -174,6 +181,8 @@ Bajo este paradigma, los controles dejan de ser "requisitos de última hora" par
 
 Siguiendo la lógica de una **Línea Base de Control (Practical Baseline)** para servicios de misión crítica, el despliegue de un agente queda condicionado al cumplimiento de dimensiones fundamentales de resiliencia. A continuación, se presenta el desglose de los **20 Pilares Atómicos**: controles independientes, verificables y documentados, diseñados para satisfacer las exigencias de los marcos de gobernanza global más rigurosos, como la **ISO/IEC 42001** y el **EU AI Act**.
 
+Estos pilares no son opcionales ni “mejores prácticas”; constituyen la línea mínima para considerar un agente como activo productivo conforme.
+
 1.  **Vigilancia Humana (Oversight):** Supervisión activa del sistema durante su operación.
     * *Ancla:* **ISO 42001 (A.9.3)** / **EU AI Act (Art. 14)**.
     * *Dimensión*: Agencia y Control Humano
@@ -245,6 +254,8 @@ Esta Observabilidad Ampliada no solo monitorea el hardware; **su función primor
 
 Es el panel de control en tiempo real de tu "fábrica" de IA. Es la única forma de saber si tus agentes están operando de forma segura y eficiente.
 
+> Nota: En esta arquitectura, el Pensamiento Visible es el patrón general de control; ReAct es el ciclo operativo que encadena razonamiento y acción; y el Chain-of-Thought es una traza técnica utilizada como telemetría interna para auditoría y control.
+
 **1\. Monitoreo de Costos y Latencia:**
 
 * **El Dashboard:** Gráficos en vivo que muestran:  
@@ -273,6 +284,10 @@ Es el panel de control en tiempo real de tu "fábrica" de IA. Es la única forma
 * **El Problema:** Un modelo puede dar la respuesta correcta por las razones incorrectas (o manipuladas). Mirar solo el *output* es insuficiente.
 * **La Métrica:** **Auditoría de Cadena de Pensamiento (CoT).** El sistema debe registrar y analizar los pasos intermedios de razonamiento del modelo.
 * **Alerta de Seguridad:** Si el modelo intenta ocultar sus pasos de razonamiento o si la "lógica interna" difiere del "resultado final" (engaño estratégico), se debe activar un *Circuit Breaker* inmediato. La observabilidad moderna exige ver *cómo* piensa el agente, no solo *qué* dice.
+
+> Nota Crítica: 
+> El “Chain-of-Thought” (CoT) no representa un razonamiento interno real ni consciente del modelo.
+> Es una traza instrumental generada para reducir errores, auditar decisiones y detectar comportamientos anómalos antes de ejecutar acciones.
 
 !!! money "Política de Retención: Higiene de Costos"
     Guardar el "pensamiento" (CoT Logs) de miles de agentes genera terabytes de texto inútil rápidamente.

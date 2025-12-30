@@ -8,7 +8,9 @@ La Inteligencia Artificial no es magia: es una decisión de inversión. Y toda d
 
 **¿Esto crea más valor del que cuesta?**
 
-Tras una década analizando éxitos, fracasos, regulaciones y *benchmarks* globales, los proyectos de IA caen sistemáticamente en un patrón universal. Ese patrón es el **Mapa de las Cinco Zonas**, un marco para priorizar inversiones, evitar trampas y maximizar el retorno público o privado.
+Tras una década analizando proyectos reales, fracasos documentados, marcos regulatorios y benchmarks globales, los proyectos de IA caen sistemáticamente en un patrón universal. Ese patrón es el **Mapa de las Cinco Zonas**, un marco para priorizar inversiones, evitar trampas y maximizar el retorno público o privado.
+
+Este mapa no es un ranking tecnológico; es una herramienta de **decisión ejecutiva**.
 
 !!! money "El Criterio Financiero: Economía Unitaria (Unit Economics)"
     El error financiero más común es mirar el presupuesto total ("Tenemos $50k para el piloto") en lugar del costo unitario.
@@ -66,6 +68,8 @@ graph LR
     end
 ```
 
+> **Nota:** Por “Decisión Autónoma S2” nos referimos a decisiones de **alto juicio, alto impacto y consecuencias irreversibles**, que no deben ser delegadas a sistemas automáticos.
+
 * 🟩 **Zona Verde (Ganadores):** Proyectos con ROI alto, madurez probada y beneficios financieros o físicos inmediatos.
 * 🟨 **Zona Amarilla (Tácticos):** ROI positivo pero condicional; depende de la calidad de los datos y la disciplina en la ejecución.
 * 🟧 **Zona Naranja (Vanidosos):** Proyectos que no destruyen la empresa, pero queman presupuesto y credibilidad.
@@ -100,7 +104,7 @@ El retorno proviene de la continuidad operativa y la reducción de desperdicios 
     * *Caso:* Cámaras de alta velocidad detectan microdefectos que el ojo humano no percibe.
     * *Ganancia:* Menos material desechado (*scrap*), menos devoluciones.
 * **Optimización de Procesos de Fábrica:**
-    * *Caso:* **Toyota** implementó agentes para acceder a manuales y datos de reparación complejos.
+    * *Caso:* **Toyota** implementó agentes (sistemas automatizados especializados) para acceder a manuales y datos de reparación complejos.
     * *Ganancia:* Reducción reportada de **10,000 horas-hombre** al año, validando la tesis de eficiencia operativa pura.
 
 #### 1.2. Logística y Retail (Capital de Trabajo)
@@ -177,6 +181,7 @@ Tecnología que funciona técnicamente, pero cuyo ROI es condicional. Requieren 
 * **RAG (Chat con tus Datos) y Asesoría Normativa:**
     * *Caso:* Chatbots internos que responden preguntas sobre normativas complejas o requisitos de trámites.
     * *Riesgo:* Si la normativa cambia y el bot no se actualiza, induce a error legal.
+    * *Nota:* RAG actúa como **fuente de evidencia externa**, no como memoria ni como aprendizaje del sistema. El riesgo no es técnico, sino de **gobernanza y actualización del conocimiento**.
 * **Automatización de Backoffice con LLMs:**
     * *Caso:* Extraer datos de facturas o certificados para llenar el ERP.
     * *Condición:* Requiere alta volumetría para justificar el desarrollo.
