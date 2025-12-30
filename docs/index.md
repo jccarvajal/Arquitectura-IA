@@ -133,12 +133,20 @@ Metodologías para el blindaje lógico y la protección del criterio humano ante
 * [Anexo F: Vulnerabilidades Lógicas](./anexos/F-Vulnerabilidades.md)
   *Catálogo de falacias argumentativas, fallas sintéticas y vectores de manipulación semántica.*
 
+### Integración y Operación
+Marcos operativos para conectar la inteligencia con la acción y garantizar el blindaje técnico del sistema en producción.
+
+* [Anexo G: Orquestación y Automatización](./anexos/G-Automatizaciones.md)
+  *Matriz de selección entre SaaS, RPA e Ingeniería Soberana para agentes.*
+* [Anexo H: Seguridad Operativa (LOSA)](./anexos/H-Seguridad-Operativa.md)
+  *Definición de peajes y controles técnicos para la capa de razonamiento.*
+
 ### Estándares y Cumplimiento
 Marcos internacionales para certificación y resiliencia legal.
 
-* [Anexo G: Gobernanza Global](./anexos/G-Gobernanza-Global.md)
+* [Anexo I: Gobernanza Global](./anexos/I-Gobernanza-Global.md)
   *Mapeo de controles ISO/IEC 42001 y NIST AI RMF para auditoría y certificación.*
-* [Anexo H: Marco Regulatorio EU](./anexos/H-Marco-Regulatorio-EU.md)
+* [Anexo J: Marco Regulatorio EU](./anexos/J-Marco-Regulatorio-EU.md)
   *Guía de clasificación de riesgos y obligaciones legales (Efecto Bruselas).*
 
 ---

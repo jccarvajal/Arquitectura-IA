@@ -96,8 +96,10 @@ nav:
     - D - Plantillas: anexos/D-Plantillas-Recursos.md
     - E - Criterio: anexos/E-Soberania-Criterio.md
     - F - Vulnerabilidades: anexos/F-Vulnerabilidades.md
-    - G - Certificación: anexos/G-Gobernanza-Global.md
-    - H - Regulatorio: anexos/H-Marco-Regulatorio-EU.md
+    - G - Automatizaciones: anexos/G-Automatizaciones.md
+    - H - Seguridad: anexos/H-Seguridad-Operativa.md
+    - I - Certificación: anexos/I-Gobernanza-Global.md
+    - J - Regulatorio: anexos/J-Marco-Regulatorio-EU.md
   - Referencias:
     - Glosario: referencias/Glosario.md
     - Bibliografía: referencias/Bibliografia.md
