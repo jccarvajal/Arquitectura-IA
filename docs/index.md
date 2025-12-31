@@ -1,7 +1,7 @@
 # Arquitectura de Inteligencia Artificial
 ## Guías para Decidir, Diseñar y Gobernar
 
-**Versión 1.4 (Diciembre 2025)**
+**Versión 1.5 (Diciembre 2025)**
 
 **Autor:** [Juan Carlos Carvajal](https://www.jccarvajal.com/)
 
