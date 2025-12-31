@@ -84,7 +84,7 @@ La obra de guías y anexos fue diseñada para los "Arquitectos" y "Directores". 
     * **Guía 14 (Modelos y Mercado):** Modelo Open-Source (ej. Llama 3 8B) para control total de datos ("Comprar la Máquina").  
     * **Guía 07 (Ajuste Fino):** Para entrenar al modelo en la habilidad de "razonar como abogado" y formatear la salida en un JSON perfecto.  
     * **Guía 03 (Contexto y Memoria):** Arquitectura RAG para inyectar el texto del contrato específico en el prompt.  
-    * **Guía 11 (Industrialización de IA):** Para industrializar el proceso y ejecutarlo en un servidor local seguro, guardando el "rastro de pensamiento" (log) de cada decisión para la auditabilidad.  
+    * **Guía 11 (Industrialización de IA):** Para industrializar el proceso y ejecutarlo en un servidor local seguro, guardando el "rastro de pensamiento" (log) de cada decisión para la auditabilidad. “El "rastro de pensamiento" es un log de razonamiento interno usado únicamente para auditoría y trazabilidad. No se expone a clientes ni usuarios externos. No se trata de CoT expuesto, sino de evidencia de decisiones para supervisión humana.” 
     * **Guía 04 (Datos):** Para asegurar que los 5.000 contratos son la versión correcta y están limpios.  
 * **El Blueprint (El Flujo del Agente):** 
     1. **El "Motor":** Se toma el modelo Llama 3 8B y se le aplica **Ajuste Fino** (la técnica para especializar un modelo) con 1.000 ejemplos de (texto\_contrato) \-\> (json\_análisis\_legal). El resultado es el "motor" especializado: llama-3-legal-analyst-v1.  

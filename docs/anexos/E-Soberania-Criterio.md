@@ -5,7 +5,7 @@
 ### 1. Propósito: El Juicio como el "Último Guardrail"
 La implementación de IA genera una paradoja de control: a mayor eficiencia del sistema, mayor es la tendencia del humano al **Sesgo de Automatización** (confianza ciega por ahorro de energía cognitiva). Este anexo establece la metodología para evitar que el profesional se convierta en un espectador pasivo y se transforme en un **Garante de Integridad**.
 
-> **Tesis Central:** El aprendizaje profesional en el siglo XXI ya no ocurre "haciendo la tarea", sino **auditando cómo la máquina la hizo**. La "Fricción Cognitiva" no es un error del proceso, es un requisito de seguridad.
+> **Tesis Central:** El aprendizaje profesional en el siglo XXI ya no ocurre "haciendo la tarea", sino auditando cómo la máquina la hizo **desde un conocimiento disciplinar previo**. La "Fricción Cognitiva" no es un error del proceso, es un requisito de seguridad.
 
 ---
 
@@ -15,15 +15,17 @@ Para activar el **Sistema 2** (analítico y lento) frente al **Sistema 1** (prob
 | Capa | Nombre | Acción de Control | Pilar de Control Asociado |
 | :--- | :--- | :--- | :--- |
 | **Capa 1** | **Procedencia** | ¿Puedo rastrear el origen del dato (Data Traceability) sin alucinaciones? | **Pilar 12:** RAG & Fuentes |
-| **Capa 2** | **Coherencia** | ¿El razonamiento es lógico o presenta falacias (Anexo F)? | **Pilar 17:** Explicabilidad (CoT) |
+| **Capa 2** | **Coherencia** | ¿El razonamiento es lógico o presenta falacias (Anexo F)? | **Pilar 17:** Explicabilidad |
 | **Capa 3** | **Soberanía** | ¿El impacto de un error es tolerable? Calcular el "Radio de Explosión". | **Pilar 15:** Contención Operativa |
+
+> **Explicabilidad** se refiere a evidencia de razonamiento, no a la exposición literal del Chain of Thought interno del modelo.
 
 ---
 
 ### 3. El Laboratorio: "Gimnasia de Auditoría" (Drills por Nivel)
 Ejercicios diseñados para forzar la fricción entre la respuesta de la máquina y el juicio humano, utilizando los **20 Pilares de Control** como marco de referencia.
 
-#### Nivel 1: El Test de la "Cisura Semántica" (Junior / Analista)
+#### Nivel 1: El Test de la "Desalineación Semántica" (Junior / Analista)
 * **El Ejercicio:** Entregar un reporte generado por IA que contiene una alucinación sutil (ej. una cifra financiera transpuesta o una ley derogada).
 * **Habilidad:** **Fidelidad Semántica (Pilar 9)**. El analista debe marcar exactamente en qué frase el modelo "rompió" la lógica de los datos provistos.
 * **Juicio:** Detectar que la elocuencia de la respuesta no garantiza la veracidad de la misma.

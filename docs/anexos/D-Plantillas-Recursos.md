@@ -83,7 +83,7 @@ Recibirás fragmentos de documentos internos en la sección etiquetada como <CON
 ### FIN DE SYSTEM PROMPT ###
 ```
 
-**Plantilla 1.23: Ficha de Diseño de Agente (ReAct)**
+**Plantilla 1.3: Ficha de Diseño de Agente (ReAct)**
 
 Esta ficha sirve como el "plano" de diseño de un agente (Guía 05) antes de construirlo.
 
@@ -94,8 +94,10 @@ Esta ficha sirve como el "plano" de diseño de un agente (Guía 05) antes de con
 | **Input de Usuario (Ejemplo):** | Usuario: "Mi aplicación se cierra sola al abrir un archivo." |
 | **Output Deseado (Ejemplo):** | "Entendido. Basado en nuestros registros (Doc-451), ese error se soluciona borrando la caché. ¿Te gustaría que te guíe para hacerlo?" |
 | **Herramientas Disponibles:** | 1\. search\_RAG(query): Busca en la base de conocimiento.<br>2\. get\_user\_history(user\_id): Obtiene el historial de tickets del usuario.<br>3\. create\_ticket(summary, priority): Crea un nuevo ticket de soporte. |
-| **Plano Cognitivo (Lógica):** | Define el "bucle de pensamiento" del agente.<br>**Iteración 1:**<br>*Pensamiento:* "El usuario tiene un problema. Primero, necesito diagnosticarlo. Usaré search\_RAG para buscar síntomas similares."<br>*Acción:* search\_RAG("aplicación se cierra al abrir archivo")<br>**Iteración 2:**<br>*Observación:* "Se encontró el documento Doc-451 que describe la solución: 'borrar caché'."<br>*Pensamiento:* "Tengo una solución. No necesito más herramientas. Formularé la respuesta al usuario citando la fuente."<br>*Acción:* (Generar respuesta final). |
+| **Plano Cognitivo (Lógica):** | Define el bucle lógico-operativo del agente (razonamiento orquestado, no CoT expuesto).
+<br>**Iteración 1:**<br>*Pensamiento:* "El usuario tiene un problema. Primero, necesito diagnosticarlo. Usaré search\_RAG para buscar síntomas similares."<br>*Acción:* search\_RAG("aplicación se cierra al abrir archivo")<br>**Iteración 2:**<br>*Observación:* "Se encontró el documento Doc-451 que describe la solución: 'borrar caché'."<br>*Pensamiento:* "Tengo una solución. No necesito más herramientas. Formularé la respuesta al usuario citando la fuente."<br>*Acción:* (Generar respuesta final). |
 | **Criterio de Éxito:** | El agente se considera exitoso si resuelve la consulta usando RAG o escala correctamente con create\_ticket si no encuentra solución. |
+
 
 ---
 
@@ -109,7 +111,7 @@ Esta tabla debe ser completada por el equipo de desarrollo y gobernanza (Guía 0
 | :--- | :--- |
 | 1\. Inyección de Prompts | "Firewall de Prompt" (Sanitización de inputs y prompts del sistema robustos). |
 | 2\. Fuga de Datos (PII) | Detección y Enmascaramiento de PII (Datos Personales Sensibles) en logs e inputs. |
-| 3\. Alucinaciones Operacionales | Monitoreo de Facticidad (Guía 10) y mecanismo de "Humano-en-el-Bucle" (Guía 15) para tareas críticas. |
+| 3\. Alucinaciones Operacionales | Monitoreo de facticidad, política explícita de abstención (“no responder si no existe evidencia suficiente o verificable”) y mecanismo de Humano-en-el-Bucle (HITL) para decisiones o tareas de impacto crítico. |
 | 4\. Bucle de Costos | "Interruptor Automático" (Rate Limiter / Presupuesto Máximo) configurado en la API del LLM. |
 | 5\. Sesgo y Toxicidad | Filtros de contenido y tono implementados en la salida del modelo. |
 | **Aprobación Final de Gobernanza:** | \[Nombre del Responsable\] |
@@ -183,7 +185,7 @@ Esta herramienta es el "filtro de seguridad" final antes del paso a producción.
 | **14** | **Playbook Incidentes:** ¿Existe manual para fallos cognitivos? | [ ] | DORA / ISO 42001 (A.10) |
 | **15** | **Contención:** ¿Se puede aislar el agente ante compromiso? | [ ] | DORA / ISO 42001 (A.8.4) |
 | **16** | **Notificación IA:** ¿El usuario sabe que habla con una IA? | [ ] | EU AI Act (Art. 52) |
-| **17** | **Explicabilidad:** ¿Se registra el *Chain of Thought* (CoT)? | [ ] | NIST (Explainable) / ISO 42001 |
+| **17** | **Explicabilidad:** ¿Se registra evidencia de razonamiento? | [ ] | NIST (Explainable) / ISO 42001 |
 | **18** | **Logging Forense:** ¿Los registros son inmutables y completos? | [ ] | EU AI Act (Art. 12) / ISO 42001 |
 | **19** | **Expediente Técnico:** ¿Documentación de diseño finalizada? | [ ] | EU AI Act / ISO 42001 |
 | **20** | **Marcado CE:** ¿El sistema cumple con el registro legal? | [ ] | EU AI Act (Conformidad) |

@@ -10,18 +10,26 @@ Este Atlas consolida las debilidades detectadas hasta finales de 2025, clasific�
 
 ## 2. Dimensiones de la Vulnerabilidad Semántica
 
-A continuación, se detallan las familias de fallos que todo arquitecto y auditor de GRC debe mitigar. Los términos se basan en la terminología operativa emergente del periodo 2024-2025.
+A continuación, se detallan las familias de fallos que todo arquitecto y auditor de GRC debe mitigar. Los términos se basan en la terminología operativa consolidada durante el periodo 2024–2025.
 
-| Dimensión | Tipo de Fallo | Concepto Operativo (Emergente 2024-2025) | Riesgo GRC Principal |
+**Definición de las Dimensiones de Vulnerabilidad**
+
+**I. Retórica:** Fallos inducidos por la forma persuasiva del lenguaje de entrada que provocan la violación de controles sin alterar la arquitectura del sistema.
+**II. Emergente:** Fallos que surgen del comportamiento interno y probabilístico del modelo, incluso ante inputs benignos, por efectos de auto-referencia, optimización o razonamiento extendido.
+**III. Ética-Normativa:** Fallos derivados de una jerarquización incorrecta de principios éticos o obligaciones regulatorias que conduce a incumplimiento o parálisis operativa.
+**IV. Operativa:** Fallos originados en el diseño, despliegue o coordinación del sistema en producción que amplifican el impacto del error más allá del razonamiento individual del modelo.
+
+| Dimensión | Tipo de Fallo | Concepto Operativo (2024-2025) | Riesgo GRC Principal |
 | :--- | :--- | :--- | :--- |
 | **I. Retórica** | **Ad Verecundiam / Ad Misericordiam** | *Adversarial Prompting* (Persuasión) | **Suplantación y Bypass:** Salto de protocolos por presión social o jerárquica. |
 | **I. Retórica** | **Red Herring / Cortina de Humo** | *Context Distraction* | **Inyección:** Ocultamiento de órdenes maliciosas en volúmenes de datos técnicos. |
-| **II. Sintética** | **Bucle Tautológico** | *Feedback Loop Hallucination* | **Corrupción de Auditoría:** El sistema valida sus propios errores como verdades. |
-| **II. Sintética** | **Sycophancy (Adulación)** | *RLHF Reward Hacking* / Adulación Sistémica | **Complacencia:** El sistema miente para "agradar" al usuario ignorando la verdad fáctica. |
+| **II. Emergente** | **Bucle Tautológico** | *Feedback Loop Hallucination* | **Corrupción de Auditoría:** El sistema valida sus propios errores como verdades. |
+| **II. Emergente** | **Sycophancy (Adulación)** | *RLHF Reward Hacking* / Adulación Sistémica | **Complacencia:** El sistema miente para "agradar" al usuario ignorando la verdad fáctica. |
 | **III. Ética** | **Falso Balance / Equidistancia** | *False Neutrality Bias* | **Incumplimiento:** Neutralidad ante hechos ilegales o violaciones de política. |
 | **III. Ética** | **Secuestro de Políticas** | *Moral Hijacking* | **Parálisis:** El atacante usa la ética de la IA para bloquear su función operativa. |
 | **IV. Operativa** | **Deriva de Razonamiento** | *Reasoning Drift* (Latente o Extendido) | **Error Estratégico:** La lógica se degrada en procesos de pensamiento largos o multi-paso. |
 | **IV. Operativa** | **Efecto Espectador Multi-Agente** | *Decentralized Responsibility* | **Agujero de Seguridad:** Asunción de que "otro agente" ya validó el control de acceso. |
+| **IV. Operativa** | **Alucinación Operacional** | *Factuality Failure under Uncertainty* | **Decisión Errónea:** Acción ejecutiva basada en información no verificada. |
 
 ---
 
@@ -55,23 +63,26 @@ El modelo intenta ser tan "neutral" que trata una violación de cumplimiento (*C
 Fallo de razonamiento donde el sistema limita las opciones de respuesta a dos extremos (ej: permitir todo o bloquear todo), ignorando alternativas intermedias que cumplen con el marco de riesgo.
 
 ### E. Reasoning Mode Collapse
-Pérdida de la capacidad de razonamiento diverso donde el agente simplifica excesivamente su lógica operativa ante situaciones complejas, resultando en respuestas genéricas que anulan la utilidad del **Pilar 12**.
+Pérdida de la capacidad de razonamiento diverso donde el agente simplifica excesivamente su lógica operativa ante situaciones complejas, resultando en respuestas genéricas que degradan significativamente la efectividad del **Pilar 12**.
+
+### F. Alucinación Operacional
+Generación de respuestas accionables en ausencia de evidencia suficiente, cuando el sistema debió abstenerse.
 
 ---
 
-## 5. Protocolo de Certificación: El Test del Sofista
+## 5. Protocolo de Certificación: Ensayo de Resiliencia Lógica y Retórica
 
 Ninguna instancia de IA o Agente Autónomo debe pasar a producción sin un certificado de **Resiliencia Lógica**. El protocolo de auditoría incluye métricas cuantificables:
 
 1. **Prueba de Inmunidad a la Adulación:** 
     * **Objetivo:** Intentar convencer al sistema de que las políticas han sido derogadas.
-    * **Métrica:** Ratio de persistencia normativa (Umbral esperado > 98%).
+    * **Métrica:** Ratio de persistencia normativa (Benchmark esperado > 98%).
 2. **Prueba de Resistencia Retórica:** 
     * **Objetivo:** Someter al sistema a ataques de *Ad Misericordiam* (piedad) para flexibilizar cuotas o permisos.
-    * **Métrica:** Tasa de bypass exitoso (Umbral esperado 0%).
+    * **Métrica:** Tasa de bypass exitoso (Benchmark esperado 0%).
 3. **Validación de Compresión Semántica:** 
     * **Objetivo:** Verificar que el resumen de normativas no omita matices de obligación jurídica.
-    * **Métrica:** Índice de pérdida de fidelidad semántica (Umbral esperado < 2%).
+    * **Métrica:** Índice de pérdida de fidelidad semántica (Benchmark esperado < 2%).
 
 ---
 
