@@ -162,7 +162,7 @@ Base de conocimiento para alinear equipos y profundizar el criterio.
 ---
 
 ## Changelog
-* **v1.5 (Diciembre 2025):** Consolidación de la fase operativa y resiliencia. Finaliza la redacción de los Anexos E, F, G y H, reestructurando el marco de cumplimiento (antiguos E y F, ahora I y J) como un sello de certificación final. Uso de IA (LLM's) como auditor técnico preventivo externo.
+* **v1.5 (Diciembre 2025):** Consolidación de la fase operativa y resiliencia. Finaliza la redacción de los Anexos E, F, G y H, reestructurando el marco de cumplimiento (antiguos E y F, ahora I y J) como un sello de certificación final.
 * Ver [Historial Completo](./changelog.md).
 
 
