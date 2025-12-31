@@ -419,9 +419,7 @@ El prompt final no es lo que el usuario escribe, es lo que el sistema construye.
     * *Mecanismo:* "De estos 5 fragmentos recuperados, descarta los 3 que no responden la pregunta del usuario".
     * *Resultado:* Esto mitiga el problema de la **"Pérdida en el Medio" (Lost in the Middle)** y protege la integridad de la respuesta.
 
----
-
-### 5. De la Artesanía a la Ingeniería
+#### 5. De la Artesanía a la Ingeniería
 
 Estos conceptos transforman la ingeniería de prompts de una "artesanía de prueba y error" a una **disciplina de optimización de recursos**.
 
