@@ -373,6 +373,13 @@ Aquí conectamos las técnicas avanzadas con el método de 7 pasos para ver dón
 
 ### Parte 4: Optimización e Ingeniería de Recursos
 
+!!! tip "Nota de Arquitectura: El Puente hacia la Industrialización"
+    Esta sección introduce conceptos de eficiencia técnica que se entenderán en toda su profundidad operativa en las próximas guías.
+    
+    * Los conceptos de **Presupuesto y Tokens** son la base de la **Guía 12 (ROI Financiero)**.
+    * El concepto de **Filtrado LOSA** es el cimiento de la **Guía 09 (Gobernanza)**.
+    
+Aquí aprendemos a optimizar el "componente"; más adelante aprenderemos a gestionar la "fábrica" completa.
 Hasta ahora, hemos tratado el prompt como un problema de lingüística. En esta sección final, lo trataremos como un problema de **logística**.
 
 En la operación industrial, un prompt no es solo texto; es **carga útil (payload)** que consume ancho de banda, memoria y dinero. La diferencia entre un aficionado y un Arquitecto es que el primero busca la respuesta perfecta sin importar el costo, mientras que el segundo busca la **densidad de información óptima**.
@@ -406,7 +413,7 @@ Los modelos de frontera (como GPT-4 o Claude 3) no necesitan gramática perfecta
 
 * **Definición:** Refactorización del prompt para eliminar ruido sintáctico sin perder la semántica. Es "adelgazar" el prompt para maximizar la densidad de información.
 * **Aplicación Técnica:**
-    * **Eliminación de *Stop Words*:** En contextos de muy alta carga, eliminar artículos y preposiciones ("el", "la", "para") puede reducir el consumo en un 20% sin afectar la comprensión del modelo.
+    * **Eliminación de *Stop Words*:** En contextos de muy alta carga, eliminar artículos y preposiciones ("el", "la", "para") puede reducir el consumo sin afectar la comprensión del modelo.
     * **Sintaxis Telegráfica:** En lugar de *"Por favor, extrae el campo de fecha del siguiente texto"*, usa *"Extraer: fecha"*.
     * **Formatos Densos:** Prefiere JSON o Markdown sobre texto narrativo para describir datos complejos.
 
