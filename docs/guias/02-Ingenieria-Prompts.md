@@ -371,6 +371,64 @@ Aquí conectamos las técnicas avanzadas con el método de 7 pasos para ver dón
 
 ---
 
+### Parte 4: Optimización e Ingeniería de Recursos
+
+Hasta ahora, hemos tratado el prompt como un problema de lingüística. En esta sección final, lo trataremos como un problema de **logística**.
+
+En la operación industrial, un prompt no es solo texto; es **carga útil (payload)** que consume ancho de banda, memoria y dinero. La diferencia entre un aficionado y un Arquitecto es que el primero busca la respuesta perfecta sin importar el costo, mientras que el segundo busca la **densidad de información óptima**.
+
+A continuación, se definen los cuatro patrones de ingeniería para endurecer tus prompts:
+
+#### 1. Presupuesto de Tokens (Prompt Budgeting)
+
+No permitas que el contexto crezca infinitamente. Al igual que un servidor tiene un límite de RAM, tu arquitectura debe tener un límite duro de tokens de entrada.
+
+* **Definición:** Implementación de un *"Circuit Breaker"* de contexto antes de la inferencia.
+* **Aplicación:** El sistema (Orquestador) debe validar el tamaño del prompt *antes* de la llamada a la API.
+    * *Regla:* Si `input_tokens > umbral_presupuesto` (ej. 4.000 tokens), la ejecución se bloquea o se desvía automáticamente a un proceso de compresión.
+    * *Beneficio:* Evita el "Denial of Wallet" accidental donde un usuario pega un PDF de 500 páginas y quema el presupuesto del mes en una sola consulta.
+
+!!! money "El Impuesto por Token"
+    Recuerda: En la nube, pagas por lo que preguntas, no solo por lo que te responden. Un *System Prompt* redundante de 1.000 tokens enviado 10.000 veces al día es un desperdicio acumulativo de recursos que erosiona el margen del proyecto.
+
+#### 2. Deduplicación de Instrucciones (Instruction De-duplication)
+
+En arquitecturas complejas (RAG + Agentes), es común que las reglas de seguridad se repitan en múltiples capas (System Prompt, Vector Store, User Prompt), creando "ruido cognitivo" y diluyendo la atención del modelo.
+
+* **Definición:** Limpieza arquitectónica de la jerarquía de instrucciones para asegurar que cada regla exista en un solo lugar.
+* **Aplicación:**
+    * *Auditoría:* Revisa tu *prompt template*. ¿Estás repitiendo "Sé conciso" en el rol, en las restricciones y en el mensaje del usuario?
+    * *Acción:* Centraliza las reglas invariables (Seguridad, Tono) en el *System Prompt* y deja el *User Prompt* exclusivamente para la tarea variable. Menos redundancia equivale a menor latencia y mayor precisión.
+
+#### 3. Compresión Semántica y Token Pruning
+
+Los modelos de frontera (como GPT-4 o Claude 3) no necesitan gramática perfecta para entender una instrucción; necesitan palabras clave claras.
+
+* **Definición:** Refactorización del prompt para eliminar ruido sintáctico sin perder la semántica. Es "adelgazar" el prompt para maximizar la densidad de información.
+* **Aplicación Técnica:**
+    * **Eliminación de *Stop Words*:** En contextos de muy alta carga, eliminar artículos y preposiciones ("el", "la", "para") puede reducir el consumo en un 20% sin afectar la comprensión del modelo.
+    * **Sintaxis Telegráfica:** En lugar de *"Por favor, extrae el campo de fecha del siguiente texto"*, usa *"Extraer: fecha"*.
+    * **Formatos Densos:** Prefiere JSON o Markdown sobre texto narrativo para describir datos complejos.
+
+#### 4. Filtrado de Relevancia en Capa LOSA
+
+El prompt final no es lo que el usuario escribe, es lo que el sistema construye. A menudo, el sistema RAG recupera 10 documentos, pero solo 2 son relevantes. Si inyectas los 10, introduces ruido que confunde al modelo (alucinación) y aumenta el costo.
+
+* **Definición:** Pre-procesamiento de señales antes de la inferencia final.
+* **Aplicación:** Antes de que la información recuperada (RAG) llegue al modelo principal, una capa intermedia (LOSA) o un modelo pequeño y barato (SLM) filtra el contenido.
+    * *Mecanismo:* "De estos 5 fragmentos recuperados, descarta los 3 que no responden la pregunta del usuario".
+    * *Resultado:* Esto mitiga el problema de la **"Pérdida en el Medio" (Lost in the Middle)** y protege la integridad de la respuesta.
+
+---
+
+### 5. De la Artesanía a la Ingeniería
+
+Estos conceptos transforman la ingeniería de prompts de una "artesanía de prueba y error" a una **disciplina de optimización de recursos**.
+
+Como Arquitecto, tu trabajo no termina cuando el modelo responde bien. Termina cuando el modelo responde bien, dentro del presupuesto, de forma segura y a la máxima velocidad posible. El prompt es código; optimízalo como tal.
+
+---
+
 ### Conclusión: De Usuario a Arquitecto de Resultados
 
 La ingeniería de prompts te transforma: dejas de ser un usuario que simplemente conversa con una IA, para convertirte en un arquitecto que la dirige con propósito. La maestría en esta disciplina no reside en memorizar trucos, sino en dominar una doble habilidad fundamental:
