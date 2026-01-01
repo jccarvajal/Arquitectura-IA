@@ -24,7 +24,7 @@ La automatización no es solo un reto de ingeniería; es un cambio en la goberna
 
 ### C. Nivel Ingeniería: Protocolos de Seguridad
 * **Validación de Esquema:** El JSON generado por la IA debe pasar por un validador estricto de tipado y sanitización antes de ser ejecutado.
-* **Gatekeepers (Capa LOSA):** Implementación de reglas de negocio duras (ej: límites de descuento) que el código puede rechazar aunque la IA lo ordene.
+* **Gatekeepers (Capa LOSA – Separación Lógica de Autoridad):** Implementación de reglas de negocio duras (ej: límites de descuento) que el código puede rechazar aunque la IA lo ordene.
 
 ---
 
@@ -35,8 +35,6 @@ La automatización no es solo un reto de ingeniería; es un cambio en la goberna
 | **Consulta** | Nulo (Lectura) | Caché de tokens / ACLs | Auditoría periódica |
 | **Modificación** | Medio (Escritura) | Validación de esquema JSON | Registro de logs (Post) |
 | **Transacción** | Alto (Recursos) | **Circuit Breaker** + Firma | Aprobación Humana (Pre) |
-
-
 
 ---
 
