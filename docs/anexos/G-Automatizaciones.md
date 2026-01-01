@@ -2,7 +2,7 @@
 
 ## 1. Introducción: De la Generación a la Ejecución
 
-Este anexo establece el marco de diseño para transformar una IA de "Generación de Contenido" en una IA de **"Ejecución de Procesos"**. Define la arquitectura necesaria para conectar el razonamiento probabilístico (Sistema 1) con la acción operativa operativa determinística y gobernada.
+Este anexo establece el marco de diseño para transformar una IA de "Generación de Contenido" en una IA de **"Ejecución de Procesos"**. Define la arquitectura necesaria para conectar el razonamiento probabilístico (Sistema 1) con la acción operativa determinística y gobernada (Sistema 2).
 
 ---
 
@@ -20,7 +20,7 @@ La automatización no es solo un reto de ingeniería; es un cambio en la goberna
 * **Niveles de Autonomía:**
     * **Interlock:** El humano autoriza *antes* de la acción (HITL).
     * **Shadow:** El humano supervisa *después* de la acción.
-    * **Full Auto:** Solo auditoría de logs (Reservado para procesos de bajo riesgo).
+    * **Full Auto:** Solo auditoría de logs (Permitido únicamente para acciones reversibles, de impacto nulo o controladas por límites físicos inmutables).
 
 ### C. Nivel Ingeniería: Protocolos de Seguridad
 * **Validación de Esquema:** El JSON generado por la IA debe pasar por un validador estricto de tipado y sanitización antes de ser ejecutado.
