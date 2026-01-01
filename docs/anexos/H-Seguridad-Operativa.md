@@ -51,4 +51,4 @@ Esta matriz vincula los peajes técnicos con los pilares de resiliencia del libr
 ---
 
 !!! success "Sinergia con la Guía 09"
-    Mientras la **Guía 09** define el "Apetito de Riesgo" y la política institucional, el **Anexo J** provee la infraestructura de control para ejecutar dicha política. La robustez de la arquitectura LOSA garantiza que, ante un fallo del modelo, la organización conserve la soberanía operativa.
+    Mientras la **Guía 09** define el "Apetito de Riesgo" y la política institucional, el **Anexo H** provee la infraestructura de control para ejecutar dicha política. La robustez de la arquitectura LOSA garantiza que, ante un fallo del modelo, la organización conserve la soberanía operativa.
