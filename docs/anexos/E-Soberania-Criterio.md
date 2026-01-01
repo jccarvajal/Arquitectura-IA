@@ -129,6 +129,4 @@ Requiere evidencia verificable de madurez cognitiva, comprensión del riesgo y a
 
 Como se establece en los fundamentos de esta obra, el éxito de una arquitectura de IA no se mide por cuánto trabajo realiza la máquina, sino por **qué tan capaces son los humanos de desafiarla de forma informada y oportuna**.
 
-> *La verdadera seguridad industrial no reside exclusivamente en el código,  
-> sino en un humano con criterio suficiente y autoridad delegada  
-> para decir: **“Esto no tiene sentido. Abortemos la operación.”***
+> *La verdadera seguridad industrial no reside exclusivamente en el código, sino en un humano con criterio suficiente y autoridad delegada para decir: **“Esto no tiene sentido. Abortemos la operación.”***
