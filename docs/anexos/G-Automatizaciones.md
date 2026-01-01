@@ -54,6 +54,7 @@ Este apartado regula el tratamiento de los estados intermedios del modelo.
 
 ### Registro Técnico de Inferencia
 Para fines de auditoría y control, se almacenan exclusivamente **metadatos técnicos de ejecución**, incluyendo:
+
 * Identificadores de *prompt* y *completion*.
 * Versión exacta del modelo y temperatura.
 * Herramientas invocadas y parámetros de llamada.
@@ -101,6 +102,7 @@ El nivel de control no se basa en la "calidad del razonamiento" (inexistente), s
 ## 7. Restricciones, Exclusiones y Anti-Patrones de Automatización
 
 Esta sección define los **límites formales de la automatización basada en IA generativa (Sistema 1)**. 
+
 No describe capacidades técnicas, sino **condiciones de prohibición**, **corte** y **responsabilidad**, derivadas directamente de la inexistencia estructural de un Sistema 2 en la IA.
 
 ### 7.1 Principio de No Delegación de Juicio
@@ -115,6 +117,7 @@ Queda prohibida la delegación de juicio humano a sistemas de IA generativa en c
 **Fundamento:**  
 
 La IA (Sistema 1) carece de criterio, intención y responsabilidad. No existe Sistema 2 de IA.  
+
 Toda delegación de juicio constituye una falla de gobernanza, no una limitación tecnológica.
 
 ### 7.2 Anti-Patrón: Automatización de Decisiones Irreversibles
