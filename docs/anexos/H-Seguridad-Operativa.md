@@ -18,8 +18,8 @@ Para cumplir con estándares de seguridad consolidados en la práctica reciente 
 
 ### II. Proceso (In-Flight Monitoring): Vigilancia de Ejecución
 * **Circuit Breakers de Recursos (Mitigación LLM04/LLM10):** Interruptores automáticos que detienen el flujo si se detecta un **Bucle de Costos**, consumo excesivo de tokens o una actividad transaccional que exceda los límites presupuestarios definidos.
-* **Monitoreo de Ejecución y Cumplimiento:** Auditoría en tiempo real de señales de coherencia lógica, cumplimiento de políticas y desviaciones operativas, con el objetivo de identificar lógicas hostiles o intentos de "secuestro de políticas" antes de que el agente ejecute una acción irreversible. **Este mecanismo no expone ni registra la Chain-of-Thought del modelo, sino únicamente evidencia técnica suficiente para control y trazabilidad.**
-
+* **Monitoreo de Ejecución y Cumplimiento:** Supervisión continua basada en eventos de señales de coherencia lógica, cumplimiento de políticas y desviaciones operativas, con el objetivo de identificar lógicas hostiles o intentos de "secuestro de políticas" antes de que el agente ejecute una acción irreversible. **Este mecanismo no expone ni registra la Chain-of-Thought del modelo, sino únicamente evidencia técnica suficiente para control y trazabilidad.**
+ 
 ### III. Salida (Output Sanitization): El Filtro de Integridad
 * **Enmascaramiento de PII (Mitigación LLM06):** Identificación y redacción automática de datos personales sensibles (*Personally Identifiable Information*) mediante Regex o modelos NER locales antes de la entrega final.
 * **Validación de Grounding (Mitigación LLM09):** Verificación técnica de que la respuesta contiene citas válidas y está "anclada" a las fuentes documentales proporcionadas, mitigando las **Alucinaciones Operacionales**.
