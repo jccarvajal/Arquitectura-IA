@@ -4,7 +4,7 @@
 
 La arquitectura **LOSA (Layer of Safety & Alignment)** no es una sugerencia para el modelo, sino una infraestructura de seguridad perimetral que envuelve la capa de razonamiento. Opera bajo el principio de **Confianza Cero (Zero Trust)**: se asume que todo input es potencialmente malicioso y que el modelo, por su naturaleza probabilística, es ingenuo ante la manipulación.
 
-Como "Aduana Cognitiva", la LOSA inspecciona, sanitiza y valida cada interacción antes de permitir su ejecución o visualización.
+Como "Aduana Cognitiva", la LOSA inspecciona, sanitiza y valida cada interacción desde una perspectiva de riesgo operacional, antes de permitir su ejecución o visualización.
 
 ---
 
