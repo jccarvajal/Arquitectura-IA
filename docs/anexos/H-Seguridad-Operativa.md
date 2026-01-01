@@ -33,9 +33,9 @@ Esta matriz vincula los peajes técnicos con los pilares de resiliencia del libr
 | Punto de Control | Riesgo Mitigado (OWASP 2025) | Tipo de Control | Pilar de Resiliencia |
 | :--- | :--- | :--- | :--- |
 | **Filtro de Inyección** | **LLM01:** Inyección de Prompt | Preventivo | **Pilar 7:** Robustez Inyección |
-| **Limitador Financiero** | **LLM10:** Consumo Ilimitado | Detectivo | **Pilar 6:** Hard Caps |
+| **Limitador Financiero** | **LLM10:** Consumo Ilimitado | Preventivo + Detectivo | **Pilar 6:** Hard Caps |
 | **Redacción de Datos** | **LLM02:** Fuga de Información | Correctivo | **Pilar 13:** Minimización |
-| **Validación de Fuente** | **LLM09:** Desinformación | Detectivo | **Pilar 12:** Procedencia Datos |
+| **Validación de Fuente** | **LLM09:** Desinformación | Preventivo + Detectivo | **Pilar 12:** Procedencia Datos |
 
 ---
 
