@@ -79,6 +79,7 @@ El juicio debe ser medible para ser gobernado. Se proponen dos indicadores clave
 En arquitecturas asistidas por IA, la autoridad para desafiar un resultado no emana del cargo jerárquico, sino del **nivel de madurez cognitiva demostrado** (ver Sección 5) y del **radio de impacto potencial del error**.
 
 Este modelo define quién puede **desafiar, escalar o bloquear** decisiones automatizadas según su perfil de competencia técnica y exposición al riesgo, no según su posición orgánica.  
+
 **El principio operativo es democratizar la vigilancia (muchos ojos sobre el dato) y centralizar la gestión del riesgo catastrófico.**
 
 ### 6.2 Matriz de Roles y Responsabilidades Cognitivas
