@@ -28,7 +28,7 @@ Esta matriz detalla cómo los componentes cumplen con los requisitos operativos 
 ### 3. Profundización en Marcos Internacionales
 
 !!! tip "De la Teoría al Mapa de Riesgos"
-Mientras que la ISO/IEC 42001 proporciona la **estructura de gestión** (el "qué"), el NIST RMF proporciona el **método de evaluación** (el "cómo"). El uso conjunto de ambos, operativizado mediante la **Línea Base de Control Industrial (20 Pilares)**, permite que su fábrica de IA sea auditable por terceros y resiliente ante regulaciones futuras como el EU AI Act.
+    Mientras que la ISO/IEC 42001 proporciona la **estructura de gestión** (el "qué"), el NIST RMF proporciona el **método de evaluación** (el "cómo"). El uso conjunto de ambos, operativizado mediante la **Línea Base de Control Industrial (20 Pilares)**, permite que su fábrica de IA sea auditable por terceros y resiliente ante regulaciones futuras como el EU AI Act.
 
 #### 3.1. ISO/IEC 42001: El Sistema de Gestión de IA (AIMS)
 
