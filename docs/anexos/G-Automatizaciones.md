@@ -33,7 +33,7 @@ La automatización no es solo un reto de ingeniería; es un cambio en la goberna
 | Categoría de Acción | Impacto | Mecanismo de Control | Supervisión Sugerida |
 | :--- | :--- | :--- | :--- |
 | **Consulta** | Nulo (Lectura) | Caché de tokens / ACLs | Auditoría periódica |
-| **Modificación** | Medio (Escritura) | Validación de esquema JSON | Registro de logs (Post) |
+| **Modificación** | Medio (Escritura) | Validación de esquema JSON | Registro de logs inmutables (Post) |
 | **Transacción** | Alto (Recursos) | **Circuit Breaker** + Firma | Aprobación Humana (Pre) |
 
 ---
