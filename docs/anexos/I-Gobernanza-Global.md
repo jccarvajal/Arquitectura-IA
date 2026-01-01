@@ -20,7 +20,7 @@ Esta matriz detalla cómo los componentes cumplen con los requisitos operativos 
 | **GOVERN** | Cláusula 5 y 6 | **Gobernanza de Ciclo de Vida:** Definición de roles, responsabilidades y política de "Delegar, No Abdicar". | Acta de Constitución del Comité de IA y Política Institucional. |
 | **MAP** | Control A.5 (Impacto) | **Triage de Viabilidad:** Identificación de riesgos sistémicos, contextos de uso y stakeholders pre-diseño. | Informe de Evaluación de Impacto Algorítmico (DPIA). |
 | **MEASURE** | Control A.10 (Monitoreo) | **Laboratorio de QA:** Uso de *Golden Sets* y métricas de la Tríada RAG (*Faithfulness, Relevance*). | Reporte de *Benchmark* del Golden Set y Rúbricas de Evaluación. |
-| **MANAGE** | Control A.8 (Seguridad) | **Arquitectura LOSA y Octágono:** Implementación de *Circuit Breakers*, filtros anti-inyección y capas de seguridad. | Logs de la Capa LOSA y Trazas de Razonamiento (CoT). |
+| **MANAGE** | Control A.8 (Seguridad) | **Arquitectura LOSA y Línea Base de Control (20 Pilares):** Implementación de *Circuit Breakers*, filtros anti-inyección y capas de seguridad LOSA. | Logs de la Capa LOSA y Checklist de los 20 Pilares (Anexo D). |
 | **MANAGE** | Control A.6 (Datos) | **Estrategia de Datos:** Protocolos de procedencia, minimización e integridad de la fuente para RAG. | Inventario de Datos y Hashing de Documentos RAG. |
 
 ---
@@ -32,7 +32,7 @@ Esta matriz detalla cómo los componentes cumplen con los requisitos operativos 
 
 #### 3.1. ISO/IEC 42001: El Sistema de Gestión de IA (AIMS)
 
-La norma **ISO/IEC 42001** establece los requisitos para un **Sistema de Gestión de Inteligencia Artificial (AIMS)**. Su objetivo es que la IA no sea un proyecto aislado, sino un proceso institucionalizado, ético y auditable. La arquitectura de esta obra se alinea con los componentes críticos de la norma:
+Mientras que la ISO/IEC 42001 proporciona la **estructura de gestión** (el "qué"), el NIST RMF proporciona el **método de evaluación** (el "cómo"). El uso conjunto de ambos, operativizado mediante la **Línea Base de Control Industrial (20 Pilares)**, permite que su fábrica de IA sea auditable por terceros y resiliente ante regulaciones futuras como el EU AI Act.
 
 1. **Cláusulas 4 y 6: Contexto de la Organización y Planificación (Evaluación de Impacto)**
     * **Requisito:** La norma exige entender el contexto, las partes interesadas y realizar un proceso formal para identificar riesgos y evaluar el impacto del sistema en individuos y la sociedad.

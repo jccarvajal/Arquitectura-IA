@@ -450,6 +450,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** El control de costos definitivo ("freno de emergencia"). Es una configuración a nivel de proveedor de nube/API que corta el servicio automáticamente si se alcanza un monto monetario (ej. $500 USD), protegiendo a la organización de bucles infinitos de código que el software no detectó.
 * **Referencia Principal:** Guía 11 (Industrialización).
 
+**Línea Base de Control Industrial (Industrial Control Baseline)**
+
+* **Definición:** El estándar operativo definido en la **Guía 11**. Constituye un conjunto de **20 Pilares Atómicos** (controles independientes y verificables como Inmutabilidad, Reversibilidad y Hard Caps) que actúan como requisitos mínimos obligatorios ("Must-Have") para que un agente pase de prototipo a producción. Reemplaza modelos geométricos anteriores por una lista de verificación modular alineada con ISO 42001.
+* **Referencia Principal:** Guía 11 (Industrialización), Anexo I (Gobernanza Global), Anexo D (Plantillas).
+
 **LLM (Large Language Model)**
 
 * **Definición:** Un modelo de IA entrenado con un volumen masivo de texto. Su función es predecir la siguiente palabra más probable.
