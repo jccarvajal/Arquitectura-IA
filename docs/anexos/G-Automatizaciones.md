@@ -175,6 +175,7 @@ La responsabilidad no es delegable.
 - La responsabilidad por los efectos de la automatización es siempre humana
 
 La IA no responde, no explica y no asume consecuencias.  
+
 El Sistema 2 humano es el único sujeto responsable ante la organización y la ley.
 
 ---
