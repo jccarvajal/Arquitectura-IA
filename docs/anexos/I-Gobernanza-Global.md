@@ -46,7 +46,7 @@ Mientras que la ISO/IEC 42001 proporciona la **estructura de gestión** (el "qu�
     * **Implementación:** Se cumple mediante la **Arquitectura LOSA** (Guía 09), que actúa como el control de seguridad perimetral para mitigar ataques de **Inyección de Prompts (LLM01)** y **Divulgación de Información Sensible (LLM02)**.
 5. **Control A.8.4: Resiliencia Operativa y Continuidad**
     * **Requisito:** Asegurar que el sistema sea estable ante fallos de infraestructura o cambios críticos de proveedores.
-    * **Implementación:** Se operativiza a través del **Octágono de Control** (Guía 11), específicamente mediante los puntos de **Inmutabilidad y Reversibilidad** (versionado de prompts) y la **Soberanía y Gestión de Terceros** para evitar el *vendor lock-in*.
+    * **Implementación:** Se operativiza a través del **Línea Base de Control Industrial** (Guía 11), específicamente mediante los puntos de **Inmutabilidad y Reversibilidad** (versionado de prompts) y la **Soberanía y Gestión de Terceros** para evitar el *vendor lock-in*.
 6. **Control A.9.3: Vigilancia Humana y Objetivos de Uso Responsable**
     * **Requisito:** La organización debe identificar objetivos para guiar el uso responsable y demostrar que mantiene el control efectivo sobre el sistema.
     * **Implementación:** El **Axioma de la Responsabilidad Indelegable** (Guía 09) y la implementación de mecanismos de **Anulación Humana** (*Override*) garantizan que el Sistema 2 humano siempre sea el garante legal de las acciones del Sistema 1 algorítmico.
