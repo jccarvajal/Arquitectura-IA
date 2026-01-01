@@ -150,6 +150,9 @@ Un agente solo puede ser autorizado para producción si:
 
 !!! success "Cierre del Anexo F"
     Este anexo, en sus **partes 1 a 6**, identifica y sistematiza las **familias de fallos** inherentes a arquitecturas de IA en producción.  
+
     La **parte 7** establece los **mecanismos de control y evidencia operativa** que permiten demostrar su mitigación efectiva.
+
     Sin **evidencia técnica verificable**, la resiliencia es solo una declaración teórica.  
+
     Con evidencia, la arquitectura se vuelve **gobernable**, **auditable** y **defendible** frente a exigencias regulatorias, operativas y forenses.
