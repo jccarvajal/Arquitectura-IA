@@ -43,7 +43,7 @@ Esta matriz vincula los controles técnicos con los pilares de resiliencia del l
 
 *Este checklist debe ser completado y adjuntado al **Expediente Técnico** de cada agente antes de su paso a producción.*
 
-* [ ] **Independencia de Capa:** ¿La seguridad reside en un *middleware* externo (código duro) y no depende exclusivamente de las instrucciones verbales del *System Prompt*?
+* [ ] **Independencia de Capa:** ¿La seguridad reside en un *middleware* externo (código duro) y no depende exclusivamente de las instrucciones declarativas del *System Prompt*?
 * [ ] **Mecanismo de Rollback:** ¿Existe una función técnica de "Deshacer" o "Compensar" para todas las acciones de escritura ejecutadas por el agente?
 * [ ] **Muestreo Inteligente:** ¿Se ha configurado una auditoría sorpresa (ej. 5% de las transacciones) para combatir la **Complacencia de la Automatización** en los operadores humanos?
 * [ ] **Trazabilidad Forense:** ¿Cada intervención de la capa LOSA (bloqueos, sanitizaciones, alertas) genera un log de **Evidencia de Ejecución** inmutable para el análisis de causa raíz, separado del log conversacional?
