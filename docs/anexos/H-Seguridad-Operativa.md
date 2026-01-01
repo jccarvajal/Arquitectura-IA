@@ -20,6 +20,8 @@ Para cumplir con el estándar **OWASP Top 10 LLM (2025)**, la arquitectura debe 
 * **Circuit Breakers (LLM10):** Interruptores automáticos que detienen el flujo si se detecta un **Bucle de Costos** o una actividad transaccional que exceda los límites presupuestarios definidos.
 * **Monitoreo de Razonamiento (CoT):** Auditoría en tiempo real de la **Cadena de Pensamiento** para identificar lógicas hostiles o el "secuestro de políticas" antes de que el agente realice una acción irreversible.
 
+* **Monitoreo de Razonamiento (Evidencia de Ejecución):** Auditoría en tiempo real de señales de coherencia lógica y cumplimiento de políticas, sin exposición del Chain-of-Thought al usuario final…
+
 ### III. Salida (Output Sanitization): El Filtro de Integridad
 * **Enmascaramiento de PII (LLM02):** Identificación y redacción automática de datos personales sensibles antes de la entrega final.
 * **Validación de Grounding:** Verificación técnica de que la respuesta está "anclada" a las fuentes verificables, mitigando las **Alucinaciones Operacionales**.
