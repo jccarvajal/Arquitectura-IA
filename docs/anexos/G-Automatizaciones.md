@@ -1,71 +1,183 @@
-# Anexo G: Orquestación y Automatización de Actuadores
+# Anexo G: Orquestación, Automatización y Gobernanza de la Inferencia
 
-## 1. Introducción: De la Generación a la Ejecución
+## 1. Introducción: De la Generación a la Ejecución Determinística
 
-Este anexo establece el marco de diseño para transformar una IA de "Generación de Contenido" en una IA de **"Ejecución de Procesos"**. Define la arquitectura necesaria para conectar el razonamiento probabilístico con la acción operativa determinística y gobernada.
+Este anexo establece el marco técnico-normativo para transformar los *outputs* probabilísticos de una IA (Sistema 1) en insumos para acciones operativas determinísticas y auditables. Se define la arquitectura necesaria para conectar la **descomposición interna probabilística** con la ejecución de procesos de negocio, bajo estricta supervisión del Sistema 2 (humano).
+
+El objetivo es asegurar que la automatización no dependa de una "intención" inexistente en el modelo, sino de **reglas de negocio duras** y **evidencia de ejecución** trazable.
 
 ---
 
-## 2. Niveles de Implementación Estratégica
+## 2. Definiciones Normativas
 
-La automatización no es solo un reto de ingeniería; es un cambio en la gobernanza organizacional.
+Para efectos de este marco de arquitectura y en alineación con estándares de gobernanza (ISO/IEC 42001):
 
-### A. Nivel Gerencial: Captura de Valor
-* **Eficiencia Unitaria:** Eliminación del costo del "clic humano" en tareas repetitivas.
-* **Disponibilidad 24/7:** Ejecución instantánea sin dependencia de turnos laborales.
-* **Reducción de Error:** Minimización de fallas por fatiga en el procesamiento de datos.
+### Chain-of-Thought (CoT)
+Mecanismo interno y no expuesto de descomposición probabilística utilizado por modelos generativos para producir una respuesta. **No constituye razonamiento deliberativo**, no es auditable directamente como lógica humana y no debe ser revelado al usuario final como explicación causal. En sistemas gobernados, el CoT puede ser instrumentado indirectamente mediante registros técnicos y evidencias post-hoc sin exponer el proceso interno del modelo.
 
-### B. Nivel Jefatura: Frontera de Control
-* **Capa de Desacoplamiento:** La IA nunca escribe directamente en los sistemas centrales. Requiere un *middleware* que valide la orden.
-* **Niveles de Autonomía:**
-    * **Interlock:** El humano autoriza *antes* de la acción (HITL).
-    * **Shadow:** El humano supervisa *después* de la acción.
-    * **Full Auto:** Solo auditoría de logs (Permitido únicamente para acciones reversibles, de impacto nulo o controladas por límites físicos inmutables).
+### Sistema 1 (IA Generativa)
+Motor de inferencia estadística capaz de procesar patrones y generar sintaxis. Carece de responsabilidad legal, juicio moral o comprensión semántica real.
+
+### Sistema 2 (Humano / Regla Dura)
+Entidad responsable de la validación, el juicio crítico y la autorización final. Puede ser un operador humano o un código determinístico (if/then) diseñado, aprobado y responsablemente mantenido por humanos.
+
+---
+
+## 3. Niveles de Implementación y Control
+
+La automatización se estructura en capas de control para mitigar la variabilidad estocástica del modelo.
+
+### A. Nivel de Negocio: Captura de Valor
+* **Eficiencia Unitaria:** Eliminación de latencia en tareas de transformación de datos.
+* **Disponibilidad 24/7:** Ejecución continua sin dependencia de disponibilidad cognitiva humana.
+* **Consistencia de Formato:** Estandarización de *outputs* mediante esquemas rígidos (JSON/XML), independientemente de la variabilidad del *prompt*.
+
+### B. Nivel de Supervisión: Frontera de Decisión
+* **Capa de Desacoplamiento:** El modelo nunca escribe directamente en sistemas de registro (*System of Record*). Requiere un *middleware* de validación.
+* **Modalidades de Interacción:**
+    * **Interlock (Human-in-the-Loop):** El humano valida la **justificación estructurada post-hoc** antes de la ejecución.
+    * **Shadow (Human-on-the-Loop):** El sistema ejecuta y el humano audita la **evidencia de ejecución** en tiempo diferido.
+    * **Full Auto (Human-out-of-the-Loop):** Permitido exclusivamente para acciones reversibles (lectura) o acotadas por límites físicos inmutables.
 
 ### C. Nivel Ingeniería: Protocolos de Seguridad
-* **Validación de Esquema:** El JSON generado por la IA debe pasar por un validador estricto de tipado y sanitización antes de ser ejecutado.
-* **Gatekeepers (Capa LOSA – Separación Lógica de Autoridad):** Implementación de reglas de negocio duras (ej: límites de descuento) que el código puede rechazar aunque la IA lo ordene.
+* **Validación de Esquema:** Todo *payload* generado debe aprobar una validación sintáctica estricta antes de ser procesado.
+* **Gatekeepers Lógicos (Capa LOSA):** Implementación de reglas de negocio determinísticas que rechazan instrucciones del modelo si violan parámetros de seguridad (ej: *Circuit Breakers* financieros), independientemente de la "confianza" estadística del modelo.
 
 ---
 
-## 3. Matriz de Riesgo y Supervisión Operativa (2025)
+## 4. Control de Gobernanza del Procesamiento Interno
 
-| Categoría de Acción | Impacto | Mecanismo de Control | Supervisión Sugerida |
+Este apartado regula el tratamiento de los estados intermedios del modelo.
+
+### Política de No Exposición
+**El sistema no expone ni persiste Chain-of-Thought legible por humanos.** La visualización del "diálogo interno" del modelo induce a alucinación antropomórfica en el operador y falsas expectativas de causalidad.
+
+### Registro Técnico de Inferencia
+Para fines de auditoría y control, se almacenan exclusivamente **metadatos técnicos de ejecución**, incluyendo:
+* Identificadores de *prompt* y *completion*.
+* Versión exacta del modelo y temperatura.
+* Herramientas invocadas y parámetros de llamada.
+* Políticas de seguridad activadas (guardrails).
+* Validaciones humanas asociadas (si aplica).
+
+La responsabilidad interpretativa sobre estos metadatos recae exclusivamente en el Sistema 2 humano.
+
+Estos registros no constituyen explicaciones causales, sino evidencia operacional para fines de control, auditoría y mejora del sistema. lo
+
+---
+
+## 5. Matriz de Riesgo y Supervisión Operativa
+
+El nivel de control no se basa en la "calidad del razonamiento" (inexistente), sino en el impacto de la acción.
+
+| Categoría de Acción | Impacto | Mecanismo de Control Técnico | Supervisión Sugerida |
 | :--- | :--- | :--- | :--- |
-| **Consulta** | Nulo (Lectura) | Caché de tokens / ACLs | Auditoría periódica |
-| **Modificación** | Medio (Escritura) | Validación de esquema JSON | Registro de logs inmutables (Post) |
-| **Transacción** | Alto (Recursos) | **Circuit Breaker** + Firma | Aprobación Humana (Pre) |
+| **Consulta** | Nulo (Lectura) | Caché / Listas de Control de Acceso (ACL) | Auditoría de logs de acceso |
+| **Transformación** | Bajo (Procesamiento) | Validación de esquema JSON estricto | Revisión por muestreo aleatorio |
+| **Transacción** | Alto (Escritura/Gasto) | **Circuit Breaker** + Firma Digital | Aprobación Humana Previa (Interlock) |
+
+**Nota sobre Monitoreo:** No se monitorea el "pensamiento", se monitorean las desviaciones, inconsistencias y señales de riesgo a partir de *inputs*, *outputs*, estados intermedios no semánticos y eventos de ejecución.
 
 ---
 
-## 4. Ecosistema de Ejecución
+## 6. Checklist de Readiness para Automatización
+*El Arquitecto debe validar estos puntos antes de habilitar actuadores en producción.*
 
-La elección de la plataforma depende de la criticidad y la soberanía requerida:
-
-1.  **Orquestadores Low-Code (Agilidad):** Herramientas como n8n (Soberana) o Zapier. Ideales para conectar aplicaciones SaaS rápidamente.
-2.  **Frameworks Agénticos (Control):** Bibliotecas de código (Python/Node.js) para ciclos de razonamiento complejos donde la IA decide qué herramienta usar.
-3.  **Cloud Nativo (Escala):** AWS Step Functions o Azure Logic Apps para procesos industriales con cumplimiento SOC2 o ISO 27001.
-4.  **RPA Tradicional (Legacy):** Para interactuar con software antiguo que carece de APIs, simulando clics humanos bajo la lógica del modelo.
-
----
-
-## 5. Checklist de Readiness para Automatización
-*El Arquitecto debe validar estos puntos antes de habilitar cualquier actuador en producción.*
-
-### I. Madurez del Proceso
-* [ ] **Documentación:** ¿El proceso manual actual no tiene ambigüedades?
-* [ ] **Determinismo:** ¿Sabemos qué debe ocurrir en el sistema de destino ante cada orden?
+### I. Determinismo del Proceso
+* [ ] **Definición de Salida:** ¿Existe un esquema de datos (Schema) rígido que el modelo deba completar?
+* [ ] **Manejo de Error:** ¿El sistema de destino sabe rechazar una solicitud mal formada sin corromperse?
 
 ### II. Factibilidad Técnica
-* [ ] **Entorno Sandbox:** ¿Existe un ambiente de pruebas donde el actuador pueda fallar sin afectar datos reales?
-* [ ] **Mínimo Privilegio:** ¿La automatización tiene permisos limitados (IAM) solo para lo estrictamente necesario?
+* [ ] **Aislamiento:** ¿Existe un entorno *Sandbox* donde el actuador pueda fallar sin impacto en producción?
+* [ ] **Principio de Mínimo Privilegio:** ¿La credencial de la API tiene permisos limitados exclusivamente a la tarea requerida?
 
-### III. Seguridad y GRC
-* [ ] **Circuit Breakers:** ¿Se han establecido límites físicos de volumen (transacciones/hora) y de valor (montos máximos)?.
-* [ ] **Plan de Reversión (Rollback):** ¿Existe un procedimiento técnico para deshacer la acción si la IA comete un error lógico?.
-* [ ] **Separación de Funciones:** ¿El mismo rol no diseña, autoriza y audita el actuador?
+### III. Seguridad y Trazabilidad (CoT-Safe)
+* [ ] **Evidencia Post-Hoc:** ¿El sistema guarda el *output* final y la justificación estructurada, descartando la traza cognitiva bruta?
+* [ ] **Límites Duros:** ¿Existen *Circuit Breakers* de negocio (monto/volumen) que el modelo no puede sobreescribir?
+* [ ] **Rollback:** ¿Existe un procedimiento técnico para revertir la acción si la inferencia fue estadísticamente correcta pero operativamente errónea?
 
 ---
 
-!!! success "Conclusión del Anexo"
-    La automatización no debe ser una caja negra, sino un sistema de lazo cerrado donde el actuador devuelva siempre un reporte de éxito o falla a la capa de gobernanza. **Si no puedes medirlo, limitarlo y auditarlo, no lo automatices.**
+## 7. Restricciones, Exclusiones y Anti-Patrones de Automatización
+
+Esta sección define los **límites formales de la automatización basada en IA generativa (Sistema 1)**. 
+No describe capacidades técnicas, sino **condiciones de prohibición**, **corte** y **responsabilidad**, derivadas directamente de la inexistencia estructural de un Sistema 2 en la IA.
+
+### 7.1 Principio de No Delegación de Juicio
+
+Queda prohibida la delegación de juicio humano a sistemas de IA generativa en cualquier contexto que requiera:
+
+- Interpretación normativa no codificada
+- Evaluación moral o ética
+- Determinación de responsabilidad
+- Toma de decisiones con consecuencias legales directas
+
+**Fundamento:**  
+
+La IA (Sistema 1) carece de criterio, intención y responsabilidad. No existe Sistema 2 de IA.  
+Toda delegación de juicio constituye una falla de gobernanza, no una limitación tecnológica.
+
+### 7.2 Anti-Patrón: Automatización de Decisiones Irreversibles
+
+No se permite automatización cuando la acción cumple una o más de las siguientes condiciones:
+
+- Es irreversible o no mitigable post-hoc
+- Produce daño no compensable
+- Impacta derechos fundamentales o garantías básicas
+
+**Ejemplos no exhaustivos:**
+
+- Terminación contractual
+- Sanciones o penalizaciones
+- Denegación de servicios esenciales
+- Clasificación con efectos jurídicos o reputacionales
+
+### 7.3 Anti-Patrón: Simulación de Razonamiento
+
+Queda explícitamente prohibido:
+
+- Exponer Chain-of-Thought al usuario final
+- Utilizar narrativas generadas como explicación causal
+- Tratar *rationales* sintéticos como evidencia de razonamiento
+
+**Riesgo asociado:**  
+
+Antropomorfismo operacional, falsa percepción de comprensión y desplazamiento indebido de responsabilidad.
+
+### 7.4 Anti-Patrón: Confianza por Consistencia Estadística
+
+La consistencia o repetibilidad de un *output* **no constituye**:
+
+- Veracidad
+- Corrección normativa
+- Cumplimiento regulatorio
+- Justificación suficiente para la acción
+
+La estabilidad estadística es una propiedad del modelo, no del dominio de verdad.
+
+### 7.5 Condiciones de Corte Operacional (Kill Criteria)
+
+La automatización debe ser deshabilitada inmediatamente si se detecta:
+
+- *Drift* semántico o de datos no explicado
+- Relajación progresiva de la supervisión humana
+- Operación por inercia organizacional (“así siempre ha funcionado”)
+- Uso del sistema fuera del dominio originalmente aprobado
+
+La continuidad operativa sin revisión humana periódica constituye una falla de control.
+
+### 7.6 Responsabilidad Organizacional
+
+La responsabilidad no es delegable.
+
+- La decisión de automatizar es humana
+- La decisión de mantener la automatización es humana
+- La responsabilidad por los efectos de la automatización es siempre humana
+
+La IA no responde, no explica y no asume consecuencias.  
+El Sistema 2 humano es el único sujeto responsable ante la organización y la ley.
+
+---
+
+!!! success "Declaración de Responsabilidad (Cierre del Anexo)"
+    **El Chain-of-Thought pertenece íntegramente al Sistema 1 (IA) y no constituye Sistema 2, criterio ni juicio. Toda validación, interpretación y responsabilidad corresponde al humano en el bucle.**
