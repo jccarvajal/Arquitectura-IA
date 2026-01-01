@@ -149,9 +149,6 @@ Un agente solo puede ser autorizado para producción si:
 ---
 
 !!! success "Cierre del Anexo F"
-
-
-### Cierre del Anexo F
     Este anexo, en sus **partes 1 a 6**, identifica y sistematiza las **familias de fallos** inherentes a arquitecturas de IA en producción.  
     La **parte 7** establece los **mecanismos de control y evidencia operativa** que permiten demostrar su mitigación efectiva.
 
