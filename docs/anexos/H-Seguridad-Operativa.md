@@ -10,7 +10,7 @@ Como "Aduana de Inferencia Operativa", la LOSA inspecciona, sanitiza y valida ca
 
 ## 2. Los Tres "Peajes" de Control Operativo
 
-Para cumplir con estándares de seguridad emergentes (como **OWASP Top 10 for LLM**), la arquitectura debe implementar controles obligatorios en tres estadios del ciclo de vida de la transacción:
+Para cumplir con estándares de seguridad consolidados en la práctica reciente (como **OWASP Top 10 for LLM**), la arquitectura debe implementar controles obligatorios en tres estadios del ciclo de vida de la transacción:
 
 ### I. Entrada (Input Hardening): El Escáner de Seguridad
 * **Sanitización de Prompts (Mitigación LLM01):** Detección activa de patrones de *Jailbreak*, inyección de delimitadores y neutralización de caracteres de control para separar las instrucciones del sistema ("System Prompt") de los datos no confiables del usuario.
