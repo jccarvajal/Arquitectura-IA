@@ -103,7 +103,7 @@ Todo desafío, duda razonable o hallazgo que exceda el ámbito de competencia de
 > El silencio operativo no es neutralidad: es riesgo no gestionado.
 
 ### 6.4 Matriz de Potestad de Bloqueo  
-*(Who Can Block What)*
+*(Quién Puede Bloquear Qué)*
 
 Esta matriz define la autoridad formal para detener o suspender una operación automatizada según la naturaleza del evento detectado.
 
@@ -118,10 +118,10 @@ Esta matriz define la autoridad formal para detener o suspender una operación a
 ### 6.5 Perfil Mínimo para el “Derecho a Desafiar”
 
 El derecho a desafiar un sistema automatizado **no es automático ni implícito**.  
+
 Requiere evidencia verificable de madurez cognitiva, comprensión del riesgo y aceptación explícita de responsabilidad organizacional.
 
-**Desafiar sin criterio es ruido operativo;  
-no desafiar teniendo criterio es negligencia profesional.**
+**Desafiar sin criterio es ruido operativo; no desafiar teniendo criterio es negligencia profesional.**
 
 ---
 
