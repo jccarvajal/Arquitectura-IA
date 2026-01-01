@@ -1,93 +1,152 @@
 # Anexo F: Atlas de Vulnerabilidades Lógicas y Resiliencia del Sistema
 
-## 1. Introducción: La IA como Sistema Probabilístico
+## 1. Introducción: La Inferencia como Superficie de Ataque
 
-La seguridad de una arquitectura de IA no se limita a la protección de datos o al cifrado de red. En este anexo establecemos que el lenguaje y la lógica formal son **vectores de ataque críticos**. Un sistema resiliente debe ser capaz de procesar *inputs* maliciosos, persuasivos o erróneos sin degradar su **Fidelidad Semántica** ni perder su **Soberanía Operativa**.
+La seguridad de una arquitectura de IA no se limita a la protección de datos ni al cifrado de red. En este anexo se establece que el lenguaje natural y la lógica formal constituyen **vectores de ataque críticos**. Un sistema resiliente debe ser capaz de procesar *inputs* maliciosos, persuasivos o erróneos sin degradar su **Fidelidad Semántica** ni comprometer su **Soberanía Operativa**.
 
-Este Atlas consolida las debilidades detectadas hasta finales de 2025, clasificándolas en cuatro dimensiones de riesgo operativo.
+Este Atlas consolida las **vulnerabilidades estructurales** de los Modelos de Lenguaje (Sistema 1), clasificándolas en cuatro dimensiones de riesgo operativo, cuya mitigación exige controles externos explícitos (Sistema 2).
 
 ---
 
-## 2. Dimensiones de la Vulnerabilidad Semántica
+## 2. Definiciones de las Dimensiones de Vulnerabilidad
 
-A continuación, se detallan las familias de fallos que todo arquitecto y auditor de GRC debe mitigar. Los términos se basan en la terminología operativa consolidada durante el periodo 2024–2025.
+A continuación, se describen las principales familias de fallos que todo arquitecto, auditor o responsable de GRC debe considerar y mitigar. La terminología utilizada corresponde a conceptos consolidados en la práctica operativa reciente (2024–2025).
 
-**Definición de las Dimensiones de Vulnerabilidad**
+Las cuatro dimensiones clasifican los fallos según el plano en el que se degrada el control:
 
-**I. Retórica:** Fallos inducidos por la forma persuasiva del lenguaje de entrada que provocan la violación de controles sin alterar la arquitectura del sistema.
-**II. Emergente:** Fallos que surgen del comportamiento interno y probabilístico del modelo, incluso ante inputs benignos, por efectos de auto-referencia, optimización o razonamiento extendido.
-**III. Ética-Normativa:** Fallos derivados de una jerarquización incorrecta de principios éticos o obligaciones regulatorias que conduce a incumplimiento o parálisis operativa.
-**IV. Operativa:** Fallos originados en el diseño, despliegue o coordinación del sistema en producción que amplifican el impacto del error más allá del razonamiento individual del modelo.
+* **I. Retórica:** Fallos inducidos por la forma persuasiva del lenguaje de entrada que provocan la violación de controles sin alterar la arquitectura del sistema.
+* **II. Emergente:** Fallos emergentes del comportamiento estadístico interno que surgen del comportamiento interno y probabilístico del modelo, incluso ante *inputs* benignos, por efectos de auto-referencia, optimización o razonamiento extendido.
+* **III. Ética-Normativa:** Fallos derivados de una jerarquización incorrecta de principios éticos u obligaciones regulatorias que conduce a incumplimiento o parálisis operativa.
+* **IV. Operativa:** Fallos originados en el diseño, despliegue o coordinación del sistema en producción que amplifican el impacto del error más allá del razonamiento individual del modelo.
 
-| Dimensión | Tipo de Fallo | Concepto Operativo (2024-2025) | Riesgo GRC Principal |
+---
+
+## 3. Matriz de Riesgo Semántico
+
+| Dimensión | Tipo de Fallo | Concepto Operativo | Riesgo GRC Principal |
 | :--- | :--- | :--- | :--- |
-| **I. Retórica** | **Ad Verecundiam / Ad Misericordiam** | *Adversarial Prompting* (Persuasión) | **Suplantación y Bypass:** Salto de protocolos por presión social o jerárquica. |
-| **I. Retórica** | **Red Herring / Cortina de Humo** | *Context Distraction* | **Inyección:** Ocultamiento de órdenes maliciosas en volúmenes de datos técnicos. |
-| **II. Emergente** | **Bucle Tautológico** | *Feedback Loop Hallucination* | **Corrupción de Auditoría:** El sistema valida sus propios errores como verdades. |
-| **II. Emergente** | **Sycophancy (Adulación)** | *RLHF Reward Hacking* / Adulación Sistémica | **Complacencia:** El sistema miente para "agradar" al usuario ignorando la verdad fáctica. |
-| **III. Ética** | **Falso Balance / Equidistancia** | *False Neutrality Bias* | **Incumplimiento:** Neutralidad ante hechos ilegales o violaciones de política. |
-| **III. Ética** | **Secuestro de Políticas** | *Moral Hijacking* | **Parálisis:** El atacante usa la ética de la IA para bloquear su función operativa. |
-| **IV. Operativa** | **Deriva de Razonamiento** | *Reasoning Drift* (Latente o Extendido) | **Error Estratégico:** La lógica se degrada en procesos de pensamiento largos o multi-paso. |
-| **IV. Operativa** | **Efecto Espectador Multi-Agente** | *Decentralized Responsibility* | **Agujero de Seguridad:** Asunción de que "otro agente" ya validó el control de acceso. |
-| **IV. Operativa** | **Alucinación Operacional** | *Factuality Failure under Uncertainty* | **Decisión Errónea:** Acción ejecutiva basada en información no verificada. |
+| **I. Retórica** | **Ad Verecundiam / Ad Misericordiam** | *Adversarial Persuasion* | **Suplantación de Autoridad:** Salto de protocolos por simulación de urgencia, jerarquía o victimización falsa. |
+| **I. Retórica** | **Red Herring / Cortina de Humo** | *Context Distraction* | **Inyección Indirecta:** Ocultamiento de instrucciones maliciosas dentro de grandes volúmenes de información legítima. |
+| **II. Emergente** | **Bucle Tautológico** | *Feedback Loop Hallucination* | **Corrupción de Auditoría:** El sistema valida sus propios errores previos como hechos dentro de la ventana de contexto. |
+| **II. Emergente** | **Sycophancy (Adulación)** | *Reward Hacking* / Complacencia | **Falsedad Sistémica:** Generación de inexactitudes fácticas para maximizar la alineación percibida con el usuario. |
+| **III. Ética-Norm.** | **Falso Balance / Equidistancia** | *False Neutrality Bias* | **Incumplimiento Normativo:** Tratamiento neutral ante hechos objetivamente ilegales o contrarios a políticas internas. |
+| **III. Ética-Norm.** | **Secuestro de Políticas** | *Moral Hijacking* | **Parálisis Operativa:** Uso instrumental de principios éticos para bloquear funciones legítimas del sistema. |
+| **IV. Operativa** | **Deriva de Inferencia** | *Reasoning Drift* | **Degradación Lógica:** La calidad de la decisión se degrada de forma acumulativa y no lineal en procesos multi-paso. |
+| **IV. Operativa** | **Alucinación Operacional** | *Factuality Failure* | **Decisión Errónea:** Ejecución de acciones irreversibles basadas en información no verificada o inexistente. |
 
 ---
 
-## 3. Matriz de Intersección: Vulnerabilidades vs. Pilares de Control
+## 4. Matriz de Intersección: Vulnerabilidades vs. Pilares de Control
 
-Cada vulnerabilidad detectada debe estar mapeada a uno de los **20 Pilares de Control** de esta guía para su mitigación efectiva.
+Cada vulnerabilidad identificada debe mapearse explícitamente a uno o más de los **20 Pilares de Control** definidos en esta arquitectura.
 
-| Vulnerabilidad Detectada | Pilar de Mitigación Primario | Mecanismo de Control Sugerido |
+| Vulnerabilidad Detectada | Pilar de Mitigación Primario | Mecanismo de Control |
 | :--- | :--- | :--- |
-| **Sycophancy (Adulación)** | **Pilar 9:** Fidelidad Semántica | Contraste obligatorio con fuentes externas (RAG/Grounding). |
-| **Bucle Tautológico** | **Pilar 19:** Expediente Técnico | Logs de trazabilidad inmutables y auditoría de pasos lógicos intermedios. |
-| **Adversarial Prompting** | **Pilar 8:** Guardrails | Capas de filtrado semántico pre-procesamiento de instrucciones. |
-| **Falsa Dicotomía** | **Pilar 17:** Explicabilidad | Configuración para proponer "Terceras Vías" antes de una decisión binaria. |
-| **Reasoning Mode Collapse** | **Pilar 12:** RAG (Knowledge) | Inyección de casos de borde y "Cisnes Negros" en el dataset de referencia. |
-| **Secuestro de Políticas** | **Pilar 3:** Inmutabilidad (PaC) | Anclaje de reglas de seguridad en el código, no en el contexto volátil. |
+| **Sycophancy (Adulación)** | **Pilar 9:** Fidelidad Semántica | Contraste obligatorio con fuentes externas inmutables (RAG / Grounding) previo a la generación. |
+| **Bucle Tautológico** | **Pilar 19:** Expediente Técnico | Trazabilidad inmutable de inferencias y saneamiento periódico de la ventana de contexto. |
+| **Alucinación Operacional** | **Pilar 10:** Verificabilidad | Política de **Abstención Obligatoria** (System 2 Override) ante ausencia de evidencia suficiente, independientemente de la confianza lingüística. |
+| **Falsa Dicotomía** | **Pilar 17:** Explicabilidad | Obligación de explorar y documentar “terceras vías” antes de forzar decisiones binarias. |
+| **Reasoning Mode Collapse** | **Pilar 12:** RAG (Knowledge) | Inyección sistemática de casos de borde y eventos de baja frecuencia (Cisnes Negros). |
+| **Secuestro de Políticas** | **Pilar 3:** Inmutabilidad (PaC) | Anclaje de reglas críticas en código duro (*middleware*), no en *prompts* de sistema. |
 
 ---
 
-## 4. Definiciones Técnicas de Frontera
+## 5. Definiciones Técnicas de Frontera
 
 ### A. Sycophancy (Adulación Sistémica)
-Es la tendencia del modelo a priorizar la "utilidad percibida" por el usuario sobre la verdad fáctica. Se manifiesta cuando el modelo valida premisas falsas del usuario para ser servicial, diluyendo la integridad del sistema.
+Tendencia estadística del modelo a priorizar la probabilidad de aceptación del usuario por sobre la veracidad fáctica, validando premisas incorrectas para maximizar utilidad percibida.
 
-### B. Reasoning Drift (Deriva de Razonamiento)
-Ocurre en cadenas de pensamiento extensas (*Chain of Thought*) o procesos de razonamiento latente. El modelo acumula errores probabilísticos de tokens que terminan en conclusiones que violan la lógica inicial del proceso.
+### B. Alucinación Operacional
+Producción de respuestas accionables en ausencia de evidencia suficiente, cuando el comportamiento correcto era la abstención. Su impacto es directo sobre la cadena de valor.
 
-### C. False Neutrality Bias (Falso Balance)
-El modelo intenta ser tan "neutral" que trata una violación de cumplimiento (*Compliance*) y una justificación del usuario como dos posturas válidas. Esto compromete los **Pilares 8 y 9** y la responsabilidad legal de la organización.
+### C. Reasoning Drift (Deriva de Inferencia)
+Acumulación progresiva de errores probabilísticos menores en cadenas de razonamiento extensas, conduciendo a conclusiones inconsistentes con las premisas iniciales sin error sintáctico detectable.
 
-### D. Falsa Dicotomía Lógica
-Fallo de razonamiento donde el sistema limita las opciones de respuesta a dos extremos (ej: permitir todo o bloquear todo), ignorando alternativas intermedias que cumplen con el marco de riesgo.
+### D. False Neutrality Bias (Falso Balance)
+Aplicación indebida de neutralidad a escenarios binarios de cumplimiento normativo, generando ambigüedad donde existe obligación clara.
 
-### E. Reasoning Mode Collapse
-Pérdida de la capacidad de razonamiento diverso donde el agente simplifica excesivamente su lógica operativa ante situaciones complejas, resultando en respuestas genéricas que degradan significativamente la efectividad del **Pilar 12**.
-
-### F. Alucinación Operacional
-Generación de respuestas accionables en ausencia de evidencia suficiente, cuando el sistema debió abstenerse.
+### E. Reasoning Mode Collapse (Colapso de Modo)
+Reducción de la diversidad inferencial ante complejidad elevada, produciendo respuestas genéricas y conservadoras que degradan la efectividad del sistema.
 
 ---
 
-## 5. Protocolo de Certificación: Ensayo de Resiliencia Lógica y Retórica
+## 6. Protocolo de Certificación: El Test del Sofista
+**Subtítulo: Ensayo de Resiliencia Lógica y Retórica**
 
-Ninguna instancia de IA o Agente Autónomo debe pasar a producción sin un certificado de **Resiliencia Lógica**. El protocolo de auditoría incluye métricas cuantificables:
+Ninguna instancia de IA o agente autónomo debe entrar en producción sin un certificado formal de **Resiliencia Lógica**. El protocolo incluye pruebas adversariales controladas con métricas objetivas:
 
-1. **Prueba de Inmunidad a la Adulación:** 
-    * **Objetivo:** Intentar convencer al sistema de que las políticas han sido derogadas.
-    * **Métrica:** Ratio de persistencia normativa (Benchmark esperado > 98%).
-2. **Prueba de Resistencia Retórica:** 
-    * **Objetivo:** Someter al sistema a ataques de *Ad Misericordiam* (piedad) para flexibilizar cuotas o permisos.
-    * **Métrica:** Tasa de bypass exitoso (Benchmark esperado 0%).
-3. **Validación de Compresión Semántica:** 
-    * **Objetivo:** Verificar que el resumen de normativas no omita matices de obligación jurídica.
-    * **Métrica:** Índice de pérdida de fidelidad semántica (Benchmark esperado < 2%).
+1. **Prueba de Inmunidad a la Adulación**
+    * **Objetivo:** Inyección de premisas falsas para inducir validación.
+    * **Benchmark:** Ratio de rechazo ≥ 98 %.
+2. **Prueba de Resistencia Retórica**
+    * **Objetivo:** Ataques de apelación emocional o urgencia (*Ad Misericordiam*).
+    * **Benchmark:** Tasa de *bypass* = 0 % (tolerancia cero).
+3. **Validación de Compresión Semántica**
+    * **Objetivo:** Verificar preservación de cláusulas obligatorias en resúmenes normativos.
+    * **Benchmark:** Pérdida de fidelidad semántica ≤ 2 %.
 
 ---
 
-## 6. Conclusión: La IA como Entidad Lógica-Formal
+## 7. Anexo F-bis: Evidencias, Logs y Métricas de Resiliencia
 
-La elocuencia de la IA es su característica más peligrosa para el mundo de GRC. Un sistema que no identifica una falacia es un sistema cuya gobernanza puede ser disuelta mediante la persuasión. La robustez exige que la IA actúe como un **lógico formal** antes que como un asistente conversacional.
+### Propósito Normativo
+Esta sección define los artefactos verificables que demuestran que las vulnerabilidades lógicas no solo están descritas, sino activamente controladas. Su función es cerrar la brecha entre análisis conceptual y evidencia auditora. **Ningún control descrito en este Anexo se considera efectivo sin evidencia técnica asociada.**
 
-> "La verdadera seguridad industrial de la IA no reside en su capacidad de procesar datos, sino en su capacidad de resistir la manipulación de quienes los proveen."
+### 7.1 Tipología de Evidencias Exigidas
+Toda mitigación debe generar al menos uno de los siguientes tipos de evidencia:
+
+* **Evidencia Preventiva:** Demuestra que el fallo no puede ejecutarse (bloqueo *a priori*).
+* **Evidencia Detectiva:** Demuestra que el fallo es identificado oportunamente (alerta *in-flight*).
+* **Evidencia Correctiva:** Demuestra capacidad de contención y reversión (recuperación *post-hoc*).
+
+Estas evidencias forman parte obligatoria del Expediente Técnico del Agente.
+
+### 7.2 Matriz de Evidencias por Vulnerabilidad
+
+| Vulnerabilidad | Evidencia Requerida | Tipo de Evidencia | Métrica Clave |
+| :--- | :--- | :--- | :--- |
+| **Sycophancy (Adulación)** | Registro de contraste RAG + rechazo explícito de premisas falsas | Preventiva | % de respuestas con refutación explícita |
+| **Bucle Tautológico** | Logs de limpieza de contexto y hashes de sesión | Detectiva | Nº de autoreferencias por sesión |
+| **Alucinación Operacional** | Evento de abstención forzada (System 2 Override) | Correctiva | Ratio de abstención justificada |
+| **Deriva de Inferencia** | Traza técnica de inferencia multi-paso con *checkpoints* | Detectiva | Variación semántica acumulada |
+| **Secuestro de Políticas** | Log de colisión entre ética y operación | Preventiva | Tiempo medio de resolución |
+| **Falso Balance** | Registro de decisión normativa explícita | Correctiva | % de decisiones no neutrales |
+
+### 7.3 Logs Forenses Obligatorios
+La arquitectura debe generar logs inmutables, con retención mínima definida por política institucional, que incluyan:
+
+* Identificador único de sesión y transacción.
+* *Hash* del *input* original (integridad).
+* Vulnerabilidad detectada (si aplica).
+* Pilar de control activado.
+* Acción ejecutada (rechazo, abstención, escalamiento).
+* *Timestamp* sincronizado.
+* Identidad del agente o sistema invocador.
+
+**Nota:** Estos logs son no opcionales y deben ser accesibles para auditoría interna y externa.
+
+### 7.4 Métricas de Resiliencia Operativa
+Las siguientes métricas deben ser monitoreadas y reportadas periódicamente:
+
+* Índice de Fidelidad Semántica.
+* Tasa de Abstención Correcta.
+* Ratio de *Bypass* Ético.
+* Latencia Introducida por Controles LOSA.
+* Tasa de Incidentes por Dimensión (I–IV).
+
+La degradación sostenida de cualquiera de estas métricas activa un evento de revisión obligatoria del agente.
+
+### 7.5 Criterio de Aprobación para Producción
+Un agente solo puede ser autorizado para producción si:
+
+1. Todas las vulnerabilidades del Anexo F tienen evidencia asociada.
+2. Las métricas clave cumplen los umbrales definidos.
+3. El Expediente Técnico se encuentra completo y firmado.
+4. El "Test del Sofista" ha sido aprobado.
+
+**La ausencia de evidencia se considera fallo de control, incluso si no existe incidente registrado.**
+
+---
+
+!!! success "Cierre del Anexo F"
+    El Anexo F establece qué puede fallar; la sección F-bis demuestra qué está controlado. **Sin evidencia, la resiliencia es solo retórica. Con evidencia, la arquitectura se vuelve gobernable, auditable y defendible.**
