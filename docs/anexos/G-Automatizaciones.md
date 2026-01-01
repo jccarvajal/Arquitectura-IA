@@ -63,8 +63,9 @@ La elección de la plataforma depende de la criticidad y la soberanía requerida
 ### III. Seguridad y GRC
 * [ ] **Circuit Breakers:** ¿Se han establecido límites físicos de volumen (transacciones/hora) y de valor (montos máximos)?.
 * [ ] **Plan de Reversión (Rollback):** ¿Existe un procedimiento técnico para deshacer la acción si la IA comete un error lógico?.
+* [ ] **Separación de Funciones:** ¿El mismo rol no diseña, autoriza y audita el actuador?
 
 ---
 
 !!! success "Conclusión del Anexo"
-    La automatización no debe ser una caja negra, sino un sistema de lazo cerrado donde el actuador devuelva siempre un reporte de éxito o falla a la capa de gobernanza. **Si no puedes medirlo, controlarlo y auditarlo, no lo automatices.**
+    La automatización no debe ser una caja negra, sino un sistema de lazo cerrado donde el actuador devuelva siempre un reporte de éxito o falla a la capa de gobernanza. **Si no puedes medirlo, limitarlo y auditarlo, no lo automatices.**
