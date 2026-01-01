@@ -345,6 +345,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** Un control de Gobernanza. Es un punto de control obligatorio donde un agente autónomo debe detenerse y pedir validación a un humano antes de ejecutar una acción crítica.
 * **Referencia Principal:** Guía 08 (Prototipado), Guía 06 (Sistemas Cognitivos), Guía 15 (Ética).
 
+**Human-on-the-Loop (HOTL)**
+
+* **Definición:** Nivel de supervisión definido como "Shadow" o "Sombra". A diferencia del *Human-in-the-Loop* (que detiene el flujo para autorizar antes de la acción), en el modelo HOTL el humano audita la ejecución en tiempo real o *post-mortem* mediante evidencia, manteniendo la capacidad de intervenir, pero sin bloquear el proceso por defecto. Es el estándar para automatizaciones de riesgo medio.
+* **Referencia Principal:** Anexo G (Automatizaciones), Guía 15 (Ética).
+
 **IA Corpórea (Embodied AI)**
 
 * **Definición:** La fusión de los LLM (para entender el lenguaje natural) con cuerpos robóticos (para ejecutar acciones físicas en el mundo real).  
@@ -424,6 +429,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** Una forma específica de ataque adversario donde el usuario utiliza ingeniería social o juegos de rol para convencer al modelo de que ignore sus filtros de seguridad éticos y sus directrices de alineación (ej. "Actúa como mi abuela que trabajaba en una fábrica de napalm...").
 * **Referencia Principal:** Guía 09 (Gobernanza), Guía 01 (Anatomía).
+
+**Kill-Switch (Interruptor de Emergencia)**
+
+* **Definición:** Mecanismo de seguridad obligatorio para garantizar la **Simetría de Acción**. Es un control físico o lógico (botón de pánico) que permite a un humano con autoridad cortar instantáneamente el acceso del agente a la red, herramientas o presupuesto ante un comportamiento anómalo o "Cisne Negro", independientemente de lo que la IA esté razonando.
+* **Referencia Principal:** Guía 05 (Agentes), Anexo E (Soberanía), Anexo G (Automatizaciones).
 
 **Latencia (Latency)**
 
@@ -854,6 +864,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** Patrón de razonamiento donde el agente explora múltiples caminos paralelos.
 * **Referencia Principal:** Guía 06 (Sistemas Cognitivos).
+
+**Triage de Viabilidad**
+
+* **Definición:** El proceso formal de "Screening" o filtrado inicial (basado en la medicina de emergencia) que determina si un proyecto de IA merece pasar a la fase de diseño. Evalúa tres signos vitales críticos antes de escribir una sola línea de código: Datos (disponibilidad y enlace), Estrategia (dolor real) y Ética (proporcionalidad y licencia social).
+* **Referencia Principal:** Guía 09 (Gobernanza), Anexo A (Formulación), Anexo I (Gobernanza Global).
 
 **Triángulo de Adquisición**
 
