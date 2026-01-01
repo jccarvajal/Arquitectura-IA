@@ -6,6 +6,15 @@ El **EU AI Act** (Reglamento de Inteligencia Artificial de la Unión Europea) re
 
 Para el Arquitecto de IA, esta clasificación determina la viabilidad legal del proyecto y el nivel de rigor técnico exigido en la fase de industrialización.
 
+!!! warning "Nota de Estrategia Global: El 'Efecto Bruselas' y el Horizonte 2026"
+    Aunque este anexo toma como referencia la taxonomía de riesgo del *EU AI Act*, su utilidad no se limita a la jurisdicción europea. Para organizaciones en Latinoamérica y el resto del mundo, el **Q1 de 2026** marca un punto de inflexión estratégico por tres razones de mercado, más allá de la obligación legal directa:
+
+    1. **El Estándar de la Cadena de Suministro:** Las corporaciones globales exigirán a sus proveedores (incluso locales) un cumplimiento homologable a la normativa europea para mitigar sus propios riesgos de terceros. No cumplir es quedar fuera del mercado *Enterprise*.
+    2. **Efecto Espejo Legislativo:** Las regulaciones emergentes en la región (como las discusiones legislativas en Chile, Brasil o Colombia) tienden a armonizarse con el modelo europeo. Adoptar esta clasificación hoy es prepararse para la ley local de mañana.
+    3. **Diferenciación Competitiva:** En un mercado saturado de IA experimental, la **gobernanza demostrable** se convierte en el principal activo de confianza. Llegar al 2026 con una arquitectura auditable es una ventaja comercial defensiva.
+
+    **El mensaje es claro:** No espere a que la ley local se publique. Si su arquitectura es robusta bajo el estándar más alto (EU/ISO), será resiliente en cualquier jurisdicción.
+
 ---
 
 ### 2. Niveles de Riesgo y Obligaciones
