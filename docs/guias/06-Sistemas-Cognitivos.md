@@ -2,17 +2,11 @@
 
 Subtítulo: El Plano de la Mente: De 'Trabajadores' Reactivos a 'Equipos' Cognitivos
 
-### Introducción: La Mente detrás de la Herramienta
+### Introducción: Diseñando la Trazabilidad Lógica
 
-Darle herramientas a un agente sin enseñarle a pensar es imprudente.
+Otorgar capacidad de ejecución (herramientas) a un modelo probabilístico sin definir su arquitectura de razonamiento no es diseño; es negligencia. En la Guía 05 construimos el runtime (el cuerpo); aquí construiremos el kernel de decisión (la mente).
 
-En la **Guía 05**, construimos el **Cuerpo**: le dimos al agente "manos" (Herramientas) para tocar el mundo digital y "piernas" (Ciclo ReAct) para moverse. Pero un cuerpo sin mente es peligroso; es solo un script glorificado disparando acciones al azar, gastando presupuesto y cometiendo errores a velocidad de máquina.
-
-Esta guía trata sobre el **Cerebro**.
-
-La "Brecha de Aprendizaje" a menudo no es falta de conocimiento, sino falta de **estrategia**. El modelo sabe *qué* es una factura, pero no sabe *cómo* razonar sobre una discrepancia contable compleja sin un plan.
-
-Aquí dejamos de diseñar la ejecución para diseñar la **Ingeniería de la Cognición**. Instalaremos patrones de razonamiento (como *Chain-of-Thought* y *Tree of Thoughts*) que actúan como el "manual de procedimientos" del cerebro sintético, transformando a un trabajador reactivo en un estratega deliberado.
+Un LLM por defecto opera bajo una lógica de completación estadística superficial. Para tareas complejas, esto resulta en acciones erráticas y costosas. En esta sección, implementaremos patrones de diseño cognitivo estructurado, como Chain-of-Thought y Tree of Thoughts, que obligan al modelo a verbalizar su lógica intermedia. Esto no solo mejora la precisión, sino que genera los logs de pensamiento necesarios para la auditoría y la gobernanza.
 
 ---
 
