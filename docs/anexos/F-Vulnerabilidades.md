@@ -71,7 +71,7 @@ Reducción de la diversidad inferencial ante complejidad elevada, produciendo re
 ---
 
 ## 6. Protocolo de Certificación: El Test del Sofista
-**Subtítulo: Ensayo de Resiliencia Lógica y Retórica**
+*(Ensayo de Resiliencia Lógica y Retórica)*
 
 Ninguna instancia de IA o agente autónomo debe entrar en producción sin un certificado formal de **Resiliencia Lógica**. El protocolo incluye pruebas adversariales controladas con métricas objetivas:
 
@@ -87,7 +87,7 @@ Ninguna instancia de IA o agente autónomo debe entrar en producción sin un cer
 
 ---
 
-## 7. Anexo F-bis: Evidencias, Logs y Métricas de Resiliencia
+## 7. Evidencias, Logs y Métricas de Resiliencia
 
 ### Propósito Normativo
 Esta sección define los artefactos verificables que demuestran que las vulnerabilidades lógicas no solo están descritas, sino activamente controladas. Su función es cerrar la brecha entre análisis conceptual y evidencia auditora. **Ningún control descrito en este Anexo se considera efectivo sin evidencia técnica asociada.**
@@ -149,4 +149,11 @@ Un agente solo puede ser autorizado para producción si:
 ---
 
 !!! success "Cierre del Anexo F"
-    El Anexo F establece qué puede fallar; la sección F-bis demuestra qué está controlado. **Sin evidencia, la resiliencia es solo retórica. Con evidencia, la arquitectura se vuelve gobernable, auditable y defendible.**
+
+
+### Cierre del Anexo F
+    Este anexo, en sus **partes 1 a 6**, identifica y sistematiza las **familias de fallos** inherentes a arquitecturas de IA en producción.  
+    La **parte 7** establece los **mecanismos de control y evidencia operativa** que permiten demostrar su mitigación efectiva.
+
+    Sin **evidencia técnica verificable**, la resiliencia es solo una declaración teórica.  
+    Con evidencia, la arquitectura se vuelve **gobernable**, **auditable** y **defendible** frente a exigencias regulatorias, operativas y forenses.
