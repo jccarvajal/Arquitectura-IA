@@ -63,7 +63,7 @@ Para que un sistema de Alto Riesgo sea legalmente comercializable, el Arquitecto
 
 | Requisito EU AI Act | Control Operativo en esta Obra |
 | :--- | :--- |
-| **Sistema de Gestión de Riesgos** | Implementación del Octágono de Control (Guía 11). |
+| **Sistema de Gestión de Riesgos** | Implementación del Línea Base de Control Industrial (Guía 11). |
 | **Gobernanza de Datos** | Estrategia de Datos y protocolos RAG (Guía 04). |
 | **Documentación Técnica** | Fichas de Proyecto y Prompt-as-Code (Guía 01 y 11). |
 | **Registro de Eventos (Logging)** | Observabilidad Cognitiva y Trazabilidad de Pensamiento. |
