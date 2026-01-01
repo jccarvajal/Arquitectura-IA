@@ -11,7 +11,7 @@ La implementación de las guías de este libro permite a las organizaciones alin
 
 ---
 
-### 2. Matriz de Correspondencia Operativa (Certificación v1.4)
+### 2. Matriz de Correspondencia Operativa
 
 Esta matriz detalla cómo los componentes cumplen con los requisitos operativos de cumplimiento global.
 
