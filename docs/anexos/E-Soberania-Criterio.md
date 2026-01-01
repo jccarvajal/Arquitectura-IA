@@ -4,7 +4,7 @@
 
 ### 1. Propósito: El Juicio como el "Último Guardrail"
 
-La implementación de IA genera una paradoja de control: a mayor eficiencia del sistema, mayor es la tendencia del humano al **Sesgo de Automatización** (*Automation Bias* — confianza ciega por ahorro de energía cognitiva). Este anexo establece la metodología para evitar que el profesional se convierta en un espectador pasivo y se transforme en un **Garante de Integridad**.
+La implementación de IA genera una paradoja de control: a mayor eficiencia del sistema, mayor es la tendencia del humano al **Sesgo de Automatización** (*Automation Bias*, confianza ciega por ahorro de energía cognitiva). Este anexo establece la metodología para evitar que el profesional se convierta en un espectador pasivo y se transforme en un **Garante de Integridad**.
 
 > **Tesis Central:** El aprendizaje profesional en el siglo XXI ya no ocurre "haciendo la tarea", sino auditando cómo la máquina la ejecutó **desde un conocimiento disciplinar previo**. La "Fricción Cognitiva" no es un error del proceso, es un requisito de seguridad (Sistema 2).
 
