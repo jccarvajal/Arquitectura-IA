@@ -8,7 +8,7 @@ copyright: Copyright &copy; 2025 Juan Carlos Carvajal - Licencia CC BY-NC-ND 4.0
 theme:
   name: material
   language: es
-  logo: assets/images/portada.jpeg
+  logo: assets/images/portada-ia.png
   favicon: assets/images/favicon.ico
   palette: 
     - scheme: default

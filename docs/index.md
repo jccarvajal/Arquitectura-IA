@@ -5,7 +5,7 @@
 
 **Autor:** [Juan Carlos Carvajal](https://www.jccarvajal.com/)
 
-<img src="assets/images/portada.jpeg" alt="Portada del Libro - Arquitectura de Inteligencia Artificial" width="500">
+<img src="assets/images/portada-ia.png" alt="Portada del Libro - Arquitectura de Inteligencia Artificial" width="500">
 
 ---
 
