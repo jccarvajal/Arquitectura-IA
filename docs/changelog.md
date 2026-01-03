@@ -1,114 +1,89 @@
-# Historial de Versiones
+# Historial de Versiones (Changelog)
+
+Todos los cambios notables en este proyecto serán documentados en este archivo. El formato está basado en [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) y este proyecto adhiere a la numeración de versiones semántica.
 
 Este documento registra todas las modificaciones estructurales, técnicas y conceptuales realizadas en el libro **"Arquitectura de Inteligencia Artificial: Guías para Decidir, Diseñar y Gobernar"**.
 
 ---
 
-# Historial de Versiones
+## [1.5.0] - 2025-12-30
+### Cierre del Ciclo Operativo y Consolidación de Herramientas
 
-Este documento registra todas las modificaciones estructurales, técnicas y conceptuales realizadas en el libro **"Arquitectura de Inteligencia Artificial: Guías para Decidir, Diseñar y Gobernar"**.
+Esta versión finaliza la redacción de los anexos técnicos de soberanía y automatización, reestructurando la fase de cumplimiento para que actúe como un "Sello de Certificación" final e integrando auditoría técnica externa mediante LLMs.
 
----
+#### Añadido (Anexos Técnicos)
+* **Anexo E (Soberanía del Criterio):** Restauración de la Rúbrica de Madurez (RMJP) con sus 4 dimensiones e introducción de la métrica TDE (Tasa de Desafío Efectivo).
+* **Anexo F (Vulnerabilidades Lógicas):** Desarrollo de protocolos de defensa contra la erosión del razonamiento crítico y sesgos cognitivos.
+* **Anexo G (Orquestación y Actuadores):** Definición de la matriz de decisión para ejecución entre SaaS, RPA e Ingeniería Soberana.
+* **Anexo H (Seguridad Operativa - LOSA):** Implementación de la "Aduana Cognitiva" alineada con OWASP LLM 2025 y Zero Trust.
 
-# Versión 1.5 (Diciembre 2025)
-
-**Motivo:** Cierre del ciclo operativo y consolidación de la biblioteca de herramientas. Esta versión finaliza la redacción de los anexos técnicos de soberanía y automatización, y reestructura la fase de cumplimiento para que actúe como un "Sello de Certificación" final. Uso de IA (LLM's) como auditor técnico preventivo externo.
-
-### 🏗️ Reestructuración de la Biblioteca (Orden de Auditoría)
-* **Desplazamiento Estructural:** Los antiguos Anexos E (ISO/NIST) y F (EU AI Act) se han movido a las posiciones **I** y **J** respectivamente.
-* **Propósito:** Asegurar que los marcos regulatorios y estándares globales cierren el libro como la validación final (certificación) de todo el diseño previo.
-
-### 📝 Redacción y Finalización de Anexos Técnicos
-* **Anexo E (Soberanía del Criterio):** Restauración de la **Rúbrica de Madurez (RMJP)** con sus 4 dimensiones (Detección, Sistema 2, Soberanía y Manejo de Crisis) e introducción de la métrica **TDE (Tasa de Desafío Efectivo)**.
-* **Anexo F (Vulnerabilidades Lógicas):** Desarrollo de protocolos de defensa contra la erosión del razonamiento crítico y sesgos cognitivos en la interacción con modelos.
-* **Anexo G (Orquestación y Actuadores):** Definición de la matriz de decisión para la ejecución de acciones entre **SaaS** (Velocidad), **RPA** (Sistemas Legacy) e **Ingeniería Soberana** (Control/Privacidad).
-* **Anexo H (Seguridad Operativa - LOSA):** Implementación técnica de la **Capa LOSA** como una **"Aduana Cognitiva"**, alineada con **OWASP LLM 2025** y el principio de *Zero Trust*.
-
-### 🤖 Metodología de Revisión y Sparring
-* **Auditoría Externa con IA:** Uso de **ChatGPT** como sparring técnico y revisor de arquitectura para desafiar la coherencia lógica de los contenidos.
-* **Red Teaming de Contenidos:** Uso de modelos de lenguaje para verificar la alineación entre los *Blueprints* del Anexo C y las nuevas capacidades de automatización descritas en el Anexo G.
+#### Mejorado (Estructura y Metodología)
+* **Reestructuración de Auditoría:** Desplazamiento de los marcos ISO/NIST y EU AI Act a las posiciones finales (I y J) para servir como validación final del diseño.
+* **Auditoría Externa con IA:** Implementación de ChatGPT como sparring técnico y revisor de arquitectura para desafiar la coherencia lógica de los contenidos.
 
 ---
 
-# Versión 1.4 (Diciembre 2025)
+## [1.4.0] - 2025-12-15
+### Endurecimiento Industrial y Marco GRC
 
-**Motivo:** Endurecimiento industrial del marco GRC. Esta versión transforma la arquitectura de "teóricamente correcta" a "financiera y operacionalmente viable", aplicando parches críticos de seguridad, rentabilidad y cultura. Se reestructura la jerarquía de contenidos separando las Herramientas (Anexos) de las Referencias Teóricas.
+Transformación de la arquitectura hacia un modelo financiera y operacionalmente viable, aplicando parches críticos de seguridad, rentabilidad y cultura.
 
-### 🛡️ Seguridad y Gobernanza
-* **Guía 02 (Prompts):** Se redefinió el prompt como instrumento de *Alineación Probabilística*, eliminando la falacia de seguridad dura.
-* **Guía 04 (Datos):** Nuevo protocolo de **"Esterilización de Documentos"** para mitigar ataques de *Inyección Indirecta* en RAG.
-* **Guía 05 (Agentes):** Implementación del **"Principio de Simetría de Acción"**. Obligatoriedad de funciones de reversión (*Undo*) y *Kill-Switch* para herramientas de escritura.
-* **Anexo C (Blueprints):** Alerta crítica sobre gestión de credenciales y prohibición de *hardcoded secrets*.
+#### Añadido (Seguridad y Gobernanza)
+* **Esterilización de Datos:** Protocolo para mitigar ataques de inyección indirecta en RAG (Guía 04).
+* **Simetría de Acción:** Obligatoriedad de funciones Kill-Switch y reversión en herramientas de escritura (Guía 05).
+* **Estándares Globales:** Expansión del mapeo operativo para ISO/IEC 42001:2023 y requisitos de Marcado CE para la EU AI Act.
 
-### 💰 Finanzas y Estrategia
-* **Guía 13 (Estrategia):** **"Regla de Autofinanciamiento"**. La innovación (Transformación) solo puede financiarse con los ahorros de la eficiencia (Soporte).
-* **Guía 11 (Industrialización):** **"Política de Purga de Logs"**. Retención máxima de 30 días para trazas de razonamiento (CoT) para control de costos.
-* **Anexo A (Viabilidad):** **"Veto Automático del 50%"**. Rechazo inmediato de proyectos cuyo costo unitario IA supere la mitad del costo humano.
-* **Glosario:** Redefinición financiera de **"Aumento"** (más output, mismo headcount) vs. **"Abdicación"**.
+#### Mejorado (Finanzas e Ingeniería)
+* **Regla de Autofinanciamiento:** La innovación debe financiarse mediante los ahorros generados por la eficiencia (Guía 13).
+* **Control de Costos:** Política de purga de logs (30 días) y veto automático de proyectos donde el costo IA supere el 50% del costo humano.
+* **Optimización Operativa:** Restricción de latencia para procesos Tree of Thoughts y optimización del Agente Enrutador.
 
-### 🏗️ Ingeniería y Operaciones
-* **Guía 06 (Sistemas Cognitivos):** Restricción de latencia para *Tree of Thoughts* (ToT). Prohibido en tiempo real; exclusivo para procesos *Batch*.
-* **Guía 14 (Modelos):** Optimización del **Agente Enrutador** mediante modelos ligeros (Flash/Haiku) para reducir latencia inicial.
-* **Guía 10 (Calidad):** Estrategia de **"Cosecha Automática"** (Harvesting). El Golden Set se actualiza capturando *Edge Cases*, feedback negativo y baja confianza.
-
-### 🧠 Cultura y Talento
-* **Guía 15 (Ética):** Protocolos de **"Simulacro de Desconexión"** para combatir la atrofia cognitiva.
-* **Guía 16 (Operación):** **"Teoría del Seguro"**. Redefinición del salario humano como una *Prima de Riesgo* por la responsabilidad legal, no por la producción.
-* **Carrera Técnica:** Definición de roles de transición (Validador -> Entrenador -> Diseñador de Flujos).
-
-### 🏗️ Refinamiento de Marco de Trabajo (GRC)
-* **Guía 01 (Anatomía):** Inclusión del concepto de **"Soberanía de Pesos"** frente a modelos propietarios.
-* **Guía 10 (Evaluación):** Formalización de la **Tríada RAG** (Faithfulness, Relevance) y la técnica del **Juez LLM** para evaluaciones semánticas no literales.
-* **Guía 11 (Industrialización):** Introducción del **"Octágono de Control Industrial"** como checklist final para el paso a producción.
-
-### 🌐 Cumplimiento y Estándares Globales (Anexos)
-* **Anexo E (ISO/NIST):** Expansión total del mapeo operativo para **ISO/IEC 42001:2023** (cláusulas 4, 6, 8 y 9) y alineación con las **7 características de confianza** del **NIST AI RMF 1.0**.
-* **Anexo F (EU AI Act):** Detalle de la clasificación de riesgos (Inaceptable, Alto, Limitado, Mínimo) y requisitos para la obtención del **Marcado CE** en sistemas de IA de alto riesgo.
-
-### 📚 Cambios Estructurales
-* **Jerarquía de Referencias:** El Glosario y la Bibliografía pierden la etiqueta de "Anexo" y se mueven a su propia categoría (`/referencias`) para distinguirlos de las herramientas operativas.
+#### Cambiado (Estructura)
+* **Jerarquía de Referencias:** El Glosario y la Bibliografía se trasladan a su propia categoría (`/referencias`) para distinguirlos de las herramientas operativas.
 
 ---
 
-## Versión 1.3 (Diciembre 2025)
+## [1.3.0] - 2025-12-01
+### Ingeniería de Control y Soberanía
 
-**Motivo:** Consolidación de la tesis de gobernanza como **"Ingeniería de Control"**. Esta versión integra la estrategia de **Soberanía y Geopolítica**, la visión de **Agencia Humana** (Innerarity) y profundiza en los riesgos de politización técnica.
+Integración de la tesis de gobernanza como "Ingeniería de Control", profundizando en la soberanía geopolítica y la agencia humana.
 
-### Actualizaciones Estratégicas y Filosóficas
-* **Tesis Central (Guía 15 y Conclusión):** Se estableció el axioma de la "Agencia Humana" integrando la **"Advertencia de los Fundadores"** (Wiener/Lanier).
-* **Prólogo:** Nueva estructura basada en las cuatro metáforas de futuros (Utopía, Distopía, Caos, Estructura).
-* **Geopolítica:** Inclusión de la **Matriz de Decisión** (SaaS vs. Open Weights).
+#### Añadido (Estrategia y Filosofía)
+* **Agencia Humana:** Establecimiento del axioma de agencia integrando la advertencia de Wiener y Lanier (Guía 15).
+* **Matriz Geopolítica:** Inclusión de la matriz de decisión estratégica entre modelos SaaS y Open Weights.
 
-### Mejoras Técnicas
-* **Infraestructura:** Migración completa a **MkDocs** e implementación de diagramas **Mermaid.js**.
-* **Anexo A:** Adición del bloque de **Dictamen Final (Triage)**.
-* **Anexo D:** Migración de prompts a bloques de código copiables.
+#### Mejorado (Infraestructura Técnica)
+* **MkDocs:** Migración completa del sistema de documentación e implementación de diagramas Mermaid.js.
 
 ---
 
-## Versión 1.2 (Noviembre 2025)
+## [1.2.0] - 2025-11-15
+### Refinamiento de la Ingeniería de Agentes
 
-**Motivo:** Estandarización de conceptos de "Agencia" y refinamiento de la "Ingeniería de Agentes".
+Estandarización de conceptos de agencia y optimización de la economía de tokens.
 
-### Cambios Técnicos
-* **Guía 05 (Agentes):** Formalización del ciclo **ReAct** (Razonar + Actuar).
-* **Guía 14 (Modelos):** Introducción de la **Estrategia de Portafolio** y métricas de *Token-Economics*.
-
----
-
-## Versión 1.1 (Noviembre 2025)
-
-**Motivo:** Transición a un marco de pensamiento estratégico completo (GRC).
-
-### Cambios Estratégicos
-* **Tesis Central:** Enfoque explícito en **GRC (Gobernanza, Riesgo y Cumplimiento)**.
-* **Ingeniería de Contexto:** Elevación del Prompting a gestión de memoria.
-* **Límites:** Definición del **Costo Cuadrático** y la **Amnesia Estática**.
+* **Ciclo ReAct:** Formalización del ciclo Razonar + Actuar en la Guía 05.
+* **Token-Economics:** Introducción de la estrategia de portafolio y métricas financieras de modelos.
 
 ---
 
-## Versión 1.0 (Base Inicial)
+## [1.1.0] - 2025-11-01
+### Transición al Marco GRC
 
-**Motivo:** Publicación inicial del borrador de contenidos.
+Evolución de los contenidos hacia un marco de pensamiento estratégico completo basado en Gobernanza, Riesgo y Cumplimiento.
 
-* **Lanzamiento:** Publicación del libro con la estructura base de 17 guías y 6 anexos.
+* **Ingeniería de Contexto:** Elevación del prompting hacia la gestión de memoria estratégica.
+* **Límites Físicos:** Definición técnica del costo cuadrático y la amnesia estática.
+
+---
+
+## [1.0.0] - 2025-10-15
+### Lanzamiento Inicial
+
+Publicación del borrador de contenidos base y estructura fundacional de la obra.
+
+* **Lanzamiento:** Publicación del libro con la estructura base de 17 guías y 6 anexos operativos.
+
+---
+
+> **Nota:** Este es un documento vivo. Las actualizaciones futuras se centrarán en la evolución de los agentes autónomos y el endurecimiento de los protocolos de seguridad cognitiva.
