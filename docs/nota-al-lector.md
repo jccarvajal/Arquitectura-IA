@@ -65,10 +65,10 @@ Considera esta obra como un **marco de pensamiento** y una **fotografía** de su
 
 ---
 
-## 7. Sobre la autoría y el uso de IA
+## 7. Sobre la Autoría y el uso de Inteligencia Artificial
 
-Este documento fue desarrollado por Juan Carlos Carvajal, quien es el autor principal y responsable de su contenido, estructura y visión final. Para más información sobre el autor, sus proyectos o para contacto profesional, puede visitar [www.jccarvajal.com](https://www.jccarvajal.com/).
+Este documento fue desarrollado por Juan Carlos Carvajal, autor principal y responsable exclusivo de su contenido, estructura conceptual y visión final. Para más información sobre el autor, sus proyectos o para contacto profesional, puede visitar [www.jccarvajal.com](https://www.jccarvajal.com/).
 
-Para la redacción y generación de los borradores iniciales se utilizó el modelo de lenguaje avanzado Gemini como herramienta de asistencia principal. Adicionalmente, el modelo ChatGPT fue empleado como 'sparring' crítico para revisar, cuestionar y refinar las ideas y el texto.
+Para la elaboración de borradores iniciales y apoyo en procesos de redacción se utilizó el modelo de lenguaje avanzado Gemini, como herramienta de asistencia técnica. De forma complementaria, el modelo ChatGPT fue empleado como contraparte crítica para la revisión, cuestionamiento y refinamiento del texto.
 
-Las ideas, estructura y visión final son plenamente autorales; las herramientas de IA fueron utilizadas como instrumentos de apoyo, nunca como sustituto del pensamiento crítico.
+Las ideas, decisiones conceptuales, estructura argumental y conclusiones de la obra son plenamente autorales. Las herramientas de inteligencia artificial fueron utilizadas exclusivamente como instrumentos de apoyo, nunca como sustituto del pensamiento crítico, del juicio profesional ni de la responsabilidad intelectual del autor.
