@@ -67,8 +67,8 @@ Considera esta obra como un **marco de pensamiento** y una **fotografía** de su
 
 ## 7. Sobre la Autoría y el uso de Inteligencia Artificial
 
-Este documento fue desarrollado por Juan Carlos Carvajal, autor principal y responsable exclusivo de su contenido, estructura conceptual y visión final. Para más información sobre el autor, sus proyectos o para contacto profesional, puede visitar [www.jccarvajal.com](https://www.jccarvajal.com/).
+Este documento fue desarrollado por **Juan Carlos Carvajal**, autor principal y responsable exclusivo de su contenido, estructura conceptual y visión final. Para más información sobre el autor, sus proyectos o para contacto profesional, puede visitar [www.jccarvajal.com](https://www.jccarvajal.com/).
 
-Para la elaboración de borradores iniciales y apoyo en procesos de redacción se utilizó el modelo de lenguaje avanzado Gemini, como herramienta de asistencia técnica. De forma complementaria, el modelo ChatGPT fue empleado como contraparte crítica para la revisión, cuestionamiento y refinamiento del texto.
+Para la elaboración de borradores iniciales y apoyo en procesos de redacción se utilizó el modelo de lenguaje avanzado **Gemini**, como herramienta de asistencia técnica. De forma complementaria, el modelo **ChatGPT** fue empleado como contraparte crítica para la revisión, cuestionamiento y refinamiento del texto.
 
-Las ideas, decisiones conceptuales, estructura argumental y conclusiones de la obra son plenamente autorales. Las herramientas de inteligencia artificial fueron utilizadas exclusivamente como instrumentos de apoyo, nunca como sustituto del pensamiento crítico, del juicio profesional ni de la responsabilidad intelectual del autor.
+Las ideas, decisiones conceptuales, estructura argumental y conclusiones de la obra son **plenamente autorales**. Las herramientas de inteligencia artificial fueron utilizadas exclusivamente como instrumentos de apoyo, **nunca como sustituto del pensamiento crítico, del juicio profesional ni de la responsabilidad intelectual del autor**.
