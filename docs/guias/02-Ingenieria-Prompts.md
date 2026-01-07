@@ -1,4 +1,4 @@
-## Guía 02: La Guía Definitiva de la Ingeniería de Prompts
+## Guía 02: Ingeniería de Prompts
 
 Subtítulo: El Plano del "Arquitecto de Instrucciones"
 
