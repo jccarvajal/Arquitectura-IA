@@ -12,7 +12,7 @@ En la guía anterior, definimos la nueva relación laboral. Pero esa relación t
     Este no es un capítulo de *soft skills*. Es una **disciplina de supervivencia profesional**. Se trata de instalar un "Sistema Inmunológico Intelectual" capaz de auditar a una máquina que miente mejor que cualquier humano. En esta nueva economía, tu valor ya no reside en producir respuestas, sino en tener el criterio implacable para interrogarlas.
 
 !!! abstract "Supervisión Obligatoria (Vínculo Legal)"
-    El Artículo 14 del **EU AI Act** exige que los sistemas de alto riesgo permitan una supervisión humana efectiva para evitar la abdicación del juicio. Su rol como **Sistema 2** no es solo una recomendación de esta obra para mejorar la calidad; es un requisito legal emergente para garantizar la seguridad y la rendición de cuentas (Ver Anexo F).
+    El Artículo 14 del **EU AI Act** exige que los sistemas de alto riesgo permitan una supervisión humana efectiva para evitar la abdicación del juicio. Su rol como **Sistema 2** no es solo una recomendación de esta obra para mejorar la calidad; es un requisito legal emergente para garantizar la seguridad y la rendición de cuentas (Ver Anexo J).
 
 !!! tip "La Paradoja de la Competencia: Saber Hacer para Poder Mandar"
     Existe una regla de oro para evitar la "Atrofia Cognitiva": **Nunca delegues a la IA una tarea que no seas capaz de auditar manualmente.**
