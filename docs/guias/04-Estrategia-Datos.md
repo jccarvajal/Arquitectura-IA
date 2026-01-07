@@ -146,7 +146,7 @@ Antes de inyectar datos a tu motor RAG, debes evaluar su madurez. Basado en la m
 *Regla de Oro:* Si la madurez es "Básica" (PDFs, manual, sin identificadores), el riesgo de alucinación del agente aumenta exponencialmente.
 
 !!! info "Alineación con el EU AI Act"
-    Recuerde que para sistemas de "Alto Riesgo", el Artículo 10 de la ley europea exige que los datos sean pertinentes, representativos y libres de errores sistémicos. Utilice el **Anexo F** para validar si su estrategia de datos cumple con este estándar global.
+    Recuerde que para sistemas de "Alto Riesgo", el Artículo 10 de la ley europea exige que los datos sean pertinentes, representativos y libres de errores sistémicos. Utilice el **Anexo J** para validar si su estrategia de datos cumple con este estándar global.
 
 ---
 
