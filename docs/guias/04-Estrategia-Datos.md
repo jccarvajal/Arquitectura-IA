@@ -1,4 +1,4 @@
-## Guía 04: La Guía Definitiva de la Estrategia de Datos
+## Guía 04: Estrategia de Datos
 
 Subtítulo: Del "Jefe de Operaciones" al "Arquitecto de la Información"
 
