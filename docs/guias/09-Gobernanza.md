@@ -1,6 +1,6 @@
 # Bloque 3: Operación y Gobernanza (Cómo se gestiona)
 
-## Guía 09: La Guía Definitiva de la Gobernanza de IA
+## Guía 09: Gobernanza de IA
 
 Subtítulo: Del "Director de Orquesta" al "Gobernador de Sistemas de IA"
 
