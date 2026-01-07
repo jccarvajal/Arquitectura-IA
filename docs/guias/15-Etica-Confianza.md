@@ -202,7 +202,7 @@ La implementación de agentes autónomos a menudo choca con una barrera invisibl
 
 La Gobernanza (Guía 09) fue sobre seguridad (lo que no podemos hacer porque es riesgoso). Esta parte es sobre ética (lo que no deberíamos hacer, aunque sea técnicamente posible y seguro).
 
-> **Vínculo Legal:** Lo que en esta guía definimos como una "Línea Roja" ética, está codificado en el **EU AI Act** como "Riesgo Inaceptable" (Prohibido). Consulte la tabla de riesgos en el **Anexo F** para asegurar la licencia social y legal de su proyecto.
+> **Vínculo Legal:** Lo que en esta guía definimos como una "Línea Roja" ética, está codificado en el **EU AI Act** como "Riesgo Inaceptable" (Prohibido). Consulte la tabla de riesgos en el **Anexo J** para asegurar la licencia social y legal de su proyecto.
 
 **Riesgo 1: Pérdida de la "Licencia Social"**  
 
