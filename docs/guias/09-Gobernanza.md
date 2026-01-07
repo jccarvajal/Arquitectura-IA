@@ -29,8 +29,9 @@ Nuestro rol evoluciona de "Director" a "Gobernador de Sistemas de IA". Definirem
 
 !!! gear "Gobernanza Internacional"
     Para organizaciones que buscan certificación o cumplimiento global, esta guía se complementa con:
-    * **Anexo E:** Mapeo operativo de la **ISO/IEC 42001** y el **NIST AI RMF**.
-    * **Anexo F:** Clasificación de riesgos según el **EU AI Act**.
+
+    * **Anexo I:** Mapeo operativo de la **ISO/IEC 42001** y el **NIST AI RMF**.
+    * **Anexo J:** Clasificación de riesgos según el **EU AI Act**.
 
 #### La Evolución: De Cumplimiento a Gobernanza de Ciclo de Vida
 
