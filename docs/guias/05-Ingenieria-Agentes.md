@@ -1,6 +1,6 @@
 # Bloque 2: Ingeniería y Construcción (Cómo se hace)
 
-## Guía 05: La Guía Definitiva de la Ingeniería de Agentes de IA
+## Guía 05: Ingeniería de Agentes de IA
 
 Subtítulo: Del "Arquitecto de Instrucciones" al "Director de Programa"
 
