@@ -408,3 +408,10 @@ Al dominar la gobernanza, dejas de orquestar resultados para empezar a garantiza
     1.  **Cero Shadow AI:** En entornos productivos y de manejo de datos sensibles, se bloquean los puertos a APIs públicas de IA (OpenAI, Anthropic) en la red corporativa. Todo tráfico debe pasar por el **Gateway de IA** institucional.
     2.  **Identidad de Máquina:** Ningún agente opera con credenciales humanas. Cada agente tiene su propia *Service Account* para trazabilidad forense.
     3.  **Veto de Despliegue:** Ningún modelo pasa a producción sin tener implementada la **Capa LOSA** (Anexo H) y superado el **Test de Vulnerabilidad** (Anexo F). La velocidad de *Time-to-Market* nunca justifica la deuda de seguridad.
+
+!!! failure "El Riesgo Cultural: La Gestión de la Excepción"
+    Toda regla de gobernanza definida en este libro enfrentará eventualmente una "necesidad crítica" de ser violada (una urgencia, un cliente VIP, un piloto rápido).
+
+    El 80% de los incidentes de IA no ocurren por falta de reglas, sino por la **normalización de excepciones no documentadas** ("Shadow Governance").
+
+    **La Regla de Oro:** Si el sistema permite saltarse el Gateway o la Capa LOSA sin dejar un rastro de auditoría inmutable y un **responsable nominal** (Nombre y Apellido) que asuma el costo del riesgo, no tienes una "excepción estratégica"; tienes una vulnerabilidad cultural.
