@@ -268,3 +268,10 @@ Las organizaciones fracasan frecuentemente porque saltan directo a la **🟥 Zon
 El ROI real de la IA está en lo operativo, en lo "aburrido", en la gestión de listas de espera y el mantenimiento de máquinas.
 
 La IA no se adopta con valentía tecnológica; se adopta con **criterio financiero y ético**.
+
+!!! strategic "Dictamen del Arquitecto: Implicancia Operativa"
+    Si aceptas la tesis de esta guía, tu comportamiento de inversión debe cambiar mañana:
+
+    1.  **Veto:** Dejas de aprobar proyectos por "innovación" vaga y empiezas a exigir la planilla de **Economía Unitaria**.
+    2.  **Corte:** Si el costo de *IA + Supervisión Humana* supera el 50% del costo del proceso manual, el proyecto se cancela o se reestructura. Toda excepción a esta regla debe ser explícitamente justificada y aprobada a nivel directivo.
+    3.  **Foco:** Mueves el presupuesto de la "Zona Naranja" (Vanidad) a la "Zona Verde" (Eficiencia Operativa) para financiar la "Zona Azul" (Estratégica).

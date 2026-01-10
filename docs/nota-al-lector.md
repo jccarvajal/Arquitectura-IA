@@ -2,6 +2,13 @@
 
 Antes de comenzar el viaje, es fundamental alinear nuestras expectativas sobre lo que esta obra es y lo que no es. Este es un mapa para orientarse en un territorio aún en formación.
 
+!!! failure "Lo que este libro NO es"
+    * **No es un recetario de Prompts:** Si buscas "10 trucos para ChatGPT", este libro te frustrará. Aquí diseñamos la fábrica, no el producto final.
+    * **No es un manual de herramientas:** Las herramientas (LangChain, OpenAI) caducan cada 6 meses. Los principios de arquitectura (Memoria, Agencia, Gobernanza) permanecen.
+    * **No es complaciente:** No te dirá que la IA resolverá tus problemas mágicamente; te dirá que la IA sin gobierno es deuda técnica y riesgo legal.
+
+    **Este libro es para:** Quienes deben **Decidir** (presupuesto), **Diseñar** (sistemas) y **Gobernar** (riesgo). Si tu rol hoy es principalmente operativo/táctico, los **Anexos** te darán mayor valor inmediato.
+
 ---
 
 ## 1. Sobre el Tono: "Criterio" antes que "Técnica"
@@ -24,6 +31,22 @@ Si tu rol es "usar" la IA en el día a día (el "Profesional" dentro de la fábr
 
 Ambas miradas, la del Arquitecto que diseña y la del Profesional que ejecuta, son complementarias. Esta obra busca que dialoguen con mayor comprensión mutua.
 
+## Rutas de Lectura Sugeridas
+
+Este tratado es modular. No necesitas leerlo linealmente. Elige tu ruta según tu responsabilidad actual:
+
+* **Ruta del CTO / Arquitecto (Diseño Robusto):**
+    * Empieza por: **Guía 01** (Límites Físicos) → **Guía 03** (Memoria/RAG) → **Guía 05** (Agentes) → **Guía 11** (Industrialización).
+    * *Objetivo:* Entender por qué fallan los prototipos al escalar.
+
+* **Ruta del CISO / Auditor (Gobernanza y Riesgo):**
+    * Empieza por: **Guía 09** (Gobernanza) → **Anexo F** (Vulnerabilidades) → **Anexo H** (Capa LOSA) → **Anexos I/J** (Normativa).
+    * *Objetivo:* Blindar la operación ante ataques y regulaciones.
+
+* **Ruta del Gerente / Estratega (Valor y Negocio):**
+    * Empieza por: **Guía 12** (ROI Financiero) → **Guía 13** (Estrategia) → **Anexo A** (Viabilidad).
+    * *Objetivo:* Decidir dónde invertir capital y cómo medir el retorno.
+    
 --- 
 
 ## 3. Sobre el uso de metáforas: Ciencia Ficción y Mecánica

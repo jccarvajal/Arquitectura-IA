@@ -154,6 +154,11 @@ El factor decisivo no es técnico, sino humano: liderazgos senior que **definen 
 
 La gobernanza madura no consiste en “poner humanos en todas partes”, sino en **poner a los humanos en el lugar correcto del sistema**.
 
+!!! warning "La Tiranía de la Normalización (Normatividad vs. Estadística)"
+    Debemos evitar la tiranía de la normalización.
+
+    Los algoritmos de IA funcionan basándose en lo que es estadísticamente "normal" (promedios históricos), pero la ética se basa en lo que es "justo" (normatividad). Si permitimos que el sistema marque automáticamente cualquier comportamiento atípico como "sospechoso", estamos delegando nuestra ética a la estadística, convirtiendo la diferencia en riesgo.
+
 ---
 
 ### Parte 3: La Gestión del Cambio (La Nueva Ruta de Carrera)

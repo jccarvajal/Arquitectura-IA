@@ -15,6 +15,11 @@ Un motor potente sin frenos no es un vehículo; es un arma. Al pasar del laborat
     
     Mientras que en la Nube el GRC protege servidores y redes, en esta obra adaptamos el concepto para proteger **decisiones y cognición**.
 
+!!! abstract "La Arquitectura de la Decisión"
+    Gobernanza no es solo controlar la elección final, sino auditar el filtro inicial.
+
+    Si una IA preselecciona 3 candidatos de 1.000 para que un humano decida, el poder real de gobernanza se ejerció en el algoritmo de filtrado, no en la elección humana final. Quien diseña el menú (la arquitectura de la decisión) tiene más poder que quien elige el plato.
+
 La "magia" de la IA se disipa rápido ante una inyección de prompt exitosa o una fuga de datos masiva. Aquí es donde termina la experimentación y comienza la **Gobernanza**.
 
 Ya no se trata solo de qué podemos construir, sino de cómo operamos, mantenemos y protegemos lo que hemos construido. La seguridad técnica es solo **una dimensión** de la Gobernanza. Gobernar IA implica también definir políticas de uso, límites económicos, mecanismos de supervisión humana y criterios de calidad de interacción.
@@ -396,3 +401,10 @@ El framework PPP no reemplaza la Gobernanza GRC; la complementa, asegurando que 
 Hemos recorrido el camino de la Instrucción, a la Memoria y a la Acción. Esta guía cierra el círculo con la Gobernanza. Nuestro rol final no es solo dirigir la orquesta, sino ser el "Gobernador" de esta nueva fuerza de trabajo digital: el que define las políticas, opera la maquinaria, monitorea su rendimiento y la protege de amenazas externas e internas.  
 
 Al dominar la gobernanza, dejas de orquestar resultados para empezar a garantizar operaciones seguras, eficientes y sostenibles.
+
+!!! strategic "Dictamen del Arquitecto: Implicancia Operativa"
+    La Gobernanza no es un documento, es una restricción física en la red. A partir de esta guía:
+
+    1.  **Cero Shadow AI:** En entornos productivos y de manejo de datos sensibles, se bloquean los puertos a APIs públicas de IA (OpenAI, Anthropic) en la red corporativa. Todo tráfico debe pasar por el **Gateway de IA** institucional.
+    2.  **Identidad de Máquina:** Ningún agente opera con credenciales humanas. Cada agente tiene su propia *Service Account* para trazabilidad forense.
+    3.  **Veto de Despliegue:** Ningún modelo pasa a producción sin tener implementada la **Capa LOSA** (Anexo H) y superado el **Test de Vulnerabilidad** (Anexo F). La velocidad de *Time-to-Market* nunca justifica la deuda de seguridad.
