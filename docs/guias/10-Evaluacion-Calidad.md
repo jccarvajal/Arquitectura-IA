@@ -95,6 +95,11 @@ Para que el Golden Set sea un activo de gobernanza real, debe incluir casos de p
 * **Proactividad:** Entradas con instrucciones deliberadamente vagas para evaluar si el agente identifica la ambigüedad y realiza las preguntas aclaratorias de "bajo esfuerzo" necesarias.
 * **Personalización:** Pruebas de adaptabilidad de tono, formato y lenguaje según perfiles de usuario específicos.
 
+!!! tip "Implementación en Tiempo Real: La Aduana Cognitiva"
+    Para llevar estas métricas de un entorno de pruebas a producción en tiempo real, consulte la arquitectura de **Aduana Cognitiva** en el **[Anexo H](../anexos/H-Seguridad-Operativa.md)**.
+
+    Allí, el modelo evaluador ("Juez") deja de ser un auditor pasivo y actúa como un **firewall lógico** que bloquea o reescribe respuestas inseguras antes de que lleguen al usuario.
+
 ---
 
 ### Parte 3: El "Dashboard de Calidad": Qué Medimos
