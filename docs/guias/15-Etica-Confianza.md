@@ -363,6 +363,13 @@ Cuando los "Agentes PM" se vuelven parte del equipo, surgen preguntas legales qu
     * **El Riesgo:** Un agente externo sofisticado podría usar técnicas de persuasión o inyección indirecta para "convencer" a tu agente de aceptar términos desfavorables, optimizando una métrica oculta (ej. "cerrar el trato rápido") en detrimento de tus intereses (ej. "ahorrar dinero").
     * **El Mandato:** La ética de la IA ya no es solo sobre sesgos humanos; es sobre **Conflictos de Interés Computacionales**. Debes auditar no solo lo que tu agente hace, sino qué incentivos externos podrían estar influenciando su "criterio".
 
+!!! quote "El Principio de Asimetría: Skin in the Game"
+    Siguiendo a Nassim Taleb, la regla fundamental de la ética en sistemas complejos es la simetría: **"No puede haber autoridad sin responsabilidad"**.
+
+    Una Inteligencia Artificial tiene cero *Skin in the Game* (Jugarse la Piel). Si un modelo recomienda una inversión ruinosa o un tratamiento médico fatal, el modelo no pierde dinero, no va a la cárcel y no siente remordimiento.
+
+    Debido a esta asimetría insalvable, la IA puede tener **capacidad** (hacer el trabajo) pero nunca **autoridad** (firmar el resultado). La firma debe pertenecer siempre a quien paga el costo del error.
+
 ---
 
 ### Conclusión: De Gobernar Máquinas a Liderar Humanos
