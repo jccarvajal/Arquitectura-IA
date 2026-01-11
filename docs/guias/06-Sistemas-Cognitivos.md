@@ -8,6 +8,22 @@ Otorgar capacidad de ejecución (herramientas) a un modelo probabilístico sin d
 
 Un LLM por defecto opera bajo una lógica de completación estadística superficial. Para tareas complejas, esto resulta en acciones erráticas y costosas. En esta sección, implementaremos patrones de diseño cognitivo estructurado, como Chain-of-Thought y Tree of Thoughts, que obligan al modelo a verbalizar su lógica intermedia. Esto no solo mejora la precisión, sino que genera los logs de pensamiento necesarios para la auditoría y la gobernanza.
 
+#### El Control del Determinismo: La Temperatura
+
+Antes de implementar patrones de razonamiento complejos, debemos controlar la "física" básica del modelo. Una de las variables más críticas, y a menudo ignorada en la arquitectura, es la **Temperatura**.
+
+Los LLMs operan como un **Sistema 1** (rápido y probabilístico). No eligen siempre la palabra (*token*) más lógica, sino que a menudo eligen una menos probable para simular variedad. Esta aleatoriedad se controla con este parámetro:
+
+* **Temperatura 0 (Determinismo):** El modelo colapsa la distribución de probabilidades y elige siempre el token más probable. Es el modo más estable y "auditable".
+* **Temperatura Alta (> 0.7):** El modelo toma riesgos estadísticos. Aumenta la "creatividad", pero también la probabilidad exponencial de **alucinación**.
+
+!!! strategic "Dictamen de Arquitectura: La Regla del Cero"
+    En ingeniería de sistemas cognitivos y agentes, la creatividad no solicitada es **ruido**.
+
+    Para que el modelo actúe como un soporte confiable para el operador humano (Sistema 2), debemos eliminar la variabilidad. Para tareas de lógica, seguimiento de instrucciones, uso de herramientas (*Tool Use*) o generación de código, la **Temperatura debe fijarse estrictamente en 0**.
+
+    **El Error Común:** Dejar el valor por defecto (0.7 o 1.0). Esto introduce una "borrachera estadística" en el Sistema 1, haciendo que sus errores sean irreproducibles e imposibles de auditar.
+
 ---
 
 ### Parte 1: El Salto Cognitivo: Del Trabajador Reactivo al Equipo Pensante

@@ -10,10 +10,12 @@ La implementación de IA genera una paradoja de control: a mayor eficiencia del 
 
 En este marco, el juicio humano no es un complemento de la arquitectura, sino un **control crítico no delegable** dentro del modelo de gobernanza.
 
-!!! danger "El Riesgo del 'Sello de Goma' (Rubber Stamping)"
-    El riesgo más insidioso no es la ausencia de humanos, sino la presencia de un humano que actúa como **Sello de Goma**.
+!!! danger "El Riesgo del 'Sello de Goma' (Human-in-the-Loop vs. Human-in-Control)"
+    El riesgo más insidioso no es la ausencia de humanos, sino la presencia de un humano que actúa como **Sello de Goma** (*Rubber Stamping*).
 
-    Si el operador carece de la "Soberanía Epistémica" para entender por qué la IA recomienda X, o carece de la autoridad política para contradecir el 98% de certeza estadística, entonces no hay control humano real; hay solo una validación burocrática de una decisión algorítmica previa.
+    Debemos distinguir entre estar "en el bucle" (*Human-in-the-Loop*) y estar "al mando" (*Human-in-Control*).
+    
+    Si el operador carece de la **Soberanía Epistémica** para entender por qué la IA recomienda X, o carece de la autoridad política para contradecir el 98% de certeza estadística, entonces sigue atrapado en la inercia del Sistema 1. No hay control humano real; hay solo una validación burocrática de una decisión algorítmica previa.
 
 ---
 
