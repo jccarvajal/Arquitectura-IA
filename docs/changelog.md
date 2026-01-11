@@ -6,6 +6,24 @@ Este documento registra todas las modificaciones estructurales, técnicas y conc
 
 ---
 
+## [1.6.0] - 2026-01-11
+### Refinamiento Doctrinal y Endurecimiento Operativo
+
+Esta versión marca la transición de un "manuscrito técnico" a una "doctrina operativa". Se formalizan los criterios de veto mediante "Dictámenes del Arquitecto", se limpia el tono editorial para eliminar el *hype* y se profundiza en la filosofía política del control humano, estableciendo el puente hacia la cultura organizacional.
+
+#### Añadido (Gobernanza y Doctrina)
+* **Dictámenes del Arquitecto:** Inserción de bloques normativos con reglas de veto explícitas en Finanzas (Regla del 50% de costo en Guía 12), Seguridad (Bloqueo de Puertos en Guía 09) y Técnica (Temperatura 0 en Guía 06).
+* **Filosofía Política:** Integración formal de los principios de *Skin in the Game* (Taleb) y *Soberanía Epistémica* vs. *Rubber Stamping* (Innerarity) en la Guía 15 y Anexo E.
+* **Gestión de la Excepción:** Definición del riesgo de "Shadow Governance" y la gestión de la excepción como vulnerabilidad cultural (Cierre de Guía 09).
+* **Física del Modelo:** Explicación técnica de la Temperatura y el Determinismo para justificar controles de robustez en sistemas cognitivos.
+
+#### Mejorado (Navegabilidad y Tono)
+* **Rutas de Lectura:** Nueva sección en la "Nota al Lector" que segrega itinerarios específicos para Arquitectos, Auditores y Estrategas.
+* **Tone-Shift:** Limpieza editorial de títulos y eliminación de lenguaje de marketing para priorizar la sobriedad técnica y la autoridad por experiencia.
+* **Filtro de Audiencia:** Declaración explícita de "Lo que este libro NO es" para gestionar expectativas y redirigir roles puramente operativos a los Anexos.
+
+---
+
 ## [1.5.0] - 2025-12-30
 ### Cierre del Ciclo Operativo y Consolidación de Herramientas
 

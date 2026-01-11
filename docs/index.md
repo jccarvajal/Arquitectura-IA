@@ -1,7 +1,7 @@
 # Arquitectura de Inteligencia Artificial
 ## Guías para Decidir, Diseñar y Gobernar
 
-**Versión 1.5 (Diciembre 2025)**
+**Versión 1.6 (Enero 2025)**
 
 **Autor:** [Juan Carlos Carvajal](https://www.jccarvajal.com/)
 
@@ -162,9 +162,9 @@ Base de conocimiento para alinear equipos y profundizar el criterio.
 ---
 
 ## Changelog
+* **v1.6 (Enero 2026):** Refinamiento doctrinal y endurecimiento operativo. Se introducen "Dictámenes del Arquitecto" con reglas de veto, se ajusta el tono editorial y se formaliza la filosofía política del control humano.
 * **v1.5 (Diciembre 2025):** Consolidación de la fase operativa y resiliencia. Finaliza la redacción de los Anexos E, F, G y H, reestructurando el marco de cumplimiento (antiguos E y F, ahora I y J) como un sello de certificación final.
 * Ver [Historial Completo](./changelog.md).
-
 
 ## Sugerencias y Mejoras
 Este es un documento vivo. Si encuentras una errata o tienes una sugerencia de mejora, puedes reportarla directamente en el [Repositorio de GitHub](https://github.com/jccarvajal/Arquitectura-IA).
