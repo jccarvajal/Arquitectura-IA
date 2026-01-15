@@ -2,7 +2,7 @@ site_name: Arquitectura de Inteligencia Artificial
 site_url: https://ia.jccarvajal.com
 site_author: Juan Carlos Carvajal
 site_description: Guías para Decidir, Diseñar y Gobernar sistemas de IA.
-copyright: Copyright &copy; 2025 Juan Carlos Carvajal - Licencia CC BY-NC-ND 4.0
+copyright: Copyright &copy; 2026 Juan Carlos Carvajal - Licencia CC BY-NC-ND 4.0
 
 # Configuración del Tema (Material for MkDocs - Modo Cyber/Noir)
 theme:
