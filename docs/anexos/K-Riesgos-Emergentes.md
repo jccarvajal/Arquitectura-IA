@@ -18,6 +18,7 @@ Este riesgo no es político, es **estadístico**. Los modelos se entrenan para m
 
 **El Impacto en la Organización**
 Si tu equipo confía ciegamente en la IA para la estrategia o la innovación, la organización sufrirá una **normalización de la mediocridad**:
+
 * Confundirá consenso con verdad.
 * Confundirá estabilidad con validez.
 * Invisibilizará las señales débiles o emergentes que la estadística descarta como "ruido".
@@ -35,6 +36,7 @@ Si tu equipo confía ciegamente en la IA para la estrategia o la innovación, la
 Los eventos raros, por definición, tienen pocos datos de entrenamiento. La IA no tiene "sentido común" para extrapolar en situaciones inéditas; solo tiene analogías probabilísticas que fallan cuando cambia el contexto.
 
 **El Impacto**
+
 * **Atrofia de Simulacros:** Como el sistema "nunca falla", la organización deja de ensayar protocolos de crisis manuales.
 * **Improvisación:** Cuando ocurre lo inevitable (el ataque inédito, el colapso de mercado), el humano confía demasiado en una IA que está alucinando soluciones para un problema que no comprende.
 
@@ -50,6 +52,7 @@ Los eventos raros, por definición, tienen pocos datos de entrenamiento. La IA n
 Es un problema de **eficiencia vs. resiliencia**. El cerebro humano tiende a ahorrar energía. Si la IA acierta 50 veces seguidas, el operador humano deja de auditar (pasa de "evaluar" a "validar por defecto").
 
 **El Impacto**
+
 * **Normalización de Alucinaciones:** Los errores sutiles se integran en la base de conocimiento corporativa.
 * **Dilución de Responsabilidad:** Cuando el error explota, nadie se siente dueño de la decisión porque "el sistema dijo que estaba bien".
 
@@ -65,6 +68,7 @@ Es un problema de **eficiencia vs. resiliencia**. El cerebro humano tiende a aho
 En la "Web Agéntica", tu Agente de Compras interactuará con Agentes de Ventas de terceros. Estos últimos estarán optimizados para **persuadir** a tu agente (inyección de prompts lógica, manipulación semántica) para que acepte términos desfavorables.
 
 **El Impacto**
+
 * Optimización local (cerrar el trato rápido) contra el interés global (ahorrar dinero).
 * Fuga de información estratégica ante agentes "encantadores" diseñados para ingeniería social automatizada.
 
@@ -89,6 +93,7 @@ La IA comienza a tomar decisiones sesgadas no por un error de código, sino porq
     Cuando la tecnología se vuelve fetiche, sus límites dejan de discutirse.
 
 **Síntomas de Alerta**
+
 * **Sobreconfianza en Demos:** Tomar decisiones de compra basadas en videos de marketing y no en pruebas de estrés.
 * **Desprecio por Fallos "Raros":** "Eso solo pasó una vez" se convierte en la excusa para ignorar vulnerabilidades sistémicas.
 * **Desplazamiento del Debate:** Se discute qué modelo es más "inteligente" en lugar de qué proceso es más **necesario**.
