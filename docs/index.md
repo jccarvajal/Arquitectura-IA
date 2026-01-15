@@ -153,7 +153,7 @@ Marcos internacionales para certificación y resiliencia legal.
 Estrategias de anticipación para riesgos estructurales y de largo plazo.
 
 * [Anexo K: Radar de Riesgos Emergentes](./anexos/K-Riesgos-Emergentes.md)
-  *Catálogo de fallas sistémicas silenciosas (conservadurismo, atrofia y ceguera) para la vigilancia estratégica.*
+  *Catálogo de fallas sistémicas silenciosas para la vigilancia estratégica.*
 
 ---
 
