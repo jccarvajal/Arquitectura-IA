@@ -149,6 +149,12 @@ Marcos internacionales para certificación y resiliencia legal.
 * [Anexo J: Marco Regulatorio EU](./anexos/J-Marco-Regulatorio-EU.md)
   *Guía de clasificación de riesgos y obligaciones legales (Efecto Bruselas).*
 
+### Vigilancia y Futuro
+Estrategias de anticipación para riesgos estructurales y de largo plazo.
+
+* [Anexo K: Radar de Riesgos Emergentes](./anexos/K-Riesgos-Emergentes.md)
+  *Catálogo de fallas sistémicas silenciosas (conservadurismo, atrofia y ceguera) para la vigilancia estratégica.*
+
 ---
 
 ## Referencias y Fundamentos
