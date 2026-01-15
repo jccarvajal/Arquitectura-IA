@@ -14,9 +14,11 @@
     Los LLMs, operando a escala y sin fricción exploratoria, tienden a reforzar patrones existentes, estabilizar consensos y penalizar la desviación.
 
 **La Mecánica del Fallo**
+
 Este riesgo no es político, es **estadístico**. Los modelos se entrenan para minimizar la "perplejidad" (sorpresa). Optimizan para la respuesta más plausible, coherente y "normal" basada en datos históricos.
 
 **El Impacto en la Organización**
+
 Si tu equipo confía ciegamente en la IA para la estrategia o la innovación, la organización sufrirá una **normalización de la mediocridad**:
 
 * Confundirá consenso con verdad.
@@ -33,6 +35,7 @@ Si tu equipo confía ciegamente en la IA para la estrategia o la innovación, la
     Los sistemas de IA funcionan excepcionalmente bien en el 99% de los casos normales, creando una falsa sensación de seguridad que se rompe catastróficamente ante el evento del 1% (Cisne Negro).
 
 **La Mecánica del Fallo**
+
 Los eventos raros, por definición, tienen pocos datos de entrenamiento. La IA no tiene "sentido común" para extrapolar en situaciones inéditas; solo tiene analogías probabilísticas que fallan cuando cambia el contexto.
 
 **El Impacto**
@@ -49,6 +52,7 @@ Los eventos raros, por definición, tienen pocos datos de entrenamiento. La IA n
     *(Ver también: [Anexo E: Soberanía del Criterio](./E-Soberania-Criterio.md))*
 
 **La Mecánica del Fallo**
+
 Es un problema de **eficiencia vs. resiliencia**. El cerebro humano tiende a ahorrar energía. Si la IA acierta 50 veces seguidas, el operador humano deja de auditar (pasa de "evaluar" a "validar por defecto").
 
 **El Impacto**
@@ -65,6 +69,7 @@ Es un problema de **eficiencia vs. resiliencia**. El cerebro humano tiende a aho
     *(Ver también: [Guía 15: Lealtad Agéntica](../guias/15-Etica-Confianza.md))*
 
 **La Mecánica del Fallo**
+
 En la "Web Agéntica", tu Agente de Compras interactuará con Agentes de Ventas de terceros. Estos últimos estarán optimizados para **persuadir** a tu agente (inyección de prompts lógica, manipulación semántica) para que acepte términos desfavorables.
 
 **El Impacto**
@@ -80,9 +85,11 @@ En la "Web Agéntica", tu Agente de Compras interactuará con Agentes de Ventas 
     Aprender rápido no es lo mismo que aprender bien. Una memoria sin curaduría es el vector de ataque más simple.
 
 **La Mecánica del Fallo**
+
 Si tu sistema utiliza RAG (Recuperación Aumentada) sobre fuentes externas (internet, correos entrantes) sin esterilización, un atacante puede "plantar" documentos diseñados para alterar la visión del mundo del modelo (*Indirect Prompt Injection*).
 
 **El Impacto**
+
 La IA comienza a tomar decisiones sesgadas no por un error de código, sino porque su "realidad" (los datos que recupera) ha sido comprometida.
 
 ---
