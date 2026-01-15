@@ -15,7 +15,7 @@
 
 **La Mecánica del Fallo**
 
-Este riesgo no es político, es **estadístico**. Los modelos se entrenan para minimizar la "perplejidad" (sorpresa). Optimizan para la respuesta más plausible, coherente y "normal" basada en datos históricos.
+Aclaración de Alcance: No debe confundirse con "conservadurismo político". La IA no tiene ideología; tiene inercia estadística. Mientras la política debate visiones del mundo, la estadística de un modelo simplemente penaliza la desviación (lo atípico).
 
 **El Impacto en la Organización**
 
