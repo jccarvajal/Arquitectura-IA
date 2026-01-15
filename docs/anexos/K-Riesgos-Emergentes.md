@@ -15,7 +15,7 @@
 
 **La Mecánica del Fallo**
 
-Aclaración de Alcance: No debe confundirse con "conservadurismo político". La IA no tiene ideología; tiene inercia estadística. Mientras la política debate visiones del mundo, la estadística de un modelo simplemente penaliza la desviación (lo atípico).
+**Aclaración de Alcance:** No debe confundirse con "conservadurismo político". La IA no tiene ideología; tiene inercia estadística. Mientras la política debate visiones del mundo, la estadística de un modelo simplemente penaliza la desviación (lo atípico).
 
 **El Impacto en la Organización**
 
