@@ -1,6 +1,12 @@
-# Nota al Lector: Cómo Recorrer esta Obra
+# Nota al Lector: El Doble Objetivo y el Mapa
 
-Antes de comenzar el viaje, es fundamental alinear nuestras expectativas sobre lo que esta obra es y lo que no es. Este es un mapa para orientarse en un territorio aún en formación.
+Esta obra ha sido diseñada para resolver dos problemas que suelen tratarse por separado, pero que son indivisibles:
+
+1.  **La Desmitificación (El "Qué"):** Abrir la "caja negra" de la Inteligencia Artificial para entender su mecánica real, lejos del *hype* y la ciencia ficción. Entender que no es magia, es estadística.
+2.  **La Gobernanza (El "Cómo"):** Proporcionar las herramientas de arquitectura, control y riesgo necesarias para desplegar esta tecnología en organizaciones reales, con responsabilidades reales.
+
+**La tesis es simple: No puedes gobernar lo que no entiendes.**
+Sin el primer objetivo, el segundo es burocracia ciega. Sin el segundo, el primero es solo curiosidad técnica.
 
 !!! failure "Lo que este libro NO es"
     * **No es un recetario de Prompts:** Si buscas "10 trucos para ChatGPT", este libro te frustrará. Aquí diseñamos la fábrica, no el producto final.
