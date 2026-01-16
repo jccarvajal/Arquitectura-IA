@@ -1,0 +1,2640 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Guías para Decidir, Diseñar y Gobernar sistemas de IA.">
+      
+      
+        <meta name="author" content="Juan Carlos Carvajal">
+      
+      
+        <link rel="canonical" href="https://ia.jccarvajal.com/anexos/A-Formulacion-Viabilidad/">
+      
+      
+        <link rel="prev" href="../../conclusion/">
+      
+      
+        <link rel="next" href="../B-Politica-Institucional/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>A - Formulación - Arquitectura de Inteligencia Artificial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#anexo-a-formulacion-y-viabilidad-de-proyectos" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Arquitectura de Inteligencia Artificial" class="md-header__button md-logo" aria-label="Arquitectura de Inteligencia Artificial" data-md-component="logo">
+      
+  <img src="../../assets/images/portada-ia.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Arquitectura de Inteligencia Artificial
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              A - Formulación
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../nota-al-lector/" class="md-tabs__link">
+          
+  
+  
+  Introducción
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../guias/01-Anatomia-Modelos/" class="md-tabs__link">
+          
+  
+  
+  Bloque 1 - Fundamentos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../guias/05-Ingenieria-Agentes/" class="md-tabs__link">
+          
+  
+  
+  Bloque 2 - Construcción
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../guias/09-Gobernanza/" class="md-tabs__link">
+          
+  
+  
+  Bloque 3 - Operación
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../guias/13-Estrategia-Valor/" class="md-tabs__link">
+          
+  
+  
+  Bloque 4 - Estrategia
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../guias/17-Perspectivas/" class="md-tabs__link">
+          
+  
+  
+  Bloque 5 - Futuro
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../conclusion/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Conclusión
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  Anexos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../referencias/Glosario/" class="md-tabs__link">
+          
+  
+  
+  Referencias
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../acerca/autor/" class="md-tabs__link">
+          
+  
+  
+  Acerca de
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Arquitectura de Inteligencia Artificial" class="md-nav__button md-logo" aria-label="Arquitectura de Inteligencia Artificial" data-md-component="logo">
+      
+  <img src="../../assets/images/portada-ia.png" alt="logo">
+
+    </a>
+    Arquitectura de Inteligencia Artificial
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Introducción
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nota-al-lector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nota al Lector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prologo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prólogo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ideas-centrales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ideas Centrales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloque 1 - Fundamentos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bloque 1 - Fundamentos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/01-Anatomia-Modelos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 01 - Anatomía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/02-Ingenieria-Prompts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 02 - Prompts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/03-Contexto-Memoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 03 - Contexto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/04-Estrategia-Datos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 04 - Datos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloque 2 - Construcción
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bloque 2 - Construcción
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/05-Ingenieria-Agentes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 05 - Agentes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/06-Sistemas-Cognitivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 06 - Cognición
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/07-Fine-Tuning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 07 - Fine-Tuning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/08-Prototipado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 08 - Prototipado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloque 3 - Operación
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bloque 3 - Operación
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/09-Gobernanza/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 09 - Gobernanza
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/10-Evaluacion-Calidad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 10 - QA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/11-Industrializacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 11 - Industrialización
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/12-ROI-Financiero/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 12 - ROI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloque 4 - Estrategia
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bloque 4 - Estrategia
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/13-Estrategia-Valor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 13 - Valor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/14-Modelos-Mercado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 14 - Modelos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/15-Etica-Confianza/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 15 - Ética
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/16-Aprender-A-Pensar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 16 - Operación Cognitiva
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloque 5 - Futuro
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bloque 5 - Futuro
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/17-Perspectivas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 17 - Perspectivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conclusion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conclusión
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Anexos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A - Formulación
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A - Formulación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-a-formulacion-y-viabilidad-de-proyectos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anexo A: Formulación y Viabilidad de Proyectos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Anexo A: Formulación y Viabilidad de Proyectos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduccion-el-primer-filtro-de-gobernanza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introducción: El Primer Filtro de Gobernanza
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seccion-1-definicion-estrategica-la-transformacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sección 1: Definición Estratégica (La Transformación)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seccion-2-viabilidad-tecnica-y-de-datos-el-combustible" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sección 2: Viabilidad Técnica y de Datos (El Combustible)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seccion-3-checklist-de-validacion-etica-el-safety-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sección 3: Checklist de Validación Ética (El "Safety Case")
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seccion-4-definicion-de-exito-el-golden-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sección 4: Definición de Éxito (El "Golden Set")
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seccion-5-ciclo-de-vida-y-salida-el-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sección 5: Ciclo de Vida y Salida (El "Final")
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seccion-6-validacion-de-juicio-humano-sistema-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sección 6: Validación de Juicio Humano (Sistema 2)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dictamen-final-triage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dictamen Final (Triage)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../B-Politica-Institucional/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    B - Política
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../C-Blueprints/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C - Blueprints
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../D-Plantillas-Recursos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D - Plantillas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../E-Soberania-Criterio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    E - Criterio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../F-Vulnerabilidades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    F - Vulnerabilidades
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../G-Automatizaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    G - Automatizaciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../H-Seguridad-Operativa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    H - Seguridad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../I-Gobernanza-Global/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    I - Certificación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../J-Marco-Regulatorio-EU/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    J - Regulatorio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../K-Riesgos-Emergentes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    K - Riesgos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Referencias
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Referencias
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../referencias/Glosario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../referencias/Bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Acerca de
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Acerca de
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../acerca/autor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Autor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../acerca/licence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Licencia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../acerca/contribuir/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cómo Contribuir
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Historial (Changelog)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>A - Formulación</h1>
+
+<h2 id="anexo-a-formulacion-y-viabilidad-de-proyectos">Anexo A: Formulación y Viabilidad de Proyectos<a class="headerlink" href="#anexo-a-formulacion-y-viabilidad-de-proyectos" title="Permanent link">&para;</a></h2>
+<p>Subtítulo: Estructura base para Casos de Seguridad (Safety Cases)</p>
+<h3 id="introduccion-el-primer-filtro-de-gobernanza">Introducción: El Primer Filtro de Gobernanza<a class="headerlink" href="#introduccion-el-primer-filtro-de-gobernanza" title="Permanent link">&para;</a></h3>
+<p>Antes de prototipar, debemos validar. Este documento es la herramienta de <strong>"Screening" (Triage)</strong> mencionada en la <strong>Guía 09 (Gobernanza)</strong>.</p>
+<p>Su propósito es evitar el "solucionismo tecnológico" y asegurar que solo los proyectos que son <strong>técnicamente viables</strong> (datos enlazables), <strong>estratégicamente valiosos</strong> (transforman una actividad real) y <strong>éticamente robustos</strong> pasen a desarrollo.</p>
+<blockquote>
+<p><strong>Nota Técnica:</strong> Al completar este documento, estás construyendo la evidencia estructurada (Safety Case) requerida para futuras auditorías de seguridad. Si descubres aquí que el proyecto no es viable, <strong>descartarlo es un éxito</strong>.</p>
+</blockquote>
+<hr />
+<h3 id="seccion-1-definicion-estrategica-la-transformacion">Sección 1: Definición Estratégica (La Transformación)<a class="headerlink" href="#seccion-1-definicion-estrategica-la-transformacion" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>Contexto:</strong> No basta con tener un "dolor". Debemos identificar qué <em>actividad humana</em> específica va a cambiar. Si no puedes describir el "Antes" y el "Después" operativo, no tienes un proyecto, tienes solo una idea.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Criterio Estratégico</th>
+<th style="text-align: left;">Pregunta Clave</th>
+<th style="text-align: left;">Respuesta / Placeholder</th>
+<th style="text-align: left;">Referencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>1. El Dolor (Why)</strong></td>
+<td style="text-align: left;">¿Qué problema raíz resolvemos y cuál es el costo de no hacer nada?</td>
+<td style="text-align: left;"><code>[Describe el problema y su impacto económico]</code></td>
+<td style="text-align: left;">Guía 01</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2. La Transformación (What)</strong></td>
+<td style="text-align: left;">Flujo Operativo: ANTES (Humano) vs DESPUÉS (IA + Humano).</td>
+<td style="text-align: left;"><em>Antes:</em> <code>[Ej: Lee 100 contratos]</code><br><em>Después:</em> <code>[Ej: IA filtra, Humano valida 5]</code></td>
+<td style="text-align: left;">Guía 02</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3. La Zona ROI (Value)</strong></td>
+<td style="text-align: left;">¿Dónde cae en el Mapa de Inversión? (Verde, Amarillo, Rojo, Azul).</td>
+<td style="text-align: left;"><code>[Ej: Zona Verde - Eficiencia Inmediata]</code></td>
+<td style="text-align: left;">Guía 12</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>4. Los Datos (RAG)</strong></td>
+<td style="text-align: left;">¿Qué conocimiento necesita leer el agente y cuán sensible es?</td>
+<td style="text-align: left;"><code>[Ej: Manuales técnicos (Público) + Emails (Confidencial)]</code></td>
+<td style="text-align: left;">Guía 07/11</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>5. La Gobernanza (LOSA)</strong></td>
+<td style="text-align: left;">¿Qué controles (human-in-the-loop) evitarán la atrofia o el error?</td>
+<td style="text-align: left;"><code>[Ej: Auditoría aleatoria del 10% de las respuestas]</code></td>
+<td style="text-align: left;">Guía 09/15</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="seccion-2-viabilidad-tecnica-y-de-datos-el-combustible">Sección 2: Viabilidad Técnica y de Datos (El Combustible)<a class="headerlink" href="#seccion-2-viabilidad-tecnica-y-de-datos-el-combustible" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>Contexto:</strong> El 80% de los proyectos fallan aquí. No basta con "tener datos". Necesitamos saber si esos datos pueden "hablar" entre sí (Identificador Único) y si tienen el detalle suficiente (Granularidad).</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Criterio Técnico</th>
+<th style="text-align: left;">Pregunta Clave</th>
+<th style="text-align: left;">Diagnóstico Técnico (Placeholder)</th>
+<th style="text-align: left;">Referencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Disponibilidad y Enlace</strong></td>
+<td style="text-align: left;">¿Tenemos acceso y, crucialmente, ¿tienen un <strong>identificador único</strong> (ID) para cruzar distintas fuentes?</td>
+<td style="text-align: left;"><code>[No enlazable / Conectable y Limpio]</code></td>
+<td style="text-align: left;">Guía 04</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Granularidad</strong></td>
+<td style="text-align: left;">¿El dato tiene el nivel de detalle necesario para la decisión?</td>
+<td style="text-align: left;"><code>[Granularidad Insuficiente / Granularidad Adecuada]</code></td>
+<td style="text-align: left;">Guía 04</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Complejidad Cognitiva</strong></td>
+<td style="text-align: left;">¿Es tarea de S1 (Patrón) o S2 (Juicio/Riesgo Alto)?</td>
+<td style="text-align: left;"><code>[Sistema 1 / Sistema 2]</code></td>
+<td style="text-align: left;">Guía 15</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="seccion-3-checklist-de-validacion-etica-el-safety-case">Sección 3: Checklist de Validación Ética (El "Safety Case")<a class="headerlink" href="#seccion-3-checklist-de-validacion-etica-el-safety-case" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>Contexto:</strong> Este es el núcleo de <strong>GRC</strong>. Validamos la <strong>Proporcionalidad</strong> y la <strong>Licencia Social</strong>.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Dimensión</th>
+<th style="text-align: left;">Pregunta de Validación ("Go / No-Go")</th>
+<th style="text-align: left;">Referencia</th>
+<th style="text-align: left;">Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>1. Proporcionalidad</strong></td>
+<td style="text-align: left;">¿Es la IA el medio adecuado? <em>¿Existe una alternativa No-IA (Excel, Regla simple) más barata y efectiva?</em></td>
+<td style="text-align: left;"><strong>Guía 12</strong></td>
+<td style="text-align: left;"><code>[ ]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2. Licencia Social</strong></td>
+<td style="text-align: left;">¿Aprobarían los afectados (ciudadanos/empleados) este uso si apareciera en la prensa mañana?</td>
+<td style="text-align: left;"><strong>Guía 15</strong></td>
+<td style="text-align: left;"><code>[ ]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3. Protección de Datos</strong></td>
+<td style="text-align: left;">¿Hay datos personales? Si es así, ¿tenemos base legal para tratarlos y arquitectura segura (LOSA)?</td>
+<td style="text-align: left;"><strong>Guía 09</strong></td>
+<td style="text-align: left;"><code>[ ]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>4. Transparencia</strong></td>
+<td style="text-align: left;">¿Es explicable la decisión? ¿Podemos trazar <em>por qué</em> actuó así (logs de razonamiento) ante una auditoría?</td>
+<td style="text-align: left;"><strong>Guía 09</strong></td>
+<td style="text-align: left;"><code>[ ]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>5. Sesgos</strong></td>
+<td style="text-align: left;">¿Los datos históricos ("Antes") contienen prejuicios que la IA podría aprender y amplificar?</td>
+<td style="text-align: left;"><strong>Guía 04</strong></td>
+<td style="text-align: left;"><code>[ ]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>6. Responsabilidad</strong></td>
+<td style="text-align: left;">¿Existe un "Dueño del Sistema" humano designado que asuma la responsabilidad final del resultado?</td>
+<td style="text-align: left;"><strong>Anexo B</strong></td>
+<td style="text-align: left;"><code>[ ]</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="seccion-4-definicion-de-exito-el-golden-set">Sección 4: Definición de Éxito (El "Golden Set")<a class="headerlink" href="#seccion-4-definicion-de-exito-el-golden-set" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>Contexto:</strong> Si no puedes medirlo, no puedes gobernarlo. Define contra qué vamos a comparar.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Métrica</th>
+<th style="text-align: left;">Definición / Pregunta Clave</th>
+<th style="text-align: left;">Umbral / Estimación</th>
+<th style="text-align: left;">Referencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Calidad / Golden Set</strong></td>
+<td style="text-align: left;">¿Contra qué estándar de verdad (ej. humano o proceso anterior) compararemos a la IA?</td>
+<td style="text-align: left;"><code>[KPI Objetivo y Umbral]</code></td>
+<td style="text-align: left;">Guía 10</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Costo (Tokenomics)</strong></td>
+<td style="text-align: left;">¿Cuál es el costo estimado de operación mensual vs. el ahorro proyectado?</td>
+<td style="text-align: left;"><code>[$ Costo vs. $ Ahorro]</code></td>
+<td style="text-align: left;">Guía 12</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition failure">
+<p class="admonition-title">Criterio de Rechazo Automático (Hard Veto)</p>
+<p>Para evitar discusiones subjetivas en el comité, se aplica la siguiente regla financiera de corte:</p>
+<p><strong>La Regla del 50%:</strong></p>
+<blockquote>
+<p><em>Si el Costo Proyectado por Transacción de la IA (incluyendo revisión humana) supera el </em><em>50%</em><em> del Costo Actual del proceso puramente humano, el proyecto se </em><em>RECHAZA AUTOMÁTICAMENTE</em><em>.</em></p>
+</blockquote>
+<p>No buscamos márgenes marginales. Si la tecnología no puede reducir el costo unitario al menos a la mitad, el riesgo de implementación no justifica la inversión.</p>
+</div>
+<hr />
+<h3 id="seccion-5-ciclo-de-vida-y-salida-el-final">Sección 5: Ciclo de Vida y Salida (El "Final")<a class="headerlink" href="#seccion-5-ciclo-de-vida-y-salida-el-final" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>Contexto:</strong> Todo sistema de software se convierte eventualmente en deuda técnica. La responsabilidad final de GRC es saber cómo apagar el sistema <em>antes</em> de encenderlo. Debemos evitar crear "Agentes Zombis" y prevenir la "Atrofia Cognitiva".</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Criterio</th>
+<th style="text-align: left;">Pregunta Clave</th>
+<th style="text-align: left;">Plan de Mitigación / Protocolo</th>
+<th style="text-align: left;">Referencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Plan de Retiro</strong></td>
+<td style="text-align: left;">¿Cómo se apaga el sistema y se borran los datos vectorizados (RAG) cuando el proyecto termine?</td>
+<td style="text-align: left;"><code>[Protocolo de borrado seguro]</code></td>
+<td style="text-align: left;">Guía 09</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Resiliencia</strong></td>
+<td style="text-align: left;">Si el sistema falla, ¿mantenemos la capacidad humana de operar manualmente (Actividad "Antes")?</td>
+<td style="text-align: left;"><code>[Simulacro manual trimestral]</code></td>
+<td style="text-align: left;">Guía 15</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="seccion-6-validacion-de-juicio-humano-sistema-2">Sección 6: Validación de Juicio Humano (Sistema 2)<a class="headerlink" href="#seccion-6-validacion-de-juicio-humano-sistema-2" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>Contexto:</strong> La IA opera como un Sistema 1 (estadístico/intuitivo). Esta sección fuerza la activación del Sistema 2 (analítico/responsable) para evitar la abdicación del juicio y la "Estupidez Artificial". Si alguna respuesta es "No", el proyecto debe ser devuelto a diseño.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Criterio de Juicio</th>
+<th style="text-align: left;">Pregunta Crítica de Validación</th>
+<th style="text-align: left;">Referencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Explicabilidad</strong></td>
+<td style="text-align: left;">¿Podemos explicar la lógica del resultado sin recurrir a la frase "es una caja negra"? ¿Es auditable la lógica del resultado mediante evidencia de razonamiento y trazabilidad?</td>
+<td style="text-align: left;">Guía 09, 14</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>No-Abdicación</strong></td>
+<td style="text-align: left;">¿Se ha definido el punto exacto donde el humano debe "firmar" la decisión antes de una acción irreversible?</td>
+<td style="text-align: left;">Guía 15, 16</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Amnesia Estática</strong></td>
+<td style="text-align: left;">¿La arquitectura de memoria (RAG/Memoria Explícita) es suficiente para que el agente no "olvide" el contexto crítico?</td>
+<td style="text-align: left;">Guía 03</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Skin in the Game</strong></td>
+<td style="text-align: left;">¿El responsable (Sponsor) está dispuesto a asumir el pasivo legal y reputacional si el Sistema 1 comete un error grave?</td>
+<td style="text-align: left;">Guía 16, Concl.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Veto de Costo</strong></td>
+<td style="text-align: left;">¿Cumple con la Regla de Oro? (Costo IA + Supervisión Humana &lt; 50% del costo humano actual).</td>
+<td style="text-align: left;">Guía 12, Chlog.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Simetría de Acción</strong></td>
+<td style="text-align: left;">¿Existe un "Kill-Switch" operativo y una función de "Undo" para revertir las acciones del agente?</td>
+<td style="text-align: left;">Guía 05, Chlog.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Certificación del Arquitecto</p>
+<p>Al proceder al dictamen, el evaluador certifica que no está delegando su juicio a la máquina, sino utilizando la IA como un aumento de su capacidad operativa bajo su supervisión directa.</p>
+</div>
+<hr />
+<h3 id="dictamen-final-triage">Dictamen Final (Triage)<a class="headerlink" href="#dictamen-final-triage" title="Permanent link">&para;</a></h3>
+<div class="admonition quote">
+<p class="admonition-title">Decisión del Comité de Gobernanza / Sponsor</p>
+<p>Basado en la evidencia de este Canvas, el proyecto se califica como:</p>
+<ul>
+<li><code>[ ]</code> <strong>VIABLE (APROBADO):</strong> El valor es claro, los riesgos están mitigados. -&gt; <em>Pasa a Prototipado.</em></li>
+<li><code>[ ]</code> <strong>CONDICIONAL:</strong> Requiere resolver la brecha de datos o ética. -&gt; <em>Volver a Formulación.</em></li>
+<li><code>[ ]</code> <strong>NO VIABLE (RECHAZADO):</strong> El riesgo supera al valor. -&gt; <em>Fin del proceso.</em></li>
+</ul>
+<p><strong>Responsable de la Evaluación:</strong> <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_____</p>
+<p><strong>Firma del Arquitecto de IA:</strong> <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_____</p>
+<p><strong>Fecha de Aprobación:</strong> <strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>_____</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="../../conclusion/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Conclusión">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Conclusión
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../B-Politica-Institucional/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: B - Política">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                B - Política
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Juan Carlos Carvajal - Licencia CC BY-NC-ND 4.0
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>

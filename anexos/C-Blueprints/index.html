@@ -1,0 +1,2707 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Guías para Decidir, Diseñar y Gobernar sistemas de IA.">
+      
+      
+        <meta name="author" content="Juan Carlos Carvajal">
+      
+      
+        <link rel="canonical" href="https://ia.jccarvajal.com/anexos/C-Blueprints/">
+      
+      
+        <link rel="prev" href="../B-Politica-Institucional/">
+      
+      
+        <link rel="next" href="../D-Plantillas-Recursos/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>C - Blueprints - Arquitectura de Inteligencia Artificial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#anexo-c-lecciones-de-implementacion-blueprints" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Arquitectura de Inteligencia Artificial" class="md-header__button md-logo" aria-label="Arquitectura de Inteligencia Artificial" data-md-component="logo">
+      
+  <img src="../../assets/images/portada-ia.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Arquitectura de Inteligencia Artificial
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              C - Blueprints
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../nota-al-lector/" class="md-tabs__link">
+          
+  
+  
+  Introducción
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../guias/01-Anatomia-Modelos/" class="md-tabs__link">
+          
+  
+  
+  Bloque 1 - Fundamentos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../guias/05-Ingenieria-Agentes/" class="md-tabs__link">
+          
+  
+  
+  Bloque 2 - Construcción
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../guias/09-Gobernanza/" class="md-tabs__link">
+          
+  
+  
+  Bloque 3 - Operación
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../guias/13-Estrategia-Valor/" class="md-tabs__link">
+          
+  
+  
+  Bloque 4 - Estrategia
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../guias/17-Perspectivas/" class="md-tabs__link">
+          
+  
+  
+  Bloque 5 - Futuro
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../conclusion/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Conclusión
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../A-Formulacion-Viabilidad/" class="md-tabs__link">
+          
+  
+  
+  Anexos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../referencias/Glosario/" class="md-tabs__link">
+          
+  
+  
+  Referencias
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../acerca/autor/" class="md-tabs__link">
+          
+  
+  
+  Acerca de
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Arquitectura de Inteligencia Artificial" class="md-nav__button md-logo" aria-label="Arquitectura de Inteligencia Artificial" data-md-component="logo">
+      
+  <img src="../../assets/images/portada-ia.png" alt="logo">
+
+    </a>
+    Arquitectura de Inteligencia Artificial
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Introducción
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nota-al-lector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nota al Lector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prologo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prólogo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ideas-centrales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ideas Centrales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloque 1 - Fundamentos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bloque 1 - Fundamentos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/01-Anatomia-Modelos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 01 - Anatomía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/02-Ingenieria-Prompts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 02 - Prompts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/03-Contexto-Memoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 03 - Contexto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/04-Estrategia-Datos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 04 - Datos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloque 2 - Construcción
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bloque 2 - Construcción
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/05-Ingenieria-Agentes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 05 - Agentes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/06-Sistemas-Cognitivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 06 - Cognición
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/07-Fine-Tuning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 07 - Fine-Tuning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/08-Prototipado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 08 - Prototipado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloque 3 - Operación
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bloque 3 - Operación
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/09-Gobernanza/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 09 - Gobernanza
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/10-Evaluacion-Calidad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 10 - QA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/11-Industrializacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 11 - Industrialización
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/12-ROI-Financiero/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 12 - ROI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloque 4 - Estrategia
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bloque 4 - Estrategia
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/13-Estrategia-Valor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 13 - Valor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/14-Modelos-Mercado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 14 - Modelos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/15-Etica-Confianza/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 15 - Ética
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/16-Aprender-A-Pensar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 16 - Operación Cognitiva
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloque 5 - Futuro
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bloque 5 - Futuro
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/17-Perspectivas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 17 - Perspectivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conclusion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conclusión
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Anexos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../A-Formulacion-Viabilidad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A - Formulación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../B-Politica-Institucional/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    B - Política
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C - Blueprints
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C - Blueprints
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-c-lecciones-de-implementacion-blueprints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anexo C: Lecciones de Implementación (Blueprints)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Anexo C: Lecciones de Implementación (Blueprints)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduccion-que-es-un-blueprint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introducción: ¿Qué es un "Blueprint"?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-portafolio-del-arquitecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El Portafolio del Arquitecto
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blueprint-1-el-agente-de-soporte-al-cliente-pm-interno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Blueprint 1: El "Agente de Soporte al Cliente" (PM Interno)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blueprint-2-el-agente-analista-legal-pm-experto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Blueprint 2: El "Agente-Analista-Legal" (PM Experto)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blueprint-3-el-agente-de-estrategia-director-de-programa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Blueprint 3: El "Agente de Estrategia" (Director de Programa)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blueprint-4-el-agente-de-gobernanza-de-datos-pm-de-auditoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Blueprint 4: El "Agente de Gobernanza de Datos" (PM de Auditoría)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blueprint-5-el-generador-de-datos-sinteticos-pm-de-entrenamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Blueprint 5: El "Generador de Datos Sintéticos" (PM de Entrenamiento)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blueprint-6-el-co-piloto-creativo-sinergia-de-escritura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Blueprint 6: El "Co-Piloto Creativo" (Sinergia de Escritura)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blueprint-7-el-producto-como-agente-monetizacion-externa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Blueprint 7: El "Producto-como-Agente" (Monetización Externa)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../D-Plantillas-Recursos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D - Plantillas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../E-Soberania-Criterio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    E - Criterio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../F-Vulnerabilidades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    F - Vulnerabilidades
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../G-Automatizaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    G - Automatizaciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../H-Seguridad-Operativa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    H - Seguridad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../I-Gobernanza-Global/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    I - Certificación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../J-Marco-Regulatorio-EU/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    J - Regulatorio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../K-Riesgos-Emergentes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    K - Riesgos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Referencias
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Referencias
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../referencias/Glosario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../referencias/Bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Acerca de
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Acerca de
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../acerca/autor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Autor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../acerca/licence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Licencia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../acerca/contribuir/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cómo Contribuir
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Historial (Changelog)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>C - Blueprints</h1>
+
+<h2 id="anexo-c-lecciones-de-implementacion-blueprints">Anexo C: Lecciones de Implementación (Blueprints)<a class="headerlink" href="#anexo-c-lecciones-de-implementacion-blueprints" title="Permanent link">&para;</a></h2>
+<p>Subtítulo: Blueprints y Casos de Estudio</p>
+<h3 id="introduccion-que-es-un-blueprint">Introducción: ¿Qué es un "Blueprint"?<a class="headerlink" href="#introduccion-que-es-un-blueprint" title="Permanent link">&para;</a></h3>
+<p>En el contexto de esta obra, un "Blueprint" es un caso de estudio práctico y un plano de arquitectura. Su función es ser el puente entre la teoría y la práctica. </p>
+<p>Toma los conceptos abstractos de las Guías (el "qué" y el "por qué") y los manuales técnicos de los Anexos (el "cómo") y los ensambla para resolver un problema de negocio real y específico.</p>
+<p>Cada blueprint es una plantilla de solución que detalla:</p>
+<ul>
+<li>El Problema de negocio.  </li>
+<li>El Objetivo Estratégico de la solución de IA.  </li>
+<li>Los "Ingredientes" (las Guías y Anexos específicos de la obra que se necesitan).  </li>
+<li>El Flujo del Agente (el prompt, la lógica, las herramientas y la gobernanza).  </li>
+<li>La Sinergia (el nuevo rol del humano vs. el rol del agente, y la redefinición del valor).</li>
+</ul>
+<p>Es la pieza que conecta la estrategia (las Guías) con la ejecución, y forma parte del "Portafolio del Arquitecto".</p>
+<hr />
+<h3 id="el-portafolio-del-arquitecto">El Portafolio del Arquitecto<a class="headerlink" href="#el-portafolio-del-arquitecto" title="Permanent link">&para;</a></h3>
+<p>La obra de guías y anexos fue diseñada para los "Arquitectos" y "Directores". Este anexo es la práctica: el "Portafolio del Arquitecto". Estos son los planos que un "Ingeniero de Prototipos" o un "Director de Industrialización" usaría. A continuación, se presentan varios blueprints que aumentan en complejidad. Este portafolio no es exhaustivo y está diseñado para crecer.</p>
+<div class="admonition danger">
+<p class="admonition-title">Alerta de Seguridad: Gestión de Credenciales (API Keys)</p>
+<p><strong>NUNCA escribas credenciales en el código del agente o en el prompt.</strong></p>
+<p>En los ejemplos de Blueprints, verás referencias a herramientas. En producción, estas herramientas deben autenticarse mediante <strong>Variables de Entorno</strong> (<code>os.environ['API_KEY']</code>) o gestores de secretos en la nube (AWS Secrets Manager, Azure Key Vault).</p>
+<ul>
+<li><strong>Riesgo:</strong> Si pones la clave en el prompt ("Usa la clave 1234"), el modelo podría "alucinarla" y revelársela al usuario en el chat.</li>
+<li><strong>Regla:</strong> El modelo usa la herramienta, pero <strong>nunca ve</strong> la credencial que la hace funcionar.</li>
+</ul>
+</div>
+<hr />
+<h3 id="blueprint-1-el-agente-de-soporte-al-cliente-pm-interno">Blueprint 1: El "Agente de Soporte al Cliente" (PM Interno)<a class="headerlink" href="#blueprint-1-el-agente-de-soporte-al-cliente-pm-interno" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>El Problema:</strong> El equipo de soporte está sobrecargado con preguntas de <strong>"Sistema 1"</strong>, tareas repetitivas, de bajo juicio, como "¿Cómo reseteo mi contraseña?" o "¿Cuál es su horario de atención?".  </li>
+<li><strong>El Objetivo Estratégico:</strong> Automatizar de forma segura el 80% de estas consultas de "Sistema 1" para liberar a los agentes humanos para el trabajo de <strong>"Sistema 2"</strong> (clientes enojados, problemas complejos).  </li>
+<li>
+<p><strong>Ingredientes (El "Stack" de la Obra):</strong> </p>
+<ul>
+<li><strong>Guía 02 (Prompts):</strong> Para definir el rol, el tono y las reglas de seguridad.  </li>
+<li><strong>Guía 03 (Contexto y Memoria):</strong> Específicamente la arquitectura <strong>RAG (Generación Aumentada por Recuperación)</strong>, para conectar el agente a la "biblioteca" de manuales de producto.  </li>
+<li><strong>Guía 14 (Modelos y Mercado):</strong> Para elegir un motor rápido y barato (ej. Claude Haiku, Gemini Flash).  </li>
+<li><strong>Guía 09 (Gobernanza):</strong> Para definir las reglas de escalado a humano.  </li>
+<li><strong>Guía 15 (Humanidad, Ética y Confianza):</strong> Para aplicar "Humano-en-el-Bucle" y la "Transparencia Obligatoria".  </li>
+<li><strong>Guía 04 (Datos):</strong> Para asegurar que la "biblioteca" RAG esté limpia y actualizada. </li>
+</ul>
+</li>
+<li>
+<p><strong>El Blueprint (El Flujo del Agente):</strong> </p>
+<ol>
+<li><strong>Inicio:</strong> El cliente inicia un chat.  </li>
+<li><strong>RAG (Recuperación):</strong> El sistema toma la pregunta del cliente (ej. "¡no puedo entrar!") y la "vectoriza" (la convierte en un número) para buscar en la "biblioteca" (Base de Datos Vectorial) el artículo de ayuda más relevante.  </li>
+<li><strong>Prompt Aumentado:</strong> El sistema alimenta al "motor" (el LLM) con un prompt de sistema que sintetiza la obra:<br />
+    <div class="highlight"><pre><span></span><code>### INSTRUCCIONES DE SISTEMA ###
+Eres &quot;Asistente-IA&quot;, un agente de soporte amigable y profesional.
+Tu tarea es responder la &lt;PREGUNTA&gt; del cliente.
+REGLAS DE GOBERNANZA:
+1\. (Ética): DEBES comenzar tu primera respuesta identificándote como &quot;el Asistente de IA de la empresa&quot;.
+2\. (RAG): DEBES basar tu respuesta *únicamente* en la información del &lt;CONTEXTO&gt; proporcionado. No inventes URLs o pasos.
+3\. (Seguridad): Si el &lt;CONTEXTO&gt; está vacío o si la &lt;PREGUNTA&gt; del cliente es una queja, grosería o un tema sensible, NO intentes responder. Responde *exactamente* y *solo* con: &quot;Entendido, estoy escalando tu consulta a un agente humano ahora mismo.&quot;
+### FIN INSTRUCCIONES ###
+&lt;CONTEXTO&gt;
+[Aquí se inyecta el artículo relevante de RAG sobre &#39;reseteo de contraseña&#39;]
+&lt;/CONTEXTO&gt;
+&lt;PREGUNTA&gt;
+[Aquí se inyecta la pregunta del cliente: &#39;¡no puedo entrar!&#39;]
+&lt;/PREGUNTA&gt;
+</code></pre></div></li>
+</ol>
+</li>
+<li>
+<p><strong>La Sinergia (Colaboración):</strong> </p>
+<ul>
+<li><strong>Rol del Agente:</strong> Maneja el 100% del trabajo de "Sistema 1".  </li>
+<li><strong>Rol del Humano (Validador):</strong> El humano es elevado de "tomador de tickets" a "experto en escalaciones". Ya no responde 500 reseteos de contraseña. Ahora maneja las 50 quejas sensibles y complejas que el agente le escaló, que es trabajo puro de "Sistema 2" (empatía y resolución de problemas).</li>
+</ul>
+</li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">✅ Validación de Mercado (Caso Real 2025)</p>
+<p>El reporte de Google Cloud <em>101 Real-World Gen AI Use Cases</em> confirma este modelo con el caso de <strong>Mercari</strong> (Marketplace), que implementó un asistente de servicio proyectando un <strong>500% de ROI</strong>, y <strong>LUXGEN</strong>, que redujo la carga humana en un <strong>30%</strong>. Tu diseño coincide con el estándar de la industria.</p>
+</div>
+<hr />
+<h3 id="blueprint-2-el-agente-analista-legal-pm-experto">Blueprint 2: El "Agente-Analista-Legal" (PM Experto)<a class="headerlink" href="#blueprint-2-el-agente-analista-legal-pm-experto" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>El Problema:</strong> Un equipo legal necesita revisar 5.000 contratos (Datos Internos) para encontrar una cláusula de riesgo específica ("Cláusula de Terminación por Conveniencia"). Es un trabajo de "Sistema 1" masivo y de alto costo.  </li>
+<li><strong>El Objetivo Estratégico:</strong> Automatizar el 100% de la revisión (la decisión final sigue siendo humana) en un entorno seguro (on-premise).  </li>
+<li><strong>Ingredientes (El "Stack" de la Obra):</strong> <ul>
+<li><strong>Guía 14 (Modelos y Mercado):</strong> Modelo Open-Source (ej. Llama 3 8B) para control total de datos ("Comprar la Máquina").  </li>
+<li><strong>Guía 07 (Ajuste Fino):</strong> Para entrenar al modelo en la habilidad de "razonar como abogado" y formatear la salida en un JSON perfecto.  </li>
+<li><strong>Guía 03 (Contexto y Memoria):</strong> Arquitectura RAG para inyectar el texto del contrato específico en el prompt.  </li>
+<li><strong>Guía 11 (Industrialización de IA):</strong> Para industrializar el proceso y ejecutarlo en un servidor local seguro, guardando el "rastro de pensamiento" (log) de cada decisión para la auditabilidad. “El "rastro de pensamiento" es un log de razonamiento interno usado únicamente para auditoría y trazabilidad. No se expone a clientes ni usuarios externos. No se trata de CoT expuesto, sino de evidencia de decisiones para supervisión humana.” </li>
+<li><strong>Guía 04 (Datos):</strong> Para asegurar que los 5.000 contratos son la versión correcta y están limpios.  </li>
+</ul>
+</li>
+<li><strong>El Blueprint (El Flujo del Agente):</strong> <ol>
+<li><strong>El "Motor":</strong> Se toma el modelo Llama 3 8B y se le aplica <strong>Ajuste Fino</strong> (la técnica para especializar un modelo) con 1.000 ejemplos de (texto_contrato) -&gt; (json_análisis_legal). El resultado es el "motor" especializado: llama-3-legal-analyst-v1.  </li>
+<li><strong>Industrialización:</strong> Se crea un "Agente PM" (un servicio en un servidor seguro) que itera sobre la base de datos de 5.000 contratos.  </li>
+<li><strong>El Ciclo del Agente (por cada contrato):</strong> El agente ejecuta el siguiente prompt, usando RAG para el contrato específico:<br />
+    <div class="highlight"><pre><span></span><code>### INSTRUCCIONES ###
+Eres &#39;Analista-Legal-v1&#39;, un experto en análisis contractual entrenado específicamente para esta tarea.
+Analiza el &lt;CONTRATO&gt; proporcionado a través de RAG.
+Extrae la &#39;Cláusula de Terminación por Conveniencia&#39;.
+Tu salida DEBE ser *solo* un objeto JSON con la siguiente estructura:
+{
+  &quot;contrato_id&quot;: &quot;...&quot;,
+  &quot;clausula_encontrada&quot;: (true/false),
+  &quot;texto_clausula&quot;: &quot;...&quot;,
+  &quot;riesgo_detectado&quot;: &quot;...&quot;
+}
+### FIN INSTRUCCIONES ###
+&lt;CONTRATO&gt;
+[Contenido completo del Contrato 001 inyectado por RAG]
+&lt;/CONTRATO&gt;
+</code></pre></div></li>
+<li><strong>Gobernanza:</strong> El agente guarda la salida JSON y su "rastro de pensamiento" (log del ciclo de razonamiento) en una base de datos de auditoría.  </li>
+</ol>
+</li>
+<li><strong>La Sinergia (Colaboración):</strong> <ul>
+<li><strong>Rol del Agente:</strong> Ejecuta 80 horas de lectura de "Sistema 1" en 30 minutos.  </li>
+<li><strong>Rol del Humano (Abogado):</strong> El abogado es elevado de "lector de contratos" a "estratega de riesgo".  <ul>
+<li><em>Antes:</em> Pasaba 80 horas buscando las cláusulas.  </li>
+<li><em>Ahora:</em> Pasa 4 horas revisando el dashboard de JSON que el agente produjo. Se enfoca solo en los 150 contratos que el agente marcó como riesgo_detectado: "Alto". Es trabajo puro de "Sistema 2".</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">✅ Validación de Mercado (Caso Real 2025)</p>
+<p>La firma <strong>Freshfields</strong> validó este enfoque utilizando IA para "Dynamic Due Diligence", automatizando revisiones legales masivas y repetitivas. Asimismo, <strong>Fluna</strong> logró un <strong>92% de precisión</strong> automatizando el análisis y redacción de contratos, confirmando que la especialización del agente (S2) es viable y segura en entornos corporativos.</p>
+</div>
+<hr />
+<h3 id="blueprint-3-el-agente-de-estrategia-director-de-programa">Blueprint 3: El "Agente de Estrategia" (Director de Programa)<a class="headerlink" href="#blueprint-3-el-agente-de-estrategia-director-de-programa" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>El Problema:</strong> El Director de Marketing necesita lanzar un nuevo producto. Es un objetivo estratégico complejo, no una tarea simple.  </li>
+<li><strong>El Objetivo Estratégico:</strong> Usar una "Orquesta de Agentes" (un agente "Director" que coordina "Especialistas") para ejecutar el "trabajo de campo" estratégico, permitiendo al director humano enfocarse en el juicio.  </li>
+<li><strong>Ingredientes (El "Stack" de la Obra):</strong> <ul>
+<li><strong>Guía 05 (Agentes):</strong> Arquitectura de "Director de Programa" (PM de PMs).  </li>
+<li><strong>Guía 02 (Prompts):</strong> El "Prompt de Intención" (definir el "qué", no el "cómo").  </li>
+<li><strong>Guía 06 (Diseño de Sistemas Cognitivos):</strong> Para el "Agente Enrutador" (el que elige qué especialista usar).  </li>
+<li><strong>Guía 14 (Modelos y Mercado):</strong> Un portafolio de motores (AaaS y API).  </li>
+<li><strong>Guía 09 (Gobernanza):</strong> "Presupuestos de Agente" y "Humano-en-el-Bucle" para la acción final.  </li>
+<li><strong>Guía 04 (Datos):</strong> Para alimentar al Agente Investigador con datos de mercado fiables.  </li>
+</ul>
+</li>
+<li><strong>El Blueprint (El Flujo del Agente Director):</strong> <ol>
+<li><strong>👤 Humano (Director de Estrategia):</strong> Escribe el "Prompt de Intención":<br />
+    <div class="highlight"><pre><span></span><code>&quot;Agente-Director, tu objetivo es &#39;diseñar un plan de lanzamiento para el producto X&#39;. Tu presupuesto total es de $100. Debes 1) investigar el mercado (usando fuentes fiables), 2) generar 5 eslóganes, 3) redactar 3 emails de lanzamiento. Formula tu plan y preséntamelo.&quot;
+</code></pre></div></li>
+<li><strong>💭 Agente Director (Ciclo ReAct 1):</strong> <ul>
+<li><em>Razona:</em> "OK. Mi primer paso es la investigación de mercado. Usaré al 'Agente-Investigador'."  </li>
+<li><em>Actúa (Enrutador):</em> Llama al Agente PM 1 (Investigador), que es una suscripción de Perplexity (un Agente-como-Servicio).  </li>
+<li><em>Observa:</em> "Investigación completa. Tengo 10 tendencias clave."  </li>
+</ul>
+</li>
+<li><strong>💭 Agente Director (Ciclo ReAct 2):</strong> <ul>
+<li><em>Razona:</em> "Tengo las tendencias. Ahora necesito creatividad. Usaré al 'Agente-Creativo' (el motor más potente)."  </li>
+<li><em>Actúa (Enrutador):</em> Llama al Agente PM 2 (Creativo), que es una API de Claude 3.5 Opus.  </li>
+<li><em>Observa:</em> "Tengo 5 eslóganes."  </li>
+</ul>
+</li>
+<li><strong>💭 Agente Director (Ciclo ReAct 3):</strong><ul>
+<li><em>Razona:</em> "Tengo los eslóganes. Ahora necesito los emails. Usaré el motor más barato."  </li>
+<li><em>Actúa (Enrutador):</em> Llama al Agente PM 3 (Redactor), que es una API de Claude 3.5 Haiku.  </li>
+<li><em>Observa:</em> "Tengo 3 borradores de email."  </li>
+</ul>
+</li>
+<li><strong>💭 Agente Director (Gobernanza - Control Final):</strong><ul>
+<li><em>Razona:</em> "Tengo todos los entregables. Mi plan está completo. El costo total fue $1.50 (dentro del presupuesto de $100). No tengo la herramienta enviar_email. Debo presentar el plan al humano."  </li>
+<li><em>Respuesta al Humano:</em> "Plan completado (Costo: $1.50). Aquí están la investigación, los 5 eslóganes y los 3 borradores. Esperando validación (Humano-en-el-Bucle)."  </li>
+</ul>
+</li>
+</ol>
+</li>
+<li><strong>La Sinergia (Colaboración):</strong> <ul>
+<li><strong>Rol del Agente:</strong> El "Director de Programa" ejecutó días de trabajo de "Sistema 1" (investigar, crear borradores) en minutos, usando el portafolio de motores más eficiente.  </li>
+<li><strong>Rol del Humano (Director de MKT):</strong> Opera 100% en "Sistema 2". El agente hizo todo el "trabajo de campo". El humano aplica su juicio estratégico para elegir el mejor eslogan y aprobar el plan.</li>
+</ul>
+</li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">✅ Validación de Mercado (Caso Real 2025)</p>
+<p>El gigante de publicidad <strong>WPP</strong> integró Gemini en su sistema operativo de marketing (WPP Open) para permitir que sus equipos creativos generen conceptos y campañas a una velocidad sin precedentes, validando el modelo de "Co-Piloto Creativo" y "Agente de Estrategia" a escala global.</p>
+</div>
+<hr />
+<h3 id="blueprint-4-el-agente-de-gobernanza-de-datos-pm-de-auditoria">Blueprint 4: El "Agente de Gobernanza de Datos" (PM de Auditoría)<a class="headerlink" href="#blueprint-4-el-agente-de-gobernanza-de-datos-pm-de-auditoria" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>El Problema:</strong> La organización ha implementado 50 Agentes RAG (Blueprint 1), pero "datos basura" (obsoletos, incorrectos, duplicados) en las bibliotecas RAG son el mayor riesgo operativo. Se necesita una auditoría constante.  </li>
+<li><strong>El Objetivo Estratégico:</strong> Crear un agente autónomo que audite continuamente las Bases de Datos Vectoriales para encontrar y reportar datos obsoletos o conflictivos, asegurando la salud del ecosistema de IA.  </li>
+<li><strong>Ingredientes (El "Stack" de la Obra):</strong> <ul>
+<li><strong>Guía 11 (Industrialización):</strong> Para ejecutar este agente en un ciclo programado (ej. cada noche).  </li>
+<li><strong>Guía 05 (Agentes):</strong> Como un "Agente PM" autónomo con herramientas para leer/escanear bases de datos.  </li>
+<li><strong>Guía 04 (Datos):</strong> El agente usará las "reglas de negocio" (metadatos, fechas de caducidad) definidas en esta guía.  </li>
+<li><strong>Guía 10 (Evaluación):</strong> El agente es, en sí mismo, una herramienta de evaluación de la calidad de los datos.  </li>
+<li><strong>Guía 09 (Gobernanza):</strong> El agente reporta a un dashboard de gobernanza.  </li>
+</ul>
+</li>
+<li><strong>El Blueprint (El Flujo del Agente):</strong> <ol>
+<li><strong>Inicio (Programado):</strong> El agente se "despierta" a las 2 AM.  </li>
+<li><strong>Prompt de Sistema:</strong> 
+    <div class="highlight"><pre><span></span><code>&quot;Eres &#39;Auditor-IA-001&#39;, un agente de gobernanza de datos. Tu única misión es asegurar la salud de nuestras bibliotecas RAG. Tienes las herramientas scan_vector_db() y check_metadata(). Ejecuta tu protocolo de auditoría y reporta solo las anomalías al Dashboard de Gobernanza.&quot;
+</code></pre></div></li>
+<li><strong>Ciclo ReAct 1:</strong> <ul>
+<li><em>Razona:</em> "Iniciando auditoría. Primero, buscaré documentos sin metadatos de 'fecha_caducidad'."  </li>
+<li><em>Actúa:</em> <code>[Llamada: scan_vector_db(query="metadata.fecha_caducidad IS NULL")]</code>  </li>
+<li><em>Observa:</em> "350 'chunks' encontrados sin fecha de caducidad."  </li>
+<li><em>Actúa (Reporte):</em> <code>[Llamada: report_to_dashboard(anomaly_type='DATOS_HUERFANOS', count=350)]</code>  </li>
+</ul>
+</li>
+<li><strong>Ciclo ReAct 2:</strong> <ul>
+<li><em>Razona:</em> "Siguiente paso. Buscaré documentos obsoletos según la política (caducidad &gt; 6 meses)."  </li>
+<li><em>Actúa:</em> <code>[Llamada: check_metadata(rule='caducidad &lt; HOY-180dias')]</code>  </li>
+<li><em>Observa:</em> "820 'chunks' obsoletos encontrados."  </li>
+<li><em>Actúa (Reporte):</em> <code>[Llamada: report_to_dashboard(anomaly_type='DATOS_OBSOLETOS', count=820)]</code>  </li>
+</ul>
+</li>
+<li><strong>Ciclo ReAct 3:</strong> <ul>
+<li><em>Razona:</em> "Auditoría finalizada. Volviendo a modo inactivo."  </li>
+</ul>
+</li>
+</ol>
+</li>
+<li><strong>La Sinergia (Colaboración):</strong> <ul>
+<li><strong>Rol del Agente:</strong> Ejecuta una tarea de auditoría de "Sistema 1" que ningún humano podría hacer a esa escala (revisar millones de "chunks" de vectores diariamente).  </li>
+<li><strong>Rol del Humano (Gobernador de Datos / Responsable de Seguridad):</strong> El humano es elevado de "auditor manual" a "estratega de gobernanza".<ul>
+<li><em>Antes:</em> Realizaba auditorías aleatorias trimestrales.  </li>
+<li><em>Ahora:</em> Llega en la mañana, revisa el "Dashboard de Gobernanza" que el agente pobló, y toma decisiones de "Sistema 2" (ej. "Autorizo la purga de los 820 chunks obsoletos").</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">✅ Validación de Mercado (Caso Real 2025)</p>
+<p>La necesidad crítica de este agente es validada por <strong>Geotab</strong>, que procesa miles de millones de puntos de datos diarios para optimización en tiempo real, y <strong>Prewave</strong>, que utiliza agentes para el monitoreo continuo de riesgos en la cadena de suministro y cumplimiento ESG.</p>
+</div>
+<hr />
+<h3 id="blueprint-5-el-generador-de-datos-sinteticos-pm-de-entrenamiento">Blueprint 5: El "Generador de Datos Sintéticos" (PM de Entrenamiento)<a class="headerlink" href="#blueprint-5-el-generador-de-datos-sinteticos-pm-de-entrenamiento" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>El Problema:</strong> El <strong>Ajuste Fino (Fine-Tuning)</strong> —la técnica para especializar el "cerebro" de un modelo— requiere cientos o miles de ejemplos de alta calidad. ¿Qué pasa si solo tenemos 50 ejemplos "perfectos" de emails de soporte, no los 1.000 necesarios?  </li>
+<li><strong>El Objetivo Estratégico:</strong> Usar un "motor de frontera" (un LLM grande y caro como GPT-4o u Opus) para "auto-multiplicar" los 50 ejemplos humanos "dorados", generando 950 nuevos ejemplos de <strong>datos sintéticos</strong> de alta calidad para el set de entrenamiento.  </li>
+<li><strong>Ingredientes (El "Stack" de la Obra):</strong> <ul>
+<li><strong>Guía 04 (Datos):</strong> Específicamente la táctica de "Datos Sintéticos".  </li>
+<li><strong>Guía 07 (Ajuste Fino):</strong> Es el consumidor final de este blueprint.  </li>
+<li><strong>Guía 14 (Modelos):</strong> Para usar un motor de frontera (caro) solo para esta tarea de generación.  </li>
+<li><strong>Guía 02 (Prompts):</strong> Un "meta-prompt" que define las cualidades de un buen ejemplo.  </li>
+<li><strong>Guía 10 (Evaluación):</strong> El rol humano es 100% "Validador" de los datos generados.  </li>
+</ul>
+</li>
+<li><strong>El Blueprint (El Flujo del Agente):</strong> <ol>
+<li><strong>Contexto:</strong> El humano provee 10 de los 50 ejemplos "dorados" en el prompt.  </li>
+<li><strong>Prompt de Sistema (Meta-Prompt):</strong> 
+    <div class="highlight"><pre><span></span><code>Eres un &#39;Generador de Datos de Entrenamiento&#39;. Has analizado los 10 ejemplos &lt;CONTEXTO&gt; que definen nuestra &#39;Voz de Marca&#39; (empática, resolutiva, profesional). Tu tarea es generar 20 nuevos ejemplos de pares (pregunta_cliente, respuesta_agente) que sigan exactamente este estilo y calidad.
+</code></pre></div></li>
+<li><strong>Acción:</strong> El Agente (Opus) genera 20 nuevos ejemplos.  </li>
+<li><strong>Validación Humana:</strong> Un experto humano ("Validador") revisa los 20 ejemplos sintéticos. Descarta 3 por ser "robóticos". Aprueba 17.  </li>
+<li><strong>Ciclo:</strong> Los 17 aprobados se añaden al set de entrenamiento. El proceso se repite hasta alcanzar los 1.000 ejemplos.  </li>
+</ol>
+</li>
+<li><strong>La Sinergia (Colaboración):</strong> <ul>
+<li><strong>Rol del Agente:</strong> Actúa como un "multiplicador de experiencia humana".  </li>
+<li><strong>Rol del Humano (Validador):</strong> El humano usa su juicio de "Sistema 2" no para escribir 1.000 ejemplos (tarea de Sistema 1), sino para validar 1.000 ejemplos, asegurando la calidad del "combustible" de datos.</li>
+</ul>
+</li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">✅ Validación de Mercado (Caso Real 2025)</p>
+<p>Este enfoque es validado por <strong>BMW Group</strong>, que desarrolló <em>SORDI.ai</em> (Synthetic Object Recognition Dataset for Industries), una herramienta que genera miles de imágenes sintéticas (gemelos digitales) para entrenar a sus modelos de visión artificial sin necesidad de capturar fotos reales en la fábrica. Asimismo, <strong>Gretel.ai</strong> ha validado el modelo de negocio de generar datos sintéticos "privados" para desbloquear el entrenamiento de modelos en sectores regulados (salud/finanzas).</p>
+</div>
+<hr />
+<h3 id="blueprint-6-el-co-piloto-creativo-sinergia-de-escritura">Blueprint 6: El "Co-Piloto Creativo" (Sinergia de Escritura)<a class="headerlink" href="#blueprint-6-el-co-piloto-creativo-sinergia-de-escritura" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>El Problema:</strong> Un gerente necesita escribir un reporte estratégico complejo. Sufre del "síndrome de la página en blanco" y la tarea es puramente de "Sistema 2", por lo que no puede ser totalmente delegada.  </li>
+<li><strong>El Objetivo Estratégico:</strong> Usar la IA no como un "escritor fantasma", sino como un "compañero de debate" para aplicar el "Pensamiento Algorítmico" (descomponer un problema grande en pasos) e iterar en un producto de alta calidad.  </li>
+<li><strong>Ingredientes (El "Stack" de la Obra):</strong> <ul>
+<li><strong>Guía 16 (Aprender a Pensar):</strong> Específicamente "Pensamiento Algorítmico" y "Táctica del Abogado del Diablo".  </li>
+<li><strong>Guía 02 (Prompts):</strong> Múltiples prompts iterativos (una técnica llamada <strong>Prompt Chaining</strong>).  </li>
+<li><strong>Guía 15 (Sinergia):</strong> Este es un ejemplo puro de "Humano-al-Mando" (Nivel 3).  </li>
+</ul>
+</li>
+<li><strong>El Blueprint (El Flujo de "Pensamiento Algorítmico"):</strong> <ol>
+<li><strong>Prompt 1 (Lluvia de Ideas):</strong> Humano: "Estoy escribiendo un reporte sobre [TEMA]. Basado en [DATOS ADJUNTOS], dame 5 ángulos de análisis posibles."  </li>
+<li><strong>Prompt 2 (Esquema):</strong> Humano: "Me gusta el ángulo 3 ('Impacto en la eficiencia operativa'). Conviértelo en un esquema detallado de 6 secciones para el reporte."  </li>
+<li><strong>Prompt 3 (Borrador):</strong> Humano: "Escribe la introducción y la Sección 1 ('Diagnóstico del Problema'), usando un tono formal y basándote en el esquema."  </li>
+<li><strong>Prompt 4 (Crítica - Abogado del Diablo):</strong> Humano: "Toma la Sección 1 que acabas de escribir. Actúa como un crítico escéptico. ¿Cuál es su principal debilidad? ¿Qué argumento opuesto no consideraste?"  </li>
+<li><strong>Prompt 5 (Iteración):</strong> Humano: "Excelente punto. Reescribe la Sección 1 para abordar esa crítica e incluir el contraargumento."  </li>
+<li><em>(El humano edita, pule y finaliza el texto).</em> </li>
+</ol>
+</li>
+<li><strong>La Sinergia (Colaboración):</strong> <ul>
+<li><strong>Rol del Agente:</strong> Actúa como un "multiplicador de cognición". Maneja la "velocidad" táctica de la escritura y provee una perspectiva externa instantánea.  </li>
+<li><strong>Rol del Humano (Co-Piloto):</strong> El humano opera 100% en "Sistema 2". No delega la tarea, sino que dirige la tarea en cada paso. El producto final es significativamente mejor que el que cualquiera de los dos (humano o IA) podría haber creado por separado.</li>
+</ul>
+</li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">✅ Validación de Mercado (Caso Real 2025)</p>
+<p>El impacto de este co-piloto es confirmado por <strong>Kraft Heinz</strong>, que logró reducir drásticamente los tiempos de producción de campañas creativas utilizando flujos iterativos Humano-IA sobre Vertex AI. De igual forma, <strong>Carrefour</strong> utiliza un "Marketing Bot" que actúa como co-piloto para generar videos y descripciones de productos en tiempo récord, validando que la IA no reemplaza al creativo, sino que acelera su iteración (Sinergia).</p>
+</div>
+<hr />
+<h3 id="blueprint-7-el-producto-como-agente-monetizacion-externa">Blueprint 7: El "Producto-como-Agente" (Monetización Externa)<a class="headerlink" href="#blueprint-7-el-producto-como-agente-monetizacion-externa" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>El Problema:</strong> El "Agente-Analista-Legal" (Blueprint 2) es un activo interno tan valioso y eficiente que otras organizaciones han preguntado si pueden usarlo.  </li>
+<li><strong>El Objetivo Estratégico:</strong> Implementar la Estrategia de Innovación convirtiendo un activo de eficiencia interna (un "centro de costos") en un producto comercial externo (un "centro de ingresos") como un <strong>Agente-como-Servicio (AaaS)</strong>.  </li>
+<li><strong>Ingredientes (El "Stack" de la Obra):</strong> <ul>
+<li><strong>Guía 13 (Estrategia y Valor):</strong> Específicamente la "Innovación (Oportunidad)".  </li>
+<li><strong>Guía 11 (Industrialización):</strong> Llevado a nivel de producto (gestión de API, escalabilidad, monitoreo multi-tenant).  </li>
+<li><strong>Guía 09 (Gobernanza):</strong> Fundamental. Se necesita una gobernanza multi-tenant:  <ul>
+<li><strong>Aislamiento de Datos:</strong> El Cliente A nunca debe poder ver los datos RAG del Cliente B.  </li>
+<li><strong>Gestión de Costos:</strong> El "Dashboard de Gobernanza" debe rastrear los costos de API por cliente.  </li>
+</ul>
+</li>
+<li><strong>Guía 07 (Ajuste Fino):</strong> El "adaptador" LoRA entrenado es ahora la Propiedad Intelectual (PI) secreta que se está vendiendo.  </li>
+<li><strong>Guía 14 (Modelos):</strong> El modelo open-source subyacente.  </li>
+</ul>
+</li>
+<li><strong>El Blueprint (El Flujo de Arquitectura):</strong> <ol>
+<li><strong>Industrialización:</strong> Crear un endpoint de API seguro para el agente especializado.  </li>
+<li><strong>Gobernanza:</strong> Implementar un "API Gateway" para la autenticación (claves de API por cliente) y "Límites de Tasa" (para prevenir abusos y bucles de costos).  </li>
+<li><strong>Datos / Gobernanza:</strong> Modificar la lógica RAG para que sea "consciente del tenant". La "biblioteca" (Base Vectorial) se filtra automáticamente usando el ID del cliente que hace la llamada.  </li>
+<li><strong>Industrialización / Gobernanza:</strong> Vincular el "Dashboard de Gobernanza" (costos, tokens, latencia) a los sistemas de facturación, monitoreando el rendimiento por cliente.  </li>
+<li><strong>Ajuste Fino:</strong> El "adaptador" de Ajuste Fino es el activo central (la PI) que se protege.  </li>
+</ol>
+</li>
+<li><strong>La Sinergia (Colaboración):</strong> <ul>
+<li><strong>Rol del Agente:</strong> El agente ahora genera valor directo.  </li>
+<li><strong>Rol del Humano (Estratega):</strong> La organización ha completado el viaje. La IA ya no es solo una herramienta de eficiencia interna; se ha convertido en un producto de innovación externa, creando un nuevo "Foso Competitivo".</li>
+</ul>
+</li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">✅ Validación de Mercado (Caso Real 2025)</p>
+<p>La transición de "Herramienta Interna" a "Producto Vendible" es validada por <strong>Moveo.AI</strong>, que construyó su plataforma de agentes de experiencia del cliente (CX) sobre la infraestructura de Vertex AI, convirtiendo la capacidad técnica en un producto SaaS. Del mismo modo, <strong>Sutherland</strong> transformó sus operaciones de BPO (outsourcing) integrando agentes cognitivos para la banca y salud, pasando de vender "horas-hombre" a vender "resultados automatizados", tal como propone este blueprint.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="../B-Politica-Institucional/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: B - Política">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                B - Política
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../D-Plantillas-Recursos/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: D - Plantillas">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                D - Plantillas
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Juan Carlos Carvajal - Licencia CC BY-NC-ND 4.0
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>

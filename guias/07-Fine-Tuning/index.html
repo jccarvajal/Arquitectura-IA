@@ -1,0 +1,2527 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Guías para Decidir, Diseñar y Gobernar sistemas de IA.">
+      
+      
+        <meta name="author" content="Juan Carlos Carvajal">
+      
+      
+        <link rel="canonical" href="https://ia.jccarvajal.com/guias/07-Fine-Tuning/">
+      
+      
+        <link rel="prev" href="../06-Sistemas-Cognitivos/">
+      
+      
+        <link rel="next" href="../08-Prototipado/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Guía 07 - Fine-Tuning - Arquitectura de Inteligencia Artificial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#guia-07-ajuste-fino-y-adaptacion-de-modelos" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Arquitectura de Inteligencia Artificial" class="md-header__button md-logo" aria-label="Arquitectura de Inteligencia Artificial" data-md-component="logo">
+      
+  <img src="../../assets/images/portada-ia.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Arquitectura de Inteligencia Artificial
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Guía 07 - Fine-Tuning
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../nota-al-lector/" class="md-tabs__link">
+          
+  
+  
+  Introducción
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../01-Anatomia-Modelos/" class="md-tabs__link">
+          
+  
+  
+  Bloque 1 - Fundamentos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../05-Ingenieria-Agentes/" class="md-tabs__link">
+          
+  
+  
+  Bloque 2 - Construcción
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../09-Gobernanza/" class="md-tabs__link">
+          
+  
+  
+  Bloque 3 - Operación
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../13-Estrategia-Valor/" class="md-tabs__link">
+          
+  
+  
+  Bloque 4 - Estrategia
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../17-Perspectivas/" class="md-tabs__link">
+          
+  
+  
+  Bloque 5 - Futuro
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../conclusion/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Conclusión
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../anexos/A-Formulacion-Viabilidad/" class="md-tabs__link">
+          
+  
+  
+  Anexos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../referencias/Glosario/" class="md-tabs__link">
+          
+  
+  
+  Referencias
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../acerca/autor/" class="md-tabs__link">
+          
+  
+  
+  Acerca de
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Arquitectura de Inteligencia Artificial" class="md-nav__button md-logo" aria-label="Arquitectura de Inteligencia Artificial" data-md-component="logo">
+      
+  <img src="../../assets/images/portada-ia.png" alt="logo">
+
+    </a>
+    Arquitectura de Inteligencia Artificial
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Introducción
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nota-al-lector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nota al Lector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prologo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prólogo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ideas-centrales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ideas Centrales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloque 1 - Fundamentos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bloque 1 - Fundamentos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-Anatomia-Modelos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 01 - Anatomía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-Ingenieria-Prompts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 02 - Prompts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-Contexto-Memoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 03 - Contexto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-Estrategia-Datos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 04 - Datos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloque 2 - Construcción
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bloque 2 - Construcción
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-Ingenieria-Agentes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 05 - Agentes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-Sistemas-Cognitivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 06 - Cognición
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 07 - Fine-Tuning
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 07 - Fine-Tuning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#guia-07-ajuste-fino-y-adaptacion-de-modelos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guia 07: Ajuste Fino y Adaptación de Modelos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Guia 07: Ajuste Fino y Adaptación de Modelos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduccion-diferenciando-saber-de-ser" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introducción: Diferenciando "Saber" de "Ser"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-dilema-central-cuando-usar-rag-vs-cuando-usar-fine-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El Dilema Central: ¿Cuándo Usar RAG vs. Cuándo Usar "Fine-Tuning"?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-1-caso-de-uso-n1-habilidad-la-voz-de-la-marca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 1: Caso de Uso N°1 (Habilidad) - "La Voz de la Marca"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-2-caso-de-uso-n2-formato-el-experto-en-json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 2: Caso de Uso N°2 (Formato) - "El Experto en JSON"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-3-caso-de-uso-n3-razonamiento-el-abogado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 3: Caso de Uso N°3 (Razonamiento) - "El Abogado"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parte-4-el-stack-tecnico-como-se-hace-sin-500-gpus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte 4: El "Stack" Técnico (Cómo se hace sin 500 GPUs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion-el-verdadero-rol-del-especialista-de-motores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusión: El Verdadero Rol del "Especialista de Motores"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-Prototipado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 08 - Prototipado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloque 3 - Operación
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bloque 3 - Operación
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-Gobernanza/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 09 - Gobernanza
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-Evaluacion-Calidad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 10 - QA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-Industrializacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 11 - Industrialización
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-ROI-Financiero/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 12 - ROI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloque 4 - Estrategia
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bloque 4 - Estrategia
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-Estrategia-Valor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 13 - Valor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-Modelos-Mercado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 14 - Modelos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-Etica-Confianza/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 15 - Ética
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-Aprender-A-Pensar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 16 - Operación Cognitiva
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloque 5 - Futuro
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bloque 5 - Futuro
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-Perspectivas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 17 - Perspectivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conclusion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conclusión
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Anexos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexos/A-Formulacion-Viabilidad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A - Formulación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexos/B-Politica-Institucional/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    B - Política
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexos/C-Blueprints/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C - Blueprints
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexos/D-Plantillas-Recursos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D - Plantillas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexos/E-Soberania-Criterio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    E - Criterio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexos/F-Vulnerabilidades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    F - Vulnerabilidades
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexos/G-Automatizaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    G - Automatizaciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexos/H-Seguridad-Operativa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    H - Seguridad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexos/I-Gobernanza-Global/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    I - Certificación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexos/J-Marco-Regulatorio-EU/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    J - Regulatorio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexos/K-Riesgos-Emergentes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    K - Riesgos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Referencias
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Referencias
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../referencias/Glosario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../referencias/Bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Acerca de
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Acerca de
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../acerca/autor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Autor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../acerca/licence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Licencia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../acerca/contribuir/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cómo Contribuir
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Historial (Changelog)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Guía 07 - Fine-Tuning</h1>
+
+<h2 id="guia-07-ajuste-fino-y-adaptacion-de-modelos">Guia 07: Ajuste Fino y Adaptación de Modelos<a class="headerlink" href="#guia-07-ajuste-fino-y-adaptacion-de-modelos" title="Permanent link">&para;</a></h2>
+<p>Subtítulo: El Manual del "Especialista de Motores"</p>
+<h3 id="introduccion-diferenciando-saber-de-ser">Introducción: Diferenciando "Saber" de "Ser"<a class="headerlink" href="#introduccion-diferenciando-saber-de-ser" title="Permanent link">&para;</a></h3>
+<p>Existe una confusión costosa en la industria: creer que para que una IA sepa sobre tu empresa, debes re-entrenarla. Eso es falso. Para el <em>conocimiento</em>, usamos RAG.</p>
+<p>Pero, ¿qué pasa cuando quieres cambiar el <em>comportamiento</em>? ¿Qué pasa cuando necesitas que la IA no solo cite la ley, sino que <em>piense</em> como un abogado agresivo o <em>escriba</em> con el tono exacto de tu marca?</p>
+<p>RAG es darle libros a un estudiante. <strong>Ajuste Fino (Fine-Tuning)</strong> es enviarlo a la universidad durante cuatro años. Esta guía es el manual para cuando la instrucción no basta y necesitas modificar la estructura misma del "cerebro" para especializar la habilidad.</p>
+<ul>
+<li><strong>RAG:</strong> Es darle a un agente genérico un libro de medicina para que lo lea.  </li>
+<li><strong>Ajuste Fino:</strong> Es tomar a un agente genérico y mandarlo a la facultad de medicina durante 6 meses hasta que razone operativamente como un médico</li>
+</ul>
+<p>Tu rol aquí es el de "Especialista de Motores". No estás usando el motor, lo estás modificando.</p>
+<div class="admonition danger">
+<p class="admonition-title">Corrección Crítica: Fine-Tuning NO es para Conocimiento</p>
+<p>Existe un mito peligroso: "Haré Fine-Tuning con mis manuales PDF para que la IA sepa mis reglas". <strong>ESTO ES UN ERROR TÉCNICO GRAVE.</strong></p>
+<ul>
+<li><strong>La Realidad Técnica:</strong> El Fine-Tuning ajusta el "estilo" y el "formato" (el <em>cómo</em> habla), no la "información factual" (el <em>qué</em> sabe).</li>
+<li><strong>El Riesgo:</strong> Si intentas "enseñar" datos vía Fine-Tuning, el modelo sufrirá <strong>alucinaciones graves</strong> (inventará datos que suenan plausibles).</li>
+<li><strong>La Ley:</strong><ul>
+<li>Para <strong>Conocimiento</strong> (Hechos, Precios, Leyes) -&gt; Usa <strong>RAG</strong>.</li>
+<li>Para <strong>Comportamiento</strong> (Tono, Formato JSON, Estilo) -&gt; Usa <strong>Fine-Tuning</strong>.</li>
+</ul>
+</li>
+</ul>
+</div>
+<hr />
+<h3 id="el-dilema-central-cuando-usar-rag-vs-cuando-usar-fine-tuning">El Dilema Central: ¿Cuándo Usar RAG vs. Cuándo Usar "Fine-Tuning"?<a class="headerlink" href="#el-dilema-central-cuando-usar-rag-vs-cuando-usar-fine-tuning" title="Permanent link">&para;</a></h3>
+<p>Este es el <em>trade-off</em> más importante de la arquitectura de IA. Usar la herramienta incorrecta es caro e ineficiente.</p>
+<pre class="mermaid"><code>graph TD
+    %% CONFIGURACIÓN MAESTRA
+    classDef default font-size:14px,stroke-width:2px;
+
+    Start(🚀 Necesidad de Negocio) --&gt; Decision{¿Qué le&lt;br/&gt;falta a la IA?}
+
+    Decision --&gt;|Conocimiento:&lt;br/&gt;Datos/Hechos| NodeRAG[Camino RAG]
+    Decision --&gt;|Habilidad:&lt;br/&gt;Tono/Formato| NodeFT[Camino Fine-Tuning]
+
+    subgraph RAG_BOX [📚 RAG: El Bibliotecario]
+        direction TB
+        Doc[📄 Documentos&lt;br/&gt;PDF/Excel] --&gt;|ETL| DB[(🗄️ Base&lt;br/&gt;Vectorial)]
+        DB --&gt;|Búsqueda| Context[🧩 Contexto]
+        Context --&gt;|Inyección| Prompt[📝 Prompt]
+        Prompt --&gt;|Inferencia| Model1[🤖 Modelo]
+        Model1 --&gt; Res1[✅ Respuesta&lt;br/&gt;Factual]
+    end
+
+    subgraph FT_BOX [🎓 Fine-Tuning: El Especialista]
+        direction TB
+        Data[Dataset:&lt;br/&gt;Ejemplos] --&gt;|Entrenar| Train[⚙️ Proceso&lt;br/&gt;LoRA]
+        Train --&gt;|Pesos| Model2[🧠 Modelo&lt;br/&gt;Ajustado]
+        Model2 --&gt;|Inferencia| Res2[✨ Respuesta&lt;br/&gt;Estilizada]
+    end
+
+    NodeRAG --&gt; RAG_BOX
+    NodeFT --&gt; FT_BOX</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Característica</th>
+<th style="text-align: left;">RAG (Gestión de Contexto)</th>
+<th style="text-align: left;">Ajuste Fino (Adaptación de Modelo)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Objetivo Principal</strong></td>
+<td style="text-align: left;">Insertar <strong>Conocimiento</strong> (Hechos, Datos)</td>
+<td style="text-align: left;">Modificar <strong>Habilidad</strong> (Estilo, Tono, Formato)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Metáfora</strong></td>
+<td style="text-align: left;">El "Bibliotecario" (Agente + Libros)</td>
+<td style="text-align: left;">El "Especialista" (Agente que fue a la Universidad)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>¿Cómo Funciona?</strong></td>
+<td style="text-align: left;">Añade datos al <strong>Contexto</strong> (la "pizarra") en tiempo real.</td>
+<td style="text-align: left;">Modifica los <strong>Pesos</strong> (el "cerebro") del modelo antes de usarlo.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Cuándo Usarlo</strong></td>
+<td style="text-align: left;">1. Cuando los datos cambian constantemente (noticias, reportes). 2. Cuando necesitas citar fuentes exactas (legal, médico). 3. Cuando los datos son hechos (ej. "Normativa Interna").</td>
+<td style="text-align: left;">1. Cuando quieres que la IA suene como tú (Voz de Marca). 2. Cuando quieres que razone de una forma específica (ej. "como un abogado"). 3. Cuando quieres que formatee la salida siempre igual (ej. un JSON complejo).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ejemplo</strong></td>
+<td style="text-align: left;">"Usa este PDF (RAG) para decirme qué es el BCP."</td>
+<td style="text-align: left;">"Te he entrenado (Ajuste Fino) con 500 emails míos. Ahora, escribe como yo."</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">La Regla de Oro de la Arquitectura</p>
+<ul>
+<li>Si quieres que la IA <strong>SEPA</strong> algo (datos, hechos), usa <strong>RAG</strong>.</li>
+<li>Si quieres que la IA <strong>SEA</strong> algo (tono, estilo, habilidad), usa <strong>Ajuste Fino</strong>.</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">El Costo Oculto: La Curaduría de Datos</p>
+<p>El costo principal del Fine-Tuning no es el cómputo (GPU), es la <strong>Curaduría Humana</strong>.</p>
+<p>Para que un modelo pequeño supere a uno gigante, necesitas miles de ejemplos de entrenamiento <strong>perfectos</strong> (Golden Dataset). Si tus ejemplos tienen errores, el modelo amplificará esos errores. Preparar este dataset suele costar 10 veces más en horas-hombre que el alquiler de la infraestructura técnica.</p>
+</div>
+<hr />
+<h3 id="parte-1-caso-de-uso-n1-habilidad-la-voz-de-la-marca">Parte 1: Caso de Uso N°1 (Habilidad) - "La Voz de la Marca"<a class="headerlink" href="#parte-1-caso-de-uso-n1-habilidad-la-voz-de-la-marca" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>El Problema:</strong> Tienes un "Agente PM de Servicio al Cliente". Usando solo Prompts (Guía 02), tienes que recordarle en cada chat tu tono de voz: "Recuerda ser empático, profesional, usar estas 5 frases clave y nunca sonar robótico." Es ineficiente y el resultado es inconsistente.  </li>
+<li><strong>La Solución (Ajuste Fino):</strong> <ol>
+<li><strong>Recolectar Datos:</strong> Juntas 1.000 ejemplos de emails "perfectos" de tu mejor agente de soporte humano (una aplicación de la Estrategia de Datos).  </li>
+<li><strong>Entrenar:</strong> Haces "ajuste fino" a un modelo Open-Source (del Guía 14) con esos 1.000 ejemplos.  </li>
+<li><strong>Resultado:</strong> El "cerebro" del modelo se modifica. El modelo <em>aprende</em> tu tono de voz.  </li>
+</ol>
+</li>
+<li><strong>Beneficio:</strong> Ahora, tu prompt (Guía 02) es 90% más corto. Ya no dices "Actúa como...". Simplemente dices: "Cliente tiene problema X. Responde." El modelo responderá automáticamente con la "Voz de la Marca" que le enseñaste. Ya no <em>actúa</em> como un agente de soporte; <em>es</em> un agente de soporte.</li>
+</ul>
+<hr />
+<h3 id="parte-2-caso-de-uso-n2-formato-el-experto-en-json">Parte 2: Caso de Uso N°2 (Formato) - "El Experto en JSON"<a class="headerlink" href="#parte-2-caso-de-uso-n2-formato-el-experto-en-json" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>El Problema:</strong> Tu "Dashboard de Gobernanza" (Guía 09) necesita que tus agentes reporten su estado en un formato JSON extremadamente complejo y específico. Usar Prompts (Guía 02) es frágil; el agente a menudo olvida un campo o añade comillas extra.  </li>
+<li><strong>La Solución (Ajuste Fino):</strong> <ol>
+<li><strong>Recolectar Datos:</strong> Generas 500 ejemplos del par pregunta -&gt; JSON_perfecto (usando la técnica de "Datos Sintéticos").  </li>
+<li><strong>Entrenar:</strong> Haces "ajuste fino" a un modelo (ej. Mistral) en esa tarea específica.  </li>
+<li><strong>Resultado:</strong> Creas un "Agente Especialista" ultra-barato cuya única habilidad en el mundo es generar ese JSON perfecto.  </li>
+</ol>
+</li>
+<li><strong>Beneficio:</strong> Fiabilidad del 99.9%. Tu "Agente Enrutador" (el "cerebro" metacognitivo) ahora puede llamar a este "especialista" barato para las tareas de formato, y reservar los "motores" caros para el razonamiento.</li>
+</ul>
+<hr />
+<h3 id="parte-3-caso-de-uso-n3-razonamiento-el-abogado">Parte 3: Caso de Uso N°3 (Razonamiento) - "El Abogado"<a class="headerlink" href="#parte-3-caso-de-uso-n3-razonamiento-el-abogado" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>El Problema:</strong> Quieres un agente que razone como un abogado. RAG puede darle la ley (el "libro"), pero no le enseña a <em>pensar</em> como un abogado (la "habilidad").  </li>
+<li><strong>La Solución (Ajuste Fino):</strong> <ol>
+<li><strong>Recolectar Datos:</strong> Recolectas 50.000 ejemplos de análisis legal: (hechos_del_caso, ley_aplicable) -&gt; (análisis_jurídico_experto) (usando "Datos Internos").  </li>
+<li><strong>Entrenar:</strong> Haces "ajuste fino" a un modelo potente con este set de datos masivo.  </li>
+<li><strong>Resultado:</strong> El modelo desarrolla nuevos "caminos neuronales" para el razonamiento legal.  </li>
+</ol>
+</li>
+<li><strong>El "Stack" Híbrido (La Mejor Solución):</strong> Ahora combinas ambas técnicas. Usas <strong>RAG</strong> para inyectar los hechos específicos del <em>nuevo</em> caso, y el <strong>Ajuste Fino</strong> se encarga de que el modelo razone sobre esos hechos como un abogado experto.</li>
+</ul>
+<blockquote>
+<p>Nota Técnica: Esto no implica razonamiento consciente, sino una redistribución estadística de patrones que favorecen ciertos estilos de análisis jurídico.</p>
+</blockquote>
+<hr />
+<h3 id="parte-4-el-stack-tecnico-como-se-hace-sin-500-gpus">Parte 4: El "Stack" Técnico (Cómo se hace sin 500 GPUs)<a class="headerlink" href="#parte-4-el-stack-tecnico-como-se-hace-sin-500-gpus" title="Permanent link">&para;</a></h3>
+<p>En el pasado, hacer "ajuste fino" requería un centro de datos. Hoy, gracias a los modelos Open-Source y nuevas técnicas, un "Ingeniero de Prototipos" (Guía 08) puede hacerlo en una sola laptop o un servidor en la nube. </p>
+<p>La clave es no re-entrenar el modelo entero. Solo "afinas" una pequeña fracción de él.</p>
+<ol>
+<li><strong>El Modelo Base:</strong> Eliges un modelo Open-Source (ej. Llama 3 8B).  </li>
+<li><strong>La Técnica (LoRA / QLoRA):</strong> <ul>
+<li><strong>LoRA (Low-Rank Adaptation):</strong> Es la técnica clave. En lugar de modificar los 8 mil millones de "perillas" (parámetros) del modelo, "congelas" el modelo original e insertas una "capa de afinación" diminuta (quizás solo el 1% del tamaño total) al lado.  </li>
+<li><strong>El Entrenamiento:</strong> Entrenas <em>solo</em> esa pequeña capa con tus 1.000 emails de "Voz de Marca".  </li>
+<li><strong>QLoRA:</strong> Una versión más eficiente de LoRA que te permite hacer esto con aún menos memoria.  </li>
+</ul>
+</li>
+<li><strong>El Resultado (El "Adaptador"):</strong> Al final, tienes dos archivos:  <ol>
+<li>El Modelo Base (Llama 3 8B - 16GB) Intacto.  </li>
+<li>Tu "Adaptador LoRA" (Tu "Voz de Marca" - 200MB) - Tu Propiedad Intelectual.</li>
+</ol>
+</li>
+</ol>
+<p>Cuando ejecutas tu agente, "cargas" el modelo base y "encima" le pones tu "adaptador".</p>
+<ul>
+<li><strong>Beneficio Estratégico:</strong> Puedes tener un solo modelo base (Llama 3) y cincuenta "adaptadores" LoRA diferentes: "Voz de Soporte", "Voz de Marketing", "Formato JSON", "Razonador Legal". Tu "Agente Enrutador" (Guía 05) puede "cargar" el adaptador correcto para la tarea correcta, dándote una especialización profunda a un costo mínimo.</li>
+</ul>
+<hr />
+<h3 id="conclusion-el-verdadero-rol-del-especialista-de-motores">Conclusión: El Verdadero Rol del "Especialista de Motores"<a class="headerlink" href="#conclusion-el-verdadero-rol-del-especialista-de-motores" title="Permanent link">&para;</a></h3>
+<p>RAG y el Ajuste Fino no son competidores; son un equipo. </p>
+<p>El "Ingeniero de Prototipos" (Guía 08) usa esta "Guía de Especialización" para construir una "fábrica" industrializada (Guía 11) verdaderamente optimizada.</p>
+<ul>
+<li>Usas <strong>RAG</strong> para darle a tus agentes el <strong>conocimiento</strong> que necesitan.  </li>
+<li>Usas <strong>Ajuste Fino</strong> para darles la <strong>habilidad</strong>, estilo y formato que necesitas.</li>
+</ul>
+<p>Un agente que tiene acceso a los libros correctos (RAG) y que además se graduó en la especialidad correcta (Ajuste Fino) es el trabajador autónomo definitivo.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="../06-Sistemas-Cognitivos/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Guía 06 - Cognición">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Guía 06 - Cognición
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../08-Prototipado/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Guía 08 - Prototipado">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                Guía 08 - Prototipado
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Juan Carlos Carvajal - Licencia CC BY-NC-ND 4.0
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>

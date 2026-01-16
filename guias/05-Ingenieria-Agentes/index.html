@@ -1,0 +1,2647 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Guías para Decidir, Diseñar y Gobernar sistemas de IA.">
+      
+      
+        <meta name="author" content="Juan Carlos Carvajal">
+      
+      
+        <link rel="canonical" href="https://ia.jccarvajal.com/guias/05-Ingenieria-Agentes/">
+      
+      
+        <link rel="prev" href="../04-Estrategia-Datos/">
+      
+      
+        <link rel="next" href="../06-Sistemas-Cognitivos/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Guía 05 - Agentes - Arquitectura de Inteligencia Artificial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#bloque-2-ingenieria-y-construccion-como-se-hace" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Arquitectura de Inteligencia Artificial" class="md-header__button md-logo" aria-label="Arquitectura de Inteligencia Artificial" data-md-component="logo">
+      
+  <img src="../../assets/images/portada-ia.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Arquitectura de Inteligencia Artificial
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Guía 05 - Agentes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../nota-al-lector/" class="md-tabs__link">
+          
+  
+  
+  Introducción
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../01-Anatomia-Modelos/" class="md-tabs__link">
+          
+  
+  
+  Bloque 1 - Fundamentos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  Bloque 2 - Construcción
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../09-Gobernanza/" class="md-tabs__link">
+          
+  
+  
+  Bloque 3 - Operación
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../13-Estrategia-Valor/" class="md-tabs__link">
+          
+  
+  
+  Bloque 4 - Estrategia
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../17-Perspectivas/" class="md-tabs__link">
+          
+  
+  
+  Bloque 5 - Futuro
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../conclusion/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Conclusión
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../anexos/A-Formulacion-Viabilidad/" class="md-tabs__link">
+          
+  
+  
+  Anexos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../referencias/Glosario/" class="md-tabs__link">
+          
+  
+  
+  Referencias
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../acerca/autor/" class="md-tabs__link">
+          
+  
+  
+  Acerca de
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Arquitectura de Inteligencia Artificial" class="md-nav__button md-logo" aria-label="Arquitectura de Inteligencia Artificial" data-md-component="logo">
+      
+  <img src="../../assets/images/portada-ia.png" alt="logo">
+
+    </a>
+    Arquitectura de Inteligencia Artificial
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Introducción
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nota-al-lector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nota al Lector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prologo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prólogo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ideas-centrales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ideas Centrales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloque 1 - Fundamentos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bloque 1 - Fundamentos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-Anatomia-Modelos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 01 - Anatomía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-Ingenieria-Prompts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 02 - Prompts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-Contexto-Memoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 03 - Contexto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-Estrategia-Datos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 04 - Datos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloque 2 - Construcción
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bloque 2 - Construcción
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 05 - Agentes
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 05 - Agentes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#guia-05-ingenieria-de-agentes-de-ia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guía 05: Ingeniería de Agentes de IA
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Guía 05: Ingeniería de Agentes de IA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduccion-la-paralisis-del-oraculo-y-el-fin-del-chatbot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introducción: La Parálisis del Oráculo y el Fin del Chatbot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conceptos-fundamentales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conceptos Fundamentales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#el-dilema-central-la-correa-del-agente-autonomia-vs-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El Dilema Central: La "Correa" del Agente (Autonomía vs. Control)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estrategias-fundamentales-de-ingenieria-de-agentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estrategias Fundamentales de Ingeniería de Agentes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estrategia-1-el-agente-con-humano-en-el-bucle-human-in-the-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estrategia 1: El Agente con "Humano-en-el-Bucle" (Human-in-the-Loop)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estrategia-2-la-orquesta-de-agentes-router-y-workers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estrategia 2: La Orquesta de Agentes (Router y Workers)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estrategia-3-el-agente-especializado-el-flujo-de-auto-prompting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estrategia 3: El Agente Especializado (El Flujo de "Auto-Prompting")
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion-de-arquitecto-de-sistemas-a-director-de-orquesta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusión: De Arquitecto de Sistemas a Director de Orquesta
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-Sistemas-Cognitivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 06 - Cognición
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-Fine-Tuning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 07 - Fine-Tuning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-Prototipado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 08 - Prototipado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloque 3 - Operación
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bloque 3 - Operación
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-Gobernanza/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 09 - Gobernanza
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-Evaluacion-Calidad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 10 - QA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-Industrializacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 11 - Industrialización
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-ROI-Financiero/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 12 - ROI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloque 4 - Estrategia
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bloque 4 - Estrategia
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-Estrategia-Valor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 13 - Valor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-Modelos-Mercado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 14 - Modelos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-Etica-Confianza/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 15 - Ética
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-Aprender-A-Pensar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 16 - Operación Cognitiva
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloque 5 - Futuro
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bloque 5 - Futuro
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-Perspectivas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 17 - Perspectivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conclusion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conclusión
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Anexos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexos/A-Formulacion-Viabilidad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A - Formulación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexos/B-Politica-Institucional/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    B - Política
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexos/C-Blueprints/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C - Blueprints
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexos/D-Plantillas-Recursos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D - Plantillas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexos/E-Soberania-Criterio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    E - Criterio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexos/F-Vulnerabilidades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    F - Vulnerabilidades
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexos/G-Automatizaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    G - Automatizaciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexos/H-Seguridad-Operativa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    H - Seguridad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexos/I-Gobernanza-Global/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    I - Certificación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexos/J-Marco-Regulatorio-EU/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    J - Regulatorio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../anexos/K-Riesgos-Emergentes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    K - Riesgos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Referencias
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Referencias
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../referencias/Glosario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../referencias/Bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Acerca de
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Acerca de
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../acerca/autor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Autor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../acerca/licence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Licencia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../acerca/contribuir/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cómo Contribuir
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Historial (Changelog)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="bloque-2-ingenieria-y-construccion-como-se-hace">Bloque 2: Ingeniería y Construcción (Cómo se hace)<a class="headerlink" href="#bloque-2-ingenieria-y-construccion-como-se-hace" title="Permanent link">&para;</a></h1>
+<h2 id="guia-05-ingenieria-de-agentes-de-ia">Guía 05: Ingeniería de Agentes de IA<a class="headerlink" href="#guia-05-ingenieria-de-agentes-de-ia" title="Permanent link">&para;</a></h2>
+<p>Subtítulo: Del "Arquitecto de Instrucciones" al "Director de Programa"</p>
+<h3 id="introduccion-la-paralisis-del-oraculo-y-el-fin-del-chatbot">Introducción: La Parálisis del Oráculo y el Fin del Chatbot<a class="headerlink" href="#introduccion-la-paralisis-del-oraculo-y-el-fin-del-chatbot" title="Permanent link">&para;</a></h3>
+<p>En las guías anteriores, definimos la <em>instrucción</em> (Guía 02) y la <em>memoria</em> (Guía 03). Hemos construido un erudito encadenado: una IA que sabe mucho y recuerda todo, pero no puede hacer nada.</p>
+<p>Esta limitación explica el cementerio de proyectos de IA corporativos: las empresas siguen construyendo <strong>Oráculos pasivos</strong>, chatbots glorificados que esperan preguntas, cuando el mercado exige <strong>Obreros autónomos</strong>.</p>
+<p>La diferencia entre un juguete y una herramienta es la <strong>Agencia</strong>.</p>
+<ul>
+<li>Un <strong>Chatbot</strong> te dice cómo reservar un vuelo.</li>
+<li>Un <strong>Agente</strong> te envía la tarjeta de embarque a tu correo.</li>
+</ul>
+<p>En esta guía, rompemos el cristal. Dejamos de pedir respuestas para empezar a exigir resultados. Bienvenido a la ingeniería de la fuerza laboral digital.</p>
+<hr />
+<h3 id="conceptos-fundamentales">Conceptos Fundamentales<a class="headerlink" href="#conceptos-fundamentales" title="Permanent link">&para;</a></h3>
+<p><strong>1. ¿Qué entendemos por Agencia?</strong></p>
+<p><strong>Agencia:</strong> La capacidad de un sistema de IA de <strong>iniciar, encadenar y ejecutar acciones en el mundo</strong> para cumplir un objetivo, más allá de generar texto.</p>
+<p><strong>2. La Anatomía de la Agencia (Cerebro + Manos)</strong></p>
+<p>Para lograr este salto de "conversar" a "trabajar", dejamos de tratar al LLM como el producto final y lo convertimos en un componente de un sistema mayor. Arquitectónicamente, un Agente se distingue por tener componentes que un Chatbot no tiene:</p>
+<ul>
+<li><strong>El Cerebro (El LLM):</strong> Su rol cambia. Ya no es una enciclopedia para recitar datos; es un motor de razonamiento para tomar decisiones.</li>
+<li><strong>Las Manos (Herramientas/Tools):</strong> Son funciones de código (APIs, scripts Python) que conectan al cerebro con el mundo exterior (buscar en Google, leer archivos, enviar emails). Sin herramientas, la IA es un "cerebro en un frasco".</li>
+<li><strong>El Corazón (El Bucle):</strong> A diferencia de un chat que responde y se detiene, un agente opera en un ciclo continuo hasta cumplir su objetivo.</li>
+</ul>
+<p><strong>3. El "Motor" del Agente: El Ciclo ReAct (Razonar + Actuar)</strong></p>
+<p>Esto es lo más importante. Un agente no solo da una respuesta y se detiene. Opera en un bucle (loop) hasta que cumple el objetivo. Este ciclo se conoce comúnmente como <strong>ReAct</strong>, un patrón que combina el Razonamiento (Reason) con la Acción (Act).</p>
+<pre class="mermaid"><code>graph TD
+    %% CONFIGURACIÓN MAESTRA: Fuente 14px, Borde visible, Color automático
+    classDef default font-size:14px,stroke-width:2px;
+
+    User(👤 Input Usuario) --&gt;|Solicitud| LLM(🧠 Cerebro LLM)
+
+    subgraph Ciclo_ReAct [🔁 Bucle de Razonamiento]
+        direction TB
+        LLM --&gt;|Pensamiento| Decide{¿Tengo la info?}
+        Decide --&gt;|No| Tool(🛠️ Elegir Herramienta)
+        Tool --&gt;|Acción| API(⚙️ Ejecutar API/Función)
+        API --&gt;|Observación| Result(📄 Resultado de Datos)
+        Result --&gt; LLM
+    end
+
+    Decide --&gt;|Sí| Final(💬 Respuesta Final)</code></pre>
+<p>En la arquitectura moderna (2025), exigimos lo que llamamos el <strong>"Patrón de Pensamiento Visible"</strong>.<br />
+No queremos que el agente actúe a ciegas; queremos que su lógica estructurada sea evaluable <strong>antes</strong> de ejecutar una herramienta.</p>
+<div class="admonition info">
+<p class="admonition-title">Aclaración Crítica: Pensamiento Visible ≠ Pensamiento Cognitivo</p>
+<p>El agente no “razona” en un sentido humano ni consciente.<br />
+El <strong>Pensamiento Visible</strong> (Chain-of-Thought, <code>&lt;pensamiento&gt;</code>) es un <strong>artefacto de ingeniería</strong>, no una verdad cognitiva.</p>
+<p>Su función es:
+* Reducir acciones erráticas al forzar una secuencia verbal coherente.
+* Disminuir saltos espurios en tareas multi-paso.
+* Permitir <strong>auditoría, depuración y control</strong> del comportamiento del agente.
+* Hacer explícitas las decisiones <strong>antes</strong> de ejecutar herramientas.</p>
+<p><strong>Regla Operativa:</strong><br />
+El razonamiento estructurado <strong>NO debe exponerse al usuario final en producción</strong>.<br />
+Debe tratarse como <strong>telemetría interna</strong> (logs, trazas de auditoría o modos de depuración controlados).</p>
+</div>
+<p>Así es como se ve la traza de un agente moderno:</p>
+<ul>
+<li>
+<p>👤 Usuario:
+    <code>Busca el pronóstico del clima de hoy en Valparaíso y envíame un resumen por email.</code></p>
+</li>
+<li>
+<p>El agente ahora debe "razonar" y "actuar" en un bucle:</p>
+<p><em>CICLO 1: Obtener Información</em></p>
+<ul>
+<li>💭 Agente (Razonamiento Estructurado):
+    <div class="highlight"><pre><span></span><code><span class="nt">&lt;pensamiento&gt;</span>
+<span class="w">  </span>Objetivo:<span class="w"> </span>Buscar<span class="w"> </span>clima<span class="w"> </span>+<span class="w"> </span>Enviar<span class="w"> </span>email.
+<span class="w">  </span>Estado<span class="w"> </span>Actual:<span class="w"> </span>No<span class="w"> </span>tengo<span class="w"> </span>datos<span class="w"> </span>del<span class="w"> </span>clima.
+<span class="w">  </span>Decisión:<span class="w"> </span>Debo<span class="w"> </span>invocar<span class="w"> </span>la<span class="w"> </span>herramienta<span class="w"> </span>&#39;buscar_clima&#39;<span class="w"> </span>antes<span class="w"> </span>de<span class="w"> </span>poder<span class="w"> </span>redactar<span class="w"> </span>el<span class="w"> </span>correo.
+<span class="nt">&lt;/pensamiento&gt;</span>
+</code></pre></div></li>
+<li>⚙️ Agente (Actúa):
+    <div class="highlight"><pre><span></span><code><span class="nt">acción</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">buscar_clima</span>
+<span class="nt">argumentos</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">ciudad</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Valparaíso</span>
+</code></pre></div></li>
+<li>💭 Agente (Observación):
+    <div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"> </span><span class="err">&#39;max&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="mi">18</span><span class="err">C&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;mi</span><span class="kc">n</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="mi">11</span><span class="err">C&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;es</span><span class="kc">ta</span><span class="err">do&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;Nublado&#39;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div></li>
+<li>El bucle continúa porque el objetivo final no está cumplido</li>
+</ul>
+<p><em>CICLO 2: Ejecutar Acción Final</em></p>
+<ul>
+<li>💭 Agente (Razonamiento Estructurado):
+    <div class="highlight"><pre><span></span><code><span class="nt">&lt;pensamiento&gt;</span>
+<span class="w">  </span>Dato<span class="w"> </span>recibido:<span class="w"> </span>18C,<span class="w"> </span>Nublado.
+<span class="w">  </span>Condición:<span class="w"> </span>Tengo<span class="w"> </span>toda<span class="w"> </span>la<span class="w"> </span>información<span class="w"> </span>necesaria.
+<span class="w">  </span>Decisión:<span class="w"> </span>Proceder<span class="w"> </span>a<span class="w"> </span>enviar<span class="w"> </span>el<span class="w"> </span>correo.
+<span class="nt">&lt;/pensamiento&gt;</span>
+</code></pre></div></li>
+<li>⚙️ Agente (Actúa):
+    <div class="highlight"><pre><span></span><code><span class="nt">acción</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">enviar_email</span>
+<span class="nt">argumentos</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">destinatario</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">usuario@ejemplo.com</span>
+<span class="w">  </span><span class="nt">cuerpo</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Clima</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">hoy</span><span class="nv"> </span><span class="s">en</span><span class="nv"> </span><span class="s">Valparaíso:</span><span class="nv"> </span><span class="s">18C,</span><span class="nv"> </span><span class="s">nublado.&quot;</span>
+</code></pre></div></li>
+<li>💭 Agente (Observación):
+    <div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"> </span><span class="err">&#39;s</span><span class="kc">tatus</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;e</span><span class="kc">n</span><span class="err">viado&#39;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div></li>
+<li>El bucle se detiene.</li>
+</ul>
+<p><em>Respuesta Final al Usuario:</em>
+* 💬 Agente (Responde):
+    <code>Listo. El clima en Valparaíso es de 18C, parcialmente nublado. Te he enviado el resumen.</code></p>
+</li>
+</ul>
+<blockquote>
+<p><strong>Nota de Arquitectura:</strong> Independientemente del modelo (OpenAI, Gemini, Claude), la arquitectura robusta exige que el agente "muestre su trabajo". Separar el razonamiento (<code>&lt;pensamiento&gt;</code>) de la acción final es vital para la auditoría y depuración.</p>
+</blockquote>
+<p><strong>3. Las Herramientas (Tools): Las "Manos" del Agente</strong></p>
+<p>Las herramientas son funciones de código (APIs, scripts Python) que conectan el cerebro de la IA con el mundo digital. Sin herramientas, el modelo es solo un "conversador"; con ellas, se convierte en un "actor" capaz de ejecutar tareas reales.</p>
+<p><em>Ejemplos:</em> <code>buscar_en_google()</code>, <code>leer_archivo()</code>, <code>consultar_API_del_clima()</code>.</p>
+<div class="admonition shield">
+<p class="admonition-title">Principio de Seguridad: Simetría de Acción (Reversibilidad)</p>
+<p>Darle a una IA capacidad de ejecución (Agencia) sin capacidad de corrección es un riesgo operativo inaceptable.</p>
+<p><strong>La Regla del "Deshacer":</strong>
+Por cada herramienta de <strong>Escritura</strong> (<em>Write</em>) que otorgues a un agente, debes diseñar una lógica de <strong>Reversión</strong> o <strong>Compensación</strong>.</p>
+<ul>
+<li>Si el agente tiene <code>reservar_vuelo()</code>, debe tener acceso a <code>cancelar_reserva()</code>.</li>
+<li>Si el agente tiene <code>crear_usuario_db()</code>, debe tener <code>desactivar_usuario_db()</code>.</li>
+</ul>
+<p><strong>El "Botón de Pánico" (Kill-Switch):</strong>
+En el nivel de orquestación, siempre debe existir un mecanismo humano o automático para "congelar" al agente instantáneamente si detecta un bucle de acciones repetitivas (ej. enviar el mismo correo 50 veces).</p>
+</div>
+<div class="admonition shield">
+<p class="admonition-title">Principio de Diseño: Herramientas con Seguro</p>
+<p>Al programar las herramientas (<code>tools</code>) que usará tu agente, no basta con definir <em>qué hacen</em>. Debes definir <em>cómo se deshacen</em>.</p>
+<ul>
+<li><strong>El Error:</strong> Darle una herramienta <code>borrar_registro_db(id)</code> directa.</li>
+<li><strong>La Corrección:</strong> Diseñar herramientas con <strong>Atomicidad Reversible</strong>.<ol>
+<li><strong>Modo Borrador:</strong> La herramienta no borra; marca como <code>is_deleted=True</code> (Soft Delete).</li>
+<li><strong>Modo Confirmación:</strong> Si la acción es destructiva real, la herramienta debe obligar al agente a pedir un token de confirmación humana (Human-in-the-Loop) como argumento obligatorio.</li>
+</ol>
+</li>
+</ul>
+</div>
+<div class="admonition shield">
+<p class="admonition-title">Patrón de Diseño: Lógica de Compensación (Undo)</p>
+<p>En sistemas distribuidos, no siempre existe el "Ctrl+Z". Si un agente reserva un vuelo y luego falla al reservar el hotel, no basta con detenerse; debe cancelar el vuelo.</p>
+<p><strong>El Principio de la Reversibilidad Activa:</strong>
+Para cada herramienta con efectos secundarios (ej. <code>reservar_vuelo</code>), el agente debe tener acceso a una <strong>Herramienta Compensatoria</strong> (ej. <code>cancelar_reserva</code>).</p>
+<ul>
+<li><strong>Diseño Robusto:</strong> En tu prompt de sistema, instruye al agente: <em>"Si fallas en el paso 2, estás obligado a ejecutar la herramienta de compensación del paso 1 para dejar el sistema en su estado original".</em></li>
+</ul>
+</div>
+<hr />
+<h3 id="el-dilema-central-la-correa-del-agente-autonomia-vs-control">El Dilema Central: La "Correa" del Agente (Autonomía vs. Control)<a class="headerlink" href="#el-dilema-central-la-correa-del-agente-autonomia-vs-control" title="Permanent link">&para;</a></h3>
+<p>Aquí reside el verdadero arte de la ingeniería. El <em>trade-off</em> ya no es solo costo vs. latencia, sino <strong>Autonomía vs. Seguridad</strong>.</p>
+<ul>
+<li>
+<p><strong>Correa Suelta (Autonomía Total):</strong></p>
+<p><code>"OK Agente, aquí tienes $100 y mi tarjeta de crédito. Reserva el mejor viaje."</code></p>
+<ul>
+<li><em>Riesgo Antiguo (Alucinación):</em> Poderoso, pero aterrador. El agente podría reservar el hotel equivocado o enviar un email vergonzoso.</li>
+<li><em>Riesgo Moderno (Bucle Infinito):</em> Con los nuevos modelos persistentes, el agente podría entrar en un bucle tratando de encontrar el "vuelo perfecto" eternamente, gastando presupuesto y recursos sin detenerse.</li>
+<li><em>Mitigación:</em> Aquí es donde implementamos <strong>"Circuit Breakers"</strong> (límites duros de iteración, ej. <code>max_steps=15</code>) para cortar la ejecución forzosamente.</li>
+</ul>
+</li>
+<li>
+<p><strong>Correa Corta (Control Total):</strong></p>
+<p><code>"OK Agente, dime tu primer paso.... OK, apruebo ese paso, ejecútalo.... OK, muéstrame el resultado.... Ahora, dime tu segundo paso."</code></p>
+<ul>
+<li><em>Riesgo:</em> 100% seguro, pero lento y tedioso. Básicamente, volvemos a la ingeniería de prompts manual y perdemos el beneficio de tener un trabajador digital.</li>
+</ul>
+</li>
+</ul>
+<p><strong>El Buen Enfoque:</strong> El juicio de ingeniería está en diseñar un sistema que sepa cuándo actuar solo y cuándo detenerse para pedir validación humana. Esto nos lleva directamente a nuestra primera estrategia.</p>
+<hr />
+<h3 id="estrategias-fundamentales-de-ingenieria-de-agentes">Estrategias Fundamentales de Ingeniería de Agentes<a class="headerlink" href="#estrategias-fundamentales-de-ingenieria-de-agentes" title="Permanent link">&para;</a></h3>
+<p>Estas son las técnicas para dirigir a nuestros nuevos “trabajadores digitales” sin causar un desastre. A continuación, revisaremos tres estrategias fundamentales: <em>El Agente con "Humano-en-el-Bucle"</em>, <em>La Orquesta de Agentes (El Director de Programa)</em> y <em>El Agente Especializado (El Flujo de "Auto-Prompting")</em>.</p>
+<hr />
+<h3 id="estrategia-1-el-agente-con-humano-en-el-bucle-human-in-the-loop">Estrategia 1: El Agente con "Humano-en-el-Bucle" (Human-in-the-Loop)<a class="headerlink" href="#estrategia-1-el-agente-con-humano-en-el-bucle-human-in-the-loop" title="Permanent link">&para;</a></h3>
+<p>Esta es la solución más práctica y segura al dilema de la "correa".</p>
+<ul>
+<li><strong>¿Qué es?</strong> Es diseñar un agente que tiene "puntos de control" obligatorios. El agente ejecuta sus ciclos ReAct (Razonar-Actuar-Observar) de forma autónoma, excepto en acciones críticas.  </li>
+<li><strong>¿Por qué funciona?</strong> Le das autonomía para lo trivial (buscar, analizar, redactar) pero le quitas autonomía para lo peligroso (gastar dinero, enviar comunicaciones, borrar datos).  </li>
+<li><strong>Ejemplo de Punto de Control:</strong> El agente redacta el email y, en lugar de enviarlo automáticamente, se detiene y presenta una interfaz al usuario: <em>"He redactado el borrador para el cliente. ¿Deseas [Enviar], [Modificar] o [Cancelar]?"</em></li>
+</ul>
+<hr />
+<h3 id="estrategia-2-la-orquesta-de-agentes-router-y-workers">Estrategia 2: La Orquesta de Agentes (Router y Workers)<a class="headerlink" href="#estrategia-2-la-orquesta-de-agentes-router-y-workers" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>Definición Operativa</strong><br />
+En este libro, usaremos el término <strong>“Agente PM”</strong> para referirnos a un <strong>agente autónomo especializado en una tarea delimitada</strong>, responsable de ejecutar un objetivo concreto de principio a fin.</p>
+<p>No es un coordinador global ni un orquestador; opera como un <em>Project Manager táctico</em>, no estratégico.</p>
+</blockquote>
+<p>Esta es la estrategia de escalabilidad más importante. Ya no pensamos en un solo agente que lo hace todo. Pensamos en un equipo de especialistas. En la arquitectura moderna, esto se conoce como el patrón <strong>Router-Worker</strong> (Enrutador-Trabajador).</p>
+<ul>
+<li><strong>Un Agente Individual es un Project Manager (PM) / Worker:</strong> Se enfoca en un proyecto único y bien definido. Recibe un objetivo, aplica el ciclo ReAct, usa sus herramientas y entrega un resultado final.</li>
+<li><strong>Un Agente de Agentes es un Director de Programa / Router:</strong> Este es el "Agente Jefe" o "Director". No ejecuta las tareas del día a día, sino que coordina a los "Agentes PM" especializados para alcanzar un objetivo estratégico más grande.</li>
+<li><strong>¿Cómo funciona el flujo?</strong><ol>
+<li><strong>Objetivo Estratégico:</strong> El Router (el Director) recibe la meta: <em>"Lanzar campaña de nuevo producto"</em>.</li>
+<li><strong>Descomposición (Routing):</strong> El Router clasifica las necesidades y asigna tareas a agentes con contextos limpios ("pizarra en blanco"):<ul>
+<li>Asigna a <strong>Agente Investigador:</strong> <em>"Analiza el público objetivo y la competencia"</em></li>
+<li>Asigna a <strong>Agente Creativo:</strong> <em>"Genera los eslóganes y el contenido visual"</em></li>
+<li>Asigna a <strong>Agente de Redes:</strong> <em>"Prepara el calendario de publicaciones"</em></li>
+</ul>
+</li>
+<li><strong>Síntesis:</strong> El Router recibe los entregables de cada Worker y los integra en el resultado final (la campaña completa).</li>
+</ol>
+</li>
+<li><strong>Beneficio:</strong> El Router (el Director) se encarga de la estrategia de alto nivel. Cada Worker (Agente PM) trabaja con su propio contexto limpio, volviéndose más rápido, barato y preciso en su tarea especializada, evitando la confusión que tendría un solo agente intentando hacerlo todo.</li>
+</ul>
+<hr />
+<h3 id="estrategia-3-el-agente-especializado-el-flujo-de-auto-prompting">Estrategia 3: El Agente Especializado (El Flujo de "Auto-Prompting")<a class="headerlink" href="#estrategia-3-el-agente-especializado-el-flujo-de-auto-prompting" title="Permanent link">&para;</a></h3>
+<p>Este es uno de los puntos de partida más simples y poderosos, que se conecta directamente con el concepto de <strong>Meta-Prompting</strong> (usar la IA para ayudarte a crear prompts).</p>
+<ul>
+<li><strong>¿Qué es?</strong> En lugar de un agente "que lo hace todo", creas un flujo de dos pasos. Usas un "Chat 1" (El Taller) para configurar a un "Chat 2" (La Ejecución).</li>
+<li><strong>¿Por qué funciona?</strong> El "Agente Taller" tiene el conocimiento de cómo pedir las cosas, y el "Agente Ejecutor" tiene la mente despejada para hacer el trabajo.</li>
+</ul>
+<p><strong>Ejemplo de Flujo de Trabajo (El Taller y la Ejecución):</strong></p>
+<p>Un flujo de trabajo de "auto-prompting" (self-prompting) es un ejemplo perfecto. Usas un "Chat 1" (El Taller) para que actúe como un Agente Especialista en crear prompts. Su "herramienta" es el conocimiento de la Guía 02. Luego, copias el resultado (el prompt avanzado) y lo pegas en un "Chat 2" (La Ejecución). Este segundo chat es el Agente Ejecutor, que opera con una "pizarra limpia" (contexto) y una instrucción perfecta.</p>
+<p>En este ejemplo, tu objetivo es crear un email de marketing persuasivo.</p>
+<p><strong>Paso 1: Usar el "Chat 1" (El Taller)</strong></p>
+<p>Este chat está pre-cargado con el "Método de Prompting en 7 Pasos" (Guía 02).</p>
+<ul>
+<li>
+<p>👤 <strong>Usuario (Define el Objetivo):</strong></p>
+<p><code>Quiero un prompt para un email de marketing para un nuevo software de contabilidad. El público son gerentes de finanzas.</code></p>
+</li>
+<li>
+<p>💭 <strong>Agente Taller (Razonamiento Estructurado):</strong></p>
+<p><code>El usuario necesita un prompt (Paso 1). Mi trabajo es aplicar los 7 Pasos (Rol, Restricciones, Formato) para construir el prompt óptimo.</code></p>
+</li>
+<li>
+<p>⚙️ <strong>Agente Taller (Actúa - Genera el Prompt):</strong>
+    <div class="highlight"><pre><span></span><code><span class="nt">mensaje</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Aquí</span><span class="nv"> </span><span class="s">tienes</span><span class="nv"> </span><span class="s">un</span><span class="nv"> </span><span class="s">prompt</span><span class="nv"> </span><span class="s">de</span><span class="nv"> </span><span class="s">&#39;Nivel</span><span class="nv"> </span><span class="s">Arquitecto&#39;,</span><span class="nv"> </span><span class="s">optimizado</span><span class="nv"> </span><span class="s">según</span><span class="nv"> </span><span class="s">la</span><span class="nv"> </span><span class="s">Guía</span><span class="nv"> </span><span class="s">02:&quot;</span>
+<span class="nt">prompt_generado</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<span class="p p-Indicator">[</span><span class="nv">INICIO DEL PROMPT GENERADO</span><span class="p p-Indicator">]</span>
+<span class="l l-Scalar l-Scalar-Plain">Actúa como un experto en redacción de marketing B2B, especializado en el sector financiero.</span><span class="w"> </span>
+<span class="l l-Scalar l-Scalar-Plain">Tu audiencia son Gerentes de Finanzas con poco tiempo.</span>
+<span class="l l-Scalar l-Scalar-Plain">Tu tarea es redactar un email que presente nuestro nuevo &quot;Software de Contabilidad Quantum&quot;.</span>
+
+<span class="l l-Scalar l-Scalar-Plain">&lt;restricciones&gt;</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">1. El tono debe ser profesional, directo y centrado en el ROI.</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">2. El email NO debe exceder las 150 palabras.</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">3. El asunto debe ser corto y persuasivo.</span>
+<span class="l l-Scalar l-Scalar-Plain">&lt;/restricciones&gt;</span>
+
+<span class="l l-Scalar l-Scalar-Plain">&lt;formato_requerido&gt;</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">Asunto</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">Tu Asunto Aquí</span><span class="p p-Indicator">]</span>
+<span class="w">    </span><span class="nt">Cuerpo</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">Tu Email Aquí</span><span class="p p-Indicator">]</span>
+<span class="l l-Scalar l-Scalar-Plain">&lt;/formato_requerido&gt;</span><span class="w">  </span>
+<span class="p p-Indicator">[</span><span class="nv">FIN DEL PROMPT GENERADO</span><span class="p p-Indicator">]</span>
+</code></pre></div></p>
+</li>
+</ul>
+<p><strong>Paso 2: Usar el "Chat 2" (La Ejecución)</strong></p>
+<p>Copias ese prompt generado y lo pegas en un chat nuevo. El Agente Ejecutor, al recibir instrucciones tan estructuradas y limpias, generará un resultado de calidad superior.</p>
+<p><strong>Aplicación Práctica:</strong> Podemos diseñar chats pre-cargados (agentes) para tareas específicas: un "Agente-Traductor-Legal" (cargado con glosarios legales) o un "Agente-Revisor-de-Estilo" (cargado con la guía de marca de la empresa).</p>
+<blockquote>
+<p>💡 <strong>Patrón de Ingeniería: Encapsulamiento de Contexto</strong></p>
+<p>La ambigüedad sintáctica es la causa raíz de la inyección de prompts. <strong>La norma es el encapsulamiento estricto.</strong></p>
+<p>Independientemente del modelo (XML para Claude, Markdown para GPT), trate las instrucciones y los datos como tipos de objetos distintos. No mezcle texto plano; use contenedores explícitos (ej. <code>&lt;data&gt;...&lt;/data&gt;</code> o bloques <code>---</code>) para que el modelo pueda distinguir estructuralmente entre una orden de control y el contenido a procesar.</p>
+</blockquote>
+<hr />
+<div class="admonition abstract">
+<p class="admonition-title">Nota del Arquitecto: La Frontera de la Web Agéntica</p>
+<p>Lo que has aprendido aquí es orquestación interna ("Intranet de Agentes"). Sin embargo, protocolos como <strong>MCP</strong> están permitiendo que los agentes salgan de tu servidor para negociar con agentes externos en la <strong>"Web Agéntica"</strong>.</p>
+<p><em>El riesgo:</em> Este salto a la interoperabilidad abierta introduce vectores de ataque de "Lealtad" que exploramos en la <strong>Guía 17</strong>.</p>
+</div>
+<div class="admonition strategic">
+<p class="admonition-title">El Futuro Inmediato: Protocolo de Contexto de Modelo (MCP)</p>
+<p>El futuro no son agentes aislados en tu servidor, sino la <strong>Web Agéntica</strong>.</p>
+<ul>
+<li><strong>El Cambio:</strong> Pronto tus agentes necesitarán hablar con agentes de proveedores (ej. tu Agente de Compras negociando con el Agente de Ventas de un proveedor).</li>
+<li><strong>El Estándar:</strong> No construyas conectores propietarios cerrados. Adopta estándares abiertos como <strong>MCP (Model Context Protocol)</strong> para que tus "trabajadores digitales" tengan un pasaporte universal para conectarse a herramientas externas de forma segura y estandarizada.</li>
+</ul>
+</div>
+<hr />
+<h3 id="conclusion-de-arquitecto-de-sistemas-a-director-de-orquesta">Conclusión: De Arquitecto de Sistemas a Director de Orquesta<a class="headerlink" href="#conclusion-de-arquitecto-de-sistemas-a-director-de-orquesta" title="Permanent link">&para;</a></h3>
+<p>La evolución de nuestra maestría en IA ha sido un viaje de abstracción:</p>
+<ol>
+<li><strong>Ingeniería de Prompts:</strong> Eras un Arquitecto de Instrucciones. Tu foco era el detalle de un solo plano.  </li>
+<li><strong>Ingeniería de Contexto:</strong> Eras un Arquitecto de Sistemas. Tu foco era gestionar los recursos (costo, latencia, memoria) de toda la obra.  </li>
+<li><strong>Ingeniería de Agentes:</strong> Ahora, eres un Director de Orquesta (o Director de Programa). Tu trabajo ya no es tocar los instrumentos (escribir el prompt) ni gestionar el escenario (el contexto). Tu trabajo es definir la partitura (el objetivo final) y coordinar a tus músicos (los bucles) para que ejecuten la sinfonía de forma autónoma.</li>
+</ol>
+<p>Al dominar la dirección de agentes, dejas de construir soluciones para empezar a orquestar resultados.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="../04-Estrategia-Datos/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Guía 04 - Datos">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Guía 04 - Datos
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../06-Sistemas-Cognitivos/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Guía 06 - Cognición">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                Guía 06 - Cognición
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Juan Carlos Carvajal - Licencia CC BY-NC-ND 4.0
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
