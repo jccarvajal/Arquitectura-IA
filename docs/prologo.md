@@ -1,5 +1,13 @@
 # Prólogo: Fundación
 
+---
+
+> *“It’s not that we lack technology. We lack the will to use it for the right things.”*
+> 
+> — **William Gibson**
+
+---
+
 ## 1. El espectro de la imaginación: de la utopía a la distopía
 
 ![La Cultura - Duna](assets/images/the-culture-dune.png){ width="500" }
