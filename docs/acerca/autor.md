@@ -5,7 +5,9 @@
 
 *Arquitecto impulsor de sistemas y estratega de gobernanza.*
 
-<img src="../../assets/images/avatar-jcg.png" alt="Juan Carlos Carvajal" width="200" style="border-radius: 50%; border: 2px solid #009688;">
+<img src="../../assets/images/foto.jcc.jpg" alt="Juan Carlos Carvajal" width="200" style="border-radius: 50%; border: 2px solid #009688;">
+
+<img src="../../assets/images/foto.jcc.jpg" alt="Juan Carlos Carvajal" width="200" style="border-radius: 50%; object-fit: cover; border: 3px solid #009688;">
 
 ---
 
