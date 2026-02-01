@@ -3,11 +3,10 @@
 ## Juan Carlos Carvajal
 **Ingeniero Civil Electrónico, MSc. Telecomunicaciones**
 
-*Arquitecto impulsor de sistemas y estratega de gobernanza.*
+*Arquitecto de Sistemas Estratégicos y de Decisión.*
+*Especialista en Gobernanza de IA, Ciberseguridad y Riesgo.*
 
-<img src="../../assets/images/foto.jcc.jpeg" alt="Juan Carlos Carvajal" width="200" style="border-radius: 50%; border: 2px solid #009688;">
-
-<img src="../../assets/images/foto.jcc.jpeg" alt="Juan Carlos Carvajal" width="200" style="border-radius: 50%; object-fit: cover; border: 3px solid #009688;">
+<img src="../../assets/images/foto-jcc.jpeg" alt="Juan Carlos Carvajal" width="200" style="border-radius: 50%; object-fit: cover; border: 3px solid #009688;">
 
 ---
 
