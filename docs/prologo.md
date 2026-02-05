@@ -2,7 +2,7 @@
 
 ---
 
-> *“It’s not that we are incapable of understanding the complexity; it is that we are unwilling to do so.”*
+> *“Homo sapiens is about pattern recognition, he says. Both a gift and a trap.”*
 > 
 > — **William Gibson**
 
