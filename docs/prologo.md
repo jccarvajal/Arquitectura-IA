@@ -2,7 +2,7 @@
 
 ---
 
-> *“It’s not that we lack technology. We lack the will to use it for the right things.”*
+> *“It’s not that we are incapable of understanding the complexity; it is that we are unwilling to do so.”*
 > 
 > — **William Gibson**
 
