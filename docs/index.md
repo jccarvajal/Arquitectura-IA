@@ -169,7 +169,7 @@ Base de conocimiento para alinear equipos y profundizar el criterio.
 
 ## Changelog
 * **v1.6 (Enero 2026):** Refinamiento doctrinal y endurecimiento operativo. Se introducen "Dictámenes del Arquitecto" con reglas de veto, se ajusta el tono editorial y se formaliza la filosofía política del control humano.
-* **v1.5 (Diciembre 2025):** Consolidación de la fase operativa y resiliencia. Finaliza la redacción de los Anexos E, F, G y H, reestructurando el marco de cumplimiento (antiguos E y F, ahora I y J) como un sello de certificación final.
+* **v1.0 (Octubre 2025):** Versión fundacional. Definición de la estructura modular, tesis central de gobernanza y establecimiento de la distinción entre "Arquitecto" y "Profesional".
 * Ver [Historial Completo](./changelog.md).
 
 ## Sugerencias y Mejoras
