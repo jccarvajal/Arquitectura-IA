@@ -249,6 +249,34 @@ La ventaja competitiva real y defendible reside en la infraestructura que rodea 
 
 ---
 
+### Parte 6: El Tiempo de Adaptación (La Paradoja de la Productividad)
+
+La disponibilidad de modelos y APIs no equivale a generación de valor.
+**Infraestructura no es adopción.**
+
+En 1987, el economista Robert Solow, observó: *“Vemos las computadoras en todas partes, menos en las estadísticas de productividad.”*
+La razón no era técnica. Las organizaciones intentaron usar tecnología nueva para acelerar procesos antiguos.
+
+La lección es estructural:
+**La productividad no aumenta por comprar tecnología.**
+**Aumenta cuando la organización se rediseña alrededor de ella.**
+
+Hoy vivimos una fase de **Adopción Superficial**: chatbots, copilotos y pilotos aislados.
+La **Adopción Estructural** exige algo más complejo: rediseñar procesos formales, ajustar métricas de desempeño y redefinir responsabilidades decisionales.
+
+Entre la instalación y el impacto existe un intervalo inevitable: el **Tiempo de Adaptación**.
+
+Ese proceso implica prueba, error, aprendizaje organizacional y reconfiguración institucional.
+No se mide en trimestres. Se mide en años.
+
+La IA es una tecnología de propósito general.
+Su impacto no depende de la potencia del modelo, sino de la capacidad institucional para absorberla.
+
+**La infraestructura acelera.**
+**La arquitectura organizacional determina si esa aceleración se convierte en productividad real.**
+
+---
+
 ### Conclusión: De la Eficiencia a la Dominancia
 
 El viaje de la maestría en IA culmina aquí. El viaje nos llevó de optimizar tareas a optimizar la fábrica, para finalmente darnos cuenta de que el verdadero premio es invalidar el modelo de negocio antiguo.
