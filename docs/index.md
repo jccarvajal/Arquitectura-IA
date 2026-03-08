@@ -148,11 +148,13 @@ Marcos internacionales para certificación y resiliencia legal.
   *Mapeo de controles ISO/IEC 42001 y NIST AI RMF para auditoría y certificación.*
 * [Anexo J: Marco Regulatorio EU](./anexos/J-Marco-Regulatorio-EU.md)
   *Guía de clasificación de riesgos y obligaciones legales (Efecto Bruselas).*
+* [Anexo K: Doctrina de IA Agéntica](./anexos/K-Doctrina-de-IA-Agentica.md)
+  *Regla del 2 y vetos de arquitectura para sistemas autónomos (AEPD 2026).*
 
 ### Vigilancia y Futuro
 Estrategias de anticipación para riesgos estructurales y de largo plazo.
 
-* [Anexo K: Radar de Riesgos Emergentes](./anexos/K-Riesgos-Emergentes.md)
+* [Anexo L: Radar de Riesgos Emergentes](./anexos/L-Riesgos-Emergentes.md)
   *Catálogo de fallas sistémicas silenciosas para la vigilancia estratégica.*
 
 ---
