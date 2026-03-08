@@ -4,7 +4,7 @@
 
 > *“Homo sapiens is about pattern recognition, he says. Both a gift and a trap.”*
 > 
-> — **William Gibson**
+> — **William Gibson (Pattern Recognition)**
 
 ---
 
