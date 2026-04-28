@@ -7,6 +7,19 @@
 
 <img src="assets/images/portada-ia.png" alt="Portada del Libro - Arquitectura de Inteligencia Artificial" width="500">
 
+--
+
+## 🎧 Versión Audio (Resumen / Podcast)
+
+Antes de leer, puedes comenzar por el audio:
+
+⏱️ **Duración:** 20 minutos  
+
+<audio controls>
+  <source src="assets/audio/arquitectura-ia.m4a" type="audio/mp4">
+  Tu navegador no soporta audio.
+</audio>
+
 ---
 
 ## Descripción del Proyecto
