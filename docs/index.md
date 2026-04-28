@@ -7,7 +7,7 @@
 
 <img src="assets/images/portada-ia.png" alt="Portada del Libro - Arquitectura de Inteligencia Artificial" width="500">
 
---
+---
 
 ## 🎧 Versión Audio (Resumen / Podcast)
 
