@@ -169,7 +169,7 @@ Estrategias de anticipación para riesgos estructurales y de largo plazo.
 
 * [Anexo L: Radar de Riesgos Emergentes](./anexos/L-Riesgos-Emergentes.md)
   *Catálogo de fallas sistémicas silenciosas para la vigilancia estratégica.*
-* [Anexo M: IA Local y Soberanía Operativa](./anexos/M-IA-Local-Soberania.md)
+* [Anexo M: IA Local y Soberanía Operativa](./anexos/M-Soberania-Operativa.md)
   *Arquitectura de vectores de control compensatorio para la mitigación operativa del Shadow AI.*
 
 ---
