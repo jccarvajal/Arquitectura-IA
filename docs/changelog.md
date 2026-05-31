@@ -6,6 +6,13 @@ Este documento registra todas las modificaciones estructurales, técnicas y conc
 
 ---
 
+## [v1.7.0] - 2026-05-31
+### Añadido (Anexo Técnico)
+- **Anexo M: IA Local y Soberanía Operativa.** Estructuración de 4 vectores de control compensatorio (Local, CLI, Filtros, Entornos Privados) para mitigación de Shadow AI.
+- Matriz de Decisión arquitectónica para adopción institucional.
+- Actualización de requerimientos de hardware (Mayo 2026) para despliegues locales con cuantización Q4 (Gemma 3, Llama 3.3, Phi-4).
+
+
 ## [1.6.0] - 2026-01-11
 ### Refinamiento Doctrinal y Endurecimiento Operativo
 

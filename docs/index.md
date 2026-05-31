@@ -1,7 +1,7 @@
 # Arquitectura de Inteligencia Artificial
 ## Guías para Decidir, Diseñar y Gobernar
 
-**Versión 1.6 (Enero 2026)**
+**Versión 1.7 (Mayo 2026)**
 
 **Autor:** [Juan Carlos Carvajal](https://www.jccarvajal.com/)
 
@@ -169,6 +169,8 @@ Estrategias de anticipación para riesgos estructurales y de largo plazo.
 
 * [Anexo L: Radar de Riesgos Emergentes](./anexos/L-Riesgos-Emergentes.md)
   *Catálogo de fallas sistémicas silenciosas para la vigilancia estratégica.*
+* [Anexo M: IA Local y Soberanía Operativa](./anexos/M-IA-Local-Soberania.md)
+  *Arquitectura de vectores de control compensatorio para la mitigación operativa del Shadow AI.*
 
 ---
 
@@ -183,7 +185,7 @@ Base de conocimiento para alinear equipos y profundizar el criterio.
 ---
 
 ## Changelog
-* **v1.6 (Enero 2026):** Refinamiento doctrinal y endurecimiento operativo. Se introducen "Dictámenes del Arquitecto" con reglas de veto, se ajusta el tono editorial y se formaliza la filosofía política del control humano.
+* **v1.7 (Mayo 2026):** Incorporación del Anexo M sobre IA Local y Soberanía Operativa, estructurando vectores de control compensatorio para la mitigación de exfiltración de datos institucionales.
 * **v1.0 (Octubre 2025):** Versión fundacional. Definición de la estructura modular, tesis central de gobernanza y establecimiento de la distinción entre "Arquitecto" y "Profesional".
 * Ver [Historial Completo](./changelog.md).
 
