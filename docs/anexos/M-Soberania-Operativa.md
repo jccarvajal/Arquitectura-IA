@@ -137,6 +137,7 @@ La soberanía operativa no se mide por dónde corre el modelo. Se mide por quié
 ### Notas de Implementación (Actualización 2026)
 
 **Herramientas de referencia:**
+
 * **Ollama / llama.cpp:** Runtimes locales para inferencia.
 * **LM Studio:** Entorno de evaluación para despliegues headless.
 * **Claude Code / Gemini CLI:** Wrappers agénticos sujetos a políticas de perímetro.
