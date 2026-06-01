@@ -7,15 +7,16 @@ Este documento registra todas las modificaciones estructurales, técnicas y conc
 ---
 
 ## [v1.7.0] - 2026-05-31
+
 ### Añadido (Anexo Técnico)
-- **Anexo M: IA Local y Soberanía Operativa.** Estructuración de 4 vectores de control compensatorio (Local, CLI, Filtros, Entornos Privados) para mitigación de Shadow AI.
-- Matriz de Decisión arquitectónica para adopción institucional.
-- Actualización de requerimientos de hardware (Mayo 2026) para despliegues locales con cuantización Q4 (Gemma 3, Llama 3.3, Phi-4).
+* **Anexo M: IA Local y Soberanía Operativa.** Estructuración de 4 vectores de control compensatorio (Local, CLI, Filtros, Entornos Privados) para mitigación de Shadow AI.
+* Matriz de Decisión arquitectónica para adopción institucional.
+* Actualización de requerimientos de hardware (Mayo 2026) para despliegues locales con cuantización Q4 (Gemma 3, Llama 3.3, Phi-4).
 
 
 ## [1.6.0] - 2026-01-11
-### Refinamiento Doctrinal y Endurecimiento Operativo
 
+### Refinamiento Doctrinal y Endurecimiento Operativo
 Esta versión marca la transición de un "manuscrito técnico" a una "doctrina operativa". Se formalizan los criterios de veto mediante "Dictámenes del Arquitecto", se limpia el tono editorial para eliminar el *hype* y se profundiza en la filosofía política del control humano, estableciendo el puente hacia la cultura organizacional.
 
 #### Añadido (Gobernanza y Doctrina)
@@ -32,8 +33,8 @@ Esta versión marca la transición de un "manuscrito técnico" a una "doctrina o
 ---
 
 ## [1.5.0] - 2025-12-30
-### Cierre del Ciclo Operativo y Consolidación de Herramientas
 
+### Cierre del Ciclo Operativo y Consolidación de Herramientas
 Esta versión finaliza la redacción de los anexos técnicos de soberanía y automatización, reestructurando la fase de cumplimiento para que actúe como un "Sello de Certificación" final e integrando auditoría técnica externa mediante LLMs.
 
 #### Añadido (Anexos Técnicos)
@@ -49,8 +50,8 @@ Esta versión finaliza la redacción de los anexos técnicos de soberanía y aut
 ---
 
 ## [1.4.0] - 2025-12-15
-### Endurecimiento Industrial y Marco GRC
 
+### Endurecimiento Industrial y Marco GRC
 Transformación de la arquitectura hacia un modelo financiera y operacionalmente viable, aplicando parches críticos de seguridad, rentabilidad y cultura.
 
 #### Añadido (Seguridad y Gobernanza)
@@ -69,8 +70,8 @@ Transformación de la arquitectura hacia un modelo financiera y operacionalmente
 ---
 
 ## [1.3.0] - 2025-12-01
-### Ingeniería de Control y Soberanía
 
+### Ingeniería de Control y Soberanía
 Integración de la tesis de gobernanza como "Ingeniería de Control", profundizando en la soberanía geopolítica y la agencia humana.
 
 #### Añadido (Estrategia y Filosofía)
@@ -83,8 +84,8 @@ Integración de la tesis de gobernanza como "Ingeniería de Control", profundiza
 ---
 
 ## [1.2.0] - 2025-11-15
-### Refinamiento de la Ingeniería de Agentes
 
+### Refinamiento de la Ingeniería de Agentes
 Estandarización de conceptos de agencia y optimización de la economía de tokens.
 
 * **Ciclo ReAct:** Formalización del ciclo Razonar + Actuar en la Guía 05.
@@ -93,8 +94,8 @@ Estandarización de conceptos de agencia y optimización de la economía de toke
 ---
 
 ## [1.1.0] - 2025-11-01
-### Transición al Marco GRC
 
+### Transición al Marco GRC
 Evolución de los contenidos hacia un marco de pensamiento estratégico completo basado en Gobernanza, Riesgo y Cumplimiento.
 
 * **Ingeniería de Contexto:** Elevación del prompting hacia la gestión de memoria estratégica.
@@ -103,8 +104,8 @@ Evolución de los contenidos hacia un marco de pensamiento estratégico completo
 ---
 
 ## [1.0.0] - 2025-10-15
-### Lanzamiento Inicial
 
+### Lanzamiento Inicial
 Publicación del borrador de contenidos base y estructura fundacional de la obra.
 
 * **Lanzamiento:** Publicación del libro con la estructura base de 17 guías y 6 anexos operativos.
