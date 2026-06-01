@@ -1,4 +1,4 @@
-## Anexo M: IA Local y Soberanía Operativa
+# Anexo M: IA Local y Soberanía Operativa
 
 **Modelos Locales, Entornos Privados, Wrappers CLI y Control del Dato**
 

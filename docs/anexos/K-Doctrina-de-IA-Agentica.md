@@ -1,5 +1,6 @@
 # Anexo K: Doctrina de IA Agéntica (AEPD 2026)
-##Integración Regulatoria y Arquitectura de Control
+
+## Integración Regulatoria y Arquitectura de Control
 
 ### 1. Contexto: El Giro Doctrinal de 2026
 

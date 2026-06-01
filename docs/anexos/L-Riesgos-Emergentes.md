@@ -1,4 +1,5 @@
-# Anexo K: Radar de Riesgos Emergentes
+# Anexo L: Radar de Riesgos Emergentes
+
 ## La Cara Oculta de la Escala Cognitiva
 
 !!! abstract "Propósito del Anexo"
