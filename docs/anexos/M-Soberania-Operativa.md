@@ -146,8 +146,8 @@ La soberanía operativa no se mide por dónde corre el modelo. Se mide por quié
 
 | Modelo | Parámetros | RAM mínima (Q4) | Perfil de Operación |
 | :--- | :--- | :--- | :--- |
-| **Gemma 3** | 4B | 4 GB | Tareas básicas, edge devices |
-| **Gemma 3** | 12B | 8 GB | Balance capacidad/recursos |
+| **Gemma 4** | 4B | 4 GB | Tareas básicas, edge devices |
+| **Gemma 4** | 12B | 8 GB | Balance capacidad/recursos |
 | **Phi-4** | 14B | 10 GB | Razonamiento técnico |
-| **Mistral Small 3.1** | 24B | 16 GB | Multilingüe, razonamiento intermedio |
+| **Mistral Small 3.2** | 24B | 16 GB | Multilingüe, razonamiento intermedio |
 | **Llama 3.3** | 70B | 40 GB | Alta capacidad, requiere hardware dedicado |
