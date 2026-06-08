@@ -15,6 +15,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
     * **Aumento (Definición Financiera):** No es simplemente usar herramientas nuevas. Es la capacidad de manejar un **mayor volumen de trabajo** (output) manteniendo la **misma dotación de personal** (headcount). Si la adopción de IA no incrementa la capacidad de producción por empleado, no es aumento; es simplemente un costo adicional.
 * **Referencia Principal:** Guía 15 (Ética y Confianza), Guía 12 (ROI Financiero).
 
+**Actor Organizacional Digital (Digital Organizational Actor)**
+
+* **Definición:** Entidad tecnológica con capacidad de observar, procesar información, tomar decisiones y ejecutar acciones con efectos materiales sobre los procesos de negocio. A diferencia de un sistema de información pasivo, este actor asume la delegación de una facultad institucional y opera bajo una Licencia Operacional revocable, permaneciendo irrestrictamente sujeto a umbrales de autonomía, mecanismos de contención sistémica y la responsabilidad fiduciaria del negocio.
+* **Referencia Principal:** Anexo N (Gobernanza Operacional de Agentes Autónomos).
+
 **Agente (Agent)**
 
 * **Definición:** Un sistema de IA que va más allá de la simple respuesta. Un agente puede razonar, planificar, descomponer tareas complejas y utilizar "herramientas" (como APIs o bases de datos) para ejecutar acciones de forma autónoma.  
@@ -100,6 +105,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** Es el mecanismo fundamental de la **Agencia**. Se refiere a la capacidad de un agente autónomo para generar sus propias instrucciones internas o "pensamientos" (dentro de un bucle como *ReAct*) para decidir el siguiente paso a tomar sin intervención humana. Es la IA diciéndose a sí misma qué hacer a continuación para cumplir un objetivo.
 * **Referencia Principal:** Guía 05 (Ingeniería de Agentes), Guía 17 (Perspectivas).
 
+**Autonomía como Recurso (Autonomy as a Resource)**
+
+* **Definición:** Principio de gobernanza que establece que la autonomía no es una propiedad tecnológica intrínseca de la IA, sino una capacidad institucional delegada. Al igual que el presupuesto o los privilegios de red, la autonomía es un recurso gobernable que la organización puede otorgar, restringir, degradar o revocar según la confianza operativa y el riesgo evaluado.
+* **Referencia Principal:** Anexo N (Gobernanza Operacional de Agentes Autónomos).
+
 **Base de Datos Vectorial (Vector Database)**
 
 * **Definición:** Tipo de base de datos optimizada para almacenar y consultar vectores (embeddings) en lugar de filas o documentos tradicionales. Es la infraestructura crítica que hace posible la memoria RAG al permitir búsquedas por similitud semántica.
@@ -175,6 +185,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** Un proceso crítico en la gestión de Memoria. Es la etapa de "curaduría" donde un LLM analiza la nueva información extraída y la compara con los recuerdos existentes para fusionar duplicados, resolver contradicciones y eliminar datos obsoletos.
 * **Referencia Principal:** Guía 03 (Contexto y Memoria).
 
+**Contención Sistémica (Systemic Containment)**
+
+* **Definición:** Principio arquitectónico de resiliencia que asegura que ningún ecosistema de agentes permita que una falla individual escale sin restricciones a través de toda la organización. Exige segmentación de dominios, límites de propagación y desacoplamiento operacional para garantizar que los sistemas puedan fallar localmente sin colapsar globalmente.
+* **Referencia Principal:** Anexo N (Gobernanza Operacional de Agentes Autónomos).
+
 **Costo Cuadrático (Quadratic Cost)**
 
 * **Definición:** La principal limitación de costo y rendimiento de la arquitectura Transformer. Se refiere al hecho de que el costo computacional y el uso de memoria crecen exponencialmente (O(n<sup>2</sup>)) con la longitud de la Ventana de Contexto.
@@ -199,6 +214,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** Estrategia de seguridad que implementa múltiples capas de protección independientes (en entrenamiento, despliegue y monitoreo) para que el fallo de una no comprometa todo el sistema. Es el principio rector técnico de la arquitectura LOSA validado por estándares internacionales en 2025.
 * **Referencia Principal:** Guía 09 (Gobernanza).
+
+**Degradación Elegante de Autonomía (Graceful Degradation of Autonomy)**
+
+* **Definición:** Mecanismo dinámico de respuesta ante riesgos operacionales. Consiste en la reducción forzada y automática del nivel de autonomía de un agente (ej. bajando de Nivel 3 - Autonomía Limitada a Nivel 1 - Recomendación) cuando se detectan anomalías, latencia o incerteza operacional, trasladando el control de vuelta al supervisor humano sin interrumpir abruptamente el proceso.
+* **Referencia Principal:** Anexo N (Gobernanza Operacional de Agentes Autónomos).
 
 **Delimitadores (Delimiters)**
 
@@ -335,6 +355,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 * **Definición:** El proceso técnico de conectar las respuestas de la IA a fuentes de datos verificables y reales (como documentos RAG o resultados de herramientas) para reducir las alucinaciones. Una respuesta "anclada" siempre puede citar su fuente.
 * **Referencia Principal:** Guía 03 (Contexto y Memoria), Guía 09 (Gobernanza).
 
+**Guardrails Dinámicos (Dynamic Guardrails)**
+
+* **Definición:** Controles de seguridad adaptativos que modifican el comportamiento y los privilegios de un agente en tiempo real según el contexto operacional y el riesgo observado, en contraste con los guardrails estáticos (reglas fijas de infraestructura). Son los activadores de la Degradación Elegante.
+* **Referencia Principal:** Anexo N (Gobernanza Operacional de Agentes Autónomos).
+
 **Hiper-Personalización**
 
 * **Definición:** Un modelo de negocio habilitado por la IA que permite ofrecer un servicio de "conserje" personalizado a millones de clientes simultáneamente.
@@ -449,6 +474,11 @@ Este anexo es el léxico centralizado de "Arquitectura de Inteligencia Artificia
 
 * **Definición:** El marco legal que regula las relaciones donde una persona (Agente) actúa en nombre de otra (Principal). Referencia crítica para la responsabilidad de la IA.
 * **Referencia Principal:** Guía 17 (Perspectivas).
+
+**Licencia Operacional (Operational License)**
+
+* **Definición:** El estado de permiso condicional bajo el cual un agente autónomo es autorizado a operar en producción. El agente mantiene esta licencia únicamente mientras demuestre métricas de desempeño, trazabilidad y alineación superiores a los umbrales definidos. Una desviación anómala o una falla en la justificación observable de sus decisiones revoca automáticamente esta licencia.
+* **Referencia Principal:** Anexo N (Gobernanza Operacional de Agentes Autónomos).
 
 **Licencia Social (Social License)**
 

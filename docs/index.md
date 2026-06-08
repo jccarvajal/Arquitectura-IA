@@ -171,6 +171,8 @@ Estrategias de anticipación para riesgos estructurales y de largo plazo.
   *Catálogo de fallas sistémicas silenciosas para la vigilancia estratégica.*
 * [Anexo M: IA Local y Soberanía Operativa](./anexos/M-Soberania-Operativa.md)
   *Arquitectura de vectores de control compensatorio para la mitigación operativa del Shadow AI.*
+* [Anexo N: Gobernanza Operacional de Agentes Autónomos](./anexos/N-Gobernanza-Agentes.md)
+  *Marco arquitectónico para la administración de actores organizacionales digitales.*
 
 ---
 
@@ -185,7 +187,7 @@ Base de conocimiento para alinear equipos y profundizar el criterio.
 ---
 
 ## Changelog
-* **v1.7 (Mayo 2026):** Incorporación del Anexo M sobre IA Local y Soberanía Operativa, estructurando vectores de control compensatorio para la mitigación de exfiltración de datos institucionales.
+* **v1.8 (Junio 2026):** Incorporación del Anexo N sobre Gobernanza Operacional de Agentes Autónomos, estableciendo el marco doctrinal para la administración de actores digitales mediante guardrails dinámicos, licencia operacional y contención de riesgos sistémicos.
 * **v1.0 (Octubre 2025):** Versión fundacional. Definición de la estructura modular, tesis central de gobernanza y establecimiento de la distinción entre "Arquitecto" y "Profesional".
 * Ver [Historial Completo](./changelog.md).
 

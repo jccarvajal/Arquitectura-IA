@@ -6,6 +6,20 @@ Este documento registra todas las modificaciones estructurales, técnicas y conc
 
 ---
 
+## [v1.8.0] - 2026-06-07
+
+### Añadido (Anexo Doctrinal)
+* **Anexo N: Gobernanza Operacional de Agentes Autónomos.** Marco arquitectónico para la administración corporativa de actores organizacionales digitales, transitando del control estático a los guardrails dinámicos.
+* Escala graduada de Niveles de Autonomía (N0-N5) condicionada por la criticidad del proceso de negocio.
+* Diseño de respuestas operacionales automatizadas: Degradación Elegante de Autonomía y mecanismos de contención.
+* Formalización del concepto de Licencia Operacional revocable basada en métricas de confianza y trazabilidad.
+* Definición del Principio de Contención Sistémica para la prevención de fallas en cascada en poblaciones de agentes.
+
+### Actualizado (Glosario Unificado)
+* Incorporación de 6 conceptos transversales a la arquitectura de la serie: Actor Organizacional Digital, Autonomía como Recurso, Contención Sistémica, Degradación Elegante de Autonomía, Guardrails Dinámicos y Licencia Operacional.
+
+---
+
 ## [v1.7.0] - 2026-05-31
 
 ### Añadido (Anexo Técnico)
@@ -13,6 +27,7 @@ Este documento registra todas las modificaciones estructurales, técnicas y conc
 * Matriz de Decisión arquitectónica para adopción institucional.
 * Actualización de requerimientos de hardware (Mayo 2026) para despliegues locales con cuantización Q4 (Gemma 3, Llama 3.3, Phi-4).
 
+---
 
 ## [1.6.0] - 2026-01-11
 
