@@ -167,8 +167,9 @@ Un descenso en la calidad de las decisiones o un incremento anómalo en la tasa 
 
 ### 10 Ciclo de Vida y Retiro del Agente
 
-Los agentes no se despliegan; se gestionan de forma continua. El ciclo de vida mandatorio abarca: 
-Diseño > Evaluación de Riesgos > Aprobación de Arquitectura y Seguridad > Despliegue en Sombra (Shadow Mode) > Liberación por Fases > Monitoreo Continuo > Auditoría Recurrente.
+Los agentes no se despliegan; se gestionan de forma continua. 
+
+El ciclo de vida mandatorio abarca: Diseño > Evaluación de Riesgos > Aprobación de Arquitectura y Seguridad > Despliegue en Sombra (Shadow Mode) > Liberación por Fases > Monitoreo Continuo > Auditoría Recurrente.
 
 Ningún agente podrá avanzar a una fase superior de despliegue sin demostrar métricas de desempeño, estabilidad, trazabilidad y alineación compatibles con los umbrales definidos por la organización.
 
