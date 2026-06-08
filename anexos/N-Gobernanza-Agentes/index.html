@@ -1,0 +1,2673 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Guías para Decidir, Diseñar y Gobernar sistemas de IA.">
+      
+      
+        <meta name="author" content="Juan Carlos Carvajal">
+      
+      
+        <link rel="canonical" href="https://ia.jccarvajal.com/anexos/N-Gobernanza-Agentes/">
+      
+      
+        <link rel="prev" href="../M-Soberania-Operativa/">
+      
+      
+        <link rel="next" href="../../referencias/Glosario/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>N - Gobernanza - Arquitectura de Inteligencia Artificial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#anexo-n-gobernanza-operacional-de-agentes-autonomos" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Arquitectura de Inteligencia Artificial" class="md-header__button md-logo" aria-label="Arquitectura de Inteligencia Artificial" data-md-component="logo">
+      
+  <img src="../../assets/images/portada-ia.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Arquitectura de Inteligencia Artificial
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              N - Gobernanza
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../nota-al-lector/" class="md-tabs__link">
+          
+  
+  
+  Introducción
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../guias/01-Anatomia-Modelos/" class="md-tabs__link">
+          
+  
+  
+  Bloque 1 - Fundamentos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../guias/05-Ingenieria-Agentes/" class="md-tabs__link">
+          
+  
+  
+  Bloque 2 - Construcción
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../guias/09-Gobernanza/" class="md-tabs__link">
+          
+  
+  
+  Bloque 3 - Operación
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../guias/13-Estrategia-Valor/" class="md-tabs__link">
+          
+  
+  
+  Bloque 4 - Estrategia
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../guias/17-Perspectivas/" class="md-tabs__link">
+          
+  
+  
+  Bloque 5 - Futuro
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../conclusion/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Conclusión
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../A-Formulacion-Viabilidad/" class="md-tabs__link">
+          
+  
+  
+  Anexos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../referencias/Glosario/" class="md-tabs__link">
+          
+  
+  
+  Referencias
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../acerca/autor/" class="md-tabs__link">
+          
+  
+  
+  Acerca de
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Arquitectura de Inteligencia Artificial" class="md-nav__button md-logo" aria-label="Arquitectura de Inteligencia Artificial" data-md-component="logo">
+      
+  <img src="../../assets/images/portada-ia.png" alt="logo">
+
+    </a>
+    Arquitectura de Inteligencia Artificial
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Introducción
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nota-al-lector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nota al Lector
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prologo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prólogo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ideas-centrales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ideas Centrales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloque 1 - Fundamentos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bloque 1 - Fundamentos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/01-Anatomia-Modelos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 01 - Anatomía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/02-Ingenieria-Prompts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 02 - Prompts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/03-Contexto-Memoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 03 - Contexto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/04-Estrategia-Datos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 04 - Datos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloque 2 - Construcción
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bloque 2 - Construcción
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/05-Ingenieria-Agentes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 05 - Agentes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/06-Sistemas-Cognitivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 06 - Cognición
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/07-Fine-Tuning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 07 - Fine-Tuning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/08-Prototipado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 08 - Prototipado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloque 3 - Operación
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bloque 3 - Operación
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/09-Gobernanza/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 09 - Gobernanza
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/10-Evaluacion-Calidad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 10 - QA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/11-Industrializacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 11 - Industrialización
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/12-ROI-Financiero/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 12 - ROI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloque 4 - Estrategia
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bloque 4 - Estrategia
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/13-Estrategia-Valor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 13 - Valor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/14-Modelos-Mercado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 14 - Modelos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/15-Etica-Confianza/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 15 - Ética
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/16-Aprender-A-Pensar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 16 - Operación Cognitiva
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bloque 5 - Futuro
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bloque 5 - Futuro
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guias/17-Perspectivas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía 17 - Perspectivas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conclusion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conclusión
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anexos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Anexos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../A-Formulacion-Viabilidad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A - Formulación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../B-Politica-Institucional/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    B - Política
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../C-Blueprints/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C - Blueprints
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../D-Plantillas-Recursos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D - Plantillas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../E-Soberania-Criterio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    E - Criterio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../F-Vulnerabilidades/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    F - Vulnerabilidades
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../G-Automatizaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    G - Automatizaciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../H-Seguridad-Operativa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    H - Seguridad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../I-Gobernanza-Global/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    I - Certificación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../J-Marco-Regulatorio-EU/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    J - Regulatorio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../K-Doctrina-de-IA-Agentica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    K - Doctrina
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../L-Riesgos-Emergentes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    L - Riesgos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../M-Soberania-Operativa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    M - Soberanía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    N - Gobernanza
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    N - Gobernanza
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introducción
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-el-agente-como-actor-organizacional-digital" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 El agente como actor organizacional digital
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-inventario-clasificacion-y-criticidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 Inventario, Clasificación y Criticidad
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-propietario-y-responsabilidad-institucional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 Propietario y Responsabilidad Institucional
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-capacidades-privilegios-y-segregacion-de-funciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 Capacidades, Privilegios y Segregación de Funciones
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-niveles-de-autonomia-y-matriz-de-riesgo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 Niveles de Autonomía y Matriz de Riesgo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-guardrails-estaticos-la-primera-linea-de-defensa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 Guardrails Estáticos: La Primera Línea de Defensa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-guardrails-dinamicos-y-degradacion-elegante" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7 Guardrails Dinámicos y Degradación Elegante
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-supervision-y-mecanismos-de-intervencion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8 Supervisión y Mecanismos de Intervención
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-evidencia-licencia-operacional-y-trazabilidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9 Evidencia, Licencia Operacional y Trazabilidad
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-ciclo-de-vida-y-retiro-del-agente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 Ciclo de Vida y Retiro del Agente
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-gobernanza-de-poblaciones-y-riesgo-sistemico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11 Gobernanza de Poblaciones y Riesgo Sistémico
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#principio-rector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PRINCIPIO RECTOR
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Referencias
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Referencias
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../referencias/Glosario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glosario
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../referencias/Bibliografia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bibliografía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Acerca de
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Acerca de
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../acerca/autor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Autor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../acerca/licence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Licencia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../acerca/contribuir/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cómo Contribuir
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Historial (Changelog)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="anexo-n-gobernanza-operacional-de-agentes-autonomos">ANEXO N: Gobernanza Operacional de Agentes Autónomos<a class="headerlink" href="#anexo-n-gobernanza-operacional-de-agentes-autonomos" title="Permanent link">&para;</a></h1>
+<p><strong>Del Control Estático a los Guardrails Dinámicos</strong></p>
+<h3 id="introduccion">Introducción<a class="headerlink" href="#introduccion" title="Permanent link">&para;</a></h3>
+<p>Las organizaciones han desarrollado durante décadas mecanismos robustos para gobernar personas, procesos, sistemas y datos. Sin embargo, la incorporación de agentes autónomos introduce una nueva categoría ontológica en la arquitectura empresarial: entidades digitales capaces de observar, razonar, decidir y actuar dentro de los procesos de negocio.</p>
+<p>A diferencia del software determinista tradicional, los agentes no se limitan a ejecutar árboles de decisión predefinidos. Interpretan objetivos abiertos, seleccionan herramientas, interactúan con sistemas críticos y producen efectos materiales sobre la operación y el entorno normativo. Consecuentemente, los mecanismos tradicionales de administración de aplicaciones son estructuralmente insuficientes para gobernar su comportamiento.</p>
+<p>Este anexo establece el marco de <strong>Gobernanza Operacional de Agentes Autónomos</strong>, destinado a administrar estas poblaciones digitales dentro del apetito de riesgo organizacional. </p>
+<p>La tesis central de este documento es que <strong>la autonomía es un recurso gobernable</strong>. Al igual que el presupuesto, los privilegios de red o el acceso a datos, la autonomía es una capacidad que la organización puede otorgar, restringir, degradar o revocar. No es un derecho tecnológico del sistema, sino una concesión operacional directamente proporcional a la confianza que la organización puede medir y auditar. </p>
+<p>El objetivo de la gobernanza operacional no es maximizar la autonomía de los agentes, sino optimizar la relación entre autonomía, valor y riesgo.</p>
+<hr />
+<h3 id="1-el-agente-como-actor-organizacional-digital">1 El agente como actor organizacional digital<a class="headerlink" href="#1-el-agente-como-actor-organizacional-digital" title="Permanent link">&para;</a></h3>
+<p>A efectos de gobierno corporativo, un agente autónomo pierde la categoría de "aplicación" y se considera un <strong>actor organizacional digital</strong>. </p>
+<p>Al igual que un colaborador humano, este actor posee:</p>
+<ul>
+<li><strong>Objetivos:</strong> Mandatos de negocio que debe satisfacer.</li>
+<li><strong>Capacidades:</strong> Habilidades de procesamiento y toma de decisiones.</li>
+<li><strong>Restricciones:</strong> Límites normativos, éticos y operacionales.</li>
+<li><strong>Acceso a recursos:</strong> Privilegios sobre datos, APIs e infraestructura.</li>
+<li><strong>Capacidad de producir efectos:</strong> Impacto real sobre transacciones, clientes o procesos.</li>
+</ul>
+<p>Su gobierno debe integrarse armónicamente con los mecanismos institucionales de gestión, supervisión y rendición de cuentas, trascendiendo los controles puramente tecnológicos.</p>
+<hr />
+<h3 id="2-inventario-clasificacion-y-criticidad">2 Inventario, Clasificación y Criticidad<a class="headerlink" href="#2-inventario-clasificacion-y-criticidad" title="Permanent link">&para;</a></h3>
+<p>Ningún agente está autorizado a operar fuera del <strong>inventario corporativo de agentes e inteligencia artificial</strong>. El registro es un pre-requisito ineludible para el despliegue.</p>
+<p>Los agentes se clasificarán según su impacto en la cadena de valor:</p>
+<ul>
+<li><strong>Informativos:</strong> Sintetizan y presentan datos (riesgo operativo nulo).</li>
+<li><strong>Analíticos:</strong> Producen inferencias o diagnósticos que informan decisiones humanas.</li>
+<li><strong>Operativos:</strong> Ejecutan tareas repetitivas dentro de flujos de trabajo cerrados.</li>
+<li><strong>Decisionales:</strong> Toman resoluciones sobre transacciones, recursos o interacciones con clientes.</li>
+<li><strong>Orquestadores:</strong> Coordinan y delegan tareas a otros agentes o sistemas.</li>
+</ul>
+<hr />
+<h3 id="3-propietario-y-responsabilidad-institucional">3 Propietario y Responsabilidad Institucional<a class="headerlink" href="#3-propietario-y-responsabilidad-institucional" title="Permanent link">&para;</a></h3>
+<p>Todo agente debe tener un responsable humano identificable a nivel directivo o gerencial (<em>Business Owner</em>). <strong>La responsabilidad por las decisiones, acciones y externalidades de un agente es indelegable al modelo subyacente, al proveedor tecnológico o al equipo de ingeniería.</strong></p>
+<p>El propietario tiene el mandato ineludible de:</p>
+<ul>
+<li>Aprobar el propósito y el caso de uso.</li>
+<li>Asumir el riesgo operacional derivado de su actuación.</li>
+<li>Supervisar el desempeño a través de métricas de confianza.</li>
+<li>Autorizar modificaciones estructurales o la ampliación de capacidades.</li>
+<li>Dictaminar su desactivación o retiro.</li>
+</ul>
+<h4 id="31-modelo-de-responsabilidad-organizacional">3.1 Modelo de Responsabilidad Organizacional<a class="headerlink" href="#31-modelo-de-responsabilidad-organizacional" title="Permanent link">&para;</a></h4>
+<p>La gobernanza operacional de agentes requiere la distribución explícita de responsabilidades sobre el ciclo de vida del agente:</p>
+<ul>
+<li><strong>Propietario del Negocio (Business Owner):</strong> Define el objetivo, aprueba el caso de uso y asume el riesgo operacional de las decisiones del agente.</li>
+<li><strong>Propietario Técnico (AI/System Owner):</strong> Garantiza que la implementación respeta los guardrails estáticos y asegura el mantenimiento del inventario.</li>
+<li><strong>Arquitectura:</strong> Valida que el nivel de autonomía asignado es coherente con la criticidad del proceso y la capacidad de supervisión.</li>
+<li><strong>Riesgo Operacional y Seguridad:</strong> Define los umbrales que activan los guardrails dinámicos y certifica los mecanismos de degradación elegante y contención.</li>
+<li><strong>Auditoría:</strong> Verifica retrospectivamente (HOOTL) que la evidencia de razonamiento y la trazabilidad cumplen con la normativa interna y regulatoria.</li>
+</ul>
+<hr />
+<h3 id="4-capacidades-privilegios-y-segregacion-de-funciones">4 Capacidades, Privilegios y Segregación de Funciones<a class="headerlink" href="#4-capacidades-privilegios-y-segregacion-de-funciones" title="Permanent link">&para;</a></h3>
+<p>Los agentes están sujetos al principio de <strong>Mínimo Privilegio</strong>. Las herramientas (APIs, bases de datos, interfaces) a las que un agente tiene acceso deben declararse explícitamente y limitarse a las estrictamente necesarias para su objetivo. </p>
+<p>Asimismo, la arquitectura técnica debe incorporar mecanismos de <strong>verificación continua (Zero Trust)</strong> para validar el contexto de cada invocación.</p>
+<p>Cuando los agentes operen sobre procesos de alta criticidad o riesgo financiero, se aplicarán estrictos principios de <strong>Segregación de Funciones (SoD)</strong>. Un agente encargado de proponer una transacción financiera no puede ser el mismo agente (o compartir la misma instancia de modelo) que aprueba o audita dicha transacción.</p>
+<hr />
+<h3 id="5-niveles-de-autonomia-y-matriz-de-riesgo">5 Niveles de Autonomía y Matriz de Riesgo<a class="headerlink" href="#5-niveles-de-autonomia-y-matriz-de-riesgo" title="Permanent link">&para;</a></h3>
+<p>La autonomía es una escala graduada, no una característica binaria. Todo agente debe tener asignado y justificado uno de los siguientes niveles (N0 a N5):</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Nivel de Autonomía</th>
+<th style="text-align: left;">Descripción del Comportamiento</th>
+<th style="text-align: left;">Límite Operacional según Criticidad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>N0 - Asistencia</strong></td>
+<td style="text-align: left;">Recupera y organiza información sin modificar el estado del sistema.</td>
+<td style="text-align: left;">Permitido en todos los niveles de criticidad.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>N1 - Recomendación</strong></td>
+<td style="text-align: left;">Propone cursos de acción; requiere acción humana deliberada para su ejecución.</td>
+<td style="text-align: left;">Permitido en todos los niveles de criticidad.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>N2 - Ejecución Supervisada</strong></td>
+<td style="text-align: left;">Ejecuta secuencias automáticas, pero se detiene para solicitar aprobación humana en nodos críticos.</td>
+<td style="text-align: left;">Permitido en alta criticidad solo con guardrails dinámicos.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>N3 - Autonomía Limitada</strong></td>
+<td style="text-align: left;">Actúa de principio a fin sin aprobación, confinado a escenarios de bajo riesgo y alta certidumbre.</td>
+<td style="text-align: left;">Requiere excepción formal para procesos de alta criticidad.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>N4 - Orquestación Autónoma</strong></td>
+<td style="text-align: left;">Delega, planifica y administra flujos de trabajo complejos con otros agentes.</td>
+<td style="text-align: left;">Estrictamente prohibido en procesos de alta criticidad.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>N5 - Autonomía Plena</strong></td>
+<td style="text-align: left;">Administra de manera integral procesos. La autonomía no altera la responsabilidad institucional.</td>
+<td style="text-align: left;">Limitado a entornos de experimentación aislados (Sandboxes).</td>
+</tr>
+</tbody>
+</table>
+<p>La supervisión diferida establecida para el Nivel 5 constituye una optimización del control, no una transferencia de la obligación fiduciaria del propietario.</p>
+<hr />
+<h3 id="6-guardrails-estaticos-la-primera-linea-de-defensa">6 Guardrails Estáticos: La Primera Línea de Defensa<a class="headerlink" href="#6-guardrails-estaticos-la-primera-linea-de-defensa" title="Permanent link">&para;</a></h3>
+<p>Los guardrails estáticos son restricciones absolutas programadas a nivel de infraestructura y arquitectura. Constituyen los "muros de contención" del agente y no pueden ser alterados por el modelo bajo ninguna circunstancia.</p>
+<p>Incluyen:</p>
+<ul>
+<li><strong>Restricciones de IAM:</strong> Controles de acceso basados en roles (RBAC).</li>
+<li><strong>Restricciones de Red:</strong> Confinamiento a VPCs específicas y listas de IPs permitidas.</li>
+<li><strong>Restricciones Presupuestarias:</strong> Límites duros de consumo de tokens o llamadas a APIs (Rate Limiting).</li>
+<li><strong>Filtros de Contenido Duros:</strong> Bloqueo léxico y semántico de entradas/salidas prohibidas.</li>
+</ul>
+<hr />
+<h3 id="7-guardrails-dinamicos-y-degradacion-elegante">7 Guardrails Dinámicos y Degradación Elegante<a class="headerlink" href="#7-guardrails-dinamicos-y-degradacion-elegante" title="Permanent link">&para;</a></h3>
+<p>Mientras los guardrails estáticos definen <em>dónde</em> puede operar un agente, los guardrails dinámicos definen <em>cómo</em> se comporta el agente en respuesta a las condiciones cambiantes del entorno. </p>
+<p>La autonomía se gestiona como una variable dinámica. El sistema debe monitorizar continuamente el contexto e implementar una <strong>Degradación Elegante (Graceful Degradation)</strong> de la autonomía si se detectan anomalías.</p>
+<p><strong>Triggers (Disparadores) de Degradación:</strong></p>
+<ul>
+<li>Incremento súbito de la latencia o inestabilidad en la infraestructura base.</li>
+<li>Detección de desviación semántica o lógica por parte de sistemas de evaluación paralelos.</li>
+<li>Indicadores de incerteza operacional o anomalías en el patrón de resolución del agente.</li>
+<li>Modificaciones abruptas en el contexto operativo o volumen transaccional.</li>
+</ul>
+<p><strong>Respuestas Dinámicas:</strong></p>
+<ul>
+<li><strong>Downgrade de Autonomía:</strong> El agente pasa automáticamente de N3 (Autonomía Limitada) a N1 (Recomendación), requiriendo que un humano retome el control de la ejecución.</li>
+<li><strong>Cuarentena de Herramientas:</strong> Revocación temporal de permisos de escritura, manteniendo habilitados los permisos de lectura.</li>
+<li><strong>Activación de Corto Circuito:</strong> Suspensión inmediata de la tarea hasta la validación de un supervisor.</li>
+</ul>
+<hr />
+<h3 id="8-supervision-y-mecanismos-de-intervencion">8 Supervisión y Mecanismos de Intervención<a class="headerlink" href="#8-supervision-y-mecanismos-de-intervencion" title="Permanent link">&para;</a></h3>
+<p>La arquitectura debe soportar tres modelos de supervisión, seleccionados según el nivel de autonomía y la criticidad:</p>
+<ol>
+<li><strong>HITL (Human-in-the-Loop):</strong> Para decisiones irreversibles o de alto impacto. El humano es el cuello de botella intencional.</li>
+<li><strong>HOTL (Human-on-the-Loop):</strong> El humano actúa como un supervisor pasivo con capacidad de veto en tiempo real sobre las acciones del agente.</li>
+<li><strong>HOOTL (Human-out-of-the-Loop):</strong> Intervención humana puramente asíncrona mediante auditoría retrospectiva.</li>
+</ol>
+<p><strong>Mecanismos de Contención y Aislamiento:</strong></p>
+<p>Todo agente de Nivel 2 o superior debe estar sujeto a mecanismos de interrupción controlada, independientes de su propio sistema cognitivo. Dependiendo de la arquitectura, estos incluirán:</p>
+<ul>
+<li>Degradación forzada de nivel de autonomía.</li>
+<li>Cuarentena de red (aislamiento del ecosistema).</li>
+<li>Revocación automatizada de credenciales de acceso.</li>
+<li>Suspensión total del procesamiento.</li>
+</ul>
+<hr />
+<h3 id="9-evidencia-licencia-operacional-y-trazabilidad">9 Evidencia, Licencia Operacional y Trazabilidad<a class="headerlink" href="#9-evidencia-licencia-operacional-y-trazabilidad" title="Permanent link">&para;</a></h3>
+<p>Todo agente sujeto a este marco opera bajo una <strong>Licencia Operacional</strong>. Un agente mantiene esta licencia únicamente mientras conserve métricas de desempeño, trazabilidad y alineación superiores a los umbrales definidos por la organización. </p>
+<p>Para sostener dicha licencia, toda actuación debe generar telemetría inmutable. La cadena de trazabilidad mínima requerida es:</p>
+<ul>
+<li><strong>Mandato de entrada</strong> (Contexto u objetivo inicial).</li>
+<li><strong>Justificación observable de la decisión</strong> (Evidencia del razonamiento aplicado, independientemente del método de inferencia del modelo subyacente).</li>
+<li><strong>Invocación de herramientas</strong> (Peticiones enviadas a sistemas externos).</li>
+<li><strong>Decisión o acción final ejecutada.</strong></li>
+</ul>
+<p>Un descenso en la calidad de las decisiones o un incremento anómalo en la tasa de intervención humana revoca automáticamente la licencia operacional, suspendiendo el permiso de despliegue en producción.</p>
+<hr />
+<h3 id="10-ciclo-de-vida-y-retiro-del-agente">10 Ciclo de Vida y Retiro del Agente<a class="headerlink" href="#10-ciclo-de-vida-y-retiro-del-agente" title="Permanent link">&para;</a></h3>
+<p>Los agentes no se despliegan; se gestionan de forma continua. </p>
+<p>El ciclo de vida mandatorio abarca: Diseño &gt; Evaluación de Riesgos &gt; Aprobación de Arquitectura y Seguridad &gt; Despliegue en Sombra (Shadow Mode) &gt; Liberación por Fases &gt; Monitoreo Continuo &gt; Auditoría Recurrente.</p>
+<p>Ningún agente podrá avanzar a una fase superior de despliegue sin demostrar métricas de desempeño, estabilidad, trazabilidad y alineación compatibles con los umbrales definidos por la organización.</p>
+<p><strong>Retiro (Sunsetting):</strong> La desactivación de un agente exige un procedimiento formal que incluya la rotación/destrucción de todas las credenciales asociadas, la preservación de los registros de auditoría por motivos normativos y el re-enrutamiento de los procesos de negocio dependientes hacia sistemas de contingencia.</p>
+<hr />
+<h3 id="11-gobernanza-de-poblaciones-y-riesgo-sistemico">11 Gobernanza de Poblaciones y Riesgo Sistémico<a class="headerlink" href="#11-gobernanza-de-poblaciones-y-riesgo-sistemico" title="Permanent link">&para;</a></h3>
+<p>A medida que la organización escala la adopción de inteligencia artificial, el desafío de gobernanza transita desde el control del agente individual hacia la administración de ecosistemas de agentes.</p>
+<p>La interacción entre múltiples agentes autónomos introduce el potencial de <strong>riesgo sistémico</strong>, donde decisiones subóptimas pueden amplificarse a través de fallas en cascada o bucles de retroalimentación no previstos.</p>
+<p>Para mitigar este riesgo, la arquitectura de poblaciones de agentes debe asegurar:</p>
+<ul>
+<li><strong>Límites de Delegación:</strong> Un agente no puede delegar tareas a otro agente que posea un nivel de autonomía o privilegios de acceso superiores a los propios.</li>
+<li><strong>Prevención de Bucles de Decisión (Deadlocks y Loops):</strong> Los ecosistemas que involucran interacciones agente-agente deben contar con mecanismos de tiempo de espera (timeouts) y límites de iteración estructurales.</li>
+<li><strong>Trazabilidad Inter-agente:</strong> La evidencia auditable debe permitir la reconstrucción completa del flujo de información y decisiones a través de múltiples agentes involucrados en un mismo proceso.</li>
+<li><strong>Aislamiento de Dominios:</strong> Agentes operando en procesos de alta criticidad no deben compartir instancias de memoria de corto o largo plazo con agentes orientados a procesos de baja criticidad.</li>
+</ul>
+<h4 id="111-principio-de-contencion-sistemica">11.1 Principio de Contención Sistémica<a class="headerlink" href="#111-principio-de-contencion-sistemica" title="Permanent link">&para;</a></h4>
+<p>Ningún ecosistema de agentes debe permitir que una falla individual escale sin restricciones a través de toda la organización. La arquitectura debe incorporar límites de propagación, segmentación de dominios, desacoplamiento operacional y mecanismos de recuperación que permitan contener el impacto de errores locales.</p>
+<hr />
+<h3 id="principio-rector">PRINCIPIO RECTOR<a class="headerlink" href="#principio-rector" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>La organización no gobierna modelos algorítmicos. La organización gobierna capacidades y delegaciones operacionales.</strong></p>
+<p>Un agente autónomo constituye la delegación de una facultad institucional. Su despliegue exige límites comprobables, supervisión asimétrica y un diseño consciente del riesgo. En procesos de alta criticidad, una ejecución restringida es siempre arquitectónicamente superior a una autonomía plena.</p>
+<p>En la era de la inteligencia artificial:</p>
+<p><strong>Delegar la acción jamás implica abdicar la responsabilidad.</strong></p>
+<p>La gobernanza operacional garantiza que la autonomía técnica opere como un instrumento de valor, jamás como un vector de vulnerabilidad sistémica.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="../M-Soberania-Operativa/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: M - Soberanía">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                M - Soberanía
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../referencias/Glosario/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Glosario">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                Glosario
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Juan Carlos Carvajal - Licencia CC BY-NC-ND 4.0
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
